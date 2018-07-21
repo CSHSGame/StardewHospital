@@ -1,0 +1,32 @@
+title: Tom
+tags: 
+colorID: 0
+position: 416,265
+---
+<<if visited("Tom") is false>>
+    Tom: Oh hey. I didn't see you there.
+    Player: Yeah, I'm a sneaky boy.
+<<else>>
+    Tom: Hello again.
+    Player: Hey.
+<<endif>>
+
+[[Whats Up?|Tom.Question]]
+[[Leave|Tom.Exit]]
+===
+title: Tom.Exit
+tags: 
+colorID: 0
+position: 867,273
+---
+Tom: Ok Bye
+===
+title: Tom.Question
+tags: 
+colorID: 0
+position: 607,583
+---
+Tom: Nothing much.
+
+[[Ok Bye.|Tom.Exit]]
+===
