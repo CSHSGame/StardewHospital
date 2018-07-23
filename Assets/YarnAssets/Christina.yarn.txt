@@ -1,0 +1,25 @@
+title: Christina
+tags: 
+colorID: 0
+position: 417,265
+---
+<<if $current_day is 1>>
+    Christina: Oh hey. This is the first time I am meeting you.
+    Player: Yes it is.
+<<elseif $current_day is 2>>
+    Christina: Hello, This is the second day I am meeting you.
+<<elseif $current_day is 3>>
+    Christina: This is the third day I am meeting you.
+<<elseif $current_day is 4>>
+    Christina: This is the fourth day I am meeting you.
+<<endif>>
+
+[[Leave|Christina.Exit]]
+===
+title: Christina.Exit
+tags: 
+colorID: 0
+position: 804,261
+---
+Christina: Bye.
+===
