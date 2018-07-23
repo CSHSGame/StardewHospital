@@ -1,7 +1,57 @@
 title: Sally
 tags: 
 colorID: 0
-position: 524,111
+position: 47,-148
 ---
+<<if $current_day is 1>>
+<<if visited("Sally") is false>>
+    Sally: Hello.
+    Player: Hello.
+    Sally: Are you the new support worker at Stardew Health Center?
+    [[Yes, I just started today.|Sally.Day1]]
+    [[Yup thats me.|Sally.Day1]]
+<<elseif visited("Sally") is true>>
+    Sally: Are you ready to help me?
+    [[Yes, I can help you right now.|Sally.Day1Accept]]
+    [[Not right now.|Sally.Day1Deny]]
+<<endif>>
 
+
+
+<<elseif $current_day is 2>>
+    Sally: Hello, This is the second day I am meeting you.
+<<elseif $current_day is 3>>
+    Sally: This is the third day I am meeting you.
+<<elseif $current_day is 4>>
+    Sally: This is the fourth day I am meeting you.
+<<endif>>
+===
+title: Sally.Day1
+tags: 
+colorID: 0
+position: 450,-171
+---
+Sally: Oh, nice to meet you.
+Player: It's nice to meet you too.
+Sally: Are you going to be the support worker helping me with my finances?
+
+[[That's what I was told to do.|Sally.Day1Accept]]
+[[Yes, if you are alright with that.|Sally.Day1Accept]]
+[[No I'm busy right now.|Sally.Day1Deny]]
+[[I can't right now, I'm really busy.|Sally.Day1Deny]]
+
+===
+title: Sally.Day1Accept
+tags: 
+colorID: 0
+position: 821,-543
+---
+Sally: Great, Lets Start!
+===
+title: Sally.Day1Deny
+tags: 
+colorID: 0
+position: 853,175
+---
+Sally: Oh alright, maybe later then.
 ===
