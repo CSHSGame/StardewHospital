@@ -1,0 +1,7 @@
+title: Calandar
+tags: 
+colorID: 0
+position: 416,265
+---
+<<set $current_day = $current_day + 1>>
+===
