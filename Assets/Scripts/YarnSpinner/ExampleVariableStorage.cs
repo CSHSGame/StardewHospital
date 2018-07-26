@@ -63,6 +63,17 @@ public class ExampleVariableStorage : VariableStorageBehaviour
         ResetToDefaults ();
     }
 
+	void Start()
+	{
+		
+		foreach (var variable in defaultVariables) {
+			Debug.Log (variable.name);
+			Debug.Log (variable.value);
+
+		}
+
+	}
+
     /// Erase all variables and reset to default values
     public override void ResetToDefaults ()
     {
@@ -149,6 +160,10 @@ public class ExampleVariableStorage : VariableStorageBehaviour
             }
             debugTextView.text = stringBuilder.ToString ();
         }
+
+
     }
+
+
 
 }
