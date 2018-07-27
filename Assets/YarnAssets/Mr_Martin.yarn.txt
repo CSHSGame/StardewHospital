@@ -12,23 +12,54 @@ tags:
 colorID: 0
 position: 148,402
 ---
-Enter
+[[Mr. Martin: What in the..?! Who are you?! Get of my room! this is my room!!|Fail]]
 ===
 title: knock
 tags: 
 colorID: 0
 position: 545,526
 ---
-Knock knock
-->...yes? Who is it?
-[[Mr. Martin may I come in?]]
-[[Mr. Martin, my name is (player). I'm a new PSW here at Sunnyview - I just wanted to introduce myself]]
+Knock knock...
+Mr. Martin: ...yes? Who is it?
+[[Mr. Martin may I come in?|TooVague]]
+[[Mr. Martin, my name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn]]
 [[Nevermind]]
 ===
 title: nevermind
 tags: 
 colorID: 0
-position: 849,387
+position: 941,414
 ---
-
+<<Stop>>
+===
+title: Fail
+tags: 
+colorID: 0
+position: 144,677
+---
+Mr. Martin slams the door.
+<<Stop>>
+===
+title: TooVague
+tags: 
+colorID: 0
+position: 428,866
+---
+Mr. Martin: What? Do I know you?? Go away!
+[[Mr. Martin I'm so sorry! My name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn]]
+===
+title: InvitedIn
+tags: 
+colorID: 0
+position: 945,679
+---
+Mr. Martin: ...
+-> Mr. Martin: Alright, come in.
+===
+title: Node28
+tags: 
+colorID: 0
+position: 950,932
+---
+Empty Text
 ===
