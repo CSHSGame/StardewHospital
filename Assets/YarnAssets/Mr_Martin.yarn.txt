@@ -1,0 +1,34 @@
+title: Mr_Martin
+tags: 
+colorID: 0
+position: 544,269
+---
+[[Enter Mr. Martin's room|enterUnannounced]]
+[[Knock on Mr. Martin's door|knock]]
+[[Nevermind|nevermind]]
+===
+title: enterUnannounced
+tags: 
+colorID: 0
+position: 148,402
+---
+Enter
+===
+title: knock
+tags: 
+colorID: 0
+position: 545,526
+---
+Knock knock
+->...yes? Who is it?
+[[Mr. Martin may I come in?]]
+[[Mr. Martin, my name is (player). I'm a new PSW here at Sunnyview - I just wanted to introduce myself]]
+[[Nevermind]]
+===
+title: nevermind
+tags: 
+colorID: 0
+position: 849,387
+---
+
+===
