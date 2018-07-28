@@ -5,7 +5,7 @@ position: 544,269
 ---
 [[Enter Mr. Martin's room|enterUnannounced]]
 [[Knock on Mr. Martin's door|knock]]
-[[Nevermind|nevermind]]
+[[Nevermind|Nevermind]]
 ===
 title: enterUnannounced
 tags: 
@@ -23,9 +23,9 @@ Knock knock...
 Mr. Martin: ...yes? Who is it?
 [[Mr. Martin may I come in?|TooVague]]
 [[Mr. Martin, my name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn]]
-[[Nevermind]]
+[[Nevermind|Nevermind]]
 ===
-title: nevermind
+title: Nevermind
 tags: 
 colorID: 0
 position: 941,414
@@ -53,13 +53,14 @@ tags:
 colorID: 0
 position: 945,679
 ---
-Mr. Martin: ...
--> Mr. Martin: Alright, come in.
+Mr. Martin- ...
+Mr. Martin- Alright, come in.
+[[Thanks Mr. Martin|Enter]]
 ===
-title: Node28
+title: Enter
 tags: 
 colorID: 0
 position: 950,932
 ---
-Empty Text
+
 ===
