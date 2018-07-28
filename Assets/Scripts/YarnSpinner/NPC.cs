@@ -32,6 +32,19 @@ using UnityEngine.Serialization;
 namespace Yarn.Unity.Example {
     public class NPC : MonoBehaviour {
 
+        public enum Characters
+        {
+            Martin,
+            MartinDoor,
+            Yousaf,
+            Stein,
+            Secretary,
+        }
+
+        public Characters thisCharacter;
+
+        public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
+
         public string characterName = "";
 
         [FormerlySerializedAs("startNode")]
@@ -45,12 +58,20 @@ namespace Yarn.Unity.Example {
             if (scriptToLoad != null) {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
-
         }
 
         // Update is called once per frame
         void Update () {
+            CheckYousafLeft();
+            Debug.Log(variableStorage.GetValue("$yousaf_left").AsBool);
+        }
 
+        void CheckYousafLeft()
+        {
+            if ((variableStorage.GetValue("$yousaf_left").AsBool == true)&&(thisCharacter == Characters.Yousaf))
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
 

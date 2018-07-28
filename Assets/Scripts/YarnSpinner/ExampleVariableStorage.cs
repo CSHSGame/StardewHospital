@@ -65,7 +65,8 @@ public class ExampleVariableStorage : VariableStorageBehaviour
 
 	void Start()
 	{
-		
+
+       
 		foreach (var variable in defaultVariables) {
 			Debug.Log (variable.name);
 			Debug.Log (variable.value);
@@ -160,7 +161,6 @@ public class ExampleVariableStorage : VariableStorageBehaviour
             }
             debugTextView.text = stringBuilder.ToString ();
         }
-
 
     }
 
