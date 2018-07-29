@@ -1,0 +1,67 @@
+title: Yousaf
+tags: 
+colorID: 0
+position: 406,346
+---
+(As you approach Mr. Yousaf you see that he is packing his cothes into a suitcase)
+->Good morning, Mr. Yousaf. How are you doing?
+->Good morning, Mr. Yousaf. My name is [Player]. How are you today?
+Yousaf: I'm OK. I'm just getting packed up.
+Skip:
+Player: Why are you packing up your things?
+Skip:
+Yousaf: I'm getting tired of staying here and I would like to go back home.
+-> You can't do that. You live here now.
+    Yousaf: No I need to leave. <<set $rude_to_yousaf = true>>
+-> Let me help you pack up.
+    Yousaf: Thank you for helping me. <<set $helpful_to_yousaf = true>>
+
+
+<<if $rude_to_yousaf == true>>
+[[Yousaf.Rude]]
+<<elseif $helpful_to_yousaf == true>>
+[[Yousaf.Helpful]]
+<<endif>>
+
+===
+title: Yousaf.Rude
+tags: 
+colorID: 0
+position: 791,459
+---
+You were rude
+===
+title: Yousaf.Helpful
+tags: 
+colorID: 0
+position: 59,479
+---
+(You help Yousaf finish packing up his bags)
+Skip:
+Yousaf: Thank you again... Um... Who are you again?
+Skip:
+Player: Oh I am [Player]. I'm the new Personal Support Worker in training. 
+Skip: 
+Yousaf: Nice to meet you [Player]. My name is Hakim Yousaf.
+Skip:
+Player: It's nice to meet you too Mr. Yousaf.
+Skip:
+Yousaf: Well I am off to see my wife and then head home. 
+Skip:
+->Ok Bye.
+    (Mr.Yousaf leaves the room and exits the care facility.) [[Yousaf.Left]]
+->But Mr. Yousaf, you haven't had breakfast yet. Aren't you hungry?
+    Yousaf: I am starting to get hungry.
+Skip:
+Player: Well lets head to the cafeteria and get breakfast together.
+    
+===
+title: Yousaf.Left
+tags: 
+colorID: 0
+position: -264,694
+---
+<<set $yousaf_left = true>>
+(Mr. Yousaf left the building and was never heard from again.)
+
+===

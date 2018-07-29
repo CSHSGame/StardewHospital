@@ -1,0 +1,60 @@
+title: Stein.Stein
+tags: 
+colorID: 0
+position: 543,269
+---
+(Mrs Stein is staring at a corner of the room with a distant look in her eye.)
+Skip:
+Player: Hello Mrs Stein, may I come in?
+Skip: 
+Mrs Stein: Oh... Hello there. Yes of course, please do come in. Have we met before?
+Skip: 
+Player: No ma'am, today is my first day at Baycrest, I'm doing my school placement here to become a PSW. My name is (Player).
+[[I was told you have some health issues that have become... pressing|tooSoon]]
+[[How are you feeling today?|feeling]]
+[[The secretary mentioned you've been having a tough time|privacy]]
+===
+title: tooSoon
+tags: 
+colorID: 0
+position: 897,452
+---
+That's surely not a topic I'm keen to discuss with a complete stranger. Perhaps you should show yourself out.<<set $talked_to_stein = true>>
+===
+title: privacy
+tags: 
+colorID: 0
+position: 545,527
+---
+Hmm, I really wish that secretary wouldn't blab about be to everyone who walked in the door! In any event, yes, it's been a tough time for me. I don't think it's something I really wish to get into right now. 
+[[Are you sure? I'm a good listener!|pushy]]
+[[Of course. If you ever do find you want someone to talk to, please don't hesitate to ask.|appreciative]]
+[[I heard about your condition, I'm so sorry|tooSoon]]
+===
+title: appreciative
+tags: 
+colorID: 0
+position: 1103,784
+---
+Mrs Stein: Thank you, that's very kind of you. Will you be back tomorrow?
+->Yes Mrs Stein, I'll be here every day.
+    Mrs Stein: Wonderful. Do come see me tomorrow, I imagine I'll be in better spirits then. 
+<<set $talked_to_stein = true>>
+===
+title: pushy
+tags: 
+colorID: 0
+position: 544,777
+---
+I'm sure you are dear. Please Come visit me again soon.
+<<set $talked_to_Stein = true>>
+===
+title: feeling
+tags: 
+colorID: 0
+position: 1172,134
+---
+I've been better. 
+[[I'm sorry to hear that|appreciative]]
+[[I was told you have some health issues that have become... pressing|tooSoon]]
+===

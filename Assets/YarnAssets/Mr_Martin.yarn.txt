@@ -3,6 +3,9 @@ tags:
 colorID: 0
 position: 544,269
 ---
+<<if $talked_to_Martin == true>>
+[[alreadySpoke]]
+<<endif>>
 [[Enter Mr. Martin's room|enterUnannounced]]
 [[Knock on Mr. Martin's door|knock]]
 [[Nevermind|Nevermind]]
@@ -20,6 +23,7 @@ colorID: 0
 position: 545,526
 ---
 Knock knock...
+Skip:
 Mr. Martin: ...yes? Who is it?
 [[Mr. Martin may I come in?|TooVague]]
 [[Mr. Martin, my name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn]]
@@ -38,7 +42,7 @@ colorID: 0
 position: 144,677
 ---
 Mr. Martin slams the door.
-<<Stop>>
+<<set $talked_to_Martin = true>>
 ===
 title: TooVague
 tags: 
@@ -54,13 +58,53 @@ colorID: 0
 position: 945,679
 ---
 Mr. Martin- ...
+Skip:
 Mr. Martin- Alright, come in.
 [[Thanks Mr. Martin|Enter]]
 ===
 title: Enter
 tags: 
 colorID: 0
-position: 950,932
+position: 943,927
 ---
-
+Mr. Martin: I wasn't expecting any visitors today...
+[[I'm sorry for coming by unannounced, today is my first day and I just wanted to say hello.|Martin_Polite]]
+[[Life is full of surprises!|Martin_Rude]]
+===
+title: Martin_Rude
+tags: 
+colorID: 0
+position: 613,1144
+---
+Mr. Martin: hmm.. yes. Some less pleasant than others. 
+Skip:
+(Mr. Martin closes the door in your face)<<set $talked_to_Martin = true>>
+===
+title: Martin_Polite
+tags: 
+colorID: 0
+position: 946,1196
+---
+That's quite alright, nice to see a new face around here. Say, if you're here tomorrow I'd love to show you around Baycrest.
+-> That sounds great, I'll be around tomorrow afternoon, let's try to make that happen.
+    Mr. Martin: Um.. ok.. I guess I'll see you sometime.<<set $vague_Martin = true>>
+-> Sounds good, how about 1pm?
+    Mr.Martin: Excellent, 1300 sharp then.<<set $1pm_Martin = true>>
+    -> ....that means 1, right?
+        Mr. Martin: Yes sir it most certainly does.        
+-> Ok, let me discuss my schedule with my supervisor, and I'll let you know what a good time would be. 
+    Of course! Chain of command is very important. <<set $1will_confirm_Martin = true>>
+-> Sure, what would be a good time for you?
+    Mr.Martin: 7am.<<set $7am_Martin = true>>
+    -> Hm.. Ok then, bright and early.
+Mr. Martin: Alright then, until tomorrow.
+-> Great, see you then.
+-> Take care, it was nice to see you.<<set $talked_to_Martin = true>>
+===
+title: alreadySpoke
+tags: 
+colorID: 0
+position: 936,112
+---
+I probably shouldn't bother him again today.
 ===
