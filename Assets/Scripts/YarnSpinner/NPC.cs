@@ -45,6 +45,8 @@ namespace Yarn.Unity.Example {
 
         public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
 
+        public FadeObjectInOut roomShade;
+
         public string characterName = "";
 
         [FormerlySerializedAs("startNode")]
@@ -63,7 +65,8 @@ namespace Yarn.Unity.Example {
         // Update is called once per frame
         void Update () {
             CheckYousafLeft();
-            Debug.Log(variableStorage.GetValue("$yousaf_left").AsBool);
+            CheckToOpenDoor();
+            
         }
 
         void CheckYousafLeft()
@@ -71,6 +74,19 @@ namespace Yarn.Unity.Example {
             if ((variableStorage.GetValue("$yousaf_left").AsBool == true)&&(thisCharacter == Characters.Yousaf))
             {
                 this.gameObject.SetActive(false);
+            }
+        }
+
+        void CheckToOpenDoor()
+        {
+            if ((variableStorage.GetValue("$open_door").AsBool == true) &&(thisCharacter == Characters.MartinDoor))
+            {
+                this.gameObject.SetActive(false);
+                roomShade.FadeOut();
+            }
+            else if((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.MartinDoor))
+            {
+                
             }
         }
     }
