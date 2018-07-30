@@ -4,16 +4,16 @@ colorID: 0
 position: 148,-5
 ---
 <<if $talked_to_Martin_Door == true>>
-[[alreadySpoke]]
+[[alreadySpoke_Door]]
 <<endif>>
 [[Enter Mr. Martin's room|enterUnannounced_door]]
 [[Knock on Mr. Martin's door|knock_door]]
 [[Nevermind|Nevermind_door]]
 ===
-title: alreadySpoke_door
+title: alreadySpoke_Door
 tags: 
 colorID: 0
-position: 1166,277
+position: 1735,283
 ---
 I probably shouldn't bother him again today.
 ===
@@ -54,6 +54,7 @@ colorID: 0
 position: 671,-22
 ---
 [[Mr. Martin: What in the..?! Who are you?! Get of my room! this is my room!!|Fail_door]]
+<<set $open_door = false>>
 ===
 title: Fail_door
 tags: 
@@ -62,7 +63,6 @@ position: 1185,-27
 ---
 Mr. Martin slams the door.
 <<set $talked_to_Martin_Door = true>>
-<<set $open_door = false>>
 ===
 title: TooVague_door
 tags: 

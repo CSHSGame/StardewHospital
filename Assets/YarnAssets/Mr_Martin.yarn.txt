@@ -12,7 +12,7 @@ Mr.Martin: Please leave me alone.
 <<elseif $1pm_Martin == true>>
 Mr.Martin: I'll see you tomorrow at 1300.
 <<elseif $7am_Martin == true>>
-Mr.Martin: I'll see you tomorrow at 700.
+Mr.Martin: I'll see you tomorrow at 0700.
 <<elseif $vague_Martin == true>>
 Mr.Martin: Come back tomorrow for the tour.
 <<elseif $1will_confirm_Martin == true>>
@@ -35,7 +35,7 @@ tags:
 colorID: 0
 position: 1396,685
 ---
-That's quite alright, nice to see a new face around here. Say, if you're here tomorrow I'd love to show you around Baycrest.
+That's quite alright, nice to see a new face around here. Say, if you're here tomorrow I'd love to show you around Baycrest. <<set $rude_to_Martin = false>>
 -> That sounds great, I'll be around tomorrow afternoon, let's try to make that happen.
     Mr. Martin: Um.. ok.. I guess I'll see you sometime.<<set $vague_Martin = true>>
 -> Sounds good, how about 1pm?
