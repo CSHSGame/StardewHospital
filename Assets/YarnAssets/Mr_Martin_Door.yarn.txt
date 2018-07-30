@@ -62,6 +62,7 @@ position: 1185,-27
 ---
 Mr. Martin slams the door.
 <<set $talked_to_Martin_Door = true>>
+<<set $open_door = false>>
 ===
 title: TooVague_door
 tags: 
