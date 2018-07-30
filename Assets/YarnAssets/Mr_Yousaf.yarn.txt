@@ -10,9 +10,9 @@ Yousaf: I'm OK. I'm just getting packed up.
 Skip:
 Player: Why are you packing up your things?
 Skip:
-Yousaf: I'm getting tired of staying here and I would like to go back home.
+Yousaf: I'm getting tired of staying here and I would like to go back home and see my wife.
 -> You can't do that. You live here now.
-    Yousaf: No I need to leave. <<set $rude_to_yousaf = true>>
+    Yousaf: No I need to leave. Leave me alone. <<set $rude_to_yousaf = true>>
 -> Let me help you pack up.
     Yousaf: Thank you for helping me. <<set $helpful_to_yousaf = true>>
 
@@ -29,7 +29,7 @@ tags:
 colorID: 0
 position: 791,459
 ---
-You were rude
+(Mr. Youssaf Goes back to packing his things)
 ===
 title: Yousaf.Helpful
 tags: 
