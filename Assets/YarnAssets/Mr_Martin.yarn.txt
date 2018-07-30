@@ -1,91 +1,41 @@
 title: Mr_Martin
 tags: 
 colorID: 0
-position: 544,269
+position: 850,467
 ---
-<<if $talked_to_Martin == true>>
-[[alreadySpoke]]
-<<endif>>
-[[Enter Mr. Martin's room|enterUnannounced]]
-[[Knock on Mr. Martin's door|knock]]
-[[Nevermind|Nevermind]]
-===
-title: enterUnannounced
-tags: 
-colorID: 0
-position: 148,402
----
-[[Mr. Martin: What in the..?! Who are you?! Get of my room! this is my room!!|Fail]]
-===
-title: knock
-tags: 
-colorID: 0
-position: 545,526
----
-Knock knock...
-Skip:
-Mr. Martin: ...yes? Who is it?
-[[Mr. Martin may I come in?|TooVague]]
-[[Mr. Martin, my name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn]]
-[[Nevermind|Nevermind]]
-===
-title: Nevermind
-tags: 
-colorID: 0
-position: 941,414
----
-<<Stop>>
-===
-title: Fail
-tags: 
-colorID: 0
-position: 144,677
----
-Mr. Martin slams the door.
-<<set $talked_to_Martin = true>>
-===
-title: TooVague
-tags: 
-colorID: 0
-position: 428,866
----
-Mr. Martin: What? Do I know you?? Go away!
-[[Mr. Martin I'm so sorry! My name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn]]
-===
-title: InvitedIn
-tags: 
-colorID: 0
-position: 945,679
----
-Mr. Martin- ...
-Skip:
-Mr. Martin- Alright, come in.
-[[Thanks Mr. Martin|Enter]]
-===
-title: Enter
-tags: 
-colorID: 0
-position: 943,927
----
+<<if $talked_to_Martin == false>>
 Mr. Martin: I wasn't expecting any visitors today...
 [[I'm sorry for coming by unannounced, today is my first day and I just wanted to say hello.|Martin_Polite]]
 [[Life is full of surprises!|Martin_Rude]]
+<<elseif $rude_to_Martin == true>>
+Mr.Martin: Please leave me alone.
+<<elseif $1pm_Martin == true>>
+Mr.Martin: I'll see you tomorrow at 1300.
+<<elseif $7am_Martin == true>>
+Mr.Martin: I'll see you tomorrow at 0700.
+<<elseif $vague_Martin == true>>
+Mr.Martin: Come back tomorrow for the tour.
+<<elseif $1will_confirm_Martin == true>>
+Mr.Martin: Come back tomorrow for the tour.
+<<endif>>
 ===
 title: Martin_Rude
 tags: 
 colorID: 0
-position: 613,1144
+position: 261,728
 ---
 Mr. Martin: hmm.. yes. Some less pleasant than others. 
 Skip:
-(Mr. Martin closes the door in your face)<<set $talked_to_Martin = true>>
+Mr. Martin: On second thought. I would like you to leave
+<<set $talked_to_Martin = true>>
+<<set $rude_to_Martin = true>>
 ===
 title: Martin_Polite
 tags: 
 colorID: 0
-position: 946,1196
+position: 1396,685
 ---
-That's quite alright, nice to see a new face around here. Say, if you're here tomorrow I'd love to show you around Baycrest.
+That's quite alright, nice to see a new face around here. Say, if you're here tomorrow I'd love to show you around Baycrest. <<set $rude_to_Martin = false>>
 -> That sounds great, I'll be around tomorrow afternoon, let's try to make that happen.
     Mr. Martin: Um.. ok.. I guess I'll see you sometime.<<set $vague_Martin = true>>
 -> Sounds good, how about 1pm?
@@ -99,12 +49,5 @@ That's quite alright, nice to see a new face around here. Say, if you're here to
     -> Hm.. Ok then, bright and early.
 Mr. Martin: Alright then, until tomorrow.
 -> Great, see you then.
--> Take care, it was nice to see you.<<set $talked_to_Martin = true>>
-===
-title: alreadySpoke
-tags: 
-colorID: 0
-position: 936,112
----
-I probably shouldn't bother him again today.
+-> Take care, it was nice to see you. <<set $talked_to_Martin = true>>
 ===

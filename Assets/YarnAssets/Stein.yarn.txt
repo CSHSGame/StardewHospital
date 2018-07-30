@@ -19,7 +19,9 @@ tags:
 colorID: 0
 position: 897,452
 ---
-That's surely not a topic I'm keen to discuss with a complete stranger. Perhaps you should show yourself out.<<set $talked_to_stein = true>>
+That's surely not a topic I'm keen to discuss with a complete stranger. Perhaps you should show yourself out.
+<<set $talked_to_stein = true>>
+<<set $SteinTooSoon = true>>
 ===
 title: privacy
 tags: 
@@ -40,6 +42,7 @@ Mrs Stein: Thank you, that's very kind of you. Will you be back tomorrow?
 ->Yes Mrs Stein, I'll be here every day.
     Mrs Stein: Wonderful. Do come see me tomorrow, I imagine I'll be in better spirits then. 
 <<set $talked_to_stein = true>>
+<<set $SteinGood = true>>
 ===
 title: pushy
 tags: 
@@ -48,6 +51,7 @@ position: 544,777
 ---
 I'm sure you are dear. Please Come visit me again soon.
 <<set $talked_to_Stein = true>>
+<<set $SteinTooPushy = true>>
 ===
 title: feeling
 tags: 
