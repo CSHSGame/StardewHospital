@@ -37,8 +37,10 @@ public class Review : MonoBehaviour {
 	public GameObject backArrow;
 
 
+    public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
+    //variableStorage.GetValue("$variable_name").AsBool
 
-	void OnMouseDown()
+    void OnMouseDown()
 		{
 			print ("click");
 			if (pageNumber < 3 && pageNumber > 0)
