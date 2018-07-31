@@ -103,7 +103,7 @@ public class Review : MonoBehaviour {
 		//Mrs Stein Fail
 		if (variableStorage.GetValue("$SteinTooSoon").AsBool == true)
 		{
-			steinText.text = "     Mrs. Stein was quite upset with you today. You were just supposed to stop by and introduce yourself - what in the world made you hink it would be appropriate to bring up her health? Especially after being informed that it was a sensitive topic. We expect a little more thoughtfulness and empathy from you moving forward. ";
+			steinText.text = "     Mrs. Stein was quite upset with you today. You were just supposed to stop by and introduce yourself - what in the world made you think it would be appropriate to bring up her health? Especially after being informed that it was a sensitive topic. We expect a little more thoughtfulness and empathy from you moving forward. ";
 		}
 		//Mrs Stein too pushy		
 		if (variableStorage.GetValue("$SteinTooPushy").AsBool == true)

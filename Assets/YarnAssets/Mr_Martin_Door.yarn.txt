@@ -45,7 +45,7 @@ Knock knock...
 Skip:
 Mr. Martin: ...yes? Who is it?
 [[Mr. Martin may I come in?|TooVague_door]]
-[[Mr. Martin, my name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn_door]]
+[[Mr. Martin, my name is David. I'm the new PSW here at Baycrest - I just wanted to introduce myself|InvitedIn_door]]
 [[Nevermind|Nevermind_door]]
 ===
 title: enterUnannounced_door
@@ -70,5 +70,5 @@ colorID: 0
 position: 907,849
 ---
 Mr. Martin: What? Do I know you?? Go away!
-[[Mr. Martin I'm so sorry! My name is (player). I'm the new PSW here at Sunnyview - I just wanted to introduce myself|InvitedIn_door]]
+[[Mr. Martin I'm so sorry! My name is David. I'm the new PSW here at Baycrest - I just wanted to introduce myself|InvitedIn_door]]
 ===

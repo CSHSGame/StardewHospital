@@ -4,20 +4,22 @@ colorID: 0
 position: 850,467
 ---
 <<if $talked_to_Martin == false>>
+<<set $MartinFace = true>>
 Mr. Martin: I wasn't expecting any visitors today...
 [[I'm sorry for coming by unannounced, today is my first day and I just wanted to say hello.|Martin_Polite]]
 [[Life is full of surprises!|Martin_Rude]]
 <<elseif $rude_to_Martin == true>>
-Mr.Martin: Please leave me alone.
+Mr.Martin: Please leave me alone.<<set $MartinFace = false>>
 <<elseif $1pm_Martin == true>>
-Mr.Martin: I'll see you tomorrow at 1300.
+Mr.Martin: I'll see you tomorrow at 1300.<<set $MartinFace = false>>
 <<elseif $7am_Martin == true>>
-Mr.Martin: I'll see you tomorrow at 0700.
+Mr.Martin: I'll see you tomorrow at 0700.<<set $MartinFace = false>>
 <<elseif $vague_Martin == true>>
-Mr.Martin: Come back tomorrow for the tour.
+Mr.Martin: Come back tomorrow for the tour.<<set $MartinFace = false>>
 <<elseif $1will_confirm_Martin == true>>
-Mr.Martin: Come back tomorrow for the tour.
+Mr.Martin: Come back tomorrow for the tour.<<set $MartinFace = false>>
 <<endif>>
+
 ===
 title: Martin_Rude
 tags: 
@@ -26,9 +28,10 @@ position: 261,728
 ---
 Mr. Martin: hmm.. yes. Some less pleasant than others. 
 Skip:
-Mr. Martin: On second thought. I would like you to leave
+Mr. Martin: On second thought, I think I would like you to please leave.
 <<set $talked_to_Martin = true>>
 <<set $rude_to_Martin = true>>
+<<set $MartinFace = false>>
 ===
 title: Martin_Polite
 tags: 
@@ -50,4 +53,5 @@ That's quite alright, nice to see a new face around here. Say, if you're here to
 Mr. Martin: Alright then, until tomorrow.
 -> Great, see you then.
 -> Take care, it was nice to see you. <<set $talked_to_Martin = true>>
+<<set $MartinFace = false>>
 ===
