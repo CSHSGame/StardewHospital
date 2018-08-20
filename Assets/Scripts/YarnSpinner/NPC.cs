@@ -39,6 +39,9 @@ namespace Yarn.Unity.Example {
             Yousaf,
             Stein,
             Secretary,
+            RedTeam,
+            BlueTeam,
+            GreenTeam,
         }
 
         public Characters thisCharacter;

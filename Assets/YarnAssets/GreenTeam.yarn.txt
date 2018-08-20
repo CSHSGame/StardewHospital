@@ -1,0 +1,7 @@
+title: GreenTeamStart
+tags: 
+colorID: 0
+position: 540,260
+---
+Green Team Text
+===
