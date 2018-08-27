@@ -1,0 +1,74 @@
+title: Mr_Martin_Door
+tags: 
+colorID: 0
+position: 148,-5
+---
+<<if $talked_to_Martin_Door == true>>
+[[alreadySpoke_Door]]
+<<endif>>
+[[Enter Mr. Martin's room|enterUnannounced_door]]
+[[Knock on Mr. Martin's door|knock_door]]
+[[Nevermind|Nevermind_door]]
+===
+title: alreadySpoke_Door
+tags: 
+colorID: 0
+position: 1735,283
+---
+I probably shouldn't bother him again today.
+===
+title: InvitedIn_door
+tags: 
+colorID: 0
+position: 988,531
+---
+Mr. Martin- ...
+Skip:
+Mr. Martin- Alright, come in.
+<<set $open_door = true>>
+<<stop>>
+
+===
+title: Nevermind_door
+tags: 
+colorID: 0
+position: -259,291
+---
+<<Stop>>
+===
+title: knock_door
+tags: 
+colorID: 0
+position: 190,573
+---
+Knock knock...
+Skip:
+Mr. Martin: ...yes? Who is it?
+[[Mr. Martin may I come in?|TooVague_door]]
+[[Mr. Martin, my name is David. I'm the new PSW here at Baycrest - I just wanted to introduce myself|InvitedIn_door]]
+[[Nevermind|Nevermind_door]]
+===
+title: enterUnannounced_door
+tags: 
+colorID: 0
+position: 671,-22
+---
+[[Mr. Martin: What in the..?! Who are you?! Get of my room! this is my room!!|Fail_door]]
+<<set $open_door = false>>
+===
+title: Fail_door
+tags: 
+colorID: 0
+position: 1185,-27
+---
+Mr. Martin slams the door.
+<<set $talked_to_Martin_Door = true>>
+===
+title: TooVague_door
+tags: 
+colorID: 0
+position: 907,849
+---
+Mr. Martin: What? Do I know you?? Go away!
+[[Mr. Martin I'm so sorry! My name is David. I'm the new PSW here at Baycrest - I just wanted to introduce myself|InvitedIn_door]]
+===

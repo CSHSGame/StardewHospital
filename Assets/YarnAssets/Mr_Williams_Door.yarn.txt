@@ -1,0 +1,97 @@
+title: Mr_Williams_Door
+tags: 
+colorID: 0
+position: 465,-553
+---
+<<if $Knock_Wait_Williams == true>>
+<<stop>>
+<<endif>>
+[[Enter Mr. William's room|Enter_Unannounced_Door_Williams]]
+[[Knock on Mr. Williams's door and enter|Knock_Door_Enter_Williams]]
+[[Knock on Mr. Williams's door and wait for a response|knock_door_Wait_Williams]]<<set $Knock_Wait_Williams = true>>
+[[Nevermind|Nevermind_door_Williams]]
+===
+title: Nevermind_door_Williams
+tags: 
+colorID: 0
+position: 472,476
+---
+<<Stop>>
+===
+title: knock_door_Wait_Williams
+tags: 
+colorID: 0
+position: 917,-96
+---
+<<set $Knock_Wait_Williams = true>>
+**Knock, knock**
+Skip:
+Mr.Williams: Yes?
+Skip:
+Hi Mr Williams, it's Eman. May I come in?.
+Skip:
+Mr. Williams: Okay, come in! <<set $open_door = true>>
+<<stop>>
+===
+title: Enter_Unannounced_Door_Williams
+tags: 
+colorID: 0
+position: -200,-382
+---
+<<set $No_Knock_Williams = true>>
+<<set $entered_unannounced_Mr_Williams = true>>
+[[Mr. Williams: What in the..?! Who are you?? Get out!!|Fail_Door_Williams]] <<set $open_door = true>>
+
+===
+title: Fail_Door_Williams
+tags: 
+colorID: 0
+position: -204,-123
+---
+**Mr. Williams slams the door.**<<set $open_door = false>>
+Skip:
+Hmm, that didn't go well at all.. Let's try something different.
+<<if $entered_unannounced_Mr_Williams == true>>
+[[Unannounced_Second_Chance]]
+<<endif>>
+
+<<if $entered_no_intro_Mr_Williams == true>>
+[[No_Intro_Second_Chance]]
+<<endif>>
+===
+title: Knock_Door_Enter_Williams
+tags: 
+colorID: 0
+position: 332,-211
+---
+<<set $Knock_Barge_Williams = true>>
+<<set $entered_no_intro_Mr_Williams = true>>
+
+Knock, knock Mr. Williams!
+Skip:
+Mr.Williams: Yes?<<set $open_door = true>>
+Skip:
+Hi there
+Skip:
+Mr. Williams: Help! there's an intruder in my room!! <<set $open_door = false>>
+[[Fail_Door_Williams]]
+===
+title: No_Intro_Second_Chance
+tags: 
+colorID: 0
+position: 103,148
+---
+[[Knock on Mr. Williams's door and wait for a response|knock_door_Wait_Williams]]
+[[Nevermind|Nevermind_door_Williams]]
+===
+title: Unannounced_Second_Chance
+tags: 
+colorID: 0
+position: 651,147
+---
+<<if $entered_no_intro_Mr_Williams = false>>
+[[Knock on Mr. Williams's door and enter|Knock_Door_Enter_Williams]]
+<<endif>>
+[[Knock on Mr. Williams's door and wait for a response|knock_door_Wait_Williams]]
+[[Nevermind|Nevermind_door_Williams]]
+===

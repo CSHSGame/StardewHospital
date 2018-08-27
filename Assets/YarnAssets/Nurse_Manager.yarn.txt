@@ -1,0 +1,18 @@
+title: Nurse_Manager
+tags: 
+colorID: 0
+position: 540,260
+---
+<<set $SecretaryFace = true>>
+
+Nurse Manager: Hi Eman! How are you feeling today?
+Skip:
+I'm okay... I've been thinking a lot about yesterday. I read the material you gave me - I'm hoping to do better today with Mr. Williams than I did did yesterday. Thanks again for stepping in. 
+Skip:
+Nurse Manager: No problem, I'm sure you'll do well.
+Skip:
+Nurse Manager: Can you see to it that he gets some breakfast? He can be a little difficult before he's eaten, but as we saw yesterday, a little empathy will go a long way.
+Skip:
+Great, I'll go see him right now. Thanks!
+<<set $SecretaryFace = false>>
+===

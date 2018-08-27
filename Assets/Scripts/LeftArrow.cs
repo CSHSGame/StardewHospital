@@ -14,6 +14,6 @@ public GameObject rightArrow;
 	void OnMouseDown()
 		{
 			print("clickedLeft");
-			rightArrow.GetComponent<Review>().pageNumber--;			
+			rightArrow.GetComponent<FlipRight>().pageNumber--;			
 		}
 	}

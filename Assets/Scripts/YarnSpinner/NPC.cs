@@ -36,9 +36,12 @@ namespace Yarn.Unity.Example {
         {
             Martin,
             MartinDoor,
+            Williams,
+            WilliamsDoor,
             Yousaf,
             Stein,
             Secretary,
+            NurseManager,
             RedTeam,
             BlueTeam,
             GreenTeam,
@@ -84,13 +87,31 @@ namespace Yarn.Unity.Example {
         {
             if ((variableStorage.GetValue("$open_door").AsBool == true) &&(thisCharacter == Characters.MartinDoor))
             {
-                this.gameObject.SetActive(false);
+                gameObject.SetActive(false);
                 roomShade.FadeOut();
             }
             else if((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.MartinDoor))
             {
-                
+                roomShade.FadeIn();
             }
+
+            if ((variableStorage.GetValue("$open_door").AsBool == true) && (thisCharacter == Characters.WilliamsDoor))
+            {
+                print("Door Disabled Williams");
+                roomShade.FadeOut();
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                //talkToNode = null;
+                gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            }
+            if ((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.WilliamsDoor))
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                gameObject.GetComponent<BoxCollider2D>().enabled = true; 
+                roomShade.FadeIn();
+            }
+
+
         }
     }
 

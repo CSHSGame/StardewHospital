@@ -1,0 +1,192 @@
+title: Mr_Williams
+tags: 
+colorID: 0
+position: 1226,203
+---
+<<if $Bringing_Breakfast_William = true>>
+[[Brought_Breakfast_Williams]]
+<<endif>>
+
+<<if $breakfast_Fail_Williams == true>>
+[[Second_Attempt_Williams]]
+<<endif>>
+
+ <<if $return_Later_Williams == true>>
+[[Return_Later_Williams]]
+<<endif>>
+
+<<set $MartinFace = true>>
+
+Good morning, Mr. Williams. 
+Skip:
+Mr. Williams: Good morning.
+Skip:
+I'd like to walk with you to the dining room for breakfast.
+Skip:
+Mr. Willaims: No!  I don't want breakfast. Leave me alone.  
+[[Entice Mr. Williams with the promise of sausage and pancakes|SausageAndPancakes]]
+[[Pick up and comment on the photo of Mr. William's wife|Photo]]
+[[Offer to bring Mr. Williams his breakfast|BringBreakfast]]
+===
+title: SausageAndPancakes
+tags: 
+colorID: 0
+position: 906,556
+---
+<<set $Sausage_Williams = true>>
+It's sausage and pancakes today. I heard that was your favourite.
+Skip:
+Mr. Williams: I said no! Leave my room now.
+Skip: 
+(Hmm, that didn't go well.. I should take a second to review my notes on Mr. Martin.) <<set $breakfast_Fail_Williams = true>>
+<<set $MartinFace = false>>
+
+<<stop>>
+
+===
+title: BringBreakfast
+tags: 
+colorID: 0
+position: 1631,496
+---
+I know it's quite early.  Would you like me to bring breakfast to your room instead?
+Skip:
+Mr. Williams: That would be very nice my dear.<<set $breakfast_Fail_Williams = false>>
+Skip:
+Okay then, I'll go and get your breakfast. <<set $Bringing_Breakfast_William = true>>
+Skip: 
+(I can pick up a meal for Mr. Williams from the table near the front desk) <<set $return_Later_Williams = false>>
+<<set $MartinFace = false>>
+
+<<stop>>
+===
+title: Photo
+tags: 
+colorID: 0
+position: 1234,596
+---
+<<set $photo_Williams = true>>
+**You pick a photograph on Mr. William's nightstand.**
+Skip:
+I heard you say yesterday that this was a picture of your wife.
+Skip:
+Mr. Williams: Put that down right now. That's my picture!<<set $photo_Williams = true>>
+[[Second_Attempt_Williams]]
+===
+title: Second_Attempt_Williams
+tags: 
+colorID: 0
+position: 1615,191
+---
+
+<<set $MartinFace = true>>
+
+<<if $photo_Williams == false>>
+Hey Mr. Williams, I'm so sorry about earlier..
+[[Comment on the photo of Mr. William's wife|Photo]]
+<<else>>
+Hey Mr. Williams, I'm so sorry about that.
+<<endif>>
+<<if $breakfast_Fail_Williams = false>>
+[[Entice Mr. Williams with the promise of sausage and pancakes|SausageAndPancakes]]
+<<endif>>
+[[Offer to bring Mr. Williams his breakfast|BringBreakfast]]
+===
+title: Brought_Breakfast_Williams
+tags: 
+colorID: 0
+position: -73,204
+---
+
+<<set $MartinFace = true>>
+Here's your breakfast Mr. Williams! It looks delicious! 
+Skip:
+Mr. Williams: I don't want it.<<set $Bringing_Breakfast_William = false>>
+[[But it's you're favourite! It smells so good!|Wont_Eat_Williams]]
+[[Sit up, now, Mr. Williams.  You don't want this food to get cold.|Throws_Tray_Williams]]
+[[I heard you say yesterday that this is a photo of your wife, Madeline. She's very Lovely.|Empathy_Williams]]
+===
+title: Empathy_Williams
+tags: 
+colorID: 0
+position: 194,499
+---
+(You put the tray down on his table while he admires the photo for a moment)
+Skip:
+I heard yesterday you say this is your wife, Madeline. She's very lovely.
+Skip:
+Mr. W. Yes she is. 
+Skip:
+Will you tell me more about her some time? 
+Skip:
+Mr. Williams: (Smiles) Sure.
+Skip:
+I'd like that. Mmm, this breakfast looks good. 
+Skip:
+Mr. Williams: (sits up) 
+Skip:
+Mr. Williams: I am feeling a bit hungry. 
+Skip:
+Mr. Williams: (Begins eaiting)
+Skip:
+Enjoy your breakfast, Mr. Williams, I'll see you a little later.
+skip:
+Mr. Williams: You can call me Arthur, dear. <<set $successWilliams = true>>
+<<set $MartinFace = false>>
+
+===
+title: Wont_Eat_Williams
+tags: 
+colorID: 0
+position: -543,502
+---
+Mr. Williams: I don't want it! Leave the tray on the table!
+Skip:
+Ok, Mr. Williams...<<set $return_Later_Williams = true>>
+<<set $MartinFace = false>>
+===
+title: Throws_Tray_Williams
+tags: 
+colorID: 0
+position: -183,502
+---
+Mr. Williams: What food.   
+Skip:
+Come on, Mr. Williams, You said you wanted me to bring it to your room. Won't you eat it for me?  
+Skip:
+Mr. Williams: No!
+Skip:
+(Mr. Williams throws a pillow on the floor, almost spilling the food) <<set $return_Later_Williams = true>>
+Skip: 
+...I'll return later when you're feeling better.
+<<set $MartinFace = false>>
+===
+title: Return_Later_Williams
+tags: 
+colorID: 0
+position: 448,510
+---
+(You approach Mr. Williams and look at the photo with him for a moment)
+Skip:
+I heard yesterday you say this is your wife, Madeline. She's very lovely.
+Skip:
+Mr. W. Yes she is. 
+Skip:
+Will you tell me more about her some time? 
+Skip:
+Mr. Williams: (Smiles) Sure.
+Skip:
+I'd like that. Mmm, this breakfast looks good. 
+Skip:
+Mr. Williams: (sits up) 
+Skip:
+Mr. Williams: I am feeling a bit hungry. 
+Skip:
+Mr. Williams: (Begins eaiting)
+Skip:
+Enjoy your breakfast, Mr. Williams, I'll see you a little later.
+skip:
+Mr. Williams: You can call me Arthur, dear. <<set $successWilliams = true>>
+<<set $MartinFace = false>>
+
+===
