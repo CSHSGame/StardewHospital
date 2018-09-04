@@ -20,16 +20,16 @@ public class CharacterController : MonoBehaviour {
     {
         //direction = new Vector3 (Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
-        direction.y = 0.0f;
+        direction.z = 0.0f;
         direction.x = 0.0f;
 
         if (Input.GetKey(KeyCode.W))
         {
-            direction.y = 1.0f;
+            direction.z = 1.0f;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            direction.y = -1.0f;
+            direction.z = -1.0f;
         }
         else if (Input.GetKey(KeyCode.A))
         {

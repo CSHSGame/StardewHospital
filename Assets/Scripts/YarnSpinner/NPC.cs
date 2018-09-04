@@ -50,7 +50,7 @@ namespace Yarn.Unity.Example {
         public Characters thisCharacter;
 
         public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
-
+        public NpcController npcController;
         public FadeObjectInOut roomShade;
 
         public string characterName = "";
@@ -97,21 +97,28 @@ namespace Yarn.Unity.Example {
 
             if ((variableStorage.GetValue("$open_door").AsBool == true) && (thisCharacter == Characters.WilliamsDoor))
             {
-                print("Door Disabled Williams");
+             //   print("Door Disabled Williams");
                 roomShade.FadeOut();
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                gameObject.GetComponent<BoxCollider>().enabled = false;
                 //talkToNode = null;
                 gameObject.transform.GetChild(0).gameObject.SetActive(false);
             }
             if ((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.WilliamsDoor))
             {
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                gameObject.GetComponent<BoxCollider2D>().enabled = true; 
+                gameObject.GetComponent<BoxCollider>().enabled = true; 
                 roomShade.FadeIn();
             }
 
 
+        }
+        public void OnConversationStart()
+        {
+            if(npcController != null)
+            {
+                npcController.isTalking = true;
+            }
         }
     }
 
