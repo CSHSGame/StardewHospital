@@ -15,10 +15,14 @@ public class NpcController : MonoBehaviour {
 
     public List<Transform> interactionPts;
 	void Start () {
-        agent.updateUpAxis = false;
-        agent.updateRotation = false;
-
-        agent.SetDestination(Target.transform.position);
+        if(agent != null)
+        {
+            agent.updateUpAxis = false;
+            agent.updateRotation = false;
+            if (Target != null)
+                agent.SetDestination(Target.transform.position);
+        }
+       
     }
 
     // Update is called once per frame
