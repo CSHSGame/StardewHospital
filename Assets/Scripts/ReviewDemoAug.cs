@@ -10,7 +10,7 @@ public class ReviewDemoAug : MonoBehaviour {
     string williamsDoor;
     string williamsCoax;
 
-
+    public EndOfDayReviewNote[] Notes;
 
     string williamsDidntKnock;
 	string williamsBadIntro;
@@ -42,6 +42,62 @@ public class ReviewDemoAug : MonoBehaviour {
     {
         //Mr. Williams door
 
+        williamsText.text = newReview();
+
+    }
+    string newReview()
+    {
+        string temp = "";
+        foreach(EndOfDayReviewNote n in Notes)
+        {
+           
+            bool b = false;
+
+            if (n.Operation == EndOfDayReviewNote.OperationType.AND)
+            {
+                b = true;
+
+                foreach (string s in n.VariablesToEvaluate)
+                {
+
+                    if ((variableStorage.GetValue(s).AsBool == false))
+                    {
+                        b = false;
+                    }
+                }
+
+            }
+              
+            if (n.Operation == EndOfDayReviewNote.OperationType.OR)
+            {
+                b = false;
+                foreach (string s in n.VariablesToEvaluate)
+                {
+
+                    if ((variableStorage.GetValue(s).AsBool == true))
+                    {
+                        b = true;
+                    }
+                }
+            }
+            if (b)
+            {
+                temp += n.VariableTrue;
+            }
+            else
+            {
+                temp += n.VariableFalse;
+
+
+            }
+
+        }
+
+    return temp;
+    }
+    string oldReview()
+    {
+
         if (variableStorage.GetValue("$Knock_Wait_Williams").AsBool == true)
         {
             williamsDoor = "     Mr. Williams appreciated that you knocked before entering his room - it helps him to feel like this is his home, and that we respect his privacy. \n";
@@ -63,11 +119,8 @@ public class ReviewDemoAug : MonoBehaviour {
         {
             williamsCoax = "     Bringing Mr. Williams his breakfast was a great way to diffuse that situation, way to think on your feet. \n \n I'm so glad that you two were able to bond in the end, it's really a remarkable turnaround from where you two were at yesterday.  ";
         }
-
-        williamsText.text = williamsDoor + williamsCoax;
-
+        return williamsDoor + williamsCoax;
     }
-
     /*void OnEnable()
     {
         //Mr. Martin

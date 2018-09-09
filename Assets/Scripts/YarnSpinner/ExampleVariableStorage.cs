@@ -129,6 +129,8 @@ public class ExampleVariableStorage : VariableStorageBehaviour
     /// Set a variable's value
     public override void SetValue (string variableName, Yarn.Value value)
     {
+
+     
         // Copy this value into our list
         variables[variableName] = new Yarn.Value(value);
     }
@@ -159,7 +161,7 @@ public class ExampleVariableStorage : VariableStorageBehaviour
                                                          item.Key,
                                                          item.Value));
             }
-            debugTextView.text = stringBuilder.ToString ();
+            debugTextView.text =  stringBuilder.ToString ();
         }
 
     }

@@ -31,6 +31,8 @@ public class NpcController : MonoBehaviour {
         {
             case NpcState.talking:
                 isTalking = false;
+                if (agent.isStopped == false)
+                    agent.isStopped = true ;
                 break;
             case NpcState.walking:
                 if (isTalking)

@@ -101,7 +101,7 @@ namespace Yarn.Unity.Example {
 
             if ((variableStorage.GetValue("$open_door").AsBool == true) && (thisCharacter == Characters.WilliamsDoor))
             {
-                print("Door Disabled Williams");
+                //print("Door Disabled Williams");
                 roomShade.FadeOut();
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
