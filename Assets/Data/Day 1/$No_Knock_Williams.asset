@@ -11,6 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
   m_Name: $No_Knock_Williams
   m_EditorClassIdentifier: 
-  VariableName: 
-  VariableTrue: 
+  VariablesToEvaluate:
+  - $No_Knock_Williams
+  Operation: 0
+  VariableTrue: '     You can''t just go barging into Mr. William''s room like that.
+    Always knock and wait to be acknowledge before entering a client''s room.
+
+'
   VariableFalse: 
