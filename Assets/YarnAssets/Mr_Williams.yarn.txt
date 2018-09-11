@@ -1,7 +1,7 @@
 title: Mr_Williams
 tags: 
 colorID: 0
-position: 1226,203
+position: 1227,203
 ---
 <<if $Bringing_Breakfast_William = true>>
 [[Brought_Breakfast_Williams]]
@@ -16,11 +16,11 @@ position: 1226,203
 <<endif>>
 
 <<set $MartinFace = true>>
+<<set $npc1 = "Mr. Jones">>
 
-
-Good morning, Mr. Williams. 
+Good morning, [$npc1]. 
 Skip:
-Mr. Williams: Good morning.
+Mr. Williams: Good morning .
 Skip:
 I'd like to walk with you to the dining room for breakfast.
 Skip:
