@@ -9,13 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
-  m_Name: $No_Knock_Williams
+  m_Name: 1Knock_Barge_Williams
   m_EditorClassIdentifier: 
   VariablesToEvaluate:
-  - $No_Knock_Williams
+  - $Knock_Barge_Williams
   Operation: 0
-  VariableTrue: '     You can''t just go barging into Mr. William''s room like that.
-    Always knock and wait to be acknowledge before entering a client''s room.
+  VariableTrue: '     Great that you remembered to knock on Mr. Williams door, but
+    you need to wait for a response before you go barging in! Knocking isn''t a formality
+    - be sure you have a resident''s consent before you enter their room.
+
 
 '
   VariableFalse: 

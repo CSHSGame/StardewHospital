@@ -173,7 +173,7 @@ namespace Yarn.Unity.Example {
         public override IEnumerator RunCommand (Yarn.Command command)
         {
             // "Perform" the command
-            Debug.Log ("Command: " + command.text);
+           // Debug.Log ("Command: " + command.text);
 
             yield break;
         }
@@ -181,7 +181,7 @@ namespace Yarn.Unity.Example {
         /// Called when the dialogue system has started running.
         public override IEnumerator DialogueStarted ()
         {
-            Debug.Log ("Dialogue starting!");
+           // Debug.Log ("Dialogue starting!");
 
             // Enable the dialogue controls.
             if (dialogueContainer != null)
@@ -198,7 +198,7 @@ namespace Yarn.Unity.Example {
         /// Called when the dialogue system has finished running.
         public override IEnumerator DialogueComplete ()
         {
-            Debug.Log ("Complete!");
+           // Debug.Log ("Complete!");
 
             // Hide the dialogue interface.
             if (dialogueContainer != null)

@@ -709,7 +709,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 184806969}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -21.5, y: 0.96, z: 8.77}
+  m_LocalPosition: {x: -15.53, y: 0.96, z: 8.77}
   m_LocalScale: {x: 3.740239, y: 3.740239, z: 3.740239}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2888,7 +2888,6 @@ GameObject:
   m_Component:
   - component: {fileID: 616764854}
   - component: {fileID: 616764856}
-  - component: {fileID: 616764855}
   - component: {fileID: 616764857}
   - component: {fileID: 616764858}
   m_Layer: 0
@@ -2911,32 +2910,6 @@ Transform:
   m_Father: {fileID: 900244356}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &616764855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 616764853}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9679fba46d5d4121bbdbb92ab17eed5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  martinText: {fileID: 606904045}
-  steinText: {fileID: 0}
-  youssafText: {fileID: 0}
-  martinKnockedBool: 0
-  martinRudeBool: 0
-  martinVagueBool: 0
-  martinCheckedWithSupervisorBool: 0
-  youssafRudeBool: 0
-  youssafLeavesBool: 0
-  steinTooSoonBool: 0
-  steinTooPushyBool: 0
-  steinGoodBool: 0
-  pageNumber: 1
-  backArrow: {fileID: 1652198266}
-  variableStorage: {fileID: 1538461310}
 --- !u!212 &616764856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3020,14 +2993,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   williamsText: {fileID: 606904045}
-  Notes:
-  - {fileID: 11400000, guid: dc5420ccb77c54e45915937dcd42a97f, type: 2}
-  - {fileID: 11400000, guid: d0819527ade9c064db98705fa9601c70, type: 2}
-  - {fileID: 11400000, guid: b2e31e4d5d7d3fa469b117d14ad7f175, type: 2}
-  - {fileID: 11400000, guid: 23e9d706f000dc64f9f522933560c462, type: 2}
+  DayData: {fileID: 11400000, guid: 96c2380bd886ffa43a6bfbee049cd992, type: 2}
   pageNumber: 1
   backArrow: {fileID: 1652198266}
   variableStorage: {fileID: 1538461310}
+  LoadData: 0
 --- !u!1 &668957144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3622,7 +3592,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832330637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.446419, y: 6.050434, z: 0}
+  m_LocalPosition: {x: -15.446419, y: 6.11, z: 0}
   m_LocalScale: {x: 0.42, y: 0.3341222, z: 1}
   m_Children:
   - {fileID: 896446982}
@@ -9272,7 +9242,7 @@ NavMeshAgent:
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 0
-  m_StoppingDistance: 0
+  m_StoppingDistance: 3.86
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

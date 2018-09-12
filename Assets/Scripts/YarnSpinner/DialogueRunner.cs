@@ -84,7 +84,7 @@ namespace Yarn.Unity
 
                     // Set up the logging system.
                     _dialogue.LogDebugMessage = delegate (string message) {
-                        Debug.Log (message);
+                   //     Debug.Log (message);
                     };
                     _dialogue.LogErrorMessage = delegate (string message) {
                         Debug.LogError (message);

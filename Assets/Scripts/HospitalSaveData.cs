@@ -1,0 +1,55 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[System.Serializable]
+public class HospitalSaveData : SaveData
+{
+    public int CurrentDay;
+    public List<FlagData> data;
+    public HospitalSaveData()
+    {
+        data = new List<FlagData>();
+    }
+
+    public void Load(ExampleVariableStorage storage)
+    {
+        Debug.Log("LOADING TEST");
+
+       foreach(FlagData f in data)
+        {
+            storage.SetValue(f.VariableName, new Yarn.Value(f.Value));
+
+        }
+       // throw new System.NotImplementedException();
+    }
+
+    public override void Load()
+    {
+       // throw new System.NotImplementedException();
+    }
+
+    // Use this for initialization
+    void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
+[System.Serializable]
+public class FlagData
+{
+    public FlagData(string name, bool val)
+    {
+        VariableName = name;
+        Value = val;
+    }
+    public string VariableName;
+    public bool Value;
+
+}
+
+
