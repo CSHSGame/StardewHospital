@@ -46,7 +46,7 @@ namespace Yarn.Unity.Example {
             BlueTeam,
             GreenTeam,
         }
-
+        public NpcController aiController;
         public Characters thisCharacter;
 
         public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
@@ -82,7 +82,11 @@ namespace Yarn.Unity.Example {
                 this.gameObject.SetActive(false);
             }
         }
-
+        public void OnConversationStart()
+        {
+            if(aiController != null)
+                aiController.isTalking = true;
+        }
         void CheckToOpenDoor()
         {
             if ((variableStorage.GetValue("$open_door").AsBool == true) &&(thisCharacter == Characters.MartinDoor))
@@ -97,17 +101,17 @@ namespace Yarn.Unity.Example {
 
             if ((variableStorage.GetValue("$open_door").AsBool == true) && (thisCharacter == Characters.WilliamsDoor))
             {
-                print("Door Disabled Williams");
+                //print("Door Disabled Williams");
                 roomShade.FadeOut();
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                gameObject.GetComponent<BoxCollider>().enabled = false;
                 //talkToNode = null;
                 gameObject.transform.GetChild(0).gameObject.SetActive(false);
             }
             if ((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.WilliamsDoor))
             {
                 gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                gameObject.GetComponent<BoxCollider2D>().enabled = true; 
+                gameObject.GetComponent<BoxCollider>().enabled = true; 
                 roomShade.FadeIn();
             }
 

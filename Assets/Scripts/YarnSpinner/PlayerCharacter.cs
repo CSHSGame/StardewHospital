@@ -93,6 +93,7 @@ namespace Yarn.Unity.Example {
             print(target);
             if (target != null) {
                 // Kick off the dialogue at this node.
+                target.OnConversationStart();
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
                 print("test");
             }

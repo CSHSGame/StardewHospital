@@ -8,13 +8,13 @@ position: 465,-553
 <<endif>>
 [[Enter Mr. William's room|Enter_Unannounced_Door_Williams]]
 [[Knock on Mr. Williams's door and enter|Knock_Door_Enter_Williams]]
-[[Knock on Mr. Williams's door and wait for a response|knock_door_Wait_Williams]]<<set $Knock_Wait_Williams = true>>
+[[Knock on Mr. Williams's door and wait for a response|knock_door_Wait_Williams]]
 [[Nevermind|Nevermind_door_Williams]]
 ===
 title: Nevermind_door_Williams
 tags: 
 colorID: 0
-position: 472,476
+position: 395,320
 ---
 <<Stop>>
 ===
@@ -23,7 +23,9 @@ tags:
 colorID: 0
 position: 917,-96
 ---
-<<set $Knock_Wait_Williams = true>>
+<<if $entered_no_intro_Mr_Williams = false>>
+<<set $Knock_Wait_Williams = false>>
+<<endif>>
 **Knock, knock**
 Skip:
 Mr.Williams: Yes?
@@ -36,7 +38,7 @@ Mr. Williams: Okay, come in! <<set $open_door = true>>
 title: Enter_Unannounced_Door_Williams
 tags: 
 colorID: 0
-position: -200,-382
+position: -200,-383
 ---
 <<set $No_Knock_Williams = true>>
 <<set $entered_unannounced_Mr_Williams = true>>
@@ -62,7 +64,7 @@ Hmm, that didn't go well at all.. Let's try something different.
 title: Knock_Door_Enter_Williams
 tags: 
 colorID: 0
-position: 332,-211
+position: 332,-212
 ---
 <<set $Knock_Barge_Williams = true>>
 <<set $entered_no_intro_Mr_Williams = true>>
