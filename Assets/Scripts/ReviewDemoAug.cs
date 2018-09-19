@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ReviewDemoAug : MonoBehaviour {
 
@@ -52,7 +53,7 @@ public class ReviewDemoAug : MonoBehaviour {
     public void load()
     {
         HospitalSaveData data = new HospitalSaveData();
-        data =  (HospitalSaveData)SaveManager.Load("saveTest");
+        data =  (HospitalSaveData)SaveManager.Load();
 
         if(data != null)
         {
@@ -66,16 +67,26 @@ public class ReviewDemoAug : MonoBehaviour {
         {
             foreach (string s in n.VariablesToEvaluate)
             {
-                data.data.Add(new FlagData(s, variableStorage.GetValue(s).AsBool));
+                FlagData f = new FlagData(s, variableStorage.GetValue(s).AsBool);
+                if(variableStorage.GetValue(s) == Yarn.Value.NULL)
+                {
+                    f.IsNull = true;
+                }
+                data.data.Add(f);
+
             }
         }
         foreach(string s in DayData.otherVariables)
         {
-            data.data.Add(new FlagData(s, variableStorage.GetValue(s).AsBool));
-
+            FlagData f = new FlagData(s, variableStorage.GetValue(s).AsBool);
+            if (variableStorage.GetValue(s) == Yarn.Value.NULL)
+            {
+                f.IsNull = true;
+            }
+            data.data.Add(f);
         }
-        data.CurrentDay = DayData.CurrentDay;
-        SaveManager.Save(data,"saveTest");
+        data.SceneName = SceneManager.GetActiveScene().name;
+        SaveManager.Save(data);
 
     }
     string newReview()
@@ -85,6 +96,7 @@ public class ReviewDemoAug : MonoBehaviour {
         {
            
             bool b = false;
+            bool isNull = false;
 
             if (n.Operation == EndOfDayReviewNote.OperationType.AND)
             {
@@ -105,24 +117,43 @@ public class ReviewDemoAug : MonoBehaviour {
                 b = false;
                 foreach (string s in n.VariablesToEvaluate)
                 {
-
+                    if (variableStorage.GetValue(s) == Yarn.Value.NULL && b == false)
+                    {
+                        isNull = true;
+                    }
                     if ((variableStorage.GetValue(s).AsBool == true))
                     {
                         b = true;
+                        isNull = false;
+
                     }
+                  
                 }
             }
-            if (b)
+            if (isNull == false)
             {
-                temp += n.VariableTrue;
+               // Debug.Log(temp);
+
+                if (b == true)
+                {
+
+                    temp += n.VariableTrue;
+                }
+                else
+                {
+                    temp += n.VariableFalse;
+
+
+                }
             }
             else
             {
-                temp += n.VariableFalse;
 
-
+               // Debug.Log(n.VariablesToEvaluate[0] + " is null");
+               // Debug.Log(temp);
             }
-
+            
+            
         }
     return temp;
     }

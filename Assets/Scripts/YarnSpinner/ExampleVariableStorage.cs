@@ -67,11 +67,11 @@ public class ExampleVariableStorage : VariableStorageBehaviour
 	{
 
        
-		foreach (var variable in defaultVariables) {
+		/*foreach (var variable in defaultVariables) {
 			Debug.Log (variable.name);
 			Debug.Log (variable.value);
 
-		}
+		}*/
 
 	}
 

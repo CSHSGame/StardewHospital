@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class HospitalSaveData : SaveData
 {
-    public int CurrentDay;
+    public string SceneName;
     public List<FlagData> data;
     public HospitalSaveData()
     {
@@ -17,10 +17,13 @@ public class HospitalSaveData : SaveData
         Debug.Log("LOADING TEST");
 
        foreach(FlagData f in data)
-        {
-            storage.SetValue(f.VariableName, new Yarn.Value(f.Value));
-
-        }
+       {
+            if(f.IsNull == false)
+            { 
+                storage.SetValue(f.VariableName, new Yarn.Value(f.Value));
+            }
+            
+       }
        // throw new System.NotImplementedException();
     }
 
@@ -49,6 +52,7 @@ public class FlagData
     }
     public string VariableName;
     public bool Value;
+    public bool IsNull;
 
 }
 

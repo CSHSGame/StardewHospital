@@ -23,8 +23,8 @@ tags:
 colorID: 0
 position: 917,-96
 ---
-<<if $entered_no_intro_Mr_Williams = false>>
-<<set $Knock_Wait_Williams = false>>
+<<if $Knock_Barge_Williams == false && $No_Knock_Williams == false>>
+<<set $Knock_Wait_Williams = true>>
 <<endif>>
 **Knock, knock**
 Skip:

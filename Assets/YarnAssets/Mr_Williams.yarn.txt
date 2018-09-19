@@ -100,7 +100,7 @@ Hey Mr. Williams, I'm so sorry about that.
 title: Brought_Breakfast_Williams
 tags: 
 colorID: 0
-position: -73,204
+position: -74,204
 ---
 
 <<set $MartinFace = true>>
@@ -114,8 +114,11 @@ Mr. Williams: I don't want it.<<set $Bringing_Breakfast_William = false>>
 title: Empathy_Williams
 tags: 
 colorID: 0
-position: 194,499
+position: 192,499
 ---
+<<if $Sausage_Williams = false && $photo_Williams = false>>
+<<set $Empathy_Williams = true>>
+<<endif>>
 (You put the tray down on his table while he admires the photo for a moment)
 Skip:
 I heard yesterday you say this is your wife, Madeline. She's very lovely.
