@@ -21,14 +21,7 @@ public class SaveManager : MonoBehaviour {
     static List<ISaveAble> m_ObjectsToSave;
     public const string defaultSaveName = "saveFile";
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+ 
     public static void DeleteSave(string filePath)
     {
         File.Delete(filePath);
@@ -37,19 +30,9 @@ public class SaveManager : MonoBehaviour {
     //pass in apopriate savetata
     public static void Save(SaveData data, string saveName = defaultSaveName)
     {
-       
-        string fileName = "/" + saveName + ".dat";
-      //  if (File.Exists(Application.persistentDataPath + fileName))
-      //  {
-
-       //     xmlUtils.Save(data, "/" + saveName + "1" + ".dat");
-       // }
-       // else
-        {
-
-
-            xmlUtils.Save(data, fileName);
-        }
+       string fileName = "/" + saveName + ".dat";
+       xmlUtils.Save(data, fileName);
+        
     }
     public static bool GetIfFileExist(string saveName = defaultSaveName)
     {
@@ -61,7 +44,6 @@ public class SaveManager : MonoBehaviour {
     // caller is responsible for deleting old values 
     public static object Load( string saveName = defaultSaveName)
     {
-        
         object data = xmlUtils.Load("/" + saveName +".dat");
         //for objects already in the scene (deletes them)
         /*  foreach (ISaveAble saveObjects in m_ObjectsToSave)

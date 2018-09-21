@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ContinueButton : MonoBehaviour {
+public class ContinueButton : MonoBehaviour
+{
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
        if (!SaveManager.GetIfFileExist(SaveManager.defaultSaveName))
        {
             this.gameObject.SetActive(false);
        }
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
     public void Button()
     {
         StartCoroutine(PlayGame());

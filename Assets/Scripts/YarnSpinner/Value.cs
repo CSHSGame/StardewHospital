@@ -4,10 +4,12 @@ using System;
 namespace Yarn
 {
     // A value from inside Yarn.
-    public class Value : IComparable, IComparable<Value> {
+    public class Value : IComparable, IComparable<Value>
+    {
         public static readonly Value NULL = new Value();
 
-        public enum Type {
+        public enum Type
+        {
             Number,  // a constant number
             String,  // a string
             Bool,    // a boolean value
