@@ -9,11 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
-  m_Name: New End Of Day Review Note
+  m_Name: 2Empathy_Williams
   m_EditorClassIdentifier: 
   VariablesToEvaluate:
-  - $fdbfd
-  - $sfgsd
+  - $Empathy_Williams
   Operation: 0
-  VariableTrue: 
+  VariableTrue: "     \nBringing Mr. Williams his breakfast was a great way to diffuse
+    that situation, way to think on your feet.\n\nI'm so glad that you two were able
+    to bond in the end, it's really a remarkable turnaround from where you two were
+    at yesterday.  "
   VariableFalse: 

@@ -1,7 +1,7 @@
 title: Mr_Williams
 tags: 
 colorID: 0
-position: 1227,203
+position: 1227,204
 ---
 <<if $Bringing_Breakfast_William = true>>
 [[Brought_Breakfast_Williams]]
@@ -13,6 +13,10 @@ position: 1227,203
 
  <<if $return_Later_Williams == true>>
 [[Return_Later_Williams]]
+<<endif>>
+
+<<if $successWilliams ==true>>
+[[SuccessWilliams]]
 <<endif>>
 
 <<set $MartinFace = true>>
@@ -32,7 +36,7 @@ Mr. Willaims: No!  I don't want breakfast. Leave me alone.
 title: SausageAndPancakes
 tags: 
 colorID: 0
-position: 906,556
+position: 906,557
 ---
 <<set $Sausage_Williams = true>>
 It's sausage and pancakes today. I heard that was your favourite.
@@ -64,7 +68,7 @@ Skip:
 title: Photo
 tags: 
 colorID: 0
-position: 1234,596
+position: 1235,596
 ---
 <<set $photo_Williams = true>>
 **You pick a photograph on Mr. William's nightstand.**
@@ -96,7 +100,7 @@ Hey Mr. Williams, I'm so sorry about that.
 title: Brought_Breakfast_Williams
 tags: 
 colorID: 0
-position: -73,204
+position: -74,204
 ---
 
 <<set $MartinFace = true>>
@@ -110,8 +114,11 @@ Mr. Williams: I don't want it.<<set $Bringing_Breakfast_William = false>>
 title: Empathy_Williams
 tags: 
 colorID: 0
-position: 194,499
+position: 192,499
 ---
+<<if $Sausage_Williams = false && $photo_Williams = false>>
+<<set $Empathy_Williams = true>>
+<<endif>>
 (You put the tray down on his table while he admires the photo for a moment)
 Skip:
 I heard yesterday you say this is your wife, Madeline. She's very lovely.
@@ -139,7 +146,7 @@ Mr. Williams: You can call me Arthur, dear. <<set $successWilliams = true>>
 title: Wont_Eat_Williams
 tags: 
 colorID: 0
-position: -543,502
+position: 335,127
 ---
 Mr. Williams: I don't want it! Leave the tray on the table!
 Skip:
@@ -149,7 +156,7 @@ Ok, Mr. Williams...<<set $return_Later_Williams = true>>
 title: Throws_Tray_Williams
 tags: 
 colorID: 0
-position: -183,502
+position: -191,503
 ---
 Mr. Williams: What food.   
 Skip:
@@ -165,7 +172,7 @@ Skip:
 title: Return_Later_Williams
 tags: 
 colorID: 0
-position: 448,510
+position: 449,513
 ---
 (You approach Mr. Williams and look at the photo with him for a moment)
 Skip:
@@ -190,4 +197,13 @@ skip:
 Mr. Williams: You can call me Arthur, dear. <<set $successWilliams = true>>
 <<set $MartinFace = false>>
 
+===
+title: SuccessWilliams
+tags: 
+colorID: 0
+position: 637,257
+---
+mr Williams Thank you for the food
+
+you are welcome
 ===

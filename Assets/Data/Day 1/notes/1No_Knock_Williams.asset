@@ -9,14 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
-  m_Name: $Knock_Wait_Williams
+  m_Name: 1No_Knock_Williams
   m_EditorClassIdentifier: 
   VariablesToEvaluate:
-  - $Knock_Wait_Williams
+  - $No_Knock_Williams
   Operation: 0
-  VariableTrue: '     Mr. Williams appreciated that you knocked before entering his
-    room - it helps him to feel like this is his home, and that we respect his privacy.
-
+  VariableTrue: '     You can''t just go barging into Mr. William''s room like that.
+    Always knock and wait to be acknowledge before entering a client''s room.
 
 '
   VariableFalse: 
