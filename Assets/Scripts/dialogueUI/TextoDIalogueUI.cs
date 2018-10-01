@@ -68,7 +68,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     {
        
     
-        // Display the line immediately if textSpeed == 0
+        // Display the new text speach bubble
         Text txt = Instantiate(lineTextPrefab, lineTextContainer).GetComponentInChildren<Text>() ;
         txt.text = CheckVars(line.text);
 
@@ -78,14 +78,10 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         Canvas.ForceUpdateCanvases();
         //cryptic voodo code do not remove 
 
-
+        //scroll to the bottom to show the current reply 
         Scroll.verticalNormalizedPosition = 0;
         
-      
-
-
-
-        // }
+     
 
         // Show the 'press any key' prompt when done, if we have one
         if (continuePrompt != null)
@@ -96,10 +92,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         {
             yield return null;
         }
-
-        // Hide the text and prompt
-        //lineText.gameObject.SetActive(false);
-
+        // hide the 'press any key' prompt when done, if we have one
         if (continuePrompt != null)
             continuePrompt.SetActive(false);
 
@@ -109,8 +102,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator RunOptions(Yarn.Options optionsCollection,
                                             Yarn.OptionChooser optionChooser)
     {
-        //tentative fix 
-     //   Scroll.verticalNormalizedPosition = 0;
+
         // Do a little bit of safety checking
         if (optionsCollection.options.Count > optionButtons.Count)
         {
