@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System.Text;
@@ -65,30 +66,26 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Show a line of dialogue, gradually
     public override IEnumerator RunLine(Yarn.Line line)
     {
-        Scroll.verticalNormalizedPosition = 0;
-        Debug.Log(Scroll.verticalNormalizedPosition);
-        lineText.gameObject.SetActive(true);
-        // Show the text
-        //  ;
-
-        /* if (textSpeed > 0.0f)
-         {
-             // Display the line one character at a time
-             var stringBuilder = new StringBuilder();
-
-             foreach (char c in CheckVars(line.text))
-             {
-                 stringBuilder.Append(c);
-                 lineText.text = stringBuilder.ToString();
-                 yield return new WaitForSeconds(textSpeed);
-             }
-         }
-         else
-         {*/
+       
+    
         // Display the line immediately if textSpeed == 0
         Text txt = Instantiate(lineTextPrefab, lineTextContainer).GetComponentInChildren<Text>() ;
         txt.text = CheckVars(line.text);
-       // }
+
+
+        //cryptic voodo code do not remove 
+        yield return new WaitForEndOfFrame();
+        Canvas.ForceUpdateCanvases();
+        //cryptic voodo code do not remove 
+
+
+        Scroll.verticalNormalizedPosition = 0;
+        
+      
+
+
+
+        // }
 
         // Show the 'press any key' prompt when done, if we have one
         if (continuePrompt != null)
@@ -101,7 +98,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         }
 
         // Hide the text and prompt
-        lineText.gameObject.SetActive(false);
+        //lineText.gameObject.SetActive(false);
 
         if (continuePrompt != null)
             continuePrompt.SetActive(false);
@@ -112,6 +109,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator RunOptions(Yarn.Options optionsCollection,
                                             Yarn.OptionChooser optionChooser)
     {
+        //tentative fix 
+     //   Scroll.verticalNormalizedPosition = 0;
         // Do a little bit of safety checking
         if (optionsCollection.options.Count > optionButtons.Count)
         {
@@ -168,7 +167,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Called when the dialogue system has started running.
     public override IEnumerator DialogueStarted()
     {
-        // Debug.Log ("Dialogue starting!");
+         Debug.Log ("Dialogue starting!");
 
         // Enable the dialogue controls.
         if (dialogueContainer != null)

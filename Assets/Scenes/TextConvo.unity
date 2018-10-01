@@ -910,7 +910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 1538461313}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -1412,7 +1412,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 1538461313}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -3011,7 +3011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 1538461313}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -3691,7 +3691,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 1538461313}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -4954,7 +4954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 0}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -5694,9 +5694,9 @@ RectTransform:
   m_Father: {fileID: 1221927231}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00016215145, y: 217}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -0.00016215145, y: 300}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &878863979
@@ -6591,7 +6591,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 0}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -9511,8 +9511,8 @@ RectTransform:
   m_Father: {fileID: 667045770}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.27666667}
+  m_AnchorMin: {x: 0, y: 0.7233333}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9840,7 +9840,6 @@ GameObject:
   - component: {fileID: 1538461312}
   - component: {fileID: 1538461311}
   - component: {fileID: 1538461310}
-  - component: {fileID: 1538461309}
   - component: {fileID: 1538461313}
   m_Layer: 0
   m_Name: Dialogue
@@ -9849,28 +9848,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1538461309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1538461308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04317fce65da54f4997a5c4465b4e93c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 1070637965}
-  lineText: {fileID: 459619344}
-  continuePrompt: {fileID: 0}
-  textSpeed: 1
-  optionButtons:
-  - {fileID: 794878251}
-  - {fileID: 974870750}
-  - {fileID: 1724529225}
-  - {fileID: 1607596544}
-  gameControlsContainer: {fileID: 0}
-  variableStorage: {fileID: 1538461310}
 --- !u!114 &1538461310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10163,32 +10140,32 @@ Prefab:
     - target: {fileID: 224892365624988078, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.7003141
       objectReference: {fileID: 0}
     - target: {fileID: 224892365624988078, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224892365624988078, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224262875682334704, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224262875682334704, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224262875682334704, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94389525ead2c284f86353e953797bcd, type: 2}
@@ -10319,7 +10296,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 0}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -11167,7 +11144,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538461309}
+      - m_Target: {fileID: 0}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -12402,7 +12379,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: -17}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &2051203192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12440,9 +12417,9 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1454374027}
   m_HandleRect: {fileID: 1454374026}
-  m_Direction: 2
-  m_Value: 0
-  m_Size: 0.27666667
+  m_Direction: 3
+  m_Value: 0.0000002461095
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
