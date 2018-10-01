@@ -103,7 +103,9 @@ namespace Yarn.Unity.Example {
                     lineText.text = stringBuilder.ToString ();
                     yield return new WaitForSeconds (textSpeed);
                 }
-            } else {
+            }
+            else
+            {
                 // Display the line immediately if textSpeed == 0
                 lineText.text = CheckVars(line.text);
             }
