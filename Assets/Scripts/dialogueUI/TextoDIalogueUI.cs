@@ -36,8 +36,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public RectTransform gameControlsContainer;
 
     public ExampleVariableStorage variableStorage;
-    // Use this for initialization
-
+    private bool left = true;
     void Awake()
     {
         // Start by hiding the container, line and option buttons
@@ -67,35 +66,47 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator RunLine(Yarn.Line line)
     {
        
-    
-        // Display the new text speach bubble
-        Text txt = Instantiate(lineTextPrefab, lineTextContainer).GetComponentInChildren<Text>() ;
-        txt.text = CheckVars(line.text);
+        if(line.text != "Skip:")
+        {
+            // Display the new text speach bubble
+            Text txt = Instantiate(lineTextPrefab, lineTextContainer).GetComponentInChildren<Text>() ;
+            if (!left)
+            {
+                txt.gameObject.transform.parent.localScale = new Vector3(txt.gameObject.transform.parent.localScale.x *-1, txt.gameObject.transform.parent.localScale.y, txt.gameObject.transform.parent.localScale.z);
+                txt.gameObject.transform.localScale = new Vector3(txt.gameObject.transform.localScale.x * -1, txt.gameObject.transform.localScale.y, txt.gameObject.transform.localScale.z);
+                left = true;
 
+            }
+            else
+            {
+                left = false;
+            }
+            txt.text = CheckVars(line.text);
+     
 
-        //cryptic voodo code do not remove 
-        yield return new WaitForEndOfFrame();
-        Canvas.ForceUpdateCanvases();
-        //cryptic voodo code do not remove 
+            //cryptic voodo code do not remove 
+            yield return new WaitForEndOfFrame();
+            Canvas.ForceUpdateCanvases();
+            //cryptic voodo code do not remove 
 
-        //scroll to the bottom to show the current reply 
-        Scroll.verticalNormalizedPosition = 0;
+            //scroll to the bottom to show the current reply 
+            Scroll.verticalNormalizedPosition = 0;
         
      
 
-        // Show the 'press any key' prompt when done, if we have one
-        if (continuePrompt != null)
-            continuePrompt.SetActive(true);
+            // Show the 'press any key' prompt when done, if we have one
+            if (continuePrompt != null)
+                continuePrompt.SetActive(true);
 
-        // Wait for any user input
-        while (Input.anyKeyDown == false)
-        {
-            yield return null;
+            // Wait for any user input
+            while (Input.anyKeyDown == false)
+            {
+                yield return null;
+            }
+            // hide the 'press any key' prompt when done, if we have one
+            if (continuePrompt != null)
+                continuePrompt.SetActive(false);
         }
-        // hide the 'press any key' prompt when done, if we have one
-        if (continuePrompt != null)
-            continuePrompt.SetActive(false);
-
     }
 
     /// Show a list of options, and wait for the player to make a selection.
@@ -170,6 +181,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         {
             gameControlsContainer.gameObject.SetActive(false);
         }
+
+        left = true;
         DeleteChildren(lineTextContainer);
 
         yield break;
