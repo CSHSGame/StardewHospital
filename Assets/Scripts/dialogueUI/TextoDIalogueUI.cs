@@ -15,6 +15,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public ScrollRect Scroll;
     public RectTransform lineTextContainer;
     public RectTransform lineTextPrefab;
+    public Sprite bubble;
+    public Sprite actionBubble;
 
     /// A UI element that appears after lines have finished appearing
     public GameObject continuePrompt;
@@ -37,6 +39,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
     public ExampleVariableStorage variableStorage;
     private bool left = true;
+    private bool Action = false;
+
     void Awake()
     {
         // Start by hiding the container, line and option buttons
@@ -69,19 +73,38 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         if(line.text != "Skip:")
         {
             // Display the new text speach bubble
-            Text txt = Instantiate(lineTextPrefab, lineTextContainer).GetComponentInChildren<Text>() ;
-            if (!left)
+            RectTransform ob = Instantiate(lineTextPrefab, lineTextContainer) ;
+            
+            Text txt = ob.GetComponentInChildren<Text>() ;
+            HorizontalLayoutGroup hlg = ob.GetComponent<HorizontalLayoutGroup>();
+            txt.text = CheckVars(line.text);
+         
+            if (Action)
+            {
+                Image img = ob.GetComponentInChildren<Image>();
+                img.sprite = actionBubble;
+                hlg.padding.right = 22;
+                hlg.padding.left = 22;
+                Action = false;
+            }
+            //right
+            else if (!left)
             {
                 txt.gameObject.transform.parent.localScale = new Vector3(txt.gameObject.transform.parent.localScale.x *-1, txt.gameObject.transform.parent.localScale.y, txt.gameObject.transform.parent.localScale.z);
                 txt.gameObject.transform.localScale = new Vector3(txt.gameObject.transform.localScale.x * -1, txt.gameObject.transform.localScale.y, txt.gameObject.transform.localScale.z);
-                left = true;
+                
+                hlg.padding.right = 22;
+                hlg.padding.left = 0;
 
             }
             else
             {
-                left = false;
+                hlg.padding.left = 22;
+                hlg.padding.right = 0;
+
+                
             }
-            txt.text = CheckVars(line.text);
+           
      
 
             //cryptic voodo code do not remove 
@@ -258,7 +281,25 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         {
             return Time.time.ToString();
         }
-
+        
+        if (varName == "action")
+        {
+            Action = true;
+            Debug.Log("ACTION");
+            return "";
+        }
+        if (varName == "right")
+        {
+            left = false;
+          
+            return "";
+        }
+        if (varName == "left")
+        {
+            left = true;
+            
+            return "";
+        }
         //If no variables are found, return the variable name
         return varName;
     }
