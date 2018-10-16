@@ -8,8 +8,12 @@ using System.Collections.Generic;
 
 public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 {
+    public FaceName[] faces;
     public GameObject dialogueContainer;
-
+    public Image leftFace;
+    public Image rightFace;
+    private Sprite CurentFace;
+    public Sprite PlaceHolderFace;
     /// The UI element that displays lines
     public Text lineText;
     public ScrollRect Scroll;
@@ -40,7 +44,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public ExampleVariableStorage variableStorage;
     private bool left = true;
     private bool Action = false;
-
+    private bool faceSet = false;
     void Awake()
     {
         // Start by hiding the container, line and option buttons
@@ -69,9 +73,11 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Show a line of dialogue, gradually
     public override IEnumerator RunLine(Yarn.Line line)
     {
-       
-        if(line.text != "Skip:")
+        left = true;
+        if (line.text != "Skip:")
         {
+            CurentFace = PlaceHolderFace;
+            faceSet = false;
             // Display the new text speach bubble
             RectTransform ob = Instantiate(lineTextPrefab, lineTextContainer) ;
             
@@ -95,17 +101,18 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                 
                 hlg.padding.right = 22;
                 hlg.padding.left = 0;
-
+                rightFace.sprite = CurentFace;
             }
             else
             {
                 hlg.padding.left = 22;
                 hlg.padding.right = 0;
+                leftFace.sprite = CurentFace;
 
-                
+
             }
-           
-     
+
+
 
             //cryptic voodo code do not remove 
             yield return new WaitForEndOfFrame();
@@ -149,7 +156,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         foreach (var optionString in optionsCollection.options)
         {
             optionButtons[i].gameObject.SetActive(true);
-            optionButtons[i].GetComponentInChildren<Text>().text = optionString;
+            optionButtons[i].GetComponentInChildren<Text>().text = CheckVars(optionString);
             i++;
         }
 
@@ -193,8 +200,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Called when the dialogue system has started running.
     public override IEnumerator DialogueStarted()
     {
-         Debug.Log ("Dialogue starting!");
-
+        Debug.Log ("Dialogue starting!");
+        rightFace.sprite = faces[0].sprite;
         // Enable the dialogue controls.
         if (dialogueContainer != null)
             dialogueContainer.SetActive(true);
@@ -270,6 +277,25 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
     string ParseVariable(string varName)
     {
+        foreach(FaceName f in faces)
+        {
+
+            if (varName == f.Name)
+            {
+                if(faceSet == false)
+                {
+                    CurentFace = f.sprite;
+                    faceSet = true;
+                }
+                
+            }
+        }
+        if (varName == "$playerName")
+        {
+            left = false;
+
+            return variableStorage.GetValue(varName).AsString;
+        }
         //Check YarnSpinner's variable storage first
         if (variableStorage.GetValue(varName) != Yarn.Value.NULL)
         {
@@ -294,14 +320,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
           
             return "";
         }
-        if (varName == "left")
-        {
-            left = true;
-            
-            return "";
-        }
+     
         //If no variables are found, return the variable name
-        return varName;
+        return "";
     }
     //end 
 }
