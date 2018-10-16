@@ -110,33 +110,33 @@ Nurse Manager: Is this your wife?
 Skip:
 [$Char1Last]: Yes, That’s my Madeline.
 Skip:
-Nurse Manager: She’s beautiful. I think your daughter, Marissa, takes after her.
+Nurse Manager: She’s beautiful. I think your daughter, [$Char1Daughter], takes after her.
 Skip:
 [$Char1Last]: Yes, she does!
 Skip:
-*Marissa enters the room.*
+[$Char1Daughter]: enters the room.*
 Skip:
 Nurse Manager: Look, here she comes now! 
 Skip:
-Marissa: Hi, Dad!  
+[$Char1Daughter]: Hi, Dad!  
 Skip:
-*Marissa gives her father a hug and a kiss.*
+[$Char1Daughter]: gives her father a hug and a kiss.*
 Skip:
-Marissa: What are you guys doing? 
+[$Char1Daughter]: What are you guys doing? 
 Skip:
 Nurse Manager: Your dad was just telling me a little about your mom, and I was telling him that I can see where you get your good looks from!
 Skip:
-Marissa: Haha!
+[$Char1Daughter]: Haha!
 Skip:
 Nurse Manager: [$Char1Last], why don’t you and your daughter join us for breakfast?
 Skip:
-Marissa: Yeah, Dad, that’s a great idea. I’m hungry.
+[$Char1Daughter]: Yeah, Dad, that’s a great idea. I’m hungry.
 Skip:
 [$Char1Last]: Okay.
 Skip:
-*Everyone walks out the room, [$Char1Last] and Marissa walk out the scene. The Nurse Manager and [$PlayerName] stay in the hallway.*
+*Everyone walks out the room, [$Char1Last] and [$Char1Daughter] walk out the scene. The Nurse Manager and [$PlayerName] stay in the hallway.*
 
-[[Hallway_Williams_Day_1]]
+[[HallMarissaway_Williams_Day_1]]
 ===
 title: Hallway_Williams_Day_1
 tags: 
