@@ -12,6 +12,7 @@ TextureImporter:
     21300014: FloorTiles2_7
     21300016: FloorTiles2_8
     21300018: FloorTiles2_9
+    21300020: FloorTiles2_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -108,7 +109,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8b9a9332db1a4c57af04bea39bffd5a
+      spriteID: eeb46e59390dd47c1b1f6a5e9fa405ff
       vertices: []
       indices: 
       edges: []
@@ -128,7 +129,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06f50ac724d624100b825a3242ca6807
+      spriteID: c88d9a02e0a0a492db57f65a0a543556
       vertices: []
       indices: 
       edges: []
@@ -148,7 +149,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 948ddf0b116ca4caf94d585e1025ac02
+      spriteID: 0d4ad6c31f3f742f5bee9d1d77abe71a
       vertices: []
       indices: 
       edges: []
@@ -168,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68fff043625264057902c55b33bb9dcf
+      spriteID: 91f6f9c81a38b4d3c95f59580977a6df
       vertices: []
       indices: 
       edges: []
@@ -188,7 +189,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8462811cbdbbe46e8a600474f3ade0ac
+      spriteID: 92aefae9c967d4b4e8bfa316c1c0265d
       vertices: []
       indices: 
       edges: []
@@ -208,7 +209,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2782a074b9e194cdabe92cdf164efc46
+      spriteID: c5884fdf561bd4587b184bac10f21eac
       vertices: []
       indices: 
       edges: []
@@ -228,7 +229,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16199e179cdb4865aba9f55995729db
+      spriteID: d7f831f12b9cd415eb9dcf0bd02e83ef
       vertices: []
       indices: 
       edges: []
@@ -248,7 +249,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6588550715a754d6fb15d30dbdf3bb58
+      spriteID: 5f4f4f9cd0dfb45a6bea92896d258589
       vertices: []
       indices: 
       edges: []
@@ -268,7 +269,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a073170819c0141d88589a9733894938
+      spriteID: ad587524669b74e989c9473db4f3a2af
       vertices: []
       indices: 
       edges: []
@@ -288,7 +289,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3890ff64f90c246f986bd0f37fec20ee
+      spriteID: 32a35efaa14ac4e75b55c65d5d3060bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorTiles2_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b264eb8518f436095d2fe795edec0d
       vertices: []
       indices: 
       edges: []
