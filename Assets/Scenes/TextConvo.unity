@@ -1946,8 +1946,9 @@ GameObject:
   - component: {fileID: 219093851}
   - component: {fileID: 219093850}
   - component: {fileID: 219093849}
+  - component: {fileID: 219093853}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Video1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1973,7 +1974,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219093848}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
@@ -2018,10 +2019,23 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -1.266, y: 3.276, z: 7.6}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1893692846}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &219093853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219093848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0894fa2ce6178143b067a9b0de02199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 1893692844}
 --- !u!1 &225759883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,7 +2188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 7
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 0}
   characterName: Nurse_Manager
@@ -2660,7 +2673,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh6838
+  m_Name: pb_Mesh35902
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6781,7 +6794,7 @@ Prefab:
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -24.218601
+      value: -24.0731
       objectReference: {fileID: 0}
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
@@ -6791,7 +6804,7 @@ Prefab:
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 48.437202
+      value: 48.1462
       objectReference: {fileID: 0}
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
@@ -6826,17 +6839,17 @@ Prefab:
     - target: {fileID: 224371953128864000, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -22.718601
+      value: -22.5731
       objectReference: {fileID: 0}
     - target: {fileID: 224371953128864000, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 25.437202
+      value: 25.146198
       objectReference: {fileID: 0}
     - target: {fileID: 224770300234064966, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 48.437202
+      value: 48.1462
       objectReference: {fileID: 0}
     - target: {fileID: 114219233133675198, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
@@ -8084,7 +8097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 3
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 184806970}
   characterName: WilliamsDoor
@@ -8585,7 +8597,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -0.00016215145, y: 183}
-  m_SizeDelta: {x: 0, y: 173.186}
+  m_SizeDelta: {x: 0, y: 171.73099}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &886154454
 GameObject:
@@ -9202,7 +9214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 2
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 0}
   characterName: Williams
@@ -9624,7 +9635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 2
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 0}
   characterName: Yousaf
@@ -13684,7 +13694,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 5
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 0}
   characterName: Stein
@@ -16173,7 +16182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 1
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 184806970}
   characterName: Mr_Martin_Door
@@ -17653,7 +17661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 2
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 0}
   characterName: Williams
@@ -17984,7 +17991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!328 &1893692845
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -18022,12 +18029,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1893692844}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -12.66, y: -32.760002, z: 76}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 219093852}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896955762
 GameObject:
@@ -18734,7 +18741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  thisCharacter: 2
   variableStorage: {fileID: 1538461310}
   roomShade: {fileID: 0}
   characterName: Williams
@@ -19170,7 +19176,7 @@ Prefab:
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -110.81161
+      value: -109.9386
       objectReference: {fileID: 0}
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
@@ -19180,7 +19186,7 @@ Prefab:
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 124.74881
+      value: 123.58479
       objectReference: {fileID: 0}
     - target: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
@@ -19234,17 +19240,17 @@ Prefab:
     - target: {fileID: 224770300234064966, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 124.74881
+      value: 123.58479
       objectReference: {fileID: 0}
     - target: {fileID: 224371953128864000, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -60.874405
+      value: -60.292397
       objectReference: {fileID: 0}
     - target: {fileID: 224371953128864000, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 101.74881
+      value: 100.58479
       objectReference: {fileID: 0}
     - target: {fileID: 114928525522714224, guid: 464903897789d944a8dd0b42e8520f11,
         type: 2}
