@@ -3276,7 +3276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: Yousaf
   talkToNode: Yousaf
@@ -6000,6 +6000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296059419}
   - component: {fileID: 296059420}
+  - component: {fileID: 296059421}
   m_Layer: 0
   m_Name: door_frontview (5)
   m_TagString: Untagged
@@ -6014,7 +6015,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 296059418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.7, y: 5.35, z: 4.51}
+  m_LocalPosition: {x: -27.69, y: 5.35, z: 4.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 178241659}
@@ -6066,6 +6067,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &296059421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 296059418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5000004, z: 0.20000005}
+  m_Center: {x: 0, y: 0.0000009536743, z: 0.0000007748604}
 --- !u!1 &296070916
 GameObject:
   m_ObjectHideFlags: 0
@@ -35029,7 +35042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: Nurse_Manager
   talkToNode: Nurse_Manager
@@ -35587,7 +35600,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 409037770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.38, z: 0}
+  m_LocalPosition: {x: -40.75, y: 1.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1322554069}
@@ -35830,7 +35843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: Williams
   talkToNode: Mr_Williams
@@ -36775,7 +36788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: Williams
   talkToNode: Mr_Williams
@@ -47784,8 +47797,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -26, y: 6, z: 0}
     second:
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -47793,8 +47806,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -24, y: 6, z: 0}
     second:
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -76418,11 +76431,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 2c86eaa00d977411287ed9de467ec62d, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 885a2408b9a6640469ada3e0bff878b6, type: 2}
-  - m_RefCount: 9
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: bfc508b76b6464b838ec50c6988acfca, type: 2}
-  - m_RefCount: 8
+  - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: 76f98c218257c422bbe5ec18ad2823dd, type: 2}
-  - m_RefCount: 119
+  - m_RefCount: 117
     m_Data: {fileID: 11400000, guid: bdcac94baf71a4205a893e9fc750637b, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: b08641df457394ec2bcdd1642a2df317, type: 2}
@@ -76555,11 +76568,11 @@ Tilemap:
     m_Data: {fileID: 21300024, guid: 9181a6eb9af094edfaf0110545552314, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300052, guid: 9181a6eb9af094edfaf0110545552314, type: 3}
-  - m_RefCount: 9
+  - m_RefCount: 10
     m_Data: {fileID: 21300048, guid: 9181a6eb9af094edfaf0110545552314, type: 3}
-  - m_RefCount: 8
+  - m_RefCount: 9
     m_Data: {fileID: 21300050, guid: 9181a6eb9af094edfaf0110545552314, type: 3}
-  - m_RefCount: 119
+  - m_RefCount: 117
     m_Data: {fileID: 21300156, guid: 3a6c5666ea8c5d145a4773188f7f2361, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 21300088, guid: 3a6c5666ea8c5d145a4773188f7f2361, type: 3}
@@ -88122,6 +88135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1225428306}
   - component: {fileID: 1225428307}
+  - component: {fileID: 1225428308}
   m_Layer: 0
   m_Name: door_frontview (6)
   m_TagString: Untagged
@@ -88188,6 +88202,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1225428308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225428305}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5000004, z: 0.20000005}
+  m_Center: {x: 0, y: 0.0000009536743, z: 0.0000007748604}
 --- !u!1 &1247245096
 GameObject:
   m_ObjectHideFlags: 0
@@ -89266,8 +89292,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1311831515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.49, y: 5.36, z: 0}
-  m_LocalScale: {x: 0.42, y: 0.3341222, z: 1}
+  m_LocalPosition: {x: -18.5, y: 5.36, z: 0}
+  m_LocalScale: {x: 0.44099995, y: 0.3341222, z: 1}
   m_Children:
   - {fileID: 1893198187}
   m_Father: {fileID: 504783595}
@@ -89343,7 +89369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: WilliamsDoor
   talkToNode: Mr_Williams_Door
@@ -89656,7 +89682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: Williams
   talkToNode: Mr_Williams
@@ -91766,7 +91792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1415269381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.46, y: -1.21, z: 0}
+  m_LocalPosition: {x: -8.95, y: -1.21, z: 0}
   m_LocalScale: {x: 0.32857275, y: 0.32857275, z: 0.32857275}
   m_Children:
   - {fileID: 1010588169}
@@ -91856,7 +91882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiController: {fileID: 0}
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 812454726}
   roomShade: {fileID: 0}
   characterName: Stein
   talkToNode: Stein.Stein
@@ -93385,7 +93411,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 3ceaa5fdb729a4de994a20e6a4a8e099, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1

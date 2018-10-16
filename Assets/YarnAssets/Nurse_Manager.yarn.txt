@@ -4,6 +4,7 @@ colorID: 0
 position: 540,260
 ---
 <<set $SecretaryFace = true>>
+<<turnOn Video1>>
 
 Nurse Manager: Hi Eman! How are you feeling today?
 Skip:
