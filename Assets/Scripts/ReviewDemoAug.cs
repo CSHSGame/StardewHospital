@@ -31,13 +31,13 @@ public class ReviewDemoAug : MonoBehaviour {
     //variableStorage.GetValue("$variable_name").AsBool
     public bool LoadData = false;
     void OnMouseDown()
-		{
+	{
 			print ("click");
 			if (pageNumber < 3 && pageNumber > 0)
 			{
 				pageNumber++;
 			}
-		}
+	}
 
     void OnEnable()
     {
@@ -159,7 +159,8 @@ public class ReviewDemoAug : MonoBehaviour {
     }
   
 
-    void Update () {
+    void Update ()
+    {
 		if (pageNumber == 1 && williamsText.gameObject.activeInHierarchy == false)
         {
 			williamsText.gameObject.SetActive(true);
