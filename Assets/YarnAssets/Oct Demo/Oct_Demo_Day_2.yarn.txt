@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 1225,964
 ---
-*[$PlayerName] stands outside [$Char1Last]' door.*
+**[$PlayerName] stands outside [$Char1Last]'s door.**
 
 [[(Walk in without knocking.)|NoKnock_Williams_Day_2]]
 [[(Knock on the door.)|Knock_Williams_Day_2]]
