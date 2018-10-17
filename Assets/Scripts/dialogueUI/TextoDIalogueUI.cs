@@ -10,12 +10,13 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 {
     public FaceName[] faces;
     public GameObject dialogueContainer;
+    //left character face
     public Image leftFace;
+    //right character face usualy the player
     public Image rightFace;
     private Sprite CurentFace;
     public Sprite PlaceHolderFace;
-    /// The UI element that displays lines
-    public Text lineText;
+
     public ScrollRect Scroll;
     public RectTransform lineTextContainer;
     public RectTransform lineTextPrefab;
@@ -30,20 +31,23 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// the user selected
     private Yarn.OptionChooser SetSelectedOption;
 
-    /// How quickly to show the text, in seconds per character
-    [Tooltip("How quickly to show the text, in seconds per character")]
-    public float textSpeed = 0.025f;
 
     /// The buttons that let the user choose an option
     public List<Button> optionButtons;
 
     /// Make it possible to temporarily disable the controls when
     /// dialogue is active and to restore them when dialogue ends
-    public RectTransform gameControlsContainer;
+   // public RectTransform gameControlsContainer;
 
     public ExampleVariableStorage variableStorage;
-    private bool left = true;
-    private bool Action = false;
+    public enum BubbleType
+    {
+        action,
+        left,
+        right
+    }
+    private BubbleType bubbleType = BubbleType.left;
+    // to refator
     private bool faceSet = false;
     void Awake()
     {
@@ -51,7 +55,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
 
-        lineText.gameObject.SetActive(false);
+       // lineText.gameObject.SetActive(false);
 
         foreach (var button in optionButtons)
         {
@@ -73,7 +77,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Show a line of dialogue, gradually
     public override IEnumerator RunLine(Yarn.Line line)
     {
-        left = true;
+        //default bubble to the left
+        bubbleType = BubbleType.left;
+
         if (line.text != "Skip:")
         {
             CurentFace = PlaceHolderFace;
@@ -84,33 +90,35 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             Text txt = ob.GetComponentInChildren<Text>() ;
             HorizontalLayoutGroup hlg = ob.GetComponent<HorizontalLayoutGroup>();
             txt.text = CheckVars(line.text);
-         
-            if (Action)
-            {
-                Image img = ob.GetComponentInChildren<Image>();
-                img.sprite = actionBubble;
-                hlg.padding.right = 22;
-                hlg.padding.left = 22;
-                Action = false;
-            }
-            //right
-            else if (!left)
-            {
-                txt.gameObject.transform.parent.localScale = new Vector3(txt.gameObject.transform.parent.localScale.x *-1, txt.gameObject.transform.parent.localScale.y, txt.gameObject.transform.parent.localScale.z);
-                txt.gameObject.transform.localScale = new Vector3(txt.gameObject.transform.localScale.x * -1, txt.gameObject.transform.localScale.y, txt.gameObject.transform.localScale.z);
-                
-                hlg.padding.right = 22;
-                hlg.padding.left = 0;
-                rightFace.sprite = CurentFace;
-            }
-            else
-            {
-                hlg.padding.left = 22;
-                hlg.padding.right = 0;
-                leftFace.sprite = CurentFace;
 
 
+            switch (bubbleType)
+            {
+                case BubbleType.action:
+                    Image img = ob.GetComponentInChildren<Image>();
+                    img.sprite = actionBubble;
+                    hlg.padding.right = 22;
+                    hlg.padding.left = 22;        
+
+                    break;
+                case BubbleType.left:
+                    hlg.padding.left = 22;
+                    hlg.padding.right = 0;
+                    leftFace.sprite = CurentFace;
+
+
+                    break;
+                case BubbleType.right:
+
+                    txt.gameObject.transform.parent.localScale = new Vector3(txt.gameObject.transform.parent.localScale.x * -1, txt.gameObject.transform.parent.localScale.y, txt.gameObject.transform.parent.localScale.z);
+                    txt.gameObject.transform.localScale = new Vector3(txt.gameObject.transform.localScale.x * -1, txt.gameObject.transform.localScale.y, txt.gameObject.transform.localScale.z);
+
+                    hlg.padding.right = 22;
+                    hlg.padding.left = 0;
+                    rightFace.sprite = CurentFace;
+                    break;
             }
+   
 
 
 
@@ -201,18 +209,13 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator DialogueStarted()
     {
         Debug.Log ("Dialogue starting!");
+        //set the face to the players face
         rightFace.sprite = faces[0].sprite;
         // Enable the dialogue controls.
         if (dialogueContainer != null)
             dialogueContainer.SetActive(true);
 
-        // Hide the game controls.
-        if (gameControlsContainer != null)
-        {
-            gameControlsContainer.gameObject.SetActive(false);
-        }
-
-        left = true;
+        //delete the previous speach bubbles 
         DeleteChildren(lineTextContainer);
 
         yield break;
@@ -227,12 +230,12 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
 
-        // Show the game controls.
+      /*  // Show the game controls.
         if (gameControlsContainer != null)
         {
             gameControlsContainer.gameObject.SetActive(true);
         }
-
+        */
         yield break;
     }
     /// <summary>
@@ -292,8 +295,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         }
         if (varName == "$playerName")
         {
-            left = false;
-
+           
+            bubbleType = BubbleType.right;
             return variableStorage.GetValue(varName).AsString;
         }
         //Check YarnSpinner's variable storage first
@@ -310,14 +313,14 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         
         if (varName == "action")
         {
-            Action = true;
-            Debug.Log("ACTION");
+            bubbleType = BubbleType.action;
+           
+      
             return "";
         }
         if (varName == "right")
         {
-            left = false;
-          
+            bubbleType = BubbleType.right;
             return "";
         }
      

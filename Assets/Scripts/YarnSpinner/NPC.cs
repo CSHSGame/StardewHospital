@@ -32,7 +32,7 @@ using UnityEngine.Serialization;
 namespace Yarn.Unity.Example {
     public class NPC : MonoBehaviour {
 
-        public enum Characters
+        private enum Characters
         {
             Martin,
             MartinDoor,
@@ -46,8 +46,9 @@ namespace Yarn.Unity.Example {
             BlueTeam,
             GreenTeam,
         }
+        private Characters thisCharacter;
+
         public NpcController aiController;
-        public Characters thisCharacter;
 
         public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
 
