@@ -91,7 +91,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             HorizontalLayoutGroup hlg = ob.GetComponent<HorizontalLayoutGroup>();
             txt.text = CheckVars(line.text);
 
-
+            HorizontalLayoutGroup hlg2 = ob.transform.GetChild(0).GetComponent<HorizontalLayoutGroup>();
             switch (bubbleType)
             {
                 case BubbleType.action:
@@ -105,7 +105,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                     hlg.padding.left = 22;
                     hlg.padding.right = 0;
                     leftFace.sprite = CurentFace;
-
+                   
+                    hlg2.padding.right = 34;
 
                     break;
                 case BubbleType.right:
@@ -116,6 +117,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                     hlg.padding.right = 22;
                     hlg.padding.left = 0;
                     rightFace.sprite = CurentFace;
+                  
+                    hlg2.padding.left = 14;
                     break;
             }
    
@@ -137,7 +140,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                 continuePrompt.SetActive(true);
 
             // Wait for any user input
-            while (Input.anyKeyDown == false)
+            while (Input.GetKeyDown(KeyCode.Space ) == false)
             {
                 yield return null;
             }
@@ -289,14 +292,15 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                 {
                     CurentFace = f.sprite;
                     faceSet = true;
+                  //  return variableStorage.GetValue(varName).AsString;
                 }
                 
             }
         }
         if (varName == "$playerName")
         {
-           
-            bubbleType = BubbleType.right;
+           if(bubbleType != BubbleType.action)
+                bubbleType = BubbleType.right;
             return variableStorage.GetValue(varName).AsString;
         }
         //Check YarnSpinner's variable storage first

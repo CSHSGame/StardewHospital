@@ -4,25 +4,29 @@ colorID: 0
 position: 1219,962
 ---
 <<SetPath Controller Zero>>
-*All the residents are having lunch. [$Char1Last] is wandering around the hallway, looking for an exit. [$PlayerName] approaches him.*
+<<set $Char1Last = "Mr.Williams">>
+<<set $Char1First = "Arthur">>
+
+
+[action]*All the residents are having lunch. [$Char1Last] is wandering around the hallway, looking for an exit. [$playerName] approaches him.*
 Skip:
-[$PlayerName]: Good afternoon, [$Char1Last].
+[$playerName]: Good afternoon, [$Char1Last].
 Skip:
 [$Char1Last]: Hello.
 Skip:
-[$PlayerName]: How are you doing?
+[$playerName]: How are you doing?
 Skip:
 [$Char1Last]: Sorry, no time to talk. Late for work.
 Skip:
-[$PlayerName]: What's your job?
+[$playerName]: What's your job?
 Skip:
 [$Char1Last]: I'm a chef!
 Skip:
-[$PlayerName]: Oh, wow! That's really interesting! Do you enjoy your work?
+[$playerName]: Oh, wow! That's really interesting! Do you enjoy your work?
 Skip:
 [$Char1Last]: Yes, I love cooking.
 Skip:
-[$PlayerName]: [$Char1Last], I was just going to have a cup of tea. Would you like to join me?
+[$playerName]: [$Char1Last], I was just going to have a cup of tea. Would you like to join me?
 Skip:
 [$Char1Last]: No, I can't! I'm late for work!
 
@@ -35,7 +39,7 @@ tags:
 colorID: 0
 position: 863,1274
 ---
-[$PlayerName]: You can't leave!
+[$playerName]: You can't leave!
 Skip:
 [$Char1Last]: You can't stop me!
 Skip:
@@ -50,7 +54,7 @@ tags:
 colorID: 0
 position: 1544,1291
 ---
-[$PlayerName]: [$Char1First], let's go have tea in the lounge. You can tell me all about your job.
+[$playerName]: [$Char1First], let's go have tea in the lounge. You can tell me all about your job.
 Skip:
 [$Char1Last]: I don't have time to talk! Late for work.
 Skip:
@@ -58,14 +62,14 @@ Skip:
 Skip:
 [$Char1Last]: Why isn't it opening?
 Skip:
-[$PlayerName]: Stop, [$Char1First], you're going to break the door!
+[$playerName]: Stop, [$Char1First], you're going to break the door!
 Skip:
 [$Char1Last]: I don't care!
 Skip:
 <<IsThought = True>>
-Raising your voice will agitate the resident. Instead, calmly try to understand why he wants to leave, or explore other areas related to his job.
+[action]*Raising your voice will agitate the resident. Instead, calmly try to understand why he wants to leave, or explore other areas related to his job.*
 <<IsThought = False>>
-[$PlayerName]: I'm sorry, I didn't mean to yell.
+[$playerName]: I'm sorry, I didn't mean to yell.
 
 [[Ask_Williams_Day_3]]
 ===
@@ -74,25 +78,25 @@ tags:
 colorID: 0
 position: 1228,1303
 ---
-[$PlayerName]: *Pause* [$Char1Last]?
+[$playerName]: *Pause* [$Char1Last]?
 Skip:
 [$Char1Last]: Yes?
 Skip:
-[$PlayerName]: What's the special on the menu today?
+[$playerName]: What's the special on the menu today?
 Skip:
 [$Char1Last]: My famous shepherd's pie!
 Skip:
-[$PlayerName]: What a coincidence! I tried making sheperd's pie many times. It's my grandmother's favorite. Mine just never turn out well. What's your secret?
+[$playerName]: What a coincidence! I tried making sheperd's pie many times. It's my grandmother's favorite. Mine just never turn out well. What's your secret?
 Skip:
 [$Char1Last]: I'll tell you, but I can only talk for a little while.
 Skip:
-[$PlayerName]: Thanks, [$Char1Last]. It won't take long.
+[$playerName]: Thanks, [$Char1Last]. It won't take long.
 Skip:
+
+[action]*[$playerName] takes [$Char1Last] down the hall.*
 <<SetPath MrWilliams Zero>>
 <<SetPath Controller One>>
 <<SetDialog MrWilliams Lounge_Williams_Day_3>>
-*[$PlayerName] takes [$Char1Last] down the hall.*
-
 
 ===
 title: Lounge_Williams_Day_3
@@ -100,13 +104,13 @@ tags:
 colorID: 0
 position: 1214,1703
 ---
-*[$Char1Last] and [$PlayerName] are in his room.*
+[action]*[$Char1Last] and [$playerName] are in his room.*
 Skip:
-[$PlayerName]: So, tell me why you love cooking so much? All I can make is bad shepherd's pie and burnt toast.
+[$playerName]: So, tell me why you love cooking so much? All I can make is bad shepherd's pie and burnt toast.
 Skip:
 [$Char1Last]: Oh, dear. Well, I got my love of cooking from my grandma. I loved her food so much. I learned how to cook from watching her.
 Skip:
-[$PlayerName]: Wow, she must have been a great cook!
+[$playerName]: Wow, she must have been a great cook!
 Skip:
 [$Char1Last]: Yes. Then, my birth family sent me to Canada. My adopted family owned a restaurant, and the rest was history.
 
@@ -118,11 +122,11 @@ tags:
 colorID: 0
 position: 1434,1992
 ---
-[$PlayerName]: Wow, lunch smells delicious. Why don't we go eat?
+[$playerName]: Wow, lunch smells delicious. Why don't we go eat?
 Skip:
 [$Char1Last]: Oh! work!
 Skip:
-[$PlayerName]: Wait, we still have time! You didn't finish your story.
+[$playerName]: Wait, we still have time! You didn't finish your story.
 Skip:
 [$Char1Last]: Well, what else did you want to know?
 
@@ -136,22 +140,22 @@ position: 1207,2336
 ---
 [$Char1Last]: It was World War II. Britain was under attack by the enemy. The men were called to the trenches, the women to the factories. As for the children, they put us on ships headed to Australia or Canada for our safety. Those were hard times.
 Skip:
-[$PlayerName]: It sounds like it. How were your adopted family? 
+[$playerName]: It sounds like it. How were your adopted family? 
 Skip:
 [$Char1Last]: My adopted father taught me how to figure out the business side of running a restaurant. I was a fast learner. I moved from waiter all the way to head chef in no time.
 Skip:
-[$PlayerName]: Wow, I didn't know you were so talented, [$Char1Last].
+[$playerName]: Wow, I didn't know you were so talented, [$Char1Last].
 Skip:
 [$Char1Last]: Haha! It was hard work!
 Skip:
-[$PlayerName]: It's no wonder the chef here requested your professional opinion of the new dish on our menu.
+[$playerName]: It's no wonder the chef here requested your professional opinion of the new dish on our menu.
 Skip:
 [$Char1Last]: Really?
 Skip:
-[$PlayerName]: I'm on my way to the dining room. Would you like to lead me there?
+[$playerName]: I'm on my way to the dining room. Would you like to lead me there?
 Skip:
 [$Char1Last]: I'd be happy to.
-
 Skip:
-*They walk toward the dining room.*
+[action]*They walk toward the dining room.*
+<<FadeSceneOut SceneManager Fade>>
 ===

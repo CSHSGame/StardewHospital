@@ -5,17 +5,19 @@ using Yarn.Unity;
 
 public class SceneManagerDemo : MonoBehaviour {
 
-    public GameObject FadeBlackness;
+ 
+    public FadeObjectInOut fadeObject;
 
     [YarnCommand("FadeSceneOut")]
     public void FadeOut(string Fade)
     {
         Debug.Log("called " + Fade);
-
+        fadeObject.FadeIn();
     }
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
 		
 	}
 	

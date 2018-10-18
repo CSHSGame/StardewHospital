@@ -121,16 +121,5 @@ public class Waypoints : MonoBehaviour {
         }
     }
 
-    /*void Day3WilliamsAndPlayerToRoom()
-    {
-        if (index < points.Length)
-        {
-
-        Williams.transform.position = Vector3.MoveTowards(Williams.transform.position, .transform.position, step);
-        if (character.transform.position == points[index].transform.position)
-        {
-                index++;
-        }
-        }
-    }*/
+    
 }
