@@ -12,7 +12,7 @@ position: 1225,964
 title: NoKnock_Williams_Day_2
 tags: 
 colorID: 0
-position: 998,1279
+position: 996,1280
 ---
 *[$PlayerName] walks into [$Char1Last]' room.*
 Skip:
@@ -150,7 +150,7 @@ Skip:
 title: Hallway_Williams_Day_2
 tags: 
 colorID: 0
-position: 1131,2372
+position: 1131,2373
 ---
 *[$Char1Last] and [$PlayerName] walk to the dining room.
 Skip:
