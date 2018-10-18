@@ -6,6 +6,5 @@ public class WayPointsHolder  {
 
     public string Name;
     public GameObject[] points;
-    [Space]
-    private bool test;
+
 }

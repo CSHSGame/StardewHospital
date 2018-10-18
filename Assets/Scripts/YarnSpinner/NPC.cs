@@ -62,6 +62,18 @@ namespace Yarn.Unity.Example {
         [Header("Optional")]
         public TextAsset scriptToLoad;
 
+
+        [YarnCommand("SetDialog")]
+        public void SettingDialog(string NodeName)
+        {
+            Debug.Log("called " + NodeName);
+            talkToNode = NodeName;
+
+        }
+
+
+
+
         // Use this for initialization
         void Start () {
             if (scriptToLoad != null) {

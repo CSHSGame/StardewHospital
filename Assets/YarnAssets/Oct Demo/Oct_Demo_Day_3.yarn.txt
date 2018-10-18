@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 1219,962
 ---
+<<SetPath Controller Zero>>
 *All the residents are having lunch. [$Char1Last] is wandering around the hallway, looking for an exit. [$PlayerName] approaches him.*
 Skip:
 [$PlayerName]: Good afternoon, [$Char1Last].
@@ -71,7 +72,7 @@ Raising your voice will agitate the resident. Instead, calmly try to understand 
 title: Ask_Williams_Day_3
 tags: 
 colorID: 0
-position: 1228,1299
+position: 1228,1303
 ---
 [$PlayerName]: *Pause* [$Char1Last]?
 Skip:
@@ -88,6 +89,8 @@ Skip:
 [$PlayerName]: Thanks, [$Char1Last]. It won't take long.
 Skip:
 <<SetPath MrWilliams Zero>>
+<<SetPath Controller One>>
+<<SetDialog MrWilliams Lounge_Williams_Day_3>>
 *[$PlayerName] takes [$Char1Last] down the hall.*
 
 
@@ -148,6 +151,7 @@ Skip:
 [$PlayerName]: I'm on my way to the dining room. Would you like to lead me there?
 Skip:
 [$Char1Last]: I'd be happy to.
+
 Skip:
 *They walk toward the dining room.*
 ===

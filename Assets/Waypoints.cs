@@ -10,9 +10,11 @@ public class Waypoints : MonoBehaviour {
 
     public float speed;
     private float step;
+    [SerializeField]
     private int pathindex = -1;
     private int nodeindex = 0;
 
+    public bool isPlayer;
 
     [YarnCommand("SetPath")]
     public void StartPathing(string Pathnum)
@@ -20,8 +22,40 @@ public class Waypoints : MonoBehaviour {
         Debug.Log("called " + Pathnum);
         int returnValue = ConvertStringToInt(Pathnum);
         pathindex = returnValue;
+
+        foreach (Collider c in GetComponentsInChildren<Collider>())
+        {
+            c.enabled = false;
+        }
+        if (isPlayer)
+        {
+            GetComponent<CharacterController>().enabled = false;
+            GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = false;
+
+        }
     }
 
+    
+    public void OnDrawGizmosSelected()
+    {
+        if(pathindex!= -1)
+        {
+            
+            for (int i = 0; i< holder[pathindex].points.Length;i++ )
+            {
+                if (i == 0)
+                {
+                    Gizmos.DrawLine(transform.position, holder[pathindex].points[i].transform.position);
+                }
+                else
+                {
+                    Gizmos.DrawLine(holder[pathindex].points[i-1].transform.position, holder[pathindex].points[i].transform.position);
+                }
+                
+            }
+        }
+        
+    }
     // Use this for initialization
     void Start ()
     {
@@ -71,8 +105,18 @@ public class Waypoints : MonoBehaviour {
             }
             else
             {
+                if(isPlayer)
+                {
+                    GetComponent<CharacterController>().enabled = true;
+                    GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = true;
+                    foreach (Collider c in GetComponentsInChildren<Collider>())
+                    {
+                        c.enabled = true;
+                    }
+                }
                 Debug.Log("Break");
                 pathindex = -1;
+                nodeindex = 0;
             }
         }
     }
