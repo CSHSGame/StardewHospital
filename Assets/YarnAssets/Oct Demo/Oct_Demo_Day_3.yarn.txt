@@ -1,7 +1,7 @@
 title: Start_OctDemo_Day_3
 tags: 
 colorID: 0
-position: 1222,962
+position: 1219,962
 ---
 *All the residents are having lunch. [$Char1Last] is wandering around the hallway, looking for an exit. [$PlayerName] approaches him.*
 Skip:
@@ -71,7 +71,7 @@ Raising your voice will agitate the resident. Instead, calmly try to understand 
 title: Ask_Williams_Day_3
 tags: 
 colorID: 0
-position: 1228,1297
+position: 1228,1299
 ---
 [$PlayerName]: *Pause* [$Char1Last]?
 Skip:
@@ -87,16 +87,17 @@ Skip:
 Skip:
 [$PlayerName]: Thanks, [$Char1Last]. It won't take long.
 Skip:
+<<SetPath MrWilliams Zero>>
 *[$PlayerName] takes [$Char1Last] down the hall.*
 
-[[Lounge_Williams_Day_3]]
+
 ===
 title: Lounge_Williams_Day_3
 tags: 
 colorID: 0
 position: 1214,1703
 ---
-*[$Char1Last] and [$PlayerName] are sitting in the lounge.*
+*[$Char1Last] and [$PlayerName] are in his room.*
 Skip:
 [$PlayerName]: So, tell me why you love cooking so much? All I can make is bad shepherd's pie and burnt toast.
 Skip:
@@ -106,33 +107,13 @@ Skip:
 Skip:
 [$Char1Last]: Yes. Then, my birth family sent me to Canada. My adopted family owned a restaurant, and the rest was history.
 
-[[I see, you've had behaviour problems as a child...|Behaviour_Williams_Day_3]]
 [[Wow, lunch smells delicious. Why don't we go eat?|Lunch_Williams_Day_3]]
 [[Why were you sent to Canada?|Canada_Williams_Day_3]]
-===
-title: Behaviour_Williams_Day_3
-tags: 
-colorID: 0
-position: 979,1989
----
-[$PlayerName]: I see, you've had behaviour problems as a child...
-Skip:
-[$Char1Last]: What? What do you mean?
-Skip:
-[$PlayerName]: Isn't that why your birth family put you up for adoption?
-Skip:
-[$Char1Last]: What? No!
-Skip:
-[$PlayerName]: I'm so sorry, I was wrong to assume. Please, continue with your story.
-Skip:
-[$Char1Last]: Well, what else do you want to know?
-
-[[Canada_Williams_Day_3]]
 ===
 title: Lunch_Williams_Day_3
 tags: 
 colorID: 0
-position: 1437,1992
+position: 1434,1992
 ---
 [$PlayerName]: Wow, lunch smells delicious. Why don't we go eat?
 Skip:
@@ -169,6 +150,4 @@ Skip:
 [$Char1Last]: I'd be happy to.
 Skip:
 *They walk toward the dining room.*
-Skip:
-[$Char1Last]: How in the world do you burn toast?
 ===
