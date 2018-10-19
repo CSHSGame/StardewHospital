@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
+using UnityEngine.SceneManagement;
 
 public class SceneManagerDemo : MonoBehaviour {
 
@@ -25,4 +26,9 @@ public class SceneManagerDemo : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void ChangeDay(int day)
+    {
+        SceneManager.LoadScene(day);
+    }
 }

@@ -1235,6 +1235,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd40425e2ef2849a9a05e31fe428be73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnFadeComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1593786201}
+        m_MethodName: ChangeDay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   fadeDelay: 0
   fadeTime: 1
   fadeInOnStart: 0
@@ -40799,7 +40815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.00016215145, y: 182.99599}
+  m_AnchoredPosition: {x: -0.00016215145, y: 183}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &757831608
@@ -102378,8 +102394,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 480049472}
   m_HandleRect: {fileID: 480049471}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9999733
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

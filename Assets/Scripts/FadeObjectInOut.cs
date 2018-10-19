@@ -117,8 +117,11 @@ public class FadeObjectInOut : MonoBehaviour
 				rendererObjects[i].enabled = false; 
 			}
 		}
-
-        OnFadeComplete.Invoke();
+        else
+        {
+            OnFadeComplete.Invoke();
+        }
+       
 
         Debug.Log ("fade sequence end : " + fadingOut); 
  
