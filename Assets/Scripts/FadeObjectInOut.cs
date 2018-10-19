@@ -1,10 +1,12 @@
 ﻿ 
 using UnityEngine;
+using UnityEngine.Events;
+
 using System.Collections;
  
 public class FadeObjectInOut : MonoBehaviour
 {
- 
+    public UnityEvent OnFadeComplete;
 	// publically editable speed
 	public float fadeDelay = 0.0f; 
 	public float fadeTime = 0.5f; 
@@ -115,9 +117,10 @@ public class FadeObjectInOut : MonoBehaviour
 				rendererObjects[i].enabled = false; 
 			}
 		}
- 
- 
-		Debug.Log ("fade sequence end : " + fadingOut); 
+
+        OnFadeComplete.Invoke();
+
+        Debug.Log ("fade sequence end : " + fadingOut); 
  
 	}
  
@@ -148,14 +151,14 @@ public class FadeObjectInOut : MonoBehaviour
 	// These are for testing only. 
 		void Update()
 		{
-			if (Input.GetKeyDown (KeyCode.Alpha0) )
+		/*	if (Input.GetKeyDown (KeyCode.Alpha0) )
 			{
 				FadeIn();
 			}
 			if (Input.GetKeyDown (KeyCode.Alpha9) )
 			{
 				FadeOut(); 
-			}
+			}*/
 		}
  
  

@@ -4,7 +4,8 @@ using UnityEngine;
 using Yarn.Unity;
 public class TurnOn : MonoBehaviour {
     public GameObject[] behaviors;
-    [YarnCommand("turnOn")]
+
+    [YarnCommand("turnOnn")]
     public void SetGameObjectOn()
     {
         foreach(GameObject mono in behaviors)
