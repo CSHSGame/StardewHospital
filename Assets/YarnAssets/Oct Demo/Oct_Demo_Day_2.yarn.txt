@@ -16,6 +16,7 @@ tags:
 colorID: 0
 position: 641,1258
 ---
+<<turnOff Npc1Door>>
 <<SetPath Controller One>>
 [action]*[$playerName] walks into [$Char1Last]' room.*
 Skip:
@@ -29,6 +30,7 @@ colorID: 0
 position: 1230,1278
 ---
 [$playerName]: (Knock, knock!)
+<<turnOff Npc1Door>>
 <<SetPath Controller One>>
 Skip:
 [$playerName]: Hi, [$Char1Last].
@@ -52,6 +54,7 @@ Skip:
 Skip:
 [action]*[$playerName] enters.*
 <<SetPath Controller One>>
+<<turnOff Npc1Door>>
 Skip:
 [$playerName]: I'd like to walk with you to the dining room for breakfast.
 Skip:

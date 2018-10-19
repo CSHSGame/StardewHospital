@@ -44,7 +44,7 @@ Skip:
 [$Char1Last]: You can't stop me!
 Skip:
 <<IsThought = True>>
-Do not ignore [$Char1Last]'s issue. Instead, find the underlying meaning and offer redirection.
+[action]Do not ignore [$Char1Last]'s issue. Instead, find the underlying meaning and offer redirection.
 <<IsThought = False>>
 
 [[Ask_Williams_Day_3]]

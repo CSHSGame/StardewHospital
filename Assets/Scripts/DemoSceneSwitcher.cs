@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class DemoSceneSwitcher : MonoBehaviour {
+    public float Delay = 3;
     public bool MainMenu = false;
     public int SceneA;
     public int SceneB;
@@ -19,19 +20,24 @@ public class DemoSceneSwitcher : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-        if (Input.anyKey)
+        Delay -= Time.deltaTime;
+        if (Delay <= 0)
         {
-
-            float random = Random.value;
-
-            if(random > 0.5f)
+            if (Input.anyKey)
             {
-                SceneManager.LoadScene(SceneA);
-            }
-            else
-            {
-                SceneManager.LoadScene(SceneB);
+
+                float random = Random.value;
+
+                if (random > 0.5f)
+                {
+                    SceneManager.LoadScene(SceneA);
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneB);
+                }
             }
         }
+
 	}
 }
