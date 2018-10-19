@@ -217,9 +217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a390214a0cb90f744ae702486749f3be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Delay: 3
   MainMenu: 1
-  SceneA: 2
-  SceneB: 3
+  SceneA: 1
+  SceneB: 7
   NextScene: 0
 --- !u!4 &326484112
 Transform:

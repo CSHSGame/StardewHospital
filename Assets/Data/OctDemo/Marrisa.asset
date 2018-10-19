@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: Marrisa
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: a88b5c0c11e154080954c384f4bcf536, type: 3}
+  sprite: {fileID: 21300014, guid: e333b22f645a59945840c9ae8bbdebfd, type: 3}
   Name: $Char1Daughter

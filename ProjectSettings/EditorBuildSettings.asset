@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoDays/splash screen.unity
     guid: 974b741b20c47ca4dadcaf2795b1809d
   - enabled: 1
-    path: Assets/Scenes/DemoDays/Old/Oct 22nd Demo Day 2OLD 2.unity
-    guid: 91377246373e7d140ba5870b0ff2a94d
+    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v1.unity
+    guid: 5817b4dfdc064ae4bb884399a7f3153a
   - enabled: 1
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v1.unity
     guid: 491344bce2025bb42850254181e47697
@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v1.unity
     guid: 6e945a27d23770340b97f241223bd05d
   - enabled: 1
-    path: Assets/Scenes/DemoDays/Old/Oct 22nd Demo Day 2OLD.unity
-    guid: 938fdc5fd4a0c1c49a40f6460fe6bcde
+    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v2.unity
+    guid: 27c5c1ca6ea29554fab63f3026948633
   - enabled: 1
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v2.unity
     guid: e24a02e6f67a2064e9fc4a2159a712d4
@@ -27,8 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v2.unity
     guid: 63c800aeea03cea4f9710f61c2f4a57c
   - enabled: 1
-    path: Assets/Scenes/DemoDays/Old/Oct 22nd Demo Day 1OLD.unity
-    guid: 2a7e1a4e12935e94bba996a4fbd62f88
+    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v1 alternate.unity
+    guid: 4b55a6f6f8fc6b74ea4ada91552f10cc
   - enabled: 1
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v1 alternate.unity
     guid: 927bb490ab868d54ba412e96ab904a0b
@@ -36,8 +36,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v1 altenate.unity
     guid: 387335aab2a152e4db7f527b0dac6951
   - enabled: 1
-    path: Assets/Scenes/DemoDays/Old/Oct 22nd Demo Day 2OLD 1.unity
-    guid: 84b5847ac6122de44aac26f136cfbd32
+    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v2 alternate.unity
+    guid: 0260878f653b23a47bbace1bd325d088
   - enabled: 1
     path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v2 altenate.unity
     guid: ab03ca4f922f3de418fb09c967428a72

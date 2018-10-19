@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: player
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300024, guid: 00fdfe7fe6334ec4fbb72078d0d558dc, type: 3}
+  sprite: {fileID: 21300012, guid: 00fdfe7fe6334ec4fbb72078d0d558dc, type: 3}
   Name: $playerName
