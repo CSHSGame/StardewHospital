@@ -212,6 +212,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator DialogueStarted()
     {
         Debug.Log ("Dialogue starting!");
+
+        //Move the camera down so the player is above the chat UI
+        Camera.main.transform.localPosition = new Vector3(0.0f,-1.2f,-7.0f);
         //set the face to the players face
         rightFace.sprite = faces[0].sprite;
         // Enable the dialogue controls.
@@ -228,7 +231,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public override IEnumerator DialogueComplete()
     {
         // Debug.Log ("Complete!");
-
+        //Move the camera back to the center after dialog finished
+        Camera.main.transform.localPosition = new Vector3(0.0f, 0.0f, -7.0f);
         // Hide the dialogue interface.
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);

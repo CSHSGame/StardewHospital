@@ -34,6 +34,8 @@ namespace Yarn.Unity.Example {
         public float minPosition = -5.3f;
         public float maxPosition = 5.3f;
 
+        public float DialogRange = 1.0f;
+
         public float moveSpeed = 1.0f;
 
         public float interactionRadius = 2.0f;
@@ -45,7 +47,7 @@ namespace Yarn.Unity.Example {
             Gizmos.color = Color.blue;
 
             // Flatten the sphere into a disk, which looks nicer in 2D games
-            Gizmos.matrix = Matrix4x4.TRS(transform.position, Quaternion.identity, new Vector3(1,1,0));
+            Gizmos.matrix = Matrix4x4.TRS(transform.position, Quaternion.identity, new Vector3(DialogRange, 1, DialogRange));
 
             // Need to draw at position zero because we set position in the line above
             Gizmos.DrawWireSphere(Vector3.zero, interactionRadius);

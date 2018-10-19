@@ -3,18 +3,21 @@ tags:
 colorID: 0
 position: 1225,964
 ---
-**[$PlayerName] stands outside [$Char1Last]'s door.**
+<<set $Char1Last = "Mr.Williams">>
+<<set $Char1First = "Arthur">>
+[action]*[$playerName] stands outside [$Char1Last]'s door.*
 
 [[(Walk in without knocking.)|NoKnock_Williams_Day_2]]
-[[(Knock on the door.)|Knock_Williams_Day_2]]
-[[(Knock on the door.) Hello, it's [$PlayerName].|KnockIntro_Williams_Day_2]]
+[[(Knock on the door then enter the room.)|Knock_Williams_Day_2]]
+[[(Knock on the door.) Hello, it's [$playerName].|KnockIntro_Williams_Day_2]]
 ===
 title: NoKnock_Williams_Day_2
 tags: 
 colorID: 0
-position: 996,1280
+position: 641,1258
 ---
-*[$PlayerName] walks into [$Char1Last]' room.*
+<<SetPath Controller One>>
+[action]*[$playerName] walks into [$Char1Last]' room.*
 Skip:
 [$Char1Last]: Who are you? Get out!
 
@@ -25,11 +28,10 @@ tags:
 colorID: 0
 position: 1230,1278
 ---
-[$PlayerName]: (Knock, knock!)
+[$playerName]: (Knock, knock!)
+<<SetPath Controller One>>
 Skip:
-[$Char1Last]: Yes?
-Skip:
-[$PlayerName]: Hi, [$Char1Last].
+[$playerName]: Hi, [$Char1Last].
 Skip:
 [$Char1Last]: Help! There's an intruder in my room!
 
@@ -40,17 +42,18 @@ tags:
 colorID: 0
 position: 1583,1409
 ---
-[$PlayerName]: (Knock, knock!)
+[$playerName]: (Knock, knock!)
 Skip:
 [$Char1Last]: Yes?
 Skip:
-[$PlayerName]: Hi, [$Char1Last], I'm [$PlayerName]. May I come in?
+[$playerName]: Hi, [$Char1Last], I'm [$playerName]. May I come in?
 Skip:
 [$Char1Last]: Okay, come in!
 Skip:
-*[$PlayerName] enters.*
+[action]*[$playerName] enters.*
+<<SetPath Controller One>>
 Skip:
-[$PlayerName]: I'd like to walk with you to the dining room for breakfast.
+[$playerName]: I'd like to walk with you to the dining room for breakfast.
 Skip:
 [$Char1Last]: No! I don't want breakfast. Leave me alone.
 
@@ -61,13 +64,13 @@ Skip:
 title: Frighten_Williams_Day_2
 tags: 
 colorID: 0
-position: 1094,1563
+position: 1059,1521
 ---
-[$PlayerName]: I'm sorry, [$Char1Last], I didn't mean to frighten you.
+[$playerName]: I'm sorry, [$Char1Last], I didn't mean to frighten you.
 Skip:
 [$Char1Last]: What do you want?
-SKip:
-[$PlayerName]: My name's [$PlayerName]. I'm one of the students that will be assisting you today. It's breakfast time, and I'm here to accompany you to the dining room.
+Skip:
+[$playerName]: My name's [$playerName]. I'm one of the students that will be assisting you today. It's breakfast time, and I'm here to accompany you to the dining room.
 Skip:
 [$Char1Last]: No, I'm not hungry. I don't want breakfast. Leave me alone.
 
@@ -80,22 +83,23 @@ tags:
 colorID: 0
 position: 926,1831
 ---
-[$PlayerName]: It's sausage and pancakes today. I heard it's your favourite.
+[$playerName]: It's sausage and pancakes today. I heard it's your favourite.
 Skip:
 [$Char1Last]: I said no! Leave my room now!
 Skip:
-[$PlayerName]: I'm sorry, [$Char1Last]. I know it's really early, but we just want your opinion about the menu.
+[$playerName]: I'm sorry, [$Char1Last]. I know it's really early, but we just want your opinion about the menu.
 Skip:
 [$Char1Last]: What menu?
 Skip:
-[$PlayerName]: The breakfast menu for today. We just want you to taste it first and tell us what you think, as a chef.
+[$playerName]: The breakfast menu for today. We just want you to taste it first and tell us what you think, as a chef.
 Skip:
 [$Char1Last]: Really? Well, I am quite hungry.
 Skip:
-[$PlayerName]: Perfect! Do you mind leading me to the dining room?
+[$playerName]: Perfect! Do you mind leading me to the dining room?
 Skip:
 [$Char1Last]: Of course.
-
+<<SetPath MrWilliams One>>
+<<SetPath Controller Two>>
 [[Hallway_Williams_Day_2]]
 ===
 title: Wife_Williams_Day_2
@@ -103,19 +107,19 @@ tags:
 colorID: 0
 position: 1224,1835
 ---
-*[$PlayerName] picks up the photo.*
+[action]*[$playerName] picks up the photo.*
 Skip:
-[$PlayerName]: I heard you say yesterday that this is a picture of your wife.
+[$playerName]: I heard you say yesterday that this is a picture of your wife.
 Skip:
 [$Char1Last]: Put that down! That's my picture!
 Skip:
-*He grabs the picture from the PS and puts it down.*
+[action]*He grabs the picture from the PS and puts it down.*
 Skip:
-[$PlayerName]:I'm sorry, [$Char1Last], I didn't mean to upset you. Is that you? The chef in that picture?
+[$playerName]:I'm sorry, [$Char1Last], I didn't mean to upset you. Is that you? The chef in that picture?
 Skip:
 [$Char1Last]: Yes, that's me.
 Skip:
-[$PlayerName]: That reminds me, I'm supposed to ask you to taste the sausage and pancakes so we can get your professional opinion on them.
+[$playerName]: That reminds me, I'm supposed to ask you to taste the sausage and pancakes so we can get your professional opinion on them.
 
 [[Really_Williams_Day_2]]
 ===
@@ -124,13 +128,13 @@ tags:
 colorID: 0
 position: 1578,1832
 ---
-*[$PlayerName] points to a photo.*
+[action]*[$playerName] points to a photo.*
 Skip:
-[$PlayerName]: Is that you, [$Char1Last]? The chef in that picture?
+[$playerName]: Is that you, [$Char1Last]? The chef in that picture?
 Skip:
 [$Char1Last]: Yes!
 Skip:
-[$PlayerName]: Oh, right, I just remembered! I just came here to ask you to give us your professional opinion as a chef on the sausage and pancakes they're serving this morning.
+[$playerName]: Oh, right, I just remembered! I just came here to ask you to give us your professional opinion as a chef on the sausage and pancakes they're serving this morning.
 
 [[Really_Williams_Day_2]]
 ===
@@ -141,10 +145,11 @@ position: 1451,2097
 ---
 [$Char1Last]: Really?
 Skip:
-[$PlayerName]: Yes, [$Char1Last]. I'm on my way to the dining room. Would you like to escort me there?
+[$playerName]: Yes, [$Char1Last]. I'm on my way to the dining room. Would you like to escort me there?
 Skip:
 [$Char1Last]: Of course, I'd love to. Let's go.
-
+<<SetPath MrWilliams One>>
+<<SetPath Controller Two>>
 [[Hallway_Williams_Day_2]]
 ===
 title: Hallway_Williams_Day_2
@@ -152,25 +157,27 @@ tags:
 colorID: 0
 position: 1131,2373
 ---
-*[$Char1Last] and [$PlayerName] walk to the dining room.
+<<FadeSceneOut SceneManager Fade>>
+[action]*[$Char1Last] and [$playerName] walk to the dining room.*
 Skip:
-[$PlayerName]: How was your night? Did you sleep well?
+[$playerName]: How was your night? Did you sleep well?
 Skip:
 [$Char1Last]: I did, and now I’m hungry. 
 Skip:
-*They enter the dining room. [$Char1Last] looks around at the crowded room.*
+[action]*They enter the dining room. [$Char1Last] looks around at the crowded room.*
 Skip:
 [$Char1Last]: Wow... There’s a lot of people here.
 Skip:
-[$PlayerName]: Yeah, it looks like you’re not the only ones who love sausages and pancakes and they are waiting for your opinion about it. Where do you sit, Mr. Williams?
+[$playerName]: Yeah, it looks like you’re not the only ones who love sausages and pancakes and they are waiting for your opinion about it. Where do you sit, Mr. Williams?
 Skip:
 [$Char1Last]: Right over there, by the left side of the window. 
 Skip:
-*[$Char1Last] sits at his designated seat. The player grabs breakfast for [$Char1Last] and sits beside him.*
+[action]*[$Char1Last] sits at his designated seat. The player grabs breakfast for [$Char1Last] and sits beside him.*
 Skip:
-[$PlayerName]: Here you go, Mr. Williams. Sausages and pancakes, as promised!
+[$playerName]: Here you go, Mr. Williams. Sausages and pancakes, as promised!
 Skip:
 [$Char1Last]: Wow, this smells delicious. *Takes a bite* This is fantastic, I love it!
 Skip:
-[$PlayerName]: Enjoy your breakfast, [$Char1Last]. I'll see you later
+[$playerName]: Enjoy your breakfast, [$Char1Last]. I'll see you later
+<<FadeSceneOut SceneManager Fade>>
 ===
