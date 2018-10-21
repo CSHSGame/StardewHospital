@@ -73,6 +73,7 @@ position: 780,2308
 ---
 <<set $Char1Daughter = "Marrisa">>
 <<set $NurseManager = "Nurse Manager">>
+<<turnOff Npc1Door>>
 <<SetPath MrWilliams Zero>>
 <<SetPath Nurse Zero>>
 [action]*[$Char1Last] grabs his suitcase and makes a beeline for the exit.*
@@ -95,7 +96,7 @@ Skip:
 <<SetPath Nurse One>>
 [action]*The [$NurseManager] reaches out for [$Char1Last]’ suitcase, but he holds onto it, so she gently takes his arm and walks him back into his room.*
 Skip:
-[$Char1Last]: [$playerName] tried to stop me from going home.
+[left][$Char1Last]: [$playerName] tried to stop me from going home.
 Skip:
 [$NurseManager]:  I’m sorry. [$playerName] didn’t understand. Can we sit down for a moment?
 Skip:

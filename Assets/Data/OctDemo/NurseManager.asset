@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: NurseManager
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 58102e849874545c6a1a7adc1bb07130, type: 3}
+  sprite: {fileID: 21300000, guid: 7491c952c21598b459d1c0e9c6a9249d, type: 3}
   Name: $NurseManager
