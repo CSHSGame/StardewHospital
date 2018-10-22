@@ -85,11 +85,11 @@ Skip:
 Skip:
 [action]*The [$NurseManager] hears the commotion and steps in.*
 Skip:
-[$NurseManager]: It’s ok, [$playerName]. I’ll take it from here.
+[right][$NurseManager]: It’s ok, [$playerName]. I’ll take it from here.
 Skip:
 [action]*The [$NurseManager] approaches [$Char1Last].*
 Skip:
-[$NurseManager]: [$Char1First], I’m sorry that [$playerName] upset you. Let me help you with that. 
+[right][$NurseManager]: [$Char1First], I’m sorry that [$playerName] upset you. Let me help you with that. 
 Skip:
 <<SetPath Controller Zero>>
 <<SetPath MrWilliams One>>
@@ -98,7 +98,7 @@ Skip:
 Skip:
 [left][$Char1Last]: [$playerName] tried to stop me from going home.
 Skip:
-[$NurseManager]:  I’m sorry. [$playerName] didn’t understand. Can we sit down for a moment?
+[right][$NurseManager]:  I’m sorry. [$playerName] didn’t understand. Can we sit down for a moment?
 Skip:
 [action]*[$Char1Last] puts his suitcase back on bed and starts piling his clothes into it again.*
 Skip:

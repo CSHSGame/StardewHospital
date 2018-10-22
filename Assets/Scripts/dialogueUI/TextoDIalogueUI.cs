@@ -21,6 +21,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     public RectTransform lineTextContainer;
     public RectTransform lineTextPrefab;
     public Sprite bubble;
+
     public Sprite actionBubble;
 
     /// A UI element that appears after lines have finished appearing
@@ -44,11 +45,13 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     {
         action,
         left,
-        right
+        right,
+        player
     }
     private BubbleType bubbleType = BubbleType.left;
     // to refator
     private bool faceSet = false;
+    
     void Awake()
     {
         // Start by hiding the container, line and option buttons
@@ -92,10 +95,11 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             txt.text = CheckVars(line.text);
 
             HorizontalLayoutGroup hlg2 = ob.transform.GetChild(0).GetComponent<HorizontalLayoutGroup>();
+            Image img = ob.GetComponentInChildren<Image>();
+
             switch (bubbleType)
             {
                 case BubbleType.action:
-                    Image img = ob.GetComponentInChildren<Image>();
                     img.sprite = actionBubble;
                     hlg.padding.right = 22;
                     hlg.padding.left = 22;        
@@ -107,6 +111,19 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                     leftFace.sprite = CurentFace;
                    
                     hlg2.padding.right = 34;
+                    img.sprite = bubble;
+                    break;
+                case BubbleType.player :
+                    img.sprite = bubble;
+
+                   // txt.gameObject.transform.parent.localScale = new Vector3(txt.gameObject.transform.parent.localScale.x * -1, txt.gameObject.transform.parent.localScale.y, txt.gameObject.transform.parent.localScale.z);
+                   // txt.gameObject.transform.localScale = new Vector3(txt.gameObject.transform.localScale.x * -1, txt.gameObject.transform.localScale.y, txt.gameObject.transform.localScale.z);
+
+                    hlg.padding.right = 20;
+                    hlg.padding.left = 0;
+                    rightFace.sprite = CurentFace;
+                    hlg2.padding.left = 14;
+                    hlg2.padding.right = 14;
 
                     break;
                 case BubbleType.right:
@@ -117,8 +134,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                     hlg.padding.right = 22;
                     hlg.padding.left = 0;
                     rightFace.sprite = CurentFace;
-                  
                     hlg2.padding.left = 14;
+                    img.sprite = bubble;
+
                     break;
             }
    
@@ -287,31 +305,18 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
     string ParseVariable(string varName)
     {
-        foreach(FaceName f in faces)
-        {
-
-            if (varName == f.Name)
-            {
-                if(faceSet == false)
-                {
-                    CurentFace = f.sprite;
-                    faceSet = true;
-                  //  return variableStorage.GetValue(varName).AsString;
-                }
-                
-            }
-        }
+  
         if (varName == "$playerName")
         {
-           if(bubbleType != BubbleType.action)
-                bubbleType = BubbleType.right;
-            return variableStorage.GetValue(varName).AsString;
+            if (faceSet == false)
+            {
+                if (bubbleType != BubbleType.action)
+                    bubbleType = BubbleType.player;
+               // return variableStorage.GetValue(varName).AsString;
+            }
+          
         }
-        //Check YarnSpinner's variable storage first
-        if (variableStorage.GetValue(varName) != Yarn.Value.NULL)
-        {
-            return variableStorage.GetValue(varName).AsString;
-        }
+     
 
         //Handle other variables here
         if (varName == "$time")
@@ -331,7 +336,27 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             bubbleType = BubbleType.right;
             return "";
         }
-     
+        foreach (FaceName f in faces)
+        {
+
+            if (varName == f.Name)
+            {
+                if (faceSet == false)
+                {
+                    CurentFace = f.sprite;
+                    faceSet = true;
+                    
+                    bubble = f.Bubble;
+                    //  return variableStorage.GetValue(varName).AsString;
+                }
+
+            }
+        }
+        //Check YarnSpinner's variable storage first
+        if (variableStorage.GetValue(varName) != Yarn.Value.NULL)
+        {
+            return variableStorage.GetValue(varName).AsString;
+        }
         //If no variables are found, return the variable name
         return "";
     }

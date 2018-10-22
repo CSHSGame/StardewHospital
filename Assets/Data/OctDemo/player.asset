@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300012, guid: 00fdfe7fe6334ec4fbb72078d0d558dc, type: 3}
   Name: $playerName
+  Bubble: {fileID: 21300000, guid: 2f07cc01302341d4e83742095535012b, type: 3}

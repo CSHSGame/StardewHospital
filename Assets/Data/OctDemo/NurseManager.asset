@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7491c952c21598b459d1c0e9c6a9249d, type: 3}
   Name: $NurseManager
+  Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
