@@ -160,27 +160,8 @@ tags:
 colorID: 0
 position: 1131,2373
 ---
-<<FadeSceneOut SceneManager Fade>>
+
 [action]*[$Char1Last] and [$playerName] walk to the dining room.*
-Skip:
-[$playerName]: How was your night? Did you sleep well?
-Skip:
-[$Char1Last]: I did, and now I’m hungry. 
-Skip:
-[action]*They enter the dining room. [$Char1Last] looks around at the crowded room.*
-Skip:
-[$Char1Last]: Wow... There’s a lot of people here.
-Skip:
-[$playerName]: Yeah, it looks like you’re not the only ones who love sausages and pancakes and they are waiting for your opinion about it. Where do you sit, Mr. Williams?
-Skip:
-[$Char1Last]: Right over there, by the left side of the window. 
-Skip:
-[action]*[$Char1Last] sits at his designated seat. The player grabs breakfast for [$Char1Last] and sits beside him.*
-Skip:
-[$playerName]: Here you go, Mr. Williams. Sausages and pancakes, as promised!
-Skip:
-[$Char1Last]: Wow, this smells delicious. *Takes a bite* This is fantastic, I love it!
-Skip:
-[$playerName]: Enjoy your breakfast, [$Char1Last]. I'll see you later
 <<FadeSceneOut SceneManager Fade>>
+
 ===

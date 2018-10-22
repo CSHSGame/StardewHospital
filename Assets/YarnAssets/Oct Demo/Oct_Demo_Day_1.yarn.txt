@@ -147,8 +147,8 @@ Skip:
 Skip:
 [$Char1Last]: Okay.
 Skip:
-<<FadeSceneOut SceneManager Fade>>
 [action]*Everyone walks out the room, [$Char1Last] and [$Char1Daughter] walk out the scene. The [$NurseManager] and [$playerName] stay in the hallway.*
+<<FadeSceneOut SceneManager Fade>>
 
 [[HallMarissaway_Williams_Day_1]]
 ===

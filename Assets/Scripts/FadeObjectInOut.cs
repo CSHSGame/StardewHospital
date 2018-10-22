@@ -7,8 +7,9 @@ using System.Collections;
 public class FadeObjectInOut : MonoBehaviour
 {
     public UnityEvent OnFadeComplete;
-	// publically editable speed
-	public float fadeDelay = 0.0f; 
+    public UnityEvent OnFadeOutComplete;
+    // publically editable speed
+    public float fadeDelay = 0.0f; 
 	public float fadeTime = 0.5f; 
 	public bool fadeInOnStart = false; 
 	public bool fadeOutOnStart = false;
@@ -116,7 +117,9 @@ public class FadeObjectInOut : MonoBehaviour
 			{
 				rendererObjects[i].enabled = false; 
 			}
-		}
+            OnFadeOutComplete.Invoke();
+
+        }
         else
         {
             OnFadeComplete.Invoke();
