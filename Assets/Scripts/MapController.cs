@@ -185,8 +185,8 @@ public class MapController : MonoBehaviour
                 arrowrenderer render = arrow.AddComponent<arrowrenderer>();
                 line.startColor = end.lineColor;
                 line.endColor = end.lineColor;
-                line.startWidth = end.lineWidth * 2;
-                line.endWidth = end.lineWidth * 2;
+                render.ArrowWidth = end.lineWidth * 2f;
+                
                 line.material = end.lineMaterial;
                 arrow.transform.position = end.transform.position;
                 arrow.transform.SetParent(this.transform);

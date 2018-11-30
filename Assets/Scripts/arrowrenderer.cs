@@ -12,7 +12,7 @@ public class arrowrenderer : MonoBehaviour
     public Vector3 ArrowOrigin;
     public Vector3 ArrowTarget;
     public Vector3 ArrowCurrent;
-
+    public float ArrowWidth = 1;
     private LineRenderer cachedLineRenderer;
     public float speed = 1;
     float lerpTime = 1f;
@@ -49,9 +49,9 @@ public class arrowrenderer : MonoBehaviour
         }
         cachedLineRenderer.positionCount = 4;
         cachedLineRenderer.widthCurve = new AnimationCurve(
-            new Keyframe(0, 0.5f)
-            , new Keyframe(0.999f - AdaptiveSize , 0.5f)  // neck of arrow
-            , new Keyframe(1 - AdaptiveSize , 1f)  // max width of arrow head
+            new Keyframe(0, ArrowWidth/2)
+            , new Keyframe(0.999f - AdaptiveSize , ArrowWidth/2)  // neck of arrow
+            , new Keyframe(1 - AdaptiveSize , ArrowWidth)  // max width of arrow head
             , new Keyframe(1, 0f));  // tip of arrow
         cachedLineRenderer.SetPositions(new Vector3[] {
                ArrowOrigin
