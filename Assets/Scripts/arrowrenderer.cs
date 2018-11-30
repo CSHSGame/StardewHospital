@@ -11,9 +11,27 @@ public class arrowrenderer : MonoBehaviour
     public float PercentHead = 0.4f;
     public Vector3 ArrowOrigin;
     public Vector3 ArrowTarget;
+    public Vector3 ArrowCurrent;
+
     private LineRenderer cachedLineRenderer;
+    public float speed = 1;
+    float lerpTime = 1f;
+    float timer = 0f;
+    public void Update()
+    {
+        timer += Time.deltaTime;
+        if(timer >= lerpTime)
+        {
+            timer = 0;
+        }
+        ArrowCurrent = Vector3.Lerp (ArrowOrigin, ArrowTarget, timer/lerpTime);
+      
+        UpdateArrow();
+    }
     void Start()
     {
+        lerpTime = Vector3.Distance(ArrowOrigin, ArrowTarget) * speed;
+
         UpdateArrow();
     }
     private void OnValidate()
@@ -23,19 +41,22 @@ public class arrowrenderer : MonoBehaviour
     [ContextMenu("UpdateArrow")]
     void UpdateArrow()
     {
-        float AdaptiveSize = (float)(PercentHead / Vector3.Distance(ArrowOrigin, ArrowTarget));
+        float AdaptiveSize = (float)(PercentHead / Vector3.Distance(ArrowOrigin, ArrowCurrent));
         
-     if (cachedLineRenderer == null)
+        if (cachedLineRenderer == null)
+        {
             cachedLineRenderer = this.GetComponent<LineRenderer>();
+        }
+        cachedLineRenderer.positionCount = 4;
         cachedLineRenderer.widthCurve = new AnimationCurve(
-            new Keyframe(0, 0.4f)
-            , new Keyframe(0.999f - AdaptiveSize , 0.4f)  // neck of arrow
+            new Keyframe(0, 0.5f)
+            , new Keyframe(0.999f - AdaptiveSize , 0.5f)  // neck of arrow
             , new Keyframe(1 - AdaptiveSize , 1f)  // max width of arrow head
             , new Keyframe(1, 0f));  // tip of arrow
         cachedLineRenderer.SetPositions(new Vector3[] {
                ArrowOrigin
-               , Vector3.Lerp(ArrowOrigin, ArrowTarget, 0.999f - AdaptiveSize)
-               , Vector3.Lerp(ArrowOrigin, ArrowTarget, 1 - AdaptiveSize)
-               , ArrowTarget });
+               , Vector3.Lerp(ArrowOrigin, ArrowCurrent, 0.999f - AdaptiveSize)
+               , Vector3.Lerp(ArrowOrigin, ArrowCurrent, 1 - AdaptiveSize)
+               , ArrowCurrent });
     }
 }

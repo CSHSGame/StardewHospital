@@ -126,7 +126,7 @@ public class FadeObjectInOut : MonoBehaviour
         }
        
 
-        Debug.Log ("fade sequence end : " + fadingOut); 
+      //  Debug.Log ("fade sequence end : " + fadingOut); 
  
 	}
  
