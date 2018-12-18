@@ -77,6 +77,10 @@ namespace Yarn.Unity.Example {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 CheckForNearbyNPC ();
             }
+
+            CheckNPCRange();
+
+
         }
 
         /// Find all DialogueParticipants
@@ -98,6 +102,20 @@ namespace Yarn.Unity.Example {
                 target.OnConversationStart();
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
             //    print("test");
+            }
+        }
+
+        private void CheckNPCRange()
+        {
+            var allParticipants = new List<NPC>(FindObjectsOfType<NPC>());
+
+            foreach(NPC npc in allParticipants)
+            {
+                npc.ICanConverse(false);
+                if ((npc.transform.position - this.transform.position).magnitude <= interactionRadius)
+                {
+                    npc.ICanConverse(true);
+                }
             }
         }
     }

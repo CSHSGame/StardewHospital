@@ -42,9 +42,6 @@ namespace Yarn.Unity.Example {
             Stein,
             Secretary,
             NurseManager,
-            RedTeam,
-            BlueTeam,
-            GreenTeam,
         }
         private Characters thisCharacter;
 
@@ -53,6 +50,8 @@ namespace Yarn.Unity.Example {
         public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
 
         public FadeObjectInOut roomShade;
+
+        public GameObject ConversUI;
 
         public string characterName = "";
 
@@ -83,53 +82,29 @@ namespace Yarn.Unity.Example {
 
         // Update is called once per frame
         void Update () {
-            CheckYousafLeft();
-            CheckToOpenDoor();
-            
+
+           
         }
 
-        void CheckYousafLeft()
-        {
-            if ((variableStorage.GetValue("$yousaf_left").AsBool == true)&&(thisCharacter == Characters.Yousaf))
-            {
-                this.gameObject.SetActive(false);
-            }
-        }
         public void OnConversationStart()
         {
             if(aiController != null)
                 aiController.isTalking = true;
         }
-        void CheckToOpenDoor()
+        
+        public void ICanConverse(bool inRange)
         {
-            if ((variableStorage.GetValue("$open_door").AsBool == true) &&(thisCharacter == Characters.MartinDoor))
+           
+            if (inRange)
             {
-                gameObject.SetActive(false);
-                roomShade.FadeOut();
+                ConversUI.SetActive(true);
             }
-            else if((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.MartinDoor))
+            else
             {
-                roomShade.FadeIn();
+                ConversUI.SetActive(false);
             }
-
-            if ((variableStorage.GetValue("$open_door").AsBool == true) && (thisCharacter == Characters.WilliamsDoor))
-            {
-                //print("Door Disabled Williams");
-                roomShade.FadeOut();
-                gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider>().enabled = false;
-                //talkToNode = null;
-                gameObject.transform.GetChild(0).gameObject.SetActive(false);
-            }
-            if ((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.WilliamsDoor))
-            {
-                gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                gameObject.GetComponent<BoxCollider>().enabled = true; 
-                roomShade.FadeIn();
-            }
-
-
         }
+
     }
 
 }

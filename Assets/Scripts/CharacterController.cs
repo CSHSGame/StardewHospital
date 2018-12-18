@@ -23,19 +23,19 @@ public class CharacterController : MonoBehaviour {
         direction.z = 0.0f;
         direction.x = 0.0f;
 
-        if (Input.GetKey(KeyCode.W))
+        if ((Input.GetKey(KeyCode.W))||(Input.GetKey(KeyCode.UpArrow)))
         {
             direction.z = 1.0f;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if ((Input.GetKey(KeyCode.S))||(Input.GetKey(KeyCode.DownArrow)))
         {
             direction.z = -1.0f;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)))
         {
             direction.x = -1.0f;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)))
         {
             direction.x = 1.0f;
         }
