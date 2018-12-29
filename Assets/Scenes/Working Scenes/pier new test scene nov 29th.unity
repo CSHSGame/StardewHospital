@@ -51425,6 +51425,12 @@ Prefab:
       propertyPath: holder.Array.data[2].points.Array.data[0]
       value: 
       objectReference: {fileID: 1811270540}
+    - target: {fileID: 114052000400884684, guid: 2ca26619ea3774641a831ae9c0f3c408,
+        type: 2}
+      propertyPath: Assets2
+      value: 
+      objectReference: {fileID: 11400000, guid: 41e86393938cae347a10f8d0e78641df,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ca26619ea3774641a831ae9c0f3c408, type: 2}
   m_IsPrefabAsset: 0

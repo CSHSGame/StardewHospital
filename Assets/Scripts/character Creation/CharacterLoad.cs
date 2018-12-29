@@ -5,8 +5,10 @@ using UnityEngine;
 public class CharacterLoad : MonoBehaviour
 {
     public CharacterData Assets;
-	// Use this for initialization
-	void Start ()
+    public FaceName Assets2;
+
+    // Use this for initialization
+    void Start ()
     {
         Load();
     }
@@ -22,7 +24,7 @@ public class CharacterLoad : MonoBehaviour
             {
                 Destroy(transform.GetChild(i).gameObject);
             }
-            Instantiate(Assets.heads[data.headIndex], this.transform);
+            Transform head =  Instantiate(Assets.heads[data.headIndex], this.transform);
             Instantiate(Assets.Bodies[data.bodyIndex], this.transform);
             ExampleVariableStorage variableStorage = GameObject.FindObjectOfType<ExampleVariableStorage>();
             if (variableStorage != null)
@@ -34,6 +36,10 @@ public class CharacterLoad : MonoBehaviour
                 Debug.Log("player name " + variableStorage.GetValue("$playerName").AsString);
 
                 // variableStorage.defaultVariables.SetValue(data.CharacterName, 0);
+            }
+            if(Assets2!= null)
+            {
+                Assets2.sprite = head.Find("Front").GetComponentInChildren<SpriteRenderer>().sprite;
             }
         }
     }
