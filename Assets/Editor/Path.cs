@@ -3,7 +3,7 @@
 using UnityEditor;
 
 [ExecuteInEditMode]
-public class Path : MonoBehaviour
+public class Path2 : MonoBehaviour
 {
 
 

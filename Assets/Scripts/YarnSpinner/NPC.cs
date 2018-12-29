@@ -97,11 +97,13 @@ namespace Yarn.Unity.Example {
            
             if (inRange)
             {
-                ConversUI.SetActive(true);
+                if( ConversUI !=null)
+                    ConversUI.SetActive(true);
             }
             else
             {
-                ConversUI.SetActive(false);
+                if (ConversUI != null)
+                    ConversUI.SetActive(false);
             }
         }
 

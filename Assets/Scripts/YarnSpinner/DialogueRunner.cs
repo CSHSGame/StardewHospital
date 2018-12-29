@@ -110,7 +110,7 @@ namespace Yarn.Unity
             }
 
             // Ensure that the variable storage has the right stuff in it
-            variableStorage.ResetToDefaults ();
+            //variableStorage.ResetToDefaults ();
 
             // Load all scripts
             if (sourceText != null) {

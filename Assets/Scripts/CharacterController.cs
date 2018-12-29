@@ -7,7 +7,7 @@ public class CharacterController : MonoBehaviour {
 
     public float speed;
     private Vector3 direction;
-    public SpriteRenderer sprite;
+    //public SpriteRenderer sprite;
 
     // Use this for initialization
     void Start()
@@ -48,11 +48,11 @@ public class CharacterController : MonoBehaviour {
 
         if (direction.x == -1.0f)
         {
-            sprite.flipX = false;
+          //  sprite.flipX = false;
         }
         else if (direction.x == 1.0f)
         {
-            sprite.flipX = true;
+           // sprite.flipX = true;
         }
     }
 }

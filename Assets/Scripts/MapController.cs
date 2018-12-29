@@ -149,7 +149,7 @@ public class MapController : MonoBehaviour
         {
             PathTest current = frontier.Peek();
             frontier.Dequeue();
-            print("visiting " + current.name);
+           // print("visiting " + current.name);
             foreach (PathTest next in getNeighbours(current))
             {
                 if (!cameFrom.ContainsKey(next))
@@ -165,7 +165,7 @@ public class MapController : MonoBehaviour
         {
             if( link.Key != null && link.Value != null)
             {
-                print(link.Key.name + " came from " + link.Value.name);
+               // print(link.Key.name + " came from " + link.Value.name);
 
             }
 

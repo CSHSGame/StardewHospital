@@ -355,6 +355,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         //Check YarnSpinner's variable storage first
         if (variableStorage.GetValue(varName) != Yarn.Value.NULL)
         {
+           // Debug.Log(varName + " is " + variableStorage.GetValue(varName).AsString);
             return variableStorage.GetValue(varName).AsString;
         }
         //If no variables are found, return the variable name
