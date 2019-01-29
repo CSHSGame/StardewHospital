@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d95748b2231034dad386e57c68b740, type: 3}
+  m_Name: New Waypoints Manager
+  m_EditorClassIdentifier: 
+  holder:
+    Name: test
+    points:
+    - {fileID: 1650305476932868, guid: 098a097c4da4bf14fa972d7ff4104f8e, type: 2}
+    - {fileID: 1639992959726734, guid: 098a097c4da4bf14fa972d7ff4104f8e, type: 2}

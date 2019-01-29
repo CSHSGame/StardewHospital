@@ -6,7 +6,7 @@ using Yarn.Unity;
 public class Waypoints : MonoBehaviour {
 
     public WayPointsHolder[] holder;
-    
+    public WaypointsAsset test;
 
     public float speed;
     private float step;

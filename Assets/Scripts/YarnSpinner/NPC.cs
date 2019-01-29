@@ -25,12 +25,16 @@ SOFTWARE.
 */
 
 using UnityEngine;
+using UnityEditor;
+
 using System.Collections;
 using UnityEngine.Serialization;
 /// attached to the non-player characters, and stores the name of the
 /// Yarn node that should be run when you talk to them.
-namespace Yarn.Unity.Example {
-    public class NPC : MonoBehaviour {
+namespace Yarn.Unity.Example
+{
+    public class NPC : MonoBehaviour
+    {
 
         private enum Characters
         {
@@ -61,7 +65,7 @@ namespace Yarn.Unity.Example {
         [Header("Optional")]
         public TextAsset scriptToLoad;
 
-
+        public NpcDayData data;
         [YarnCommand("SetDialog")]
         public void SettingDialog(string NodeName)
         {
@@ -74,14 +78,17 @@ namespace Yarn.Unity.Example {
 
 
         // Use this for initialization
-        void Start () {
-            if (scriptToLoad != null) {
+        void Start ()
+        {
+            if (scriptToLoad != null)
+            {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
         }
 
         // Update is called once per frame
-        void Update () {
+        void Update ()
+        {
 
            
         }
@@ -106,7 +113,36 @@ namespace Yarn.Unity.Example {
                     ConversUI.SetActive(false);
             }
         }
-
+        public void BakeData()
+        {
+            data.position = transform.position;
+            data.rotation = transform.rotation;
+            data.scale = transform.localScale;
+            data.talkToNode = talkToNode;
+            data.scriptToLoad = scriptToLoad;
+         //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
+        }
     }
+    [CustomEditor(typeof(NPC))]
+    public class ObjectBuilderEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            DrawDefaultInspector();
 
+            NPC myScript = (NPC)target;
+
+            if(myScript.data != null)
+            {
+                if (GUILayout.Button("Bake Data"))
+                {
+                    myScript.BakeData();
+                }
+            }
+            
+            
+        
+
+        }
+    }
 }
