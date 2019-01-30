@@ -17,3 +17,11 @@ MonoBehaviour:
   talkToNode: Start_OctDemo_Day_1
   scriptToLoad: {fileID: 0}
   prefab: {fileID: 4924602164010482, guid: a29dc3fdb3061f34799b66f313650c41, type: 2}
+  waypoints:
+  - Name: Move Out of Room
+    location:
+    - {x: -18.58, y: 0, z: -1.24}
+    - {x: 0, y: 0, z: 0}
+  - Name: BackIntoRoom
+    location:
+    - {x: -18.58, y: 0, z: -1.24}

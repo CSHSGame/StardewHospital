@@ -122,6 +122,15 @@ namespace Yarn.Unity.Example
             data.scriptToLoad = scriptToLoad;
          //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
         }
+
+        public void LoadData()
+        {
+            transform.position =  data.position ;
+            transform.rotation = data.rotation ;
+            transform.localScale =  data.scale  ;
+            talkToNode= data.talkToNode  ;
+            scriptToLoad = data.scriptToLoad  ;
+        }
     }
     [CustomEditor(typeof(NPC))]
     public class ObjectBuilderEditor : Editor
@@ -139,9 +148,15 @@ namespace Yarn.Unity.Example
                     myScript.BakeData();
                 }
             }
-            
-            
-        
+            if (myScript.data != null)
+            {
+                if (GUILayout.Button("Load Data"))
+                {
+                    myScript.LoadData();
+                }
+            }
+
+
 
         }
     }

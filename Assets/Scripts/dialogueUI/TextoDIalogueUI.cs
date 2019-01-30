@@ -15,6 +15,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     //right character face usualy the player
     public Image rightFace;
     private Sprite CurentFace;
+    private FaceName Face;
     public Sprite PlaceHolderFace;
 
     public ScrollRect Scroll;
@@ -48,6 +49,15 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         right,
         player
     }
+    public enum Emotion
+    {
+        neutral,
+        happy,
+        sad,
+        angry
+    }
+    private Emotion currentEmotion = Emotion.neutral;
+
     private BubbleType bubbleType = BubbleType.left;
     // to refator
     private bool faceSet = false;
@@ -82,7 +92,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     {
         //default bubble to the left
         bubbleType = BubbleType.left;
-
+        currentEmotion = Emotion.neutral;
         if (line.text != "Skip:")
         {
             CurentFace = PlaceHolderFace;
@@ -96,7 +106,24 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
             HorizontalLayoutGroup hlg2 = ob.transform.GetChild(0).GetComponent<HorizontalLayoutGroup>();
             Image img = ob.GetComponentInChildren<Image>();
+            switch (currentEmotion)
+            {
+                case Emotion.neutral:
+                    CurentFace = Face.sprite;
+                    break;
+                case Emotion.happy:
+                    CurentFace = Face.HappySprite;
 
+                    break;
+                case Emotion.sad:
+                    CurentFace = Face.SadSprite;
+
+                    break;
+                case Emotion.angry:
+                    CurentFace = Face.AngrySprite;
+
+                    break;
+            }
             switch (bubbleType)
             {
                 case BubbleType.action:
@@ -336,6 +363,21 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             bubbleType = BubbleType.right;
             return "";
         }
+        if (varName == "angry")
+        {
+            currentEmotion = Emotion.angry;
+            return "";
+        }
+        if (varName == "sad")
+        {
+            currentEmotion = Emotion.sad;
+            return "";
+        }
+        if (varName == "happy")
+        {
+            currentEmotion = Emotion.happy;
+            return "";
+        }
         foreach (FaceName f in faces)
         {
 
@@ -343,7 +385,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             {
                 if (faceSet == false)
                 {
-                    CurentFace = f.sprite;
+                   // CurentFace = f.sprite;
+                    Face = f;
                     faceSet = true;
                     
                     bubble = f.Bubble;

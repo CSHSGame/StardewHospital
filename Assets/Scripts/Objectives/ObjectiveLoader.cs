@@ -8,18 +8,9 @@ using Yarn.Unity;
 public class ObjectiveLoader : MonoBehaviour
 {
     public Text displayText;
-    [System.Serializable]
-    public struct objective
-    {
-        public string name;
-        public enum Npc { william, nurse, clara}
-        public Npc target;
-        public int wayfindingIndex;
-        public string displayText;
-    }
-    public Dictionary<string, objective> keyValuePairs;
-    public objective[] Objectives;
-    public ObjectiveData[] Objectives2;
+  
+    public Dictionary<string, ObjectiveData> keyValuePairs;
+    public ObjectiveData[] Objectives;
     public MapController map;
     public string test;
     [ContextMenu("start search")]
@@ -30,9 +21,9 @@ public class ObjectiveLoader : MonoBehaviour
     // Use this for initialization
 	void Start ()
     {
-        keyValuePairs = new Dictionary<string, objective>();
+        keyValuePairs = new Dictionary<string, ObjectiveData>();
 
-        foreach (objective o in Objectives)
+        foreach (ObjectiveData o in Objectives)
         {
             keyValuePairs.Add(o.name, o);
         }

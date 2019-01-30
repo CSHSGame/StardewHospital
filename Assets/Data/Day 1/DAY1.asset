@@ -24,6 +24,7 @@ MonoBehaviour:
   - $successWilliams
   - $MartinFace
   CurrentDay: 0
-  Objectives: []
+  Objectives:
+  - {fileID: 11400000, guid: a4ad026d3c549c846853c0b8d376a5fa, type: 2}
   npcs:
   - {fileID: 11400000, guid: 8fa9c31360bdc2e4b94d7e0631c8e3f5, type: 2}
