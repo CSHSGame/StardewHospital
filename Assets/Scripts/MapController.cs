@@ -52,7 +52,7 @@ public class MapController : MonoBehaviour
     public PathTest[] allNodes;
     List<PathTest> visited3;
     List<Edge> visited2;
-
+    private GameObject ArrowHolder;
     public int destinationRoom = 0;
     // Use this for initialization
     void Start()
@@ -71,13 +71,19 @@ public class MapController : MonoBehaviour
                // createArrow2(e.startNode, e.endNode);
 
             }
-            Breadth_First_Search(allNodes[destinationRoom]);
+            StartSearch(destinationRoom);
             // createArrow(RoomNode[destinationRoom].ob2, RoomNode[destinationRoom]);
             // createArrow(RoomNode[destinationRoom].ob2.ob2, RoomNode[destinationRoom].ob2);
         }
     }
-	// Update is called once per frame
-	void Update ()
+
+    public void StartSearch(int destination)
+    {
+        Breadth_First_Search(allNodes[destination]);
+
+    }
+    // Update is called once per frame
+    void Update ()
     {
 		
 	}
@@ -149,7 +155,7 @@ public class MapController : MonoBehaviour
         {
             PathTest current = frontier.Peek();
             frontier.Dequeue();
-            print("visiting " + current.name);
+           // print("visiting " + current.name);
             foreach (PathTest next in getNeighbours(current))
             {
                 if (!cameFrom.ContainsKey(next))
@@ -160,12 +166,17 @@ public class MapController : MonoBehaviour
                 }
             }
         }
-
+        if(ArrowHolder!= null)
+        {
+            Destroy(ArrowHolder);
+        }
+        ArrowHolder = new GameObject("arrow holder");
+        ArrowHolder.transform.SetParent(this.transform);
         foreach (KeyValuePair<PathTest, PathTest> link in cameFrom)
         {
             if( link.Key != null && link.Value != null)
             {
-                print(link.Key.name + " came from " + link.Value.name);
+               // print(link.Key.name + " came from " + link.Value.name);
 
             }
 
@@ -189,7 +200,7 @@ public class MapController : MonoBehaviour
                 
                 line.material = end.lineMaterial;
                 arrow.transform.position = end.transform.position;
-                arrow.transform.SetParent(this.transform);
+                arrow.transform.SetParent(ArrowHolder.transform);
                 render.ArrowOrigin = end.transform.position;
                 render.ArrowTarget = start.transform.position;
                 render.ArrowCurrent = render.ArrowTarget;

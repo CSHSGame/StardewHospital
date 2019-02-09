@@ -25,12 +25,16 @@ SOFTWARE.
 */
 
 using UnityEngine;
+using UnityEditor;
+
 using System.Collections;
 using UnityEngine.Serialization;
 /// attached to the non-player characters, and stores the name of the
 /// Yarn node that should be run when you talk to them.
-namespace Yarn.Unity.Example {
-    public class NPC : MonoBehaviour {
+namespace Yarn.Unity.Example
+{
+    public class NPC : MonoBehaviour
+    {
 
         private enum Characters
         {
@@ -42,9 +46,6 @@ namespace Yarn.Unity.Example {
             Stein,
             Secretary,
             NurseManager,
-            RedTeam,
-            BlueTeam,
-            GreenTeam,
         }
         private Characters thisCharacter;
 
@@ -54,6 +55,8 @@ namespace Yarn.Unity.Example {
 
         public FadeObjectInOut roomShade;
 
+        public GameObject ConversUI;
+
         public string characterName = "";
 
         [FormerlySerializedAs("startNode")]
@@ -62,7 +65,7 @@ namespace Yarn.Unity.Example {
         [Header("Optional")]
         public TextAsset scriptToLoad;
 
-
+        public NpcDayData data;
         [YarnCommand("SetDialog")]
         public void SettingDialog(string NodeName)
         {
@@ -75,61 +78,86 @@ namespace Yarn.Unity.Example {
 
 
         // Use this for initialization
-        void Start () {
-            if (scriptToLoad != null) {
+        void Start ()
+        {
+            if (scriptToLoad != null)
+            {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
         }
 
         // Update is called once per frame
-        void Update () {
-            CheckYousafLeft();
-            CheckToOpenDoor();
-            
+        void Update ()
+        {
+
+           
         }
 
-        void CheckYousafLeft()
-        {
-            if ((variableStorage.GetValue("$yousaf_left").AsBool == true)&&(thisCharacter == Characters.Yousaf))
-            {
-                this.gameObject.SetActive(false);
-            }
-        }
         public void OnConversationStart()
         {
             if(aiController != null)
                 aiController.isTalking = true;
         }
-        void CheckToOpenDoor()
+        
+        public void ICanConverse(bool inRange)
         {
-            if ((variableStorage.GetValue("$open_door").AsBool == true) &&(thisCharacter == Characters.MartinDoor))
+           
+            if (inRange)
             {
-                gameObject.SetActive(false);
-                roomShade.FadeOut();
+                if( ConversUI !=null)
+                    ConversUI.SetActive(true);
             }
-            else if((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.MartinDoor))
+            else
             {
-                roomShade.FadeIn();
+                if (ConversUI != null)
+                    ConversUI.SetActive(false);
+            }
+        }
+        public void BakeData()
+        {
+            data.position = transform.position;
+            data.rotation = transform.rotation;
+            data.scale = transform.localScale;
+            data.talkToNode = talkToNode;
+            data.scriptToLoad = scriptToLoad;
+         //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
+        }
+
+        public void LoadData()
+        {
+            transform.position =  data.position ;
+            transform.rotation = data.rotation ;
+            transform.localScale =  data.scale  ;
+            talkToNode= data.talkToNode  ;
+            scriptToLoad = data.scriptToLoad  ;
+        }
+    }
+    [CustomEditor(typeof(NPC))]
+    public class ObjectBuilderEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            DrawDefaultInspector();
+
+            NPC myScript = (NPC)target;
+
+            if(myScript.data != null)
+            {
+                if (GUILayout.Button("Bake Data"))
+                {
+                    myScript.BakeData();
+                }
+            }
+            if (myScript.data != null)
+            {
+                if (GUILayout.Button("Load Data"))
+                {
+                    myScript.LoadData();
+                }
             }
 
-            if ((variableStorage.GetValue("$open_door").AsBool == true) && (thisCharacter == Characters.WilliamsDoor))
-            {
-                //print("Door Disabled Williams");
-                roomShade.FadeOut();
-                gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider>().enabled = false;
-                //talkToNode = null;
-                gameObject.transform.GetChild(0).gameObject.SetActive(false);
-            }
-            if ((variableStorage.GetValue("$open_door").AsBool == false) && (thisCharacter == Characters.WilliamsDoor))
-            {
-                gameObject.GetComponent<SpriteRenderer>().enabled = true;
-                gameObject.GetComponent<BoxCollider>().enabled = true; 
-                roomShade.FadeIn();
-            }
 
 
         }
     }
-
 }

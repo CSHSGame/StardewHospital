@@ -10,7 +10,7 @@ position: 776,1153
 Skip:
 [$playerName]: Good morning, Mr. Williams. How are you doing?
 Skip:
-[$Char1Last]: I'm good. But--
+[happy][$Char1Last]: I'm good. But--
 
 [[Great! I'm here to help you go to the dining room for breakfast.|Who_Williams_Day_1]]
 [[Are you hungry?, it's breakfast time!|Who_Williams_Day_1]]
@@ -21,7 +21,7 @@ tags:
 colorID: 0
 position: 773,1399
 ---
-[$Char1Last]: Who are you?
+[sad][$Char1Last]: Who are you?
 
 [[Don’t you remember me? I’m a student from George Brown College.|Where_Williams_Day_1]]
 [[Oh, I’m just a student. Listen, we’re running late. Let’s go!|Where_Williams_Day_1]]
@@ -32,7 +32,7 @@ tags:
 colorID: 0
 position: 778,1646
 ---
-[$Char1Last]: Where am I?
+[angry][$Char1Last]: Where am I?
 
 [[You're in a long-term care home. Remember?|What_Williams_Day_1]]
 [[Haha! You’re funny!|What_Williams_Day_1]]
@@ -43,7 +43,7 @@ tags:
 colorID: 0
 position: 771,1867
 ---
-[$Char1Last]: What? No! This is all wrong, I’m going home.
+[angry][$Char1Last]: What? No! This is all wrong, I’m going home.
 
 [[[$Char1Last], how many times do I have to tell you? This is your home! This is your room!|Help_Williams_Day_1]]
 [[Hey, stop! You’re not allowed to go!|Help_Williams_Day_1]]
@@ -56,7 +56,7 @@ position: 780,2085
 ---
 [action]*[$Char1Last] steps over to the door and yells into the hall.*
 Skip:
-[$Char1Last]: No! Help! Help! I’m being held hostage! Help!
+[sad][$Char1Last]: No! Help! Help! I’m being held hostage! Help!
 Skip:
 [action]*He turns back to the PS.*
 Skip:

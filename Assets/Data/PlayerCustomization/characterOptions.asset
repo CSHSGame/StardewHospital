@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1961339038ff949829472261f405e4, type: 3}
+  m_Name: characterOptions
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  Bodies:
+  - {fileID: 4392572738520858, guid: 75b35e75b4d6b1a47923c5711703ce1f, type: 2}
+  - {fileID: 4121807557777986, guid: 502225555156de746aaf904878e0fa51, type: 2}
+  heads:
+  - {fileID: 4160141788445960, guid: 1357e45a81605ef4eaa41d6a1eb95f05, type: 2}
+  - {fileID: 4346537937379094, guid: b69142899012b0a4d8682ef78dadf245, type: 2}
+  - {fileID: 4117216475084590, guid: 6bae67b66054f424b87437810f2539ff, type: 2}
+  - {fileID: 4151165138730850, guid: 87ee926cb0c0e1e4b966e9f52305d9aa, type: 2}
+  - {fileID: 4659625873823734, guid: b5477b1efafd7e04785234ffb89ad719, type: 2}
+  - {fileID: 4308812842589560, guid: d756575a1e101c743aaf735862ce4c20, type: 2}
+  - {fileID: 4283828000346952, guid: d254f176fc6f5d849ae6a0181f54dde2, type: 2}

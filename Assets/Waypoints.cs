@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using Yarn.Unity;
 [SelectionBase]
-public class Waypoints : MonoBehaviour {
+public class Waypoints : MonoBehaviour
+{
 
     public WayPointsHolder[] holder;
-    
+    public NpcDayData data;
 
     public float speed;
     private float step;
@@ -120,6 +122,44 @@ public class Waypoints : MonoBehaviour {
             }
         }
     }
-
+    public void BakeData()
+    {
+        data.waypoints = new pointsVector3[holder.Length];
     
+        for(int i = 0; i < holder.Length;i++)
+        {
+            data.waypoints[i].location = new Vector3[holder[i].points.Length];
+            data.waypoints[i].Name = holder[i].Name;
+            for (int j = 0; j < holder[j].points.Length; j++)
+            {
+                data.waypoints[i].location[j] = holder[j].points[j].transform.position;
+            }
+
+        }
+
+        //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
+    }
+
+}
+[CustomEditor(typeof(Waypoints))]
+public class WayPointsBaker : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+
+        Waypoints myScript = (Waypoints)target;
+
+        if (myScript.data != null)
+        {
+            if (GUILayout.Button("Bake Data"))
+            {
+                myScript.BakeData();
+            }
+        }
+
+
+
+
+    }
 }

@@ -7,7 +7,7 @@ public class CharacterController : MonoBehaviour {
 
     public float speed;
     private Vector3 direction;
-    public SpriteRenderer sprite;
+    //public SpriteRenderer sprite;
 
     // Use this for initialization
     void Start()
@@ -23,19 +23,19 @@ public class CharacterController : MonoBehaviour {
         direction.z = 0.0f;
         direction.x = 0.0f;
 
-        if (Input.GetKey(KeyCode.W))
+        if ((Input.GetKey(KeyCode.W))||(Input.GetKey(KeyCode.UpArrow)))
         {
             direction.z = 1.0f;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if ((Input.GetKey(KeyCode.S))||(Input.GetKey(KeyCode.DownArrow)))
         {
             direction.z = -1.0f;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)))
         {
             direction.x = -1.0f;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)))
         {
             direction.x = 1.0f;
         }
@@ -48,11 +48,11 @@ public class CharacterController : MonoBehaviour {
 
         if (direction.x == -1.0f)
         {
-            sprite.flipX = false;
+          //  sprite.flipX = false;
         }
         else if (direction.x == 1.0f)
         {
-            sprite.flipX = true;
+           // sprite.flipX = true;
         }
     }
 }

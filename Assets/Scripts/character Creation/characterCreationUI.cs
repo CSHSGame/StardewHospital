@@ -6,13 +6,25 @@ using UnityEngine.UI;
 public class characterCreationUI : MonoBehaviour
 {
     public GameObject[] heads;
-    public Image head;
+   // public Image head;
     public int currentHead;
+
+   
 	// Use this for initialization
 	void Start ()
     {
 		
 	}
+    public void setPart(int index)
+    {
+        heads[currentHead].SetActive(false);
+        if(index >0 && index < heads.Length)
+        {
+            currentHead = index;
+        }
+        heads[currentHead].SetActive(true);
+
+    }
     public void changeHeadLeft()
     {
         heads[currentHead].SetActive(false);
@@ -29,10 +41,11 @@ public class characterCreationUI : MonoBehaviour
         heads[currentHead].SetActive(false);
 
         currentHead++;
-        if (currentHead > heads.Length)
+        if (currentHead >= heads.Length)
         {
             currentHead = 0;
         }
+       // Debug.Log(currentHead);
         heads[currentHead].SetActive(true);
 
     }
