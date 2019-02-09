@@ -11,10 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: MarrisaDay1
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
-  scale: {x: 0, y: 0, z: 0}
-  talkToNode: 
+  position: {x: -17.52, y: -0.0000019073486, z: 12.000002}
+  rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  scale: {x: 1.25, y: 1.25, z: 0.3285701}
+  talkToNode: Start_OctDemo_Day_1
   scriptToLoad: {fileID: 0}
-  prefab: {fileID: 0}
-  waypoints: []
+  prefab: {fileID: 4960549432468042, guid: d5dbd94ef4dd87a439267cd4d4b2c219, type: 2}
+  GameObjectName: Marrisa
+  waypoints:
+  - Name: Move Out of Room
+    location:
+    - {x: -18.58, y: 0, z: -1.24}
+    - {x: 0, y: 0, z: 0}
+  - Name: BackIntoRoom
+    location:
+    - {x: -18.58, y: 0, z: -1.24}

@@ -106,6 +106,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
             HorizontalLayoutGroup hlg2 = ob.transform.GetChild(0).GetComponent<HorizontalLayoutGroup>();
             Image img = ob.GetComponentInChildren<Image>();
+       
+
+
             switch (currentEmotion)
             {
                 case Emotion.neutral:

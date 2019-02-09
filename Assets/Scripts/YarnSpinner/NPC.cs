@@ -25,7 +25,6 @@ SOFTWARE.
 */
 
 using UnityEngine;
-using UnityEditor;
 
 using System.Collections;
 using UnityEngine.Serialization;
@@ -120,7 +119,9 @@ namespace Yarn.Unity.Example
             data.scale = transform.localScale;
             data.talkToNode = talkToNode;
             data.scriptToLoad = scriptToLoad;
-         //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
+            data.GameObjectName = this.gameObject.name;
+           // data.prefab = test;
+
         }
 
         public void LoadData()
@@ -130,34 +131,9 @@ namespace Yarn.Unity.Example
             transform.localScale =  data.scale  ;
             talkToNode= data.talkToNode  ;
             scriptToLoad = data.scriptToLoad  ;
+
+            gameObject.name = data.GameObjectName;
         }
     }
-    [CustomEditor(typeof(NPC))]
-    public class ObjectBuilderEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            DrawDefaultInspector();
-
-            NPC myScript = (NPC)target;
-
-            if(myScript.data != null)
-            {
-                if (GUILayout.Button("Bake Data"))
-                {
-                    myScript.BakeData();
-                }
-            }
-            if (myScript.data != null)
-            {
-                if (GUILayout.Button("Load Data"))
-                {
-                    myScript.LoadData();
-                }
-            }
-
-
-
-        }
-    }
+   
 }

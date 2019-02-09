@@ -13,7 +13,7 @@ public class NpcLoader : MonoBehaviour
             npc.transform.position = dayDataHolder.npcs[i].position;
             npc.transform.localScale = dayDataHolder.npcs[i].scale;
             npc.transform.rotation = dayDataHolder.npcs[i].rotation;
-
+            npc.gameObject.name = dayDataHolder.npcs[i].GameObjectName;
             npc.talkToNode = dayDataHolder.npcs[i].talkToNode;
             if(dayDataHolder.npcs[i].scriptToLoad != null)
             {

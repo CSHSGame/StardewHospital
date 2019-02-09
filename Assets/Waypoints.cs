@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using Yarn.Unity;
 [SelectionBase]
 public class Waypoints : MonoBehaviour
@@ -15,9 +14,9 @@ public class Waypoints : MonoBehaviour
     [SerializeField]
     private int pathindex = -1;
     private int nodeindex = 0;
-
+    public Vector3 targetPosition { get { return test; } set { test = value; } }
     public bool isPlayer;
-
+    private Vector3 test = Vector3.zero;
     [YarnCommand("SetPath")]
     public void StartPathing(string Pathnum)
     {
@@ -61,7 +60,7 @@ public class Waypoints : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        
+        pathindex = -1;
     }
 
     int ConvertStringToInt(string number)
@@ -136,30 +135,8 @@ public class Waypoints : MonoBehaviour
             }
 
         }
-
+        //holder = new WayPointsHolder[0];
         //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
     }
 
-}
-[CustomEditor(typeof(Waypoints))]
-public class WayPointsBaker : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
-
-        Waypoints myScript = (Waypoints)target;
-
-        if (myScript.data != null)
-        {
-            if (GUILayout.Button("Bake Data"))
-            {
-                myScript.BakeData();
-            }
-        }
-
-
-
-
-    }
 }

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 [ExecuteInEditMode]
 public class PathTest : MonoBehaviour
 {
@@ -35,12 +34,15 @@ public class PathTest : MonoBehaviour
     {
         print("test1");
 
-        if ( ob2 != null && lineRenderer == null)
+        if (ob2 != null && lineRenderer == null)
         {
-            lineRenderer =  gameObject.AddComponent<LineRenderer>();
+            lineRenderer = gameObject.AddComponent<LineRenderer>();
             updateLine();
         }
-       
+        if (ob2 == null)
+        {
+            Debug.LogError("Please assign a gameobject to ob2 variable");
+        }
     }
     [ContextMenu("UpdateLine")]
     public void updateLine()
@@ -59,7 +61,7 @@ public class PathTest : MonoBehaviour
             lineRenderer.numCapVertices = 12;
         }
     }
-    public void createNextPoint()
+    public void createNextPoint(GameObject val)
     {
         
         PathTest pt = Instantiate(this.transform).GetComponent<PathTest>();
@@ -69,60 +71,9 @@ public class PathTest : MonoBehaviour
         pt.gameObject.name = "pt";
         pt.transform.SetParent(transform.parent, true);
         pt.setupLine();
-        Selection.activeGameObject = pt.gameObject;
+        val = pt.gameObject;
         
       
     }
 }
-[CustomEditor(typeof(PathTest))]
-public class ObjectBuilderEditor : Editor
-{
-    bool JustPressed = false;
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
 
-        PathTest myScript = (PathTest)target;
-       
-        if(myScript.lineRenderer != null)
-        {
-            if (GUILayout.Button("update line"))
-            {
-                myScript.updateLine();
-            }
-        }
-        else
-        {
-            if (GUILayout.Button("Build line"))
-            {
-                myScript.setupLine();
-            }
-        }
-        
-    }
-    public void OnSceneGUI()
-    {
-        PathTest myScript = (PathTest)target;
-        Event e = Event.current;
-        switch (e.type)
-        {
-            case EventType.KeyDown:
-                if (e.keyCode == KeyCode.W && JustPressed == false)
-                {
-                    myScript.createNextPoint();
-                    JustPressed = true;
-                }
-                break;
-            case EventType.KeyUp:
-                if (e.keyCode == KeyCode.W && JustPressed == true)
-                {
-                    JustPressed = false;
-                    
-                }
-                break;
-
-        }
-
-
-    }
-}

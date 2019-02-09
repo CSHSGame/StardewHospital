@@ -14,8 +14,8 @@ public class NpcDayData : ScriptableObject
     public string talkToNode = "";
     public TextAsset scriptToLoad;
     public Transform prefab;
-
-    [Header("waypints stuff")]
+    public string GameObjectName;
+    [Header("waypoints stuff")]
     public pointsVector3[] waypoints;
 }
 [System.Serializable]
