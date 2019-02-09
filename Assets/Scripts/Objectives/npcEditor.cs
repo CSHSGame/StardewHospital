@@ -13,19 +13,22 @@ public class ObjectBuilderEditor : Editor
 
         if (myScript.data != null)
         {
+            GUILayout.BeginHorizontal();
             if (GUILayout.Button("Bake Data"))
             {
                 myScript.BakeData();
                 //PrefabUtility.GetCorrespondingObjectFromSource(myScript.gameObject) as Transform
             }
-        }
-        if (myScript.data != null)
-        {
+
             if (GUILayout.Button("Load Data"))
             {
                 myScript.LoadData();
             }
+            GUILayout.EndHorizontal();
+
         }
+      
+
 
 
 

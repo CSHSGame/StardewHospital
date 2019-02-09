@@ -120,6 +120,7 @@ namespace Yarn.Unity.Example
             data.talkToNode = talkToNode;
             data.scriptToLoad = scriptToLoad;
             data.GameObjectName = this.gameObject.name;
+            data.sprite = this.GetComponentInChildren<SpriteRenderer> ().sprite;
            // data.prefab = test;
 
         }
@@ -133,6 +134,8 @@ namespace Yarn.Unity.Example
             scriptToLoad = data.scriptToLoad  ;
 
             gameObject.name = data.GameObjectName;
+           
+            GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;
         }
     }
    

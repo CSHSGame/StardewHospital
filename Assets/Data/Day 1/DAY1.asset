@@ -28,3 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a4ad026d3c549c846853c0b8d376a5fa, type: 2}
   npcs:
   - {fileID: 11400000, guid: 8fa9c31360bdc2e4b94d7e0631c8e3f5, type: 2}
+  - {fileID: 11400000, guid: 2b4611e9d1cf0e640bd20ab009571023, type: 2}
+  - {fileID: 11400000, guid: c4c3fa6765e432745bbcd7ec28b7e980, type: 2}
