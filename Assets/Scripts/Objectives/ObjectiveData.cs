@@ -12,6 +12,7 @@ public class ObjectiveData : ScriptableObject
     public enum Npc { william, nurse, clara }
     public Npc target;
     public int wayfindingIndex;
+    [TextArea]
     public string displayText;
 
 }
