@@ -14,5 +14,10 @@ MonoBehaviour:
   name: talktowilliam
   target: 0
   wayfindingIndex: 0
-  displayText: please go find mr williamsplease go find mr williamsplease go find
-    mr williamsplease go find mr williams
+  displayText: 'please go find mr williams
+
+    please go find mr williams
+
+    please go find mr williams
+
+    please go find mr williams'
