@@ -66,9 +66,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1544770909840460}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.52, y: -1.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -17.95, y: 0.00000023841858, z: -1.8210012}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 4096372563658928}
   m_Father: {fileID: 0}
@@ -110,14 +110,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1544770909840460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
+  m_Script: {fileID: 11500000, guid: ff552f5f53a6544eaa13bf8fec175202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiController: {fileID: 0}
+  aiController: {fileID: 114227360559094964}
   variableStorage: {fileID: 0}
   roomShade: {fileID: 0}
   ConversUI: {fileID: 0}
-  characterName: Williams
+  characterName: 'mr williams '
   talkToNode: Start_OctDemo_Day_1
   scriptToLoad: {fileID: 0}
   data: {fileID: 11400000, guid: 8fa9c31360bdc2e4b94d7e0631c8e3f5, type: 2}
