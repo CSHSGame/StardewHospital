@@ -9,18 +9,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fa6a928ce2fd41448d815488f5133c2, type: 3}
-  m_Name: Martin
+  m_Name: Debby
   m_EditorClassIdentifier: 
-  Charname: Martin Buddy
-  Location: Martin's Room
-  Age: 69
-  charGender: 2
-  ResidentNum: 123456789
-  Allergies: Shellfish
-  PowerOfAttorney: Dan the Man
+  Charname: Debby
+  Location: Debby's Room
+  Age: 59
+  charGender: 1
+  ResidentNum: 1234957
+  Allergies: Deez Nuts
+  PowerOfAttorney: Dan the dick
   POAPhoneNum: 555-498-356
   NextOfKin: N/A
   HealthStatus: Telepathy, Web Slinging
-  CodeStatus: 'Level 9001: Too Stronk'
+  CodeStatus: 'Level 5: '
   LanguageSpoken: English, Chinese
   Religion: Pastafarian
+  face: {fileID: 21300000, guid: a88b5c0c11e154080954c384f4bcf536, type: 3}

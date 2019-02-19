@@ -19,6 +19,7 @@ public class NPCClipboardData : ScriptableObject {
     public string CodeStatus;
     public string LanguageSpoken;
     public string Religion;
+    public Sprite face;
 
 
 	

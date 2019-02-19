@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Clipboard : MonoBehaviour {
 
     public Button[] FacesButtons;
+    public NPCClipboardData[] clipboardData;
+    public Sprite[] ClipboardTabs;
 
     public Text NameText;
     public Text LocationText;
@@ -21,12 +23,29 @@ public class Clipboard : MonoBehaviour {
     public Text LanguageSpokenText;
     public Text ReligionText;
 
-    public NPCClipboardData[] clipboardData;
 
-    public int patientData = 0;
-	// Use this for initialization
-	void Start () {
-        FillClipboardInfo();
+    private Image clipboardSprite;
+    private int currentResident;
+
+    // public Text Name1;
+    // public Text Name2;
+    // public Text Name3;
+    // public Text Name4;
+    // public Text Name5;
+
+    // public Image Face1;
+    // public Image Face2;
+    // public Image Face3;
+    // public Image Face4;
+    // public Image Face5;
+
+
+    // Use this for initialization
+    void Start () {
+
+        clipboardSprite = GetComponent<Image>();
+
+        ResidentInfo(0);
 	}
 	
 	// Update is called once per frame
@@ -34,20 +53,25 @@ public class Clipboard : MonoBehaviour {
 		
 	}
 
-    void FillClipboardInfo()
+
+    public void ResidentInfo(int index)
     {
-        NameText.text = clipboardData[patientData].Charname;
-        LocationText.text = clipboardData[patientData].Location;
-        AgeText.text = clipboardData[patientData].Age.ToString();
-        GenderText.text = clipboardData[patientData].charGender.ToString();
-        ResidentNumText.text = clipboardData[patientData].ResidentNum.ToString();
-        AlergiesText.text = clipboardData[patientData].Allergies;
-        PowerOfAttorneyText.text = clipboardData[patientData].PowerOfAttorney;
-        POAPhoneNumText.text = clipboardData[patientData].POAPhoneNum;
-        NextOfKinText.text = clipboardData[patientData].NextOfKin;
-        HealthStatusText.text = clipboardData[patientData].HealthStatus;
-        CodeStatusText.text = clipboardData[patientData].CodeStatus;
-        LanguageSpokenText.text = clipboardData[patientData].LanguageSpoken;
-        ReligionText.text = clipboardData[patientData].Religion; 
+        NameText.text = clipboardData[index].Charname;
+        LocationText.text = clipboardData[index].Location;
+        AgeText.text = clipboardData[index].Age.ToString();
+        GenderText.text = clipboardData[index].charGender.ToString();
+        ResidentNumText.text = clipboardData[index].ResidentNum.ToString();
+        AlergiesText.text = clipboardData[index].Allergies;
+        PowerOfAttorneyText.text = clipboardData[index].PowerOfAttorney;
+        POAPhoneNumText.text = clipboardData[index].POAPhoneNum;
+        NextOfKinText.text = clipboardData[index].NextOfKin;
+        HealthStatusText.text = clipboardData[index].HealthStatus;
+        CodeStatusText.text = clipboardData[index].CodeStatus;
+        LanguageSpokenText.text = clipboardData[index].LanguageSpoken;
+        ReligionText.text = clipboardData[index].Religion;
+       
+        clipboardSprite.sprite = ClipboardTabs[index];
+
     }
+   
 }
