@@ -6,61 +6,71 @@ using Yarn.Unity;
 public class Waypoints : MonoBehaviour
 {
 
-    public WayPointsHolder[] holder;
+    //public WayPointsHolder[] holder;
+    public List< pointsVector3>Paths;
     public NpcDayData data;
 
     public float speed;
     private float step;
     [SerializeField]
-    private int pathindex = -1;
+    public int pathindex = -1;
     private int nodeindex = 0;
-    public Vector3 targetPosition { get { return test; } set { test = value; } }
     public bool isPlayer;
-    private Vector3 test = Vector3.zero;
     [YarnCommand("SetPath")]
     public void StartPathing(string Pathnum)
     {
         Debug.Log("called " + Pathnum);
         int returnValue = ConvertStringToInt(Pathnum);
-        pathindex = returnValue;
 
-        foreach (Collider c in GetComponentsInChildren<Collider>())
+        if(returnValue < Paths.Count)
         {
-            c.enabled = false;
-        }
-        if (isPlayer)
-        {
-            GetComponent<CharacterController>().enabled = false;
-            GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = false;
+            pathindex = returnValue;
 
+            foreach (Collider c in GetComponentsInChildren<Collider>())
+            {
+                c.enabled = false;
+            }
+            if (isPlayer)
+            {
+                GetComponent<CharacterController>().enabled = false;
+                GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = false;
+
+            }
         }
+        else
+        {
+            Debug.Break();
+            Debug.LogError("Path # " + returnValue.ToString() + " not set in for " + gameObject.name +" Tell Julian or Pier");
+        }
+    
     }
 
     
-    public void OnDrawGizmosSelected()
-    {
-        if(pathindex!= -1)
-        {
+    //public void OnDrawGizmosSelected()
+    //{
+    //    if(pathindex!= -1)
+    //    {
             
-            for (int i = 0; i< holder[pathindex].points.Length;i++ )
-            {
-                if (i == 0)
-                {
-                    Gizmos.DrawLine(transform.position, holder[pathindex].points[i].transform.position);
-                }
-                else
-                {
-                    Gizmos.DrawLine(holder[pathindex].points[i-1].transform.position, holder[pathindex].points[i].transform.position);
-                }
+    //        for (int i = 0; i< holder[pathindex].points.Length;i++ )
+    //        {
+    //            if (i == 0)
+    //            {
+    //                Gizmos.DrawLine(transform.position, holder[pathindex].points[i].transform.position);
+    //            }
+    //            else
+    //            {
+    //                Gizmos.DrawLine(holder[pathindex].points[i-1].transform.position, holder[pathindex].points[i].transform.position);
+    //            }
                 
-            }
-        }
+    //        }
+    //    }
         
-    }
+    //}
     // Use this for initialization
     void Start ()
     {
         pathindex = -1;
+        nodeindex = 0;
     }
 
     int ConvertStringToInt(string number)
@@ -93,13 +103,13 @@ public class Waypoints : MonoBehaviour
         step = speed * Time.deltaTime;
         if (pathindex != -1)
         {
-            if (nodeindex < holder[pathindex].points.Length)
+            if (nodeindex < Paths[pathindex].location.Count)
             {
                 //Move our position a step closer to the target.
-                this.transform.position = Vector3.MoveTowards(this.transform.position, holder[pathindex].points[nodeindex].transform.position, step);
+                this.transform.position = Vector3.MoveTowards(this.transform.position, Paths[pathindex].location[nodeindex], step);
 
                 //If we've reached the destination, move to the next one
-                if (this.transform.position == holder[pathindex].points[nodeindex].transform.position)
+                if (this.transform.position == Paths[pathindex].location[nodeindex])
                 {
                     nodeindex++;
                 }
@@ -123,20 +133,24 @@ public class Waypoints : MonoBehaviour
     }
     public void BakeData()
     {
-        data.waypoints = new pointsVector3[holder.Length];
-    
-        for(int i = 0; i < holder.Length;i++)
+        data.waypoints = new pointsVector3[Paths.Count];
+
+        for(int i = 0; i < Paths.Count;i++)
         {
-            data.waypoints[i].location = new Vector3[holder[i].points.Length];
-            data.waypoints[i].Name = holder[i].Name;
-            for (int j = 0; j < holder[j].points.Length; j++)
-            {
-                data.waypoints[i].location[j] = holder[j].points[j].transform.position;
-            }
-
+            data.waypoints[i] = Paths[i];
         }
-        //holder = new WayPointsHolder[0];
-        //   data.prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) as Transform;
-    }
+            
+          
 
+      
+        
+    }
+    public void loadData()
+    {
+        Paths = new List<pointsVector3>() ;
+        for (int i = 0; i < data.waypoints.Length; i++)
+        {
+            Paths.Add(data.waypoints[i]);
+        }
+    }
 }

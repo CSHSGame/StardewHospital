@@ -10,10 +10,11 @@ public class NpcDayData : ScriptableObject
     public Vector3 position;
     public Quaternion rotation;
     public Vector3 scale;
+    public Sprite sprite;
     // Use this for initialization
     public string talkToNode = "";
     public TextAsset scriptToLoad;
-    public Transform prefab;
+  
     public string GameObjectName;
     [Header("waypoints stuff")]
     public pointsVector3[] waypoints;
@@ -23,6 +24,12 @@ public struct pointsVector3
 {
     public string Name;
 
-    public Vector3[] location;
+    public List<Vector3> location;
 
+    public pointsVector3(string name, Vector3 location)
+    {
+        Name = name;
+        this.location = new List<Vector3>();
+        this.location.Add( location);
+    }
 }

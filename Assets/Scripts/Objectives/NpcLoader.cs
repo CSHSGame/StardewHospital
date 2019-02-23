@@ -5,26 +5,57 @@ using UnityEngine;
 public class NpcLoader : MonoBehaviour
 {
     public DayDataHolder dayDataHolder;
+    public Transform prefab;
     // Use this for initialization
-    void Start () {
-		for (int i= 0; i < dayDataHolder.npcs.Length; i++)
+    public void Setup (DayDataHolder day)
+    {
+        dayDataHolder = day;
+        for (int i = 0; i < transform.childCount; i++)
         {
-            Yarn.Unity.Example.NPC npc = Instantiate(dayDataHolder.npcs[i].prefab).GetComponent< Yarn.Unity.Example.NPC>();
-            npc.transform.position = dayDataHolder.npcs[i].position;
-            npc.transform.localScale = dayDataHolder.npcs[i].scale;
-            npc.transform.rotation = dayDataHolder.npcs[i].rotation;
-            npc.gameObject.name = dayDataHolder.npcs[i].GameObjectName;
-            npc.talkToNode = dayDataHolder.npcs[i].talkToNode;
-            if(dayDataHolder.npcs[i].scriptToLoad != null)
+            Destroy(transform.GetChild(i).gameObject);
+        }
+        LoadNpc();
+
+    }
+    [ContextMenu("delete npc")]
+    public void DeleteNpc()
+    {
+        var tempArray = new GameObject[transform.childCount];
+        for (int i = 0; i < tempArray.Length; i++)
+        {
+            tempArray[i] = transform.GetChild(i).gameObject;
+        }
+
+        foreach (var child in tempArray)
+        {
+            DestroyImmediate(child);
+        }
+
+    }
+    [ContextMenu("load npc")]
+    public void LoadNpc()
+    {
+
+        
+        for (int i = 0; i < dayDataHolder.npcs.Length; i++)
+        {
+            Yarn.Unity.Example.NPC npc = Instantiate(prefab).GetComponent<Yarn.Unity.Example.NPC>();
+            npc.data = dayDataHolder.npcs[i];
+            npc.LoadData();
+            Waypoints pt = npc.GetComponent<Waypoints>();
+            pt.data = dayDataHolder.npcs[i];
+            pt.loadData();
+
+            if (dayDataHolder.npcs[i].scriptToLoad != null)
             {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(dayDataHolder.npcs[i].scriptToLoad);
 
             }
+            npc.transform.SetParent(this.transform);
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+    // Update is called once per frame
+    void Update () {
 		
 	}
 

@@ -701,6 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Assets: {fileID: 11400000, guid: 2bef97a9bce28be41bf71cb29df233c2, type: 2}
+  Assets2: {fileID: 11400000, guid: 41e86393938cae347a10f8d0e78641df, type: 2}
 --- !u!114 &114210770579817988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -709,7 +710,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1706582771366788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcea1ccd45a8141e594a8103eefc1fbf, type: 3}
+  m_Script: {fileID: 11500000, guid: 6340b5897e76c47e1b94acdd9e96d91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minPosition: -5.3
@@ -728,18 +729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc6f81405843ac43960db7e8b0e912c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holder:
-  - Name: MoveToTalkingPosition
-    points:
-    - {fileID: 0}
-  - Name: MoveToRoom
-    points:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - Name: Try and Stop Williams
-    points:
-    - {fileID: 0}
+  Paths: []
+  data: {fileID: 0}
   speed: 2
   pathindex: -1
   isPlayer: 1
