@@ -34,7 +34,16 @@ namespace Yarn.Unity.Example
 {
     public class NPC : MonoBehaviour
     {
-
+        public void turnInvisible()
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            this.enabled = false;
+        }
+        public void turnVisible()
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            this.enabled = false;
+        }
         private enum Characters
         {
             Martin,

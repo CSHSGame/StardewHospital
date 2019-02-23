@@ -86618,7 +86618,8 @@ MonoBehaviour:
   Objectives:
   - {fileID: 0}
   map: {fileID: 132768610}
-  test: williams
+  targetObjective: 
+  currentObjective: 0
 --- !u!114 &1518262509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86645,7 +86646,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Days:
   - {fileID: 11400000, guid: 96c2380bd886ffa43a6bfbee049cd992, type: 2}
+  - {fileID: 11400000, guid: 6a26e5f2bf6578b4e83420b4b14ecf75, type: 2}
   currentDay: 0
+  display: {fileID: 1339544633}
 --- !u!1 &1522709952
 GameObject:
   m_ObjectHideFlags: 0
