@@ -19,8 +19,10 @@ public class ObjectiveLoader : MonoBehaviour
         map.StartSearch(5);
     }
     // Use this for initialization
-	void Start ()
+    public void Setup (ObjectiveData[] day)
     {
+
+        Objectives = day;
         keyValuePairs = new Dictionary<string, ObjectiveData>();
 
         foreach (ObjectiveData o in Objectives)

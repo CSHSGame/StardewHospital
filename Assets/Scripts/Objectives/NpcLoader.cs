@@ -7,8 +7,9 @@ public class NpcLoader : MonoBehaviour
     public DayDataHolder dayDataHolder;
     public Transform prefab;
     // Use this for initialization
-    void Start () {
-
+    public void Setup (DayDataHolder day)
+    {
+        dayDataHolder = day;
         for (int i = 0; i < transform.childCount; i++)
         {
             Destroy(transform.GetChild(i).gameObject);
@@ -16,7 +17,21 @@ public class NpcLoader : MonoBehaviour
         LoadNpc();
 
     }
+    [ContextMenu("delete npc")]
+    public void DeleteNpc()
+    {
+        var tempArray = new GameObject[transform.childCount];
+        for (int i = 0; i < tempArray.Length; i++)
+        {
+            tempArray[i] = transform.GetChild(i).gameObject;
+        }
 
+        foreach (var child in tempArray)
+        {
+            DestroyImmediate(child);
+        }
+
+    }
     [ContextMenu("load npc")]
     public void LoadNpc()
     {
