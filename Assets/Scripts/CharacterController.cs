@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class CharacterController : MonoBehaviour {
 
@@ -19,7 +20,10 @@ public class CharacterController : MonoBehaviour {
     void Update()
     {
         //direction = new Vector3 (Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-
+        if (FindObjectOfType<DialogueRunner>().isDialogueRunning == true)
+        {
+            return;
+        }
         direction.z = 0.0f;
         direction.x = 0.0f;
 

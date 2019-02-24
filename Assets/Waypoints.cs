@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 using Yarn.Unity;
 [SelectionBase]
 public class Waypoints : MonoBehaviour
 {
-
+    [HideInInspector]
+    public UnityEvent onPathDone;
     //public WayPointsHolder[] holder;
     public List< pointsVector3>Paths;
     public NpcDayData data;
@@ -128,6 +131,7 @@ public class Waypoints : MonoBehaviour
                 Debug.Log("Break");
                 pathindex = -1;
                 nodeindex = 0;
+                onPathDone.Invoke();
             }
         }
     }
