@@ -56108,14 +56108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiController: {fileID: 0}
-  variableStorage: {fileID: 812454726}
-  roomShade: {fileID: 0}
-  ConversUI: {fileID: 0}
-  characterName: Williams
-  talkToNode: Start_OctDemo_Day_1
-  scriptToLoad: {fileID: 0}
-  data: {fileID: 0}
 --- !u!1 &757831606
 GameObject:
   m_ObjectHideFlags: 0
@@ -57027,7 +57019,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 056919c4c773c0f44b7d6f281ada30be, type: 3}
   - {fileID: 4900000, guid: 44d41376f66734f3587be807809ec337, type: 3}
   - {fileID: 4900000, guid: 098a5ccefe9d14b4cbf108ef24e0b2d9, type: 3}
-  - {fileID: 4900000, guid: f999f4f24f44f41b8b8df17309cf4e19, type: 3}
+  - {fileID: 0}
   - {fileID: 4900000, guid: 0a47f2757f9404a85becfc21990e2e4d, type: 3}
   - {fileID: 4900000, guid: de13c8075fcbe40b08d94ab16bfdf6bb, type: 3}
   - {fileID: 4900000, guid: c66b31151d0094170bf089bd5a182c7d, type: 3}
@@ -75108,6 +75100,34 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 991507993}
   m_CullTransparentMesh: 0
+--- !u!1 &999434049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 999434050}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &999434050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999434049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.564, y: 0.05608368, z: 3.809}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005205554
 GameObject:
   m_ObjectHideFlags: 0
@@ -78020,12 +78040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8d9dcb9954f4d398749bb9d3965953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  williamsText: {fileID: 862776901}
-  DayData: {fileID: 11400000, guid: 96c2380bd886ffa43a6bfbee049cd992, type: 2}
-  pageNumber: 1
-  backArrow: {fileID: 271974948}
-  variableStorage: {fileID: 812454726}
-  LoadData: 0
 --- !u!61 &1157429401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81820,6 +81834,81 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.5000004, z: 0.20000005}
   m_Center: {x: 0, y: 0.0000009536743, z: 0.0000007748604}
+--- !u!1 &1239508733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1239508734}
+  - component: {fileID: 1239508735}
+  m_Layer: 0
+  m_Name: New Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1239508734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239508733}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1512010068}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1239508735
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239508733}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 65723f20ab6a3f44fb5adb84a480fea0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.5, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1247245096
 GameObject:
   m_ObjectHideFlags: 0
@@ -86062,6 +86151,84 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1509344684}
   m_CullTransparentMesh: 0
+--- !u!1 &1512010065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512010068}
+  - component: {fileID: 1512010067}
+  - component: {fileID: 1512010066}
+  m_Layer: 0
+  m_Name: Waypoint Placer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1512010066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512010065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc6f81405843ac43960db7e8b0e912c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holder:
+  - Name: Moore
+    points:
+    - {fileID: 999434049}
+    - {fileID: 0}
+  - Name: Moore
+    points:
+    - {fileID: 0}
+    - {fileID: 0}
+  - Name: Moore
+    points:
+    - {fileID: 0}
+    - {fileID: 0}
+  data: {fileID: 11400000, guid: 9f1502c65ca1d644fb52d107e1640c44, type: 2}
+  speed: 1
+  pathindex: 0
+  isPlayer: 1
+--- !u!114 &1512010067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512010065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff552f5f53a6544eaa13bf8fec175202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiController: {fileID: 0}
+  variableStorage: {fileID: 0}
+  roomShade: {fileID: 0}
+  ConversUI: {fileID: 0}
+  characterName: Moore
+  talkToNode: Sexuality_Knock
+  scriptToLoad: {fileID: 0}
+  data: {fileID: 11400000, guid: 9f1502c65ca1d644fb52d107e1640c44, type: 2}
+--- !u!4 &1512010068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512010065}
+  m_LocalRotation: {x: -0.6499125, y: 0, z: 0, w: 0.7600091}
+  m_LocalPosition: {x: 16.77, y: -0.44, z: 7.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1239508734}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: -81.07, y: 0, z: 0}
 --- !u!1 &1517283770
 GameObject:
   m_ObjectHideFlags: 0
@@ -87357,14 +87524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiController: {fileID: 0}
-  variableStorage: {fileID: 812454726}
-  roomShade: {fileID: 0}
-  ConversUI: {fileID: 0}
-  characterName: Williams
-  talkToNode: Start_OctDemo_Day_1
-  scriptToLoad: {fileID: 0}
-  data: {fileID: 0}
 --- !u!1 &1573307817
 GameObject:
   m_ObjectHideFlags: 0
