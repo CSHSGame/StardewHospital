@@ -6,10 +6,19 @@ public class CameraPanner : MonoBehaviour {
 
 
     public Camera Cam;
+    public StartPanel startPanelRef;
 
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(PanCamera1(15.0f));
+
+        if (startPanelRef.isStart)
+        {
+            StartCoroutine(PanCamera1(15.0f));
+        }
+        else
+        {
+            StartCoroutine(ZoomOut(10.0f));
+        }
 	}
 	
 	// Update is called once per frame
@@ -80,5 +89,26 @@ public class CameraPanner : MonoBehaviour {
         panTime = 0.0f;
 
         StartCoroutine(PanCamera1(15.0f));
+    }
+
+    IEnumerator ZoomOut(float time)
+    {
+        Cam.transform.position = new Vector3(6.5f, 10.0f, 25.0f);
+
+        float CamStartSize = 5.0f;
+        float CamEndSize = 30.0f;
+        float zoomTime = 0.0f;
+
+        do
+        {
+            Cam.orthographicSize = Mathf.Lerp(CamStartSize, CamEndSize, zoomTime / time);
+
+            zoomTime += Time.deltaTime;
+
+            yield return null;
+
+        } while (zoomTime <= time);
+
+        zoomTime = 0.0f;
     }
 }

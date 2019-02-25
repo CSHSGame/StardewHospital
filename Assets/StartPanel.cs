@@ -17,12 +17,34 @@ public class StartPanel : MonoBehaviour {
     public float TextOnTime = 1.0f;
     public float TextOffTime = 0.5f;
 
+    public bool isStart = true;
+
+    public string StartMainText;
+    public string EndMainText;
 
     // Use this for initialization
     void Start()
     {
-        StartCoroutine(GrowLogo(2));
-        StartCoroutine(TextOn(TextOnTime));
+
+        Text maintext1 = StartText1.GetComponent<Text>();
+        Text maintext2 = StartText2.GetComponent<Text>();
+
+
+        if (isStart)
+        {
+            maintext1.text = StartMainText;
+            maintext2.text = StartMainText;
+            StartCoroutine(GrowLogo(2));
+            StartCoroutine(TextOn(TextOnTime));
+
+        }
+        else
+        {
+            maintext1.text = EndMainText;
+            maintext2.text = EndMainText;
+            StartCoroutine(GrowLogo(2));
+        }
+
     }
 	
 	// Update is called once per frame
