@@ -17,7 +17,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
+  GameObjectName: Brian
   waypoints:
   - Name: BrianOut
     location:

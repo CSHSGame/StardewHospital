@@ -17,5 +17,8 @@ MonoBehaviour:
   sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
-  waypoints: []
+  GameObjectName: Marie
+  waypoints:
+  - Name: Marie Spawn In
+    location:
+    - {x: 1.3858633, y: 0, z: 46.04195}

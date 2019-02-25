@@ -14,10 +14,22 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 0}
   scale: {x: 0, y: 0, z: 0}
+  sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  prefab: {fileID: 0}
-  GameObjectName: 
+  GameObjectName: Player
   waypoints:
-  - Name: 
-    location: []
+  - Name: Enter
+    location:
+    - {x: 16.55, y: 0, z: 3.8348641}
+  - Name: Exit
+    location:
+    - {x: 18.085163, y: 0, z: 8.116634}
+  - Name: Walk to Garden
+    location:
+    - {x: 20.5, y: 0, z: 8.58}
+    - {x: 21.092653, y: 0, z: 38.4}
+    - {x: 17.135206, y: 0, z: 42.66}
+  - Name: Garden Marie Place
+    location:
+    - {x: 4.1, y: 0, z: 39.84}
