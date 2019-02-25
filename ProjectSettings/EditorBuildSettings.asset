@@ -6,45 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DemoDays/splash screen.unity
-    guid: 974b741b20c47ca4dadcaf2795b1809d
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v1.unity
-    guid: 5817b4dfdc064ae4bb884399a7f3153a
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v1.unity
-    guid: 491344bce2025bb42850254181e47697
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v1.unity
-    guid: 6e945a27d23770340b97f241223bd05d
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v2.unity
-    guid: 27c5c1ca6ea29554fab63f3026948633
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v2.unity
-    guid: e24a02e6f67a2064e9fc4a2159a712d4
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v2.unity
-    guid: 63c800aeea03cea4f9710f61c2f4a57c
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v1 alternate.unity
-    guid: 4b55a6f6f8fc6b74ea4ada91552f10cc
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v1 alternate.unity
-    guid: 927bb490ab868d54ba412e96ab904a0b
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v1 altenate.unity
-    guid: 387335aab2a152e4db7f527b0dac6951
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 1 v2 alternate.unity
-    guid: 0260878f653b23a47bbace1bd325d088
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 2 v2 altenate.unity
-    guid: ab03ca4f922f3de418fb09c967428a72
-  - enabled: 1
-    path: Assets/Scenes/DemoDays/Oct 22nd Demo Day 3 v2 alternate.unity
-    guid: f0da5cf1af90eec4eabd828d82db703f
-  - enabled: 1
-    path: Assets/Scenes/Working Scenes/pier new test scene nov 29th.unity
-    guid: 978d8f297a5864d4da9f7cc282365794
+    path: Assets/Scenes/Working Scenes/Julian Start and End Screen.unity
+    guid: f26350d66722b444481004104f17e077
   m_configObjects: {}
