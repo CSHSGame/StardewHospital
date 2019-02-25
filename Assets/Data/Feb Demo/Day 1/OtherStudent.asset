@@ -17,5 +17,16 @@ MonoBehaviour:
   sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
-  waypoints: []
+  GameObjectName: OtherStudent
+  waypoints:
+  - Name: Student Spawn In
+    location:
+    - {x: -0.14, y: 0, z: 8.48}
+  - Name: Student Walk To Garden
+    location:
+    - {x: 21.7, y: 0, z: 8.58}
+    - {x: 21.058739, y: 0, z: 38.8}
+    - {x: 15.408997, y: 0, z: 42.8}
+  - Name: Garden Marie Place
+    location:
+    - {x: 0.9, y: 0, z: 39.72}

@@ -17,5 +17,10 @@ MonoBehaviour:
   sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
-  waypoints: []
+  GameObjectName: Susannah
+  waypoints:
+  - Name: 'Enter Lee '
+    location:
+    - {x: 27.69, y: 0, z: 5.9}
+    - {x: 27.81, y: 0, z: 2.3}
+    - {x: 28.75, y: 0, z: 0.2}
