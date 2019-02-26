@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
+  m_Name: Sexuality_Defensive
+  m_EditorClassIdentifier: 
+  VariablesToEvaluate:
+  - Sexuality_Defensive
+  Operation: 0
+  VariableTrue: "Today [$Char4Last] raised an issue she was having with you - that
+    your behaviour around her had been awkward and immature. In response you became
+    defensive and evasive - this is not the way you should respond when a resident
+    (or anyone else!) confronts you about your behaviour. It\u2019s okay to make mistakes,
+    but if you\u2019re not receptive when someone gives you criticism, you\u2019ll
+    end up making the same mistakes againa and again. \r\n"
+  VariableFalse: " Today [$Char4Last] raised an issue she was having with you - that
+    your behaviour around her had been awkward and immature. It\u2019s great that
+    you were able to take in what she had to say and apologize, instead of being defensive.
+    It\u2019s okay to make mistakes once in a while, but if you\u2019re not receptive
+    when someone gives you criticism, you\u2019ll end up making the same mistakes
+    againa and again. \r\n"
