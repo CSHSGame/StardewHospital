@@ -22,6 +22,9 @@ public class StartPanel : MonoBehaviour {
     public string StartMainText;
     public string EndMainText;
 
+    public GameObject StartSplash;
+    public GameObject EndSplash;
+
     // Use this for initialization
     void Start()
     {
@@ -50,6 +53,15 @@ public class StartPanel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
+        if(Input.GetKey(KeyCode.Space))
+        {
+            if(isStart)
+            {
+                StartCoroutine(StartSpashTimer());
+               
+            }
+        }
+
     }
 
     IEnumerator GrowLogo(float time)
@@ -130,5 +142,19 @@ public class StartPanel : MonoBehaviour {
 
         OffTime = 0.0f;
         StartCoroutine(TextOn(TextOnTime));
+    }
+
+    IEnumerator StartSpashTimer()
+    {
+        StartSplash.SetActive(true);
+        yield return new WaitForSeconds(10.0f);
+        Debug.Log("Load Scene");
+        //Load New Scene
+    }
+
+    IEnumerator EndSplashTimer()
+    {
+        EndSplash.SetActive(true);
+        yield return new WaitForSeconds(5.0f);
     }
 }
