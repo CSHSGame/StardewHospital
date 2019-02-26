@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cafcd5eb0c57f814b9c95e46141e38bd, type: 3}
-  m_Name: obj1
+  m_Name: Day_3_Obj_2
   m_EditorClassIdentifier: 
-  name: 
+  name: Speak to Marie Day 3
   target: 0
   wayfindingIndex: 0
-  displayText: 
+  displayText: Speak to Marie.
