@@ -34,7 +34,16 @@ namespace Yarn.Unity.Example
 {
     public class NPC : MonoBehaviour
     {
-
+        public void turnInvisible()
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            this.enabled = false;
+        }
+        public void turnVisible()
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            this.enabled = false;
+        }
         private enum Characters
         {
             Martin,
@@ -46,13 +55,13 @@ namespace Yarn.Unity.Example
             Secretary,
             NurseManager,
         }
-        private Characters thisCharacter;
+        //private Characters thisCharacter;
 
-        public NpcController aiController;
+        //public NpcController aiController;
 
-        public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
+      //  public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
 
-        public FadeObjectInOut roomShade;
+        //public FadeObjectInOut roomShade;
 
         public GameObject ConversUI;
 
@@ -94,8 +103,8 @@ namespace Yarn.Unity.Example
 
         public void OnConversationStart()
         {
-            if(aiController != null)
-                aiController.isTalking = true;
+            //if(aiController != null)
+              //  aiController.isTalking = true;
         }
         
         public void ICanConverse(bool inRange)

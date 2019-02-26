@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
+  m_Name: Sexuality_Private
+  m_EditorClassIdentifier: 
+  VariablesToEvaluate:
+  - Sexuality_Private
+  Operation: 0
+  VariableTrue: " When you were speaking to Jeff about [$Char4Last] today, it\u2019s
+    great that you chose to move the conversation to a more private location. Because
+    we\u2019re in constant communication with our co-workers about our residents,
+    it\u2019s easy to forget to take their privacy into account - remember to use
+    discretion and care when it comes to discussing our residents with co-workers.\r\n"
+  VariableFalse: "When you were speaking to Jeff today, you were careless in discussing
+    private information about one of our residents in a public place - he was correct
+    to stop you and move the conversation to a place where you could speak in private.
+    Because we\u2019re in constant communication with our co-workers about our residents,
+    it\u2019s easy to forget to take their privacy into account - remember to use
+    discretion and care when it comes to discussing our residents.\r\n"

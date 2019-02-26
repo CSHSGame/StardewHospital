@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae5897e28d6c83409873badca2eca26, type: 3}
+  m_Name: DAY2
+  m_EditorClassIdentifier: 
+  DecisionPoints:
+  - {fileID: 11400000, guid: b2e31e4d5d7d3fa469b117d14ad7f175, type: 2}
+  - {fileID: 11400000, guid: d0819527ade9c064db98705fa9601c70, type: 2}
+  - {fileID: 11400000, guid: dc5420ccb77c54e45915937dcd42a97f, type: 2}
+  - {fileID: 11400000, guid: 23e9d706f000dc64f9f522933560c462, type: 2}
+  - {fileID: 11400000, guid: dfdd9a0ed22e58b409e9b8235cfa85fd, type: 2}
+  otherVariables:
+  - $Bringing_Breakfast_William
+  - $breakfast_Fail_Williams
+  - $return_Later_Williams
+  - $successWilliams
+  - $MartinFace
+  CurrentDay: 0
+  Objectives:
+  - {fileID: 11400000, guid: a4ad026d3c549c846853c0b8d376a5fa, type: 2}
+  npcs:
+  - {fileID: 11400000, guid: 8fa9c31360bdc2e4b94d7e0631c8e3f5, type: 2}
+  - {fileID: 11400000, guid: 2b4611e9d1cf0e640bd20ab009571023, type: 2}
+  DayOfTheWeek: MON
+  DayNumber: 14
+  Month: SEPT
+  TimeOfDay: 4:00
+  AMOrPM: 1

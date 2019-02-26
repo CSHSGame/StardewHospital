@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
+  m_Name: Transitioning_Accomodate
+  m_EditorClassIdentifier: 
+  VariablesToEvaluate:
+  - Transitioning_Accomodate
+  Operation: 0
+  VariableTrue: "When Susannah told you she was concerned her mother wasn\u2019t eating,
+    you did a great job of empathising with her and making an effort to understand
+    and solve the problem. Our residents come from all over the world, and all walks
+    of life -it is our responsibility to try to accomodate all of their unique needs
+    and wishes. Well done!\r\n"
+  VariableFalse: " When Susannah told you she was concerned her mother wasn\u2019t
+    eating, your response showed a surprising lack of empathy. Our residents come
+    from all over the world, and all walks of life -it is our responsibility to try
+    to accomodate all of their unique needs and wishes.\r\n"

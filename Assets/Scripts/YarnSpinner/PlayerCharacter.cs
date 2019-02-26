@@ -97,7 +97,8 @@ namespace Yarn.Unity.Example {
             });
 
          //   print(target);
-            if (target != null) {
+            if (target != null && target.enabled == true)
+            {
                 // Kick off the dialogue at this node.
                 target.OnConversationStart();
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
