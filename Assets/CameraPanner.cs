@@ -110,5 +110,7 @@ public class CameraPanner : MonoBehaviour {
         } while (zoomTime <= time);
 
         zoomTime = 0.0f;
+
+        StartCoroutine(startPanelRef.EndSplashTimer());
     }
 }
