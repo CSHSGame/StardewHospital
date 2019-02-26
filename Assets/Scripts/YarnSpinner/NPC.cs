@@ -34,11 +34,13 @@ namespace Yarn.Unity.Example
 {
     public class NPC : MonoBehaviour
     {
-        public void turnInvisible()
+        [YarnCommand("DeSpawn")]
+        public void turnInvisible(string val = "True")
         {
             transform.GetChild(0).gameObject.SetActive(false);
             this.enabled = false;
         }
+        [YarnCommand("Spawn")]
         public void turnVisible()
         {
             transform.GetChild(0).gameObject.SetActive(false);
