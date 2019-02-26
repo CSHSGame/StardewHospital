@@ -18,6 +18,10 @@ public class NpcDayData : ScriptableObject
     public string GameObjectName;
     [Header("waypoints stuff")]
     public pointsVector3[] waypoints;
+
+    [Space]
+    public DialogueTrigger DialogueTriggerPrefab;
+
 }
 [System.Serializable]
 public struct pointsVector3
