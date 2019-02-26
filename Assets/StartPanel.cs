@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class StartPanel : MonoBehaviour {
 
 
@@ -144,17 +146,19 @@ public class StartPanel : MonoBehaviour {
         StartCoroutine(TextOn(TextOnTime));
     }
 
-    IEnumerator StartSpashTimer()
+    public IEnumerator StartSpashTimer()
     {
         StartSplash.SetActive(true);
         yield return new WaitForSeconds(10.0f);
-        Debug.Log("Load Scene");
-        //Load New Scene
+        //Debug.Log("Load Game Scene");
+        SceneManager.LoadScene(1);
     }
 
-    IEnumerator EndSplashTimer()
+    public IEnumerator EndSplashTimer()
     {
         EndSplash.SetActive(true);
         yield return new WaitForSeconds(5.0f);
+        //Debug.Log("Load Start Scene");
+        SceneManager.LoadScene(0);
     }
 }
