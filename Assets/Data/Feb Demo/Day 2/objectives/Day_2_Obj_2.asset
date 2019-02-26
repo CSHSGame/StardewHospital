@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cafcd5eb0c57f814b9c95e46141e38bd, type: 3}
-  m_Name: Day_2_Obj_3
+  m_Name: Day_2_Obj_2
   m_EditorClassIdentifier: 
   name: See Mrs Lee Day 2
   target: 0

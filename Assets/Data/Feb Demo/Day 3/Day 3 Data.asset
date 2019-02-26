@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae5897e28d6c83409873badca2eca26, type: 3}
+  m_Name: Day 3 Data
+  m_EditorClassIdentifier: 
+  DecisionPoints:
+  - {fileID: 11400000, guid: 5ed3b3f54d03eb24fabcbf21e7059589, type: 2}
+  - {fileID: 11400000, guid: 84215a2d2ad39cc4e860dfc6155b2da2, type: 2}
+  otherVariables: []
+  CurrentDay: 3
+  Objectives:
+  - {fileID: 11400000, guid: 2a61bf3e0697c7546b02a02f32ec57a7, type: 2}
+  - {fileID: 11400000, guid: f113fdf832e60b048bb35159c04ed74c, type: 2}
+  PlayerData: {fileID: 0}
+  npcs:
+  - {fileID: 11400000, guid: 6da97243a9ac408428b6efeb11e48c3a, type: 2}
+  - {fileID: 11400000, guid: a347dd08d4888f24b880cd8f6505f6ac, type: 2}
+  - {fileID: 11400000, guid: 8295d8e7bd95a984f8907fce8be30c90, type: 2}
+  - {fileID: 11400000, guid: 69bf8fa95986b404c985bdb62bfe378f, type: 2}
+  - {fileID: 11400000, guid: a2be868c9c5cfe14099dfeac6443b4e8, type: 2}
+  - {fileID: 11400000, guid: 2640c44071a88ce4b94ac55bc458d489, type: 2}
+  DayOfTheWeek: Wednesday
+  DayNumber: 13
+  Month: 07
+  TimeOfDay: 9:00
+  AMOrPM: 0

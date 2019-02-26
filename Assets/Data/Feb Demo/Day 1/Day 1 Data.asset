@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae5897e28d6c83409873badca2eca26, type: 3}
+  m_Name: Day 1 Data
+  m_EditorClassIdentifier: 
+  DecisionPoints:
+  - {fileID: 11400000, guid: dc0be104d4c791047addb2d7e80a2ddc, type: 2}
+  - {fileID: 11400000, guid: 32045ffbc790c07429cc047e713e29f1, type: 2}
+  - {fileID: 11400000, guid: 6fd94fdbca7f0c24a840723c175da644, type: 2}
+  otherVariables: []
+  CurrentDay: 1
+  Objectives:
+  - {fileID: 11400000, guid: 554ce2a7af334d54aa59499771dad999, type: 2}
+  - {fileID: 11400000, guid: 2bca6219adeeb3842a0302e3b82db739, type: 2}
+  - {fileID: 11400000, guid: 80a4032c5b9b00d44812ef58af76b5d8, type: 2}
+  PlayerData: {fileID: 11400000, guid: 94501fbc2aed43b48a1333169b469ea5, type: 2}
+  npcs:
+  - {fileID: 11400000, guid: 76e4a888b5573ca45bc22b232230c729, type: 2}
+  - {fileID: 11400000, guid: ec5e37a8fa45ad544bcc65d4a2543c23, type: 2}
+  - {fileID: 11400000, guid: 411fca5800c5d2343a311138af15253d, type: 2}
+  - {fileID: 11400000, guid: f44fb5f4866a6594f8ea3ff5f829092c, type: 2}
+  - {fileID: 11400000, guid: 52c14f0e521826f4490174b38c5e575f, type: 2}
+  - {fileID: 11400000, guid: 22af9bd0a65b5784d831fe8db2598c0a, type: 2}
+  - {fileID: 11400000, guid: 8ef411f31bda07b43abd1127d9d980df, type: 2}
+  - {fileID: 11400000, guid: 24c56f59425403546ab23df2ad09329e, type: 2}
+  DayOfTheWeek: Monday
+  DayNumber: 11
+  Month: 07
+  TimeOfDay: 9:00
+  AMOrPM: 0
