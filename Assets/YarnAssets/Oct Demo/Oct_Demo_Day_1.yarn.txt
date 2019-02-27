@@ -8,7 +8,7 @@ position: 776,1153
 <<set $Char1First = "Arthur">>
 [action]*The door at [$Char1Last]' room is already open. There is an open suitcase on his bed. [$playerName] enters.*
 Skip:
-[$playerName]: Good morning, Mr. Williams. How are you doing?
+[$playerName]: Good morning,我累了，想回家. How are you doing?
 Skip:
 [happy][$Char1Last]: I'm good. But--
 

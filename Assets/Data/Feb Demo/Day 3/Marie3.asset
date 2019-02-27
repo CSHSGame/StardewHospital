@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: {x: 17.43, y: 0.1, z: -0.28}
   rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  scale: {x: 0.7, y: 0.70000046, z: 1}
-  sprite: {fileID: 21300018, guid: 02d58f8137e27e14a95bdeab52d890f9, type: 3}
+  scale: {x: 1.3, y: 1.3, z: 1}
+  sprite: {fileID: 21300000, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: MarieDay3
@@ -22,3 +22,4 @@ MonoBehaviour:
   - Name: Marie Spawn In
     location:
     - {x: 1.3858633, y: 0, z: 46.04195}
+  DialogueTriggerPrefab: {fileID: 0}

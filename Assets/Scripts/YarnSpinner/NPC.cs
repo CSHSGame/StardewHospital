@@ -163,6 +163,7 @@ namespace Yarn.Unity.Example
             gameObject.name = data.GameObjectName;
            
             GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;
+            GetComponentInChildren<SpriteRenderer>().gameObject.AddComponent<BoxCollider>();
         }
     }
    

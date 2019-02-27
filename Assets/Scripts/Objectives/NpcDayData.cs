@@ -9,6 +9,7 @@ public class NpcDayData : ScriptableObject
 {
     public Vector3 position;
     public Quaternion rotation;
+    [Space]
     public Vector3 scale;
     public Sprite sprite;
     // Use this for initialization
