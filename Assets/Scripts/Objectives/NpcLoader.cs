@@ -52,6 +52,11 @@ public class NpcLoader : MonoBehaviour
 
             }
             npc.transform.SetParent(this.transform);
+
+            if(npc.data.DialogueTriggerPrefab != null)
+            {
+                Instantiate(npc.data.DialogueTriggerPrefab).GetComponent<DialogueTrigger>().Target = npc ;
+            }
         }
     }
     // Update is called once per frame

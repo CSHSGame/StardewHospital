@@ -34,11 +34,28 @@ namespace Yarn.Unity.Example
 {
     public class NPC : MonoBehaviour
     {
-        public void turnInvisible()
+        Waypoints movement;
+        [YarnCommand("DeSpawn")]
+        public void turnInvisible(string val = "True")
+        {
+            if(val == "True")
+            {
+                movement.onPathDone.AddListener(() => 
+                {
+                    turnInvisibleDelegate();
+                    movement.onPathDone.RemoveAllListeners();
+
+                });
+            }
+            turnInvisibleDelegate();
+        }
+
+        private void turnInvisibleDelegate()
         {
             transform.GetChild(0).gameObject.SetActive(false);
-            this.enabled = false;
+            this.enabled = false; ;
         }
+        [YarnCommand("Spawn")]
         public void turnVisible()
         {
             transform.GetChild(0).gameObject.SetActive(false);
@@ -92,6 +109,7 @@ namespace Yarn.Unity.Example
             {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
+            movement = GetComponent<Waypoints>();
         }
 
         // Update is called once per frame
