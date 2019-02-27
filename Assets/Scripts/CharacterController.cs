@@ -8,12 +8,13 @@ public class CharacterController : MonoBehaviour {
 
     public float speed;
     private Vector3 direction;
+    private Rigidbody rb;
     //public SpriteRenderer sprite;
 
     // Use this for initialization
     void Start()
     {
-     
+        rb = GetComponent<Rigidbody>();
     }
 
    
@@ -46,9 +47,13 @@ public class CharacterController : MonoBehaviour {
 
 
 
+        rb.MovePosition(new Vector3((transform.position.x + direction.x * speed * Time.deltaTime),0, transform.position.z + direction.z * speed * Time.deltaTime));
+      
+        
 
+        //transform.position += direction * speed * Time.deltaTime;
+        
 
-        transform.position += direction * speed * Time.deltaTime;
 
         if (direction.x == -1.0f)
         {

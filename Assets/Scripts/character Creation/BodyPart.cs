@@ -41,8 +41,8 @@ public class BodyPart : MonoBehaviour
     }
     public void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
         if (v < 0)
         {
             currentFacing = facing.Front;
