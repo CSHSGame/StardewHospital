@@ -38,7 +38,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4096372563658928}
   - component: {fileID: 212546895938848850}
-  - component: {fileID: 65048718754531356}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -73,18 +72,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65048718754531356
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1962873361852354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.25, y: 2.5, z: 0.20000005}
-  m_Center: {x: 0, y: 0.0000014305115, z: 5.684342e-14}
 --- !u!114 &114227360559094964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,9 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff552f5f53a6544eaa13bf8fec175202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiController: {fileID: 114227360559094964}
-  variableStorage: {fileID: 0}
-  roomShade: {fileID: 0}
   ConversUI: {fileID: 0}
   characterName: 'mr williams '
   talkToNode: Start_OctDemo_Day_1
@@ -131,6 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc6f81405843ac43960db7e8b0e912c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onPathDone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   Paths: []
   data: {fileID: 0}
   speed: 2

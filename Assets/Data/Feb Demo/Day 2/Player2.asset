@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 0}
-  scale: {x: 0, y: 0, z: 0}
+  scale: {x: 1.3, y: 1.3, z: 0}
   sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
@@ -25,3 +25,4 @@ MonoBehaviour:
   - Name: Enter Lee
     location:
     - {x: 40.1, y: 0, z: -2.7}
+  DialogueTriggerPrefab: {fileID: 0}

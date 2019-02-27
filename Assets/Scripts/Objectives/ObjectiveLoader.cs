@@ -50,8 +50,12 @@ public class ObjectiveLoader : MonoBehaviour
     {
         if (keyValuePairs.ContainsKey(name))
         {
-            displayText.text = keyValuePairs[name].displayText;
-            map.StartSearch(keyValuePairs[name].wayfindingIndex);
+            if(displayText!= null)
+            {
+                displayText.text = keyValuePairs[name].displayText;
+                map.StartSearch(keyValuePairs[name].wayfindingIndex);
+            }
+            
 
         }
     }
