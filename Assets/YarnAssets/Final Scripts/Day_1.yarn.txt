@@ -1,20 +1,20 @@
 title: Day_1_Start_Final
 tags: 
 colorID: 0
-position: -646,595
+position: -726,613
 ---
-<<isThought>>[$PlayerName]: Wow, so this is this the place…
+<<Action>>[$PlayerName]: Wow, so this is this the place…
 [$PlayerName]: I should speak to the nurse manager, I think that’s her by the reception desk.
  
-***PROGRAMMER NOTE*** Player walks to nurse manager
-***PROGRAMMER NOTE*** UI Popup that explains you press space or whatever to talk to character with the speech icon over their head
+//***PROGRAMMER NOTE*** Player walks to nurse manager
+//***PROGRAMMER NOTE*** UI Popup that explains you press space or whatever to talk to character with the speech icon over their head
 
 
 ===
 title: Day_1_Get_Quest_Final
 tags: 
 colorID: 0
-position: -428,601
+position: -476,619
 ---
 [$PlayerName]: Um.. hi there. My name’s [$PlayerName], I’m here for the first day of my school placement,
 [$NurseManager]: Hello [$PlayerName]! Welcome, we’ve been expecting you. Ready to get started?
@@ -25,12 +25,12 @@ position: -428,601
 [$PlayerName]: Okay, I will. Thanks!
 [$NurseManager]: Good luck!
 
-***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
+//***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
 ===
 title: Day_1_Living_Area_Final
 tags: 
 colorID: 0
-position: -194,596
+position: -233,613
 ---
 [$PlayerName]: Hi, sorry to interrupt - I’m looking for [$Char1Last]?
 [$Char1Last]: That’s me! 
@@ -40,49 +40,56 @@ position: -194,596
 [$Char1Last]: Sure! I have some time now - shall we? This is the living area, it’s a common space for residents to sit and chat, read or socialize.
 [$PlayerName]: That’s great!
 [$Char1Last]: Follow me, I’ll show you the dining area.
+[[Day_1_Dining_Area_Final]]
 
-***PROGRAMMER NOTE*** Player Walks with mrs stein to the dining room.(AUTOMATED)
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to the dining room.(AUTOMATED)
 ===
 title: Day_1_Dining_Area_Final
 tags: 
 colorID: 0
-position: 27,602
+position: 31,610
 ---
+<<SetPath Stein Zero>>
+<<SetPath Player Zero>>
 [$Char1Last]: Here’s the dining area, the food here here is pretty good!
 [$PlayerName]: People seem like they’re enjoying it.
 [$Char1Last]: The next stop on our tour is a good one, I think you’ll like it.
-
-***PROGRAMMER NOTE*** Player Walks with mrs stein to the garden - Day_1_Walking_To_Garden happens while walking.
+[[Day_1_Walking_To_Garden_Final]]
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to the garden - Day_1_Walking_To_Garden happens while walking.
 ===
 title: Day_1_Walking_To_Garden_Final
 tags: 
 colorID: 0
-position: 248,603
+position: 253,265
 ---
-[$PlayerName]: Have you been here for a long time?
-[$Char1Last]: Yes, I’ve been here longer than most of our residents, I’ve seen a lot of people come and go.
-[[That must be really hard for you.|Day_1_Char1_Q1]]
-[[I’m sorry to hear that. |Day_1_Char1_Q1]]
+<<SetPath Stein One>>
+<<SetPath Player One>>
+[$walking][$PlayerName]: Have you been here for a long time?
+[$walking][$Char1Last]: Yes, I’ve been here longer than most of our residents, I’ve seen a lot of people come and go.
+[$walking][[That must be really hard for you.|Day_1_Char1_Q1]]
+[$walking][[I’m sorry to hear that. |Day_1_Char1_Q1]]
+ 
 
 ===
 title: Day_1_Char1_Q1
 tags: 
 colorID: 0
-position: 492,602
+position: 421,610
 ---
-[$Char1Last]: It's always nice to meet new people, but seeing people go is tough. 
+[$walking][$Char1Last]: It's always nice to meet new people, but seeing people go can be really is tough.
+[[Day_1_Garden_Final]]
 ===
 title: Day_1_Garden_Final
 tags: 
 colorID: 0
-position: 724,602
+position: 728,602
 ---
-***PROGRAMMER NOTE*** Triggered on arrival at garden if last convo is done
 [$Char1Last]: But enough of this depressing talk, this is what I wanted to whow you - the beautiful garden we have here at Bloom Village!
 [$PlayerName]: Oh my goodness… It’s beautiful…
 [$Char1Last]: The garden is a really special place for a lot of the residents here. 
 [$PlayerName]: I can see why. 
 [$Char1Last]: Oh, it’s [$Char2Last]! I’ll introduce you.
+<<SetPath Williams Two>>
 [$Char2Last]: Hello there. 
 [$Char1Last]: [$Char2Last], I want to introduce you to our new placement student, [$PlayerName].
 [$PlayerName]: Hello, [$Char2Last],  nice to meet you. 
@@ -90,39 +97,51 @@ position: 724,602
 [$Char2Last]: Haha! I used to be, I don’t cook much these days though.
 [$Char1Last]: I’m just giving [$PlayerName] a small tour of Bloom Village, see you later [$Char2Last]!
 [$Char1Last]: See you soon!
-***PROGRAMMER NOTE*** Player Walks with mrs stein to Syd’s Room - Day_1_Walk_To_Syd happens while walking.
+[[Day_1_Walk_To_Syd]]
+
+
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to Syd’s Room - Day_1_Walk_To_Syd happens while walking.
 ===
 title: Day_1_Walk_To_Syd
 tags: 
 colorID: 0
-position: 943,602
+position: 985,597
 ---
-[$PlayerName]: He seemed really nice!
-[$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years. Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
-[$PlayerName]: Oh, I had no idea…
+<<SetPath Stein Two>>
+<<SetPath Player Two>>
+[$walking][$PlayerName]: He seemed really nice!
+[$walking][$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years. Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
+[$walking][$PlayerName]: Oh, I had no idea…
+[[Day_1_Syds_Door_Final]]
 ===
 title: Day_1_Syds_Door_Final
 tags: 
 colorID: 0
-position: 1172,597
+position: 1239,585
 ---
 **Knock Knock**
 …
 [$Char1Last]: Huh. 
 [$Char1Last]: I know he’s there, I can hear the T.V. I guess he doesn’t want to be disturbed just now.
-***PROGRAMMER NOTE*** Player Walks with mrs stein to lobby - Day_1_Walk_To_Lobby happens while walking.
+[[Day_1_Walk_To_Lobby]]
+
+
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to lobby - Day_1_Walk_To_Lobby happens while walking.
 ===
 title: Day_1_Walk_To_Lobby
 tags: 
 colorID: 0
-position: 1396,601
+position: 1524,585
 ---
-[$Char1Last]: [$Char3First] seems like he’s been having a rough time recently. He hasn’t said anything, I just get the impression something’s bothering him...
+<<SetPath Stein Three>>
+<<SetPath Player Three>>
+[$walking][$Char1Last]: [$Char3First] seems like he’s been having a rough time recently. He hasn’t said anything, I just get the impression something’s bothering him...
+[[Day_1_Lobby]]
 ===
 title: Day_1_Lobby
 tags: 
 colorID: 0
-position: 1621,605
+position: 1790,586
 ---
 [$Char1Last]: Anyways, I’m sure you’ll get an opportunity to meet him tomorrow. It looks like our tour has come full circle! 
 ***PROGRAMMER NOTE***Nurse manager enters
