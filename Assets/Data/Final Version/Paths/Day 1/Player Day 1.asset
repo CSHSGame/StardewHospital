@@ -11,12 +11,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: Player Day 1
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
-  scale: {x: 0, y: 0, z: 0}
-  sprite: {fileID: 21300000, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
-  talkToNode: 
-  scriptToLoad: {fileID: 4900000, guid: 030878bd2d4ac6d48b5e14874afc3c1a, type: 3}
-  GameObjectName: 
-  waypoints: []
+  position: {x: -1.8391023, y: 0.25581813, z: 3.494152}
+  rotation: {x: -0, y: -0, z: -0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  sprite: {fileID: 21300006, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  talkToNode: Day_1_Living_Area_Final
+  scriptToLoad: {fileID: 0}
+  GameObjectName: Player
+  waypoints:
+  - Name: Player To Dining
+    location:
+    - {x: 0.16653943, y: 0, z: 21.177752}
+    - {x: -5.994735, y: -0.3139753, z: 15.395527}
+    - {x: -6.529674, y: -0.36594722, z: 10.377483}
+    - {x: -16.3919, y: -0.37448472, z: 11.535955}
+    - {x: -16.173933, y: 0.2558181, z: 20.95372}
+  - Name: Player To Garden
+    location:
+    - {x: -16.12826, y: 0.25581813, z: 20.953724}
+    - {x: -16.246197, y: 0.25581813, z: 13.814585}
+    - {x: -7.6380053, y: 0.25581813, z: 9.512106}
+    - {x: 20.265387, y: 0.25581813, z: 9.478712}
+    - {x: 20.326939, y: 0.25581813, z: 41.832302}
+    - {x: 15.943243, y: 0.25581813, z: 44.549175}
+  - Name: Player to Syd
+    location:
+    - {x: 15.94324, y: 0.25581813, z: 44.54918}
+    - {x: 20.512243, y: 0.25581813, z: 40.72661}
+    - {x: 20.554619, y: 0.25581813, z: 7.339813}
+    - {x: 37.490402, y: 0.25581813, z: 7.2838984}
+  - Name: Player To Lobby
+    location:
+    - {x: 37.4904, y: 0.25581813, z: 7.283898}
+    - {x: 5.1790466, y: 0.25581813, z: 7.3798122}
   DialogueTriggerPrefab: {fileID: 0}
