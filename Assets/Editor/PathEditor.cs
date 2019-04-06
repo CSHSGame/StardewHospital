@@ -38,7 +38,7 @@ public class ObjectBuilderEditor2 : Editor
             case EventType.KeyDown:
                 if (e.keyCode == KeyCode.W && JustPressed == false)
                 {
-                    myScript.createNextPoint(Selection.activeGameObject);
+                    Selection.activeGameObject = myScript.createNextPoint(Selection.activeGameObject);
                     JustPressed = true;
                 }
                 break;

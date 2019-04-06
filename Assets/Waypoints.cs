@@ -14,15 +14,37 @@ public class Waypoints : MonoBehaviour
     public NpcDayData data;
 
     public float speed;
+    private float oldSpeed;
     private float step;
     [SerializeField]
     public int pathindex = -1;
     private int nodeindex = 0;
     public bool isPlayer;
+
+    [SerializeField]
+    bool warp = false;
+    bool teleport = false;
+
+    [YarnCommand("SetPath")]
+    public void StartPathing(string Pathnum, string WarpType)
+    {
+        if (WarpType == "Warp")
+        {
+            warp = true;
+
+        }
+        else
+        {
+            teleport = true;
+        }
+
+        StartPathing(Pathnum);
+    }
+
     [YarnCommand("SetPath")]
     public void StartPathing(string Pathnum)
     {
-        Debug.Log("called " + Pathnum);
+        Debug.Log(gameObject.name +" called " + Pathnum);
         int returnValue = ConvertStringToInt(Pathnum);
 
         if(returnValue < Paths.Count)
@@ -74,6 +96,7 @@ public class Waypoints : MonoBehaviour
     {
         pathindex = -1;
         nodeindex = 0;
+        oldSpeed = speed;
     }
 
     int ConvertStringToInt(string number)
@@ -115,6 +138,20 @@ public class Waypoints : MonoBehaviour
                 if (this.transform.position == Paths[pathindex].location[nodeindex])
                 {
                     nodeindex++;
+
+                    if (warp)
+                    {
+                        if(nodeindex >= 1)
+                        {
+                           
+                            speed = 6;
+
+                        }
+                        if(nodeindex == Paths[pathindex].location.Count - 1)
+                        {
+                            speed = oldSpeed;
+                        }
+                    }
                 }
             }
             else

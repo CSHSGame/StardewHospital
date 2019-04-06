@@ -183,13 +183,37 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         
      
 
-            // Show the 'press any key' prompt when done, if we have one
-            if (continuePrompt != null)
-                continuePrompt.SetActive(true);
-
+           
+            bool canPressSpace = false;
             // Wait for any user input
+            Waypoints[] wps = FindObjectsOfType<Waypoints>();
             while (Input.GetKeyDown(KeyCode.Space ) == false)
             {
+
+                while (canPressSpace == false)
+                {
+                    bool t = true;
+
+                    foreach(Waypoints w in wps)
+                    {
+                        if(w.pathindex != -1)
+                        {
+                            t = false;
+                        }
+                       
+                    }
+                    if (t)
+
+                    {
+                        canPressSpace = true;
+                    }
+                    yield return null;
+
+                }
+                // Show the 'press any key' prompt when done, if we have one
+                if (continuePrompt != null)
+                    continuePrompt.SetActive(true);
+
                 yield return null;
             }
             // hide the 'press any key' prompt when done, if we have one

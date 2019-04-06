@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour
     public int pathNum = 0;
     PlayerCharacter player;
     CharacterController playerCtrl;
-
+    private bool once = false;
     // Use this for initialization
     void Start ()
     {
@@ -26,8 +26,9 @@ public class DialogueTrigger : MonoBehaviour
     {
 
         player = other.GetComponentInParent<PlayerCharacter>();
-        if(player != null)
+        if (player != null && Target.enabled == true && once == false)
         {
+            once = true;
             if (triggerPath)
             {
                 playerCtrl = other.GetComponentInParent<CharacterController>();

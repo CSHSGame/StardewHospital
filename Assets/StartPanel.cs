@@ -59,6 +59,10 @@ public class StartPanel : MonoBehaviour {
         {
             if(isStart)
             {
+                //shadow Pier code 
+                CharacterSelectionContinue cs = FindObjectOfType<CharacterSelectionContinue>();
+                cs.Save();
+                // end 
                 StartCoroutine(StartSpashTimer());
                
             }
