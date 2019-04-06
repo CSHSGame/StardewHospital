@@ -17,6 +17,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
+  GameObjectName: MarissaDay2
   waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
