@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Name: MrsSteinDay2
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
-  scale: {x: 0, y: 0, z: 0}
-  sprite: {fileID: 0}
+  rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  scale: {x: 1, y: 1, z: 1}
+  sprite: {fileID: 21300000, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
+  GameObjectName: Stein
   waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
