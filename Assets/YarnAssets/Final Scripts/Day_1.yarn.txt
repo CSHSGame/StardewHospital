@@ -1,0 +1,154 @@
+title: Day_1_Start_Final
+tags: 
+colorID: 0
+position: -726,613
+---
+<<Action>>[$playerName]: Wow, so this is this the place…
+[$playerName]: I should speak to the nurse manager, I think that’s her by the reception desk.
+ 
+//***PROGRAMMER NOTE*** Player walks to nurse manager
+//***PROGRAMMER NOTE*** UI Popup that explains you press space or whatever to talk to character with the speech icon over their head
+
+
+===
+title: Day_1_Get_Quest_Final
+tags: 
+colorID: 0
+position: -476,619
+---
+[$playerName]: Um.. hi there. My name’s [$playerName], I’m here for the first day of my school placement,
+[$NurseManager]: Hello [$playerName]! Welcome, we’ve been expecting you. Ready to get started?
+[$playerName]: Yes!
+[$NurseManager]: Nervous?
+[$playerName]: Yes!!
+[$NurseManager]: Ha! That’s to be expected, at least you’re honest! Today I just want you to meet a few of the residents you’ll be working closely with. I think you get started by introducing yourself to [$Char1Last]  - I think she’s in the living area. If she’s not to busy perhaps you can ask her to show you around?
+[$playerName]: Okay, I will. Thanks!
+[$NurseManager]: Good luck!
+
+//***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
+===
+title: Day_1_Living_Area_Final
+tags: 
+colorID: 0
+position: -233,613
+---
+[$playerName]: Hi, sorry to interrupt - I’m looking for [$Char1Last]?
+[$Char1Last]: That’s me! 
+[$playerName]: Hello! My name is [$playerName], [$NurseManager] wanted me to come by and introduce myself - I’m the new placement student and today is my first day. 
+[$Char1Last]: It’s a pleasure to meet you! Please, call me [$Char1First].
+[$playerName]: [$NurseManager] was wondering if you could give me a little tour of Bloom Village - do you think you’d be able to show me around today?
+[$Char1Last]: Sure! I have some time now - shall we? This is the living area, it’s a common space for residents to sit and chat, read or socialize.
+[$playerName]: That’s great!
+[$Char1Last]: Follow me, I’ll show you the dining area.
+[[Day_1_Dining_Area_Final]]
+
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to the dining room.(AUTOMATED)
+===
+title: Day_1_Dining_Area_Final
+tags: 
+colorID: 0
+position: 31,610
+---
+<<SetPath Stein Zero>>
+<<SetPath Player Zero>>
+[$Char1Last]: Here’s the dining area, the food here here is pretty good!
+[$playerName]: People seem like they’re enjoying it.
+[$Char1Last]: The next stop on our tour is a good one, I think you’ll like it.
+[[Day_1_Walking_To_Garden_Final]]
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to the garden - Day_1_Walking_To_Garden happens while walking.
+===
+title: Day_1_Walking_To_Garden_Final
+tags: 
+colorID: 0
+position: 253,265
+---
+<<SetPath Stein One>>
+<<SetPath Player One>>
+[$walking][$playerName]: Have you been here for a long time?
+[$walking][$Char1Last]: Yes, I’ve been here longer than most of our residents, I’ve seen a lot of people come and go.
+[$walking][[That must be really hard for you.|Day_1_Char1_Q1]]
+[$walking][[I’m sorry to hear that. |Day_1_Char1_Q1]]
+ 
+
+===
+title: Day_1_Char1_Q1
+tags: 
+colorID: 0
+position: 421,610
+---
+[$walking][$Char1Last]: It's always nice to meet new people, but seeing people go can be really is tough.
+[[Day_1_Garden_Final]]
+===
+title: Day_1_Garden_Final
+tags: 
+colorID: 0
+position: 728,602
+---
+[$Char1Last]: But enough of this depressing talk, this is what I wanted to whow you - the beautiful garden we have here at Bloom Village!
+[$playerName]: Oh my goodness… It’s beautiful…
+[$Char1Last]: The garden is a really special place for a lot of the residents here. 
+[$playerName]: I can see why. 
+[$Char1Last]: Oh, it’s [$Char2Last]! I’ll introduce you.
+<<SetPath Williams Two>>
+[$Char2Last]: Hello there. 
+[$Char1Last]: [$Char2Last], I want to introduce you to our new placement student, [$playerName].
+[$playerName]: Hello, [$Char2Last],  nice to meet you. 
+[$Char1Last]: [$Char2Last] used to be a chef! We’re still trying to convince him to cook us up a meal! Haha.
+[$Char2Last]: Haha! I used to be, I don’t cook much these days though.
+[$Char1Last]: I’m just giving [$playerName] a small tour of Bloom Village, see you later [$Char2Last]!
+[$Char1Last]: See you soon!
+[[Day_1_Walk_To_Syd]]
+
+
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to Syd’s Room - Day_1_Walk_To_Syd happens while walking.
+===
+title: Day_1_Walk_To_Syd
+tags: 
+colorID: 0
+position: 985,597
+---
+<<SetPath Stein Two>>
+<<SetPath Player Two>>
+[$walking][$playerName]: He seemed really nice!
+[$walking][$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years. Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
+[$walking][$playerName]: Oh, I had no idea…
+[[Day_1_Syds_Door_Final]]
+===
+title: Day_1_Syds_Door_Final
+tags: 
+colorID: 0
+position: 1239,585
+---
+**Knock Knock**
+…
+[$Char1Last]: Huh. 
+[$Char1Last]: I know he’s there, I can hear the T.V. I guess he doesn’t want to be disturbed just now.
+[[Day_1_Walk_To_Lobby]]
+
+
+//***PROGRAMMER NOTE*** Player Walks with mrs stein to lobby - Day_1_Walk_To_Lobby happens while walking.
+===
+title: Day_1_Walk_To_Lobby
+tags: 
+colorID: 0
+position: 1524,585
+---
+<<SetPath Stein Three>>
+<<SetPath Player Three>>
+[$walking][$Char1Last]: [$Char3First] seems like he’s been having a rough time recently. He hasn’t said anything, I just get the impression something’s bothering him...
+[[Day_1_Lobby]]
+===
+title: Day_1_Lobby
+tags: 
+colorID: 0
+position: 1790,586
+---
+[$Char1Last]: Anyways, I’m sure you’ll get an opportunity to meet him tomorrow. It looks like our tour has come full circle! 
+***PROGRAMMER NOTE***Nurse manager enters
+[$NurseManager]: How did it go?
+[$playerName]: Great! [$Char1Last]  is a fantastic tour-guide!
+[$Char1Last]: Haha! You’re flattering me. Anyways, it was such a pleasure to meet you [$playerName]. Take care!
+***PROGRAMMER NOTE*** she leaves
+[$NurseManager]: I think that’s probably good for today [$playerName], tomorrow we can really get you started. See you then?
+[$playerName]: You bet! Thanks so much. 
+===

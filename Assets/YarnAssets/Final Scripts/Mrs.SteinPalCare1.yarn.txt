@@ -1,0 +1,226 @@
+title: PalCareDay2Intro
+tags: 
+colorID: 0
+position: 16,98
+---
+[Action] The Player approaches [$Char2First] in the Living Area.
+[$PlayerName]: Hi there [$Char2First], looks like you’re having fun in here!
+[$Char2First]: Hi! What’s your name again, dear?
+
+[[Oh [$Char2First], don’t you remember, I’m [$PlayerName]. We met yesterday.|PalCareDay2_OhRight]]
+[[I'm [$PlayerName], I was here meeting all the residents, and we met as well!|PalCareDay2_OhRight]]
+===
+title: PalCareDay2_OhRight
+tags: 
+colorID: 0
+position: 12,344
+---
+[$Char2Last]: Oh, right! Hi.
+[$PlayerName]: Nice to see you!
+[$Char2Last]:  Yes, it is. I’m just preparing for my Tea ‘n Talk later.  I always get called on to lead the program because I can get everyone talking!
+[$PlayerName]:  That’s great,  [$Char2First]! I've heard how the residents look forward to the program.
+[$Char2Last]: Of course, dear. Can you come and pick me up afterwards? 
+[$PlayerName]: Sure, see you later!
+//Fade to black
+[[PalCareDay2TeaTalk]]
+===
+title: PalCareDay2TeaTalk
+tags: 
+colorID: 0
+position: 13,597
+---
+[$Char2Last]: *cough cough* Thank you for sharing with us ($PlayerName).
+[$PlayerName]: Can I get you some water?
+[$Char2Last]: Yes, please. And can you get my puffer? It’s the blue colored one on the table.
+[$PlayerName]: Here you go.
+[$Char2Last]: Thanks! *cough cough*
+[$PlayerName]: I can see why the residents enjoy this program, [$Char2First]. You have a great way of making people feel comfortable.
+[$Char2Last]: I’ve learned as I get older that all that matters in life is love and relationships.
+[$PlayerName]: That’s a lovely thought. I’m learning a lot from you, [$Char2First]. I’ll see you tomorrow bright and early.
+[$Char2Last]: Good. Thanks for helping out. See you tomorrow.
+[$PlayerName]: Bye.
+===
+title: PalCareDay5Intro
+tags: 
+colorID: 0
+position: 250,98
+---
+[$PlayerName]: Hi, [$Char2First]. It’s [$PlayerName]. Can I come in?
+[$Char2Last]: Yes, come in, dear.
+[$PlayerName]: How are you? I heard that you went to the hospital.
+
+[[[Action]Pull a chair closer and sit by [$Char2First].|PalCareDay5Right]]
+[[[Action] Sit on the bed next to [$Char2First].|PalCareDay5Right]]
+[[May I sit with you, [$Char2First]?|PalCareDay5OfCourse]]
+===
+title: PalCareDay5OfCourse
+tags: 
+colorID: 6
+position: 505,220
+---
+[$Char2Last]: Of course, dear.
+
+[[PalCareDay5Right]]
+===
+title: PalCareDay5Right
+tags: 
+colorID: 0
+position: 248,344
+---
+[$Char2Last]: You’re right, dear. I was sent to the hospital after I had trouble breathing. Everyone was quite worried about me.  
+[$PlayerName]: Of course, they were. Everyone cares so much about you, [$Char2First]. You’re so friendly to everyone.
+[$Char2Last]: You’re very kind, dear. 
+[$PlayerName]: But is everything is alright?  Will you be coming to Tea ‘n’ Talk this afternoon? 
+[$Char2Last]:  Oh, not today, dear. Have you met [$Char2RoommateFirst], my roommate?
+[$PlayerName]: Hi there, [$Char2RoommateFirst].
+[$Char2RoommateFirst]: Hi, how are you doing?
+[$PlayerName]: I’m doing well, how about you?
+[$Char2RoommateFirst]: I’m fine, dear.
+[$Char2Last]: Come sit next to me [$Char2RoommateFirst]!
+[$PlayerName]: I’d better go.
+[$Char2Last]: Can you stay just a bit longer, [$PlayerName]? I want to talk to you about something.
+[$PlayerName]: Sure, I can stay.
+[$Char2Last]: You and I haven’t really gotten to know each other very well, but I already know I like you, and I appreciate you. I think you’re going to be very successful in your career.
+[$PlayerName]: Thank you...
+[$Char2Last]:  I just want you to know... Well, there’s no easy way to say this, but this last crisis was very serious, and I’ve learned that I now have very little time left.
+
+[[Don’t say that, [$Char2First]! You’ll be okay. You need to think positively!|PalCareDay5Eve]]
+[[I don’t understand. What do you mean?|PalCareDay5Eve]]
+[[[Action]Nod|PalCareDay5Eve]]
+===
+title: PalCareDay5Eve
+tags: 
+colorID: 0
+position: 246,598
+---
+[$Char2RoommateFirst]: [$Char2First]... 
+[$Char2Last]: You’ve learned a little about me by now, and you know that I like to speak frankly. I know that I’m dying, and it’s okay. My health has been a struggle for quite a while now. I’m at peace with this.
+
+[[But how can you be. You must have been shocked when they told you!|PalCareDay5Okay]]
+[[But maybe there’s been a mistake.  Can’t they try some different treatment?|PalCareDay5Okay]]
+[[[Action]Remain silent|PalCareDay5Okay]]
+===
+title: PalCareDay5Okay
+tags: 
+colorID: 0
+position: 241,849
+---
+[$Char2Last]: It’s okay, dear. There are no magic words anyone can say. It’s enough to know that you care. I’ve had a wonderful life and I’m happy I’ve had the chance to get to know you.
+[$PlayerName]: It’s been wonderful knowing you, too. I just didn’t expect... 
+[$Char2Last]: Of course not, and that’s alright. Now you  run along now, dear.  My daughter is coming soon. 
+[$Char2RoommateFirst]: I love seeing Hana. Will she bring the children?
+[$Char2Last]: Yes, I can’t wait! Now, you two, stop it with the long faces.I’ll see you tomorrow, [$PlayerName].
+[$PlayerName]: If you need anything Eve, please let me know. Have a good visit with [$Char2DaughterFirst]!
+===
+title: PalCareDay5Supervisor
+tags: 
+colorID: 0
+position: 746,92
+---
+[$PlayerName]: Hi, [$SupervisorName]. I was just with [$Char2First] and she told me that she is dying. I didn’t know what to say. I want to help her but I don’t know what to do.
+[$SupervisorName]:  I know the news was unexpected, and this is hard for all of us.  We need to support Eve in what she needs - and continue to be professional.  
+[$PlayerName]:   I’ll do my best but . . .
+[$SupervisorName]: It’s always difficult when this happens. That’s why we have support services in place for our staff and students – and also for residents’ families.  You can talk to a support person about what you’re feeling, and it will be confidential.
+[$PlayerName]: I didn’t realize this service was available.  
+[$SupervisorName]: Remember, we’re all here to help and support our residents - and each other. Tomorrow there’s a care conference with Eve to discuss about  any changes she’d like to make in her care – and to talk about her final wishes. Here’s a resource I’d like you to read about the end-of-life in long-term care.. It will help you to be prepared for tomorrow’s care conference. 
+[$PlayerName]: This is my first experience with someone I know who is dying.  
+[$SupervisorName]: You’ll be okay.  Take care and I’ll see you tomorrow then.
+[$PlayerName]: Yes, see you tomorrow.
+===
+title: PalCareDay6
+tags: 
+colorID: 1
+position: 975,91
+---
+[$SupervisorName]:  Hello there, Eve.  Are you still feeling up to meeting with our team?
+[$Char2Last]: Well, I’m feeling a little cooped up in here. It would be nice to have a change. Could we meet in  the Chapel? Could Hana and Katherine come as well?  
+[$SupervisorName]: Of course. 
+[$PlayerName]: I’ll get the wheelchair.
+
+[[[Action] Push [$Char2Last] out of the room.|PalCareDay6Chapel]]
+[[[$Char2First], do you mind if I push you?|PalCareDay6OfCourse]]
+===
+title: PalCareDay6OfCourse
+tags: 
+colorID: 1
+position: 1227,319
+---
+[$Char2Last]: Of course, dear.
+
+[[PalCareDay6Chapel]]
+===
+title: PalCareDay6Chapel
+tags: 
+colorID: 1
+position: 974,564
+---
+[$SocialWorkerName]: [$Char2First], we’re all here to talk about any changes you’d like to your care plan and any wishes you have in order to make you more comfortable. Anything you need at all. 
+[$Char2Last]: Well, I have been thinking about a few things.  I wonder if you could turn my bed to face the window, so I can feel the sun?  
+[$SupervisorName]: We can, of course, rearrange your room if that’s okay with you, [$Char2RoommateFirst]? 
+[$Char2RoommateFirst]: Of course! Anything for my friend. 
+[$Char2Last]: You know how I love the ocean. I know I can’t get there anymore but it would remind me of happy times there to have a really large picture of the ocean on my wall... 
+[$Char2DaughterFirst]: Mom, I’ll enlarge one of your great photos of the ocean. 
+[$Char2Last]: That would be wonderful. And could you bring all my family photo albums to look through?
+I’m too tired to do much talking now but I’d love to listen to more music in my room.  
+[$PlayerName]: I know you love Frank Sinatra, [$Char2First]. Are there any other types of music you’d like?
+[$Char2Last]: Hmm... It would be nice to have some of my favourite hymns playing quietly. 
+[$ActivationName]: I can create a playlist for you, [$Char2First], and bring a CD player up to your room. You can tell me all your favourite hymns and Sinatra songs.
+[$Char2Last]: Haha, You would probably need more than a list, more likely a  book of songs. Of course, I’d rather have Frank Sinatra in person. He was quite a guy. 
+[$PlayerName]: You always make me laugh, [$Char2First].
+[$Char2Last]: That’s a great compliment. Thank you!.
+[$PlayerName]: Is there anything else we can do, [$Char2First]?
+[$Char2Last]: Well, if anyone were to bring in some flowers, I love Gerbera Daisies. 
+[$PlayerName]: I’ll get them!
+[$Char2DaughterFirst]: Do you think it would be possible for me to stay overnight with my mom?
+[$SupervisorName]: Of course, you can. We can put an extra cot in the room. You can be here as much as you like.  
+[$Char2DaughterFirst]: Thank you.
+[$Char2RoommateFirst]: [$Char2First], what about one more Tea ‘n Talk? Maybe just the three of us? 
+[$Char2Last]: Oh, yes, [$Char2RoommateFirst], let's do that. Will you help, [$PlayerName]? 
+[$PlayerName]: I’ll help you have a lovely Tea ‘n Talk for you in your room. What else would you like?
+[$Char2Last]: I want you all to know that I’m sad to say good-bye. but I have had a wonderful life. 
+And I don’t want a funeral when I’m gone. I want there to be a celebration of life.
+[$ActivationName]: Of course, I would love to help you with the planning. 
+[$Char2Last]: Thank you, everyone. [$Char2DaughterFirst], I’m quite tired. Let’s you and I go back to my room now.
+===
+title: PalCareDay9Intro
+tags: 
+colorID: 0
+position: 1657,81
+---
+[$SupervisorName]: Please, [$Char2DaughterFirst], [$Char2RoommateFirst], come on in and sit down. It’s been a tough few days. We all miss [$Char2First] very much.  
+[$Char2DaughterFirst]: I’m grateful to everyone, especially to the staff who arranged everything for mom.  I`m so grateful I was able to spend these last precious days with her. I tried to give the night nurse a card with some money, but she said she couldn’t accept it, so I want to make a donation to  [$HospitalName] on my mom’s behalf. Mom was so happy here and your wonderful care and support made all the difference. 
+[$SupervisorName]: Thank you.  Are you taking care of yourself?
+[$Char2DaughterFirst]: My mom told me the greatest lesson she ever learned was how in the end all that matters are love and relationships. I’m trying to take it one day at a time and focus my energy on my kids. 
+[$PlayerName]: I remember [$Char2First] telling me the same thing after our first Tea ‘N Talk session!
+[$SupervisorName]: [$Char2First] was very wise.  How are you doing, [$Char2RoommateFirst]?
+[$Char2RoommateFirst]: It’s so hard to lose her. And now I’ll have a new roommate already - tomorrow! But no one can take her place.
+
+[[It’s going to be okay. Don’t cry. You’re stronger than you know!|PalCareDay9Katherine]]
+[[[Action]Say nothing.||PalCareDay9Katherine]]
+===
+title: PalCareDay9Katherine
+tags: 
+colorID: 0
+position: 1655,350
+---
+[$SupervisorName]: [$Char2RoommateFirst], it’s okay to feel sad, it’s okay to cry. You don’t have to try to be ‘strong.’ [$Char2First] was your dear friend. 
+[$Char2RoommateFirst]: Yes, she was. Thank you. 
+[$SupervisorName]: [$Char2RoommateFirst], This is a great loss to you. I think it might help for you to talk some more about your friendship with Eve?
+[$Char2RoommateFirst]: It’s so difficult when someone you care about dies.  
+[$PlayerName]: I can't sleep.  I keep replaying our last conversation in my head…. 
+[$SupervisorName]: [$Char2RoommateFirst], I’d really like to hear more about how you’re feeling?
+[$Char2RoommateFirst]: She was my  special friend… I spent almost  every waking moment with her since I moved here – now I'll wake up or enter a room thinking she's still here, then realize all over again that she's gone – and it feels like losing her all over again... Why did she get cancer? It’s not fair!
+[$Char2DaughterFirst]: You had a close relationship with my mom this past year, Katherine. Thank you for being her best friend. She loved you very much.
+[$SupervisorName]: [$Char2RoommateFirst], is there anyone here you can rely on for support?
+[$Char2RoommateFirst]: I went to all the Tea ‘n Talk meetings with [$Char2First] and some of the other activities where I made friends with a few other residents  - but I don’t feel interested in doing anything now...  
+[$SupervisorName]: That's normal, [$Char2RoommateFirst]. You need time to grieve. And it will feel lonely to go to activities you used to enjoy without [$Char2First] by your side – but remember, you’re not alone here. I urge you to keep attending your favorite activities and spending time with your other friends here.  
+[$Char2RoommateFirst]: I'll try… It’s just too painful. I end up crying.
+[$SupervisorName]: It sounds like it would be a good idea for you to talk to a counsellor here -  this kind of support can be very helpful. 
+[$Char2RoommateFirst]: Okay.  I’ll think about it…
+[$Char2DaughterFirst]: I think I might need that kind of support, too.
+[$SupervisorName]: I can arrange that for you, too, [$Char2DaughterFirst]. 
+[$Char2DaughterFirst]:  Thank you. 
+[$Char2RoommateFirst]: [$Char2DaughterFirst], I’ll see you tomorrow for the celebration of [$Char2First]’s life.   
+[$SupervisorName]: Yes, I’ll see you both tomorrow at 2 o’clock.  
+[$Char2RoommateFirst]: It's just what Eve wanted. . .  
+===
