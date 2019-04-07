@@ -5,11 +5,13 @@ using UnityEngine;
 public class EnterRoom : MonoBehaviour {
 
 
-    public EnterRoomUI roomUI;
+    public HUDController HUD;
     public string roomName;
+
 	// Use this for initialization
 	void Start () {
-		
+        MeshRenderer mr = GetComponent<MeshRenderer>();
+        mr.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -19,14 +21,11 @@ public class EnterRoom : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        Debug.Log("thing1");
+        if (other.tag == "Player")
         {
-            roomUI.roomName = roomName;
-            roomUI.currentLerpTime = 0.0f;
-            roomUI.currentStayTime = 0.0f;
-            roomUI.currentLerpOutTime = 0.0f;
-            roomUI.Lerp = true;
-           
+            Debug.Log("thing2");
+            HUD.RoomText.text = roomName;
         }
     }
 }

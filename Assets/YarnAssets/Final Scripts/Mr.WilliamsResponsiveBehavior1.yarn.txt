@@ -5,7 +5,7 @@ position: 776,1153
 ---
 *The door at [$Char1Last]' room is already open. There is an open suitcase on his bed. The PS enters.*
 Skip:
-[$PlayerName]: Good morning, Mr. Williams. How are you doing?
+[$playerName]: Good morning, Mr. Williams. How are you doing?
 Skip:
 [$Char1Last]: I'm good. But--
 
@@ -22,7 +22,7 @@ position: 773,1399
 
 [[Don’t you remember me? I’m a student from George Brown College.|Where_Williams_Day_1]]
 [[Oh, I’m just a student. Listen, we’re running late. Let’s go!|Where_Williams_Day_1]]
-[[I’m [$PlayerName].|Where_Williams_Day_1]]
+[[I’m [$playerName].|Where_Williams_Day_1]]
 ===
 title: Where_Williams_Day_1
 tags: 
@@ -72,21 +72,21 @@ position: 780,2308
 Skip:
 [$Char1Last]: Help! Help!
 Skip:
-[$PlayerName]: [$Char1Last]! [$Char1Last], come back here!
+[$playerName]: [$Char1Last]! [$Char1Last], come back here!
 Skip:
 *The Nurse Manager hears the commotion and steps in.*
 Skip:
-Nurse Manager: It’s ok, [$PlayerName]. I’ll take it from here.
+Nurse Manager: It’s ok, [$playerName]. I’ll take it from here.
 Skip:
 *The Nurse Manager approaches [$Char1Last].*
 Skip:
-Nurse Manager: [$Char1First], I’m sorry that [$PlayerName] upset you. Let me help you with that. 
+Nurse Manager: [$Char1First], I’m sorry that [$playerName] upset you. Let me help you with that. 
 Skip:
 *The Nurse Manager reaches out for [$Char1Last]’ suitcase, but he holds onto it, so she gently takes his arm and walks him back into his room.*
 Skip:
 [$Char1Last]: [$Pronoun] tried to stop me from going home.
 Skip:
-Nurse Manager:  I’m sorry. [$PlayerName] didn’t understand. Can we sit down for a moment?
+Nurse Manager:  I’m sorry. [$playerName] didn’t understand. Can we sit down for a moment?
 Skip
 *[$Char1Last] puts his suitcase back on bed and starts piling his clothes into it again.*
 Skip:
@@ -134,7 +134,7 @@ Marissa: Yeah, Dad, that’s a great idea. I’m hungry.
 Skip:
 [$Char1Last]: Okay.
 Skip:
-*Everyone walks out the room, [$Char1Last] and Marissa walk out the scene. The Nurse Manager and [$PlayerName] stay in the hallway.*
+*Everyone walks out the room, [$Char1Last] and Marissa walk out the scene. The Nurse Manager and [$playerName] stay in the hallway.*
 
 [[Hallway_Williams_Day_1]]
 ===
@@ -145,19 +145,19 @@ position: 775,2553
 ---
 Nurse Manager: Come, let’s talk.
 Skip:
-*The Nurse Manager and [$PlayerName] leave [$Char1Last]’ room and walk to the nursing station.*
+*The Nurse Manager and [$playerName] leave [$Char1Last]’ room and walk to the nursing station.*
 Skip:
-Nurse Manager: I see you’re a little upset, [$PlayerName].
+Nurse Manager: I see you’re a little upset, [$playerName].
 Skip:
-[$PlayerName]: I didn’t know what to do! I kept trying to explain to [$Char1Last] where he was, but he kept saying he wanted to leave. I said he couldn’t go, and he got angry with me. I almost grabbed his arm to stop him.
+[$playerName]: I didn’t know what to do! I kept trying to explain to [$Char1Last] where he was, but he kept saying he wanted to leave. I said he couldn’t go, and he got angry with me. I almost grabbed his arm to stop him.
 Skip:
 Nurse Manager: He was frustrated because you didn’t understand what he wanted.
 Skip:
-[$PlayerName]: I was frustrated that he didn’t understand me no matter how many times I told him.
+[$playerName]: I was frustrated that he didn’t understand me no matter how many times I told him.
 Skip:
 Nurse Manager: Repeating things won’t help him. Because of his dementia, his mind doesn’t process information the same way anymore. I’m very relieved that you remembered that under no circumstances are you to physically restrain a resident or grab his hand, or yell or raise your voice.
 Skip:
-[$PlayerName]: What should I have done?
+[$playerName]: What should I have done?
 Skip:
 Nurse Manager: Just be present with him. Don’t try to change his mind. You saw me provide redirection by talking about his wife. As you get to know [$Char1Last], you’ll learn more about him - and each resident’s life - before they had dementia - so that you can talk to each person in a personal way about their life. This will help you to understand why our residents may respond to their new life here with frustration and how we can find ways to help them feel more comfortable living here.  The most important thing as you’re getting to know each resident is to always remain calm, and don’t react. Apologize and distract them with conversation, give  yourself space to cool down and reflect on what was behind the responsive behaviour.
 Skip:
@@ -165,5 +165,5 @@ Skip:
 Skip:
 Nurse Manager: Here, I want you to read this.  I think it will be very helpful.
 Skip:
-[$PlayerName]: Okay, I will. Thank you!
+[$playerName]: Okay, I will. Thank you!
 ===
