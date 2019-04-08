@@ -80,7 +80,7 @@ namespace Yarn.Unity.Example
 
         public GameObject ConversUI;
 
-        public string characterName = "";
+        //public string characterName = "";
 
         [FormerlySerializedAs("startNode")]
         public string talkToNode = "";
@@ -145,6 +145,7 @@ namespace Yarn.Unity.Example
             data.talkToNode = talkToNode;
             data.scriptToLoad = scriptToLoad;
             data.GameObjectName = this.gameObject.name;
+           
             data.sprite = this.GetComponentInChildren<SpriteRenderer> ().sprite;
            // data.prefab = test;
 

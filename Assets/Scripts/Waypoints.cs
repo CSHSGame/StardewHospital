@@ -18,8 +18,11 @@ public class Waypoints : MonoBehaviour
     private float step;
     [SerializeField]
     public int pathindex = -1;
+    [SerializeField]
+
     private int nodeindex = 0;
     public bool isPlayer;
+    private Vector3 CamLocalPos;
 
     [SerializeField]
     bool warp = false;
@@ -31,7 +34,12 @@ public class Waypoints : MonoBehaviour
         if (WarpType == "Warp")
         {
             warp = true;
-
+            if (isPlayer)
+            {
+                GameObject cam = Camera.main.gameObject; ;
+                CamLocalPos = cam.transform.localPosition;
+                cam.transform.SetParent(null);
+            }
         }
         else
         {
@@ -141,15 +149,28 @@ public class Waypoints : MonoBehaviour
 
                     if (warp)
                     {
-                        if(nodeindex >= 1)
+                        if(nodeindex >= 2 && nodeindex < Paths[pathindex].location.Count - 1)
                         {
                            
-                            speed = 6;
+                            speed = 10;
+                            if (isPlayer)
+                            {
+                                Camera.main.cullingMask = 0;
+                            }
 
                         }
-                        if(nodeindex == Paths[pathindex].location.Count - 1)
+                        if (nodeindex == Paths[pathindex].location.Count - 1)
                         {
                             speed = oldSpeed;
+                            if (isPlayer)
+                            {
+                                GameObject cam = Camera.main.gameObject;
+
+                                cam.transform.position = Paths[pathindex].location[Paths[pathindex].location.Count - 1];
+                                cam.transform.position += Vector3.up * 3;
+                                Camera.main.cullingMask = -1;
+                            }
+
                         }
                     }
                 }
@@ -164,10 +185,22 @@ public class Waypoints : MonoBehaviour
                     {
                         c.enabled = true;
                     }
+
+                    if (warp)
+                    {
+                        GameObject cam = Camera.main.gameObject;
+
+                        cam.transform.SetParent(this.gameObject.transform);
+                        cam.transform.localPosition = CamLocalPos;
+                    }
+                   
                 }
                 Debug.Log("Break");
                 pathindex = -1;
                 nodeindex = 0;
+
+                warp = false;
+
                 onPathDone.Invoke();
             }
         }
@@ -180,11 +213,11 @@ public class Waypoints : MonoBehaviour
         {
             data.waypoints[i] = Paths[i];
         }
-            
-          
 
-      
-        
+
+
+
+
     }
     public void loadData()
     {

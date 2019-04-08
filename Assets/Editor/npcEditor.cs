@@ -17,6 +17,8 @@ public class ObjectBuilderEditor : Editor
             if (GUILayout.Button("Bake Data"))
             {
                 myScript.BakeData();
+                EditorUtility.SetDirty(myScript.data);
+
                 //PrefabUtility.GetCorrespondingObjectFromSource(myScript.gameObject) as Transform
             }
 

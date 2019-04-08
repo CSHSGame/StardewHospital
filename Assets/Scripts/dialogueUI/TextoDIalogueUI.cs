@@ -42,6 +42,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
    // public RectTransform gameControlsContainer;
 
     public ExampleVariableStorage variableStorage;
+
+    CinematicMode cinematic;
+
     public enum BubbleType
     {
         action,
@@ -64,6 +67,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     
     void Awake()
     {
+        cinematic = FindObjectOfType<CinematicMode>();
         // Start by hiding the container, line and option buttons
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
@@ -184,13 +188,13 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
      
 
            
-            bool canPressSpace = false;
+            bool canPressSpace = false;                                                                                                                                                                                                 
             // Wait for any user input
             Waypoints[] wps = FindObjectsOfType<Waypoints>();
             while (Input.GetKeyDown(KeyCode.Space ) == false)
             {
 
-                while (canPressSpace == false)
+                while (canPressSpace == false)                                                                              
                 {
                     bool t = true;
 
@@ -203,9 +207,17 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                        
                     }
                     if (t)
-
                     {
                         canPressSpace = true;
+                        cinematic.TurnOFF();
+                        dialogueContainer.SetActive(true);
+
+                    }
+                    else
+                    {
+                        cinematic.TurnON();
+                        dialogueContainer.SetActive(false);
+
                     }
                     yield return null;
 

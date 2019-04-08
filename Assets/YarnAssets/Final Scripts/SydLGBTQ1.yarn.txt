@@ -3,15 +3,22 @@ tags:
 colorID: 0
 position: 540,260
 ---
-** Knock Knock **
-[$playerName]: [Char3First], May I come in?
+[$playerName]: [$Char3First], May I come in?
 [$Char3First]: Come in.
-[$playerName]: Hi there, Mr.Wojcik.  My name is   Player name and role    I wanted to introduce myself and help you get ready for the day, if I can. Music therapy is this morning. I heard you were a musician.  Would you like to go? 
-[$Char3First]: Hello...  I don’t think I feel like going out today.
-[$Player]: You sure.
-[[Ok, I'll see you later|LGBTQ_SECOND_DAY]]<<$LGBTQ_DEC1_WRONG = true>> 
-[[I’m sorry to hear that, Syd.|LGBTQ_SECOND_DAY]]<<$LGBTQ_DEC1_SEMIWRONG = true>>
-[[Okay Syd, I understand, I will check in with you tomorrow. Have a great day!|LGBTQ_SECOND_DAY]]<<$LGBTQ_DEC1_RIGHT = true>>
+[$playerName]: Hi there, Mr.Wojcik.  My name is [$playerName] I wanted to introduce myself and help you get ready for the day, if I can. Music therapy is this morning. I heard you were a musician.  Would you like to go? 
+[$Char3First]: Hello ... I don’t think I feel like going out today.
+[$playerName]: You sure?
+[[Ok, I'll see you later|Pier]]<<$LGBTQ_DEC1_WRONG = true>> 
+[[I’m sorry to hear that, Syd.|Pier]]<<$LGBTQ_DEC1_SEMIWRONG = true>>
+[[Okay Syd, I understand, I will check in with you tomorrow. Have a great day!|Pier]]<<$LGBTQ_DEC1_RIGHT = true>>
+
+===
+title: Pier
+tags: 
+colorID: 0
+position: 526,494
+---
+[$Char3First]: Have a good day.
 
 ===
 title: LGBTQ_SECOND_DAY
@@ -203,7 +210,7 @@ Richard: And thank all of you for listening!
 
 
 ===
-title: LGBTQ_THIRD_DAY_SYDS_ROOM
+title: LGBTQ_THIRD_DAY_SYDS_ROOM2
 tags: 
 colorID: 0
 position: 564,2694

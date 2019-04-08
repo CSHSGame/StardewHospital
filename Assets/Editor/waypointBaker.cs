@@ -78,6 +78,7 @@ public class WayPointsBaker : Editor
             if (GUILayout.Button("Bake Data"))
             {
                 myScript.BakeData();
+                EditorUtility.SetDirty(myScript.data);
             }
             if (GUILayout.Button("load Data"))
             {
