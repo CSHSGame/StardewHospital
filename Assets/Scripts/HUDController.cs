@@ -13,6 +13,7 @@ public class HUDController : MonoBehaviour {
     public Text AMorPMText;
 
     public GameObject ClipboardUI;
+    public GameObject EndofDayUI;
     public DayDataHolder dayData;
 
 	// Use this for initialization
@@ -30,7 +31,14 @@ public class HUDController : MonoBehaviour {
 
     public void GearClick()
     {
-       
+        if (EndofDayUI.activeInHierarchy == true)
+        {
+            EndofDayUI.SetActive(false);
+        }
+        else if (EndofDayUI.activeInHierarchy == false)
+        {
+            EndofDayUI.SetActive(true);
+        }
     }
 
     public void ClipboardClick()
