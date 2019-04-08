@@ -27,7 +27,7 @@ MonoBehaviour:
     location:
     - {x: -8.525139, y: 0.13, z: 2.4545298}
     - {x: -8.581163, y: 0.13, z: 7.643175}
-    - {x: -4.236313, y: 0.13, z: 7.6441545}
+    - {x: 1.1174215, y: 0.13, z: 7.6441545}
     - {x: 2.493771, y: 0.13, z: 7.67603}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

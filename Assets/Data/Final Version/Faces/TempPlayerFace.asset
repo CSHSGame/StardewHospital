@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: TempPlayerFace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300004, guid: 244636d3a8b2d9f45a7e798fb8637f04, type: 3}
+  sprite: {fileID: 21300000, guid: 791cb02cc65b13d4e8dbc28ce02f344d, type: 3}
   Name: $playerName
   Bubble: {fileID: 21300000, guid: 2f07cc01302341d4e83742095535012b, type: 3}
   AngrySprite: {fileID: 0}

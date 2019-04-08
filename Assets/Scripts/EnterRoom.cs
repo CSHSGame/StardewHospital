@@ -21,10 +21,8 @@ public class EnterRoom : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("thing1");
         if (other.tag == "Player")
         {
-            Debug.Log("thing2");
             HUD.RoomText.text = roomName;
         }
     }

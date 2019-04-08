@@ -298,7 +298,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         Debug.Log ("Dialogue starting!");
 
         //Move the camera down so the player is above the chat UI
-        Camera.main.transform.localPosition = new Vector3(0.0f,-1.2f,-7.0f);
+        Camera.main.transform.localPosition = new Vector3(0.0f,-1.5f,-10.0f);
         //set the face to the players face
         rightFace.sprite = faces[0].sprite;
         // Enable the dialogue controls.

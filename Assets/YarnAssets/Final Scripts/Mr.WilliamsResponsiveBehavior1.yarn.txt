@@ -106,19 +106,19 @@ Skip:
 Skip:
 [$NurseManager]: Look, here she comes now! 
 Skip:
-Marissa: Hi, Dad!  
+[$Marissa]: Hi, Dad!  
 Skip:
 *Marissa gives her father a hug and a kiss.*
 Skip:
-Marissa: What are you guys doing? 
+[$Marissa]: What are you guys doing? 
 Skip:
 [$NurseManager]: Your dad was just telling me a little about your mom, and I was telling him that I can see where you get your good looks from!
 Skip:
-Marissa: Haha!
+[$Marissa]: Haha!
 Skip:
 [$NurseManager]: [$Char2Last], why don’t you and your daughter join us for breakfast?
 Skip:
-Marissa: Yeah, Dad, that’s a great idea. I’m hungry.
+[$Marissa]: Yeah, Dad, that’s a great idea. I’m hungry.
 Skip:
 [$Char2Last]: Okay.
 Skip:
@@ -157,7 +157,7 @@ Skip:
 Skip:
 [action]*The Nurse Manager gives the PS a booklet.*
 Skip:
-Nurse Manager: Here, I want you to read this.  I think it will be very helpful.
+[$NurseManager]: Here, I want you to read this.  I think it will be very helpful.
 Skip:
 [$playerName]: Okay, I will. Thank you!
 ===
