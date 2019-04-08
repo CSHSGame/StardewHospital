@@ -17,21 +17,26 @@ MonoBehaviour:
   sprite: {fileID: 21300014, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: SupervisorDay1
+  GameObjectName: Supervisor
   waypoints:
   - Name: Nurse Spawn In
     location:
     - {x: 18.62, y: 0, z: 7.5047846}
   - Name: Leave
     location:
-    - {x: 29.579338, y: 0, z: 7.8830175}
+    - {x: 25.831142, y: 0, z: 7.8830175}
+    - {x: 27.646412, y: -0.008921707, z: 7.8476}
+    - {x: 27.613611, y: -0.012911232, z: 2.6939254}
+    - {x: 26.421593, y: -0.013685329, z: 2.1529088}
   - Name: Nurse Leave Mrs Lee
     location:
-    - {x: 27.72, y: 0, z: 1.9}
-    - {x: 27.48, y: 0, z: 7.9}
-    - {x: 4.99, y: 0, z: 7.8}
+    - {x: 26.42159, y: -0.01368533, z: 2.152909}
+    - {x: 27.48, y: 0, z: 2.122623}
+    - {x: 27.508606, y: 0, z: 6.8366375}
+    - {x: 27.601227, y: 0, z: 10.216801}
   - Name: Enter Mrs Lee Room
     location:
     - {x: 27.7, y: 0, z: 8.4}
     - {x: 27.7, y: 0, z: -0.57}
   DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 0

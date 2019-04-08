@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: SydDay2
   m_EditorClassIdentifier: 
-  position: {x: 35.56, y: 0.1, z: 0.15}
+  position: {x: 37.52, y: 0.1, z: 3.34}
   rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  scale: {x: 1.3, y: 1.3000004, z: 1.0000005}
+  scale: {x: 1.3, y: 1.3000009, z: 1.000001}
   sprite: {fileID: 21300010, guid: decfcae7a3250e448afa970475609790, type: 3}
-  talkToNode: 
+  talkToNode: LGBTQ_FIRST_DAY
   scriptToLoad: {fileID: 0}
   GameObjectName: Syd
   waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1

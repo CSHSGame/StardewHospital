@@ -21,7 +21,9 @@ public class WayPointsBaker : Editor
 
                 if (GUILayout.Button("<"))
                 {
-                    if(myScript.pathindex >= 1)
+                    Undo.RecordObject(myScript, "yo yo yo");
+
+                    if (myScript.pathindex >= 1)
                     {
                         myScript.pathindex--;
 
@@ -35,6 +37,8 @@ public class WayPointsBaker : Editor
                 }
                 if (GUILayout.Button(">"))
                 {
+                    Undo.RecordObject(myScript, "yo yo yo");
+
                     if (myScript.pathindex < myScript.Paths.Count-1)
                     {
                         myScript.pathindex++;
@@ -54,8 +58,17 @@ public class WayPointsBaker : Editor
             }
           
             GUILayout.EndHorizontal();
+            GUILayout.Label("Path Name");
+            if(myScript.pathindex >= 0 && myScript.pathindex < myScript.Paths.Count)
+            {
+                GUILayout.BeginHorizontal();
+                myScript.Paths[myScript.pathindex] = myScript.Paths[myScript.pathindex].setName( EditorGUILayout.TextField(myScript.Paths[myScript.pathindex].Name));
+                GUILayout.EndHorizontal();
+            }
+            
+
         }
-      
+
         DrawDefaultInspector();
 
         
@@ -65,6 +78,7 @@ public class WayPointsBaker : Editor
             if (GUILayout.Button("Bake Data"))
             {
                 myScript.BakeData();
+                EditorUtility.SetDirty(myScript.data);
             }
             if (GUILayout.Button("load Data"))
             {
@@ -112,11 +126,14 @@ public class WayPointsBaker : Editor
                 {
                     Vector3 pos = myScript.Paths[myScript.pathindex].location[i];
                     pos = new Vector3(pos.x-0.5f, pos.y, pos.z + .25f);
-            
+                    //EditorGUI.BeginChangeCheck();
+
                     if (Handles.Button(pos, Quaternion.Euler(90,0,0), .25f, .25f, Handles.RectangleHandleCap))
                     {
-                        
-                        //Debug.Log("The button was pressed!");
+
+                        Debug.Log("The button was pressed!");
+                        Undo.RecordObject(myScript, "yo yo yo");
+
                         Vector3 newPos = myScript.Paths[myScript.pathindex].location[i];
                         if(i != 0)
                         {
@@ -129,6 +146,7 @@ public class WayPointsBaker : Editor
 
                         }
                     }
+                 
                     pos = myScript.Paths[myScript.pathindex].location[i];
                     pos = new Vector3(pos.x - 0.5f, pos.y, pos.z -.25f);
                     if(myScript.Paths[myScript.pathindex].location.Count >= 2)//cant remove last 2 poitns

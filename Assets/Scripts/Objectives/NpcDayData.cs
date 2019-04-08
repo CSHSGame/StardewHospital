@@ -22,7 +22,7 @@ public class NpcDayData : ScriptableObject
 
     [Space]
     public DialogueTrigger DialogueTriggerPrefab;
-
+    public bool visibleAtStart = true;
 }
 [System.Serializable]
 public struct pointsVector3
@@ -36,5 +36,10 @@ public struct pointsVector3
         Name = name;
         this.location = new List<Vector3>();
         this.location.Add( location);
+    }
+    public pointsVector3 setName(string _name)
+    {
+        Name = _name;
+        return this;
     }
 }

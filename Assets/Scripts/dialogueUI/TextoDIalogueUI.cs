@@ -42,6 +42,9 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
    // public RectTransform gameControlsContainer;
 
     public ExampleVariableStorage variableStorage;
+
+    CinematicMode cinematic;
+
     public enum BubbleType
     {
         action,
@@ -64,6 +67,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     
     void Awake()
     {
+        cinematic = FindObjectOfType<CinematicMode>();
         // Start by hiding the container, line and option buttons
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
@@ -183,13 +187,45 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         
      
 
-            // Show the 'press any key' prompt when done, if we have one
-            if (continuePrompt != null)
-                continuePrompt.SetActive(true);
-
+           
+            bool canPressSpace = false;                                                                                                                                                                                                 
             // Wait for any user input
+            Waypoints[] wps = FindObjectsOfType<Waypoints>();
             while (Input.GetKeyDown(KeyCode.Space ) == false)
             {
+
+                while (canPressSpace == false)                                                                              
+                {
+                    bool t = true;
+
+                    foreach(Waypoints w in wps)
+                    {
+                        if(w.pathindex != -1)
+                        {
+                            t = false;
+                        }
+                       
+                    }
+                    if (t)
+                    {
+                        canPressSpace = true;
+                        cinematic.TurnOFF();
+                        dialogueContainer.SetActive(true);
+
+                    }
+                    else
+                    {
+                        cinematic.TurnON();
+                        dialogueContainer.SetActive(false);
+
+                    }
+                    yield return null;
+
+                }
+                // Show the 'press any key' prompt when done, if we have one
+                if (continuePrompt != null)
+                    continuePrompt.SetActive(true);
+
                 yield return null;
             }
             // hide the 'press any key' prompt when done, if we have one

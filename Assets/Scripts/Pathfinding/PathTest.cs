@@ -61,7 +61,7 @@ public class PathTest : MonoBehaviour
             lineRenderer.numCapVertices = 12;
         }
     }
-    public void createNextPoint(GameObject val)
+    public GameObject createNextPoint(GameObject val)
     {
         
         PathTest pt = Instantiate(this.transform).GetComponent<PathTest>();
@@ -72,8 +72,8 @@ public class PathTest : MonoBehaviour
         pt.transform.SetParent(transform.parent, true);
         pt.setupLine();
         val = pt.gameObject;
-        
-      
+
+        return val;
     }
 }
 

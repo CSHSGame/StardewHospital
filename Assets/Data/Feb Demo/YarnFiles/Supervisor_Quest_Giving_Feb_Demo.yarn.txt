@@ -1,0 +1,67 @@
+title: Day_1
+tags: 
+colorID: 0
+position: -185,64
+---
+<<if visited("Day_1")>>
+
+<<else>>
+[$SupervisorName]: Hey [$playerName]! We need to know how many residents are coming to [$ActivityName] today - I asked most of them but haven't seen [$Char4First]. Can you pop by her room and see if she's interested?
+[$playerName]: Sure! I'll let you know what she says.
+[$SupervisorName]: Oh, one more thing - we have a new resident joining us today! Her name is Mrs. Lee, if you have the chance please take a moment to introduce yourself.
+[$SupervisorName]: Her name is Ying Lee - she's joining us because she suffers from dementia, so please bear that in mind when you interact with her.
+[$playerName]: I will. Thanks [$SupervisorName].
+<<SetObjective DayLoader CheckMarie>>
+
+<<endif>>
+===
+title: Day_2
+tags: 
+colorID: 0
+position: 139,83
+---
+<<if visited("Day_2")>>
+
+<<else>>
+[$SupervisorName]: Good morning [$playerName]! Did you get a chance to look over that material I gave you?[$playerName]: I did! It was really helpful, thanks again.
+[$SupervisorName]: I heard you were able to bridge the language barrier with [$Char5Name] using a translation website - good thinking!
+[$playerName]: It wasn't my idea, but thank goodness for technology! It's really highlighted the importance of clear communication.
+[$SupervisorName]: You said it! [$Char5Last]'s family is here again today, I know they're feeling anxious about her transition into long term care. When you see them, try to be reassuring as best you can.
+[$playerName]: I will!
+<<SetObjective DayLoader CheckLeeDay2>>
+
+<<endif>>
+
+
+
+
+
+
+===
+title: Day_3
+tags: 
+colorID: 0
+position: 575,-3
+---
+<<if visited("Day_3")>>
+
+<<else>>
+[$SupervisorName]: Hello![$playerName]: Hi!
+[$SupervisorName]: Listen, I think maybe you and [$Char4First] should try to clear the air today.. I get the impression things have been a bit tense since you two had your little misunderstanding the other day.
+[$playerName]: Yeah... I guess I've kind of been avoiding it because it's such an awkward situation, but you're totally right. I'll go see her today.
+[$SupervisorName]: Great. Also, stop by and see [$Char5Last] again when you have a moment, see how she's settling in.
+[$playerName]: Will do!
+<<SetObjective DayLoader ChackMarieDay3>>
+
+<<endif>>
+
+
+
+
+
+
+
+
+
+
+===

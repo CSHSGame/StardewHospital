@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: WilliamsDay2
   m_EditorClassIdentifier: 
-  position: {x: -7.12, y: 0.1, z: 0.15}
+  position: {x: -7.79, y: 0.1, z: -1.39}
   rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  scale: {x: 1.3, y: 1.3000004, z: 1.0000005}
+  scale: {x: 1.3, y: 1.3000009, z: 1.000001}
   sprite: {fileID: 21300018, guid: decfcae7a3250e448afa970475609790, type: 3}
   talkToNode: Start_OctDemo_Day_1
   scriptToLoad: {fileID: 0}
@@ -21,9 +21,9 @@ MonoBehaviour:
   waypoints:
   - Name: WilliamsYellAtHallway
     location:
-    - {x: -7.12, y: 0.1, z: 1.15}
-    - {x: -8.532827, y: 0.1, z: 2.1500003}
-    - {x: -8.540895, y: 0.1, z: 6.630369}
+    - {x: -7.834112, y: 0.1, z: -0.40938914}
+    - {x: -7.704446, y: 0.1, z: 1.1340612}
+    - {x: -7.6812544, y: 0.1, z: 2.8948386}
   - Name: 'WilliamsComeBackInside '
     location:
     - {x: -8.434716, y: 0.1, z: 6.310745}
@@ -44,4 +44,12 @@ MonoBehaviour:
     - {x: -8.512407, y: 0.1, z: 7.600438}
     - {x: -15.715157, y: 0.1, z: 11.473864}
     - {x: -16.595882, y: 0.1, z: 22.6541}
+  - Name: to diningroom
+    location:
+    - {x: -8.286813, y: 0.1, z: 2.3093476}
+    - {x: -8.257763, y: 0.1, z: 7.60783}
+    - {x: -9.577113, y: 0.1, z: 17.302029}
+    - {x: -11.642637, y: 0.1, z: 17.275936}
+    - {x: -11.665388, y: 0.1, z: 18.780218}
   DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1
