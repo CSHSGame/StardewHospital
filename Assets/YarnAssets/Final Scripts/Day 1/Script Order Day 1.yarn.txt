@@ -1,0 +1,5 @@
+Day 1 Script Order
+
+-Day_1_Player_Talk_to_self
+-Day_1_Nurse_Manager
+-Day_1_Char1last

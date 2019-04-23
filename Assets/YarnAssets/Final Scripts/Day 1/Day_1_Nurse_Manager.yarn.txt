@@ -1,0 +1,16 @@
+title: Day_1_Get_Quest_Final
+tags: 
+colorID: 0
+position: -476,619
+---
+[$playerName]: Um.. hi there. My name’s [$playerName], I’m here for the first day of my school placement,
+[$NurseManager]: Hello [$playerName]! Welcome, we’ve been expecting you. Ready to get started?
+[$playerName]: Yes!
+[$NurseManager]: Nervous?
+[$playerName]: Yes!!
+[$NurseManager]: Ha! That’s to be expected, at least you’re honest! Today I just want you to meet a few of the residents you’ll be working closely with. I think you get started by introducing yourself to [$Char1Last]  - I think she’s in the living area. If she’s not to busy perhaps you can ask her to show you around?
+[$playerName]: Okay, I will. Thanks!
+[$NurseManager]: Good luck!
+
+//***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
+===
