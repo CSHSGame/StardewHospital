@@ -11,12 +11,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: SupervisorDay2
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
-  scale: {x: 0, y: 0, z: 0}
-  sprite: {fileID: 0}
+  position: {x: -8.39, y: 0, z: 13.96}
+  rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  scale: {x: 1.3, y: 1.3, z: 1.3}
+  sprite: {fileID: 21300014, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
   talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: 
-  waypoints: []
+  GameObjectName: Nurse
+  waypoints:
+  - Name: go to room
+    location:
+    - {x: -7.9754667, y: 0, z: 12.741028}
+    - {x: -8.519597, y: 0, z: 3.8973885}
+    - {x: -8.61791, y: 0, z: 1.4232024}
+    - {x: -7.458303, y: 0, z: 1.3834388}
+  - Name: to hall
+    location:
+    - {x: -8.506209, y: 0, z: 2.7580166}
+    - {x: -8.458478, y: 0, z: 7.568538}
+    - {x: -5.2951, y: 0, z: 7.6247416}
+    - {x: -1.40754, y: 0, z: 7.61746}
+    - {x: 2.3506103, y: 0, z: 6.41357}
   DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 0

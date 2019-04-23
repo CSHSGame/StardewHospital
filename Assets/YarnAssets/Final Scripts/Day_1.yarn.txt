@@ -3,8 +3,8 @@ tags:
 colorID: 0
 position: -726,613
 ---
-<<Action>>[$PlayerName]: Wow, so this is this the place…
-[$PlayerName]: I should speak to the nurse manager, I think that’s her by the reception desk.
+[Action][$playerName]: Wow, so this is this the place…
+[$playerName]: I should speak to the nurse manager, I think that’s her by the reception desk.
  
 //***PROGRAMMER NOTE*** Player walks to nurse manager
 //***PROGRAMMER NOTE*** UI Popup that explains you press space or whatever to talk to character with the speech icon over their head
@@ -16,13 +16,13 @@ tags:
 colorID: 0
 position: -476,619
 ---
-[$PlayerName]: Um.. hi there. My name’s [$PlayerName], I’m here for the first day of my school placement,
-[$NurseManager]: Hello [$PlayerName]! Welcome, we’ve been expecting you. Ready to get started?
-[$PlayerName]: Yes!
+[$playerName]: Um.. hi there. My name’s [$playerName], I’m here for the first day of my school placement,
+[$NurseManager]: Hello [$playerName]! Welcome, we’ve been expecting you. Ready to get started?
+[$playerName]: Yes!
 [$NurseManager]: Nervous?
-[$PlayerName]: Yes!!
+[$playerName]: Yes!!
 [$NurseManager]: Ha! That’s to be expected, at least you’re honest! Today I just want you to meet a few of the residents you’ll be working closely with. I think you get started by introducing yourself to [$Char1Last]  - I think she’s in the living area. If she’s not to busy perhaps you can ask her to show you around?
-[$PlayerName]: Okay, I will. Thanks!
+[$playerName]: Okay, I will. Thanks!
 [$NurseManager]: Good luck!
 
 //***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
@@ -32,13 +32,13 @@ tags:
 colorID: 0
 position: -233,613
 ---
-[$PlayerName]: Hi, sorry to interrupt - I’m looking for [$Char1Last]?
+[$playerName]: Hi, sorry to interrupt - I’m looking for [$Char1Last]?
 [$Char1Last]: That’s me! 
-[$PlayerName]: Hello! My name is [$PlayerName], [$NurseManager] wanted me to come by and introduce myself - I’m the new placement student and today is my first day. 
+[$playerName]: Hello! My name is [$playerName], [$NurseManager] wanted me to come by and introduce myself - I’m the new placement student and today is my first day. 
 [$Char1Last]: It’s a pleasure to meet you! Please, call me [$Char1First].
-[$PlayerName]: [$NurseManager] was wondering if you could give me a little tour of Bloom Village - do you think you’d be able to show me around today?
+[$playerName]: [$NurseManager] was wondering if you could give me a little tour of Bloom Village - do you think you’d be able to show me around today?
 [$Char1Last]: Sure! I have some time now - shall we? This is the living area, it’s a common space for residents to sit and chat, read or socialize.
-[$PlayerName]: That’s great!
+[$playerName]: That’s great!
 [$Char1Last]: Follow me, I’ll show you the dining area.
 [[Day_1_Dining_Area_Final]]
 
@@ -49,10 +49,10 @@ tags:
 colorID: 0
 position: 31,610
 ---
-<<SetPath Stein Zero>>
-<<SetPath Player Zero>>
+<<SetPath Stein Zero Warp>>
+<<SetPath Player Zero Warp>>
 [$Char1Last]: Here’s the dining area, the food here here is pretty good!
-[$PlayerName]: People seem like they’re enjoying it.
+[$playerName]: People seem like they’re enjoying it.
 [$Char1Last]: The next stop on our tour is a good one, I think you’ll like it.
 [[Day_1_Walking_To_Garden_Final]]
 //***PROGRAMMER NOTE*** Player Walks with mrs stein to the garden - Day_1_Walking_To_Garden happens while walking.
@@ -62,12 +62,12 @@ tags:
 colorID: 0
 position: 253,265
 ---
-<<SetPath Stein One>>
-<<SetPath Player One>>
-[$walking][$PlayerName]: Have you been here for a long time?
+<<SetPath Stein One Warp>>
+<<SetPath Player One Warp>>
+[$walking][$playerName]: Have you been here for a long time?
 [$walking][$Char1Last]: Yes, I’ve been here longer than most of our residents, I’ve seen a lot of people come and go.
-[$walking][[That must be really hard for you.|Day_1_Char1_Q1]]
-[$walking][[I’m sorry to hear that. |Day_1_Char1_Q1]]
+[[That must be really hard for you.|Day_1_Char1_Q1]]
+[[I’m sorry to hear that. |Day_1_Char1_Q1]]
  
 
 ===
@@ -85,17 +85,17 @@ colorID: 0
 position: 728,602
 ---
 [$Char1Last]: But enough of this depressing talk, this is what I wanted to whow you - the beautiful garden we have here at Bloom Village!
-[$PlayerName]: Oh my goodness… It’s beautiful…
+[$playerName]: Oh my goodness… It’s beautiful…
 [$Char1Last]: The garden is a really special place for a lot of the residents here. 
-[$PlayerName]: I can see why. 
+[$playerName]: I can see why. 
 [$Char1Last]: Oh, it’s [$Char2Last]! I’ll introduce you.
-<<SetPath Williams Two>>
+<<SetPath Williams Zero>>
 [$Char2Last]: Hello there. 
-[$Char1Last]: [$Char2Last], I want to introduce you to our new placement student, [$PlayerName].
-[$PlayerName]: Hello, [$Char2Last],  nice to meet you. 
+[$Char1Last]: [$Char2Last], I want to introduce you to our new placement student, [$playerName].
+[$playerName]: Hello, [$Char2Last],  nice to meet you. 
 [$Char1Last]: [$Char2Last] used to be a chef! We’re still trying to convince him to cook us up a meal! Haha.
 [$Char2Last]: Haha! I used to be, I don’t cook much these days though.
-[$Char1Last]: I’m just giving [$PlayerName] a small tour of Bloom Village, see you later [$Char2Last]!
+[$Char1Last]: I’m just giving [$playerName] a small tour of Bloom Village, see you later [$Char2Last]!
 [$Char1Last]: See you soon!
 [[Day_1_Walk_To_Syd]]
 
@@ -107,11 +107,12 @@ tags:
 colorID: 0
 position: 985,597
 ---
-<<SetPath Stein Two>>
-<<SetPath Player Two>>
-[$walking][$PlayerName]: He seemed really nice!
+<<SetPath Stein Two Warp>>
+<<SetPath Player Two Warp>>
+[$walking][$playerName]: [$Char2Last] seemed really nice!  
+//old line He seemed really nice! 
 [$walking][$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years. Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
-[$walking][$PlayerName]: Oh, I had no idea…
+[$walking][$playerName]: Oh, I had no idea…
 [[Day_1_Syds_Door_Final]]
 ===
 title: Day_1_Syds_Door_Final
@@ -119,8 +120,8 @@ tags:
 colorID: 0
 position: 1239,585
 ---
-**Knock Knock**
-…
+[action]Knock Knock
+[action]…
 [$Char1Last]: Huh. 
 [$Char1Last]: I know he’s there, I can hear the T.V. I guess he doesn’t want to be disturbed just now.
 [[Day_1_Walk_To_Lobby]]
@@ -133,8 +134,8 @@ tags:
 colorID: 0
 position: 1524,585
 ---
-<<SetPath Stein Three>>
-<<SetPath Player Three>>
+<<SetPath Stein Three Warp>>
+<<SetPath Player Three Warp>>
 [$walking][$Char1Last]: [$Char3First] seems like he’s been having a rough time recently. He hasn’t said anything, I just get the impression something’s bothering him...
 [[Day_1_Lobby]]
 ===
@@ -144,11 +145,11 @@ colorID: 0
 position: 1790,586
 ---
 [$Char1Last]: Anyways, I’m sure you’ll get an opportunity to meet him tomorrow. It looks like our tour has come full circle! 
-***PROGRAMMER NOTE***Nurse manager enters
+//***PROGRAMMER NOTE***Nurse manager enters
 [$NurseManager]: How did it go?
-[$PlayerName]: Great! [$Char1Last]  is a fantastic tour-guide!
-[$Char1Last]: Haha! You’re flattering me. Anyways, it was such a pleasure to meet you [$PlayerName]. Take care!
-***PROGRAMMER NOTE*** she leaves
-[$NurseManager]: I think that’s probably good for today [$PlayerName], tomorrow we can really get you started. See you then?
-[$PlayerName]: You bet! Thanks so much. 
+[$playerName]: Great! [$Char1Last]  is a fantastic tour-guide!
+[$Char1Last]: Haha! You’re flattering me. Anyways, it was such a pleasure to meet you [$playerName]. Take care!
+//***PROGRAMMER NOTE*** she leaves
+[$NurseManager]: I think that’s probably good for today [$playerName], tomorrow we can really get you started. See you then?
+[$playerName]: You bet! Thanks so much. 
 ===

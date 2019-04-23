@@ -878,7 +878,7 @@ MonoBehaviour:
   - {fileID: 1001134954}
   - {fileID: 194582853}
   - {fileID: 1316229447}
-  currentHead: 0
+  currentHead: 1
 --- !u!222 &691200943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1069,8 +1069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headUI: {fileID: 691200941}
   bodyUI: {fileID: 1499349117}
-  characterName: John
-  nextScene: 13
+  characterName: Sam
+  nextScene: 0
 --- !u!1 &825249458
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class DayManager : MonoBehaviour
 {
@@ -102,6 +104,12 @@ public class DayManager : MonoBehaviour
         }
         display.text = temp;
         return temp;
+    }
+    [YarnCommand("FinishIt")]
+    public void endGame()
+    {
+        SceneManager.LoadScene(2);
+
     }
     // Update is called once per frame
     void Update () {

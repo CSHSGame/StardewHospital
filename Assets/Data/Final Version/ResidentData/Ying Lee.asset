@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa6a928ce2fd41448d815488f5133c2, type: 3}
+  m_Name: Ying Lee
+  m_EditorClassIdentifier: 
+  Charname: Lee, Ying (Mrs. Lee)
+  Location: Room 110
+  Age: 85
+  charGender: 1
+  ResidentNum: 3162
+  Allergies: Lactose, Peanuts
+  PowerOfAttorney: Susannah Lau (Daughter)
+  POAPhoneNum: 555-149-625
+  NextOfKin: Susannah Lau
+  HealthStatus: Diabetes, Hypertension,              Stage 4 Alzheimer's Disease
+  CodeStatus: 'Level 5: Full Resuscitation'
+  LanguageSpoken: 'P: Cantonese (*No English)'
+  Religion: Buddhism
+  face: {fileID: 21300010, guid: 244636d3a8b2d9f45a7e798fb8637f04, type: 3}

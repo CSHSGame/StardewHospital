@@ -9,6 +9,9 @@ public class CharacterController : MonoBehaviour {
     public float speed;
     private Vector3 direction;
     private Rigidbody rb;
+    public BodyPart bodyPartBody;
+    public BodyPart bodyPartHead;
+    public BodyPart bodyPartHair;
     //public SpriteRenderer sprite;
 
     // Use this for initialization
@@ -31,18 +34,76 @@ public class CharacterController : MonoBehaviour {
         if ((Input.GetKey(KeyCode.W))||(Input.GetKey(KeyCode.UpArrow)))
         {
             direction.z = 1.0f;
+            bodyPartBody.walkingBack = true;
+            bodyPartBody.walkingForward = false;
+            bodyPartBody.walkingSide = false;
+
+            bodyPartHead.walkingBack = true;
+            bodyPartHead.walkingForward = false;
+            bodyPartHead.walkingSide = false;
+
+            bodyPartHair.walkingBack = true;
+            bodyPartHair.walkingForward = false;
+            bodyPartHair.walkingSide = false;
         }
         else if ((Input.GetKey(KeyCode.S))||(Input.GetKey(KeyCode.DownArrow)))
         {
             direction.z = -1.0f;
+            bodyPartBody.walkingForward = true;
+            bodyPartBody.walkingBack = false;
+            bodyPartBody.walkingSide = false;
+
+            bodyPartHead.walkingForward = true;
+            bodyPartHead.walkingBack = false;
+            bodyPartHead.walkingSide = false;
+
+            bodyPartHair.walkingForward = true;
+            bodyPartHair.walkingBack = false;
+            bodyPartHair.walkingSide = false;
         }
         else if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)))
         {
             direction.x = -1.0f;
+            bodyPartBody.walkingSide = true;
+            bodyPartBody.walkingBack = false;
+            bodyPartBody.walkingForward = false;
+
+            bodyPartHead.walkingSide = true;
+            bodyPartHead.walkingBack = false;
+            bodyPartHead.walkingForward = false;
+
+            bodyPartHair.walkingSide = true;
+            bodyPartHair.walkingBack = false;
+            bodyPartHair.walkingForward = false;
         }
         else if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)))
         {
             direction.x = 1.0f;
+            bodyPartBody.walkingSide = true;
+            bodyPartBody.walkingBack = false;
+            bodyPartBody.walkingForward = false;
+
+            bodyPartHead.walkingSide = true;
+            bodyPartHead.walkingBack = false;
+            bodyPartHead.walkingForward = false;
+
+            bodyPartHair.walkingSide = true;
+            bodyPartHair.walkingBack = false;
+            bodyPartHair.walkingForward = false;
+        }
+        else
+        {
+            bodyPartBody.walkingBack = false;
+            bodyPartBody.walkingForward = false;
+            bodyPartBody.walkingSide = false;
+
+            bodyPartHead.walkingBack = false;
+            bodyPartHead.walkingForward = false;
+            bodyPartHead.walkingSide = false;
+
+            bodyPartHair.walkingBack = false;
+            bodyPartHair.walkingForward = false;
+            bodyPartHair.walkingSide = false;
         }
 
 

@@ -11,16 +11,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: Williams Day 1
   m_EditorClassIdentifier: 
-  position: {x: 10.240898, y: 0.25581813, z: 43.124153}
-  rotation: {x: -0, y: -0, z: -0, w: 1}
-  scale: {x: 1, y: 1, z: 1}
-  sprite: {fileID: 21300006, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  position: {x: 6.6, y: 0.25581813, z: 43.124153}
+  rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  scale: {x: 0.7, y: 0.7, z: 0.7}
+  sprite: {fileID: 21300018, guid: 02d58f8137e27e14a95bdeab52d890f9, type: 3}
   talkToNode: Day_1_Living_Area_Final
   scriptToLoad: {fileID: 0}
-  GameObjectName: Mr Williams
+  GameObjectName: Williams
   waypoints:
   - Name: William Enter Convo
     location:
-    - {x: 10.240898, y: 0.25581813, z: 43.0863}
-    - {x: 14.914595, y: 0.25581813, z: 44.518353}
+    - {x: 7.8658895, y: 0.25581813, z: 42.599712}
+    - {x: 12.782883, y: 0.25581813, z: 42.629932}
+    - {x: 15.082307, y: 0.25581813, z: 44.865414}
   DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1

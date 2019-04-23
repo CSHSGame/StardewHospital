@@ -9,6 +9,13 @@ public class BodyPart : MonoBehaviour
     public Transform Front;
     public Transform Side;
     public Transform Back;
+    public Animator FrontAnim;
+    public Animator SideAnim;
+    public Animator BackAnim;
+    public bool walkingForward;
+    public bool walkingSide;
+    public bool walkingBack;
+
     [ContextMenu("setup References")]
     public void setupReferences()
     {
@@ -26,18 +33,22 @@ public class BodyPart : MonoBehaviour
                 Front.gameObject.SetActive(true);
                 Side.gameObject.SetActive(false);
                 Back.gameObject.SetActive(false);
+                FrontAnim.SetBool("WalkingForward", walkingForward);
                 break;
             case facing.Side:
                 Front.gameObject.SetActive(false);
                 Side.gameObject.SetActive(true);
                 Back.gameObject.SetActive(false);
+                SideAnim.SetBool("WalkingSide", walkingSide);
                 break;
             case facing.Back:
                 Front.gameObject.SetActive(false);
                 Side.gameObject.SetActive(false);
                 Back.gameObject.SetActive(true);
+                BackAnim.SetBool("WalkingBack", walkingBack);
                 break;
         }
+
     }
     public void Update()
     {
@@ -57,6 +68,7 @@ public class BodyPart : MonoBehaviour
         {
             currentFacing = facing.Side;
             Side.localScale = Vector3.one;
+
             ApplyFacing();
         }
         else if (h < 0)
@@ -65,9 +77,20 @@ public class BodyPart : MonoBehaviour
             Side.localScale = new Vector3(-1, 1, 1);
             ApplyFacing();
         }
-       
-        
-        
-       
+        else
+        {
+            if (FrontAnim.isActiveAndEnabled)
+            {
+                FrontAnim.SetBool("WalkingForward", walkingForward);
+            }
+            else if (SideAnim.isActiveAndEnabled)
+            {
+                SideAnim.SetBool("WalkingSide", walkingSide);
+            }
+            else if (BackAnim.isActiveAndEnabled)
+            {
+                BackAnim.SetBool("WalkingBack", walkingBack);
+            }
+        }
     }
 }

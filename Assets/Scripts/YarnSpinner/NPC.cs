@@ -36,18 +36,16 @@ namespace Yarn.Unity.Example
     {
         Waypoints movement;
         [YarnCommand("DeSpawn")]
-        public void turnInvisible(string val = "True")
+        public void turnInvisible()
         {
-            if(val == "True")
-            {
+        
                 movement.onPathDone.AddListener(() => 
                 {
                     turnInvisibleDelegate();
                     movement.onPathDone.RemoveAllListeners();
 
                 });
-            }
-            turnInvisibleDelegate();
+            
         }
 
         private void turnInvisibleDelegate()
@@ -58,8 +56,8 @@ namespace Yarn.Unity.Example
         [YarnCommand("Spawn")]
         public void turnVisible()
         {
-            transform.GetChild(0).gameObject.SetActive(false);
-            this.enabled = false;
+            transform.GetChild(0).gameObject.SetActive(true);
+            this.enabled = true;
         }
         private enum Characters
         {
@@ -82,7 +80,7 @@ namespace Yarn.Unity.Example
 
         public GameObject ConversUI;
 
-        public string characterName = "";
+        //public string characterName = "";
 
         [FormerlySerializedAs("startNode")]
         public string talkToNode = "";
@@ -147,6 +145,7 @@ namespace Yarn.Unity.Example
             data.talkToNode = talkToNode;
             data.scriptToLoad = scriptToLoad;
             data.GameObjectName = this.gameObject.name;
+           
             data.sprite = this.GetComponentInChildren<SpriteRenderer> ().sprite;
            // data.prefab = test;
 
@@ -164,6 +163,10 @@ namespace Yarn.Unity.Example
            
             GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;
             GetComponentInChildren<SpriteRenderer>().gameObject.AddComponent<BoxCollider>();
+            if(data.visibleAtStart == false)
+            {
+                turnInvisibleDelegate();
+            }
         }
     }
    

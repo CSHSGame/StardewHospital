@@ -22,4 +22,6 @@ MonoBehaviour:
   - Name: Marie Spawn In
     location:
     - {x: 1.3858633, y: 0, z: 46.04195}
-  DialogueTriggerPrefab: {fileID: 0}
+  DialogueTriggerPrefab: {fileID: 114325426134249458, guid: 332cf2c87e122bf4592dcc628c354792,
+    type: 2}
+  visibleAtStart: 1
