@@ -16,6 +16,8 @@ public class HUDController : MonoBehaviour {
     public GameObject EndofDayUI;
     public DayDataHolder dayData;
 
+    public DayManager dayManager;
+
 	// Use this for initialization
 	public void Setup (DayDataHolder day)
     {
@@ -70,5 +72,24 @@ public class HUDController : MonoBehaviour {
 
     }
 
-    
+
+    public void LoadDay1()
+    {
+        dayManager.currentDay = 1;
+        dayManager.LoadDay();
+    }
+
+    public void LoadDay2()
+    {
+        dayManager.currentDay = 2;
+        dayManager.LoadDay();
+    }
+
+    public void LoadDay3()
+    {
+        dayManager.currentDay = 3;
+        dayManager.LoadDay();
+    }
+
+
 }
