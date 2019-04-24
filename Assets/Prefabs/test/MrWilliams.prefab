@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConversUI: {fileID: 0}
-  characterName: 'mr williams '
   talkToNode: Start_OctDemo_Day_1
   scriptToLoad: {fileID: 0}
   data: {fileID: 11400000, guid: 8fa9c31360bdc2e4b94d7e0631c8e3f5, type: 2}
@@ -124,7 +123,9 @@ MonoBehaviour:
   data: {fileID: 0}
   speed: 2
   pathindex: -1
+  nodeindex: 0
   isPlayer: 0
+  warp: 0
 --- !u!212 &212546895938848850
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -157,8 +158,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 622950053
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300018, guid: 02d58f8137e27e14a95bdeab52d890f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

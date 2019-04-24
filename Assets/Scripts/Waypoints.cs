@@ -149,7 +149,7 @@ public class Waypoints : MonoBehaviour
 
                     if (warp)
                     {
-                        if(nodeindex >= 2 && nodeindex < Paths[pathindex].location.Count - 1)
+                        if(nodeindex >= 2 && nodeindex < Paths[pathindex].location.Count - 1) //second to last
                         {
                            
                             speed = 10;

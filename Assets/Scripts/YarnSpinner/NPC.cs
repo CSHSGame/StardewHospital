@@ -47,6 +47,14 @@ namespace Yarn.Unity.Example
                 });
             
         }
+        [YarnCommand("Hide")]
+        public void Hide()
+        {
+            turnInvisibleDelegate();
+
+
+
+        }
 
         private void turnInvisibleDelegate()
         {
