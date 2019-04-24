@@ -1,0 +1,28 @@
+title: Inappropriate_Language_Start
+tags: 
+colorID: 0
+position: 544,260
+---
+[$SupervisorName]: Hey there [$PlayerName]. A package arrived for Mrs. Brown - could you let her know? I think she's in the dining area having lunch.
+[$PlayerName]: I'd be happy to, but I'm not sure I know who she is...
+[$SupervisorName]: You've probably seen her around - some of her fellow residents affectionately call her 'Mama'.
+[$PlayerName]: Oh yes I know who you mean! I'll let her know. 
+
+***Programmer NOte*** player must walk to dining area and find Mama
+===
+title: Inappropriate_Language_Dining_Area
+tags: 
+colorID: 0
+position: 544,607
+---
+[$PlayerName]: Hi there, Mama! [$SupervisorName] asked me to tell you you have a package.
+Mrs. Brown: Excuse me, but who are you calling mama? I’m not your mama. My name is Mrs. Brown.
+[$PlayerName]: I’m really sorry, I just thought … I've heard people call you mama, so I assumed I could too.
+Mrs. Brown: They can call me mama, that's a nickname some of my closest friends call me by - not strangers.
+[$PlayerName]: Again, I’m so sorry, it wasn't very professional of me.
+Mrs. Brown: That's alright. Like I said, I'm Mrs Brown - what's your name?
+[$PlayerName]: Nice to meet you Mrs. Brown. My name's [$pPlayerName].
+Mrs. Brown: A pleasure to meet you [$PlayerName].
+[$PlayerName]: Likewise! Anyways, I meant to say you received a package, it's waiting for you in your room. 
+Mrs. Brown: Thanks!
+===
