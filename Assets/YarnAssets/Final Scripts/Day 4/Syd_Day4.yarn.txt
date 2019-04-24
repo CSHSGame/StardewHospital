@@ -1,0 +1,138 @@
+title: LGBTQ_SECOND_DAY
+tags: 
+colorID: 0
+position: 526,494
+---
+** Knock Knock **
+[$Char3First]: It's open.
+[$playerName]: Hey Syd, how's it going today?
+[$Char3First]: Okay. But 'no thank you' to whatever's on today. I don't feel like doing anything.
+[$playerName]: You seem to be a little down. Can I ask if anything’s troubling you?
+[$Char3First]: I’d just rather stay here and read...  
+[$playerName]: I know you enjoy reading, that's really great. Someone mentioned to me that you play the violin, too. There’s a strings concert after lunch today, I thought you might like to go.
+[$Char3First]: ...I don’t think so.
+[$playerName]: Some of the other residents really love music as well - it could be a great chance to get to know some of them. 
+[$Char3First]: No... I find it awkward talking with the other residents. 
+[$playerName]: Can you tell me more about that?  Is it okay if I sit down?” 
+---NOTE TO PROGRAMMERS: The player sits down
+[$Char3First]: They’re nice enough. But they’re always asking me about my “wife.”  When I say I don’t have a wife they say: ‘Oh, sorry, Syd.  You’re a widower? Or divorced?’ Or just you never met the right woman?  When I said ‘No, that's not it”, one guy said  ‘Ah, so you’re a “bachelor!" with his eyebrows raised.  They’re so nosey. I’m tired of it. I'd rather just stay here. 
+[$playerName]: It sounds like you don’t like their questions. I’d really like to help you feel more comfortable here. 
+[$Char3First]: Don’t worry about it. The other residents just haven’t bothered to get to know me...   
+[$playerName]: What would you like the other residents to know about you?
+[$Char3First]: Don’t worry about it. The other residents just haven’t bothered to get to know me...   
+[$Char3First]: ...
+[$Char3First]: I really miss my best friend.
+[$playerName]: Tell me about that.
+[$Char3First]: His name is Richard - you've probably seen him here, he visits me a lot.
+[$playerName]: Yes, I think we met the other day.
+[$Char3First]: It's great to have him visit, but before I came here we used to live together - we spent almost all our time together.
+[$playerName]: It must be hard to feel like you don’t have anyone here you can talk to. 
+[$Char3First]: Yeah, it’s a big change from being at home. Until I had to use this wheelchair to get around, I was pretty independent. 
+[$playerName]: It’s a big adjustment, Syd. Can you tell me a little more about Richard?
+[$Char3First]: ...
+[$Char3First]: We live together for almost forty years. He’s more than my best friend, he’s my partner – my life partner. But it became harder and harder for him looking after me. He has some health issues of his own.
+Decision point: 
+[[What?! You’re gay?! Syd I had no idea!|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
+[[Oh, that’s not a big deal. You don’t need to worry about that.|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
+[[Moving here has separated you from Richard - now I understand why you don’t feel comfortable here..|LGBTQ_SECOND_DAY_DEC_1_RIGHT]]
+===
+title: LGBTQ_SECOND_DAY_DEC_1_WRONG
+tags: 
+colorID: 0
+position: 245,733
+---
+[$Char3First]: Ugh, you're as bad as the rest of them! I regret telling you any of this. 
+[$playerName]: [$Char3First], I'm sorry, I shouldn't have said that.
+[[LGBTQ_SECOND_DAY2]]
+===
+title: LGBTQ_SECOND_DAY_DEC_1_RIGHT
+tags: 
+colorID: 0
+position: 804,741
+---
+[$Char3First]: That’s exactly right.  It feels like the 1950's again in here! Like no one here has ever met a gay man before.   
+[[LGBTQ_SECOND_DAY2]]
+===
+title: LGBTQ_SECOND_DAY2
+tags: 
+colorID: 0
+position: 525,1019
+---
+[$playerName]: It sounds like you feel you have to hide who you are to fit in here. Is that how you're feeling?
+[$Char3First]: **Points to his displayed photos** I mean, look at this room. Richard and I spent our lives together and I haven’t even put out any pictures of us together. 
+[$playerName]: This is your home now, [$Char3First]. It's important that you have meaningful personal items around you so you feel comfortable here. 
+[$Char3First]: Yeah, sure... but... I don’t think our relationship would be accepted here. It seems like everyone here is required to be heterosexual.
+[$playerName]: I’m just a placement student, [$Char3First], I don't have much authority here -  but I’m concerned about your situation. Would it be alright if I shared what you’ve told me with my supervisor so they know your concerns? 
+[$Char3First]: Okay.  I guess.   
+[$playerName]: I don’t think a person should ever have to hide who they are, [$Char3First]. 
+[$Char3First]: I appreciate that. I spent too long in the closet as a young man. I’m not going back in now that I’m old! 
+[$playerName]: I’ll tell my supervisor when we meet later.  In the meantime, how about the concert after lunch?  Would you like me to come by, we can go together.
+[$Char3First]: That sounds good to me, thank you.  
+[[LGBTQ_SECOND_DAY_HALLWAY]]
+===
+title: LGBTQ_SECOND_DAY_HALLWAY
+tags: 
+colorID: 0
+position: 532,1302
+---
+****PROGRAMMER NOTE****  PLAYER leaves the room and meets Supervisor in the hall.
+
+Wrong Answer- Oh, I’m sorry, you’re busy. I’ll come back later.
+                Supervisor: Okay. 
+[[Hi, I was just talking with [$Char3First]...|LGBTQ_SECOND_DAY_HALLWAY_WRONG]]
+[[Hi [$SupervisorName], do you have a minute? I need to talk to you regarding a conversation I had with one of our residents.|LGBTQ_SECOND_DAY_HALLWAY_RIGHT]] 
+===
+title: LGBTQ_SECOND_DAY_HALLWAY_WRONG
+tags: 
+colorID: 0
+position: 901,1567
+---
+[$SupervisorName]: We don’t talk about our residents in public spaces like this - we need to protect their privacy and confidentiality. Let’s go to my office.
+[[LGBTQ_SECOND_DAY_OFFICE]]
+===
+title: LGBTQ_SECOND_DAY_HALLWAY_RIGHT
+tags: 
+colorID: 0
+position: 158,1574
+---
+[$SupervisorName]: Sure, why don’t we talk about it privately then? Let's Go to my office.
+[[LGBTQ_SECOND_DAY_OFFICE]]
+===
+title: LGBTQ_SECOND_DAY_OFFICE
+tags: 
+colorID: 0
+position: 548,1811
+---
+****PROGRAMMER NOTE****  They walk to the office or another private space
+[$playerName]: So, [$Char3First] hasn’t been coming to any activities since he moved in. We got to talking and he telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here. He told me that his friend Richard who comes to visit him most days is actally [$Char3First]’s life partner. They lived together for 40 years. He doesn't think they can be open about their relationship - he feels link only heterosexual people are welcomed here. 
+[$SupervisorName]: I’m so sorry to hear that.  It sounds like you made a good connection with [$Char3First] - he must have felt he could trust you enough to tell you how he was feeling. I think the next step would be to involve our inter-professional team and discuss how we should proceed. 
+[$playerName]: Can I let Syd know we'll arrange a meeting?
+[$SupervisorName]: Yes please [$playerName], thanks very much.
+[[LGBTQ_SECOND_DAY_SYDS_ROOM]]
+===
+title: LGBTQ_SECOND_DAY_SYDS_ROOM
+tags: 
+colorID: 0
+position: 541,2091
+---
+****PROGRAMMERS NOTE - THE PLAYER WALKS BACK TO SYD'S ROOM AND HIS DOOR IS OPEN
+[$playerName]: Hey [$Char3First], I spoke with my supervisor, she was really concerned to here about your situation. She's going to arrange a meeting with you and some key members of the faculty here. How does that sound?
+[$Char3First]: Great,  Richard will come, too.
+[[I don’t think so.  It’s a confidential meeting, Richard wont be able to attend.|LGBTQ_SECOND_DAY_SYDS_ROOM_WRONG]]
+[[Don’t bother, that isn't necessary. You can update him after the meeting!|LGBTQ_SECOND_DAY_SYDS_ROOM_WRONG2]]
+[[Of course! It’s your right to have anyone you want accompany you to any meetings here.|LGBTQ_SECOND_DAY_SYDS_ROOM_RIGHT]] 
+===
+title: LGBTQ_SECOND_DAY_SYDS_ROOM_WRONG
+tags: 
+colorID: 0
+position: 85,2350
+---
+[$Char3First]: This is my meeting! And Richard is a big part of the reason we're having it - I insist that he be here.
+[$playerName]: Okay, you're right, I'm sorry about that. Someone will let you know when the meeting is scheduled, I think it will probably be in the next day or two.<<$LGBTQ_SECOND_DAY_SYDS_ROOM_RIGHT = false>>
+===
+title: LGBTQ_SECOND_DAY_SYDS_ROOM_RIGHT
+tags: 
+colorID: 0
+position: 965,2332
+---
+[$Char3First]: Excellent. I'm really looking forward to it - thanks again for all your help. <<$LGBTQ_SECOND_DAY_SYDS_ROOM_RIGHT = false>>
