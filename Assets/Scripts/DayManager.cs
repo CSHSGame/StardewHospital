@@ -23,7 +23,7 @@ public class DayManager : MonoBehaviour
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
     }
-    void LoadDay()
+    public void LoadDay()
     {
         npcLoader.DeleteNpc();
         npcLoader.Setup(Days[currentDay]);

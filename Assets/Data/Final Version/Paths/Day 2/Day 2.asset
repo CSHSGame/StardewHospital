@@ -15,7 +15,7 @@ MonoBehaviour:
   otherVariables: []
   CurrentDay: 0
   Objectives: []
-  PlayerData: {fileID: 0}
+  PlayerData: {fileID: 11400000, guid: 013431e6d6db5eb42b4e915c9ffbf613, type: 2}
   npcs:
   - {fileID: 11400000, guid: fdf090e08e06dd5429aecd1a1d308560, type: 2}
   - {fileID: 11400000, guid: 285579c2262391f439cdae2219fdfb36, type: 2}

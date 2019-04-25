@@ -3,7 +3,6 @@ tags:
 colorID: 0
 position: 1225,964
 ---
-
 [$Char2LastDoor]
 [[(Walk in without knocking.)|NoKnock_Williams_Day_2]]
 [[(Knock on the door.)|Knock_Williams_Day_2]]
@@ -17,7 +16,7 @@ position: 998,1279
 <<Hide MrWilliamsDoor>>
 <<SetPath Player Zero>>
 Skip:
-[$Char1Last]: Who are you? Get out!
+[$Char2Last]: Who are you? Get out!
 
 [[Frighten_Williams_Day_2]]
 ===
@@ -28,13 +27,13 @@ position: 1230,1278
 ---
 [$playerName]: (Knock, knock!)
 Skip:
-[$Char1Last]: Yes?
+[$Char2Last]: Yes?
 Skip:
 <<Hide MrWilliamsDoor>>
 <<SetPath Player Zero>>
-[$playerName]: Hi, [$Char1Last].
+[$playerName]: Hi, [$Char2Last].
 Skip:
-[$Char1Last]: Help! There's an intruder in my room!
+[$Char2Last]: Help! There's an intruder in my room!
 
 [[Frighten_Williams_Day_2]]
 ===
@@ -45,39 +44,39 @@ position: 1583,1409
 ---
 [$playerName]: (Knock, knock!)
 Skip:
-[$Char1Last]: Yes?
+[$Char2Last]: Yes?
 Skip:
-[$playerName]: Hi, [$Char1Last], I'm [$playerName]. May I come in?
+[$playerName]: Hi, [$Char2Last], I'm [$playerName]. May I come in?
 Skip:
-[$Char1Last]: Okay, come in!
+[$Char2Last]: Okay, come in!
 Skip:
 <<Hide MrWilliamsDoor>>
 <<SetPath Player Zero>>
 Skip:
 [$playerName]: I'd like to walk with you to the dining room for breakfast.
 Skip:
-[$Char1Last]: No! I don't want breakfast. Leave me alone.
+[$Char2Last]: No! I don't want breakfast. Leave me alone.
 
 [[It's sausage and pancakes today. I heard it's your favourite.|Favourite_Williams_Day_2]]
 [[(Pick up photo) I heard you say yesterday that is a picture of your wife.|Wife_Williams_Day_2]]
-[[(Points at picture) Is that you, [$Char1Last]? The chef in that picture?|Photo_Williams_Day_2]]
+[[(Points at picture) Is that you, [$Char2Last]? The chef in that picture?|Photo_Williams_Day_2]]
 ===
 title: Frighten_Williams_Day_2
 tags: 
 colorID: 0
 position: 1094,1563
 ---
-[$playerName]: I'm sorry, [$Char1Last], I didn't mean to frighten you.
+[$playerName]: I'm sorry, [$Char2Last], I didn't mean to frighten you.
 Skip:
-[$Char1Last]: What do you want?
+[$Char2Last]: What do you want?
 Skip:
 [$playerName]: My name's [$playerName]. I'm one of the students that will be assisting you today. It's breakfast time, and I'm here to accompany you to the dining room.
 Skip:
-[$Char1Last]: No, I'm not hungry. I don't want breakfast. Leave me alone.
+[$Char2Last]: No, I'm not hungry. I don't want breakfast. Leave me alone.
 
 [[It's sausage and pancakes today. I heard it's your favourite.|Favourite_Williams_Day_2]]
 [[(Pick up photo) I heard you say yesterday that is a picture of your wife.|Wife_Williams_Day_2]]
-[[(Points at picture) Is that you, [$Char1Last]? The chef in that picture?|Photo_Williams_Day_2]]
+[[(Points at picture) Is that you, [$Char2Last]? The chef in that picture?|Photo_Williams_Day_2]]
 ===
 title: Favourite_Williams_Day_2
 tags: 
@@ -86,21 +85,19 @@ position: 926,1831
 ---
 [$playerName]: It's sausage and pancakes today. I heard it's your favourite.
 Skip:
-[$Char1Last]: I said no! Leave my room now!
+[$Char2Last]: I said no! Leave my room now!
 Skip:
-[$playerName]: I'm sorry, [$Char1Last]. I know it's really early, but we just want your opinion about the menu.
+[$playerName]: I'm sorry, [$Char2Last]. I know it's really early, but we just want your opinion about the menu.
 Skip:
-[$Char1Last]: What menu?
+[$Char2Last]: What menu?
 Skip:
 [$playerName]: The breakfast menu for today. We just want you to taste it first and tell us what you think, as a chef.
 Skip:
-[$Char1Last]: Really? Well, I am quite hungry.
+[$Char2Last]: Really? Well, I am quite hungry.
 Skip:
 [$playerName]: Perfect! Do you mind leading me to the dining room?
 Skip:
-[$Char1Last]: Of course.
-<<SetPath Player One Warp>>
-<<SetPath MrWilliams Zero Warp>>
+[$Char2Last]: Of course.
 
 [[Hallway_Williams_Day_2]]
 ===
@@ -113,13 +110,13 @@ position: 1224,1835
 Skip:
 [$playerName]: I heard you say yesterday that this is a picture of your wife.
 Skip:
-[$Char1Last]: Put that down! That's my picture!
+[$Char2Last]: Put that down! That's my picture!
 Skip:
 *He grabs the picture from the PS and puts it down.*
 Skip:
-[$playerName]:I'm sorry, [$Char1Last], I didn't mean to upset you. Is that you? The chef in that picture?
+[$playerName]:I'm sorry, [$Char2Last], I didn't mean to upset you. Is that you? The chef in that picture?
 Skip:
-[$Char1Last]: Yes, that's me.
+[$Char2Last]: Yes, that's me.
 Skip:
 [$playerName]: That reminds me, I'm supposed to ask you to taste the sausage and pancakes so we can get your professional opinion on them.
 
@@ -132,9 +129,9 @@ position: 1578,1832
 ---
 *[$playerName] points to a photo.*
 Skip:
-[$playerName]: Is that you, [$Char1Last]? The chef in that picture?
+[$playerName]: Is that you, [$Char2Last]? The chef in that picture?
 Skip:
-[$Char1Last]: Yes!
+[$Char2Last]: Yes!
 Skip:
 [$playerName]: Oh, right, I just remembered! I just came here to ask you to give us your professional opinion as a chef on the sausage and pancakes they're serving this morning.
 
@@ -145,11 +142,11 @@ tags:
 colorID: 0
 position: 1451,2097
 ---
-[$Char1Last]: Really?
+[$Char2Last]: Really?
 Skip:
-[$playerName]: Yes, [$Char1Last]. I'm on my way to the dining room. Would you like to escort me there?
+[$playerName]: Yes, [$Char2Last]. I'm on my way to the dining room. Would you like to escort me there?
 Skip:
-[$Char1Last]: Of course, I'd love to. Let's go.
+[$Char2Last]: Of course, I'd love to. Let's go.
 
 [[Hallway_Williams_Day_2]]
 ===
@@ -158,26 +155,28 @@ tags:
 colorID: 0
 position: 1131,2372
 ---
-//*[$Char1Last] and [$playerName] walk to the dining room.
+<<SetPath Player One Warp>>
+<<SetPath MrWilliams Zero Warp>>
+//*[$Char2Last] and [$playerName] walk to the dining room.
 Skip:
 [$playerName]: How was your night? Did you sleep well?
 Skip:
-[$Char1Last]: I did, and now I’m hungry. 
+[$Char2Last]: I did, and now I’m hungry. 
 Skip:
-//*They enter the dining room. [$Char1Last] looks around at the crowded room.*
+//*They enter the dining room. [$Char2Last] looks around at the crowded room.*
 Skip:
-[$Char1Last]: Wow... There’s a lot of people here.
+[$Char2Last]: Wow... There’s a lot of people here.
 Skip:
 [$playerName]: Yeah, it looks like you’re not the only ones who love sausages and pancakes and they are waiting for your opinion about it. Where do you sit, Mr. Williams?
 Skip:
-[$Char1Last]: Right over there, by the left side of the window. 
+[$Char2Last]: Right over there, by the left side of the window. 
 Skip:
-//*[$Char1Last] sits at his designated seat. The player grabs breakfast for [$Char1Last] and sits beside him.*
+//*[$Char2Last] sits at his designated seat. The player grabs breakfast for [$Char2Last] and sits beside him.*
 //player path 2 cutscene
 Skip:
 [$playerName]: Here you go, Mr. Williams. Sausages and pancakes, as promised!
 Skip:
-[$Char1Last]: Wow, this smells delicious. *Takes a bite* This is fantastic, I love it!
+[$Char2Last]: Wow, this smells delicious. *Takes a bite* This is fantastic, I love it!
 Skip:
-[$playerName]: Enjoy your breakfast, [$Char1Last]. I'll see you later
+[$playerName]: Enjoy your breakfast, [$Char2Last]. I'll see you later
 ===

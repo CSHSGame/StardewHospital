@@ -9,15 +9,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
-  m_Name: SupervisorDay4
+  m_Name: SupervisorCloneDay4
   m_EditorClassIdentifier: 
-  position: {x: -1.96, y: 0, z: 11.27}
+  position: {x: 36.6, y: 0, z: 14.2}
   rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  scale: {x: 1.3, y: 1.3000019, z: 1.3000019}
+  scale: {x: 1.3, y: 1.3000004, z: 1.3000004}
   sprite: {fileID: 21300014, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
-  talkToNode: Nurse_Manager_Day_4
+  talkToNode: 
   scriptToLoad: {fileID: 0}
-  GameObjectName: Nurse
-  waypoints: []
+  GameObjectName: Nurse2
+  waypoints:
+  - Name: ' '
+    location:
+    - {x: 36.6, y: 0, z: 15.2}
+  - Name: to office
+    location:
+    - {x: 36.56088, y: 0, z: 14.182918}
+    - {x: 36.54132, y: 0, z: 19.77602}
+    - {x: 38.760635, y: 0, z: 45.731308}
+    - {x: 29.843235, y: 0, z: 45.681576}
   DialogueTriggerPrefab: {fileID: 0}
-  visibleAtStart: 1
+  visibleAtStart: 0

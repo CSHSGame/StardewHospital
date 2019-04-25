@@ -53,9 +53,9 @@ public class ObjectiveLoader : MonoBehaviour
             if(displayText!= null)
             {
                 displayText.text = keyValuePairs[name].displayText;
-                map.StartSearch(keyValuePairs[name].wayfindingIndex);
             }
-            
+
+            map.StartSearch(keyValuePairs[name].wayfindingIndex);
 
         }
     }
