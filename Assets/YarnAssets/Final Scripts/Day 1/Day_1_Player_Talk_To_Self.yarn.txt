@@ -3,8 +3,8 @@ tags:
 colorID: 0
 position: -726,613
 ---
-[Action][$playerName]: Wow, so this is this the place…
-[$playerName]: I should speak to the nurse manager, I think that’s her by the reception desk.
+[Action][$playerName]: Wow, so this is the place…
+[$playerName]: I should speak to the nurse manager. I think that’s her by the reception desk.
  
 //***PROGRAMMER NOTE*** Player walks to nurse manager
 //***PROGRAMMER NOTE*** UI Popup that explains you press space or whatever to talk to character with the speech icon over their head

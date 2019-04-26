@@ -3,31 +3,30 @@ tags:
 colorID: 0
 position: 1222,962
 ---
-*All the residents are having lunch. [$Char1Last] is wandering around the hallway, looking for an exit. [$PlayerName] approaches him.*
+//*All the residents are having lunch. [$Char2Last] is wandering around the hallway, looking for an exit. [$playerName] approaches him.*
+[$PlayerName]: Good afternoon, [$Char2Last].
 Skip:
-[$PlayerName]: Good afternoon, [$Char1Last].
-Skip:
-[$Char1Last]: Hello.
+[$Char2Last]: Hello.
 Skip:
 [$PlayerName]: How are you doing?
 Skip:
-[$Char1Last]: Sorry, no time to talk. Late for work.
+[$Char2Last]: Sorry, no time to talk. Late for work.
 Skip:
 [$PlayerName]: What's your job?
 Skip:
-[$Char1Last]: I'm a chef!
+[$Char2Last]: I'm a chef!
 Skip:
 [$PlayerName]: Oh, wow! That's really interesting! Do you enjoy your work?
 Skip:
-[$Char1Last]: Yes, I love cooking.
+[$Char2Last]: Yes, I love cooking.
 Skip:
-[$PlayerName]: [$Char1Last], I was just going to have a cup of tea. Would you like to join me?
+[$PlayerName]: [$Char2Last], I was just going to have a cup of tea. Would you like to join me?
 Skip:
-[$Char1Last]: No, I can't! I'm late for work!
+[$Char2Last]: No, I can't! I'm late for work!
 
 [[You can't leave!|Leave_Williams_Day_3]]
-[[[$Char1First], let's go have tea in the lounge. You can tell me all aout your job.|Job_Williams_Day_3]]
-[[*Pause* [$Char1Last]?|Ask_Williams_Day_3]]
+[[[$Char2First], let's go have tea in the lounge. You can tell me all aout your job.|Job_Williams_Day_3]]
+[[[$Char2Last]?|Ask_Williams_Day_3]]
 ===
 title: Leave_Williams_Day_3
 tags: 
@@ -36,10 +35,10 @@ position: 863,1274
 ---
 [$PlayerName]: You can't leave!
 Skip:
-[$Char1Last]: You can't stop me!
+[$Char2Last]: You can't stop me!
 Skip:
 <<IsThought = True>>
-Do not ignore [$Char1Last]'s issue. Instead, find the underlying meaning and offer redirection.
+Do not ignore [$Char2Last]'s issue. Instead, find the underlying meaning and offer redirection.
 <<IsThought = False>>
 
 [[Ask_Williams_Day_3]]
@@ -49,13 +48,11 @@ tags:
 colorID: 0
 position: 1544,1291
 ---
-[$PlayerName]: [$Char1First], let's go have tea in the lounge. You can tell me all about your job.
+[$PlayerName]: [$Char2First], let's go have tea in the lounge. You can tell me all about your job.
 Skip:
-[$Char1Last]: I don't have time to talk! Late for work.
+[$Char2Last]: I don't have time to talk! Late for work.
 Skip:
-*[$Char1Last] walks over to the door.*
-Skip:
-[$Char1Last]: Why isn't it opening?
+[$Char2Last]: Why isn't it opening?
 Skip:
 [$PlayerName]: Stop, [$Char1First], you're going to break the door!
 Skip:

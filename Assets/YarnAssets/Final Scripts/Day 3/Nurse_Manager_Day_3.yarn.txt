@@ -3,13 +3,13 @@ tags:
 colorID: 0
 position: 1225,964
 ---
-[$SupervisorName]: Good Morning [$playerName]!
+[$NurseManager]: Good Morning [$playerName]!
 [$playerName]: Hello!
-[$SupervisorName]: Just so you know, [$Char2Last] isn't feeling well today. She's asked us to let her sleep and get some rest.
+[$NurseManager]: Just so you know, [$Char2Last] isn't feeling well today. She's asked us to let her sleep and get some rest.
 [$playerName]: Oh, I'm sorry to hear that... I wont disturb her.
-[$SupervisorName]: Thank you. Would you mind stopping in to see if [$Char2Last] is ready for breakfast?
+[$$NurseManager]: Thank you. Would you mind stopping in to see if [$Char2Last] is ready for breakfast?
 [$playerName]: Of course, I'll do that now.
-[$SupervisorName]: See you later!]
+[$NurseManager]: See you later!]
 <<SetObjective GameManager mrwilliamsday3>>
 
 ===

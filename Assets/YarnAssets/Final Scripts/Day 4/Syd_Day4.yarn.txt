@@ -21,12 +21,11 @@ position: 526,494
 //[$playerName]: Can you tell me more about that?  Is it okay if I sit down?” 
 //---NOTE TO PROGRAMMERS: The player sits down
 [$Char3First]: They’re nice enough. But they’re always asking me about my “wife.”  When I say I don’t have a wife they say: 
-[$Char3First]: ‘Oh, sorry, Syd.  You’re a widower? Or divorced?’ Or just you never met the right woman?  When I said ‘No, that's not it”, 
-[$Char3First]: one guy said  ‘Ah, so you’re a “bachelor!" with his eyebrows raised.  They’re so nosey. I’m tired of it. I'd rather just stay here. 
+[$Char3First]: ‘Oh, sorry, Syd.  You’re a widower? Or divorced?’ Or just you never met the right woman?
+[$Char3First]: When I said ‘No, that's not it”, one guy said 'Ah, so you’re a “bachelor!"' with his eyebrows raised. They’re so nosey. I’m tired of it. I'd rather just stay here. 
 [$playerName]: It sounds like you don’t like their questions. I’d really like to help you feel more comfortable here. 
 [$Char3First]: Don’t worry about it. The other residents just haven’t bothered to get to know me...   
-[$playerName]: What would you like the other residents to know about you?
-[$Char3First]: Don’t worry about it. The other residents just haven’t bothered to get to know me...   
+[$playerName]: What would you like the other residents to know about you?  
 [$Char3First]: ...
 [$Char3First]: I really miss my best friend.
 [$playerName]: Tell me about that.
@@ -37,12 +36,12 @@ position: 526,494
 [$Char3First]: Yeah, it’s a big change from being at home. Until I had to use this wheelchair to get around, I was pretty independent. 
 [$playerName]: It’s a big adjustment, Syd. Can you tell me a little more about Richard?
 [$Char3First]: ...
-[$Char3First]: We live together for almost forty years. He’s more than my best friend, he’s my partner – my life partner.
+[$Char3First]: We lived together for almost forty years. He’s more than my best friend, he’s my partner – my life partner.
 [$Char3First]: But it became harder and harder for him looking after me. He has some health issues of his own.
-//Decision point: 
+
 [[What?! You’re gay?! Syd I had no idea!|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
 [[Oh, that’s not a big deal. You don’t need to worry about that.|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
-[[Moving here has separated you from Richard - now I understand why you don’t feel comfortable here..|LGBTQ_SECOND_DAY_DEC_1_RIGHT]]
+[[Moving here has separated you from Richard - now I understand why you don’t feel comfortable here.|LGBTQ_SECOND_DAY_DEC_1_RIGHT]]
 ===
 title: LGBTQ_SECOND_DAY_DEC_1_WRONG
 tags: 
@@ -67,11 +66,11 @@ colorID: 0
 position: 525,1019
 ---
 [$playerName]: It sounds like you feel you have to hide who you are to fit in here. Is that how you're feeling?
-[$Char3First]: **Points to his displayed photos** I mean, look at this room. Richard and I spent our lives together and I haven’t even put out any pictures of us together. 
+[$Char3First]: I mean, look at this photo, this room. Richard and I spent our lives together and I haven’t even put out any pictures of us together. 
 [$playerName]: This is your home now, [$Char3First]. It's important that you have meaningful personal items around you so you feel comfortable here. 
 [$Char3First]: Yeah, sure... but... I don’t think our relationship would be accepted here. It seems like everyone here is required to be heterosexual.
-[$playerName]: I’m just a placement student, [$Char3First], I don't have much authority here -  
-[$playerName]: but I’m concerned about your situation. Would it be alright if I shared what you’ve told me with my supervisor so they know your concerns? 
+[$playerName]: I’m just a placement student, [$Char3First], I don't have much authority here.  
+[$playerName]: But I’m concerned about your situation. Would it be alright if I shared what you’ve told me with my supervisor so they know your concerns? 
 [$Char3First]: Okay.  I guess.   
 [$playerName]: I don’t think a person should ever have to hide who they are, [$Char3First]. 
 [$Char3First]: I appreciate that. I spent too long in the closet as a young man. I’m not going back in now that I’m old! 
@@ -85,8 +84,7 @@ colorID: 0
 position: 532,1302
 ---
 ****PROGRAMMER NOTE****  PLAYER leaves the room and meets Supervisor in the hall.
-<<SetPath Player Two>>
-//Wrong Answer- Oh, I’m sorry, you’re busy. I’ll come back later.                 Supervisor: Okay. 
+<<SetPath Player Two>> 
 [$NurseManager]: Hello [$playerName]
 [[Hi, I was just talking with [$Char3First]...|LGBTQ_SECOND_DAY_HALLWAY_WRONG]]
 [[Hi [$NurseManager], do you have a minute? I need to talk to you regarding a conversation I had with one of our residents.|LGBTQ_SECOND_DAY_HALLWAY_RIGHT]] 

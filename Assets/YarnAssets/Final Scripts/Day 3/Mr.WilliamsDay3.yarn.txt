@@ -76,7 +76,7 @@ Skip:
 
 [[It's sausage and pancakes today. I heard it's your favourite.|Favourite_Williams_Day_2]]
 [[(Pick up photo) I heard you say yesterday that is a picture of your wife.|Wife_Williams_Day_2]]
-[[(Points at picture) Is that you, [$Char2Last]? The chef in that picture?|Photo_Williams_Day_2]]
+[[(Point at photo) Is that you, [$Char2Last]? The chef in that picture?|Photo_Williams_Day_2]]
 ===
 title: Favourite_Williams_Day_2
 tags: 
@@ -106,13 +106,13 @@ tags:
 colorID: 0
 position: 1224,1835
 ---
-*[$playerName] picks up the photo.*
+[Action][$playerName] picks up the photo.*
 Skip:
 [$playerName]: I heard you say yesterday that this is a picture of your wife.
 Skip:
 [$Char2Last]: Put that down! That's my picture!
 Skip:
-*He grabs the picture from the PS and puts it down.*
+[Action][$Char2Last] grabs the picture from the PS and puts it down.*
 Skip:
 [$playerName]:I'm sorry, [$Char2Last], I didn't mean to upset you. Is that you? The chef in that picture?
 Skip:
@@ -127,7 +127,7 @@ tags:
 colorID: 0
 position: 1578,1832
 ---
-*[$playerName] points to a photo.*
+[Action][$playerName] points to a photo.
 Skip:
 [$playerName]: Is that you, [$Char2Last]? The chef in that picture?
 Skip:

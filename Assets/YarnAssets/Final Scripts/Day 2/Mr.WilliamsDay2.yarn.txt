@@ -3,8 +3,6 @@ tags:
 colorID: 0
 position: 776,1153
 ---
-[action]The door at [$Char2Last]' room is already open. There is an open suitcase on his bed. The PS enters.
-Skip:
 [$playerName]: Good morning, Mr. Williams. How are you doing?
 Skip:
 [$Char2Last]: I'm good. But--
@@ -51,13 +49,7 @@ tags:
 colorID: 0
 position: 780,2085
 ---
-*[$Char2Last] steps over to the door and yells into the hall.*
-Skip:
 [$Char2Last]: No! Help! Help! I’m being held hostage! Help!
-Skip:
-*He turns back to the PS.*
-Skip:
-[$Char2Last]: Leave me alone!
 
 [[[$Char2Last], I’m not touching you!|Help_Williams_Day_1]]
 [[No! Calm down!|Help_Williams_Day_1]]
@@ -103,61 +95,15 @@ Skip:
 Skip:
 <<Spawn Marissa>>
 <<SetPath Marissa Zero>>
-Skip:
 [$NurseManager]: Look, here she comes now! 
-Skip:
 [$Marissa]: Hi, Dad!  
-Skip:
-*Marissa gives her father a hug and a kiss.*
-Skip:
 [$Marissa]: What are you guys doing? 
-Skip:
 [$NurseManager]: Your dad was just telling me a little about your mom, and I was telling him that I can see where you get your good looks from!
-Skip:
 [$Marissa]: Haha!
-Skip:
 [$NurseManager]: [$Char2Last], why don’t you and your daughter join us for breakfast?
-Skip:
 [$Marissa]: Yeah, Dad, that’s a great idea. I’m hungry.
-Skip:
 [$Char2Last]: Okay.
-Skip:
 <<SetPath Marissa One Warp>>
 <<SetPath Player One Warp>>
 <<SetPath MrWilliams Five Warp>>
 <<SetPath Nurse One Warp>>
-
-[[Hallway_Williams_Day_1]]
-===
-title: Hallway_Williams_Day_1
-tags: 
-colorID: 0
-position: 775,2553
----
-[$NurseManager]: Come, let’s talk.
-Skip:
-*The Nurse Manager and [$playerName] leave [$Char2Last]’ room and walk to the nursing station.*
-Skip:
-Nurse Manager: I see you’re a little upset, [$playerName].
-Skip:
-[$playerName]: I didn’t know what to do! I kept trying to explain to [$Char2Last] where he was, but he kept saying he wanted to leave. I said he couldn’t go, and he got angry with me. I almost grabbed his arm to stop him.
-Skip:
-[$NurseManager]: He was frustrated because you didn’t understand what he wanted.
-Skip:
-[$playerName]: I was frustrated that he didn’t understand me no matter how many times I told him.
-Skip:
-[$NurseManager]: Repeating things won’t help him. Because of his dementia, his mind doesn’t process information the same way anymore. I’m very relieved that you remembered that under no circumstances are you to physically restrain a resident or grab his hand, or yell or raise your voice.
-Skip:
-[$playerName]: What should I have done?
-Skip:
-[$NurseManager]: Just be present with him. Don’t try to change his mind. You saw me provide redirection by talking about his wife.
-[$NurseManager]: As you get to know [$Char2Last], you’ll learn more about him - and each resident’s life - before they had dementia - so that you can talk to each person in a personal way about their life.
-[$NurseManager]: This will help you to understand why our residents may respond to their new life here with frustration and how we can find ways to help them feel more comfortable living here.
-[$NurseManager]: The most important thing as you’re getting to know each resident is to always remain calm, and don’t react. Apologize and distract them with conversation, give  yourself space to cool down and reflect on what was behind the responsive behaviour.
-Skip:
-[action]*The Nurse Manager gives the PS a booklet.*
-Skip:
-[$NurseManager]: Here, I want you to read this.  I think it will be very helpful.
-Skip:
-[$playerName]: Okay, I will. Thank you!
-===
