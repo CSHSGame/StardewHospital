@@ -7,7 +7,7 @@ public class PixelPerfectCamera : MonoBehaviour {
 	public float snapValue;
 	// Use this for initialization
 	void Awake () {
-		 GetComponent<Camera>().orthographicSize = ((Screen.height / 2f) / 100f);
+		// GetComponent<Camera>().orthographicSize = ((Screen.height / 2f) / 100f);
 		 snapValue = 1f / pixelsPerUnit;
 	}
 

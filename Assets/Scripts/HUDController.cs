@@ -91,5 +91,10 @@ public class HUDController : MonoBehaviour {
         dayManager.LoadDay();
     }
 
+    public void LoadDay4()
+    {
+        dayManager.currentDay = 4;
+        dayManager.LoadDay();
+    }
 
 }

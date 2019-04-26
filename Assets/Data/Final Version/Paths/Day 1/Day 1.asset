@@ -14,7 +14,9 @@ MonoBehaviour:
   DecisionPoints: []
   otherVariables: []
   CurrentDay: 0
-  Objectives: []
+  Objectives:
+  - {fileID: 11400000, guid: 3288a94359fd16340ace166b7caf9d3b, type: 2}
+  - {fileID: 11400000, guid: 5be3df6df055f6441a8007fdf38753b0, type: 2}
   PlayerData: {fileID: 11400000, guid: a58c654bf0a5618469f0389f4def402c, type: 2}
   npcs:
   - {fileID: 11400000, guid: 71217e822fb66054d9db18d4aea3f1fb, type: 2}

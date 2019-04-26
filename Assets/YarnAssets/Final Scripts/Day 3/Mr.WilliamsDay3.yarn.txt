@@ -179,4 +179,6 @@ Skip:
 [$Char2Last]: Wow, this smells delicious. *Takes a bite* This is fantastic, I love it!
 Skip:
 [$playerName]: Enjoy your breakfast, [$Char2Last]. I'll see you later
+<<NextDay GameManager>>
+
 ===

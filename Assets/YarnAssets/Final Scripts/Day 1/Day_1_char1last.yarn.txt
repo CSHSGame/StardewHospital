@@ -123,4 +123,6 @@ position: 1790,586
 //***PROGRAMMER NOTE*** she leaves
 [$NurseManager]: I think that’s probably good for today [$playerName], tomorrow we can really get you started. See you then?
 [$playerName]: You bet! Thanks so much. 
+<<NextDay GameManager>>
+
 ===

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: ToSydDay2
   target: 0
-  wayfindingIndex: 6
+  wayfindingIndex: 7
   displayText: 

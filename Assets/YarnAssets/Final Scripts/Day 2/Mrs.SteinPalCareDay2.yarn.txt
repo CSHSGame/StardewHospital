@@ -22,7 +22,7 @@ position: 12,344
 [$Char1Last]: Of course, dear. Can you come and pick me up afterwards? 
 [$playerName]: Sure, see you later!
 <<Fade FADE>>
-//[[PalCareDay2TeaTalk]]
+[[PalCareDay2TeaTalk]]
 ===
 title: PalCareDay2TeaTalk
 tags: 
@@ -39,5 +39,5 @@ position: 13,597
 [$playerName]: That’s a lovely thought. I’m learning a lot from you, [$Char2First]. I’ll see you tomorrow bright and early.
 [$Char1Last]: Good. Thanks for helping out. See you tomorrow.
 [$playerName]: Bye.
-<<SetObjective GameManager ToSydDay2>>
+<<SetObjective GameManager ToWilliamsDay2>>
 ===

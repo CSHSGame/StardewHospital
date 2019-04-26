@@ -29,11 +29,17 @@ public class DayManager : MonoBehaviour
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
     }
-	[ContextMenu("changeDay")]
+
+    [YarnCommand("NextDay")]
     public void IncrementDay()
     {
         currentDay++;
         LoadDay();
+    }
+    [YarnCommand("Reset")]
+    public void resetDay()
+    {
+        SceneManager.LoadScene(0);
     }
     [ContextMenu("testReview")]
     string newReview()

@@ -5,6 +5,7 @@ position: 526,494
 ---
 [$Char3FirstDoor]: Knock Knock
 [$Char3First]: It's open.
+<<Hide SydDoor>>
 <<SetPath Player Zero>>
 [$playerName]: Hey Syd, how's it going today?
 [$Char3First]: Okay. But 'no thank you' to whatever's on today. I don't feel like doing anything.
@@ -83,7 +84,7 @@ tags:
 colorID: 0
 position: 532,1302
 ---
-****PROGRAMMER NOTE****  PLAYER leaves the room and meets Supervisor in the hall.
+//****PROGRAMMER NOTE****  PLAYER leaves the room and meets Supervisor in the hall.
 <<SetPath Player Two>> 
 [$NurseManager]: Hello [$playerName]
 [[Hi, I was just talking with [$Char3First]...|LGBTQ_SECOND_DAY_HALLWAY_WRONG]]
@@ -113,11 +114,19 @@ position: 548,1811
 //****PROGRAMMER NOTE****  They walk to the office or another private space
 <<SetPath Player Three Warp>>
 <<SetPath Nurse2 One Warp>>
-[$playerName]: So, [$Char3First] hasn’t been coming to any activities since he moved in. We got to talking and he telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here. He told me that his friend Richard who comes to visit him most days is actally [$Char3First]’s life partner. They lived together for 40 years. He doesn't think they can be open about their relationship - he feels link only heterosexual people are welcomed here. 
-[$NurseManager]: I’m so sorry to hear that.  It sounds like you made a good connection with [$Char3First] - he must have felt he could trust you enough to tell you how he was feeling. I think the next step would be to involve our inter-professional team and discuss how we should proceed. 
-[$playerName]: Can I let Syd know we'll arrange a meeting?
-[$NurseManager]: Yes please [$playerName], thanks very much.
-[[LGBTQ_SECOND_DAY_SYDS_ROOM]]
+[$playerName]: So, [$Char3First] hasn’t been coming to any activities since he moved in.
+[$playerName]: We got to talking and he telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here.
+[$playerName]: He told me that his friend Richard who comes to visit him most days is actally [$Char3First]’s life partner. They lived together for 40 years. 
+[$playerName]: He doesn't think they can be open about their relationship - he feels link only heterosexual people are welcomed here. 
+[$NurseManager]: I’m so sorry to hear that.  It sounds like you made a good connection with [$Char3First].
+[$NurseManager]: He must have felt he could trust you enough to tell you how he was feeling.
+[$NurseManager]: I think the next step would be to involve our inter-professional team and discuss how we should proceed. 
+//[$playerName]: Can I let Syd know we'll arrange a meeting?
+[$playerName]: Should we let Syd know we'll arrange a meeting?
+[$NurseManager]: Yes [$playerName], that is a good Idea.
+<<Reset GameManager>>
+
+//[[LGBTQ_SECOND_DAY_SYDS_ROOM]]
 ===
 title: LGBTQ_SECOND_DAY_SYDS_ROOM
 tags: 

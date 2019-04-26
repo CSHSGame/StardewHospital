@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Yarn.Unity.Example;
 public class NpcLoader : MonoBehaviour
 {
     public DayDataHolder dayDataHolder;
@@ -58,6 +58,11 @@ public class NpcLoader : MonoBehaviour
                 Instantiate(npc.data.DialogueTriggerPrefab).GetComponent<DialogueTrigger>().Target = npc ;
             }
         }
+
+        Waypoints player = GameObject.FindObjectOfType<PlayerCharacter>().GetComponent<Waypoints>();
+        player.data = dayDataHolder.PlayerData;
+        player.loadData();
+        player.transform.position = new Vector3(-0.98f, 0.13f, 3.03f);
     }
     // Update is called once per frame
     void Update () {

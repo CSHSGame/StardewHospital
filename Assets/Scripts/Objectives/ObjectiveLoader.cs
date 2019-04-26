@@ -56,7 +56,11 @@ public class ObjectiveLoader : MonoBehaviour
             }
 
             map.StartSearch(keyValuePairs[name].wayfindingIndex);
-
+            Debug.Log("objective set to " + name);
+        }
+        else
+        {
+            Debug.LogError("objective " + name + " does not exist");
         }
     }
         // Update is called once per frame

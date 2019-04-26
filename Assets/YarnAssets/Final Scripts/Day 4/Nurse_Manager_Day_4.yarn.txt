@@ -4,8 +4,8 @@ colorID: 0
 position: 1225,964
 ---
 [$NurseManager]: Good Morning [$playerName]...
-[$playerName]: Hey $NurseManager. Is something wrong?
-[$NurseManager]: Actually yes... [$Char2Last] was taken to the hospital last night. She was having difficulty breathing.  
+[$playerName]: Hey [$NurseManager]. Is something wrong?
+[$NurseManager]: Actually yes... [$Char1Last] was taken to the hospital last night. She was having difficulty breathing.  
 [$playerName]: Oh no... I knew she wasn't feeling well yesterday but I didn't think...
 [$playerName]: I dont know what I thought.
 [$NurseManager]: Anyways, sorry to tell you this first thing, but I thought you'd want to know.

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Working Scenes/Julian Start Screen.unity
     guid: f26350d66722b444481004104f17e077
   - enabled: 1
+    path: Assets/Scenes/Working Scenes/DigifestDemo.unity
+    guid: a5f2db752cb4dad42b31419e77a48ad8
+  - enabled: 1
     path: Assets/Scenes/Working Scenes/pier new test scene Feb 26.unity
     guid: 31067adf3a27a8a48a65a216c28d829c
   - enabled: 1

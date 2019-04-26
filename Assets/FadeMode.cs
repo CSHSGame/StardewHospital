@@ -16,8 +16,17 @@ public class FadeMode : MonoBehaviour {
     [YarnCommand("DeFade")]
     public void FadeOFF()
     {
-        GetComponent<Image>().color = Off;
+        StartCoroutine(fadeWait());
+       // GetComponent<Image>().color = Off;
     }
+    public IEnumerator fadeWait()
+    {
+        yield return new WaitForSeconds(1);
+        GetComponent<Image>().color = Off;
+
+        yield return null;
+    }
+    
     // Use this for initialization
     void Start () {
 		
