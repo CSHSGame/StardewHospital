@@ -19,5 +19,5 @@ colorID: 0
 position: 526,494
 ---
 [$Char3First]: Have a good day.
-
+<<SetObjective GameManager ToWilliamsDay2>>
 ===

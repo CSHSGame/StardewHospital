@@ -12,6 +12,6 @@ position: -476,619
 [$NurseManager]: I think she’s in the living area. If she’s not to busy perhaps you can ask her to show you around?
 [$playerName]: Okay, I will. Thanks!
 [$NurseManager]: Good luck!
-
+<<SetObjective GameManager ToSteinDay1>>
 //***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
 ===

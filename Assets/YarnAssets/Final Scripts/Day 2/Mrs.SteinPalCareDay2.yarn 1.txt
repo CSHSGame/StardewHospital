@@ -39,4 +39,5 @@ position: 13,597
 [$playerName]: That’s a lovely thought. I’m learning a lot from you, [$Char2First]. I’ll see you tomorrow bright and early.
 [$Char1Last]: Good. Thanks for helping out. See you tomorrow.
 [$playerName]: Bye.
+<<SetObjective GameManager ToSydDay2>>
 ===
