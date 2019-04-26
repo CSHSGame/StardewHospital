@@ -80333,6 +80333,26 @@ Prefab:
       propertyPath: m_Name
       value: williams room
       objectReference: {fileID: 0}
+    - target: {fileID: 1905118228281916, guid: 4d9830518323d3643a280ac5f43c10d9, type: 2}
+      propertyPath: m_Name
+      value: Conference Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564146966197134, guid: 4d9830518323d3643a280ac5f43c10d9, type: 2}
+      propertyPath: m_Name
+      value: Lobby Centre
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246754746234672, guid: 4d9830518323d3643a280ac5f43c10d9, type: 2}
+      propertyPath: m_Name
+      value: Living Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119443963938676, guid: 4d9830518323d3643a280ac5f43c10d9, type: 2}
+      propertyPath: m_Name
+      value: Outside Syd's Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990932601468014, guid: 4d9830518323d3643a280ac5f43c10d9, type: 2}
+      propertyPath: m_Name
+      value: Mr. Williams
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d9830518323d3643a280ac5f43c10d9, type: 2}
   m_IsPrefabAsset: 0
@@ -127202,6 +127222,7 @@ MonoBehaviour:
   ClipboardUI: {fileID: 1511215938}
   EndofDayUI: {fileID: 606568484}
   dayData: {fileID: 11400000, guid: 96c2380bd886ffa43a6bfbee049cd992, type: 2}
+  dayManager: {fileID: 0}
 --- !u!1 &1552459472
 GameObject:
   m_ObjectHideFlags: 0

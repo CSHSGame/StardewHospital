@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cafcd5eb0c57f814b9c95e46141e38bd, type: 3}
-  m_Name: ToNurse
+  m_Name: ToNurseDay2
   m_EditorClassIdentifier: 
-  name: beginday3
+  name: ToNurseDay2
   target: 0
   wayfindingIndex: 1
   displayText: 
