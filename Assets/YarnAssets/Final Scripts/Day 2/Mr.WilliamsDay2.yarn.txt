@@ -140,5 +140,6 @@ Skip:
 [$NurseManager]: Here, I want you to read this.  I think it will be very helpful.
 Skip:
 [$playerName]: Okay, I will. Thank you!
+<<SetDialog Nurse null>>
 <<SetObjective GameManager ToSydDay2>>
 ===

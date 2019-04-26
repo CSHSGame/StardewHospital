@@ -11,7 +11,7 @@ position: -476,622
 [$NurseManager]: After that please check in with [$Char2Last], I believe you met him yesterday as well.
 [$playerName]: Yes, I did. 
 [$NurseManager]: Lastly, please check in with our resident [$Char3First], I think you missed eachother yesterday.
-[$playerName]: Okay, I'll due that. 
+[$playerName]: Okay, I'll do that. 
 [$NurseManager]: Thanks! Good luck.
 <<SetObjective GameManager ToSteinDay2>>
 //***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go

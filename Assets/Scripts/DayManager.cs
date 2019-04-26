@@ -9,6 +9,7 @@ public class DayManager : MonoBehaviour
 {
     NpcLoader npcLoader;
     ObjectiveLoader objectiveLoader;
+    HUDController hUDController;
     public DayDataHolder[] Days;
     public int currentDay = 0;
     ExampleVariableStorage variableStorage;
@@ -17,17 +18,21 @@ public class DayManager : MonoBehaviour
     void Start ()
     {
         variableStorage = FindObjectOfType<ExampleVariableStorage>();
+        hUDController = FindObjectOfType<HUDController>();
         npcLoader = GetComponent<NpcLoader>();
         objectiveLoader = GetComponent<ObjectiveLoader>();
 
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
+        hUDController.Setup(Days[currentDay]);
+
     }
     public void LoadDay()
     {
         npcLoader.DeleteNpc();
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
+        hUDController.Setup(Days[currentDay]);
     }
 
     [YarnCommand("NextDay")]

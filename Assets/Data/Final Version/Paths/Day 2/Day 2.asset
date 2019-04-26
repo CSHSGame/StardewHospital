@@ -26,8 +26,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3082b4522a065be419c62647a68a2fce, type: 2}
   - {fileID: 11400000, guid: 94ba7b9b59dccf04fabcea1b1b2badc3, type: 2}
   - {fileID: 11400000, guid: 3803532faeb7ea541a807b8fdb51e523, type: 2}
-  DayOfTheWeek: 
-  DayNumber: 
-  Month: 
-  TimeOfDay: 
+  DayOfTheWeek: TUE
+  DayNumber: 02
+  Month: JULY
+  TimeOfDay: 8:00
   AMOrPM: 0

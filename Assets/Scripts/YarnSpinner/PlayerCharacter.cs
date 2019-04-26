@@ -97,7 +97,7 @@ namespace Yarn.Unity.Example {
             });
 
          //   print(target);
-            if (target != null && target.enabled == true)
+            if (target != null && target.enabled == true && target.talkToNode != "null")
             {
                 // Kick off the dialogue at this node.
                 target.OnConversationStart();

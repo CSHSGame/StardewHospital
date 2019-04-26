@@ -23,8 +23,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f92d622b15502444d843f5c14b8bed17, type: 2}
   - {fileID: 11400000, guid: ff7bcb7ca0673824c80f3442ad212544, type: 2}
   - {fileID: 11400000, guid: 9cc8f0a48e92370428a04f195e40f49a, type: 2}
-  DayOfTheWeek: 
-  DayNumber: 
-  Month: 
-  TimeOfDay: 
+  DayOfTheWeek: THU
+  DayNumber: 04
+  Month: JULY
+  TimeOfDay: 8:00
   AMOrPM: 0
