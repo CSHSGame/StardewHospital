@@ -25,7 +25,7 @@ public class DayManager : MonoBehaviour
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
         hUDController.Setup(Days[currentDay]);
-
+        StartCoroutine(showDayText());
     }
     public void LoadDay()
     {
