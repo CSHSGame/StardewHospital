@@ -34,7 +34,39 @@ namespace Yarn.Unity.Example
 {
     public class NPC : MonoBehaviour
     {
+        Waypoints movement;
+        [YarnCommand("DeSpawn")]
+        public void turnInvisible()
+        {
+        
+                movement.onPathDone.AddListener(() => 
+                {
+                    turnInvisibleDelegate();
+                    movement.onPathDone.RemoveAllListeners();
 
+                });
+            
+        }
+        [YarnCommand("Hide")]
+        public void Hide()
+        {
+            turnInvisibleDelegate();
+
+
+
+        }
+
+        private void turnInvisibleDelegate()
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            this.enabled = false; ;
+        }
+        [YarnCommand("Spawn")]
+        public void turnVisible()
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+            this.enabled = true;
+        }
         private enum Characters
         {
             Martin,
@@ -46,17 +78,17 @@ namespace Yarn.Unity.Example
             Secretary,
             NurseManager,
         }
-        private Characters thisCharacter;
+        //private Characters thisCharacter;
 
-        public NpcController aiController;
+        //public NpcController aiController;
 
-        public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
+      //  public ExampleVariableStorage variableStorage; //Link this later without public variabling it.
 
-        public FadeObjectInOut roomShade;
+        //public FadeObjectInOut roomShade;
 
         public GameObject ConversUI;
 
-        public string characterName = "";
+        //public string characterName = "";
 
         [FormerlySerializedAs("startNode")]
         public string talkToNode = "";
@@ -83,6 +115,7 @@ namespace Yarn.Unity.Example
             {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
+            movement = GetComponent<Waypoints>();
         }
 
         // Update is called once per frame
@@ -94,8 +127,8 @@ namespace Yarn.Unity.Example
 
         public void OnConversationStart()
         {
-            if(aiController != null)
-                aiController.isTalking = true;
+            //if(aiController != null)
+              //  aiController.isTalking = true;
         }
         
         public void ICanConverse(bool inRange)
@@ -120,6 +153,7 @@ namespace Yarn.Unity.Example
             data.talkToNode = talkToNode;
             data.scriptToLoad = scriptToLoad;
             data.GameObjectName = this.gameObject.name;
+           
             data.sprite = this.GetComponentInChildren<SpriteRenderer> ().sprite;
            // data.prefab = test;
 
@@ -136,6 +170,11 @@ namespace Yarn.Unity.Example
             gameObject.name = data.GameObjectName;
            
             GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;
+            GetComponentInChildren<SpriteRenderer>().gameObject.AddComponent<BoxCollider>();
+            if(data.visibleAtStart == false)
+            {
+                turnInvisibleDelegate();
+            }
         }
     }
    

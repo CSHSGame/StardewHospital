@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: b8944cb6e8b57d5439d79b23e8d54b68
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_spritesheet_walkBack_m_hairBunBlack_0
+    21300002: player_spritesheet_walkBack_m_hairBunBlack_1
+    21300004: player_spritesheet_walkBack_m_hairBunBlack_2
+    21300006: player_spritesheet_walkBack_m_hairBunBlack_3
+    21300008: player_spritesheet_walkBack_m_hairBunBlack_4
+    21300010: player_spritesheet_walkBack_m_hairBunBlack_5
+    21300012: player_spritesheet_walkBack_m_hairBunBlack_6
+    21300014: player_spritesheet_walkBack_m_hairBunBlack_7
+    21300016: player_spritesheet_walkBack_m_hairBunBlack_8
+    21300018: player_spritesheet_walkBack_m_hairBunBlack_9
+    21300020: player_spritesheet_walkBack_m_hairBunBlack_10
+    21300022: player_spritesheet_walkBack_m_hairBunBlack_11
+    21300024: player_spritesheet_walkBack_m_hairBunBlack_12
+    21300026: player_spritesheet_walkBack_m_hairBunBlack_13
+    21300028: player_spritesheet_walkBack_m_hairBunBlack_14
+    21300030: player_spritesheet_walkBack_m_hairBunBlack_15
+    21300032: player_spritesheet_walkBack_m_hairBunBlack_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f8ed4e81994a04db39f4fb4746397c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef75ab98b0e26848affbabc35201cf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510f68dcfd4652a47ad7b5a83a4fd6e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95676ceb0b08d9746a0bf896fa988f0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee2f1d079f76e9409c9a0a793338d1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ab864fc652ca54b8fa2b1f464e89dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911fcd74b9921fc40bae21ec6978d42a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b87882142717884e901f9a0fc1b69d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cafe5a35e70e04a913a0e80b48b316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e481404a095c348a5698510ca9447c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d451098de0427cd489ea41f28a0e03e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c95082bf11f5e8499f9d5f6d2b1c1b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac97b534ac7d07b4aa181ebf3aeb50eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582177a1333ecac43822f4a1e82b69b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4677bd5321c3147ac2ccd84c04edc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9a814284254d94e9fb4f17b579efbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_m_hairBunBlack_16
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531aa839d449e9c4db11fd4b891ddab7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fa075cd424a7d3a4fa09b106ef180036
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

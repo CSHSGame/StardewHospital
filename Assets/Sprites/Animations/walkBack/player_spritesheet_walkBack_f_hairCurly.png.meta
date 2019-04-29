@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: b34eb432d7d998f4bb8130056111d188
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_spritesheet_walkBack_f_hairCurly_0
+    21300002: player_spritesheet_walkBack_f_hairCurly_1
+    21300004: player_spritesheet_walkBack_f_hairCurly_2
+    21300006: player_spritesheet_walkBack_f_hairCurly_3
+    21300008: player_spritesheet_walkBack_f_hairCurly_4
+    21300010: player_spritesheet_walkBack_f_hairCurly_5
+    21300012: player_spritesheet_walkBack_f_hairCurly_6
+    21300014: player_spritesheet_walkBack_f_hairCurly_7
+    21300016: player_spritesheet_walkBack_f_hairCurly_8
+    21300018: player_spritesheet_walkBack_f_hairCurly_9
+    21300020: player_spritesheet_walkBack_f_hairCurly_10
+    21300022: player_spritesheet_walkBack_f_hairCurly_11
+    21300024: player_spritesheet_walkBack_f_hairCurly_12
+    21300026: player_spritesheet_walkBack_f_hairCurly_13
+    21300028: player_spritesheet_walkBack_f_hairCurly_14
+    21300030: player_spritesheet_walkBack_f_hairCurly_15
+    21300032: player_spritesheet_walkBack_f_hairCurly_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d64cd508409db40a7aaef5f439b5ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa38abd09b692a4ab60c62c1f83f0cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36496bfcb9adcf46afb09f9a9199a31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfdca9d8a7788646b4943a35585f852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872ae9c5462e8e140a73bcf0b682c79d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4aac3da6213e148a8c192886793d5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de115864729198a4dabe9f5da22eab44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37b79e073627da48aec2ce8a96e1621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba6369abb7f8f64a93ed0a1c50697eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfadca1caab4f1244b4f9470efa6dbed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a180de3a7d5e045bc2eb2d4dc16a40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e35f7c587441164e9c62ccd3fb802ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46087170e596ace4798ded5c72ea04d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc970816832f0c14bbc8b97a5561f28f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7e1b1f80cb1db4cb285b13dfe3fd61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505318347808c4d4bb31077f6cad14ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkBack_f_hairCurly_16
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 70.29412
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b71a4a1d58294641b130b1a4ef3bde3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 35b9b24448d2de54fb985c812b387252
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

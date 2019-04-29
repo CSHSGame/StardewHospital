@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 9a965d736939bbb4681880cd3d38f5ad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_spritesheet_walkFront_m_hairHeadwrap_0
+    21300002: player_spritesheet_walkFront_m_hairHeadwrap_1
+    21300004: player_spritesheet_walkFront_m_hairHeadwrap_2
+    21300006: player_spritesheet_walkFront_m_hairHeadwrap_3
+    21300008: player_spritesheet_walkFront_m_hairHeadwrap_4
+    21300010: player_spritesheet_walkFront_m_hairHeadwrap_5
+    21300012: player_spritesheet_walkFront_m_hairHeadwrap_6
+    21300014: player_spritesheet_walkFront_m_hairHeadwrap_7
+    21300016: player_spritesheet_walkFront_m_hairHeadwrap_8
+    21300018: player_spritesheet_walkFront_m_hairHeadwrap_9
+    21300020: player_spritesheet_walkFront_m_hairHeadwrap_10
+    21300022: player_spritesheet_walkFront_m_hairHeadwrap_11
+    21300024: player_spritesheet_walkFront_m_hairHeadwrap_12
+    21300026: player_spritesheet_walkFront_m_hairHeadwrap_13
+    21300028: player_spritesheet_walkFront_m_hairHeadwrap_14
+    21300030: player_spritesheet_walkFront_m_hairHeadwrap_15
+    21300032: player_spritesheet_walkFront_m_hairHeadwrap_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8acce99646f3f1449a419091b6f775d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830a1c8133555404b8468fffe4772497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8641ab36086df41a8951bf0b705e98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef48b51a1f044d64383dc246039a5bf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_4
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c05eba5e22748040a11a7b592aefb6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9526dacd4b3894bb043ad7bcfaca3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90d45a0b73a27d46851ac333db90286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_7
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5cfac20076de944b913ea476fa1cd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7057d3b0b1a56d4fb75e466658b5ab0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a002a1942c658d1459f9731630d1549d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_10
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8adef31be0504b40b9ee65e14c073f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_11
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c125ef7177e7274b9049769150b8252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_12
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201d95fc879854c43b1d20a30bdc93fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_13
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f487b53ea71424d98e2694e695c640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_14
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a799ca9c7d5fa9f49bc3a18283c859d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_15
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2fde54d74dc434dbf1a1122fe21a52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_m_hairHeadwrap_16
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a530d3584f65af4d8757c9d0c6f7a3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 65097cfdb5293e64f99a2e95ac2bdc17
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

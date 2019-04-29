@@ -9,6 +9,7 @@ public class NpcDayData : ScriptableObject
 {
     public Vector3 position;
     public Quaternion rotation;
+    [Space]
     public Vector3 scale;
     public Sprite sprite;
     // Use this for initialization
@@ -18,6 +19,10 @@ public class NpcDayData : ScriptableObject
     public string GameObjectName;
     [Header("waypoints stuff")]
     public pointsVector3[] waypoints;
+
+    [Space]
+    public DialogueTrigger DialogueTriggerPrefab;
+    public bool visibleAtStart = true;
 }
 [System.Serializable]
 public struct pointsVector3
@@ -31,5 +36,10 @@ public struct pointsVector3
         Name = name;
         this.location = new List<Vector3>();
         this.location.Add( location);
+    }
+    public pointsVector3 setName(string _name)
+    {
+        Name = _name;
+        return this;
     }
 }

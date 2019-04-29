@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: Player Day 1
+  m_EditorClassIdentifier: 
+  position: {x: -1.8391023, y: 0.25581813, z: 3.494152}
+  rotation: {x: -0, y: -0, z: -0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  sprite: {fileID: 21300006, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  talkToNode: Day_1_Living_Area_Final
+  scriptToLoad: {fileID: 0}
+  GameObjectName: Player
+  waypoints:
+  - Name: Player To Dining
+    location:
+    - {x: 0.43038666, y: 0, z: 21.177752}
+    - {x: -4.5108786, y: -0.3139753, z: 15.267116}
+    - {x: -4.56226, y: -0.36594722, z: 9.044902}
+    - {x: -17.504791, y: -0.37448472, z: 8.966419}
+    - {x: -17.410917, y: 0.2558181, z: 15.1756}
+    - {x: -17.13604, y: 0.30830532, z: 21.390959}
+  - Name: Player To Garden
+    location:
+    - {x: -16.12826, y: 0.25581813, z: 20.953724}
+    - {x: -16.246197, y: 0.25581813, z: 13.814585}
+    - {x: -7.6380053, y: 0.25581813, z: 9.512106}
+    - {x: 20.265387, y: 0.25581813, z: 9.478712}
+    - {x: 20.326939, y: 0.25581813, z: 41.832302}
+    - {x: 15.943243, y: 0.25581813, z: 44.549175}
+  - Name: Player to Syd
+    location:
+    - {x: 15.94324, y: 0.25581813, z: 44.54918}
+    - {x: 20.320606, y: 0.25581813, z: 39.68132}
+    - {x: 20.554619, y: 0.25581813, z: 8.060288}
+    - {x: 28.581234, y: 0.25581813, z: 7.9043093}
+    - {x: 38.35906, y: 0.25581813, z: 7.8209534}
+  - Name: Player To Lobby
+    location:
+    - {x: 37.4904, y: 0.25581813, z: 7.283898}
+    - {x: 28.516825, y: 0.25581813, z: 7.3798122}
+    - {x: 13.140835, y: 0.25581813, z: 7.3827806}
+    - {x: 3.764028, y: 0.25581813, z: 7.3829026}
+  - Name: ' test'
+    location:
+    - {x: -1.05, y: 0.13, z: 4.1}
+  DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1

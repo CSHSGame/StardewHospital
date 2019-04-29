@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
+  m_Name: Feb_DemoKnocked
+  m_EditorClassIdentifier: 
+  VariablesToEvaluate:
+  - Feb_DemoKnocked
+  Operation: 0
+  VariableTrue: "Today you had an awkward encounter with [$Char4Last]. This wasn\u2019t
+    necessarily anyone\u2019s fault - these things can happen, and the important thing
+    is how we respond when they do. It\u2019s great that you knocked and waited for
+    her response - respecting the privacy of residents helps put them at ease, and
+    let\u2019s them feel like this is really their home. In future, wait outside until
+    a resident has clearly given consent for you to enter their room.\r\n"
+  VariableFalse: "Today you entered [Char4Last]\u2019s room without knocking, and
+    as a result you ended up in quite an awkward predicament. It\u2019s always important
+    to knock and wait for a response before entering any resident\u2019s room. Respecting
+    the privacy of residents helps put them at ease, and let\u2019s them feel like
+    this is really their home.\r\n"

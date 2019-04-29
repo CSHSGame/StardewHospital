@@ -1,0 +1,25 @@
+title: Self_Care_Start
+tags: 
+colorID: 0
+position: 543,260
+---
+[$playerName]: Hi Ranjit! I haven't seen you in a while - how's your student placement going?
+[$Student]: Ugh please -- don’t even try to talk to me! I’m in such a bad mood today…
+[$playerName]: Hmmm... What’s wrong?
+[$Student]: *sigh* I just came back from giving a bath to the new resident and half of it was spent trying to stop her from crying… 
+[$Student]: It took every ounce of strength not to breakdown and cry myself. 
+[$playerName]: You've been having a tough time?
+[$Student]: This job is just too much… I’m so physically and emotionally exhausted all the time… 
+[$Student]: Some days I just feel like I’m going to collapse. I don't have the energy for this anymore.
+[$playerName]: Ranjit, it sounds like you're burnt out.
+[$Student]: I don’t know… what does burnout feel like?
+[$playerName]: It can happen when we get really stressed. 
+[$playerName]: Some signs of burnout are fatigue, forgetfulness, insomnia, loss of appetite, lack of energy and focus.
+[$playerName]: It can even increase the chance of illness.
+[$Student]: That’s exactly how I’ve been for the past three months…
+[$playerName]: This is a tough job and we all have to learn to manage our stress. Stress management and burnout prevention are very important. 
+[$playerName]: Luckily, we have an employee wellness program here at [$HospitalName]. I really recommend going to the office and speaking with someone. 
+[$playerName]: We need to practice self-care, not just for ourselves, but so that we can better take care of our residents.
+[$Student]: Thanks [$playerName], that's really valuable advice. I appreciate you listening and being understanding.
+[$playerName]: Of course.
+===

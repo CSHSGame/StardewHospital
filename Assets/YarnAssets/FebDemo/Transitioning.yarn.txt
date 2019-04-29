@@ -1,0 +1,142 @@
+title: Transitioning_Start
+tags: 
+colorID: 0
+position: 152,140
+---
+<<if visited("Transitioning_Start")>>
+[$Susannah]: See mom, this is such a nice place. 
+[$Susannah]: I see you'll have a room-mate - I think that's fantastic.  You’re not going to be alone. 
+[$SupervisorName]: We’re going to do our best to make Mrs. Lee comfortable. We have an excellent team here that will work together to address all her needs. And this is our Placement Student [$playerName], they're going to help her settle into her new room.
+[$playerName]: Hi, Mrs. Lee.  It’s good to meet you.    
+[$SupervisorName]:  Susannah, I'd like to speak with you and your husband for a few minutes - can we go to my office?  We’ll be back in a few minutes. 
+<<SetPath Supervisor Zero>> //Supervisor leaves the room
+<<SetPath Brian Zero>> //Brian leaves the room
+<<SetPath Susannah Zero>>//Susannah leaves the room
+[$playerName]: My name is [$playerName].  I’m going to help take care of you today. Would you like to sit down?
+[$Char5Last]: NO, NO, NO! 
+[$playerName]: I’m sorry. I don’t understand what you’re saying?
+[$Char5Last]: Susannah!    I Go Home NOW! (needs translation)
+    ->I DONT KNOW WHAT YOU ARE SAYING.<<$Transitioning_Rude = true>>
+    ->I'm sorry [$Char5Last] but I can't understand you. I'm just going to look in the hall to see if there's someone who can help.<<Transitioning_Rude = false>>
+<<SetPath Supervisor One>>//***PROGRAMMER NOTE*** The nurse manager comes to the doorway
+<<if $Transitioning_Rude == true>>[$SupervisorName]: [$playerName]! That's not an appropriate way to speak to [$Char5Last].
+[$playerName]: Sorry... I just got frustrated...<<endif>>
+[$SupervisorName]: Can I be of some help?
+[$playerName]: Yes Please! [$Char5Last] seems to need something urgently but I don't know what she's saying.
+[$SupervisorName]: Well, that's one of the reasons we keep these tablets here! You can use a website to translate between Cantonese and English, and vice versa.
+[$playerName]: Oh! That sounds extremely helpful! Let me give it a try..
+[$playerName]: (**Speaking into tablet**) [$Char5Last], what's wrong? How can we help you??
+[$Tablet]: 怎麼了？我們該怎樣幫助你*
+[$Char5Last]:!!!
+[$Char5Last]: 我的女兒離開了。跟我女兒一起去吧
+[$Tablet]: My daughter left. Go with my daughter.
+[$playerName]: Oh!
+[$playerName]: [$Char5Last], your daughter hasn't left - she'll be back in a few minutes.
+[$Tablet]: 你女兒沒有離開 - 她會在幾分鐘後回來。 
+[$Char5Last]:[smile]
+<<SetPath Supervisor One>> //Supervisor returns to the room
+<<SetPath Brian One>> //Brian returns to the room
+<<SetPath Susannah One>>//Susannah returns to the room
+[$SupervisorName]: Ah! Your mother was just asking for you.
+[$Susannah]: Thanks for keeping her company!
+[$playerName]: Of course! See you later.
+
+<<else>>
+[$playerName]: I should leave them be.
+<<endif>>
+===
+title: Transitioning_Day_2
+tags: 
+colorID: 0
+position: 441,136
+---
+//***PROGRAMMER NOTE** Player enters bedroom and Mrs Lee, Brian, and Susannah are already there.
+<<if visited("Transitioning_Day_3")>>
+YAAAA BOY
+<<endif>>
+[$SocialWorkerName]: Hello everyone. It’s good to see you. I know this transition can be difficult for all of you - and for Mrs Lee most of all. But with the tablet we can communicate with her in Cantonese. Our hope is that this will help your mom communicate her needs and to be more comfortable.                              
+[$Susannah]: I hope so! I’m so worried about her.  
+<<SetPath Katherine Zero>> //***PROGRAMMER NOTE** (Katherine, Mrs. Lee’s room-mate, enters the room)  
+[$SocialWorkerName]: Ah! [$Char5Last], here’s your roommate, Katherine.  I think you’ll get along very well with her. Katherine, this is [$Char5Last], her daughter, Susannah and her son-in-law, Brian.
+[$Katherine]:  Hello [$Char5Last], nice to meet you.  Hello, Susannah - I’m happy to meet you. 
+[$Susannah]: It’s good to meet you, too. But I’m afraid my mother is feeling upset about this move.
+[$Katherine]: 	That’s understandable.  Most people feel anxious about moving to a new home - I was certainly very nervous when I moved in here. 
+[$Katherine]: I’ll do my best to help her feel safe and comfortable here.  
+<<SetPath Susannah Zero>>
+<<SetPath Controller Zero>>//***PROGRAMMER NOTE** Susannah walks over to the window - after a moment player follows
+[$playerName]: How are you doing?
+[$Susannah]: I feel horrible. What kind of daughter am I?  My mom and dad moved here from their home in China to take care of me and my siblings. 
+[$Susannah]: They left everything behind.  He couldn’t come with us today because he is too emotional about it.  It’s my fault. 
+    ->I understand. I could never do this to my parents. I mean this is a nice place and she’s going to be taken care of – don’t get me wrong. But I agree it’s better if she was still at home. <<$Transitioning_Sympathetic = false>>
+    ->You don’t have to feel like that. My friend’s mom went into long-term care and first they were worried but they all got over it. <<$Transitioning_Sympathetic = false>>
+    ->I can see this has been really hard for you... <<$Transitioning_Sympathetic = true>>
+<<if $Transitioning_Sympathetic == true>> Susannah: Thank you for listening, [$playerName]. I appreciate it. <<endif>>
+<<if $Transitioning_Sympathetic == false>> Susannah:That's not very comforting, to be perfectly honest.
+[$playerName]: I'm sorry, you're right. I shouldn't have said that.<<endif>>
+[$Player]: I think many families feel the way you do now - transitioning a loved one into long term care is a really difficult process.
+[$Player]: But we can take good care of your mom with our many services here. We have volunteers that can speak Cantonese with her. We have activities from her culture that she will enjoy. 
+[$Player]: You’ve mentioned how your mom always took great care of you and your kids.  I believe that’s what you’re doing for her now, and I think she feels that ways too.
+[$Susannah]: Thank you. 
+[$Player]: I've got to go, take care for now. 
+[$Susannah]: Bye!
+
+
+
+
+===
+title: Transitioning_Day_3
+tags: 
+colorID: 0
+position: 690,136
+---
+<<SetPath Susannah Zero>>//***Programmers Note********* Susannah walks up to player in the hallway
+
+[$Susannah]:  Hi [$playerName]!  my name's Susannah , I'm [$Char5Last]'s daughter - we met the other day. 
+[$playerName]: Of course! How's it going?
+[$Susannah]: I'm worried my mother isn't eating propperly - she never ate western food at home and I don't think she's used to it. 
+    ->Well, if a resident doesn’t eat, we can’t force feed them. It’s up to her whether she wants to eat or not...<<$Transitioning_Accomodate = false>>
+    ->Let me find out what can be done. Maybe the nutritionist can come up with a meal plan that would suit her better.<<$Transitioning_Accomodate = false>>
+<<if $Transitioning_Accomodate == false>>
+[$Susannah]: That doesn't sound right at all... I'd like to speak with your supervisor about this.
+<<endif>>
+<<if $Transitioning_Accomodate == true>>
+[$Susannah]: That would be great.
+[$playerName]:Let me walk you back to your mom's room, then I'll ask the Nurse Manager to come and discuss it with you. <<endif>>
+<<SetPath Controller Zero>>
+<<SetPath Susannah One>>//***Progerammers Note********Player and Susannah walk to Resident’s Room. Nurse Manager, Mrs. Lee, Susannah and the PLAYER 
+
+[$playerName]: Oh, [$SupervisorName], you're here! I was just going to go find you. Susannah wanted to ask you about making some adjustments to [$Char5Last]'s mealplan.
+[$SupervisorName]: Of course! How can I help? 
+[$Susannah]:   I’m concerned about my mother's health... Brian and I are worried she’s not eating her meals. 
+[$SupervisorName]: Hmm, well it’s only been a few days since she moved in - sometimes a change like that can affect a person's appetite.
+[$Susannah]: Sure, but I think it also has to do with the type of food here. At home, she would have authentic Chinese meals - that’s what she’s eaten all her life.
+[$SupervisorName]: Of course. Thanks for letting us know - I’ll have the dietician stop by with a meal plan survey to see what choices might best fit your mom. 
+[$Susannah]: Okay, thank you!
+[$SupervisorName]:  However, I should say because we have residents from many different cultural backgrounds I’m afraid we can’t accommodate everyone’s preferences.  
+[$SupervisorName]: We do try to offer some alternatives and some families bring in a resident’s favourite foods from home to supplement our menus. 
+[$Susannah]:  I didn’t know we could do that.  We can certainly bring her some home-cooked meals. 
+
+[$SupervisorName]: There's one other thing - it's a new program here . The residents learn to cook different foods from their culture and they teach each other.  I think your mom would enjoy it.
+[$Susannah]: 還有一件事 - 這是一個新的計劃。居民學會從他們的文化中烹飪不同的食物，他們互相教導。我想你的媽媽會喜歡它。
+[$Char5Last]: 我會做飯 //happytag
+[$playerName]: Yes! And you’ll be cooking with the other residents.  The class is every Wednesday afternoon. 
+[$Susannah]: You could make new friends to share your famous dishes from China. 
+[$Char5Last]: 他們不喜歡我。我不會說英語。 
+[$Susannah]:  She doesn’t feel like she belongs here.  Katherine is warm and friendly but mom feels she has no one to talk to.  
+    ->Tell her I’ll go to the class with her – with my translation device – or  we will have a volunteer who speaks Cantonese to translate for your mom during the class. <<$Transitioning_Class = true>> 
+	->It’s really important for you to try all our activities, Mrs. Lee. You can’t just stay in your room all the time. <<$Transitioning_Class = false>> 
+<<if $Transitioning_Class == true>> 
+[$Susannah]: 告訴她我會和她一起上課 - 用我的翻譯裝置 - 或者我們會有一個志願者在課堂上為你的媽媽講粵語。
+[$Char5Last]: Okay!
+<<endif>>
+<<if $Transitioning_Class == false>> 
+[$Susannah]: 李女士，嘗試我們所有的活動對你來說非常重要。你不能一直呆在自己的房間裡。
+[$Char5Last]: 沒有。
+[$SupervisorName]: Um, I think what [$playerName] means is that we can accomadate any communication gaps with the other residents. 
+[$SupervisorName]: We can use the tablet to translate for her,or try to have a volunteer who speaks Cantonese to translate for your mom during the class.
+<<endif>>
+[$Susannah]: Thank you, that would be great. I think mom's going to love cooking class. 
+[$Char5Last]: 好，我會試試。
+[$playerName]: That’s great. I've got to run, see you all soon! [$Char5Last], I'll see you on Wednesday and we'll go to your class together. Bye!
+
+===

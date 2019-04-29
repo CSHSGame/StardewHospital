@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: MrWilliamsDay Data 1
+  m_EditorClassIdentifier: 
+  position: {x: -29.37, y: 0, z: 9.66}
+  rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  scale: {x: 0.7, y: 0.70000046, z: 1}
+  sprite: {fileID: 21300018, guid: 02d58f8137e27e14a95bdeab52d890f9, type: 3}
+  talkToNode: Transitioning_Day_3
+  scriptToLoad: {fileID: 4900000, guid: 9793c70261b5e6844b2625e1f2e0a7e4, type: 3}
+  GameObjectName: MrWilliams
+  waypoints:
+  - Name: BackIntoRoom
+    location:
+    - {x: -18.58, y: 0, z: -1.24}
+    - {x: -16.43541, y: -0.00000027819917, z: 1.3446069}
+    - {x: -20.071415, y: -0.00000036103376, z: 2.4784288}
+    - {x: -19.617859, y: -0.00000038278262, z: 5.5974216}
+  - Name: ' '
+    location:
+    - {x: -17.833302, y: 0.00000023841858, z: -1.4744114}
+    - {x: -17.812117, y: 0.00000023841858, z: 0.66957766}
+    - {x: -16.242016, y: 0.00000023841858, z: 2.30085}
+  - Name: ' '
+    location:
+    - {x: -28.01155, y: 0, z: 9.128656}
+    - {x: -19.225946, y: 0, z: 9.184275}
+  DialogueTriggerPrefab: {fileID: 114969636156360666, guid: 828aa363bc679124cbe597e77ab4f612,
+    type: 2}

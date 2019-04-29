@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: MarissaDay2
+  m_EditorClassIdentifier: 
+  position: {x: -10.45, y: 0, z: 8.43}
+  rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  scale: {x: 1.3, y: 1.3, z: 1.3}
+  sprite: {fileID: 21300028, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  talkToNode: 
+  scriptToLoad: {fileID: 0}
+  GameObjectName: Marissa
+  waypoints:
+  - Name: enters room
+    location:
+    - {x: -10.092697, y: 0, z: 7.10753}
+    - {x: -8.563445, y: 0, z: 7.1068625}
+    - {x: -8.617488, y: 0, z: 1.7647452}
+    - {x: -9.23502, y: 0, z: 1.7831107}
+  - Name: to diningroom
+    location:
+    - {x: -8.494987, y: 0, z: 1.8250008}
+    - {x: -8.465321, y: 0, z: 7.6710243}
+    - {x: -9.634301, y: 0, z: 16.351294}
+    - {x: -10.230134, y: 0, z: 18.809717}
+  - Name: ' '
+    location:
+    - {x: -10.45, y: 0, z: 9.43}
+  DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 0

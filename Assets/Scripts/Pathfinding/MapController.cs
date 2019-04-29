@@ -55,7 +55,8 @@ public class MapController : MonoBehaviour
     private GameObject ArrowHolder;
     public int destinationRoom = 0;
     // Use this for initialization
-    void Start()
+    private bool initialized = false;
+    void SetUp()
     {
         edges = new List<Edge>();
         if (Application.isPlaying)
@@ -71,14 +72,20 @@ public class MapController : MonoBehaviour
                // createArrow2(e.startNode, e.endNode);
 
             }
-            StartSearch(destinationRoom);
+            initialized = true;
+            //StartSearch(destinationRoom);
             // createArrow(RoomNode[destinationRoom].ob2, RoomNode[destinationRoom]);
             // createArrow(RoomNode[destinationRoom].ob2.ob2, RoomNode[destinationRoom].ob2);
+          
         }
     }
 
     public void StartSearch(int destination)
     {
+        if(initialized == false)
+        {
+            SetUp();
+        }
         Breadth_First_Search(allNodes[destination]);
 
     }

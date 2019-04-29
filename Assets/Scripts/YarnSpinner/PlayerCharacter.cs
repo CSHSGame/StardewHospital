@@ -31,12 +31,12 @@ using System.Collections.Generic;
 namespace Yarn.Unity.Example {
     public class PlayerCharacter : MonoBehaviour {
 
-        public float minPosition = -5.3f;
-        public float maxPosition = 5.3f;
+        //public float minPosition = -5.3f;
+       // public float maxPosition = 5.3f;
 
         public float DialogRange = 1.0f;
 
-        public float moveSpeed = 1.0f;
+        //public float moveSpeed = 1.0f;
 
         public float interactionRadius = 2.0f;
 
@@ -97,7 +97,8 @@ namespace Yarn.Unity.Example {
             });
 
          //   print(target);
-            if (target != null) {
+            if (target != null && target.enabled == true && target.talkToNode != "null")
+            {
                 // Kick off the dialogue at this node.
                 target.OnConversationStart();
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318dedf28785a454b8b45cd9796db09e, type: 3}
+  m_Name: LINKING_SCENE
+  m_EditorClassIdentifier: 
+  VariablesToEvaluate:
+  - always
+  Operation: 0
+  VariableTrue: "You gave Ranjit some valuable advice today! Taking good care of yourself
+    isn\u2019t being selfish \u2013 it keeps you in a healthy state of mind, and that
+    affects everything you do, ultimately enabling you to better care for our residents
+    and perform better at your job\r\n"
+  VariableFalse: "You gave Ranjit some valuable advice today! Taking good care of
+    yourself isn\u2019t being selfish \u2013 it keeps you in a healthy state of mind,
+    and that affects everything you do, ultimately enabling you to better care for
+    our residents and perform better at your job\r\n"

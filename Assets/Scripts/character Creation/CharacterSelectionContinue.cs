@@ -20,7 +20,7 @@ public class CharacterSelectionContinue : MonoBehaviour
     }
 
     [ContextMenu("Save")]
-    private void Save()
+    public void Save()
     {
         CharacterSaveData data = new CharacterSaveData();
 

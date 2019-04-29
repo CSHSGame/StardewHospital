@@ -12,7 +12,8 @@ public class ObjectiveLoader : MonoBehaviour
     public Dictionary<string, ObjectiveData> keyValuePairs;
     public ObjectiveData[] Objectives;
     public MapController map;
-    public string test;
+    public string targetObjective;
+    public int currentObjective = 0;
     [ContextMenu("start search")]
     public void startSearch()
     {
@@ -29,11 +30,19 @@ public class ObjectiveLoader : MonoBehaviour
         {
             keyValuePairs.Add(o.name, o);
         }
-	}
+        targetObjective = Objectives[currentObjective].name;
+        SetObjective(targetObjective);
+
+    }
+
+    public void IncrementObjective()
+    {
+        currentObjective++;
+    }
     [ContextMenu ("SetObjective")]
     public void testo()
     {
-        SetObjective(test);
+        SetObjective(targetObjective);
     }
 
     [YarnCommand("SetObjective")]
@@ -41,9 +50,17 @@ public class ObjectiveLoader : MonoBehaviour
     {
         if (keyValuePairs.ContainsKey(name))
         {
-            displayText.text = keyValuePairs[name].displayText;
-            map.StartSearch(keyValuePairs[name].wayfindingIndex);
+            if(displayText!= null)
+            {
+                displayText.text = keyValuePairs[name].displayText;
+            }
 
+            map.StartSearch(keyValuePairs[name].wayfindingIndex);
+            Debug.Log("objective set to " + name);
+        }
+        else
+        {
+            Debug.LogError("objective " + name + " does not exist");
         }
     }
         // Update is called once per frame
