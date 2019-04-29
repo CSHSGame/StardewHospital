@@ -33,19 +33,30 @@ public class BodyPart : MonoBehaviour
                 Front.gameObject.SetActive(true);
                 Side.gameObject.SetActive(false);
                 Back.gameObject.SetActive(false);
-                FrontAnim.SetBool("WalkingForward", walkingForward);
+                if(FrontAnim != null)
+                {
+                    FrontAnim.SetBool("WalkingForward", walkingForward);
+
+                }
                 break;
             case facing.Side:
                 Front.gameObject.SetActive(false);
                 Side.gameObject.SetActive(true);
                 Back.gameObject.SetActive(false);
-                SideAnim.SetBool("WalkingSide", walkingSide);
+                if (SideAnim != null)
+                {
+                    SideAnim.SetBool("WalkingSide", walkingSide);
+                }
                 break;
             case facing.Back:
                 Front.gameObject.SetActive(false);
                 Side.gameObject.SetActive(false);
                 Back.gameObject.SetActive(true);
-                BackAnim.SetBool("WalkingBack", walkingBack);
+                if(BackAnim != null)
+                {
+                    BackAnim.SetBool("WalkingBack", walkingBack);
+
+                }
                 break;
         }
 
@@ -79,15 +90,15 @@ public class BodyPart : MonoBehaviour
         }
         else
         {
-            if (FrontAnim.isActiveAndEnabled)
+            if (FrontAnim != null && FrontAnim.isActiveAndEnabled)
             {
                 FrontAnim.SetBool("WalkingForward", walkingForward);
             }
-            else if (SideAnim.isActiveAndEnabled)
+            else if (SideAnim != null && SideAnim.isActiveAndEnabled)
             {
                 SideAnim.SetBool("WalkingSide", walkingSide);
             }
-            else if (BackAnim.isActiveAndEnabled)
+            else if (BackAnim != null && BackAnim.isActiveAndEnabled)
             {
                 BackAnim.SetBool("WalkingBack", walkingBack);
             }
