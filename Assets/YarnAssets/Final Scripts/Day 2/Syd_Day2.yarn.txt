@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 540,260
 ---
-[$playerName]: [$Char3First], May I come in?
+[$playerName]: [$Char3Lastt], May I come in?
 [$Char3First]: Come in.
 [$playerName]: Hi there, Mr.Wojcik.  My name is [$playerName] I wanted to introduce myself and help you get ready for the day, if I can. Music therapy is this morning. I heard you were a musician.  Would you like to go? 
 [$Char3First]: Hello ... I don’t think I feel like going out today.

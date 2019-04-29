@@ -74,7 +74,7 @@ Skip:
 Skip:
 [$NurseManager]: It’s ok, [$playerName]. I’ll take it from here.
 Skip:
-[$NurseManager]: [$Char1First], I’m sorry that [$playerName] upset you. Let me help you with that. 
+[$NurseManager]: [$Char2Last], I’m sorry that [$playerName] upset you. Let me help you with that. 
 Skip:
 [$Char2Last]: They tried to stop me from going home.
 Skip:
