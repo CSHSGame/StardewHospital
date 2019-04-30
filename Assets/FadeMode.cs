@@ -8,18 +8,23 @@ public class FadeMode : MonoBehaviour {
 
     public Color On;
     public Color Off;
+    public Text msgText;
     [YarnCommand("Fade")]
     public void FadeOn()
     {
         GetComponent<Image>().color = On;
     }
     [YarnCommand("DeFade")]
-    public void FadeOFF()
+    public void FadeWaitCommand()
     {
         StartCoroutine(fadeWait());
        // GetComponent<Image>().color = Off;
     }
-    public IEnumerator fadeWait()
+    public void FadeOff()
+    {
+        GetComponent<Image>().color = Off;
+    }
+    private IEnumerator fadeWait()
     {
         yield return new WaitForSeconds(1);
         GetComponent<Image>().color = Off;

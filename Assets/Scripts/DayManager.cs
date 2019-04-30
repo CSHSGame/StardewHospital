@@ -25,7 +25,7 @@ public class DayManager : MonoBehaviour
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
         hUDController.Setup(Days[currentDay]);
-
+        StartCoroutine(showDayText());
     }
     public void LoadDay()
     {
@@ -33,8 +33,26 @@ public class DayManager : MonoBehaviour
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
         hUDController.Setup(Days[currentDay]);
+        StartCoroutine(showDayText());
     }
 
+    public IEnumerator showDayText()
+    {
+        FadeMode fader =  FindObjectOfType<FadeMode>();
+        if(fader != null)
+        {
+            fader.FadeOn();
+            fader.msgText.text = Days[currentDay].name;
+            fader.msgText.enabled = true;
+            yield return new WaitForSecondsRealtime(2f);
+            fader.msgText.enabled = false;
+
+            fader.FadeOff();
+
+        }
+
+        yield return null;
+    }
     [YarnCommand("NextDay")]
     public void IncrementDay()
     {
