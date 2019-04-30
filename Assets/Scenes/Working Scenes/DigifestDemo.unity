@@ -150516,13 +150516,13 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2112205549}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 493c1f71a89d0cc499943501b1bbed1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Assets: {fileID: 11400000, guid: 2bef97a9bce28be41bf71cb29df233c2, type: 2}
-  Assets2: {fileID: 11400000, guid: 41e86393938cae347a10f8d0e78641df, type: 2}
+  Assets2: {fileID: 11400000, guid: 90b4d3d83c1763b4a9ffc6aff25149e6, type: 2}
 --- !u!65 &2112205552
 BoxCollider:
   m_ObjectHideFlags: 0
