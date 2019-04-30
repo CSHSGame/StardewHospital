@@ -4,7 +4,7 @@ colorID: 0
 position: 16,98
 ---
 [action] The Player approaches [$Char1Last] in the Living Area.
-[$playerName]: Hi there [$Char1First], looks like you’re having fun in here!
+[$playerName]: Hi there [$Char1Last], looks like you’re having fun in here!
 [$Char1Last]: Hi! What’s your name again, dear?
 
 [[Oh [$Char1Last], don’t you remember, I’m [$playerName]. We met yesterday.|PalCareDay2_OhRight]]
