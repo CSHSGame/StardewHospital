@@ -16,6 +16,7 @@ public class HUDController : MonoBehaviour {
     public GameObject EndofDayUI;
     public DayDataHolder dayData;
 
+    public EoDClipboard EODClipboard;
     public DayManager dayManager;
 
 	// Use this for initialization
@@ -77,24 +78,28 @@ public class HUDController : MonoBehaviour {
     {
         dayManager.currentDay = 0;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(0);
     }
 
     public void LoadDay2()
     {
         dayManager.currentDay = 1;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(1);
     }
 
     public void LoadDay3()
     {
         dayManager.currentDay = 2;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(2);
     }
 
     public void LoadDay4()
     {
         dayManager.currentDay = 3;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(3);
     }
 
 }
