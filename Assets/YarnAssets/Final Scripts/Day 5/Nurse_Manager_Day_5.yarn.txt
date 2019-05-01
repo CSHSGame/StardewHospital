@@ -5,7 +5,7 @@ position: 1225,964
 ---
 [$NurseManager]: Good Morning [$playerName].
 [$playerName]: Hey [$SupervisorName]. Any news on [$Char2Last]?
-[$NurseManager]: Not really, they're going to keep her at the hospital for another day for observation.   
+[$NurseManager]: Not really. They're going to keep her at the hospital for another day for observation.   
 [$playerName]: So you think she'll be back tomorrow?
 [$NurseManager]: I hope so.
 [$playerName]: Me too.

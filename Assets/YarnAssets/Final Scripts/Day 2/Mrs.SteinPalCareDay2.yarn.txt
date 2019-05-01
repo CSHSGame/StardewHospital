@@ -3,12 +3,11 @@ tags:
 colorID: 0
 position: 16,98
 ---
-[action] The Player approaches [$Char1Last] in the Living Area.
 [$playerName]: Hi there [$Char1Last], looks like you’re having fun in here!
 [$Char1Last]: Hi! What’s your name again, dear?
 
-[[Oh [$Char1Last], don’t you remember, I’m [$playerName]. We met yesterday.|PalCareDay2_OhRight]]
-[[I'm [$playerName], I was here meeting all the residents, and we met as well!|PalCareDay2_OhRight]]
+[[Oh [$Char1Last], don’t you remember? I’m [$playerName]. We met yesterday.|PalCareDay2_OhRight]]
+[[I'm [$playerName]. I was here meeting all the residents, and we met as well!|PalCareDay2_OhRight]]
 ===
 title: PalCareDay2_OhRight
 tags: 
@@ -30,7 +29,7 @@ colorID: 0
 position: 13,597
 ---
 <<DeFade FADE>>
-[$Char1Last]: How did it go?
+[$playerName]: How did it go?
 [$Char1Last]: Pretty well, thanks! *cough cough*
 [$playerName]: I can see why the residents enjoy this program, [$Char1Last]. You have a great way of making people feel comfortable.
 [$Char1Last]: I’ve learned as I get older that all that matters in life is love and relationships.

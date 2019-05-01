@@ -25,7 +25,7 @@ tags:
 colorID: 0
 position: 1230,1278
 ---
-[$playerName]: (Knock, knock!)
+[action]Knock Knock
 Skip:
 [$Char2Last]: Yes?
 Skip:
@@ -167,7 +167,7 @@ Skip:
 Skip:
 [$Char2Last]: Wow... There’s a lot of people here.
 Skip:
-[$playerName]: Yeah, it looks like you’re not the only ones who love sausages and pancakes and they are waiting for your opinion about it. Where do you sit, Mr. Williams?
+[$playerName]: Yeah, it looks like you’re not the only ones who love sausages and pancakes, and they are waiting for your opinion about it. Where do you sit, Mr. Williams?
 Skip:
 [$Char2Last]: Right over there, by the left side of the window. 
 Skip:

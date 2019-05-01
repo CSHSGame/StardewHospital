@@ -3,12 +3,12 @@ tags:
 colorID: 0
 position: -233,613
 ---
-[$playerName]: Hi, sorry to interrupt - I’m looking for [$Char1Last]?
+[$playerName]: Hi, sorry to interrupt. I’m looking for [$Char1Last]?
 [$Char1Last]: That’s me! 
-[$playerName]: Hello! My name is [$playerName], [$NurseManager] wanted me to come by and introduce myself - I’m the new placement student and today is my first day. 
+[$playerName]: Hello! My name is [$playerName]. [$NurseManager] wanted me to come by and introduce myself. I’m the new placement student and today is my first day. 
 [$Char1Last]: It’s a pleasure to meet you! Please, call me [$Char1First].
-[$playerName]: [$NurseManager] was wondering if you could give me a little tour of Bloom Village - do you think you’d be able to show me around today?
-[$Char1Last]: Sure! I have some time now - shall we? This is the living area, it’s a common space for residents to sit and chat, read or socialize.
+[$playerName]: [$NurseManager] was wondering if you could give me a little tour of Bloom Village. Do you think you’d be able to show me around today?
+[$Char1Last]: Sure! I have some time now. Shall we? This is the living area, it’s a common space for residents to sit and chat, read or socialize.
 [$playerName]: That’s great!
 [$Char1Last]: Follow me, I’ll show you the dining area.
 [[Day_1_Dining_Area_Final]]
@@ -22,7 +22,7 @@ position: 31,610
 ---
 <<SetPath Stein Zero Warp>>
 <<SetPath Player Zero Warp>>
-[$Char1Last]: Here’s the dining area, the food here here is pretty good!
+[$Char1Last]: Here’s the dining area. The food here is pretty good!
 [$playerName]: People seem like they’re enjoying it.
 [$Char1Last]: The next stop on our tour is a good one, I think you’ll like it.
 [[Day_1_Walking_To_Garden_Final]]
@@ -47,7 +47,7 @@ tags:
 colorID: 0
 position: 421,610
 ---
-[$walking][$Char1Last]: It's always nice to meet new people, but seeing people go can be really is tough.
+[$walking][$Char1Last]: It's always nice to meet new people, but seeing people go can be really tough.
 [[Day_1_Garden_Final]]
 ===
 title: Day_1_Garden_Final
@@ -56,17 +56,17 @@ colorID: 0
 position: 728,602
 ---
 [$Char1Last]: But enough of this depressing talk, this is what I wanted to whow you - the beautiful garden we have here at Bloom Village!
-[$playerName]: Oh my goodness… It’s beautiful…
+[$playerName]: Oh my goodness… It’s lovely…
 [$Char1Last]: The garden is a really special place for a lot of the residents here. 
 [$playerName]: I can see why. 
 [$Char1Last]: Oh, it’s [$Char2Last]! I’ll introduce you.
 <<SetPath Williams Zero>>
 [$Char2Last]: Hello there. 
 [$Char1Last]: [$Char2Last], I want to introduce you to our new placement student, [$playerName].
-[$playerName]: Hello, [$Char2Last],  nice to meet you. 
-[$Char1Last]: [$Char2Last] used to be a chef! We’re still trying to convince him to cook us up a meal! Haha.
+[$playerName]: Hello, [$Char2Last], nice to meet you. 
+[$Char1Last]: [$Char2Last] used to be a chef! We’re still trying to convince him to cook us up a meal! Haha!
 [$Char2Last]: Haha! I used to be, I don’t cook much these days though.
-[$Char1Last]: I’m just giving [$playerName] a small tour of Bloom Village, see you later [$Char2Last]!
+[$Char1Last]: I’m just giving [$playerName] a small tour of Bloom Village. See you later [$Char2Last]!
 [$Char1Last]: See you soon!
 [[Day_1_Walk_To_Syd]]
 
@@ -82,7 +82,8 @@ position: 985,597
 <<SetPath Player Two Warp>>
 [$walking][$playerName]: [$Char2Last] seemed really nice!  
 //old line He seemed really nice! 
-[$walking][$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years. Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
+[$walking][$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years.
+[$walking][$Char1Last]: Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
 [$walking][$playerName]: Oh, I had no idea…
 [[Day_1_Syds_Door_Final]]
 ===
@@ -118,7 +119,7 @@ position: 1790,586
 [$Char1Last]: Anyways, I’m sure you’ll get an opportunity to meet him tomorrow. It looks like our tour has come full circle! 
 //***PROGRAMMER NOTE***Nurse manager enters
 [$NurseManager]: How did it go?
-[$playerName]: Great! [$Char1Last]  is a fantastic tour-guide!
+[$playerName]: Great! [$Char1Last] is a fantastic tour-guide!
 [$Char1Last]: Haha! You’re flattering me. Anyways, it was such a pleasure to meet you [$playerName]. Take care!
 //***PROGRAMMER NOTE*** she leaves
 [$NurseManager]: I think that’s probably good for today [$playerName], tomorrow we can really get you started. See you then?
