@@ -115,6 +115,11 @@ namespace Yarn.Unity.Example
             {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
+
+            if (scriptToLoad != null)
+            {
+                //ConversUI = GameObject.Find("sprite/SpaceBar");    
+            }
             movement = GetComponent<Waypoints>();
         }
 
@@ -136,13 +141,28 @@ namespace Yarn.Unity.Example
            
             if (inRange)
             {
-                if( ConversUI !=null)
-                    ConversUI.SetActive(true);
+                if (FindObjectOfType<DialogueRunner>().isDialogueRunning == false)
+                {
+                    Debug.Log("inRange");
+                    if (ConversUI != null)
+                    {
+                        ConversUI.gameObject.SetActive(true);
+                        Debug.Log("ConverseUI");
+                    }
+                }
+                else
+                {
+                    if (ConversUI != null)
+                    {
+                        this.ConversUI.gameObject.SetActive(false);
+                        Debug.Log("NoConverseUI");
+                    }
+                }
             }
             else
             {
-                if (ConversUI != null)
-                    ConversUI.SetActive(false);
+                this.ConversUI.gameObject.SetActive(false);
+                Debug.Log("NoConverseUI");
             }
         }
         public void BakeData()

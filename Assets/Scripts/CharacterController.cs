@@ -12,6 +12,8 @@ public class CharacterController : MonoBehaviour {
     public BodyPart bodyPartBody;
     public BodyPart bodyPartHead;
     public BodyPart bodyPartHair;
+
+    public VideoManager vidManager;
     //public SpriteRenderer sprite;
 
     // Use this for initialization
@@ -28,6 +30,12 @@ public class CharacterController : MonoBehaviour {
         {
             return;
         }
+
+        if (vidManager.VidPlaying == true)
+        {
+            return;
+        }
+
         direction.z = 0.0f;
         direction.x = 0.0f;
 

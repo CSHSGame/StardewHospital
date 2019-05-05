@@ -11,6 +11,8 @@ public class VideoController : MonoBehaviour
     public UnityEvent OnVideoDone;
     // Use this for initialization
     private VideoPlayer vp;
+
+    //public 
     void Start ()
     {
         vp = gameObject.GetComponent<VideoPlayer>();

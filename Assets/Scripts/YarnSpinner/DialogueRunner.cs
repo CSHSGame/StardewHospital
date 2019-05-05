@@ -218,13 +218,16 @@ namespace Yarn.Unity
             // one at a time.
             foreach (Yarn.Dialogue.RunnerResult step in dialogue.Run(startNode)) {
 
-                if (step is Yarn.Dialogue.LineResult) {
+                if (step is Yarn.Dialogue.LineResult)
+                {
 
                     // Wait for line to finish displaying
                     var lineResult = step as Yarn.Dialogue.LineResult;
                     yield return StartCoroutine (this.dialogueUI.RunLine (lineResult.line));
 
-                } else if (step is Yarn.Dialogue.OptionSetResult) {
+                }
+                else if (step is Yarn.Dialogue.OptionSetResult)
+                {
 
                     // Wait for user to finish picking an option
                     var optionSetResult = step as Yarn.Dialogue.OptionSetResult;
@@ -233,22 +236,26 @@ namespace Yarn.Unity
                         optionSetResult.options,
                         optionSetResult.setSelectedOptionDelegate
                     ));
-
-                } else if (step is Yarn.Dialogue.CommandResult) {
+                }
+                else if (step is Yarn.Dialogue.CommandResult)
+                {
 
                     // Wait for command to finish running
-
                     var commandResult = step as Yarn.Dialogue.CommandResult;
 
-                    if (DispatchCommand(commandResult.command.text) == true) {
+                    if (DispatchCommand(commandResult.command.text) == true)
+                    {
                         // command was dispatched
-                    } else {
+                    }
+                    else
+                    {
                         yield return StartCoroutine (this.dialogueUI.RunCommand (commandResult.command));
                     }
 
 
-                } else if(step is Yarn.Dialogue.NodeCompleteResult) {
-
+                }
+                else if(step is Yarn.Dialogue.NodeCompleteResult)
+                {
                     // Wait for post-node action
                     var nodeResult = step as Yarn.Dialogue.NodeCompleteResult;
                     yield return StartCoroutine (this.dialogueUI.NodeComplete (nodeResult.nextNode));
