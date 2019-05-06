@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 526,494
 ---
-[$Char3FirstDoor]: Knock Knock
+[Action]Knock Knock
 [$Char3First]: It's open.
 <<Hide SydDoor>>
 <<SetPath Player Zero>>
@@ -40,7 +40,7 @@ position: 526,494
 [$Char3First]: We lived together for almost forty years. He’s more than my best friend, he’s my partner – my life partner.
 [$Char3First]: But it became harder and harder for him looking after me. He has some health issues of his own.
 
-[[What?! You’re gay?! Syd I had no idea!|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
+[[What?! You’re gay? Syd, I had no idea!|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
 [[Oh, that’s not a big deal. You don’t need to worry about that.|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
 [[Moving here has separated you from Richard - now I understand why you don’t feel comfortable here.|LGBTQ_SECOND_DAY_DEC_1_RIGHT]]
 ===
@@ -95,7 +95,7 @@ tags:
 colorID: 0
 position: 901,1567
 ---
-[$NurseManager]: We don’t talk about our residents in public spaces like this - we need to protect their privacy and confidentiality. Let’s go to my office.
+[$NurseManager]: We don’t talk about our residents in public spaces like this. We need to protect their privacy and confidentiality. Let’s go to my office.
 [[LGBTQ_SECOND_DAY_OFFICE]]
 ===
 title: LGBTQ_SECOND_DAY_HALLWAY_RIGHT
@@ -115,15 +115,15 @@ position: 548,1811
 <<SetPath Player Three Warp>>
 <<SetPath Nurse2 One Warp>>
 [$playerName]: So, [$Char3First] hasn’t been coming to any activities since he moved in.
-[$playerName]: We got to talking and he telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here.
-[$playerName]: He told me that his friend Richard who comes to visit him most days is actally [$Char3First]’s life partner. They lived together for 40 years. 
-[$playerName]: He doesn't think they can be open about their relationship - he feels link only heterosexual people are welcomed here. 
+[$playerName]: We got to talking and he was telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here.
+[$playerName]: He told me that his friend Richard who comes to visit him most days is actally his life partner. They lived together for 40 years. 
+[$playerName]: He doesn't think they can be open about their relationship - he feels like only heterosexual people are welcomed here. 
 [$NurseManager]: I’m so sorry to hear that.  It sounds like you made a good connection with [$Char3First].
 [$NurseManager]: He must have felt he could trust you enough to tell you how he was feeling.
 [$NurseManager]: I think the next step would be to involve our inter-professional team and discuss how we should proceed. 
 //[$playerName]: Can I let Syd know we'll arrange a meeting?
 [$playerName]: Should we let Syd know we'll arrange a meeting?
-[$NurseManager]: Yes [$playerName], that is a good Idea.
+[$NurseManager]: Yes, [$playerName], that is a good Idea.
 <<Reset GameManager>>
 
 //[[LGBTQ_SECOND_DAY_SYDS_ROOM]]
@@ -134,8 +134,9 @@ colorID: 0
 position: 541,2091
 ---
 ****PROGRAMMERS NOTE - THE PLAYER WALKS BACK TO SYD'S ROOM AND HIS DOOR IS OPEN
-[$playerName]: Hey [$Char3First], I spoke with my supervisor, she was really concerned to here about your situation. She's going to arrange a meeting with you and some key members of the faculty here. How does that sound?
-[$Char3First]: Great,  Richard will come, too.
+[$playerName]: Hey [$Char3First], I spoke with my supervisor, she was really concerned to here about your situation.
+[$playerName]: She's going to arrange a meeting with you and some key members of the faculty here. How does that sound?
+[$Char3First]: Great, Richard will come, too.
 [[I don’t think so.  It’s a confidential meeting, Richard wont be able to attend.|LGBTQ_SECOND_DAY_SYDS_ROOM_WRONG]]
 [[Don’t bother, that isn't necessary. You can update him after the meeting!|LGBTQ_SECOND_DAY_SYDS_ROOM_WRONG2]]
 [[Of course! It’s your right to have anyone you want accompany you to any meetings here.|LGBTQ_SECOND_DAY_SYDS_ROOM_RIGHT]] 
