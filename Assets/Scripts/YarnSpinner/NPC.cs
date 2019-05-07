@@ -171,10 +171,20 @@ namespace Yarn.Unity.Example
            
             GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;
             GetComponentInChildren<SpriteRenderer>().gameObject.AddComponent<BoxCollider>();
-            if(data.visibleAtStart == false)
+            NpcAnimController npcAnim = GetComponentInChildren<NpcAnimController>();
+         //   Waypoints wp = GetComponent<Waypoints>();
+            //wp.Setup();
+            if (data.AnimatorController != null && npcAnim)
+            {
+                //Debug.Log("fdfffffffff");
+                npcAnim.test = data.AnimatorController;
+                npcAnim.Setup();
+            }
+            if (data.visibleAtStart == false)
             {
                 turnInvisibleDelegate();
             }
+         
         }
     }
    

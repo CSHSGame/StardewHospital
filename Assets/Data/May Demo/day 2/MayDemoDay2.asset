@@ -15,8 +15,10 @@ MonoBehaviour:
   otherVariables: []
   CurrentDay: 0
   Objectives: []
-  PlayerData: {fileID: 0}
-  npcs: []
+  PlayerData: {fileID: 11400000, guid: 282b5c4b7b60e434da1a6a3d0e96e74f, type: 2}
+  npcs:
+  - {fileID: 11400000, guid: 131cc58ceecd1ad4a952a7c57a7864f1, type: 2}
+  - {fileID: 11400000, guid: ab251867faf78fd448ba358833fd71ab, type: 2}
   DayOfTheWeek: 
   DayNumber: 
   Month: 
