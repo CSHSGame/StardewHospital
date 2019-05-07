@@ -14,4 +14,4 @@ MonoBehaviour:
   name: ToNurseDay2
   target: 0
   wayfindingIndex: 1
-  displayText: 
+  displayText: Go talk to the Nursing Manager at the Nursing Station.

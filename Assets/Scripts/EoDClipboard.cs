@@ -15,8 +15,6 @@ public class EoDClipboard : MonoBehaviour {
     public Text Title3;
     public Text Text3;
 
-
-
     //Decision Points Outcomes
     private bool DP1Outcome1TrueOutcome2False;
     private bool DP2Outcome1TrueOutcome2False;
@@ -121,7 +119,6 @@ public class EoDClipboard : MonoBehaviour {
         {
             Title1.text = DP1C2H;
             Text1.text = DP1C2T;
-
         }
 
         if (DP2Outcome1TrueOutcome2False)

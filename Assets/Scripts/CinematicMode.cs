@@ -8,6 +8,7 @@ public class CinematicMode : MonoBehaviour
     // Use this for initialization
     public GameObject panel1;
     public GameObject panel2;
+    public GameObject HUD;
 
 
     public void TurnON()
@@ -16,9 +17,8 @@ public class CinematicMode : MonoBehaviour
         {
             panel1.SetActive(true);
             panel2.SetActive(true);
+            HUD.SetActive(false);
         }
-      
-
     }
     public void TurnOFF()
     {
@@ -26,15 +26,9 @@ public class CinematicMode : MonoBehaviour
         {
             panel1.SetActive(false);
             panel2.SetActive(false);
+            HUD.SetActive(true);
         }
 
     }
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

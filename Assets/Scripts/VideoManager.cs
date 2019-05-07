@@ -4,15 +4,13 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.UI;
 using UnityEngine.Video;
-public class VideoManager : MonoBehaviour {
+public class VideoManager : MonoBehaviour
+{
 
     public bool VidPlaying = false;
 
     public VideoPlayer vidPlayer;
     public GameObject[] behaviors;
-
-    
-    public BoxCollider SydIntroTrigger;
 
     //public VideoClip SydIntroClip;
     //public VideoClip WilliamsIntroClip;
@@ -61,55 +59,10 @@ public class VideoManager : MonoBehaviour {
 
     IEnumerator LoadVideoWait()
     {
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.25f);
         foreach (GameObject mono in behaviors)
         {
             mono.SetActive(true);
         }
     }
-
-    //public void PlaySydVid()
-    //{
-    //    vidPlayer.clip = SydIntroClip;
-    //    foreach (GameObject mono in behaviors)
-    //    {
-    //        mono.SetActive(true);
-    //    }
-    //}
-
-    //public void PlayWilliamsVid()
-    //{
-    //    vidPlayer.clip = WilliamsIntroClip;
-    //    foreach (GameObject mono in behaviors)
-    //    {
-    //        mono.SetActive(true);
-    //    }
-    //}
-
-    //public void PlayEveVid()
-    //{
-    //    vidPlayer.clip = EveIntroClip;
-    //    foreach (GameObject mono in behaviors)
-    //    {
-    //        mono.SetActive(true);
-    //    }
-    //}
-
-    //public void PlayMarieVid()
-    //{
-    //    vidPlayer.clip = MarieIntroClip;
-    //    foreach (GameObject mono in behaviors)
-    //    {
-    //        mono.SetActive(true);
-    //    }
-    //}
-
-    //public void PlayLeeVid()
-    //{
-    //    vidPlayer.clip = LeeIntroClip;
-    //    foreach (GameObject mono in behaviors)
-    //    {
-    //        mono.SetActive(true);
-    //    }
-    //}
 }

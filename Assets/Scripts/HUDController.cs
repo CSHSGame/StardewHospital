@@ -19,7 +19,6 @@ public class HUDController : MonoBehaviour {
 
     public EoDClipboard EODClipboard;
     public DayManager dayManager;
-    public ObjectiveLoader objectiveLoader;
 
 	// Use this for initialization
 	public void Setup (DayDataHolder day)
@@ -74,6 +73,24 @@ public class HUDController : MonoBehaviour {
         }
 
     }
+
+    public void OpenEoDClipboard()
+    {
+        if (EndofDayUI.activeInHierarchy == true)
+        {
+            EndofDayUI.SetActive(false);
+        }
+        else if (EndofDayUI.activeInHierarchy == false)
+        {
+            EndofDayUI.SetActive(true);
+        }
+    }
+
+    public void CloseEoDClipboard()
+    {
+
+    }
+
 
 
     public void LoadDay1()
