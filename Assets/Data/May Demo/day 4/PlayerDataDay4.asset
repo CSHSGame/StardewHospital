@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: PlayerDataDay4
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  scale: {x: 0, y: 0, z: 0}
+  sprite: {fileID: 0}
+  AnimatorController: {fileID: 0}
+  talkToNode: 
+  scriptToLoad: {fileID: 0}
+  GameObjectName: 
+  waypoints:
+  - Name: abit into the room
+    location:
+    - {x: 38.648506, y: 0.13, z: 6.4398623}
+    - {x: 38.651463, y: 0.13, z: 2.887072}
+  - Name: into room
+    location:
+    - {x: 38.65146, y: 0.13, z: 2.887072}
+    - {x: 36.77347, y: 0.13, z: -0.29698825}
+  - Name: to surpervisor
+    location:
+    - {x: 36.77347, y: 0.13, z: -0.2969882}
+    - {x: 38.455463, y: 0.13, z: 2.7051988}
+    - {x: 38.470974, y: 0.13, z: 6.4550314}
+    - {x: 37.93276, y: 0.13, z: 13.766011}
+  - Name: to office
+    location:
+    - {x: 37.93276, y: 0.13, z: 13.76601}
+    - {x: 37.908897, y: 0.13, z: 19.560678}
+    - {x: 37.89853, y: 0.13, z: 45.68449}
+    - {x: 28.558626, y: 0.13, z: 45.674816}
+  DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1

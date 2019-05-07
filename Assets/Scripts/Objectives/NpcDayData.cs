@@ -12,6 +12,8 @@ public class NpcDayData : ScriptableObject
     [Space]
     public Vector3 scale;
     public Sprite sprite;
+    public RuntimeAnimatorController AnimatorController;
+
     // Use this for initialization
     public string talkToNode = "";
     public TextAsset scriptToLoad;

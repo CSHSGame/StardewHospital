@@ -418,11 +418,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1934963049927518, guid: 82e6d2915b739c9498a7b6578ea9e53f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000620234985430, guid: 82e6d2915b739c9498a7b6578ea9e53f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114546481386498656, guid: 82e6d2915b739c9498a7b6578ea9e53f,
         type: 2}

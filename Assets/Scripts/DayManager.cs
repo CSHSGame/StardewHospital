@@ -39,14 +39,21 @@ public class DayManager : MonoBehaviour
     public IEnumerator showDayText()
     {
         FadeMode fader =  FindObjectOfType<FadeMode>();
-        if(fader != null)
+        if (fader != null)
         {
             fader.FadeOn();
-            fader.msgText.text = Days[currentDay].name;
-            fader.msgText.enabled = true;
-            yield return new WaitForSecondsRealtime(2f);
-            fader.msgText.enabled = false;
+            if (fader.msgText != null)
+            {
+                fader.msgText.text = Days[currentDay].name;
+                fader.msgText.enabled = true;
+            }
 
+            yield return new WaitForSecondsRealtime(2f);
+            if (fader.msgText != null)
+            { 
+
+                fader.msgText.enabled = false;
+            }
             fader.FadeOff();
 
         }

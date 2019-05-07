@@ -38,80 +38,85 @@ public class CharacterController : MonoBehaviour {
 
         direction.z = 0.0f;
         direction.x = 0.0f;
-
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        bodyPartBody.ReceiveInput(input);
+        bodyPartHead.ReceiveInput(input);
+        bodyPartHair.ReceiveInput(input);
+        
+        
         if ((Input.GetKey(KeyCode.W))||(Input.GetKey(KeyCode.UpArrow)))
         {
             direction.z = 1.0f;
-            bodyPartBody.walkingBack = true;
-            bodyPartBody.walkingForward = false;
-            bodyPartBody.walkingSide = false;
+            //bodyPartBody.walkingBack = true;
+            //bodyPartBody.walkingForward = false;
+            //bodyPartBody.walkingSide = false;
 
-            bodyPartHead.walkingBack = true;
-            bodyPartHead.walkingForward = false;
-            bodyPartHead.walkingSide = false;
+            //bodyPartHead.walkingBack = true;
+            //bodyPartHead.walkingForward = false;
+            //bodyPartHead.walkingSide = false;
 
-            bodyPartHair.walkingBack = true;
-            bodyPartHair.walkingForward = false;
-            bodyPartHair.walkingSide = false;
+            //bodyPartHair.walkingBack = true;
+            //bodyPartHair.walkingForward = false;
+            //bodyPartHair.walkingSide = false;
         }
         else if ((Input.GetKey(KeyCode.S))||(Input.GetKey(KeyCode.DownArrow)))
         {
             direction.z = -1.0f;
-            bodyPartBody.walkingForward = true;
-            bodyPartBody.walkingBack = false;
-            bodyPartBody.walkingSide = false;
+            //bodyPartBody.walkingForward = true;
+            //bodyPartBody.walkingBack = false;
+            //bodyPartBody.walkingSide = false;
 
-            bodyPartHead.walkingForward = true;
-            bodyPartHead.walkingBack = false;
-            bodyPartHead.walkingSide = false;
+            //bodyPartHead.walkingForward = true;
+            //bodyPartHead.walkingBack = false;
+            //bodyPartHead.walkingSide = false;
 
-            bodyPartHair.walkingForward = true;
-            bodyPartHair.walkingBack = false;
-            bodyPartHair.walkingSide = false;
+            //bodyPartHair.walkingForward = true;
+            //bodyPartHair.walkingBack = false;
+            //bodyPartHair.walkingSide = false;
         }
         else if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)))
         {
             direction.x = -1.0f;
-            bodyPartBody.walkingSide = true;
-            bodyPartBody.walkingBack = false;
-            bodyPartBody.walkingForward = false;
+            //bodyPartBody.walkingSide = true;
+            //bodyPartBody.walkingBack = false;
+            //bodyPartBody.walkingForward = false;
 
-            bodyPartHead.walkingSide = true;
-            bodyPartHead.walkingBack = false;
-            bodyPartHead.walkingForward = false;
+            //bodyPartHead.walkingSide = true;
+            //bodyPartHead.walkingBack = false;
+            //bodyPartHead.walkingForward = false;
 
-            bodyPartHair.walkingSide = true;
-            bodyPartHair.walkingBack = false;
-            bodyPartHair.walkingForward = false;
+            //bodyPartHair.walkingSide = true;
+            //bodyPartHair.walkingBack = false;
+            //bodyPartHair.walkingForward = false;
         }
         else if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)))
         {
             direction.x = 1.0f;
-            bodyPartBody.walkingSide = true;
-            bodyPartBody.walkingBack = false;
-            bodyPartBody.walkingForward = false;
+            //bodyPartBody.walkingSide = true;
+            //bodyPartBody.walkingBack = false;
+            //bodyPartBody.walkingForward = false;
 
-            bodyPartHead.walkingSide = true;
-            bodyPartHead.walkingBack = false;
-            bodyPartHead.walkingForward = false;
+            //bodyPartHead.walkingSide = true;
+            //bodyPartHead.walkingBack = false;
+            //bodyPartHead.walkingForward = false;
 
-            bodyPartHair.walkingSide = true;
-            bodyPartHair.walkingBack = false;
-            bodyPartHair.walkingForward = false;
+            //bodyPartHair.walkingSide = true;
+            //bodyPartHair.walkingBack = false;
+            //bodyPartHair.walkingForward = false;
         }
         else
         {
-            bodyPartBody.walkingBack = false;
-            bodyPartBody.walkingForward = false;
-            bodyPartBody.walkingSide = false;
+            //bodyPartBody.walkingBack = false;
+            //bodyPartBody.walkingForward = false;
+            //bodyPartBody.walkingSide = false;
 
-            bodyPartHead.walkingBack = false;
-            bodyPartHead.walkingForward = false;
-            bodyPartHead.walkingSide = false;
+            //bodyPartHead.walkingBack = false;
+            //bodyPartHead.walkingForward = false;
+            //bodyPartHead.walkingSide = false;
 
-            bodyPartHair.walkingBack = false;
-            bodyPartHair.walkingForward = false;
-            bodyPartHair.walkingSide = false;
+            //bodyPartHair.walkingBack = false;
+            //bodyPartHair.walkingForward = false;
+            //bodyPartHair.walkingSide = false;
         }
 
 
