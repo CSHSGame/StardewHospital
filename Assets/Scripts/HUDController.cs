@@ -11,6 +11,7 @@ public class HUDController : MonoBehaviour {
     public Text MonthText;
     public Text TimeText;
     public Text AMorPMText;
+    public Text ObjectiveText;
 
     public GameObject ClipboardUI;
     public GameObject EndofDayUI;
@@ -18,6 +19,7 @@ public class HUDController : MonoBehaviour {
 
     public EoDClipboard EODClipboard;
     public DayManager dayManager;
+    public ObjectiveLoader objectiveLoader;
 
 	// Use this for initialization
 	public void Setup (DayDataHolder day)
