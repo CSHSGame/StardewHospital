@@ -6,11 +6,15 @@ public class CharacterLoad : MonoBehaviour
 {
     public CharacterData Assets;
     public FaceName Assets2;
-
+    public bool loadOn = true;
     // Use this for initialization
     void Awake ()
     {
-        Load();
+        if (loadOn)
+        {
+            Load();
+
+        }
     }
 
     [ContextMenu("Load")]

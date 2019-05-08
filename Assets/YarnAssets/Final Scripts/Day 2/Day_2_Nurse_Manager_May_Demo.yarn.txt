@@ -3,9 +3,10 @@ tags:
 colorID: 0
 position: -476,622
 ---
-[$playerName]: Hello [$NurseManager]! 
 [$NurseManager]: Good morning [$playerName]! 
+[$playerName]: Hello [$NurseManager]! 
 [$NurseManager]: I'd like you to please check in with  [$Char3Last], I don't believe you two have met yet.
 [$playerName]: Okay, I'll do that. 
 [$NurseManager]: Thanks! Have a good one.
+<<SetObjective GameManager ToSydDay2>>
 ===

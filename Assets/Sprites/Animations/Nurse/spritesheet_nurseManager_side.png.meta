@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a14607a007fc78848b80337765551128
+guid: a1d041243655be34ea4ed0722c51512e
 TextureImporter:
   fileIDToRecycleName:
     21300000: spritesheet_nurseManager_side_0
@@ -19,9 +19,6 @@ TextureImporter:
     21300028: spritesheet_nurseManager_side_14
     21300030: spritesheet_nurseManager_side_15
     21300032: spritesheet_nurseManager_side_16
-    21300034: spritesheet_nurseManager_side_17
-    21300036: spritesheet_nurseManager_side_18
-    21300038: spritesheet_nurseManager_side_19
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -120,16 +117,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.49080446, y: 0.8214891}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe65aa42f8bf47a41a2621ecb42cfc3a
+      spriteID: 0cc430edabf33754280704ed5de189ab
       vertices: []
       indices: 
       edges: []
@@ -138,18 +135,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 60
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.4933762, y: 0.82137424}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0708a7399c0b2dc40bd815ea75d18a7f
+      spriteID: 7e87abc2df0c4834cb904bd1cd4b6b74
       vertices: []
       indices: 
       edges: []
@@ -158,18 +155,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_2
       rect:
         serializedVersion: 2
-        x: 114
+        x: 120
         y: 0
-        width: 54
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.47497642, y: 0.8216475}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03255973066154b469c048191f43b7ef
+      spriteID: 78bcb5074e5867c4985c97ad8fc917e5
       vertices: []
       indices: 
       edges: []
@@ -178,18 +175,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_3
       rect:
         serializedVersion: 2
-        x: 171
+        x: 180
         y: 0
-        width: 53
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.54147166, y: 0.821952}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ab4c97f59e48e34db86f276f38e4ea2
+      spriteID: 5f9a5c5f322410f4babe63c0094750aa
       vertices: []
       indices: 
       edges: []
@@ -198,18 +195,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_4
       rect:
         serializedVersion: 2
-        x: 227
+        x: 240
         y: 0
-        width: 53
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.5949655, y: 0.8216363}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e516c7f2c9d0ea846ae66e0df8fdfdc0
+      spriteID: 8136899be844fe74ba4b27e3c326c84e
       vertices: []
       indices: 
       edges: []
@@ -218,18 +215,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_5
       rect:
         serializedVersion: 2
-        x: 280
+        x: 300
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.5644193, y: 0.82213265}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dba44bd75f4a7845b33d823865620b7
+      spriteID: 9d3738a4630173b4884de7dec309a9a0
       vertices: []
       indices: 
       edges: []
@@ -238,18 +235,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_6
       rect:
         serializedVersion: 2
-        x: 336
+        x: 360
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.4920747, y: 0.82178634}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69635ac74f9a57e48b8070ab7466754b
+      spriteID: b4ced286c35a82340a0e00a54dba463b
       vertices: []
       indices: 
       edges: []
@@ -258,18 +255,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_7
       rect:
         serializedVersion: 2
-        x: 392
+        x: 420
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.49428287, y: 0.82186764}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42ce214504948814d8f9ce3f30ad049a
+      spriteID: 5fddfbe120f2e524ead701bf298537d5
       vertices: []
       indices: 
       edges: []
@@ -278,18 +275,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_8
       rect:
         serializedVersion: 2
-        x: 448
+        x: 480
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.49155098, y: 0.8213713}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4e6e4627eff6f0489981e77317827e7
+      spriteID: 5a7668d51dff5a04dab3debdbb1c7aa9
       vertices: []
       indices: 
       edges: []
@@ -298,18 +295,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_9
       rect:
         serializedVersion: 2
-        x: 504
+        x: 540
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.49408612, y: 0.82171327}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb8f80809cff5db4ba1fcd991a4695ee
+      spriteID: 23dd99feabce82e408f721840837e4e9
       vertices: []
       indices: 
       edges: []
@@ -318,18 +315,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_10
       rect:
         serializedVersion: 2
-        x: 560
+        x: 600
         y: 0
-        width: 50
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.549657, y: 0.8222868}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1db3b0740af9f842aab1b4cb0892ebe
+      spriteID: d6c75a66247b81440b2ac7ce03aea300
       vertices: []
       indices: 
       edges: []
@@ -338,18 +335,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_11
       rect:
         serializedVersion: 2
-        x: 616
+        x: 660
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.5629338, y: 0.8207207}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae8188e42c80b044eb90b64d410f8d5a
+      spriteID: 9899584cf20aab24596c3ae16a9bf39c
       vertices: []
       indices: 
       edges: []
@@ -358,18 +355,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_12
       rect:
         serializedVersion: 2
-        x: 672
+        x: 720
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.5986001, y: 0.82171327}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd102ba8e44f8dd4db74e16881c06dac
+      spriteID: 17d7a889b83d09f4982ff4002a9de458
       vertices: []
       indices: 
       edges: []
@@ -378,18 +375,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_13
       rect:
         serializedVersion: 2
-        x: 728
+        x: 780
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.56287056, y: 0.82220954}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0827b1adcfd96bb40b42a7de52f1dc0b
+      spriteID: 09c349e03669c834d9ad6e4505515c5e
       vertices: []
       indices: 
       edges: []
@@ -398,18 +395,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_14
       rect:
         serializedVersion: 2
-        x: 784
+        x: 840
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.49174717, y: 0.8224411}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3ea0c7cf4ff920429d8a884830a2d77
+      spriteID: 5d1f9d16ecf0c4549bc9823e7695ea33
       vertices: []
       indices: 
       edges: []
@@ -418,18 +415,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_15
       rect:
         serializedVersion: 2
-        x: 840
+        x: 900
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.49174827, y: 0.8222868}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 372b333d2822ad348ab1db7aa2eaadc5
+      spriteID: f8fba019a5912bc43be54c098846c504
       vertices: []
       indices: 
       edges: []
@@ -438,18 +435,18 @@ TextureImporter:
       name: spritesheet_nurseManager_side_16
       rect:
         serializedVersion: 2
-        x: 896
+        x: 960
         y: 0
-        width: 56
+        width: 60.294117
         height: 143
-      alignment: 9
-      pivot: {x: 0.4915499, y: 0.82129425}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a32000655a9c284d9794971489d425d
+      spriteID: 2e19f09f70aa91a4db68e6d2c9617f4c
       vertices: []
       indices: 
       edges: []
@@ -457,7 +454,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0b7392d325bcfc6419a8cba181e60a71
+    spriteID: f9016e6c23ec40349aef08a44ffb2f17
     vertices: []
     indices: 
     edges: []

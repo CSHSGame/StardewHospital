@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 540,260
 ---
+[$Char3First]: Hello.
 [$playerName]: [$Char3Last], May I come in?
 [sad][$Char3First]: Come in.
 [$playerName]: Hi there, Mr.Wojcik.  My name is [$playerName]. I wanted to introduce myself and help you get ready for the day, if I can.

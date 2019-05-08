@@ -53,7 +53,7 @@ public class SpriteDepthSwapper : MonoBehaviour {
     {
         for (int i = 0; i < sprites.Count;i++)
         {
-            if(sprites[i].transform.TransformPoint(sprites[i].center).z > transform.TransformPoint(myBoxCollider.center).z)
+            if(sprites[i] != null && sprites[i].transform.TransformPoint(sprites[i].center).z > transform.TransformPoint(myBoxCollider.center).z)
             {
                 CurrentLayer = sprites[i].GetComponent<SpriteRenderer>().sortingOrder + 1;
                   

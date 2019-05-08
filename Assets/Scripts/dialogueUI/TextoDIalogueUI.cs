@@ -10,7 +10,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 {
     public FaceName[] faces;
     public GameObject dialogueContainer;
-    //left character face
+    //left character face                                                                                                                                                                                                                                                                             
     public Image leftFace;
     //right character face usualy the player
     public Image rightFace;
@@ -191,20 +191,20 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             bool canPressSpace = false;                                                                                                                                                                                                 
             // Wait for any user input
             Waypoints[] wps = FindObjectsOfType<Waypoints>();
-            while (true)
+            while (Input.GetKeyDown(KeyCode.Space ) == false)
             {
 
-                while (canPressSpace == false)
+                while (canPressSpace == false)                                                                              
                 {
                     bool t = true;
 
-                    foreach (Waypoints w in wps)
+                    foreach(Waypoints w in wps)
                     {
-                        if (w.pathindex != -1)
+                        if(w.pathindex != -1)
                         {
                             t = false;
                         }
-
+                       
                     }
                     if (t)
                     {
@@ -218,30 +218,15 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                         cinematic.TurnON();
                         dialogueContainer.SetActive(false);
 
-
                     }
                     yield return null;
-                    //yield return new WaitForEndOfFrame();
-                }
 
+                }
                 // Show the 'press any key' prompt when done, if we have one
                 if (continuePrompt != null)
                     continuePrompt.SetActive(true);
 
-                if(Input.GetKeyDown(KeyCode.Space) == true)
-                {
-                    yield return new WaitForEndOfFrame();
-                    break;
-                }
-                //while (Input.GetKeyUp(KeyCode.Space) == false)
-                //{
-
-                //}
-
-                //yield return new WaitForEndOfFrame();
                 yield return null;
-
-
             }
             // hide the 'press any key' prompt when done, if we have one
             if (continuePrompt != null)

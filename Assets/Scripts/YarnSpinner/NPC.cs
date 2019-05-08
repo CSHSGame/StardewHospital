@@ -143,11 +143,11 @@ namespace Yarn.Unity.Example
             {
                 if (FindObjectOfType<DialogueRunner>().isDialogueRunning == false)
                 {
-                    Debug.Log("inRange");
+                 //   Debug.Log("inRange");
                     if (ConversUI != null)
                     {
                         ConversUI.gameObject.SetActive(true);
-                        Debug.Log("ConverseUI");
+                       // Debug.Log("ConverseUI");
                     }
                 }
                 else
@@ -155,14 +155,14 @@ namespace Yarn.Unity.Example
                     if (ConversUI != null)
                     {
                         this.ConversUI.gameObject.SetActive(false);
-                        Debug.Log("NoConverseUI");
+                      //  Debug.Log("NoConverseUI");
                     }
                 }
             }
             else
             {
                 this.ConversUI.gameObject.SetActive(false);
-                Debug.Log("NoConverseUI");
+                //Debug.Log("NoConverseUI");
             }
         }
         public void BakeData()

@@ -30,7 +30,11 @@ public class ObjectiveLoader : MonoBehaviour
         {
             keyValuePairs.Add(o.name, o);
         }
-        targetObjective = Objectives[currentObjective].name;
+        if(Objectives != null && currentObjective < Objectives.Length)
+        {
+            targetObjective = Objectives[currentObjective].name;
+
+        }
         SetObjective(targetObjective);
 
     }

@@ -14,15 +14,17 @@ MonoBehaviour:
   DecisionPoints: []
   otherVariables: []
   CurrentDay: 0
-  Objectives: []
+  Objectives:
+  - {fileID: 11400000, guid: 497564682388b814a9825613fb6ef71b, type: 2}
+  - {fileID: 11400000, guid: 08518997c68afaf4fbfa50348fe2b3f1, type: 2}
   PlayerData: {fileID: 11400000, guid: 194f9896deaba794bb1c8898633b0403, type: 2}
   npcs:
   - {fileID: 11400000, guid: 118c10c4eb6c24044a0be78abecb4f85, type: 2}
   - {fileID: 11400000, guid: 3ee583da7de8a5f469132a353df7bd11, type: 2}
   - {fileID: 11400000, guid: 4aa2b3de49e056043a88a9e9c6ab0563, type: 2}
   - {fileID: 11400000, guid: fe47b6b86bd17f5438bf72b15cbccfea, type: 2}
-  DayOfTheWeek: 
-  DayNumber: 
-  Month: 
-  TimeOfDay: 
+  DayOfTheWeek: Thurs
+  DayNumber: 04
+  Month: July
+  TimeOfDay: 9:00
   AMOrPM: 0

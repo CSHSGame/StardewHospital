@@ -24,7 +24,7 @@ public class DayManager : MonoBehaviour
 
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
-        hUDController.Setup(Days[currentDay]);
+        hUDController.Setup(Days[currentDay],currentDay);
         StartCoroutine(showDayText());
     }
     public void LoadDay()
@@ -32,7 +32,7 @@ public class DayManager : MonoBehaviour
         npcLoader.DeleteNpc();
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
-        hUDController.Setup(Days[currentDay]);
+        hUDController.Setup(Days[currentDay],currentDay);
         StartCoroutine(showDayText());
     }
 
@@ -64,12 +64,15 @@ public class DayManager : MonoBehaviour
     public void IncrementDay()
     {
         currentDay++;
-        LoadDay();
+        hUDController.GearClick();
+        //LoadDay();
     }
     [YarnCommand("Reset")]
     public void resetDay()
     {
-        SceneManager.LoadScene(0);
+        hUDController.GearClick();
+
+        // SceneManager.LoadScene(0);
     }
     [ContextMenu("testReview")]
     string newReview()
@@ -144,8 +147,8 @@ public class DayManager : MonoBehaviour
     [YarnCommand("FinishIt")]
     public void endGame()
     {
-        SceneManager.LoadScene(2);
-
+        //SceneManager.LoadScene(2);
+        hUDController.GearClick();
     }
     // Update is called once per frame
     void Update () {

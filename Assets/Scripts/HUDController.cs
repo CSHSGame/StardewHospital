@@ -20,6 +20,11 @@ public class HUDController : MonoBehaviour {
     public EoDClipboard EODClipboard;
     public DayManager dayManager;
 
+    public void Setup(DayDataHolder day, int dayNum)
+    {
+        EODClipboard.LoadEoDNotes(dayNum);
+        Setup(day);
+    }
 	// Use this for initialization
 	public void Setup (DayDataHolder day)
     {

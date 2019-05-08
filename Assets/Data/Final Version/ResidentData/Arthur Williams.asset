@@ -24,4 +24,4 @@ MonoBehaviour:
   CodeStatus: 'Level 2: No Resuscitation'
   LanguageSpoken: 'P: English, Hindi   S: N/A'
   Religion: Hinduism
-  face: {fileID: 21300010, guid: a95152c4a520c724ab173815d5b8d3ae, type: 3}
+  face: {fileID: 21300000, guid: e03e022d25c8c4c4f940d52cad2a6a66, type: 3}

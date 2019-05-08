@@ -24,4 +24,4 @@ MonoBehaviour:
   CodeStatus: 'Level 5: Full Resuscitation'
   LanguageSpoken: 'P: Cantonese (*No English)'
   Religion: Buddhism
-  face: {fileID: 21300010, guid: 244636d3a8b2d9f45a7e798fb8637f04, type: 3}
+  face: {fileID: 21300000, guid: 166051bd64e844545b28fe6ae55290a7, type: 3}
