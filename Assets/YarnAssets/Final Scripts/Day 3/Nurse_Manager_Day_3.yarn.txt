@@ -1,7 +1,7 @@
 title: Nurse_Manager_Day_3
 tags: 
 colorID: 0
-position: 1225,964
+position: 1229,964
 ---
 [$NurseManager]: Good Morning, [$playerName]!
 [$playerName]: Hello!
@@ -12,16 +12,4 @@ position: 1225,964
 [$NurseManager]: See you later!]
 <<SetObjective GameManager mrwilliamsday3>>
 
-===
-title: Inappropriate_Language_Start
-tags: 
-colorID: 0
-position: 544,260
----
-[$NurseManager]: Hey there [$playerName]. A package arrived for Mrs. Brown. Could you let her know? I think she's in the dining area having lunch.
-[$playerName]: I'd be happy to, but I'm not sure I know who she is...
-[$NurseManager]: You've probably seen her around. Some of her fellow residents affectionately call her 'Mama'.
-[$playerName]: Oh yes I know who you mean! I'll let her know.
-
-***Programmer NOte*** player must walk to dining area and find Mama
 ===

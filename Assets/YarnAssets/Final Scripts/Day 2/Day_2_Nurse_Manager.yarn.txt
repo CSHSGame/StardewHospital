@@ -5,14 +5,15 @@ position: -476,622
 ---
 [$playerName]: Hello! 
 [$NurseManager]: Hello [$playerName]! Ready for your second day?
-[$playerName]: I think so! [$Char1Last] showed me around yesterday. It was really helpful. 
-[$NurseManager]: Great! You should visit her again. I think she needs some help setting up for an event. 
-[$playerName]: Sure thing.
-[$NurseManager]: After that, please check in with [$Char2Last]. I believe you met him yesterday as well.
+[$playerName]: Yes! 
+[$NurseManager]: Great! Remember [$Char1Last] from yesterday? Please pay her a visit, I believe she’s in the living area.
+[$playerName]: Sure. 
+[$NurseManager]: Then, please check in with [$Char2Last]. I believe you met him yesterday as well.
 [$playerName]: Yes, I did. 
-[$NurseManager]: Lastly, please check in with our resident [$Char3Last], I think you missed each other yesterday.
+[$NurseManager]: Lastly, please check in with [$Char3Last], I don’t believe you’ve met yet. 
 [$playerName]: Okay, I'll do that. 
 [$NurseManager]: Thanks! Good luck.
+
 <<SetObjective GameManager ToSteinDay2>>
 //***PROGRAMMER NOTE*** UI Popup that explains that you follow the arrows to where you need to go
 ===
