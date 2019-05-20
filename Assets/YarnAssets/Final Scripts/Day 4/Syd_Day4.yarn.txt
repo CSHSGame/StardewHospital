@@ -143,7 +143,7 @@ position: 541,2091
 ===
 title: LGBTQ_SECOND_DAY_SYDS_ROOM_WRONG
 tags: 
-colorID: 0
+colorID: 1
 position: 85,2350
 ---
 [angry][$Char3First]: This is my meeting! And Richard is a big part of the reason we're having it - I insist that he be here.

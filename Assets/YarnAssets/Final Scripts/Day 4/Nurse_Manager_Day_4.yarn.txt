@@ -7,7 +7,7 @@ position: 1225,964
 [$playerName]: Hey [$NurseManager]. Is something wrong?
 [$NurseManager]: Actually yes... [$Char1Last] was taken to the hospital last night. She was having difficulty breathing.  
 [$playerName]: Oh no... I knew she wasn't feeling well yesterday but I didn't think...
-[$playerName]: I dont know what I thought.
+[$playerName]: I don't know what I thought.
 [$NurseManager]: Anyways, sorry to tell you this first thing, but I thought you'd want to know.
 [$playerName]: Of course.
 [$NurseManager]: When you have a moment, please check in on [$Char3First]. He seems like he's having a rough time.
