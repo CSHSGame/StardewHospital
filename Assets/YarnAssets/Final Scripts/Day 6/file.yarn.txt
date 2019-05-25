@@ -1,0 +1,14 @@
+title: Day_6_Nurse
+tags: 
+colorID: 0
+position: 540,260
+---
+[$SupervisorName]: Morning [player’s name]. 
+[$PlayerName]: Hey [Supervisor’s Name], anything new? 
+[$SupervisorName]: Mrs. Stein returned last night.  
+[$PlayerName]: That's great news! 
+[$SupervisorName]: She’s such a wonderful lady... all the residents were happy to welcome her back, especially her roommate Katherine. 
+[$PlayerName]: How nice – I don’t think I’ve met Katherine yet. 
+[$SupervisorName]: Mrs. Stein and Katherine are in their room now. Pay them a visit and see how they’re doing.  
+[$PlayerName]: Okay, I’m on my way. 
+===
