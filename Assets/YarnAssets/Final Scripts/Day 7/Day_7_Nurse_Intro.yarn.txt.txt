@@ -1,0 +1,12 @@
+title: Day_7_Nurse_Intro
+tags: 
+colorID: 0
+position: 543,260
+---
+[$PlayerName]: Good morning.
+[$SupervisorName]: Hey [$PlayerName], how are you feeling today? I know that conversation with [$Char1First] yesterday was very difficult for you. 
+[$PlayerName]: It was, thanks you for asking. I'm alright though. 
+[$SupervisorName]: I'm sorry to say she's not feeling well at all today, I don't think you'll be able to vist.
+[$SupervisorName]: But one of the other students, Ranjit, was looking for you. 
+[$PlayerName]: Okay, I'll touch base with him, thanks. 
+===

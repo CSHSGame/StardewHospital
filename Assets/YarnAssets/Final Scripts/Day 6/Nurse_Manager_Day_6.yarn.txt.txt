@@ -1,10 +1,10 @@
-title: Day_6_Nurse
+﻿title: Day_6_Nurse
 tags: 
 colorID: 0
 position: 540,260
 ---
-[$SupervisorName]: Morning [player’s name]. 
-[$PlayerName]: Hey [Supervisor’s Name], anything new? 
+[$SupervisorName]: Morning [$PlayerName]. 
+[$PlayerName]: Hey [$SupervisorsName], anything new? 
 [$SupervisorName]: Mrs. Stein returned last night.  
 [$PlayerName]: That's great news! 
 [$SupervisorName]: She’s such a wonderful lady... all the residents were happy to welcome her back, especially her roommate Katherine. 
