@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 544,260
 ---
-[$NurseManager]: Hey there [$playerName]. A package arrived for Mrs. Brown. Could you let her know? I think she's in the dining area having lunch.
+[$NurseManager]: Hey there [$playerName]. A package arrived for Mrs. Minhaj. Could you let her know? I think she's in the dining area having lunch.
 [$playerName]: I'd be happy to, but I'm not sure I know who she is...
 [$NurseManager]: You've probably seen her around. Some of her fellow residents affectionately call her 'Mama'.
 [$playerName]: Oh yes I know who you mean! I'll let her know.
