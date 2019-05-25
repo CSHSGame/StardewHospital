@@ -11,43 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: Stein Day 1
   m_EditorClassIdentifier: 
-  position: {x: 2.5108976, y: 0.25581813, z: 21.714151}
+  position: {x: 29.45, y: 0.25581813, z: 20.02}
   rotation: {x: 0.70710576, y: -0, z: -0, w: 0.7071079}
-  scale: {x: 1.3, y: 1.3, z: 1.3}
+  scale: {x: 1.3, y: 1.3000004, z: 1.3000004}
   sprite: {fileID: 21300000, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  AnimatorController: {fileID: 0}
   talkToNode: Day_1_Living_Area_Final
   scriptToLoad: {fileID: 0}
   GameObjectName: Stein
-  waypoints:
-  - Name: Stein To Dining
-    location:
-    - {x: -0.17205358, y: 0, z: 21.956736}
-    - {x: -5.804981, y: -0.3139753, z: 15.424063}
-    - {x: -5.9419327, y: -0.36594722, z: 9.893267}
-    - {x: -16.60586, y: -0.37448472, z: 9.876478}
-    - {x: -16.366365, y: -0.3766905, z: 15.160311}
-    - {x: -16.232243, y: -0.37694657, z: 20.474716}
-  - Name: Stein  To Garden
-    location:
-    - {x: -17.45928, y: -0.3769466, z: 20.47472}
-    - {x: -17.459654, y: -0.40855542, z: 12.891007}
-    - {x: -7.4591303, y: -0.41272336, z: 8.272576}
-    - {x: 21.683966, y: -0.41310173, z: 8.233955}
-    - {x: 21.70442, y: -0.41311473, z: 39.253483}
-    - {x: 17.430586, y: -0.4131151, z: 44.498993}
-  - Name: Stein To Syd
-    location:
-    - {x: 17.43059, y: -0.4131151, z: 44.49899}
-    - {x: 21.580528, y: -0.43766922, z: 39.278503}
-    - {x: 21.527702, y: -0.44196925, z: 7.290621}
-    - {x: 28.585657, y: -0.44210193, z: 7.215992}
-    - {x: 39.030518, y: -0.44211036, z: 7.118456}
-  - Name: Stein To Lobby
-    location:
-    - {x: 35.29684, y: -0.4421104, z: 8.543015}
-    - {x: 28.468681, y: -0.459777, z: 8.650068}
-    - {x: 17.420666, y: -0.46348915, z: 8.485425}
-    - {x: 13.084869, y: -0.4636101, z: 8.481693}
-    - {x: 4.1214833, y: -0.4636234, z: 8.481283}
+  waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

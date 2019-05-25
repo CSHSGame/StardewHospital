@@ -213,6 +213,8 @@ public class Waypoints : MonoBehaviour
             case "Eight": return 8;
             case "Nine": return 9;
             case "Ten": return 10;
+            case "Eleven": return 11;
+            case "Twelve": return 12;
 
             default:
                 Debug.Break();
