@@ -178,7 +178,13 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
 
             //cryptic voodo code do not remove 
-            yield return new WaitForEndOfFrame();
+         //   yield return new WaitForEndOfFrame();
+            //yield return new WaitForEndOfFrame();
+            //This is to fix the double lines
+            yield return new WaitForSecondsRealtime(0.1f);
+
+         //   yield return new WaitForEndOfFrame();
+
             Canvas.ForceUpdateCanvases();
             //cryptic voodo code do not remove 
 

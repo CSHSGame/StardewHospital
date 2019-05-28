@@ -1,0 +1,86 @@
+title: Day_1_V2_Nurse_Manager
+tags: 
+colorID: 0
+position: 540,260
+---
+<<SetPath Player Zero>>
+<<Hide Richard>>
+[$NurseManager]: Hello there [$playerName], My name is [$NurseManager] and welcome to Bloom Village! Today we will be touring the village and I will introduce you to some of our residents.  
+[$playerName]: Great! I am excited to be here and meet the residents. 
+[$NurseManager]: Alright then! First, this is our nursing station. This is where you can locate our resident’s care plan, medication administration records and other files/documents needed for our residents. 
+[$NurseManager]: At every shift change our nurse and personal support workers have a huddle to talk about the care plan and prioritize the resident’s needs. So, if you have any questions you can always approach the staff here. 
+[$playerName]: Great! 
+[$NurseManager]: Okay, let’s go to our dining room. 
+//Goes to the dining room together with the player. 
+<<SetPath Player One>><<SetPath Nurse One>>
+[$NurseManager]: This is the main dining room.  Breakfast, lunch and dinner are served here. At the back of the dining room you will find the servery which holds our meals. When you are here, you can assist the staff in feeding residents who require assistance.  
+[$playerName]: I would love to do that! I have one question. 
+[$NurseManager]: Yes! 
+[$playerName]: Can the resident choose their own seat? 
+[$NurseManager]: No, we have a seating plan for our residents which is organized based on resident’s needs, preferences and other circumstances.  
+[$playerName]: Great. 
+[$NurseManager]: Alright, let’s go the multifaith room. Again, feel free to ask questions and I’ll try my best to answer. 
+[$playerName]: Yes. 
+//Going to the multifaith room.
+<<SetPath Player Two>><<SetPath Nurse Two>>
+[$NurseManager]: Here we are. This is the Bloom Village’s multifaith room for every resident and their family to utilize. It is a great space to pray, for quiet time or meditation. 
+[$NurseManager]: You are free to bring a resident here for a one-on-one conversation. Goes to the multifaith room, knocks on the door, peaks and finds Marie Moore.  (FIX THIS DIALOG)
+[$NurseManager]: Oh Marie is here trying to mediate. Let’s leave quietly.  Closes the door.  
+[$playerName]: Great! Can staff access that as well? 
+[$NurseManager]: Yes! Absolutely! Everyone is welcome here. 
+[$playerName]: That is perfect! 
+[$NurseManager]: Alright, shall we go? We can visit to the activity room.  
+//Goes to the activity room
+<<SetPath Player Three>><<SetPath Nurse Three>>
+[$NurseManager]: We are here! Oh, I think Eve is setting up for the Tea N Talk program.  
+[$playerName]: What’s that? 
+[$NurseManager]: Why don’t we ask Eve herself. Goes to see Eve. Hi there Eve! 
+[$Char1Last]: Hi [$NurseManager]. Who do we have here? 
+[$playerName]: Hi Eve, I’m [$playerName]. I was just going to ask what activity are you planning. 
+[$Char1Last]: It’s called Tea N Talk. I invite all residents and we discuss “hot” topics, in the news or in life.  
+[$playerName]: That’s really great. Can I join you one day? 
+[$Char1Last]: Absolutely dear! Anyone is welcome here. 
+[$playerName]: That is great! 
+[$NurseManager]: Thank you Eve! [$playerName], shall we go? Let's go to visit one of the resident’s room. 
+[$playerName]: Okay. 
+//Goes to one empty private room.
+<<SetPath Player Four>><<SetPath Nurse Four>>
+[$NurseManager]: This is what a private room looks like. Each room has a bed with a call bell, side table, chair, cabinet and a bathroom. 
+[$NurseManager]: Each resident is encouraged to customize their own room to make them feel comfortable and welcomed in their private space.  
+[$playerName]: Great! It's really important that the residents can make their room welcoming and comfortable.  
+[$NurseManager]: Let's visit Mr. Wojick’s room.  
+//Goes to Mr. Wojick’s room. 
+<<SetPath Player Five>><<SetPath Nurse Five>>
+[$NurseManager]: Knocks on the door. Hi Syd! It’s [$NurseManager]. Can I introduce you to a new student? 
+[$Char3Last]: No thank you, I'd rather to talk to anyone right now. Sorry… Can you please leave?  
+[$NurseManager]: Alright [$Char3Last]. We understand, maybe another time.  
+[$Char3Last]: Yeah.. Sure 
+//Leaves the room 
+<<Spawn Richard>>
+[$NurseManager]:  It is important to respect our resident’s choices. How about we go visit our garden? 
+[$playerName]: Sounds good.  
+//Meeting Richard in the hallway, before going to the garden 
+<<SetPath Player Six>><<SetPath Nurse Six>>
+[$NurseManager]: Oh, [$playerName], this is [$Richard], a good friend of Syd's. Good morning [$Richard], visiting Syd today? 
+[$Richard]: Good morning to you [$NurseManager]! Yes, I'm here for a visit.  
+[$NurseManager]: That’s great! By the way this is [$playerName], they're doing their field placement with us to learn more about Long Term Care.   
+[$Richard]: Great! I’ll be seeing you then [$playerName].
+[$NurseManager]: Alright, see you later. 
+//They Go to the garden 
+<<SetPath Player Seven>><<SetPath Nurse Seven>>
+[$NurseManager]: So this is the last stop on our tour. This is our Bloom Village Garden. Our residents participate in the horticultural program. 
+[$NurseManager]: Oh, I spotted one of our resident and his daughter. Do you want to meet [$Char2Last]? 
+[$playerName]: Yes! 
+//Goes to Arthur.
+<<Hide Richard>>
+[$NurseManager]: Hi [$Char2Last], hi [$Marissa]! How are you doing? I have a student with me here.
+[$playerName]: Hi there! My name's [$playerName], nice to meet you. 
+[$Marissa]: My dad and I are just enjoying the garden and this wonderful weather. It feels so great just to be outside. 
+[$NurseManager]: I’m glad you're enjoying the space, please enjoy your day.  
+[$Marissa]: Thanks! and nice to meet you [$playerName].
+[$playerName]: Nice to meet you too. 
+//They go back to the nursing station 
+<<SetPath Player Eight>><<SetPath Nurse Eight>>
+[$NurseManager]: So that was our tour. If you have any questions, I’m here to help you as best I can. W're so glad to have you joining us here at at Bloom Village! 
+[$playerName]: Thank you [$NurseManager]. I’m glad I had this tour, it really helped. I’m really excited to be here! 
+===

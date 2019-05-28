@@ -25,7 +25,7 @@ Skip:
 [$Char2Last]: No, I can't! I'm late for work!
 
 [[You can't leave!|Leave_Williams_Day_3]]
-[[[$Char2First], let's go have tea in the lounge. You can tell me all aout your job.|Job_Williams_Day_3]]
+[[[$Char2First], let's go have tea in the lounge. You can tell me all about your job.|Job_Williams_Day_3]]
 [[[$Char2Last]?|Ask_Williams_Day_3]]
 ===
 title: Leave_Williams_Day_3
@@ -145,7 +145,7 @@ Skip:
 title: Canada_Williams_Day_3
 tags: 
 colorID: 0
-position: 1207,2336
+position: 1214,2332
 ---
 [$Char1Last]: It was World War II. Britain was under attack by the enemy. The men were called to the trenches, the women to the factories. As for the children, they put us on ships headed to Australia or Canada for our safety. Those were hard times.
 Skip:
