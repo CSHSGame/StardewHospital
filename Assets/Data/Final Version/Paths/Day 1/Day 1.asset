@@ -19,8 +19,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5be3df6df055f6441a8007fdf38753b0, type: 2}
   PlayerData: {fileID: 11400000, guid: a58c654bf0a5618469f0389f4def402c, type: 2}
   npcs:
+  - {fileID: 11400000, guid: d90a7dedd958aac4087629d4ce1c94b2, type: 2}
   - {fileID: 11400000, guid: 71217e822fb66054d9db18d4aea3f1fb, type: 2}
+  - {fileID: 11400000, guid: 93b6a7e729dbfe14bbe1d134548687ab, type: 2}
   - {fileID: 11400000, guid: aaf729c1d924e62468b064d0b0bd78a3, type: 2}
+  - {fileID: 11400000, guid: bf63c1ca5437fe1439bf572bbeec1185, type: 2}
   - {fileID: 11400000, guid: b1361f5b14207464bb5fe98751c5e7c0, type: 2}
   DayOfTheWeek: MON
   DayNumber: 01

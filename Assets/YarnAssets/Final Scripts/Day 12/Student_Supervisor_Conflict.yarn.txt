@@ -1,0 +1,17 @@
+﻿title: Student_Supervisor_Conflict
+tags: 
+colorID: 0
+position: 540,260
+---
+[$PlayerName]: Hey Ranjit! Good to see you again - I hope you're taking good care of yourself.
+Ranjit: I've been really focusing on self care since we talked, but to be honest I've got other issues. I think I'm going to drop out of the program…
+[$PlayerName]: Oh no! Why?
+Ranjit: My midterm evaluation was full of a lot of horrible comments.
+[$PlayerName]: Oh, I'm so sorry.
+Ranjit: Our preceptor is so hard on me! She keeps criticizing everything I do…
+[$PlayerName]: That must be difficult…
+Ranjit: I volunteered at the LTC where my grandma lived since my high school years, and it inspired me to work with the elderly. I loved this job, but now I'm not so sure anymore... I guess I'm just not stong enough for this job.
+[$PlayerName]:  I can't tell you what to do, it's a big decision. You should speak with someone, like our supervisor or faculty advisor. It’s one thing if you decide this field is not for you, but you should't let someone discourage you from doing what you love.
+Ranjit: Thanks, I have a lot to think about. But you’re right, talking with someone should be my first step. I'll look into it, thanks again [$PlayerName], you give good advice!
+[$PlayerName]: I try! Good luck. 
+===

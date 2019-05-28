@@ -4,7 +4,7 @@ colorID: 0
 position: 1225,964
 ---
 [$NurseManager]: Good Morning [$playerName].
-[$playerName]: Hey [$SupervisorName]. Any news on [$Char2Last]?
+[$playerName]: Hey [$SupervisorName]. Any news on [$Char1Last]?
 [$NurseManager]: Not really. They're going to keep her at the hospital for another day for observation.   
 [$playerName]: So you think she'll be back tomorrow?
 [$NurseManager]: I hope so.

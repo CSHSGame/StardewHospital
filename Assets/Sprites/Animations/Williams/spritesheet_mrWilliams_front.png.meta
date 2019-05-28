@@ -1,12 +1,29 @@
 fileFormatVersion: 2
 guid: 5d256499fc79b1f449d82f42881b880d
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: spritesheet_mrWilliams_front_0
+    21300002: spritesheet_mrWilliams_front_1
+    21300004: spritesheet_mrWilliams_front_2
+    21300006: spritesheet_mrWilliams_front_3
+    21300008: spritesheet_mrWilliams_front_4
+    21300010: spritesheet_mrWilliams_front_5
+    21300012: spritesheet_mrWilliams_front_6
+    21300014: spritesheet_mrWilliams_front_7
+    21300016: spritesheet_mrWilliams_front_8
+    21300018: spritesheet_mrWilliams_front_9
+    21300020: spritesheet_mrWilliams_front_10
+    21300022: spritesheet_mrWilliams_front_11
+    21300024: spritesheet_mrWilliams_front_12
+    21300026: spritesheet_mrWilliams_front_13
+    21300028: spritesheet_mrWilliams_front_14
+    21300030: spritesheet_mrWilliams_front_15
+    21300032: spritesheet_mrWilliams_front_16
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,13 +51,13 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,9 +66,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -82,11 +99,351 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f48612aabf92ab4e956638b53129e65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c94683847c0af4c838ff9a0f81b02a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c96235cfbb2fa4fa1662a4d1a85d8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7608dd5371d68ea4e8efcf825e6f4391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_4
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b22d6143b20244290d73f1303c9dc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab90f0478a1c26458c7d2f66a31cffe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0c12a70416a2e42a7b6e954a1df806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_7
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5402aa41719eb1d4ab2c498a4dfd0722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cfff5e906bedd4f8ccef460d58e183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422a89cbd88fba345872e8cb53b22b94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_10
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c293ea66073fb24ea19d0d5e3258e51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_11
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59737dea6471fff459af9e28072d7549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_12
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf842baba74ffc14e8eb295bca1ed1d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_13
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13a43dc3947ee54b903fd20d01f2ad7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_14
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a552a397c42d7f1438a47ec076d6b25f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_15
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0186be99dfb55094bb373aadd946e4ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_mrWilliams_front_16
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55f12cc84bfaa2478ed9a7252b5b854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 907d36f2ae80a82419c4996020abfab5
     vertices: []
     indices: 
     edges: []
