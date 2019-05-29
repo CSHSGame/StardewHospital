@@ -4,12 +4,12 @@ colorID: 0
 position: 1225,249
 ---
 **Programmer Note*** Takes place in a hallway
-Stranger: Hi there - do you have a moment?
+[$Stranger]: Hi there - do you have a moment?
 [$PlayerName]: Hi! Of course, how may I help you?
-Stranger: I was just with my mom, Bernadette Wilson. I haven’t visited her for a while, and I was wondering if
+[$Stranger]: I was just with my mom, Bernadette Wilson. I haven’t visited her for a while, and I was wondering if
 there have been any changes in her care plan. Do you know of any new plans for her?
     -> Yes! I heard someone say they are planning to change her diet now because she has a risk of choking. <<$RightChoice_FamilyInquiry = false>>   
     -> I’m sorry, but I’m not allowed to share any information, but if you visit the nursing station the nurse can let you know more about that. <<$RightChoice_FamilyInquiry = true>>
-Ms. Wilson: Thank you!
+[$Stranger]: Thank you!
 [$PlayerName]: You're welcome! Take care.
 ===
