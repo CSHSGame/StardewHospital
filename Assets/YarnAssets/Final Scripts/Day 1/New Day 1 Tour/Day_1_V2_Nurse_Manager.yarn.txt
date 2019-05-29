@@ -24,20 +24,20 @@ position: 540,260
 //Going to the multifaith room.
 <<SetPath Player Two>><<SetPath Nurse Two>>
 [$NurseManager]: Here we are. This is the Bloom Village’s multifaith room for every resident and their family to utilize. It is a great space to pray, for quiet time or meditation. 
-[$NurseManager]: You are free to bring a resident here for a one-on-one conversation. Goes to the multifaith room, knocks on the door, peaks and finds Marie Moore.  (FIX THIS DIALOG)
-[$NurseManager]: Oh Marie is here trying to mediate. Let’s leave quietly.  Closes the door.  
+[$NurseManager]: You are free to bring a resident here for a one-on-one conversation. 
+[$NurseManager]: Oh Marie is here trying to mediate. Let’s leave quietly.  
 [$playerName]: Great! Can staff access that as well? 
 [$NurseManager]: Yes! Absolutely! Everyone is welcome here. 
 [$playerName]: That is perfect! 
 [$NurseManager]: Alright, shall we go? We can visit to the activity room.  
 //Goes to the activity room
 <<SetPath Player Three>><<SetPath Nurse Three>>
-[$NurseManager]: We are here! Oh, I think Eve is setting up for the Tea N Talk program.  
+[$NurseManager]: We are here! Oh, I think Eve is setting up for the "Tea N’ Talk" program.  
 [$playerName]: What’s that? 
 [$NurseManager]: Why don’t we ask Eve herself. Goes to see Eve. Hi there Eve! 
 [$Char1Last]: Hi [$NurseManager]. Who do we have here? 
 [$playerName]: Hi Eve, I’m [$playerName]. I was just going to ask what activity are you planning. 
-[$Char1Last]: It’s called Tea N Talk. I invite all residents and we discuss “hot” topics, in the news or in life.  
+[$Char1Last]: It’s called “Tea N’ Talk”. The Recreation Staff invite and assist residents to join the program and we discuss “hot” topics in the news or in life.  
 [$playerName]: That’s really great. Can I join you one day? 
 [$Char1Last]: Absolutely dear! Anyone is welcome here. 
 [$playerName]: That is great! 
@@ -46,13 +46,13 @@ position: 540,260
 //Goes to one empty private room.
 <<SetPath Player Four>><<SetPath Nurse Four>>
 [$NurseManager]: This is what a private room looks like. Each room has a bed with a call bell, side table, chair, cabinet and a bathroom. 
-[$NurseManager]: Each resident is encouraged to customize their own room to make them feel comfortable and welcomed in their private space.  
+[$NurseManager]: Each resident is encouraged to customize their own room to make them feel comfortable and welcomed in their private space. 
 [$playerName]: Great! It's really important that the residents can make their room welcoming and comfortable.  
 [$NurseManager]: Let's visit Mr. Wojick’s room.  
 //Goes to Mr. Wojick’s room. 
 <<SetPath Player Five>><<SetPath Nurse Five>>
 [$NurseManager]: Knocks on the door. Hi Syd! It’s [$NurseManager]. Can I introduce you to a new student? 
-[$Char3Last]: No thank you, I'd rather to talk to anyone right now. Sorry… Can you please leave?  
+[$Char3Last]:  No! I don’t want to talk to anyone right now. Sorry….can you please leave? 
 [$NurseManager]: Alright [$Char3Last]. We understand, maybe another time.  
 [$Char3Last]: Yeah.. Sure 
 //Leaves the room 
@@ -81,6 +81,6 @@ position: 540,260
 [$playerName]: Nice to meet you too. 
 //They go back to the nursing station 
 <<SetPath Player Eight>><<SetPath Nurse Eight>>
-[$NurseManager]: So that was our tour. If you have any questions, I’m here to help you as best I can. W're so glad to have you joining us here at at Bloom Village! 
+[$NurseManager]: So that was our tour. If you have any questions, I am here to help you as best as I can, and again, welcome to Bloom Village! 
 [$playerName]: Thank you [$NurseManager]. I’m glad I had this tour, it really helped. I’m really excited to be here! 
 ===
