@@ -43,6 +43,15 @@ public class CharacterController : MonoBehaviour {
         bodyPartHead.ReceiveInput(input);
         bodyPartHair.ReceiveInput(input);
         
+
+        if((Input.GetKey(KeyCode.LeftShift)))
+        {
+            speed = 8.0f;
+        }
+        else
+        {
+            speed = 4.0f;
+        }
         
         if ((Input.GetKey(KeyCode.W))||(Input.GetKey(KeyCode.UpArrow)))
         {

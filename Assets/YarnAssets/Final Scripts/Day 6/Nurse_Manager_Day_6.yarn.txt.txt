@@ -3,12 +3,13 @@ tags:
 colorID: 0
 position: 540,260
 ---
-[$NurseManager]: Morning [$PlayerName]. 
-[$PlayerName]: Hey [$NurseManager], anything new? 
+[$NurseManager]: Morning [$playerName]. 
+[$playerName]: Hey [$NurseManager], anything new? 
 [$NurseManager]: Mrs. Stein returned last night.  
-[$PlayerName]: That's great news! 
+[$playerName]: That's great news! 
 [$NurseManager]: She’s such a wonderful lady... all the residents were happy to welcome her back, especially her roommate Katherine. 
-[$PlayerName]: How nice – I don’t think I’ve met Katherine yet. 
+[$playerName]: How nice – I don’t think I’ve met Katherine yet. 
 [$NurseManager]: Mrs. Stein and Katherine are in their room now. Pay them a visit and see how they’re doing.  
-[$PlayerName]: Okay, I’m on my way. 
+[$playerName]: Okay, I’m on my way. 
+<<SetObjective GameManager TalkToSteinDay6>>
 ===

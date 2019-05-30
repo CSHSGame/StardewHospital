@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 543,260
 ---
+[$Ranjit]: Hi [$playerName].
 [$playerName]: Hi Ranjit! I haven't seen you in a while - how's your student placement going?
 [$Ranjit]: Ugh please -- don’t even try to talk to me! I’m in such a bad mood today…
 [$playerName]: Hmmm... What’s wrong?
@@ -18,8 +19,8 @@ position: 543,260
 [$playerName]: It can even increase the chance of illness.
 [$Ranjit]: That’s exactly how I’ve been for the past three months…
 [$playerName]: This is a tough job and we all have to learn to manage our stress. Stress management and burnout prevention are very important. 
-[$playerName]:Luckily, we have an employee wellness program here at [$HospitalName]. I really recommend going to the office and speaking with someone. 
-[$playerName]We need to practice self-care, not just for ourselves, but so that we can better take care of our residents.
+[$playerName]: Luckily, we have an employee wellness program here at [$HospitalName]. I really recommend going to the office and speaking with someone. 
+[$playerName]: We need to practice self-care, not just for ourselves, but so that we can better take care of our residents.
 [$Ranjit]: Thanks [$playerName], that's really valuable advice. I appreciate you listening and being understanding.
-[$playerName] Of course.
+[$playerName]: Of course.
 ===

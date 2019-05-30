@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae5897e28d6c83409873badca2eca26, type: 3}
+  m_Name: Day 6
+  m_EditorClassIdentifier: 
+  DecisionPoints: []
+  otherVariables: []
+  CurrentDay: 0
+  Objectives:
+  - {fileID: 11400000, guid: 885dd26a03d4f2f408c5336a00bb22f8, type: 2}
+  - {fileID: 11400000, guid: d35c9136eee00d3459aad8277cbcac0e, type: 2}
+  PlayerData: {fileID: 11400000, guid: e6ece93793cd94440a2c13c2e859a65b, type: 2}
+  npcs:
+  - {fileID: 11400000, guid: aa8621aa7fb9d7c48bfd34b2678a35a5, type: 2}
+  - {fileID: 11400000, guid: 888d0304bef9c2948a12604bde9d473a, type: 2}
+  - {fileID: 11400000, guid: c66847656f218f54e9d7632650006af4, type: 2}
+  - {fileID: 11400000, guid: 068eed99b60d2434fa88b6f735e6ec59, type: 2}
+  - {fileID: 11400000, guid: e3187faa5a2deeb4095c4a7609f696e3, type: 2}
+  DayOfTheWeek: SAT
+  DayNumber: 06
+  Month: July
+  TimeOfDay: 8:00
+  AMOrPM: 0

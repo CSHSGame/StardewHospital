@@ -3,21 +3,26 @@ tags:
 colorID: 0
 position: 540,260
 ---
-[$playerName]: (Knocks on open door.) Hi, [$Char1First]. It’s [$playerName]. Can I come in?
-[$Char1Last]: (Is in her bed) Yes, come in, dear.
+[$Char1FirstDoor]:Knock Knock.
+[$playerName]: Hi, [$Char1First]. It’s [$playerName]. Can I come in?
+[$Char1Last]: Yes, come in, dear.
+<<Hide SteinDoor>>
 <<SetPath Player Zero>>
 [$playerName]: How are you? I heard that you went to the hospital...
 [$Char1Last]: You’re right, dear. I was taken to the hospital after I had trouble breathing. Everyone was quite worried about me.
 [$playerName]: Of course they were. Everyone cares so much about you, [$Char1First]. You’re so friendly to everyone.
 [$Char1Last]: You're very kind, dear.
 [$playerName]: But is everything all right? Will you be coming to Tea ‘n Talk this afternoon?
-[$Char1Last]: Oh, not today, dear. Have you met [$Katherine], my roommate? (She points to [$Katherine] who is
-also in the room, sitting in a chair reading on the other side of the room.)
-[$playerName]: Hi there, [$Katherine] (Player waves to [$Katherine])
+[$Char1Last]: Oh, not today, dear. Have you met [$Katherine], my roommate? 
+//(She points to [$Katherine] who is also in the room, sitting in a chair reading on the other side of the room.)
+[$playerName]: Hi there, [$Katherine] 
+//(Player waves to [$Katherine])
 [$Katherine]: Hi. How are you doing?
 [$playerName]: I’m doing well. How about you?
 [$Katherine]: I’m fine, dear.
-[$Char1Last]: Come sit next to me, [$Katherine]! (Motions with hand) ([$Katherine] sits next to Eve) 
+[$Char1Last]: Come sit next to me, [$Katherine]! 
+//(Motions with hand) ([$Katherine] sits next to Eve) 
+<<SetPath Katherine Zero>>
 [$playerName]: I’d better go. I’ll see you later.
 [$Char1Last]: Can you just stay a bit longer [$playerName]? I want to talk to you about something …
 [$playerName]: Sure, I can stay.
@@ -51,28 +56,32 @@ position: 520,790
 [$Char1Last]: You need to know that I’ve had a wonderful life. I’m just happy I’ve had the chance to get to know you.
 [$playerName]: It’s been wonderful knowing you, too. I just didn’t expect …
 [$Char1Last]: Of course not, and that’s all right. Give me a hug. Now you run along now, dear, my daughter is coming to visit soon.
-[$Katherine]: (wipes off her tears) I love seeing Hana. Will she bring the children?
+[$Katherine]: I love seeing [$Hana]. Will she bring the children?
+//(wipes off her tears) 
 [$Char1Last]: Yes, I can’t wait! Now, you two, stop with the long faces.
 [$playerName] I’ll see you tomorrow.
-[$playerName]: If you need anything, Eve, please let me know. Have a good visit with Hana.
+<<Spawn Hana>>
+[$playerName]: If you need anything, Eve, please let me know. Have a good visit with [$Hana].
+<<SetPath Hana Zero>>
 // Hana entres the room as player leaves.
-[$playerName]: Oh you must be Hana
-Hana: Yes I am. I’m here to see my mom.
+[$playerName]: Oh you must be [$Hana]
+[$Hana]: Yes I am. I’m here to see my mom.
 [$playerName]: She’s waiting for you. My name is [$playerName], I’m a placement student here.
-Hana: Nice to meet you.
+[$Hana]: Nice to meet you.
 [$playerName]: Have a good visit.
+<<SetPath Player One>>
 //Player walks to nurse at front desk
 [$playerName]: [$NurseManager], I was just with [$Char1First], she told me that she is dying.
-I didn’t know what to say. I want to help her but I don’t know what to do.
+[$playerName]: I didn’t know what to say. I want to help her but I don’t know what to do.
 [$NurseManager]: I know the news was unexpected, and this is hard for all of us. 
-[$NurseManager]:We need to support [$Char1First] in what she needs - and continue to be professional.
+[$NurseManager]: We need to support [$Char1First] in what she needs - and continue to be professional.
 [$playerName]: I’ll do my best but . . .
 [$NurseManager]: It’s always difficult when this happens - and when a resident dies. 
-[$NurseManager]:That’s why we have support services in place for our staff and students – and also for residents’ families. 
-[$NurseManager]:You can talk to a support person about what you’re feeling, and it will be confidential.
+[$NurseManager]: That’s why we have support services in place for our staff and students – and also for residents’ families. 
+[$NurseManager]: You can talk to a support person about what you’re feeling, and it will be confidential.
 [$playerName]: I didn’t realize this service was available.
 [$NurseManager]: Remember, we’re all here to help and support our residents - and each other. 
-[$NurseManager]:We're arranging a care conference with [$Char1First] to discuss about any changes she’d like to make in her care – and to talk about her final wishes.
+[$NurseManager]: We're arranging a care conference with [$Char1First] to discuss about any changes she’d like to make in her care – and to talk about her final wishes.
 [$NurseManager]: I'm going to send you some material I’d like you to read about the end-of-life in long-term care.. 
 [$NurseManager]: It will help you prepare for the care conference.
 [$playerName]: This is my first experience with someone I know who is dying.

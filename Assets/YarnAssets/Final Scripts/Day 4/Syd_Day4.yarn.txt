@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 526,494
 ---
-[Action][$Char3FirstDoor]:Knock Knock
+[action][$Char3FirstDoor]:Knock Knock
 [$Char3First]: It's open.
 <<Hide SydDoor>>
 <<SetPath Player Zero>>
