@@ -1,4 +1,4 @@
-title: Transitioning_Day_3
+﻿title: Transitioning_Day_3
 tags: 
 colorID: 0
 position: 690,136
@@ -9,7 +9,7 @@ position: 690,136
 [$playerName]: Of course! How's it going?
 [$Susannah]: I'm worried my mother isn't eating propperly - she never ate western food at home and I don't think she's used to it. 
     ->Well, if a resident doesn’t eat, we can’t force feed them. It’s up to her whether she wants to eat or not...<<$Transitioning_Accomodate = false>>
-    ->Let me find out what can be done. Maybe the nutritionist can come up with a meal plan that would suit her better.<<$Transitioning_Accomodate = false>>
+    ->Let me find out what can be done. Maybe the nutritionist can come up with a meal plan that would suit her better.<<$Transitioning_Accomodate = true>>
 <<if $Transitioning_Accomodate == false>>
 [$Susannah]: That doesn't sound right at all... I'd like to speak with your supervisor about this.
 <<endif>>

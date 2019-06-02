@@ -1,4 +1,4 @@
-title: LGBTQ_THIRD_DAY_SYDS_ROOM
+﻿title: LGBTQ_THIRD_DAY_SYDS_ROOM
 tags: 
 colorID: 0
 position: 556,2409
@@ -12,7 +12,7 @@ position: 556,2409
 Richard: [$Char3First] told me how supportive you’ve been. 
 [$Char3First]: I was just getting introduced to the Program Manager [$DirName], Dana, a Social Worker. [$SupervisorName] I know well of course.
 [$DirName]: Let’s all have a seat.
-[$SocialWorker]: So, Richard and [Char3Name],  I heard you two have been together for forty years?
+[$SocialWorker]: So, Richard and [$Char3First],  I heard you two have been together for forty years?
 [Right][$Char3First]: That’s right. We met working at the same law firm in our thirties. We loved a lot of the same things- music, books, travel... we fell in love and we’ve been together ever since.
 [$SocialWorker]:   How wonderful for you both.  It must be difficult to be separated now.
 [$SupervisorName]: We really appreciate your willingness to talk to us about your concerns. We are striving to create a comfortable and respectful environment for all of our residents, but I understand you haven’t felt welcome here. 
