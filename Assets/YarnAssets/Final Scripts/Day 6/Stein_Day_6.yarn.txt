@@ -1,4 +1,4 @@
-title: Stein_Day_6
+﻿title: Stein_Day_6
 tags: 
 colorID: 0
 position: 540,260
@@ -28,12 +28,12 @@ position: 540,260
 [$playerName]: Sure, I can stay.
 [$Char1Last]: You and I haven’t really gotten to know each other very well, but I already know I like you, and I appreciate you. 
 [$Char1Last]: I think you’re going to be very successful in your career.
-[$playerName]: Thank you ...
-[$Char1Last]: I just want you to know. . . well, there’s no easy way to say this…but this last crisis was very serious... 
+[$playerName]: Thank you...
+[$Char1Last]: I just want you to know... well, there’s no easy way to say this… but this last crisis was very serious... 
 [$Char1Last]: I’ve learned that I now have very little time left.
 [[Don’t say that, Eve! You’ll be okay. You need to think positively!|Stein_Day_6_Part_2]]<<Day_6_Empathy == false>>
-[[I don’t understand. What do you mean?|Stein_Day_6_Part_2]]<<Day_6_Empathy == false>>
 [[Player listens with empathy, in silence, nods, and considers what Eve has said.|Stein_Day_6_Part_2]]<<Day_6_Empathy == true>>
+[[I don’t understand. What do you mean?|Stein_Day_6_Part_2]]<<Day_6_Empathy == false>>
 ===
 title: Stein_Day_6_Part_2
 tags: 
@@ -42,9 +42,10 @@ position: 537,494
 ---
 [$Char1Last]: You’ve learned a little about me by now, and you know that I like to speak frankly.
 [$Char1Last]: I know that I’m dying, and it’s okay. My health has been a struggle for quite a while now. I’m at peace with this.
+[[I’m so sorry...|Stein_Day_6_Part_3]]<<Stein_Day_6_Part_2_Right== true>>
 [[But how can you be? You must have been shocked when they told you!|Stein_Day_6_Part_3]]<<Stein_Day_6_Part_2_Right== false>>
 [[But maybe there’s been a mistake. Can’t they try some different treatment?|Stein_Day_6_Part_3]]<<Stein_Day_6_Part_2_Right== false>>
-[[I’m so sorry...|Stein_Day_6_Part_3]]<<Stein_Day_6_Part_2_Right== true>>
+
 ===
 title: Stein_Day_6_Part_3
 tags: 
@@ -81,8 +82,8 @@ position: 520,790
 [$NurseManager]: You can talk to a support person about what you’re feeling, and it will be confidential.
 [$playerName]: I didn’t realize this service was available.
 [$NurseManager]: Remember, we’re all here to help and support our residents - and each other. 
-[$NurseManager]: We're arranging a care conference with [$Char1First] to discuss about any changes she’d like to make in her care – and to talk about her final wishes.
-[$NurseManager]: I'm going to send you some material I’d like you to read about the end-of-life in long-term care.. 
+[$NurseManager]: We're arranging a care conference with [$Char1First] to discuss any changes she’d like to make in her care – and to talk about her final wishes.
+[$NurseManager]: I'm going to send you some material I’d like you to read about end-of-life and palliative care in long-term care.. 
 [$NurseManager]: It will help you prepare for the care conference.
 [$playerName]: This is my first experience with someone I know who is dying.
 [$NurseManager]: You’ll be okay. Take care and I’ll see you tomorrow then.
