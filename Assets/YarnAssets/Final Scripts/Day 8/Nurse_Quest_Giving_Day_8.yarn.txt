@@ -1,4 +1,4 @@
-title: In_Service_Mini_Scene
+﻿title: In_Service_Mini_Scene
 tags: 
 colorID: 0
 position: 1225,249
@@ -10,6 +10,7 @@ position: 1225,249
 [$SupervisorName]: They handed out a booklet which can now be picked up at the resource library.  
 [$PlayerName]: How wonderful! I'll definitely get a hold of that booklet. 
 [$SupervisorName]: My favorite parts were the talks given by Syd and Richard. They shared their lived experiences, one from the perspective of a closeted resident and the other from the point of view of a significant other. 
-[$PlayerName]: Oh wow – well, thanks for sharing all of that with me. I love how our long-term care culture is changing for the better. Have a good shift and let me know if you need any help! 
-[$SupervisorName]: Thanks, you too. 
+[$PlayerName]: Oh wow – well, thanks for sharing all of that with me. I love how our long-term care culture is changing for the better. 
+[$SupervisorName]: Absolutely. [$PlayerName], please meet me in a few minutes in the multi-faith chapel - we're going to be having a discussion with Mrs Stein regarding her palliative treatment - she expressed that she'd like you to be there. 
+[$PlayerName]: Ok, I'll see you there shortly. 
 ===
