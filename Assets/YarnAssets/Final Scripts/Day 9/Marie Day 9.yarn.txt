@@ -17,16 +17,18 @@ tags:
 colorID: 0
 position: 352,440
 ---
-[$playerName]: Knock Knock
+[$Char4FirstDoor]: Knock Knock
 [$playerName]: There's a faint rustling sound coming from inside.
 [$playerName]: [$Char4First]? It's [$playerName], I'm signing people up for [$ActivityName]... I'm coming in...
-<<SetPath Controller Zero>> //Starts outside of room and walks in
+<<Hide MarieDoor>>
+<<SetPath Player Zero>> //Starts outside of room and walks in
 [$playerName]: Hi,  [$Char4First]... 
+[$Char4First]: [$playerName]!!
 [$playerName]: Oh... 
 [$playerName]: my...
 [$playerName]: gosh!
 [$Char4First]: I didn’t tell you to enter!  Shut the door!
-[$PlayName]: I’m so sorry, [$Char4First]! I didn't know you were with someone! I will... show myself out now bye!
+[$playerName]: I’m so sorry, [$Char4First]! I didn't know you were with someone! I will... show myself out now bye!
 [[Sexuality_Saw_Stuff]]
 ===
 title: Sexuality_Saw_Stuff
@@ -34,18 +36,19 @@ tags:
 colorID: 0
 position: 526,690
 ---
-<<SetPath Controller One>> //Player walks back out into hall.
-<<Spawn Supervisor>>
-<<SetPath Supervisor Zero>>
-[$SupervisorName]:Hey, [$playerName].
+<<SetPath Player One>> //Player walks back out into hall.
+<<Spawn Nurse>>
+<<SetPath Nurse Zero>>
+[$NurseManager]: Hey, [$playerName].
+<<Spawn MarieDoor>>
 [$playerName]: Oh! Hi, hello...
-[$SupervisorName]: How did it go with [$Char4First].
+[$NurseManager]: How did it go with [$Char4First].
 [$playerName]: ... 
 [$playerName]: I... didn't really have a chance to ask [$Char4First].
-[$SupervisorName]: Was she in her room?
+[$NurseManager]: Was she in her room?
 [$playerName]: Um... Yes. 
 [[She wasn’t alone. There was a man with her. It was weird. I couldn’t believe it!|Sexuality_Judge]]<<$Sexuality_Judgy = true>>
-[[But She wasn’t alone.  I didn’t want to disturb her.|Sexuality_Judge]]<<$Sexuality_Judgy = false>>
+[[But she wasn’t alone.  I didn’t want to disturb her.|Sexuality_Judge]]<<$Sexuality_Judgy = false>>
 ===
 title: Sexuality_Enter
 tags: 
@@ -55,6 +58,7 @@ position: 707,439
 [$playerName]: [$Char4First] I'm coming in...
 <<SetPath Controller Zero>> //Starts outside of room and walks in
 [$playerName]: Hi, [$Char4First]... 
+[$Char4First]: [$playerName]!
 [$playerName]: Oh... 
 [$playerName]: my...
 [$playerName]: gosh!
@@ -68,40 +72,12 @@ position: 525,1179
 ---
 //Trigger Volume
 //****PROGRAMMERS NOTE*** Later in the day (after doing other stuff) we see a fellow student in the hall
- //Set player next to student
+//Set player next to student
 <<SetPath Ranjit Zero>>
 [$StudentName]: Hey [$playerName], how's it going?
 [[You’re not going to believe this!   I saw Marie making out with another resident.  She must be in her eighties!|Sexuality_NotPrivate]]<<$Sexuality_Private = false>>
 [[I have to tell you something - let’s go somewhere more private to discuss...|Sexuality_Private]]<<$Sexuality_Private = true>>
 
-===
-title: Sexuality_Private_Place
-tags: 
-colorID: 0
-position: 659,1725
----
-//Student and Player are in the garden.
-[$playerName]: You’re not going to believe this! I saw one of my residents kissing another resident. She must be in her eighties!
-[$StudentName]: Good for her.  I just hope I’m that frisky when I’m her age.
-[$playerName]: C’mon, don't you think it’s weird? Kind of yucky?  I was so embarrassed. 
-[$StudentName]: You need to loosen up a little [$playerName]. Remember that we’re not here to judge any resident.  We’re here to  support and respect their decisions,  as long as they’re safe.  I’m sure the resident knows what she’s doing.
-[$playerName]: I guess you're right. I should get back to work…
-<<SetPath Controller Three>> //Player walks toward Marie
-<<SetPath Ranjit Two>> //Student walks toward
-[$StudentName]: Oh there's Marie now, talking to Joe.
-[$Joe]: [$Char4Name]! Give ol' Joe a hug.
-[$Char4First]: No, Joe.  I’m not a big hugger. How about a handshake? 
-[$StudentName]: See, it looks like [$Char4First] knows how to set her own boundaries.
-[$playerName]: Yeah, that’s great!  I guess it's reassuring to see her say ‘No’ to something that makes her feel uncomfortable.  Thanks for the support [$StudentName]!
-[$playerName]: Umm, hi Marie! I didn't have a chance to ask you this morning if you’re coming to [$Activity] tomorrow.
-[$Char4First]: Sure! I thought I’d have to hunt you down to get my name on the list! Thanks, darling, I’ll see you there.
-<<SetPath Ranjit Two>>
-<<DeSpawn Ranjit>> //Walk away and despawn
-<<SetPath Joe Zero>>
-<<DeSpawn Joe>> //Walk away and despawn
-<<Setpath Marie Zero>> 
-<<DeSpawn Marie>> //Walk away and despawn
-<<FinishIt DayLoader>>
 ===
 title: Sexuality_Part_3
 tags: 
@@ -143,21 +119,23 @@ colorID: 1
 position: 524,951
 ---
 [$playerName]: I can't believe they’re  allowed to do that in here.
-[$SupervisorName]: Do what? ... What did you see?
-[$playerName]: [$playerName]:I’m not sure but I think they were having sex!  
-[$SupervisorName]: Well, they’re adults, you know.  Just because they live in long-term care doesn’t mean they have to give up their rights.  This is their home. 
+[$NurseManager]: Do what? ... What did you see?
+[$playerName]: I’m not sure but I think they were having sex!  
+[$NurseManager]: Well, they’re adults, you know. Just because they live in long-term care doesn’t mean they have to give up their rights. This is their home. 
 [$playerName]: But they're as old as my grandparents!
-[$SupervisorName]: Our responsibility is to make sure that residents are safe but they also have a right to privacy, even though it’s not always possible to find privacy here!
+[$NurseManager]: Our responsibility is to make sure that residents are safe but they also have a right to privacy, even though it’s not always possible to find privacy here!
 [$playerName]: ...
-[$SupervisorName]: You seem upset, but I think it's rather beautiful when our residents can find some closeness and intimacy here . . .  
+[$NurseManager]: You seem upset, but I think it's rather beautiful when our residents can find some closeness and intimacy here . . .  
 [$playerName]: I guess. But I feel really uncomfortable. It's like I walked in on my grandmother making out with an old guy.
-[$SupervisorName]: [$playerName], we need our students to understand that older adults are human - they're sexual beings just like anyone else.   We need to cut across all the hurtful stereotypes about growing old. I want you to have this - it's an article that I want you to read.  I think you’ll find it helpful.  
+[$NurseManager]: [$playerName], we need our students to understand that older adults are human - they're sexual beings just like anyone else.   We need to cut across all the hurtful stereotypes about growing old. I want you to have this - it's an article that I want you to read.  I think you’ll find it helpful.  
 //***PROGRAMMERS NOTE** hands player a document -- Blackboard
+[$NurseManager]: *** Hand player document ***
 [$playerName]: Okay... I do have a quick question before you go.  How do we know what Marie is doing is consensual?
-[$SupervisorName]: That’s a great question. The staff know from our ongoing assessments which residents are fully capable of making such personal decisions. Marie is quite able to make decisions for herself.
-[$playerName]: Thanks, [$SupervisorName]. I’ll read this tonight. 
-<<SetPath Supervisor One>> //Supervisor walks next dor to Mrs Lee's room.
-<<SetObjective DayLoader MeetMrsLee>>
+[$NurseManager]: That’s a great question. The staff know from our ongoing assessments which residents are fully capable of making such personal decisions. Marie is quite able to make decisions for herself.
+[$playerName]: Thanks, [$NurseManager]. I’ll read this tonight. 
+<<SetPath Nurse One>> //Supervisor walks next door to Mrs Lee's room.
+<<SetObjective GameManager TalkToRanjitDay9>>
+<<Spawn Ranjit>>
 ===
 title: Sexuality_Defense
 tags: 
@@ -199,21 +177,4 @@ position: 514,2795
 [$playerName]: Very funny...
 <<TalkedMarieDay3 = True>>
 <<SetObjective DayLoader CheckMrsLeeDay3>>
-===
-title: Sexuality_NotPrivate
-tags: 
-colorID: 0
-position: 366,1446
----
-[$StudentName]: Whoa hold on! We shouldn't be discussing something like that here - we need to go somewhere private. Let's go to the garden.
-[[Sexuality_Private]]
-===
-title: Sexuality_Private
-tags: 
-colorID: 0
-position: 674,1445
----
-<<SetPath Controller Two>> //Player walks a bit towards the garden
-<<SetPath Ranjit One>> //Student walks a bit toward the garden
-[[Sexuality_Private_Place]]
 ===

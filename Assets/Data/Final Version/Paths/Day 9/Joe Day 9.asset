@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: Joe Day 9
+  m_EditorClassIdentifier: 
+  position: {x: 14.79, y: 0.25581813, z: -1.98}
+  rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  scale: {x: 1.3, y: 1.3000009, z: 1.3000009}
+  sprite: {fileID: 21300000, guid: ed7388f0ac5020d4fa1ea8bd7648bce6, type: 3}
+  AnimatorController: {fileID: 22100000, guid: 669adef764c4ebd44bc429e6cd987e66, type: 2}
+  talkToNode: 
+  scriptToLoad: {fileID: 0}
+  GameObjectName: Joe
+  waypoints:
+  - Name: ' '
+    location:
+    - {x: 16.5, y: 0.25581813, z: -2}
+    - {x: 16.513758, y: 0.25581813, z: 8}
+    - {x: 21.5, y: 0.25581813, z: 8}
+    - {x: 21.5, y: 0.25581813, z: 30}
+  - Name: ' '
+    location:
+    - {x: 21.5, y: 0.25581813, z: 30}
+    - {x: 21.5, y: 0.25581813, z: 40}
+  DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1

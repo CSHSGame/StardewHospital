@@ -1,0 +1,62 @@
+title: Marie_Day_10_Start
+tags: 
+colorID: 0
+position: 583,34
+---
+//****PROGRAMMERS NOTE**** The player arrives at Maries, the door is closed.
+[Door]: Knock Knock
+[$playerName]: Marie? Are you there? It’s me, [$playerName].
+[$Char4First]: Come in.
+[$playerName]: Ok, I’m coming in… 
+[$playerName]: just opening the door… 
+[$playerName]: and coming in to the room now...
+[$Char4First]: You can come right in.
+<<SetPath Controller Zero>> //The player enters the room
+[$playerName]: Ok! Here I am.
+[$Char4First]: Hmm, yes, here you are.
+[$playerName]: So! [$Char4First], I just wanted to apologize for the other day, barging in here. I know this is your home and I want to respect your privacy and I should have gotten your consent before entering. 
+[$Char4First]: My dear, mistakes happen. I wasn’t upset with you for walking in on my companion and I. If anything it’s been your behaviour since then that I find a bit bothersome. 
+[[[$playerName]: What do you mean? What's wrong with my behaviour?!!|Sexuality_Defense]]<<$Sexuality_Defensive = true>>
+[[[$playerName]: Oh! I’m so sorry.  But what do you mean, specifically, [$Char4First]? Did I say something wrong?|Sexuality_Defense]]<<$Sexuality_Defensive = false>>
+===
+title: Sexuality_Defense
+tags: 
+colorID: 0
+position: 196,393
+---
+
+[$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
+[$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
+[$Char4First]: We’re not an item!  Don’t go telling people that!
+[$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! 
+I’m trying not to be weird! 
+[$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
+[$playerName]: It’s just that I haven’t known that many older people until I came here.  Just my grandparents.  It’s kind of an adjustment.
+[$Char4First]: Do you think your grandparents have sex?
+[[[$playerName]: Definitely not.|Sexuality_Know]]
+[[[$playerName]: I don’t’ know.|Sexuality_Know]]
+[[[$playerName]: No way!|Sexuality_Know]]
+===
+title: Sexuality_Know
+tags: 
+colorID: 0
+position: 596,626
+---
+[$Char4First]: How would you know?
+[$playerName]:  I mean . . . I don’t know, I guess. I kind of assumed they were too old and didn’t do that anymore.  
+[$Char4First]: Because you think that’s true?  Or because you don’t want to think about it?
+[$playerName]: ...I don’t know. 
+[$Char4First]: [$playerName] I know that you want to do this job because you are a caring person.  I can see that in you. 
+[$playerName]: Thanks, [$Char4First].  You’re very kind.
+[$Char4First]: But you need to remember that we’re people just like you.  No matter our age. We have our own private lives, and our own feelings – and you’d probably be surprised how similar they are to many of yours. Do you mind if I ask if you have anyone special in your life?
+[$playerName]: Yeah. I do. I have a partner.  
+[$Char4First]: And do you have an intimate relationship?  
+[$playerName]: [$Char4First]! That’s personal.
+[$Char4First]: You see what I’m getting at?
+[$playerName]: Okay. I see I have a lot to learn.  Thanks for talking about this with me.  I really appreciate it.
+[$Char4First]: Any big plans tonight?
+[$playerName]: We might go do a movie or just hang out.
+[$Char4First]: Well, don’t do anything I wouldn’t do!   
+[$playerName]: Very funny...
+<<TalkedMarieDay3 = True>>
+===
