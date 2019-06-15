@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
   m_Name: Hana Day 11
   m_EditorClassIdentifier: 
-  position: {x: -16.49, y: 0.25581813, z: 39.99}
+  position: {x: 25.28, y: 0.25581813, z: 44.62}
   rotation: {x: 0.70710576, y: -0, z: -0, w: 0.7071079}
-  scale: {x: 1.3, y: 1.3000028, z: 1.3000028}
+  scale: {x: 1.3, y: 1.3000033, z: 1.3000033}
   sprite: {fileID: 21300032, guid: d477293981ae14846882b6aa5ab2eab5, type: 3}
   AnimatorController: {fileID: 0}
-  talkToNode: 
+  talkToNode: Katherine_and_Hana_Meeting
   scriptToLoad: {fileID: 0}
   GameObjectName: Hana
   waypoints: []

@@ -19,6 +19,17 @@ MonoBehaviour:
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: Player
-  waypoints: []
+  waypoints:
+  - Name: ' '
+    location:
+    - {x: 46.5, y: 0.13, z: 14}
+  - Name: ' '
+    location:
+    - {x: 46.5, y: 0.13, z: 14}
+    - {x: 44, y: 0.13, z: 17.25}
+    - {x: 37, y: 0.13, z: 17.25}
+    - {x: 37, y: 0.13, z: 45.25}
+    - {x: 31, y: 0.13, z: 45.25}
+    - {x: 27, y: 0.13, z: 44.5}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

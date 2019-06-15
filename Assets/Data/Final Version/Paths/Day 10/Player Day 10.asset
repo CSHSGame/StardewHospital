@@ -32,5 +32,9 @@ MonoBehaviour:
   - Name: ' '
     location:
     - {x: -20.22029, y: 0.13, z: 46.33631}
+  - Name: ' '
+    location:
+    - {x: 16.47395, y: 0.13, z: 7.2}
+    - {x: 16.47395, y: 0.13, z: 0.5}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

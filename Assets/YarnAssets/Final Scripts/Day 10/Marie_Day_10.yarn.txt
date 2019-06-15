@@ -4,22 +4,23 @@ colorID: 0
 position: 583,34
 ---
 //****PROGRAMMERS NOTE**** The player arrives at Maries, the door is closed.
-[Door]: Knock Knock
+[$Char4FirstDoor]: **Knock Knock.**
 [$playerName]: Marie? Are you there? It’s me, [$playerName].
-[$Char4First]: Come in.
+[$Char4FirstDoor]: Come in.
 [$playerName]: Ok, I’m coming in… 
 [$playerName]: just opening the door… 
 [$playerName]: and coming in to the room now...
-[$Char4First]: You can come right in.
-<<SetPath Controller Zero>> //The player enters the room
+[$Char4FirstDoor]: You can come right in.
+<<Hide MarieDoor>>
+<<SetPath Player Three>> //The player enters the room
 [$playerName]: Ok! Here I am.
 [$Char4First]: Hmm, yes, here you are.
 [$playerName]: So! [$Char4First], I just wanted to apologize for the other day, barging in here. I know this is your home and I want to respect your privacy and I should have gotten your consent before entering. 
 [$Char4First]: My dear, mistakes happen. I wasn’t upset with you for walking in on my companion and I. If anything it’s been your behaviour since then that I find a bit bothersome. 
-[[[$playerName]: What do you mean? What's wrong with my behaviour?!!|Sexuality_Defense]]<<$Sexuality_Defensive = true>>
-[[[$playerName]: Oh! I’m so sorry.  But what do you mean, specifically, [$Char4First]? Did I say something wrong?|Sexuality_Defense]]<<$Sexuality_Defensive = false>>
+[[[$playerName]: What do you mean? What's wrong with my behaviour?!!|Sexuality_Defense_Day_10]]<<$Sexuality_Defensive = true>>
+[[[$playerName]: Oh! I’m so sorry.  But what do you mean, specifically, [$Char4First]? Did I say something wrong?|Sexuality_Defense_Day_10]]<<$Sexuality_Defensive = false>>
 ===
-title: Sexuality_Defense
+title: Sexuality_Defense_Day_10
 tags: 
 colorID: 0
 position: 196,393
@@ -29,15 +30,15 @@ position: 196,393
 [$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
 [$Char4First]: We’re not an item!  Don’t go telling people that!
 [$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! 
-I’m trying not to be weird! 
+[$playerName]: I’m trying not to be weird! 
 [$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
 [$playerName]: It’s just that I haven’t known that many older people until I came here.  Just my grandparents.  It’s kind of an adjustment.
 [$Char4First]: Do you think your grandparents have sex?
-[[[$playerName]: Definitely not.|Sexuality_Know]]
-[[[$playerName]: I don’t’ know.|Sexuality_Know]]
-[[[$playerName]: No way!|Sexuality_Know]]
+[[[$playerName]: Definitely not.|Sexuality_Know_Day_10]]
+[[[$playerName]: I don’t’ know.|Sexuality_Know_Day_10]]
+[[[$playerName]: No way!|Sexuality_Know_Day_10]]
 ===
-title: Sexuality_Know
+title: Sexuality_Know_Day_10
 tags: 
 colorID: 0
 position: 596,626
@@ -58,5 +59,5 @@ position: 596,626
 [$playerName]: We might go do a movie or just hang out.
 [$Char4First]: Well, don’t do anything I wouldn’t do!   
 [$playerName]: Very funny...
-<<TalkedMarieDay3 = True>>
+//<<TalkedMarieDay3 = True>>
 ===

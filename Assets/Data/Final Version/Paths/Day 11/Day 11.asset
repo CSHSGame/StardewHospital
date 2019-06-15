@@ -16,6 +16,7 @@ MonoBehaviour:
   CurrentDay: 0
   Objectives:
   - {fileID: 11400000, guid: 7672450992c88c644916367056b2196f, type: 2}
+  - {fileID: 11400000, guid: 4789551ba0e7b014bae70f45f4bc4466, type: 2}
   PlayerData: {fileID: 11400000, guid: 07c97199ea704a14eabcf00ff2e12910, type: 2}
   npcs:
   - {fileID: 11400000, guid: e844ae3741a2919478315e939353d4da, type: 2}

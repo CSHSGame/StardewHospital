@@ -20,6 +20,8 @@ MonoBehaviour:
   PlayerData: {fileID: 11400000, guid: aded8dde5a6f5d542bc403bc19e8550f, type: 2}
   npcs:
   - {fileID: 11400000, guid: 6b2c6df0bc3eee044b38addb4700351c, type: 2}
+  - {fileID: 11400000, guid: 1a59de04b22b9064a93bd1166e7e1b57, type: 2}
+  - {fileID: 11400000, guid: f7177b75e8009764fb695807cdf349bb, type: 2}
   DayOfTheWeek: WED
   DayNumber: 10
   Month: JULY

@@ -1,29 +1,36 @@
-title: Transitioning_Start
+title: Transitioning_Start_Day_11
 tags: 
 colorID: 0
-position: 152,141
+position: -4,-13
 ---
-<<if visited("Transitioning_Start")>>
-[$playerName]: I should leave them be.
-<<else>>
+//<<if visited("Transitioning_Start_Day_11")>>
+//[$playerName]: I should leave them be.
+//<<else>>
+<<SetPath Player Zero>>
 [$NurseManager]: Hello [$playerName]. Mrs. Lee is going to be our new resident. Come meet her and her family. 
 [$Susannah]: See mom, this is such a nice place.
 [$Susannah]: I see you'll have a room-mate - I think that's fantastic.  You’re not going to be alone. 
 [$NurseManager]: We’re going to do our best to make Mrs. Lee comfortable. We have an excellent team here that will work together to address all her needs. And this is our Placement Student [$playerName], they're going to help her settle into her new room.
 [$playerName]: Hi, Mrs. Lee.  It’s good to meet you.    
-[$NurseManager]:  Susannah, I'd like to speak with you and your husband for a few minutes - can we go to my office?  We’ll be back in a few minutes. 
-//<<SetPath Nurse Zero>> //Supervisor leaves the room
-//<<SetPath Brian Zero>> //Brian leaves the room
-//<<SetPath Susannah Zero>>//Susannah leaves the room
+[$NurseManager]:  Susannah, I'd like to speak with you and your husband for a few minutes - can we go to my office?  We’ll be back in a few minutes.  
+<<SetPath Nurse Zero>> //Supervisor leaves the room
+<<SetPath Brian Zero>> //Brian leaves the room
+<<SetPath Susannah Zero>> //Susannah leaves the room
 [$playerName]: My name is [$playerName].  I’m going to help take care of you today. Would you like to sit down?
 [$Char5Last]: NO, NO, NO! (translate into Cantonese characters)
 [$playerName]: I’m sorry. I don’t understand what you’re saying?
 [$Char5Last]: Susannah!    I Go Home NOW! (translate into Cantonese characters)
-    ->I DONT KNOW WHAT YOU ARE SAYING.<<$Transitioning_Rude = true>>
-    ->I'm sorry [$Char5Last] but I can't understand you. I'm just going to look in the hall to see if there's someone who can help.<<Transitioning_Rude = false>>
-<<SetPath Nurse One>>//***PROGRAMMER NOTE*** The nurse manager comes to the doorway
-<<if $Transitioning_Rude == true>>[$NurseManager]: [$playerName]! That's not an appropriate way to speak to [$Char5Last].
-[$playerName]: Sorry... I just got frustrated...<<endif>>
+<<SetPath Nurse One>> // The nurse manager comes to the doorway
+[[I DONT KNOW WHAT YOU ARE SAYING.|Rude_Day_11]]<<$Transitioning_Rude = true>>
+[[I'm sorry [$Char5Last] but I can't understand you. I'm just going to look in the hall to see if there's someone who can help.|Not_Rude_Day_11]]<<Transitioning_Rude = false>>
+//<<endIf>>
+===
+title: Not_Rude_Day_11
+tags: 
+colorID: 0
+position: 311,370
+---
+<<SetPath Nurse Two>>
 [$NurseManager]: Can I be of some help?
 [$playerName]: Yes Please! [$Char5Last] seems to need something urgently but I don't know what she's saying.
 [$NurseManager]: Well, that's one of the reasons we keep these tablets here! You can use a website to translate between Cantonese and English, and vice versa.
@@ -36,12 +43,22 @@ position: 152,141
 [$playerName]: Oh!
 [$playerName]: [$Char5Last], your daughter hasn't left - she'll be back in a few minutes.
 [$Tablet]: 你女兒沒有離開 - 她會在幾分鐘後回來。(Check these Cantonese characters)
-[$Char5Last]:[smile]
-//<<SetPath Supervisor One>> //Supervisor returns to the room
+[$Char5Last]:[smile] OK.
 <<SetPath Brian One>> //Brian returns to the room
-<<SetPath Susannah One>>//Susannah returns to the room
+<<SetPath Susannah One>> //Susannah returns to the room
 [$NurseManager]: Ah! Your mother was just asking for you.
 [$Susannah]: Thanks for keeping her company!
 [$playerName]: Of course! See you later.
-<<endif>>
+<<SetObjective GameManager GoToMeetingDay11>>
+<<SetPath Nurse Three>>
+<<SetPath Player One>>
+===
+title: Rude_Day_11
+tags: 
+colorID: 0
+position: -227,373
+---
+[$NurseManager]: [$playerName]! That's not an appropriate way to speak to [$Char5Last].
+[$playerName]: Sorry... I just got frustrated...
+[[Not_Rude_Day_11]]
 ===
