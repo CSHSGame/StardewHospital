@@ -8,9 +8,9 @@ position: 689,139
 //NO <<SetPath Susannah Zero>>//***Programmers Note********* Susannah walks up to player in the hallway 
 [$Susannah]:  Hi [$playerName]!  my name's Susannah , I'm [$Char5Last]'s daughter - we met the other day. 
 [$playerName]: Of course! How's it going?
-[$Susannah]: I'm worried my mother isn't eating propperly - she never ate western food at home and I don't think she's used to it. 
+[$Susannah]: I'm worried my mother isn't eating properly - she never ate western food at home and I don't think she's used to it. 
 [[Well, if a resident doesn’t eat, we can’t force feed them. It’s up to her whether she wants to eat or not...|Day_13_Non_Accomodating]]<<$Transitioning_Accomodate = false>>
-[[Let me find out what can be done. Maybe the nutritionist can come up with a meal plan that would suit her better.|Day_13_Accomodating]]<<$Transitioning_Accomodate = true>>
+[[Let me find out what can be done. Maybe the dietitian can come up with a meal plan that would suit her better and accommodate her preferences.|Day_13_Accomodating]]<<$Transitioning_Accomodate = true>>
 ===
 title: Day_13_Accomodating
 tags: 
@@ -36,25 +36,27 @@ position: 691,458
 ---
 <<SetPath Player One>>
 <<SetPath Susannah Zero>> //***Progerammers Note********Player and Susannah walk to Resident’s Room. Nurse Manager, Mrs. Lee, Susannah and the PLAYER 
-[$playerName]: Oh [$NurseManager], you're here! I was just going to go find you. Susannah wanted to ask you about making some adjustments to [$Char5Last]'s mealplan.
+[$playerName]: Oh [$NurseManager], you're here! I was just going to go find you. Susannah wanted to ask you about making some adjustments to [$Char5Last]'s meal plan.
 [$NurseManager]: Of course! How can I help? 
 [$Susannah]: I’m concerned about my mother's health... Brian and I are worried she’s not eating her meals. 
 [$NurseManager]: Hmm, well it’s only been a few days since she moved in - sometimes a change like that can affect a person's appetite.
 [$Susannah]: Sure, but I think it also has to do with the type of food here. At home, she would have authentic Chinese meals - that’s what she’s eaten all her life.
 [$NurseManager]: Of course. Thanks for letting us know - I’ll have the dietician stop by with a meal plan survey to see what choices might best fit your mom. 
 [$Susannah]: Okay, thank you!
-[$NurseManager]:  However, I should say because we have residents from many different cultural backgrounds I’m afraid we can’t accommodate everyone’s preferences.  
-[$NurseManager]: We do try to offer some alternatives and some families bring in a resident’s favourite foods from home to supplement our menus. 
+[$NurseManager]: However, I should say that we have residents from many different cultural backgrounds and we try our best to accommodate everyone’s preferences..  
+[$NurseManager]: We do try to offer some alternatives and some families bring in a resident’s favourite foods from home to supplement our menus after consulting with the dietitian. 
 [$Susannah]: I didn’t know we could do that. We can certainly bring her some home-cooked meals. 
-[$NurseManager]: There's one other thing - it's a new program here. The residents learn to cook different foods from their culture and they teach each other.  I think your mom would enjoy it.
-[$Susannah]: 還有一件事 - 這是一個新的計劃。居民學會從他們的文化中烹飪不同的食物，他們互相教導。我想你的媽媽會喜歡它。
-[$Char5Last]: 我會做飯 [smile]
-[$playerName]: Yes! And you’ll be cooking with the other residents.  The class is every Wednesday afternoon. 
-[$Susannah]: You could make new friends to share your famous dishes from China. 
-[$Char5Last]: 他們不喜歡我。我不會說英語。 
-[$Susannah]: She doesn’t feel like she belongs here. Katherine is warm and friendly but mom feels she has no one to talk to.  
+[$NurseManager]: There's one other thing - it’s a new program here . The residents learn to cook different foods from around the world and share their own cultural recipes. Do you think your mom would enjoy it?
+[$Susannah]: 妈妈，她说这里有烹饪班！ 您想学习烹饪来自世界各地的不同食物吗？(Mom, she's saying there is cooking classes here! Would you like to learn to cook different foods from around the world?])
+[$Char5Last]: [smile] 我會做飯 (Yes, I like to cook!)
+[$Susannah]: Player, my mother said she likes to cook and I think she would attend this program.
+[$PlayerName]: That’s great! The class is every Wednesday afternoon, I’ll be sure to include her.
+[$Susannah]: 妈妈，这节课是在星期三，节目的工作人员会来接你。 你可以结交新朋友，分享你在中国的名菜。 
+[$Susannah]: Mom, the class is on Wednesdays and the program staff will come to get you. You could make new friends to share your famous dishes from China.]
+[$Char5Last]: 他们不会喜欢我。 我不会说英语
+[$Susannah]: She says she doesn’t feel like she belongs here. Katherine is warm and friendly but mom feels she has no one to talk to.  
 [[Tell her I’ll go to the class with her with my translation device or we will have a volunteer translate for your mom during the class.|Day_13_Class_True]] <<$Transitioning_Class = true>> 
-[[It’s really important for you to try all our activities, Mrs. Lee. You can’t just stay in your room all the time.|Day_13_Class_False]] <<$Transitioning_Class = false>> 
+[[Please tell her it’s really important for you to try all our activities, she can’t just stay in her room all the time.|Day_13_Class_False]] <<$Transitioning_Class = false>> 
 ===
 title: Day_13_Class_True
 tags: 

@@ -1,18 +1,18 @@
-title: Katherine_and_Hana_Meeting
+﻿title: Katherine_and_Hana_Meeting
 tags: 
 colorID: 0
 position: 1225,249
 ---
 //Setting:  Conference Room/Nursing Supervisor’s Office
 //The player, Nursing Supervisor, [$Hana]  and  [$Katherine]
-[$NurseManager]: Please, [$Hana], [$Katherine], come on in and sit down.  It’s been a tough few days. We all miss Eve very much. 
+[$NurseManager]: Please, [$Hana], [$Katherine], thanks for coming.  It’s been a tough few days. We all miss Eve very much. 
 [$Hana]: I’m grateful to everyone, especially to the staff who arranged everything for mom.  I`m so grateful I was able to spend these last precious days with her. 
 [$Hana]: I tried to give the night nurse a card with some money, but she said she couldn’t accept it, so I want to make a donation to Bloom Village on my mom’s behalf. Mom was so happy here and your wonderful care and support made all the difference.
 [$NurseManager]: Thank you.  Are you taking care of yourself?
 [$Hana]: My mom told me the greatest lesson she ever learned was how in the end all that matters are love and relationships. I’m trying to take it one day at a time and focus my energy on my kids.
 [$playerName]: I remember Eve telling me the same thing after our first Tea ‘N Talk session!
 [$NurseManager]:   Eve was very wise.  How are you doing, [$Katherine]?
-[$Katherine]: (crying)  It’s so hard to lose her ... And now I’ll have a new roommate already - tomorrow!  But no one can take her place… 
+[$Katherine]: (crying)  It’s so hard to lose her ... And now I’ll have a new roommate already!  But no one can take her place… 
 [[It’s going to be okay. Don’t cry -- you’re stronger than you know!|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
 [[[$Katherine], it’s okay to feel sad, it’s okay to cry. You don’t have to try to be ‘strong.’	Eve was your dear friend.|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
  
@@ -38,7 +38,7 @@ position: 1221,534
 [$Hana]: You had a close relationship with my mom this past year, [$Katherine]. Thank you for being her best friend. She loved you very much.
 [$NurseManager]:  [$Katherine], is there anyone here you can rely on for support?
 //(Scroll: We want to promote healing through the building of support systems.)
-[$Katherine]: I went to all the Tea ‘n Talk meetings with Eve and some of the other activities where I made friends with a few other residents  - but I don’t feel interested in doing anything now . . .
+[$Katherine]: I went to all the Tea ‘n Talk programs with Eve and some of the other activities where I made friends with a few other residents  - but I don’t feel interested in doing anything now . . .
 [$NurseManager]: That's normal, [$Katherine]. You need time to grieve. And it will feel lonely to go to activities you used to enjoy without Eve by your side – but remember, you’re not alone here.   I urge you to keep attending  your favorite activities and spending time with your other friends here.
 //(Scroll: We need to be aware of the risk of depression when grief leads to isolation.)
 [$Katherine]: I'll try … it’s just too painful – I end up crying.
