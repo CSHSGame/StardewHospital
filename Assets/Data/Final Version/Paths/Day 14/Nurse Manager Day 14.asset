@@ -16,7 +16,7 @@ MonoBehaviour:
   scale: {x: 1.3, y: 1.3, z: 1.3}
   sprite: {fileID: 21300000, guid: 3d6db010bd1478d428e0200386a19ba2, type: 3}
   AnimatorController: {fileID: 22100000, guid: 994a8103cbe286d47849c74918e5ea81, type: 2}
-  talkToNode: Student_Supervisor_Conflict_Day_14
+  talkToNode: Day_14
   scriptToLoad: {fileID: 0}
   GameObjectName: Nurse
   waypoints:
@@ -24,7 +24,7 @@ MonoBehaviour:
     location:
     - {x: 3, y: 0.25581813, z: 7.5}
     - {x: 29, y: 0.25581813, z: 7.5}
-    - {x: 29, y: 0.25581813, z: 16.23997}
-    - {x: 29, y: 0.25581813, z: 18.669617}
+    - {x: 29, y: 0.25581813, z: 16}
+    - {x: 29, y: 0.25581813, z: 19}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

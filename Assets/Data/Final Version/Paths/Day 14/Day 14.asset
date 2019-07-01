@@ -19,6 +19,12 @@ MonoBehaviour:
   PlayerData: {fileID: 11400000, guid: 08a0e59bbe50e8a4db62f233159b161a, type: 2}
   npcs:
   - {fileID: 11400000, guid: dde329cd8b871f94e93560d1c0666534, type: 2}
+  - {fileID: 11400000, guid: b1e7dd39357573d458afafd6d3a3a1d7, type: 2}
+  - {fileID: 11400000, guid: e9cd7d1fc2f953c42a9aac2301480c6c, type: 2}
+  - {fileID: 11400000, guid: e7bebf96621ba7f4b9dc0b7ef0d91c19, type: 2}
+  - {fileID: 11400000, guid: fa48728d0bb1f97448e37f5d590de278, type: 2}
+  - {fileID: 11400000, guid: df6fc4604487e53458ab8a0c48701e13, type: 2}
+  - {fileID: 11400000, guid: e54e6563de3a7e74a8dafa14748ccbb4, type: 2}
   DayOfTheWeek: SUN
   DayNumber: 14
   Month: JULY
