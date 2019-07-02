@@ -14,4 +14,6 @@ MonoBehaviour:
   name: ToSteinDay2
   target: 0
   wayfindingIndex: 41
-  displayText: Go talk to Evelyn Stein.
+  displayText: 'Go talk to Evelyn Stein in the Living Area.
+
+'

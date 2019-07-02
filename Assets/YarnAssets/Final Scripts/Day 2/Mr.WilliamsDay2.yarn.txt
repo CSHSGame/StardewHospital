@@ -3,8 +3,9 @@ tags:
 colorID: 0
 position: 776,1153
 ---
+<<SetPath Player Two>>
+[$Char2Last]: Hello...
 [$playerName]: Good morning, Mr. Williams. How are you doing?
-Skip:
 [$Char2Last]: I'm good. But--
 
 [[Great! I'm here to help you go to the dining room for breakfast.|Who_Williams_Day_1]]
@@ -101,10 +102,10 @@ Skip:
 [$NurseManager]: [$Char2Last], why don’t you and your daughter join us for breakfast?
 [$Marissa]: Yeah, Dad, that’s a great idea. I’m hungry.
 [$Char2Last]: Okay.
-<<SetPath Marissa One Warp>>
-<<SetPath Player One Warp>>
-<<SetPath MrWilliams Five Warp>>
-<<SetPath Nurse One Warp>>
+<<SetPath Marissa One>>
+<<SetPath Player One>>
+<<SetPath MrWilliams Five>>
+<<SetPath Nurse One>>
 [[Hallway_Williams_Day_1]]
 ===
 title: Hallway_Williams_Day_1

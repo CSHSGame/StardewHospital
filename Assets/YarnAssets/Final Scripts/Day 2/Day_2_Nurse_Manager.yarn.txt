@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: -476,622
 ---
+[$NurseManager]: Hello! 
 [$playerName]: Hello! 
 [$NurseManager]: Hello [$playerName]! Ready for your second day?
 [$playerName]: Yes! 

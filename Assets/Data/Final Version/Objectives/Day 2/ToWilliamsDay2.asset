@@ -14,4 +14,4 @@ MonoBehaviour:
   name: ToWilliamsDay2
   target: 0
   wayfindingIndex: 25
-  displayText: Go talk to Mr.Williams
+  displayText: Go talk to Mr.Williams in his room.
