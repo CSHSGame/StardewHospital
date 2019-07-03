@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9c8cdc5410ff7ea49ba3e458c838f967, type: 2}
   - {fileID: 11400000, guid: 5c4f1a7cfd170bb469eaa9601c780c97, type: 2}
   - {fileID: 11400000, guid: 423c29c0d890c4540b80bebd63c363d3, type: 2}
+  - {fileID: 11400000, guid: 1ac5b5087bc4d6c46bb7f9dcdbfa609e, type: 2}
   PlayerData: {fileID: 11400000, guid: 585be9b266712614384d12b6fb22c501, type: 2}
   npcs:
   - {fileID: 11400000, guid: f95db19e96ee75744aa102405604b68a, type: 2}

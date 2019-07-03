@@ -18,7 +18,7 @@ MonoBehaviour:
   DP2Outcome1TrueOutcome2False: 0
   DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: True
-  DecisionPoint1Outcome1Text: 
+  DecisionPoint1Outcome1Text: Tour of the facility
   DecisionPoint2Outcome1Title: True
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: True

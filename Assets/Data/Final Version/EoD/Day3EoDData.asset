@@ -20,15 +20,14 @@ MonoBehaviour:
   DecisionPoint1Outcome1Title: Mr.Williams Breakfast 2
   DecisionPoint1Outcome1Text: 'Remember that we are in their home. Always knock on
     the door (even when it is open) before entering to show respect for their privacy. '
-  DecisionPoint2Outcome1Title: Eve Stein Tea and Talk
-  DecisionPoint2Outcome1Text: ": Today you helped Mrs. Stein in setting up the Tea
-    N Talk. In doing so, you\u2019re supporting her independence and creating rapport.\r\n"
+  DecisionPoint2Outcome1Title: 
+  DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: Mr.Williams Breakfast 2
   DecisionPoint1Outcome2Text: "Failure to knock on a resident\u2019s door before entering
     their room is an invasion of their right to privacy. "
-  DecisionPoint2Outcome2Title: Eve Stein Tea and Talk
+  DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 

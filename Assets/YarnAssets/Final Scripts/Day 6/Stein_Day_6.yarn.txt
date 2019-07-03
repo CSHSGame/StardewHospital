@@ -58,7 +58,6 @@ position: 520,790
 [$playerName]: It’s been wonderful knowing you, too. I just didn’t expect …
 [$Char1Last]: Of course not, and that’s all right. Give me a hug. Now you run along now, dear, my daughter is coming to visit soon.
 [$Katherine]: I love seeing [$Hana]. Will she bring the children?
-//(wipes off her tears) 
 [$Char1Last]: Yes, I can’t wait! Now, you two, stop with the long faces.
 [$playerName] I’ll see you tomorrow.
 <<Spawn Hana>>
@@ -72,6 +71,7 @@ position: 520,790
 [$playerName]: Have a good visit.
 <<SetPath Player One>>
 //Player walks to nurse at front desk
+[$NurseManager]: How was your chat with [$Char1First]?
 [$playerName]: [$NurseManager], I was just with [$Char1First], she told me that she is dying.
 [$playerName]: I didn’t know what to say. I want to help her but I don’t know what to do.
 [$NurseManager]: I know the news was unexpected, and this is hard for all of us. 
@@ -86,6 +86,9 @@ position: 520,790
 [$NurseManager]: I'm going to send you some material I’d like you to read about end-of-life and palliative care in long-term care.. 
 [$NurseManager]: It will help you prepare for the care conference.
 [$playerName]: This is my first experience with someone I know who is dying.
-[$NurseManager]: You’ll be okay. Take care and I’ll see you tomorrow then.
+[$NurseManager]: You’ll be okay. Be sure to review your notes. Take care and I’ll see you tomorrow then.
 [$playerName]: Yes, see you tomorrow.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay6>>
+<<SetPath Player Two>>
 ===

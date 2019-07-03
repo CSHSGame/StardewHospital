@@ -15,19 +15,26 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   scale: {x: 0, y: 0, z: 0}
   sprite: {fileID: 0}
+  AnimatorController: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: 
   waypoints:
   - Name: WalkIntoWilliamsRoom
     location:
-    - {x: -8.474805, y: 0.13, z: 6.3032546}
-    - {x: -8.492407, y: 0.13, z: -0.9036555}
+    - {x: -8.5, y: 0.13, z: 6}
+    - {x: -8.5, y: 0.13, z: 0}
   - Name: GoToDiningRoom
     location:
-    - {x: -8.492407, y: 0.13, z: -0.9036555}
-    - {x: -8.492407, y: 0.13, z: 4.687669}
-    - {x: -17.414791, y: 0.13, z: 13.600673}
-    - {x: -15.778829, y: 0.13, z: 18.838757}
+    - {x: -8.5, y: 0.13, z: 0}
+    - {x: -8.5, y: 0.13, z: 8}
+    - {x: -13.5, y: 0.13, z: 8}
+    - {x: -13.5, y: 0.13, z: 15}
+  - Name: ' '
+    location:
+    - {x: -13.5, y: 0.13, z: 15}
+    - {x: -13.5, y: 0.13, z: 9}
+    - {x: 5.2, y: 0.13, z: 9}
+    - {x: 5.2, y: 0.13, z: 6.8}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 543,260
 ---
+<<SetPath Player Zero>>
 [$Ranjit]: Hi [$playerName].
 [$playerName]: Hi Ranjit! I haven't seen you in a while - how's your student placement going?
 [$Ranjit]: Ugh please -- don’t even try to talk to me! I’m in such a bad mood today…
@@ -23,4 +24,7 @@ position: 543,260
 [$playerName]: We need to practice self-care, not just for ourselves, but so that we can better take care of our residents.
 [$Ranjit]: Thanks [$playerName], that's really valuable advice. I appreciate you listening and being understanding.
 [$playerName]: Of course.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay7>>
+<<SetPath Player One>>
 ===

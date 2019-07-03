@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 526,494
 ---
-[action][$Char3FirstDoor]:Knock Knock
+[$Char3FirstDoor]: Knock Knock
 [$Char3First]: It's open.
 <<Hide SydDoor>>
 <<SetPath Player Zero>>
@@ -19,8 +19,6 @@ position: 526,494
 <<Hide Nurse>>
 <<Spawn Nurse2>>
 <<SetPath Player One>>
-//[$playerName]: Can you tell me more about that?  Is it okay if I sit down?” 
-//---NOTE TO PROGRAMMERS: The player sits down
 [sad][$Char3First]: They’re nice enough. But they’re always asking me about my “wife.”  When I say I don’t have a wife they say: 
 [sad][$Char3First]: ‘Oh, sorry, Syd.  You’re a widower? Or divorced?’ Or you just never met the right woman?
 [sad][$Char3First]: When I said ‘No, that's not it”, one guy said 'Ah, so you’re a “bachelor!"' with his eyebrows raised. They’re so nosey. I’m tired of it. I'd rather just stay here. 
@@ -84,7 +82,7 @@ tags:
 colorID: 0
 position: 532,1302
 ---
-//****PROGRAMMER NOTE****  PLAYER leaves the room and meets Supervisor in the hall.
+
 <<SetPath Player Two>> 
 [$NurseManager]: Hey [$playerName].
 [[Hi, I was just talking with [$Char3First]...|LGBTQ_SECOND_DAY_HALLWAY_WRONG]]
@@ -111,9 +109,8 @@ tags:
 colorID: 0
 position: 548,1811
 ---
-//****PROGRAMMER NOTE****  They walk to the office or another private space
-<<SetPath Player Three Warp>>
-<<SetPath Nurse2 One Warp>>
+<<SetPath Player Three>>
+<<SetPath Nurse2 One>>
 [$playerName]: So, [$Char3First] hasn’t been coming to any activities since he moved in.
 [$playerName]: We got to talking and he was telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here.
 [$playerName]: He told me that his friend Richard who comes to visit him most days is actually his life partner. They lived together for 40 years. 
@@ -121,19 +118,19 @@ position: 548,1811
 [$NurseManager]: I’m so sorry to hear that.  It sounds like you made a good connection with [$Char3First].
 [$NurseManager]: He must have felt he could trust you enough to tell you how he was feeling.
 [$NurseManager]: I think the next step would be to involve our inter-professional team and discuss how we should proceed. 
-//[$playerName]: Can I let Syd know we'll arrange a meeting?
 [$playerName]: Should we let Syd know we'll arrange a meeting?
-[$NurseManager]: Yes [$playerName], that's a good Idea.
-<<Reset GameManager>>
-
-//[[LGBTQ_SECOND_DAY_SYDS_ROOM]]
+[$NurseManager]: Yes [$playerName], that's a good idea.
+[$playerName]: OK. Let me know when that happens. I have to go.
+[$NurseManager]: Bye.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay4>>
+<<SetPath Player Four>>
 ===
 title: LGBTQ_SECOND_DAY_SYDS_ROOM
 tags: 
 colorID: 0
 position: 541,2091
 ---
-//****PROGRAMMERS NOTE - THE PLAYER WALKS BACK TO SYD'S ROOM AND HIS DOOR IS OPEN
 [$playerName]: Hey [$Char3First], I spoke with my supervisor, she was really concerned to hear about your situation.
 [$playerName]: She's going to arrange a meeting with you and some key members of the faculty here. How does that sound?
 [happy][$Char3First]: Great, Richard will come, too.

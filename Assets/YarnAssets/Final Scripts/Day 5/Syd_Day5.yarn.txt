@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 556,2409
 ---
+<<SetPath Player Three>>
 [$Char3First]: Hey [$playerName]! You're just in time.
 [$playerName]: Hi there, [$Char3First].
 [$Char3First]: This is [$Richard], my partner.
@@ -43,5 +44,9 @@ position: 556,2409
 [$Char3First]: Thanks very much.  I didn’t know there was a Bill of Rights for Long-Term Care.  
 [$DirName]: Good. Thanks so much for meeting with us, [$Char3First] and [$Richard]. 
 [$Richard]: And thank all of you for listening!
-[$NurseManager]: We’ll be in touch soon.
-//**** PROGRAMMER NOTE -- [$playerName], [$DirName] social worker, and [$NurseManager] leave the room and go to the office] (Julians Notes: Why tho?)
+[$NurseManager]: We’ll be in touch soon. [$playerName], you should go review your notes.
+[$playerName]: Ok [$NurseManager]. Bye [$Char3First] and [$Richard].
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay5>>
+<<SetPath Player Four>>
+
