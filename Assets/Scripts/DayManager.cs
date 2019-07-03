@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Yarn.Unity;
+using Yarn.Unity.Example;
 
 public class DayManager : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class DayManager : MonoBehaviour
     public DayDataHolder[] Days;
     public int currentDay = 0;
     ExampleVariableStorage variableStorage;
-    public Text display; 
+    public Text display;
+
+    public NpcDayData PlayerToWalkOutData;
+
     // Use this for initialization
     void Start ()
     {
@@ -27,13 +31,46 @@ public class DayManager : MonoBehaviour
         hUDController.Setup(Days[currentDay],currentDay);
         StartCoroutine(showDayText());
     }
+    //should only be called from the clipboard closing
     public void LoadDay()
     {
-        npcLoader.DeleteNpc();
-        npcLoader.Setup(Days[currentDay]);
-        objectiveLoader.Setup(Days[currentDay].Objectives);
-        hUDController.Setup(Days[currentDay],currentDay);
-        StartCoroutine(showDayText());
+        if(PlayerToWalkOutData != null)
+        {
+            CinematicMode cinematic = FindObjectOfType<CinematicMode>(); ;
+           
+            Waypoints player = GameObject.FindObjectOfType<PlayerCharacter>().GetComponent<Waypoints>();
+            player.data = PlayerToWalkOutData;
+            player.loadData();
+            player.transform.position = new Vector3(5.2f, 0.13f, 6.8f);
+            player.onPathDone.RemoveAllListeners();
+            player.onPathDone.AddListener
+            (() =>
+                {
+                    cinematic.TurnOFF();
+                    npcLoader.DeleteNpc();
+                    npcLoader.Setup(Days[currentDay]);
+                    objectiveLoader.Setup(Days[currentDay].Objectives);
+                    hUDController.Setup(Days[currentDay], currentDay);
+                    StartCoroutine(showDayText());
+                }
+            );
+            cinematic.TurnON();
+            player.StartPathing("Zero");
+
+
+
+        }
+        else
+        {
+            npcLoader.DeleteNpc();
+            npcLoader.Setup(Days[currentDay]);
+            objectiveLoader.Setup(Days[currentDay].Objectives);
+            hUDController.Setup(Days[currentDay], currentDay);
+            StartCoroutine(showDayText());
+        }
+       
+
+       
     }
 
     public IEnumerator showDayText()
@@ -59,6 +96,26 @@ public class DayManager : MonoBehaviour
         }
 
         yield return null;
+    }
+
+    [YarnCommand("PrepForNextDay")]
+    public void SetupForLastPathofDay()
+    {
+        CinematicMode cinematic = FindObjectOfType<CinematicMode>(); ;
+        cinematic.TurnON();
+        Waypoints player = GameObject.FindObjectOfType<PlayerCharacter>().GetComponent<Waypoints>();
+        player.onPathDone.AddListener
+        (() =>
+            {
+                currentDay++;
+                cinematic.TurnOFF();
+
+                hUDController.GearClick();
+            }
+        );
+
+
+        //LoadDay();
     }
     [YarnCommand("NextDay")]
     public void IncrementDay()

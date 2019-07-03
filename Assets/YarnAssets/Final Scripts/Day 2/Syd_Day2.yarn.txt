@@ -22,5 +22,9 @@ colorID: 0
 position: 526,494
 ---
 [sad][$Char3First]: Have a good day.
-<<NextDay GameManager>>
+
+<<PrepForNextDay GameManager>>
+<<SetPath Player Three>>
+
+
 ===
