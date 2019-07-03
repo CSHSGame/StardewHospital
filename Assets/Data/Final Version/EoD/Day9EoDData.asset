@@ -9,26 +9,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
-  m_Name: Day3EoDData
+  m_Name: Day9EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $NoKnock_Williams_Day_3
+  DP1Evaluate: '$Feb_Demo_Knocked '
   DP2Evaluate: 
   DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 1
   DP2Outcome1TrueOutcome2False: 1
-  DP3Outcome1TrueOutcome2False: 0
-  DecisionPoint1Outcome1Title: Knocking on Mr. Williams' Door
-  DecisionPoint1Outcome1Text: 'It''s great that you remembered to knock before entering
-    Mr. Williams'' room. Always remember that we are in our residents'' homes - always
-    knock on the door (even when it is open) before entering to show respect for their
-    privacy. '
+  DP3Outcome1TrueOutcome2False: 1
+  DecisionPoint1Outcome1Title: Sexuality in LTC
+  DecisionPoint1Outcome1Text: "When you entered Mrs. Moore\u2019s room without knocking,
+    you violated her privacy and ended up in an awkward situation. Hopefully this
+    taught you a lesson about knocking before you enter a resident\u2019s room!"
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
-  DecisionPoint1Outcome2Title: Knocking on Mr. Williams' Door
-  DecisionPoint1Outcome2Text: "Failure to knock on a resident\u2019s door before entering
-    their room is an invasion of their right to privacy. "
+  DecisionPoint1Outcome2Title: Sexuality in LTC
+  DecisionPoint1Outcome2Text: "It\u2019s good that you remembered to knock before
+    entering Mrs. Moore\u2019s room, but in future please remember for the resident
+    to welcome you in their room before you enter. "
   DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 

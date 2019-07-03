@@ -103,7 +103,7 @@ Skip:
 Skip:
 [$Char1Last]: Yes. Then, my birth family sent me to Canada. My adopted family owned a restaurant, and the rest was history.
 
-[[I see, you've had behaviour problems as a child...|Behaviour_Williams_Day_3]]
+[[I see, you've had behaviour problems as a child...|Behaviour_Williams_Day_3]]<<$WILLIAMS_RUDE_DAY_5 == true>>
 [[Wow, lunch smells delicious. Why don't we go eat?|Lunch_Williams_Day_3]]
 [[Why were you sent to Canada?|Canada_Williams_Day_3]]
 ===

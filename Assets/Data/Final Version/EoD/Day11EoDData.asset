@@ -9,26 +9,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
-  m_Name: Day3EoDData
+  m_Name: Day11EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $NoKnock_Williams_Day_3
+  DP1Evaluate: $Transitioning_Rude
   DP2Evaluate: 
   DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 1
   DP2Outcome1TrueOutcome2False: 1
-  DP3Outcome1TrueOutcome2False: 0
-  DecisionPoint1Outcome1Title: Knocking on Mr. Williams' Door
-  DecisionPoint1Outcome1Text: 'It''s great that you remembered to knock before entering
-    Mr. Williams'' room. Always remember that we are in our residents'' homes - always
-    knock on the door (even when it is open) before entering to show respect for their
-    privacy. '
+  DP3Outcome1TrueOutcome2False: 1
+  DecisionPoint1Outcome1Title: Transitioning to LTC
+  DecisionPoint1Outcome1Text: "Today you had issues communicating with a resident
+    who speaks little English, but you did well not to become frustrated. You sought
+    out help and found an alternative solution to the problem \u2013 well done. "
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
-  DecisionPoint1Outcome2Title: Knocking on Mr. Williams' Door
-  DecisionPoint1Outcome2Text: "Failure to knock on a resident\u2019s door before entering
-    their room is an invasion of their right to privacy. "
+  DecisionPoint1Outcome2Title: Transitioning to LTC
+  DecisionPoint1Outcome2Text: "Today you lost your patience with a resident when a
+    language gap was limiting your ability to communicate. Resident hail from all
+    over the world, and not all of them speak English fluently \u2013 you need to
+    be resourceful to find effective methods of communication, and you\u2019ll need
+    to remain calm."
   DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 

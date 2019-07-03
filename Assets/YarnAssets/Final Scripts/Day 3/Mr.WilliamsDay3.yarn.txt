@@ -4,7 +4,7 @@ colorID: 0
 position: 1225,964
 ---
 [$Char2LastDoor]
-[[(Walk in without knocking.)|NoKnock_Williams_Day_2]]
+[[(Walk in without knocking.)|NoKnock_Williams_Day_2]]<<$NoKnock_Williams_Day_3 == true>>
 [[(Knock on the door.)|Knock_Williams_Day_2]]
 [[(Knock on the door.) Hello, it's [$playerName].|KnockIntro_Williams_Day_2]]
 ===

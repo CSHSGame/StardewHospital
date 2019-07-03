@@ -9,32 +9,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
-  m_Name: Day6EoDData
+  m_Name: Day8EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: Day_6_Empathy
+  DP1Evaluate: $Day_8_Stein
   DP2Evaluate: 
   DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 1
   DP2Outcome1TrueOutcome2False: 1
   DP3Outcome1TrueOutcome2False: 1
-  DecisionPoint1Outcome1Title: Mrs. Stein - Palliative Care
-  DecisionPoint1Outcome1Text: 'Today you faced a difficult situation when Mrs Stein
-    opened up to you about her feelings. Given her recent health crisis she is trying
-    to come to terms with a terminal illness - you interjected with your own thoughts
-    and feelings, when the appropriate decision would have been to just let her speak
-    while listening attentively. Please keep that in mind next time.
-
-'
+  DecisionPoint1Outcome1Title: Mrs Stein - End of Life Planning
+  DecisionPoint1Outcome1Text: Today you helped Mrs. Stein make arrangements for her
+    palliative care. Residents have the right to make decisions regarding their care
+    in an end-of-life situation, and being respectful of this can really go a long
+    way toward helping the resident feel empowered and dignified in a difficult situation.
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
-  DecisionPoint1Outcome2Title: Mrs. Stein - Palliative Care
-  DecisionPoint1Outcome2Text: Today you faced a difficult situation when Mrs Stein
-    opened up to you about her feelings. Given her recent health crisis she is trying
-    to come to terms with a terminal illness, and you did the right thing by listening
-    to her and allowing her to speak, instead of interjecting with your own thoughts
-    and feelings. Well done.
+  DecisionPoint1Outcome2Title: Mrs Stein - End of Life Planning
+  DecisionPoint1Outcome2Text: Today you helped Mrs. Stein make arrangements for her
+    palliative care. Residents have the right to make decisions regarding their care
+    in an end-of-life situation, and being respectful of this can really go a long
+    way toward helping the resident feel empowered and dignified in a difficult situation.
   DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 

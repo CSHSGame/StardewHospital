@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day4EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: 
+  DP1Evaluate: $SYD_DAY_4_APPROPRIATE
   DP2Evaluate: 
   DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
-  LearningObjectives1Title: 
+  LearningObjectives1Title: 'LGBTQ+ Residents in LTC  '
   LearningObjectives1Text: To recognize the impact of heterosexism and homophobia
     on the health and wellness of LGBTQ+ residents and learn appropriate responses
   LearningObjectives2Title: 
@@ -42,7 +42,7 @@ MonoBehaviour:
   LearningObjectives3Text: "To learn the importance and use of gender-neutral language
     and to become familiar with the relevance and importance of Resident\u2019s Bill
     of Rights in Long-Term Care. "
-  BestPractices1Title: 
+  BestPractices1Title: 'LGBTQ+ Residents in LTC  '
   BestPractices1Text: Educate ourselves about the harmful impact of heterosexism,
     homophobia and transphobia on the health and well-being of LGBTQ+ residents and
     keep up-to-date with current best practices.

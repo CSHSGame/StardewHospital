@@ -32,7 +32,7 @@ position: 540,260
 [$Char1Last]: I just want you to know... well, there’s no easy way to say this… but this last crisis was very serious... 
 [$Char1Last]: I’ve learned that I now have very little time left.
 [[Don’t say that, Eve! You’ll be okay. You need to think positively!|Stein_Day_6_Part_2]]<<Day_6_Empathy == false>>
-[[Player listens with empathy, in silence, nods, and considers what Eve has said.|Stein_Day_6_Part_2]]<<Day_6_Empathy == true>>
+[[Player listens with empathy, in silence, nods, and considers what Eve has said.|Stein_Day_6_Part_2]]<<$Day_6_Empathy == true>>
 [[I don’t understand. What do you mean?|Stein_Day_6_Part_2]]<<Day_6_Empathy == false>>
 ===
 title: Stein_Day_6_Part_2
