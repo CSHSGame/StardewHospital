@@ -31,8 +31,14 @@ MonoBehaviour:
     - {x: -8.5, y: 0.13, z: 1.75}
     - {x: -8.5, y: 0.13, z: 7.3824115}
     - {x: 1.23353, y: 0.13, z: 7.3700356}
-  - Name: ' '
+  - Name: ' next to arthur'
     location:
     - {x: -8.7001705, y: 0.13, z: -1.5251176}
+  - Name: back to start
+    location:
+    - {x: 38.512615, y: 0.13, z: 2.9016404}
+    - {x: 38.524433, y: 0.13, z: 8.506533}
+    - {x: 5.45446, y: 0.13, z: 8.544983}
+    - {x: 5.4184055, y: 0.13, z: 6.260221}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
