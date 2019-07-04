@@ -3,7 +3,6 @@ tags:
 colorID: 0
 position: 583,34
 ---
-//****PROGRAMMERS NOTE**** The player arrives at Maries, the door is closed.
 [$Char4FirstDoor]: **Knock Knock.**
 [$playerName]: Marie? Are you there? It’s me, [$playerName].
 [$Char4FirstDoor]: Come in.
@@ -25,7 +24,6 @@ tags:
 colorID: 0
 position: 196,393
 ---
-
 [$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
 [$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
 [$Char4First]: We’re not an item!  Don’t go telling people that!
@@ -57,7 +55,9 @@ position: 596,626
 [$playerName]: Okay. I see I have a lot to learn.  Thanks for talking about this with me.  I really appreciate it.
 [$Char4First]: Any big plans tonight?
 [$playerName]: We might go do a movie or just hang out.
-[$Char4First]: Well, don’t do anything I wouldn’t do!   
-[$playerName]: Very funny...
-//<<TalkedMarieDay3 = True>>
+[$Char4First]: Well, don’t do anything I wouldn’t do!
+[$playerName]: Very funny... Bye [$Char4First].
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay10>>
+<<SetPath Player Four>>
 ===

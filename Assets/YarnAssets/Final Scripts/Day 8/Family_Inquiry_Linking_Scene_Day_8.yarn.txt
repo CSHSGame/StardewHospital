@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 1229,40
 ---
-//**Programmer Note*** Takes place in a hallway
+<<SetPath Player Three>>
 [$Stranger]: Hi there - do you have a moment?
 [$playerName]: Hi! Of course, how may I help you?
 [$Stranger]: I was just with my mom, Bernadette Wilson. I haven’t visited her for a while, and I was wondering if there have been any changes in her care plan. Do you know of any new plans for her?
@@ -18,6 +18,9 @@ position: 1090,370
 <<$RightChoice_FamilyInquiry = false>>
 [$Stranger]: Thank you!
 [$playerName]: You're welcome! Take care.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay8>>
+<<SetPath Player Four>>
 ===
 title: Family_Inquiring_End_Right
 tags: 
@@ -27,4 +30,7 @@ position: 1394,368
 <<$RightChoice_FamilyInquiry = true>>
 [$Stranger]: Thank you!
 [$playerName]: You're welcome! Take care.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay8>>
+<<SetPath Player Four>>
 ===

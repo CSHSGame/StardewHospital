@@ -51,4 +51,8 @@ position: 1221,534
 [$Katherine]:  [$Hana], I’ll see you tomorrow for the celebration of Eve’s life.  
 [$NurseManager]:  Yes, I’ll see you tomorrow at 2 o’clock. 
 [$Katherine]: It's just what Eve wanted. . .  
+[$playerName]: See you then.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay11>>
+<<SetPath Player Two>>
 ===

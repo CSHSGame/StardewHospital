@@ -17,6 +17,7 @@ MonoBehaviour:
   Objectives:
   - {fileID: 11400000, guid: 7b0a58a6e5e35a94c92b6badc8e570cb, type: 2}
   - {fileID: 11400000, guid: 828f2e9aa52be034cbb4cc4b3453929b, type: 2}
+  - {fileID: 11400000, guid: a59b652f781b62643808fe19a00c5e21, type: 2}
   PlayerData: {fileID: 11400000, guid: 0513e3f1dae473f44b62f119650c065e, type: 2}
   npcs:
   - {fileID: 11400000, guid: aecfbd90048fcba46a225b1e4af4ab5d, type: 2}

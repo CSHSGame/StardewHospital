@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
+  m_Name: Day1EoDDataTemp
+  m_EditorClassIdentifier: 
+  DP1Evaluate: $DP1Evaluate
+  DP2Evaluate: $DP2Evaluate
+  DP3Evaluate: $DP3Evaluate
+  DP1Outcome1TrueOutcome2False: 0
+  DP2Outcome1TrueOutcome2False: 0
+  DP3Outcome1TrueOutcome2False: 0
+  DecisionPoint1Outcome1Title: True
+  DecisionPoint1Outcome1Text: Tour of the facility
+  DecisionPoint2Outcome1Title: True
+  DecisionPoint2Outcome1Text: 
+  DecisionPoint3Outcome1Title: True
+  DecisionPoint3Outcome1Text: 
+  DecisionPoint1Outcome2Title: False
+  DecisionPoint1Outcome2Text: 
+  DecisionPoint2Outcome2Title: False
+  DecisionPoint2Outcome2Text: 
+  DecisionPoint3Outcome2Title: False
+  DecisionPoint3Outcome2Text: 
+  LearningObjectives1Title: LO1
+  LearningObjectives1Text: 
+  LearningObjectives2Title: LO2
+  LearningObjectives2Text: 
+  LearningObjectives3Title: LO3
+  LearningObjectives3Text: 
+  BestPractices1Title: BP1
+  BestPractices1Text: 
+  BestPractices2Title: BP2
+  BestPractices2Text: 
+  BestPractices3Title: BP3
+  BestPractices3Text: 

@@ -18,5 +18,4 @@ position: 539,260
 [$Char3Last]: Take care!
 [$NurseManager]: Thank you [$playerName]! We appreciate your time with us, and we wish you well. 
 //Fade Out
-
 ===

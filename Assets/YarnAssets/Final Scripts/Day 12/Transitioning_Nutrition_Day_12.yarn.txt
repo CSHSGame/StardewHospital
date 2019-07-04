@@ -55,4 +55,7 @@ position: 377,816
 [$Susannah]: Thank you. 
 [$playerName]: I've got to go, take care for now. 
 [$Susannah]: Bye!
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay12>>
+<<SetPath Player Two>>
 ===

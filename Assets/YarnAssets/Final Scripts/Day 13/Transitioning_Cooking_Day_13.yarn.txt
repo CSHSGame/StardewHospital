@@ -84,4 +84,7 @@ position: 718,758
 [$Susannah]: I think mom's going to love cooking class. 
 [$Char5Last]: 好，我會試試。
 [$playerName]: That’s great. I've got to run, see you all soon! [$Char5Last], I'll see you on Wednesday and we'll go to your class together. Bye!
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay13>>
+<<SetPath Player Two>>
 ===
