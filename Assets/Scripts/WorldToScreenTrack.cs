@@ -33,20 +33,20 @@ public class WorldToScreenTrack : MonoBehaviour
             if (rect.Contains(new Vector2(screenPos2.x, screenPos2.y)))
             {
                 targetOnScreen = true;
-                screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z + heightOffSet));
-                myTransform.pivot =  new Vector2(0.5f, 0.5f);
+               // myTransform.pivot =  new Vector2(0.5f, 0.5f);
             }
             else
             {
                 targetOnScreen = false;
-                myTransform.pivot = new Vector2(0, 0);
+              //  myTransform.pivot = new Vector2(0, 0);
 
             }
 
 
             // Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z + heightOffSet));
+            screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z + heightOffSet));
 
-            screenPos = new Vector3(Mathf.Clamp(screenPos.x, 0, cam.pixelWidth - myTransform.rect.width), Mathf.Clamp(screenPos.y, 0, cam.pixelHeight -myTransform.rect.height), screenPos.z);
+            screenPos = new Vector3(Mathf.Clamp(screenPos.x, myTransform.rect.width /2, cam.pixelWidth - myTransform.rect.width/2), Mathf.Clamp(screenPos.y, myTransform.rect.height/2, cam.pixelHeight - myTransform.rect.height/2), screenPos.z);
             myTransform.anchoredPosition3D = screenPos;
            
 
@@ -57,7 +57,7 @@ public class WorldToScreenTrack : MonoBehaviour
               
                     
                     
-                if (screenPos.x == 0)
+                if (screenPos.x == myTransform.rect.width / 2)
                 {
                     myTransformImage.rotation = Quaternion.Euler(0, 0, -Vector3.Angle(dir, Vector3.down));
 
