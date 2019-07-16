@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{3bb98b8c-37cc-4ad4-b2e3-75a4894d2b1d}">
+        <property name="assetPath">
+            <value>FS_Tile_Boots-006.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.084187499999999998</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a8d7eba2-5afd-483f-a124-92b29286a613}</destination>
+        </relationship>
+    </object>
+</objects>

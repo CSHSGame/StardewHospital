@@ -1907,7 +1907,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  sprite: {fileID: 366990802}
+  bodyPartBody: {fileID: 0}
+  bodyPartHead: {fileID: 0}
+  bodyPartHair: {fileID: 0}
 --- !u!114 &374423310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7403,12 +7405,12 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 056919c4c773c0f44b7d6f281ada30be, type: 3}
   - {fileID: 4900000, guid: 44d41376f66734f3587be807809ec337, type: 3}
   - {fileID: 4900000, guid: 098a5ccefe9d14b4cbf108ef24e0b2d9, type: 3}
-  - {fileID: 4900000, guid: f999f4f24f44f41b8b8df17309cf4e19, type: 3}
+  - {fileID: 0}
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
   variableStorage: {fileID: 1538461310}
-  dialogueUI: {fileID: 1538461309}
+  dialogueUI: {fileID: 0}
   startNode: 
   startAutomatically: 0
   automaticCommands: 1
@@ -7629,6 +7631,36 @@ Prefab:
     - target: {fileID: 223544914837708722, guid: 94389525ead2c284f86353e953797bcd,
         type: 2}
       propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224892365624988078, guid: 94389525ead2c284f86353e953797bcd,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224892365624988078, guid: 94389525ead2c284f86353e953797bcd,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224892365624988078, guid: 94389525ead2c284f86353e953797bcd,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224262875682334704, guid: 94389525ead2c284f86353e953797bcd,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224262875682334704, guid: 94389525ead2c284f86353e953797bcd,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224262875682334704, guid: 94389525ead2c284f86353e953797bcd,
+        type: 2}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
