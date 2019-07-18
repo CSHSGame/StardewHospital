@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{fa89f7a7-2695-432c-8399-6d10862c0ef0}">
+        <property name="assetPath">
+            <value>Fly_Pavement_Step-004.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.21127083333333332</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{a8d7eba2-5afd-483f-a124-92b29286a613}</destination>
+        </relationship>
+    </object>
+</objects>
