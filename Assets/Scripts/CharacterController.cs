@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
+using FMODUnity;
 
 public class CharacterController : MonoBehaviour {
 
@@ -19,7 +20,7 @@ public class CharacterController : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody>();
     }
-
+    
    
     void Update()
     {
@@ -109,6 +110,7 @@ public class CharacterController : MonoBehaviour {
 
 
         rb.MovePosition(new Vector3((transform.position.x + direction.x * speed * Time.deltaTime),0, transform.position.z + direction.z * speed * Time.deltaTime));
+     
       
         
 
