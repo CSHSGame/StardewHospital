@@ -9,12 +9,14 @@ public class WorldToScreenTrack : MonoBehaviour
     public RectTransform myTransformImage;
 
     public Transform target;
-    public Vector3 screenPos2;
-    public Vector3 dir;
+    Vector3 screenPos2;
+    Vector3 dir;
 
     public Camera cam;
-    public float heightOffSet = 10;
+    public float heightOffSet = 0;
     public bool targetOnScreen = false;
+
+    public Vector2 bufferZone;
     // Use this for initialization
     void Start () {
 		
@@ -25,7 +27,8 @@ public class WorldToScreenTrack : MonoBehaviour
     {
         if (target != null)
         {
-            Rect rect = new Rect(0, 0, cam.pixelWidth, cam.pixelHeight);
+            
+            Rect rect = new Rect(0, 0, cam.pixelWidth - bufferZone.x, cam.pixelHeight - bufferZone.y);
             Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z));
 
             screenPos2 = screenPos;
@@ -33,31 +36,30 @@ public class WorldToScreenTrack : MonoBehaviour
             if (rect.Contains(new Vector2(screenPos2.x, screenPos2.y)))
             {
                 targetOnScreen = true;
-               // myTransform.pivot =  new Vector2(0.5f, 0.5f);
             }
             else
             {
-                targetOnScreen = false;
-              //  myTransform.pivot = new Vector2(0, 0);
-
+                targetOnScreen = false;          
             }
 
-
+            float leftEdge = (myTransform.rect.width / 2) + bufferZone.x;
+            float rightEdge = cam.pixelWidth - myTransform.rect.width / 2 - bufferZone.x;
+            float topEdge = cam.pixelHeight - (myTransform.rect.height / 2) - bufferZone.y;
+            float bottomEdge = (myTransform.rect.height / 2) + bufferZone.y;
             // Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z + heightOffSet));
             screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z + heightOffSet));
 
-            screenPos = new Vector3(Mathf.Clamp(screenPos.x, myTransform.rect.width /2, cam.pixelWidth - myTransform.rect.width/2), Mathf.Clamp(screenPos.y, myTransform.rect.height/2, cam.pixelHeight - myTransform.rect.height/2), screenPos.z);
+            screenPos = new Vector3(Mathf.Clamp(screenPos.x, leftEdge, rightEdge), Mathf.Clamp(screenPos.y, bottomEdge, topEdge), screenPos.z);
             myTransform.anchoredPosition3D = screenPos;
            
 
-           // if (!test)
-           // {
+          
                 dir = screenPos2 - myTransform.anchoredPosition3D;
                 dir.Normalize();
               
                     
                     
-                if (screenPos.x == myTransform.rect.width / 2)
+                if (screenPos.x == leftEdge)
                 {
                     myTransformImage.rotation = Quaternion.Euler(0, 0, -Vector3.Angle(dir, Vector3.down));
 
@@ -67,25 +69,13 @@ public class WorldToScreenTrack : MonoBehaviour
                     myTransformImage.rotation = Quaternion.Euler(0, 0, Vector3.Angle(dir, Vector3.down));
 
                 }
-                //else if (screenPos.x == cam.pixelWidth)
-                //{
-                // //   myTransform.rotation = Quaternion.Euler(0, 0, 90);
-
-                //}
-                //else if (screenPos.x == cam.pixelWidth)
-                //{
-                //   // myTransform.rotation = Quaternion.Euler(0, 0, 90);
-
-                //}
 
 
 
-            //}
-          //  else
-           // {
-               // myTransformImage.rotation = Quaternion.Euler(0, 0, 0);
+            myTransformImage.gameObject.SetActive(!targetOnScreen);
+            
 
-          //  }
+
         }
        
 	}
