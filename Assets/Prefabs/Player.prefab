@@ -713,10 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6340b5897e76c47e1b94acdd9e96d91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minPosition: -5.3
-  maxPosition: 5.3
   DialogRange: 1
-  moveSpeed: 1
   interactionRadius: 2
 --- !u!114 &114327778708834538
 MonoBehaviour:
@@ -729,11 +726,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc6f81405843ac43960db7e8b0e912c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onPathDone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   Paths: []
   data: {fileID: 0}
   speed: 2
   pathindex: -1
+  nodeindex: 0
   isPlayer: 1
+  warp: 0
 --- !u!114 &114443631008667344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -749,6 +753,12 @@ MonoBehaviour:
   Front: {fileID: 4031456416998460}
   Side: {fileID: 4744775392554064}
   Back: {fileID: 4684096310999238}
+  FrontAnim: {fileID: 0}
+  SideAnim: {fileID: 0}
+  BackAnim: {fileID: 0}
+  walkingForward: 0
+  walkingSide: 0
+  walkingBack: 0
 --- !u!114 &114695950325855356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -764,6 +774,12 @@ MonoBehaviour:
   Front: {fileID: 4489825997016184}
   Side: {fileID: 4388431758438840}
   Back: {fileID: 4720283744347038}
+  FrontAnim: {fileID: 0}
+  SideAnim: {fileID: 0}
+  BackAnim: {fileID: 0}
+  walkingForward: 0
+  walkingSide: 0
+  walkingBack: 0
 --- !u!114 &114843524378902894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -776,6 +792,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  bodyPartBody: {fileID: 0}
+  bodyPartHead: {fileID: 0}
+  bodyPartHair: {fileID: 0}
 --- !u!212 &212075453135683366
 SpriteRenderer:
   m_ObjectHideFlags: 1

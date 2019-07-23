@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{fb17def3-4166-4ff5-a652-44edcc952fe9}">
+        <property name="name">
+            <value>Pavement</value>
+        </property>
+        <relationship name="folder">
+            <destination>{94bf5a9b-4967-4abd-85e0-70161deea7e6}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{946c53d2-9c40-4bb2-8a6c-78a04354f45e}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{946c53d2-9c40-4bb2-8a6c-78a04354f45e}">
+        <property name="maximum">
+            <value>2</value>
+        </property>
+        <property name="initialValue">
+            <value>1</value>
+        </property>
+    </object>
+</objects>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{34436e27-7c41-495a-8032-2025656de027}">
         <property name="name">
-            <value>BedroomAmbience</value>
+            <value>HallwayAmb</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -60,7 +60,7 @@
     <object class="MarkerTrack" id="{541df022-da7c-4c95-bd7b-72491d5a0bdf}"/>
     <object class="GroupTrack" id="{42624c8c-debf-43fd-ae17-4c3dffdc3d0f}">
         <relationship name="modules">
-            <destination>{6da57c16-0434-4d3b-9cda-6c666d781633}</destination>
+            <destination>{c167db5e-27b7-4534-8c51-23ac83346cfe}</destination>
         </relationship>
         <relationship name="mixerGroup">
             <destination>{186af9e4-81d9-4435-bcbc-fc2426e38391}</destination>
@@ -68,7 +68,7 @@
     </object>
     <object class="Timeline" id="{d2ba5b9d-93a7-4a32-ba42-b89a8851c100}">
         <relationship name="modules">
-            <destination>{6da57c16-0434-4d3b-9cda-6c666d781633}</destination>
+            <destination>{c167db5e-27b7-4534-8c51-23ac83346cfe}</destination>
         </relationship>
         <relationship name="markers">
             <destination>{62430af9-2b82-475c-9e07-121f566d195a}</destination>
@@ -91,15 +91,18 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{57f08ea5-a4c5-4039-93e2-289c82d1c3b7}"/>
-    <object class="SingleSound" id="{6da57c16-0434-4d3b-9cda-6c666d781633}">
+    <object class="SingleSound" id="{c167db5e-27b7-4534-8c51-23ac83346cfe}">
         <property name="length">
-            <value>23.647166666666667</value>
+            <value>3.7421875</value>
         </property>
         <relationship name="audioFile">
-            <destination>{cc4c1fd4-ef5c-405b-86b7-5e0afe9dcd5a}</destination>
+            <destination>{abb92013-e9ee-4e73-97e9-9a74d0340833}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{186af9e4-81d9-4435-bcbc-fc2426e38391}">
+        <property name="volume">
+            <value>-28</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -118,7 +121,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>23.647166666666667</value>
+            <value>3.7421875</value>
         </property>
         <relationship name="timeline">
             <destination>{d2ba5b9d-93a7-4a32-ba42-b89a8851c100}</destination>
