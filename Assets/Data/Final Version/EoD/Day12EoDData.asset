@@ -35,15 +35,26 @@ MonoBehaviour:
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
-  LearningObjectives1Title: 
-  LearningObjectives1Text: 
+  LearningObjectives1Title: Transitioning to LTC
+  LearningObjectives1Text: "To identify the physical, mental, and psychological readiness
+    of the resident and family\r to transition into a long-term care setting."
   LearningObjectives2Title: 
-  LearningObjectives2Text: 
+  LearningObjectives2Text: "To provide ongoing assessment during the transition from
+    home to a long-term care\r setting."
   LearningObjectives3Title: 
-  LearningObjectives3Text: 
-  BestPractices1Title: 
-  BestPractices1Text: 
+  LearningObjectives3Text: "To acknowledge and understand the differences in cultural
+    competency and cultural\r sensitivity during the transition from home to a long-term
+    care setting."
+  BestPractices1Title: Transitioning to LTC
+  BestPractices1Text: "Both the physical and psychological readiness for change must
+    be evaluated. This should be\r\ndone by a health care provider, who asks information
+    on indicators that may include cognitive\r memory, cultural sensitivity, knowledge
+    and environment awareness."
   BestPractices2Title: 
-  BestPractices2Text: 
+  BestPractices2Text: "A clients current and continued care should be assessed on
+    admission (first contact) and\r reassessed regularly throughout their stay."
   BestPractices3Title: 
-  BestPractices3Text: 
+  BestPractices3Text: "Cultural competency needs to be adapted to enhance the accessibility
+    and effectiveness of\r\nhealth care services for people from racial/ethnic minorities.
+    Cultural sensitivity needs to be\r\nadapted to existing materials and programs
+    for racial/ethnic minorities."
