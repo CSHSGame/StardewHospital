@@ -115,17 +115,17 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_Events:
   - time: 0
-    functionName: Player_Footsteps
+    functionName: CallFootsteps
     data: event:/Footsteps
-    objectReferenceParameter: {fileID: 11500000, guid: 5d65c24f8a6ec438192d2d4e7753cda9,
+    objectReferenceParameter: {fileID: 11500000, guid: 230127fed72c74bc7af30e8de0db4e7e,
       type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.3
-    functionName: Player_Footsteps
+    functionName: CallFootsteps
     data: event:/Footsteps
-    objectReferenceParameter: {fileID: 11500000, guid: 5d65c24f8a6ec438192d2d4e7753cda9,
+    objectReferenceParameter: {fileID: 11500000, guid: 230127fed72c74bc7af30e8de0db4e7e,
       type: 3}
     floatParameter: 0
     intParameter: 0
