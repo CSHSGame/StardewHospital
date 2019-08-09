@@ -29,7 +29,7 @@ MonoBehaviour:
   - {fileID: 114028417451481708}
   MasterBankRef: {fileID: 114109471859956882}
   StringsBankRef: {fileID: 114116534061295216}
-  stringsBankWriteTime: 636996792160000000
+  stringsBankWriteTime: 637009757490000000
   cacheVersion: 2
 --- !u!114 &114006681032154484
 MonoBehaviour:
@@ -46,6 +46,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114007456062116832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tile
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114023128245805004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: /Users/pawng/StardewHospital/Fmod/Build/Desktop/Master Bank.bank
-  lastModified: 636996792160000000
+  lastModified: 637009757490000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -203,12 +218,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Fmod/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636996792160000000
+  lastModified: 637009757490000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1226
   Exists: 1
+--- !u!114 &114122001623142890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Wood
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114133871553374982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +612,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114395772025424848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Grass
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114404723680093688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +669,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Tile
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114427259551999920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pavement
   Min: 0
   Max: 1
   Default: 1
@@ -671,6 +731,21 @@ MonoBehaviour:
   Name: Material
   Min: 0
   Max: 10
+  Default: 0
+--- !u!114 &114539936305676402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: RoomAmb
+  Min: 0
+  Max: 3
   Default: 0
 --- !u!114 &114568589967731368
 MonoBehaviour:
@@ -934,6 +1009,21 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+--- !u!114 &114716867229316078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Wood
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114720365066194588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +1060,21 @@ MonoBehaviour:
   Name: Pavement
   Min: 0
   Max: 2
+  Default: 1
+--- !u!114 &114734637635336218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tile
+  Min: 0
+  Max: 1
   Default: 1
 --- !u!114 &114740506714306542
 MonoBehaviour:
@@ -1083,6 +1188,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114759088107116008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pavement
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114761487784697906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,7 +1222,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114585937314705396}
+  - {fileID: 114890957110766544}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1263,6 +1383,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114890957110766544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: RoomAmb
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114893363946056798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,6 +1539,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 36590
+--- !u!114 &114965117935410790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Grass
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114971388215688644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,10 +1591,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114917807381170532}
-  - {fileID: 114365597380389880}
-  - {fileID: 114318104627301882}
-  - {fileID: 114426356280118258}
+  - {fileID: 114759088107116008}
+  - {fileID: 114965117935410790}
+  - {fileID: 114122001623142890}
+  - {fileID: 114734637635336218}
   MinDistance: 0
   MaxDistance: 0
   Length: 250
