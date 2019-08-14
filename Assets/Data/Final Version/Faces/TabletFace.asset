@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: TabletFace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 3ceaa5fdb729a4de994a20e6a4a8e099, type: 3}
+  sprite: {fileID: 21300000, guid: c9ccf4787316ab944b4a3cfdb7877412, type: 3}
   Name: $Tablet
   Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
   AngrySprite: {fileID: 0}
