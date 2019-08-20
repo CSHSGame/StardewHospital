@@ -40,7 +40,7 @@ position: 526,494
 
 [[What?! You’re gay? Syd, I had no idea!|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
 [[Oh, that’s not a big deal. You don’t need to worry about that.|LGBTQ_SECOND_DAY_DEC_1_WRONG]]
-[[Moving here has separated you from Richard - now I understand why you don’t feel comfortable here.|LGBTQ_SECOND_DAY_DEC_1_RIGHT]]
+[[Moving here has separated you from Richard - now I understand why you don’t feel comfortable here.|LGBTQ_SECOND_DAY_DEC_1_RIGHT]]<<$SYD_DAY_4_APPROPRIATE == true>>
 ===
 title: LGBTQ_SECOND_DAY_DEC_1_WRONG
 tags: 

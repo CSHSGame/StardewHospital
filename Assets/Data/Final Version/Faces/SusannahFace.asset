@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: SusannahFace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 48307888cefdeba499cda1f6a642f3ba, type: 3}
+  sprite: {fileID: 21300000, guid: 037bb43f658fd20419ea1e63315c021e, type: 3}
   Name: $Susannah
   Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
   AngrySprite: {fileID: 0}

@@ -19,18 +19,6 @@ MonoBehaviour:
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: Susannah
-  waypoints:
-  - Name: ' '
-    location:
-    - {x: 47, y: 0.25581813, z: 15.5}
-    - {x: 43.5, y: 0.25581813, z: 17.25}
-    - {x: 41, y: 0.25581813, z: 17.25}
-    - {x: 41, y: 0.25581813, z: 22}
-  - Name: ' '
-    location:
-    - {x: 41, y: 0.25581813, z: 22}
-    - {x: 41, y: 0.25581813, z: 17.25}
-    - {x: 43.5, y: 0.25581813, z: 17.25}
-    - {x: 47.6, y: 0.25581813, z: 15.66}
+  waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1

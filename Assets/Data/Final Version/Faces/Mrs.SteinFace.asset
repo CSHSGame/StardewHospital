@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: Mrs.SteinFace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 162c6e39da124dd4f8196c74206a3db5, type: 3}
+  sprite: {fileID: 21300000, guid: 16899dec22eda474d9ab6175b885a2cb, type: 3}
   Name: $Char1Last
   Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
   AngrySprite: {fileID: 0}
   SadSprite: {fileID: 0}
-  HappySprite: {fileID: 0}
+  HappySprite: {fileID: 21300000, guid: 56862cbd14a48074fa0ed1f09ee0f060, type: 3}

@@ -9,22 +9,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
-  m_Name: Day1EoDDataTemp
+  m_Name: Day1EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $DP1Evaluate
-  DP2Evaluate: $DP2Evaluate
-  DP3Evaluate: $DP3Evaluate
+  DP1Evaluate: $Day1
+  DP2Evaluate: 
+  DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 0
   DP2Outcome1TrueOutcome2False: 0
   DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: True
-  DecisionPoint1Outcome1Text: Tour of the facility
+  DecisionPoint1Outcome1Text: 'Welcome to Bloom Virtual Village! At the end of each
+    day this clipboard will provide you with feedback on the decisions you made, and
+    to help you learn from your experience. '
   DecisionPoint2Outcome1Title: True
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: True
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: False
-  DecisionPoint1Outcome2Text: 
+  DecisionPoint1Outcome2Text: 'Welcome to Bloom Virtual Village! At the end of each
+    day this clipboard will provide you with feedback on the decisions you made, and
+    to help you learn from your experience. '
   DecisionPoint2Outcome2Title: False
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: False

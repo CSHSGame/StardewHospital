@@ -20,6 +20,6 @@ position: 1064,145
 [$playerName]: Thanks. Yeah, I’ll stay here for a bit...
 <<SetPath Nurse One>>
 <<SetPath Player Two>>
-<<SetObjective GameManager TalkToMarieDay10>>
+<<SetObjective GameManager WaitInMultifaithRoomDay10>>
 <<endif>>
 ===
