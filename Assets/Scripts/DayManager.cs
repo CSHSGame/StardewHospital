@@ -34,6 +34,7 @@ public class DayManager : MonoBehaviour
     //should only be called from the clipboard closing
     public void LoadDay()
     {
+        Debug.Log(currentDay);
         if(PlayerToWalkOutData != null)
         {
             CinematicMode cinematic = FindObjectOfType<CinematicMode>(); ;

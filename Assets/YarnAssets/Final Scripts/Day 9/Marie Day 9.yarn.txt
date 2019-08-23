@@ -77,7 +77,6 @@ position: 525,1179
 [$StudentName]: Hey [$playerName], how's it going?
 [[You’re not going to believe this!   I saw Marie making out with another resident.  She must be in her eighties!|Sexuality_NotPrivate]]<<$Sexuality_Private = false>>
 [[I have to tell you something - let’s go somewhere more private to discuss...|Sexuality_Private]]<<$Sexuality_Private = true>>
-
 ===
 title: Sexuality_Part_3
 tags: 
@@ -145,8 +144,7 @@ position: 514,2528
 [$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
 [$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
 [$Char4First]: We’re not an item!  Don’t go telling people that!
-[$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! 
-I’m trying not to be weird! 
+[$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! I’m trying not to be weird! 
 [$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
 [$playerName]: It’s just that I haven’t known that many older people until I came here.  Just my grandparents.  It’s kind of an adjustment.
 [$Char4First]: Do you think your grandparents have sex?
@@ -178,3 +176,4 @@ position: 514,2795
 <<TalkedMarieDay3 = True>>
 <<SetObjective DayLoader CheckMrsLeeDay3>>
 ===
+

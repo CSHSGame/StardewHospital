@@ -9,6 +9,7 @@ public class NpcLoader : MonoBehaviour
     // Use this for initialization
     public void Setup (DayDataHolder day)
     {
+        Debug.Log("setup");
         dayDataHolder = day;
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -36,7 +37,7 @@ public class NpcLoader : MonoBehaviour
     public void LoadNpc()
     {
 
-        
+        Debug.Log("LoadNPC");
         for (int i = 0; i < dayDataHolder.npcs.Length; i++)
         {
             Yarn.Unity.Example.NPC npc = Instantiate(prefab).GetComponent<Yarn.Unity.Example.NPC>();
