@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToSteinMultifaithRoomDay8
   m_EditorClassIdentifier: 
   name: TalkToSteinMultifaithRoomDay8
-  target: 0
+  target: {fileID: 11400000, guid: 76f0fffe47293da42aa0b62ee23bcce9, type: 2}
   wayfindingIndex: 0
   displayText: Go talk to Mrs.Stein in the Multifaith Room.

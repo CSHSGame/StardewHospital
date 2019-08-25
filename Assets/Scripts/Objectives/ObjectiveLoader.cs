@@ -14,6 +14,19 @@ public class ObjectiveLoader : MonoBehaviour
     public MapController map;
     public string targetObjective;
     public int currentObjective = 0;
+    private WorldToScreenTrack tracker;
+  
+    //only use to set references
+    public void Start()
+    {
+        tracker = FindObjectOfType<WorldToScreenTrack>();
+        if(tracker == null)
+        {
+            Debug.LogError("julian the arrow tracker is null, please add it to the scene from the prefab folder, simply drop into the scene ");
+        }
+
+    }
+
     [ContextMenu("start search")]
     public void startSearch()
     {
@@ -61,6 +74,27 @@ public class ObjectiveLoader : MonoBehaviour
 
             map.StartSearch(keyValuePairs[name].wayfindingIndex);
             Debug.Log("objective set to " + name);
+
+            if(tracker!= null)
+            {
+                if(keyValuePairs[name].target != null)
+                {
+                    var character = GameObject.Find(keyValuePairs[name].target.GameObjectName);
+                    if (character != null)
+                    {
+                        tracker.target = character.transform;
+                    }
+                    else
+                    {
+                        tracker.target = null;
+                    }
+                }
+                else
+                {
+                    tracker.target = null;
+                }
+
+            }
         }
         else
         {

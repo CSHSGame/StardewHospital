@@ -79,6 +79,7 @@ public class DayManager : MonoBehaviour
     public IEnumerator showDayText()
     {
         FadeMode fader =  FindObjectOfType<FadeMode>();
+
         if (fader != null)
         {
             fader.FadeOn();

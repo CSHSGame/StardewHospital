@@ -9,8 +9,8 @@ public class ObjectiveData : ScriptableObject
 {
 
     public string name;
-    public enum Npc { william, nurse, clara }
-    public Npc target;
+    //public enum Npc { william, nurse, clara }
+    public NpcDayData target;
     public int wayfindingIndex;
     [TextArea]
     public string displayText;

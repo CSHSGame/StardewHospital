@@ -102,7 +102,17 @@ namespace Yarn.Unity.Example {
                 // Kick off the dialogue at this node.
                 target.OnConversationStart();
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
-            //    print("test");
+
+                var tracker = FindObjectOfType<WorldToScreenTrack>();
+                if(tracker != null && tracker.target!=null)
+                {
+                    if (target.gameObject == tracker.target.gameObject)
+                    {
+                        tracker.target = null;
+                    }
+                }
+               
+                //    print("test");
             }
         }
 

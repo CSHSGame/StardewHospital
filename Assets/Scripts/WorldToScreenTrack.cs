@@ -19,15 +19,21 @@ public class WorldToScreenTrack : MonoBehaviour
     public Vector2 bufferZone;
     // Use this for initialization
     void Start () {
-		
-	}
+        cam = Camera.main;
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
         if (target != null)
         {
-            
+            if (FadeMode.isOn)
+            {
+                myTransformImage.gameObject.SetActive(false);
+                return;
+            }
+
             Rect rect = new Rect(0, 0, cam.pixelWidth - bufferZone.x, cam.pixelHeight - bufferZone.y);
             Vector3 screenPos = cam.WorldToScreenPoint(new Vector3(target.position.x, target.position.y, target.position.z));
 
@@ -75,6 +81,11 @@ public class WorldToScreenTrack : MonoBehaviour
             myTransformImage.gameObject.SetActive(!targetOnScreen);
             
 
+
+        }
+        else
+        {
+            myTransformImage.gameObject.SetActive(false);
 
         }
        

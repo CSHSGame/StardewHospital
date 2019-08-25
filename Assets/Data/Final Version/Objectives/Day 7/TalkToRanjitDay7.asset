@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToRanjitDay7
   m_EditorClassIdentifier: 
   name: TalkToRanjitDay7
-  target: 0
+  target: {fileID: 11400000, guid: 740e6e4015bbab142b1eb070872bf721, type: 2}
   wayfindingIndex: 0
   displayText: Go talk to the Ranjit by the entrance to the Living Area.

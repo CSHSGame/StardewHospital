@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToMarieDay9
   m_EditorClassIdentifier: 
   name: TalkToMarieDay9
-  target: 0
+  target: {fileID: 11400000, guid: f368f077bc109b14e87b911f7d7c3d2a, type: 2}
   wayfindingIndex: 0
   displayText: Go see Marie in her room. Room 109.
