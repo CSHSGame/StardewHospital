@@ -1,0 +1,117 @@
+title: Williams_Day_5
+tags: 
+colorID: 0
+position: 1222,962
+---
+[$Char2Last]: Hello.
+[$playerName]: How are you doing?
+[$Char2Last]: Sorry, no time to talk. Late for work.
+[$playerName]: What's your job?
+[$Char2Last]: I'm a chef!
+[$playerName]: Oh, wow! That's really interesting! Do you enjoy your work?
+[$Char2Last]: Yes, I love cooking.
+[$playerName]: [$Char2Last], I was just going to have a cup of tea. Would you like to join me?
+[$Char2Last]: No, I can't! I'm late for work!
+[[You can't leave!|Leave_Williams_Day_3]]
+[[[$Char2First], let's go have tea in the lounge. You can tell me all about your job.|Job_Williams_Day_3]]
+[[[$Char2Last]?|Ask_Williams_Day_3]]
+===
+title: Leave_Williams_Day_3
+tags: 
+colorID: 0
+position: 863,1274
+---
+[$playerName]: You can't leave!
+[$Char2Last]: You can't stop me!
+<<IsThought = True>>
+[action] Do not ignore [$Char2Last]'s issue. Instead, find the underlying meaning and offer redirection.
+<<IsThought = False>>
+[[Ask_Williams_Day_3]]
+===
+title: Job_Williams_Day_3
+tags: 
+colorID: 0
+position: 1544,1291
+---
+[$playerName]: [$Char2First], let's go have tea in the lounge. You can tell me all about your job.
+[$Char2Last]: I don't have time to talk! Late for work.
+[$Char2Last]: Why isn't it opening?
+[$playerName]: Stop, [$Char1First], you're going to break the door!
+[$Char2Last]: I don't care!
+<<IsThought = True>>
+[action] Raising your voice will agitate the resident. Instead, calmly try to understand why he wants to leave, or explore other areas related to his job.
+<<IsThought = False>>
+[$playerName]: I'm sorry, I didn't mean to yell.
+
+[[Ask_Williams_Day_3]]
+===
+title: Ask_Williams_Day_3
+tags: 
+colorID: 0
+position: 1228,1297
+---
+[$playerName]: *Pause* [$Char2Last]?
+[$Char2Last]: Yes?
+[$playerName]: What's the special on the menu today?
+[$Char2Last]: My famous shepherd's pie!
+[$playerName]: What a coincidence! I tried making sheperd's pie many times. It's my grandmother's favorite. Mine just never turn out well. What's your secret?
+[$Char2Last]: I'll tell you, but I can only talk for a little while.
+[$playerName]: Thanks, [$Char2Last]. It won't take long.
+[action]*[$playerName] takes [$Char2Last] down the hall.*
+[[Lounge_Williams_Day_3]]
+===
+title: Lounge_Williams_Day_3
+tags: 
+colorID: 0
+position: 1214,1703
+---
+[action]*[$Char2Last] and [$playerName] are sitting in the lounge.*
+[$playerName]: So, tell me why you love cooking so much? All I can make is bad shepherd's pie and burnt toast.
+[$Char2Last]: Oh, dear. Well, I got my love of cooking from my grandma. I loved her food so much. I learned how to cook from watching her.
+[$playerName]: Wow, she must have been a great cook!
+[$Char2Last]: Yes. Then, my birth family sent me to Canada. My adopted family owned a restaurant, and the rest was history.
+[[I see, you've had behaviour problems as a child...|Behaviour_Williams_Day_3]]<<$WILLIAMS_RUDE_DAY_5 == true>>
+[[Wow, lunch smells delicious. Why don't we go eat?|Lunch_Williams_Day_3]]
+[[Why were you sent to Canada?|Canada_Williams_Day_3]]
+===
+title: Behaviour_Williams_Day_3
+tags: 
+colorID: 0
+position: 979,1989
+---
+[$playerName]: I see, you've had behaviour problems as a child...
+[$Char2Last]: What? What do you mean?
+[$playerName]: Isn't that why your birth family put you up for adoption?
+[$Char2Last]: What? No!
+[$playerName]: I'm so sorry, I was wrong to assume. Please, continue with your story.
+[$Char2Last]: Well, what else do you want to know?
+[[Canada_Williams_Day_3]]
+===
+title: Lunch_Williams_Day_3
+tags: 
+colorID: 0
+position: 1437,1992
+---
+[$playerName]: Wow, lunch smells delicious. Why don't we go eat?
+[$Char2Last]: Oh! work!
+[$playerName]: Wait, we still have time! You didn't finish your story.
+[$Char2Last]: Well, what else did you want to know?
+[[Canada_Williams_Day_3]]
+===
+title: Canada_Williams_Day_3
+tags: 
+colorID: 0
+position: 1214,2332
+---
+[$Char2Last]: It was World War II. Britain was under attack by the enemy. The men were called to the trenches, the women to the factories. As for the children, they put us on ships headed to Australia or Canada for our safety. Those were hard times.
+[$playerName]: It sounds like it. How were your adopted family? 
+[$Char2Last]: My adopted father taught me how to figure out the business side of running a restaurant. I was a fast learner. I moved from waiter all the way to head chef in no time.
+[$playerName]: Wow, I didn't know you were so talented, [$Char2Last].
+[$Char2Last]: Haha! It was hard work!
+[$playerName]: It's no wonder the chef here requested your professional opinion of the new dish on our menu.
+[$Char2Last]: Really?
+[$playerName]: I'm on my way to the dining room. Would you like to lead me there?
+[$Char2Last]: I'd be happy to.
+[action] *They walk toward the dining room.*
+[$Char2Last]: How in the world do you burn toast?
+===
