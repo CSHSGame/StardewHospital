@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToWilliamsDay5
   m_EditorClassIdentifier: 
   name: TalkToWilliamsDay5
-  target: 0
+  target: {fileID: 11400000, guid: 49c6177e8f5cff844978ea575b27a29b, type: 2}
   wayfindingIndex: 0
   displayText: Go talk to Mr.Williams in the hallway by the Multifaith Room.

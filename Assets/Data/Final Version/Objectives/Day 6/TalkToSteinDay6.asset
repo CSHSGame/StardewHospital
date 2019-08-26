@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToSteinDay6
   m_EditorClassIdentifier: 
   name: TalkToSteinDay6
-  target: 0
+  target: {fileID: 11400000, guid: 888d0304bef9c2948a12604bde9d473a, type: 2}
   wayfindingIndex: 0
   displayText: Go talk to Eve Stein in her room.

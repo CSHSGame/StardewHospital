@@ -9,10 +9,12 @@ public class FadeMode : MonoBehaviour {
     public Color On;
     public Color Off;
     public Text msgText;
+    public static bool isOn = false;
     [YarnCommand("Fade")]
     public void FadeOn()
     {
         GetComponent<Image>().color = On;
+        isOn = true;
     }
     [YarnCommand("DeFade")]
     public void FadeWaitCommand()
@@ -23,11 +25,13 @@ public class FadeMode : MonoBehaviour {
     public void FadeOff()
     {
         GetComponent<Image>().color = Off;
+        isOn = false;
     }
     private IEnumerator fadeWait()
     {
         yield return new WaitForSeconds(1);
         GetComponent<Image>().color = Off;
+        isOn = false;
 
         yield return null;
     }

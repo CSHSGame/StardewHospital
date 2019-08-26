@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToSydDay5
   m_EditorClassIdentifier: 
   name: TalkToSydDay5
-  target: 0
+  target: {fileID: 11400000, guid: 4e38b3a62ea6efd439b1d3d818f18e1d, type: 2}
   wayfindingIndex: 0
   displayText: Go talk to Syd in his room.

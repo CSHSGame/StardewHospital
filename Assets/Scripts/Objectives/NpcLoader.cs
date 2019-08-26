@@ -64,6 +64,7 @@ public class NpcLoader : MonoBehaviour
         player.data = dayDataHolder.PlayerData;
         player.loadData();
         player.transform.position = new Vector3(-0.98f, 0.13f, 3.03f);
+        player.onPathDone.RemoveAllListeners();
     }
     // Update is called once per frame
     void Update () {

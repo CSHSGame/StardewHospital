@@ -17,10 +17,11 @@ public class DayManager : MonoBehaviour
     public Text display;
 
     public NpcDayData PlayerToWalkOutData;
-
+    public float debugTimeScale = 5;
     // Use this for initialization
     void Start ()
     {
+        Time.timeScale = debugTimeScale;
         variableStorage = FindObjectOfType<ExampleVariableStorage>();
         hUDController = FindObjectOfType<HUDController>();
         npcLoader = GetComponent<NpcLoader>();
@@ -47,6 +48,7 @@ public class DayManager : MonoBehaviour
             player.onPathDone.AddListener
             (() =>
                 {
+                    Debug.Log("-------fireing onPathDone changing day-----");
                     cinematic.TurnOFF();
                     npcLoader.DeleteNpc();
                     npcLoader.Setup(Days[currentDay]);
@@ -77,6 +79,7 @@ public class DayManager : MonoBehaviour
     public IEnumerator showDayText()
     {
         FadeMode fader =  FindObjectOfType<FadeMode>();
+
         if (fader != null)
         {
             fader.FadeOn();
