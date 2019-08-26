@@ -15,15 +15,15 @@ MonoBehaviour:
   otherVariables: []
   CurrentDay: 0
   Objectives:
-  - {fileID: 11400000, guid: 72e4e6ac3fa9c184b852e58dd85ad5fe, type: 2}
-  - {fileID: 11400000, guid: 253a8ffab81832c41a391635bbe341b5, type: 2}
+  - {fileID: 11400000, guid: 44d76e9fc4cc94b4a93e9b283cff6dc2, type: 2}
+  - {fileID: 11400000, guid: f5611bda0708cca43987b9a4ecfdaaa7, type: 2}
   - {fileID: 11400000, guid: 09c5c525e1cc59242a83bc2b121d90d2, type: 2}
   PlayerData: {fileID: 11400000, guid: f81b57471d6df934aa3f73e2f16e3ce0, type: 2}
   npcs:
-  - {fileID: 11400000, guid: 106716ef6562176498dd1e72a1966a4a, type: 2}
-  - {fileID: 11400000, guid: bca439ce1533adb40b60462726162234, type: 2}
-  - {fileID: 11400000, guid: be7ed8170ec5d2f47b206c2db37b2c99, type: 2}
-  - {fileID: 11400000, guid: 31928fb5eea5050488d51c57ba323622, type: 2}
+  - {fileID: 11400000, guid: 80faa8f55b31c5b4c8fb02eace830448, type: 2}
+  - {fileID: 11400000, guid: c5f61bbcb0c4f6e408aa0381b1d9dfa8, type: 2}
+  - {fileID: 11400000, guid: d0e4f52b52c9ee24eb5a281d1ce1bd5b, type: 2}
+  - {fileID: 11400000, guid: 2cbc874afad6c464390be7654834dbaf, type: 2}
   DayOfTheWeek: SAT
   DayNumber: 13
   Month: JULY

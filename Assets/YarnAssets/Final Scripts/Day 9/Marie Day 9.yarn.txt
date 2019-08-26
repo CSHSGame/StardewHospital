@@ -96,8 +96,7 @@ tags:
 colorID: 0
 position: 513,2263
 ---
-//****PROGRAMMERS NOTE**** The player arrives at Maries, the door is closed.
-[Door]: Knock Knock
+[$Char4FirstDoor]: Knock Knock
 [$playerName]: Marie? Are you there? It’s me, [$playerName].
 [$Char4First]: Come in.
 [$playerName]: Ok, I’m coming in… 
@@ -127,8 +126,7 @@ position: 524,951
 [$NurseManager]: You seem upset, but I think it's rather beautiful when our residents can find some closeness and intimacy here . . .  
 [$playerName]: I guess. But I feel really uncomfortable. It's like I walked in on my grandmother making out with an old guy.
 [$NurseManager]: [$playerName], we need our students to understand that older adults are human - they're sexual beings just like anyone else.   We need to cut across all the hurtful stereotypes about growing old. I want you to have this - it's an article that I want you to read.  I think you’ll find it helpful.  
-//***PROGRAMMERS NOTE** hands player a document -- Blackboard
-[$NurseManager]: *** Hand player document ***
+[action]*[$NurseManager] Hands player document *
 [$playerName]: Okay... I do have a quick question before you go.  How do we know what Marie is doing is consensual?
 [$NurseManager]: That’s a great question. The staff know from our ongoing assessments which residents are fully capable of making such personal decisions. Marie is quite able to make decisions for herself.
 [$playerName]: Thanks, [$NurseManager]. I’ll read this tonight. 
@@ -136,44 +134,3 @@ position: 524,951
 <<SetObjective GameManager TalkToRanjitDay9>>
 <<Spawn Ranjit>>
 ===
-title: Sexuality_Defense
-tags: 
-colorID: 0
-position: 514,2528
----
-[$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
-[$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
-[$Char4First]: We’re not an item!  Don’t go telling people that!
-[$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! I’m trying not to be weird! 
-[$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
-[$playerName]: It’s just that I haven’t known that many older people until I came here.  Just my grandparents.  It’s kind of an adjustment.
-[$Char4First]: Do you think your grandparents have sex?
-[[[$playerName]: Definitely not.|Sexuality_Know]]
-[[[$playerName]: I don’t’ know.|Sexuality_Know]]
-[[[$playerName]: No way!|Sexuality_Know]]
-===
-title: Sexuality_Know
-tags: 
-colorID: 0
-position: 514,2795
----
-[$Char4First]: How would you know?
-[$playerName]:  I mean . . . I don’t know, I guess. I kind of assumed they were too old and didn’t do that anymore.  
-[$Char4First]: Because you think that’s true?  Or because you don’t want to think about it?
-[$playerName]: ...I don’t know. 
-[$Char4First]: [$playerName] I know that you want to do this job because you are a caring person.  I can see that in you. 
-[$playerName]: Thanks, [$Char4First].  You’re very kind.
-[$Char4First]: But you need to remember that we’re people just like you.  No matter our age. We have our own private lives, and our own feelings – and you’d probably be surprised how similar they are to many of yours. Do you mind if I ask if you have anyone special in your life?
-[$playerName]: Yeah. I do. I have a partner.  
-[$Char4First]: And do you have an intimate relationship?  
-[$playerName]: [$Char4First]! That’s personal.
-[$Char4First]: You see what I’m getting at?
-[$playerName]: Okay. I see I have a lot to learn.  Thanks for talking about this with me.  I really appreciate it.
-[$Char4First]: Any big plans tonight?
-[$playerName]: We might go do a movie or just hang out.
-[$Char4First]: Well, don’t do anything I wouldn’t do!   
-[$playerName]: Very funny...
-<<TalkedMarieDay3 = True>>
-<<SetObjective DayLoader CheckMrsLeeDay3>>
-===
-

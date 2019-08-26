@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: TalkToNurseDay12
   m_EditorClassIdentifier: 
   name: TalkToNurseDay12
-  target: 0
+  target: {fileID: 11400000, guid: 992a2c04c313b2d4996e93b79c90ca93, type: 2}
   wayfindingIndex: 0
   displayText: Go talk to the Nurse Manager in room 112.

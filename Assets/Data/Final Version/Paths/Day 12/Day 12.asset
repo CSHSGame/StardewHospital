@@ -15,17 +15,17 @@ MonoBehaviour:
   otherVariables: []
   CurrentDay: 0
   Objectives:
-  - {fileID: 11400000, guid: 7b0a58a6e5e35a94c92b6badc8e570cb, type: 2}
+  - {fileID: 11400000, guid: 7e616fc84b8429a40bbf91eaa5a4a05f, type: 2}
   - {fileID: 11400000, guid: 828f2e9aa52be034cbb4cc4b3453929b, type: 2}
   - {fileID: 11400000, guid: a59b652f781b62643808fe19a00c5e21, type: 2}
   PlayerData: {fileID: 11400000, guid: 0513e3f1dae473f44b62f119650c065e, type: 2}
   npcs:
-  - {fileID: 11400000, guid: aecfbd90048fcba46a225b1e4af4ab5d, type: 2}
+  - {fileID: 11400000, guid: ca9fefd02c747a945ad31b6155aec609, type: 2}
   - {fileID: 11400000, guid: ec8e28f44b2b6bd4682545b557af5eac, type: 2}
-  - {fileID: 11400000, guid: 47bb144d718826a418456443f756dde3, type: 2}
-  - {fileID: 11400000, guid: f28b5a3878b8c5d48bf5f3acdc6ced3d, type: 2}
-  - {fileID: 11400000, guid: 7ce19346d5b3b014eb0c36c443e48962, type: 2}
-  - {fileID: 11400000, guid: f505eef94a08fae4985de7199f6fcdd0, type: 2}
+  - {fileID: 11400000, guid: 2d433d6143bcf204397de4b551925fa5, type: 2}
+  - {fileID: 11400000, guid: 992a2c04c313b2d4996e93b79c90ca93, type: 2}
+  - {fileID: 11400000, guid: 1977eedf7bb87634793505d16f5872bf, type: 2}
+  - {fileID: 11400000, guid: c5b83248d9fb32e469f982990d3bc3bb, type: 2}
   DayOfTheWeek: FRI
   DayNumber: 12
   Month: JULY

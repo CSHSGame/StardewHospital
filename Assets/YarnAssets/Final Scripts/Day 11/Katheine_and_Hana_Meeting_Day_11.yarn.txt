@@ -4,16 +4,17 @@ colorID: 0
 position: 1225,249
 ---
 //Setting:  Conference Room/Nursing Supervisor’s Office
-//The player, Nursing Supervisor, Hana  and  Katherine
-[$NurseManager]: Please, Hana, Katherine, come on in and sit down.  It’s been a tough few days. We all miss Eve very much. 
-Hana: I’m grateful to everyone, especially to the staff who arranged everything for mom.  I`m so grateful I was able to spend these last precious days with her. I tried to give the night nurse a card with some money, but she said she couldn’t accept it, so I want to make a donation to Bloom Village on my mom’s behalf. Mom was so happy here and your wonderful care and support made all the difference.
+//The player, Nursing Supervisor, [$Hana]  and  [$Katherine]
+[$NurseManager]: Please, [$Hana], [$Katherine], come on in and sit down.  It’s been a tough few days. We all miss Eve very much. 
+[$Hana]: I’m grateful to everyone, especially to the staff who arranged everything for mom.  I`m so grateful I was able to spend these last precious days with her. 
+[$Hana]: I tried to give the night nurse a card with some money, but she said she couldn’t accept it, so I want to make a donation to Bloom Village on my mom’s behalf. Mom was so happy here and your wonderful care and support made all the difference.
 [$NurseManager]: Thank you.  Are you taking care of yourself?
-Hana: My mom told me the greatest lesson she ever learned was how in the end all that matters are love and relationships. I’m trying to take it one day at a time and focus my energy on my kids.
+[$Hana]: My mom told me the greatest lesson she ever learned was how in the end all that matters are love and relationships. I’m trying to take it one day at a time and focus my energy on my kids.
 [$playerName]: I remember Eve telling me the same thing after our first Tea ‘N Talk session!
-[$NurseManager]:   Eve was very wise.  How are you doing, Katherine?
-Katherine: (crying)  It’s so hard to lose her ... And now I’ll have a new roommate already - tomorrow!  But no one can take her place… (Hana places an arm around Katherine and hugs her)
+[$NurseManager]:   Eve was very wise.  How are you doing, [$Katherine]?
+[$Katherine]: (crying)  It’s so hard to lose her ... And now I’ll have a new roommate already - tomorrow!  But no one can take her place… 
 [[It’s going to be okay. Don’t cry -- you’re stronger than you know!|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
-[[[Katherine, it’s okay to feel sad, it’s okay to cry. You don’t have to try to be ‘strong.’	Eve was your dear friend.|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
+[[[$Katherine], it’s okay to feel sad, it’s okay to cry. You don’t have to try to be ‘strong.’	Eve was your dear friend.|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
  
 ===
 title: Katherine_and_Hana_Meeting_2
@@ -22,32 +23,36 @@ colorID: 0
 position: 1221,534
 ---
 
-Katherine: Yes, she was. Thank you.
-[$NurseManager]: Katherine, This is a great loss to you.   I think it might help for you to talk some more about your friendship with Eve?
+[$Katherine]: Yes, she was. Thank you.
+[$NurseManager]: [$Katherine], This is a great loss to you.   I think it might help for you to talk some more about your friendship with Eve?
 //(Scroll:  We want to express empathy. We need to acknowledge that there are stages of grief  and each person experiences grief differently. Each person’s lived experience of the loss of a loved one is different.)
-Katherine: It’s so difficult when someone you care about dies. 
+[$Katherine]: It’s so difficult when someone you care about dies. 
 [$playerName]: I can't sleep.  I keep replaying our last conversation in my head….
-//[Both the Player and Katherine are crying now]
+//[Both the Player and [$Katherine] are crying now]
 [$NurseManager]: (shakes head gently at [$playerName] to indicate overly emotional behaviour is not appropriate.)
 //(Scroll: We have to maintain a professional relationship with our residents and others at all times. It’s  not appropriate to project overly emotional reactions onto them.)
-[$NurseManager]:  Katherine, I’d really like to hear more about how you’re feeling?
-(She remains silent as they cry and Hana consoles Katherine]
+[$NurseManager]:  [$Katherine], I’d really like to hear more about how you’re feeling?
+[$Katherine]: ....(She remains silent as they cry and [$Hana] consoles [$Katherine])
 //(Scroll:  We have opportunities every day to enhance our deep listening skills and to practice mindful and heart-centered communication. Sometimes, this means being silent and present with another person.)  
-Katherine: … She was my  special friend… I spent almost  every waking moment with her since I moved here – now I'll wake up or enter a room thinking she's still here, then realize all over again that she's gone – and it feels like losing her all over again... why did she get cancer -- It’s not fair!
-Hana You had a close relationship with my mom this past year, Katherine. Thank you for being her best friend. She loved you very much.
-[$NurseManager]:  Katherine, is there anyone here you can rely on for support?
+[$Katherine]: … She was my  special friend… I spent almost  every waking moment with her since I moved here – now I'll wake up or enter a room thinking she's still here, then realize all over again that she's gone – and it feels like losing her all over again... why did she get cancer -- It’s not fair!
+[$Hana]: You had a close relationship with my mom this past year, [$Katherine]. Thank you for being her best friend. She loved you very much.
+[$NurseManager]:  [$Katherine], is there anyone here you can rely on for support?
 //(Scroll: We want to promote healing through the building of support systems.)
-Katherine: I went to all the Tea ‘n Talk meetings with Eve and some of the other activities where I made friends with a few other residents  - but I don’t feel interested in doing anything now . . .
-[$NurseManager]: That's normal, Katherine. You need time to grieve. And it will feel lonely to go to activities you used to enjoy without Eve by your side – but remember, you’re not alone here.   I urge you to keep attending  your favorite activities and spending time with your other friends here.
+[$Katherine]: I went to all the Tea ‘n Talk meetings with Eve and some of the other activities where I made friends with a few other residents  - but I don’t feel interested in doing anything now . . .
+[$NurseManager]: That's normal, [$Katherine]. You need time to grieve. And it will feel lonely to go to activities you used to enjoy without Eve by your side – but remember, you’re not alone here.   I urge you to keep attending  your favorite activities and spending time with your other friends here.
 //(Scroll: We need to be aware of the risk of depression when grief leads to isolation.)
-Katherine: I'll try … it’s just too painful – I end up crying.
-[$NurseManager]: It sounds like it would be a good idea for you to talk to a counsellor here - this kind of support can be very helpful. And I would offer that same advice to you Hana (gestures) and you [Player’s name] (gestures).
-Katherine:  Okay.  I’ll think about it…
-Hana:  I think I might need that kind of support, too.
+[$Katherine]: I'll try … it’s just too painful – I end up crying.
+[$NurseManager]: It sounds like it would be a good idea for you to talk to a counsellor here - this kind of support can be very helpful. And I would offer that same advice to you [$Hana] and you [$playerName].
+[$Katherine]:  Okay.  I’ll think about it…
+[$Hana]:  I think I might need that kind of support, too.
 [$playerName]: Thank you.
 [$NurseManager]: I will make arrangements for all of you.
-Hana: Thank you.
-Katherine:  Hana, I’ll see you tomorrow for the celebration of Eve’s life.  
-[$SupervisorName]:  Yes, I’ll see you tomorrow at 2 o’clock. 
-Katherine: It's just what Eve wanted. . .  
+[$Hana]: Thank you.
+[$Katherine]:  [$Hana], I’ll see you tomorrow for the celebration of Eve’s life.  
+[$NurseManager]:  Yes, I’ll see you tomorrow at 2 o’clock. 
+[$Katherine]: It's just what Eve wanted. . .  
+[$playerName]: See you then.
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay11>>
+<<SetPath Player Two>>
 ===

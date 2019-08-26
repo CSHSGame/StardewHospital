@@ -3,15 +3,15 @@ tags:
 colorID: 0
 position: 583,34
 ---
-//****PROGRAMMERS NOTE**** The player arrives at Maries, the door is closed.
-[Door]: Knock Knock
+[$Char4FirstDoor]: Knock Knock
 [$playerName]: Marie? Are you there? It’s me, [$playerName].
 [$Char4First]: Come in.
 [$playerName]: Ok, I’m coming in… 
 [$playerName]: just opening the door… 
 [$playerName]: and coming in to the room now...
 [$Char4First]: You can come right in.
-<<SetPath Controller Zero>> //The player enters the room
+<<SetPath Player Three>> 
+<<Hide MarieDoor>>
 [$playerName]: Ok! Here I am.
 [$Char4First]: Hmm, yes, here you are.
 [$playerName]: So! [$Char4First], I just wanted to apologize for the other day, barging in here. I know this is your home and I want to respect your privacy and I should have gotten your consent before entering. 
@@ -56,5 +56,8 @@ position: 596,626
 [$playerName]: We might go do a movie or just hang out.
 [$Char4First]: Well, don’t do anything I wouldn’t do!   
 [$playerName]: Very funny...
-<<TalkedMarieDay3 = True>>
+//<<TalkedMarieDay3 = True>>
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay10>>
+<<SetPath Player Four>> 
 ===

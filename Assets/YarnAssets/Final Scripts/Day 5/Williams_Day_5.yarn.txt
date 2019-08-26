@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 1222,962
 ---
+<<SetPath Player Zero>>
 [$Char2Last]: Hello.
 [$playerName]: How are you doing?
 [$Char2Last]: Sorry, no time to talk. Late for work.
@@ -58,6 +59,8 @@ position: 1228,1297
 [$Char2Last]: I'll tell you, but I can only talk for a little while.
 [$playerName]: Thanks, [$Char2Last]. It won't take long.
 [action]*[$playerName] takes [$Char2Last] down the hall.*
+<<SetPath Player One>>
+<<SetPath MrWilliams Zero>>
 [[Lounge_Williams_Day_3]]
 ===
 title: Lounge_Williams_Day_3
@@ -65,7 +68,6 @@ tags:
 colorID: 0
 position: 1214,1703
 ---
-[action]*[$Char2Last] and [$playerName] are sitting in the lounge.*
 [$playerName]: So, tell me why you love cooking so much? All I can make is bad shepherd's pie and burnt toast.
 [$Char2Last]: Oh, dear. Well, I got my love of cooking from my grandma. I loved her food so much. I learned how to cook from watching her.
 [$playerName]: Wow, she must have been a great cook!
@@ -112,6 +114,8 @@ position: 1214,2332
 [$Char2Last]: Really?
 [$playerName]: I'm on my way to the dining room. Would you like to lead me there?
 [$Char2Last]: I'd be happy to.
-[action] *They walk toward the dining room.*
+<<SetPath Player Two>>
+<<SetPath MrWilliams One>>
 [$Char2Last]: How in the world do you burn toast?
+<<SetObjective GameManager TalkToSydDay5>>
 ===

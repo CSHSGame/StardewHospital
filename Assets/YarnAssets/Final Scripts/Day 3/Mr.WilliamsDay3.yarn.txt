@@ -106,15 +106,15 @@ tags:
 colorID: 0
 position: 1224,1835
 ---
-[Action][$playerName] picks up the photo.*
+[action]*[$playerName] picks up the photo.*
 Skip:
 [$playerName]: I heard you say yesterday that this is a picture of your wife.
 Skip:
 [$Char2Last]: Put that down! That's my picture!
 Skip:
-[Action][$Char2Last] grabs the picture from the PS and puts it down.*
+[action]*[$Char2Last] grabs the picture from [$playerName] and puts it down.*
 Skip:
-[$playerName]:I'm sorry, [$Char2Last], I didn't mean to upset you. Is that you? The chef in that picture?
+[$playerName]: I'm sorry, [$Char2Last], I didn't mean to upset you. Is that you? The chef in that picture?
 Skip:
 [$Char2Last]: Yes, that's me.
 Skip:
