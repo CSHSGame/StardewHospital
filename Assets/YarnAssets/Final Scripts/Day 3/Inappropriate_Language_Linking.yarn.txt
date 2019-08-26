@@ -5,9 +5,9 @@ position: 544,607
 ---
 [$PlayerName]: Hi there, Mama! [$SupervisorName] asked me to tell you that you have a package.
 Mrs. Minhaj: Excuse me, but who are you calling Mama? I’m not your mama. My name is Mrs. Minhaj.
-[$PlayerName]: I’m really sorry, I just thought… I've heard people call you Mama, so I assumed I could too.
+[sad][$PlayerName]: I’m really sorry, I just thought… I've heard people call you Mama, so I assumed I could too.
 Mrs. Minhaj: They can call me Mama. That's a nickname some of my closest friends call me by - not strangers.
-[$PlayerName]: Again, I’m so sorry, it wasn't very professional of me.
+[sad][$PlayerName]: Again, I’m so sorry, it wasn't very professional of me.
 Mrs. Minhaj: That's alright. Like I said, I'm Mrs. Minhaj - what's your name?
 [$PlayerName]: Nice to meet you Mrs. Minhaj. My name's [$PlayerName].
 Mrs. Minhaj: A pleasure to meet you [$PlayerName].

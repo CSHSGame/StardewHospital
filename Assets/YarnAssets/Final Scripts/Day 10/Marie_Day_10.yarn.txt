@@ -6,16 +6,16 @@ position: 583,34
 //****PROGRAMMERS NOTE**** The player arrives at Maries, the door is closed.
 [Door]: Knock Knock
 [$playerName]: Marie? Are you there? It’s me, [$playerName].
-[$Char4First]: Come in.
+[angry][$Char4First]: Come in.
 [$playerName]: Ok, I’m coming in… 
 [$playerName]: just opening the door… 
 [$playerName]: and coming in to the room now...
-[$Char4First]: You can come right in.
+[angry][$Char4First]: You can come right in.
 <<SetPath Controller Zero>> //The player enters the room
 [$playerName]: Ok! Here I am.
-[$Char4First]: Hmm, yes, here you are.
+[angry][$Char4First]: Hmm, yes, here you are.
 [$playerName]: So! [$Char4First], I just wanted to apologize for the other day, barging in here. I know this is your home and I want to respect your privacy and I should have gotten your consent before entering. 
-[$Char4First]: My dear, mistakes happen. I wasn’t upset with you for walking in on my companion and I. If anything it’s been your behaviour since then that I find a bit bothersome. 
+[angry][$Char4First]: My dear, mistakes happen. I wasn’t upset with you for walking in on my companion and I. If anything it’s been your behaviour since then that I find a bit bothersome. 
 [[[$playerName]: What do you mean? What's wrong with my behaviour?!!|Sexuality_Defense]]<<$Sexuality_Defensive = true>>
 [[[$playerName]: Oh! I’m so sorry.  But what do you mean, specifically, [$Char4First]? Did I say something wrong?|Sexuality_Defense]]<<$Sexuality_Defensive = false>>
 ===
@@ -25,12 +25,11 @@ colorID: 0
 position: 196,393
 ---
 
-[$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
+[angry][$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
 [$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
-[$Char4First]: We’re not an item!  Don’t go telling people that!
-[$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! 
-I’m trying not to be weird! 
-[$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
+[angry][$Char4First]: We’re not an item!  Don’t go telling people that!
+[sad][$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! I’m trying not to be weird! 
+[angry][$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
 [$playerName]: It’s just that I haven’t known that many older people until I came here.  Just my grandparents.  It’s kind of an adjustment.
 [$Char4First]: Do you think your grandparents have sex?
 [[[$playerName]: Definitely not.|Sexuality_Know]]
@@ -56,7 +55,7 @@ position: 596,626
 [$playerName]: Okay. I see I have a lot to learn.  Thanks for talking about this with me.  I really appreciate it.
 [$Char4First]: Any big plans tonight?
 [$playerName]: We might go do a movie or just hang out.
-[$Char4First]: Well, don’t do anything I wouldn’t do!   
-[$playerName]: Very funny...
+[happy][$Char4First]: Well, don’t do anything I wouldn’t do!   
+[happy][$playerName]: Very funny...
 <<TalkedMarieDay3 = True>>
 ===

@@ -16,7 +16,7 @@ position: 998,1279
 <<Hide MrWilliamsDoor>>
 <<SetPath Player Zero>>
 Skip:
-[$Char2Last]: Who are you? Get out!
+[angry][$Char2Last]: Who are you? Get out!
 
 [[Frighten_Williams_Day_2]]
 ===
@@ -33,7 +33,7 @@ Skip:
 <<SetPath Player Zero>>
 [$playerName]: Hi, [$Char2Last].
 Skip:
-[$Char2Last]: Help! There's an intruder in my room!
+[angry][$Char2Last]: Help! There's an intruder in my room!
 
 [[Frighten_Williams_Day_2]]
 ===
@@ -68,11 +68,11 @@ position: 1094,1563
 ---
 [$playerName]: I'm sorry, [$Char2Last], I didn't mean to frighten you.
 Skip:
-[$Char2Last]: What do you want?
+[angry][$Char2Last]: What do you want?
 Skip:
 [$playerName]: My name's [$playerName]. I'm one of the students that will be assisting you today. It's breakfast time, and I'm here to accompany you to the dining room.
 Skip:
-[$Char2Last]: No, I'm not hungry. I don't want breakfast. Leave me alone.
+[sad][$Char2Last]: No, I'm not hungry. I don't want breakfast. Leave me alone.
 
 [[It's sausage and pancakes today. I heard it's your favourite.|Favourite_Williams_Day_2]]
 [[(Pick up photo) I heard you say yesterday that is a picture of your wife.|Wife_Williams_Day_2]]
@@ -85,7 +85,7 @@ position: 926,1831
 ---
 [$playerName]: It's sausage and pancakes today. I heard it's your favourite.
 Skip:
-[$Char2Last]: I said no! Leave my room now!
+[angry][$Char2Last]: I said no! Leave my room now!
 Skip:
 [$playerName]: I'm sorry, [$Char2Last]. I know it's really early, but we just want your opinion about the menu.
 Skip:
@@ -95,9 +95,9 @@ Skip:
 Skip:
 [$Char2Last]: Really? Well, I am quite hungry.
 Skip:
-[$playerName]: Perfect! Do you mind leading me to the dining room?
+[happy][$playerName]: Perfect! Do you mind leading me to the dining room?
 Skip:
-[$Char2Last]: Of course.
+[happy][$Char2Last]: Of course.
 
 [[Hallway_Williams_Day_2]]
 ===
@@ -110,7 +110,7 @@ position: 1224,1835
 Skip:
 [$playerName]: I heard you say yesterday that this is a picture of your wife.
 Skip:
-[$Char2Last]: Put that down! That's my picture!
+[angry][$Char2Last]: Put that down! That's my picture!
 Skip:
 [Action][$Char2Last] grabs the picture from the PS and puts it down.*
 Skip:

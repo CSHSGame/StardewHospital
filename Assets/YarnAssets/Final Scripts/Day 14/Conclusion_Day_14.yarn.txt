@@ -4,8 +4,8 @@ colorID: 0
 position: 540,260
 ---
 //In the Hallway 
-[$SupervisorName]: Hi there [$PlayerName]. Today’s your last day! How time flies. 
-[$PlayerName]: It certainly does. I’m sad to go but I’ll make sure to stay in touch. 
-[$SupervisorName]: Let’s go to the activity room -- a few of the residents want to see you before you leave.  
+[happy][$SupervisorName]: Hi there [$PlayerName]. Today’s your last day! How time flies. 
+[happy][$PlayerName]: It certainly does. I’m sad to go but I’ll make sure to stay in touch. 
+[happy][$SupervisorName]: Let’s go to the activity room -- a few of the residents want to see you before you leave.  
 //They Walk off screen and we fade out
 ===

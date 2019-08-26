@@ -16,32 +16,32 @@ position: 152,141
 //<<SetPath Brian Zero>> //Brian leaves the room
 //<<SetPath Susannah Zero>>//Susannah leaves the room
 [$playerName]: My name is [$playerName].  I’m going to help take care of you today. Would you like to sit down?
-[$Char5Last]: NO, NO, NO! (translate into Cantonese characters)
-[$playerName]: I’m sorry. I don’t understand what you’re saying?
-[$Char5Last]: Susannah!    I Go Home NOW! (translate into Cantonese characters)
+[angry][$Char5Last]: NO, NO, NO! (translate into Cantonese characters)
+[sad][$playerName]: I’m sorry. I don’t understand what you’re saying?
+[angry][$Char5Last]: Susannah!    I Go Home NOW! (translate into Cantonese characters)
     ->I DONT KNOW WHAT YOU ARE SAYING.<<$Transitioning_Rude = true>>
     ->I'm sorry [$Char5Last] but I can't understand you. I'm just going to look in the hall to see if there's someone who can help.<<Transitioning_Rude = false>>
 <<SetPath Nurse One>>//***PROGRAMMER NOTE*** The nurse manager comes to the doorway
 <<if $Transitioning_Rude == true>>[$NurseManager]: [$playerName]! That's not an appropriate way to speak to [$Char5Last].
-[$playerName]: Sorry... I just got frustrated...<<endif>>
+[sad][$playerName]: Sorry... I just got frustrated...<<endif>>
 [$NurseManager]: Can I be of some help?
 [$playerName]: Yes Please! [$Char5Last] seems to need something urgently but I don't know what she's saying.
 [$NurseManager]: Well, that's one of the reasons we keep these tablets here! You can use a website to translate between Cantonese and English, and vice versa.
 [$playerName]: Oh! That sounds extremely helpful! Let me give it a try..
 [$playerName]: (**Speaking into tablet**) [$Char5Last], what's wrong? How can we help you??
 [$Tablet]: 怎麼了？我們該怎樣幫助你* (Check these Cantonese characters)
-[$Char5Last]: !!!
+[happy][$Char5Last]: !!!
 [$Char5Last]: 我的女兒離開了。跟我女兒一起去吧 (Check these Cantonese characters)
 [$Tablet]: My daughter left. Go with my daughter.
 [$playerName]: Oh!
 [$playerName]: [$Char5Last], your daughter hasn't left - she'll be back in a few minutes.
 [$Tablet]: 你女兒沒有離開 - 她會在幾分鐘後回來。(Check these Cantonese characters)
-[$Char5Last]:[smile]
+[smile][$Char5Last]: *smiles*
 //<<SetPath Supervisor One>> //Supervisor returns to the room
 <<SetPath Brian One>> //Brian returns to the room
 <<SetPath Susannah One>>//Susannah returns to the room
 [$NurseManager]: Ah! Your mother was just asking for you.
-[$Susannah]: Thanks for keeping her company!
-[$playerName]: Of course! See you later.
+[happy][$Susannah]: Thanks for keeping her company!
+[happy][$playerName]: Of course! See you later.
 <<endif>>
 ===

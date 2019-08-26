@@ -27,7 +27,7 @@ tags:
 colorID: 0
 position: 778,1646
 ---
-[$Char2Last]: Where am I?
+[sad][$Char2Last]: Where am I?
 
 [[You're in a long-term care home. Remember?|What_Williams_Day_1]]
 [[Haha! You’re funny!|What_Williams_Day_1]]
@@ -38,7 +38,7 @@ tags:
 colorID: 0
 position: 771,1867
 ---
-[$Char2Last]: What? No! This is all wrong. I’m going home.
+[angry][$Char2Last]: What? No! This is all wrong. I’m going home.
 
 [[[$Char2Last], how many times do I have to tell you? This is your home! This is your room!|Help_Williams_Day_1]]
 [[Hey, stop! You’re not allowed to go!|Help_Williams_Day_1]]
@@ -49,7 +49,7 @@ tags:
 colorID: 0
 position: 780,2085
 ---
-[$Char2Last]: No! Help! Help! I’m being held hostage! Help!
+[angry][$Char2Last]: No! Help! Help! I’m being held hostage! Help!
 
 [[[$Char2Last], I’m not touching you!|Help_Williams_Day_1]]
 [[No! Calm down!|Help_Williams_Day_1]]
@@ -62,23 +62,23 @@ position: 780,2308
 ---
 <<SetPath MrWilliams Zero>>
 Skip:
-[$Char2Last]: Help! Help!
+[angry][$Char2Last]: Help! Help!
 Skip:
 <<SetPath Player Zero>>
-[$playerName]: [$Char2Last]! [$Char2Last], come back here!
+[sad][$playerName]: [$Char2Last]! [$Char2Last], come back here!
 Skip:
 <<Spawn Nurse>>
 <<SetPath Nurse Zero>>
 Skip:
-[$NurseManager]: It’s ok, [$playerName]. I’ll take it from here.
+[angry][$NurseManager]: It’s ok, [$playerName]. I’ll take it from here.
 Skip:
 [$NurseManager]: [$Char2Last], I’m sorry that [$playerName] upset you. Let me help you with that. 
 Skip:
-[$Char2Last]: They tried to stop me from going home.
+[angry][$Char2Last]: They tried to stop me from going home.
 Skip:
 [$NurseManager]:  I’m sorry. [$playerName] didn’t understand. 
 Skip:
-[$Char2Last]: No! I’m going home!
+[angry][$Char2Last]: No! I’m going home!
 Skip:
 [action]The Nurse Manager picks up a photo off of the night stand.
 [$NurseManager]: Is this your wife?
@@ -89,18 +89,18 @@ Skip:
 Skip:
 [$NurseManager]: She’s beautiful. I think your daughter, [$Marissa], takes after her.
 Skip:
-[$Char2Last]: Yes, she does!
+[happy][$Char2Last]: Yes, she does!
 Skip:
 <<Spawn Marissa>>
 <<SetPath Marissa Zero>>
-[$NurseManager]: Look, here she comes now! 
-[$Marissa]: Hi, Dad!  
+[happy][$NurseManager]: Look, here she comes now! 
+[happy][$Marissa]: Hi, Dad!  
 [$Marissa]: What are you guys doing? 
 [$NurseManager]: Your dad was just telling me a little about your mom, and I was telling him that I can see where you get your good looks from!
-[$Marissa]: Haha!
+[happy][$Marissa]: Haha!
 [$NurseManager]: [$Char2Last], why don’t you and your daughter join us for breakfast?
 [$Marissa]: Yeah, Dad, that’s a great idea. I’m hungry.
-[$Char2Last]: Okay.
+[happy][$Char2Last]: Okay.
 <<SetPath Marissa One Warp>>
 <<SetPath Player One Warp>>
 <<SetPath MrWilliams Five Warp>>
@@ -123,7 +123,7 @@ Skip:
 Skip:
 [$NurseManager]: He was frustrated because you didn’t understand what he wanted.
 Skip:
-[$playerName]: I was frustrated that he didn’t understand me no matter how many times I told him.
+[sad][$playerName]: I was frustrated that he didn’t understand me no matter how many times I told him.
 Skip:
 [$NurseManager]: Repeating things won’t help him. Because of his dementia, his mind doesn’t process information the same way anymore. 
 [$NurseManager]: I’m very relieved that you remembered that under no circumstances are you to physically restrain a resident or grab his hand, or yell or raise your voice.

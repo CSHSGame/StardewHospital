@@ -23,12 +23,12 @@ position: 352,440
 <<Hide MarieDoor>>
 <<SetPath Player Zero>> //Starts outside of room and walks in
 [$playerName]: Hi,  [$Char4First]... 
-[$Char4First]: [$playerName]!!
+[angry][$Char4First]: [$playerName]!!
 [$playerName]: Oh... 
 [$playerName]: my...
-[$playerName]: gosh!
-[$Char4First]: I didn’t tell you to enter!  Shut the door!
-[$playerName]: I’m so sorry, [$Char4First]! I didn't know you were with someone! I will... show myself out now bye!
+[sad][$playerName]: gosh!
+[angry][$Char4First]: I didn’t tell you to enter!  Shut the door!
+[sad][$playerName]: I’m so sorry, [$Char4First]! I didn't know you were with someone! I will... show myself out now bye!
 [[Sexuality_Saw_Stuff]]
 ===
 title: Sexuality_Saw_Stuff
@@ -44,9 +44,9 @@ position: 526,690
 [$playerName]: Oh! Hi, hello...
 [$NurseManager]: How did it go with [$Char4First].
 [$playerName]: ... 
-[$playerName]: I... didn't really have a chance to ask [$Char4First].
+[sad][$playerName]: I... didn't really have a chance to ask [$Char4First].
 [$NurseManager]: Was she in her room?
-[$playerName]: Um... Yes. 
+[sad][$playerName]: Um... Yes. 
 [[She wasn’t alone. There was a man with her. It was weird. I couldn’t believe it!|Sexuality_Judge]]<<$Sexuality_Judgy = true>>
 [[But she wasn’t alone.  I didn’t want to disturb her.|Sexuality_Judge]]<<$Sexuality_Judgy = false>>
 ===
@@ -61,7 +61,7 @@ position: 707,439
 [$Char4First]: [$playerName]!
 [$playerName]: Oh... 
 [$playerName]: my...
-[$playerName]: gosh!
+[sad][$playerName]: gosh!
 [[EW! Gross!|Sexuality_Saw_Stuff]]
 [[I’m so sorry, [$Char4First]! I didn't know you were with someone! I will... show myself out now bye!|Sexuality_Saw_Stuff]]
 ===
@@ -104,12 +104,12 @@ position: 513,2263
 [$playerName]: Ok, I’m coming in… 
 [$playerName]: just opening the door… 
 [$playerName]: and coming in to the room now...
-[$Char4First]: You can come right in.
+[angry][$Char4First]: You can come right in.
 <<SetPath Controller Zero>> //The player enters the room
 [$playerName]: Ok! Here I am.
-[$Char4First]: Hmm, yes, here you are.
+[angry][$Char4First]: Hmm, yes, here you are.
 [$playerName]: So! [$Char4First], I just wanted to apologize for the other day, barging in here. I know this is your home and I want to respect your privacy and I should have gotten your consent before entering. 
-[$Char4First]: My dear, mistakes happen. I wasn’t upset with you for walking in on my companion and I. If anything it’s been your behaviour since then that I find a bit bothersome. 
+[angry][$Char4First]: My dear, mistakes happen. I wasn’t upset with you for walking in on my companion and I. If anything it’s been your behaviour since then that I find a bit bothersome. 
 [[[$playerName]: What do you mean? What's wrong with my behaviour?!!|Sexuality_Defense]]<<$Sexuality_Defensive = true>>
 [[[$playerName]: Oh! I’m so sorry.  But what do you mean, specifically, [$Char4First]? Did I say something wrong?|Sexuality_Defense]]<<$Sexuality_Defensive = false>>
 ===
@@ -142,12 +142,12 @@ tags:
 colorID: 0
 position: 514,2528
 ---
-[$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
+[angry][$Char4First]: It’s not anything you’ve said really, but you’ve been treating me like I was from another planet! I can see how uncomfortable you are with me. Do you have a problem with my relationship with Fred?
 [$playerName]: No! Of course not. I think it’s great that you and Fred are, you know, an “item.”
-[$Char4First]: We’re not an item!  Don’t go telling people that!
-[$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! 
+[angry][$Char4First]: We’re not an item!  Don’t go telling people that!
+[sad][$playerName]: I’m sorry! I mean, it’s great that you guys are, well, whatever you are... I’m sorry! 
 I’m trying not to be weird! 
-[$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
+[angry][$Char4First]: Well, you’ll have to try harder! Fred and I have a casual, sexual relationship, which we both enjoy.  I think we’re mature enough to handle that. Are you?
 [$playerName]: It’s just that I haven’t known that many older people until I came here.  Just my grandparents.  It’s kind of an adjustment.
 [$Char4First]: Do you think your grandparents have sex?
 [[[$playerName]: Definitely not.|Sexuality_Know]]
@@ -173,8 +173,8 @@ position: 514,2795
 [$playerName]: Okay. I see I have a lot to learn.  Thanks for talking about this with me.  I really appreciate it.
 [$Char4First]: Any big plans tonight?
 [$playerName]: We might go do a movie or just hang out.
-[$Char4First]: Well, don’t do anything I wouldn’t do!   
-[$playerName]: Very funny...
+[happy][$Char4First]: Well, don’t do anything I wouldn’t do!   
+[happy][$playerName]: Very funny...
 <<TalkedMarieDay3 = True>>
 <<SetObjective DayLoader CheckMrsLeeDay3>>
 ===

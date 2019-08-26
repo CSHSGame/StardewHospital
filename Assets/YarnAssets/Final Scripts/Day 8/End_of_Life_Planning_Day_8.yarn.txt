@@ -23,11 +23,11 @@ position: 543,260
 [$Char1Last]: Hmm... it would be nice to have some of my favourite hymns playing quietly. 
 [$NurseManager]: I can have the activation co-ordinator create a playlist for you, [$Char1First], and bring a CD player up to your room.  You can tell me all your favourite hymns and Sinatra songs.
 [$Char1Last]: Ha ha, You would probably need more than a list, more likely a book of songs. Of course, I’d rather have Frank Sinatra in person. He was quite a guy. 
-[$playerName]: You always make me laugh, Eve.
-[$Char1Last]: That’s a great compliment. Thank you!.
+[happy][$playerName]: You always make me laugh, Eve.
+[happy][$Char1Last]: That’s a great compliment. Thank you!.
 [$playerName]: Is there anything else we can do, Eve?
 [$Char1Last]: Well, if anyone were to bring in some flowers, I love Gerbera Daisies. 
-[$playerName]: I’ll get them!
+[happy][$playerName]: I’ll get them!
 [$Hana]: Do you think it would be possible for me to stay overnight with my mom?
 [$NurseManager]: Of course, you can.  We can put an extra cot in the room. You can be here as much as you like.  
 [$Hana]: Thank you.

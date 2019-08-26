@@ -25,12 +25,12 @@ YAAAA BOY
     ->I can see this has been really hard for you... <<$Transitioning_Sympathetic = true>>
 <<if $Transitioning_Sympathetic == true>> Susannah: Thank you for listening, [$playerName]. I appreciate it. <<endif>>
 <<if $Transitioning_Sympathetic == false>> Susannah:That's not very comforting, to be perfectly honest.
-[$playerName]: I'm sorry, you're right. I shouldn't have said that.<<endif>>
-[$Player]: I think many families feel the way you do now - transitioning a loved one into long term care is a really difficult process.
-[$Player]: But we can take good care of your mom with our many services here. We have volunteers that can speak Cantonese with her. We have activities from her culture that she will enjoy. 
-[$Player]: You’ve mentioned how your mom always took great care of you and your kids.  I believe that’s what you’re doing for her now, and I think she feels that ways too.
+[sad][$playerName]: I'm sorry, you're right. I shouldn't have said that.<<endif>>
+[$PlayerName]: I think many families feel the way you do now - transitioning a loved one into long term care is a really difficult process.
+[$PlayerName]: But we can take good care of your mom with our many services here. We have volunteers that can speak Cantonese with her. We have activities from her culture that she will enjoy. 
+[$PlayerName]: You’ve mentioned how your mom always took great care of you and your kids.  I believe that’s what you’re doing for her now, and I think she feels that ways too.
 [$Susannah]: Thank you. 
-[$Player]: I've got to go, take care for now. 
+[$PlayerName]: I've got to go, take care for now. 
 [$Susannah]: Bye!
 
 

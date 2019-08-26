@@ -4,7 +4,7 @@ colorID: 0
 position: 1222,962
 ---
 //*All the residents are having lunch. [$Char2Last] is wandering around the hallway, looking for an exit. [$playerName] approaches him.*
-[$PlayerName]: Good afternoon, [$Char2Last].
+[happy][$PlayerName]: Good afternoon, [$Char2Last].
 Skip:
 [$Char2Last]: Hello.
 Skip:
@@ -14,11 +14,11 @@ Skip:
 Skip:
 [$PlayerName]: What's your job?
 Skip:
-[$Char2Last]: I'm a chef!
+[happy][$Char2Last]: I'm a chef!
 Skip:
 [$PlayerName]: Oh, wow! That's really interesting! Do you enjoy your work?
 Skip:
-[$Char2Last]: Yes, I love cooking.
+[happy][$Char2Last]: Yes, I love cooking.
 Skip:
 [$PlayerName]: [$Char2Last], I was just going to have a cup of tea. Would you like to join me?
 Skip:
@@ -33,9 +33,9 @@ tags:
 colorID: 0
 position: 863,1274
 ---
-[$PlayerName]: You can't leave!
+[angry][$PlayerName]: You can't leave!
 Skip:
-[$Char2Last]: You can't stop me!
+[angry][$Char2Last]: You can't stop me!
 Skip:
 <<IsThought = True>>
 Do not ignore [$Char2Last]'s issue. Instead, find the underlying meaning and offer redirection.
@@ -50,13 +50,13 @@ position: 1544,1291
 ---
 [$PlayerName]: [$Char2First], let's go have tea in the lounge. You can tell me all about your job.
 Skip:
-[$Char2Last]: I don't have time to talk! Late for work.
+[angry][$Char2Last]: I don't have time to talk! Late for work.
 Skip:
-[$Char2Last]: Why isn't it opening?
+[angry][$Char2Last]: Why isn't it opening?
 Skip:
-[$PlayerName]: Stop, [$Char1First], you're going to break the door!
+[angry][$PlayerName]: Stop, [$Char1First], you're going to break the door!
 Skip:
-[$Char1Last]: I don't care!
+[angry][$Char1Last]: I don't care!
 Skip:
 <<IsThought = True>>
 Raising your voice will agitate the resident. Instead, calmly try to understand why he wants to leave, or explore other areas related to his job.
@@ -76,9 +76,9 @@ Skip:
 Skip:
 [$PlayerName]: What's the special on the menu today?
 Skip:
-[$Char1Last]: My famous shepherd's pie!
+[happy][$Char1Last]: My famous shepherd's pie!
 Skip:
-[$PlayerName]: What a coincidence! I tried making sheperd's pie many times. It's my grandmother's favorite. Mine just never turn out well. What's your secret?
+[happy][$PlayerName]: What a coincidence! I tried making sheperd's pie many times. It's my grandmother's favorite. Mine just never turn out well. What's your secret?
 Skip:
 [$Char1Last]: I'll tell you, but I can only talk for a little while.
 Skip:
@@ -97,9 +97,9 @@ position: 1214,1703
 Skip:
 [$PlayerName]: So, tell me why you love cooking so much? All I can make is bad shepherd's pie and burnt toast.
 Skip:
-[$Char1Last]: Oh, dear. Well, I got my love of cooking from my grandma. I loved her food so much. I learned how to cook from watching her.
+[happy][$Char1Last]: Oh, dear. Well, I got my love of cooking from my grandma. I loved her food so much. I learned how to cook from watching her.
 Skip:
-[$PlayerName]: Wow, she must have been a great cook!
+[happy][$PlayerName]: Wow, she must have been a great cook!
 Skip:
 [$Char1Last]: Yes. Then, my birth family sent me to Canada. My adopted family owned a restaurant, and the rest was history.
 
@@ -114,11 +114,11 @@ position: 979,1989
 ---
 [$PlayerName]: I see, you've had behaviour problems as a child...
 Skip:
-[$Char1Last]: What? What do you mean?
+[angry][$Char1Last]: What? What do you mean?
 Skip:
 [$PlayerName]: Isn't that why your birth family put you up for adoption?
 Skip:
-[$Char1Last]: What? No!
+[angry][$Char1Last]: What? No!
 Skip:
 [$PlayerName]: I'm so sorry, I was wrong to assume. Please, continue with your story.
 Skip:
@@ -147,7 +147,7 @@ tags:
 colorID: 0
 position: 1214,2332
 ---
-[$Char1Last]: It was World War II. Britain was under attack by the enemy. The men were called to the trenches, the women to the factories. As for the children, they put us on ships headed to Australia or Canada for our safety. Those were hard times.
+[sad][$Char1Last]: It was World War II. Britain was under attack by the enemy. The men were called to the trenches, the women to the factories. As for the children, they put us on ships headed to Australia or Canada for our safety. Those were hard times.
 Skip:
 [$PlayerName]: It sounds like it. How were your adopted family? 
 Skip:
@@ -155,7 +155,7 @@ Skip:
 Skip:
 [$PlayerName]: Wow, I didn't know you were so talented, [$Char1Last].
 Skip:
-[$Char1Last]: Haha! It was hard work!
+[happy][$Char1Last]: Haha! It was hard work!
 Skip:
 [$PlayerName]: It's no wonder the chef here requested your professional opinion of the new dish on our menu.
 Skip:

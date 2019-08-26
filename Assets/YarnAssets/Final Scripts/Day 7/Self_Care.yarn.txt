@@ -4,6 +4,7 @@ colorID: 0
 position: 543,260
 ---
 [$Ranjit]: Hi [$playerName].
+[happy][$playerName]: Good morning.
 [$playerName]: Hi Ranjit! I haven't seen you in a while - how's your student placement going?
 [$Ranjit]: Ugh please -- don’t even try to talk to me! I’m in such a bad mood today…
 [$playerName]: Hmmm... What’s wrong?

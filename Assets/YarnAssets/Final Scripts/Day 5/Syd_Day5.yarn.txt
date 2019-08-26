@@ -4,8 +4,8 @@ colorID: 0
 position: 556,2409
 ---
 **** PROGRAMMER NOTE -- PLAYER ARRIVES AT SYDS ROOM - SOCIAL WORKER SUPERVISOR AND PROGRAM MANAGER ARE THERE
-[$Char3First]: Hey [$playerName]! You're just in time.
-[$playerName]: Hi there, [$Char3First].
+[happy][$Char3First]: Hey [$playerName]! You're just in time.
+[happy][$playerName]: Hi there, [$Char3First].
 [$Char3First]: This is Richard, my partner 
 [$playerName]: Hi Richard!  Nice to see you again.
 [$Char3First]: Richard, [$playerName] is the student I was telling you about.
@@ -16,7 +16,7 @@ Richard: [$Char3First] told me how supportive you’ve been.
 [Right][$Char3First]: That’s right. We met working at the same law firm in our thirties. We loved a lot of the same things- music, books, travel... we fell in love and we’ve been together ever since.
 [$SocialWorker]:   How wonderful for you both.  It must be difficult to be separated now.
 [$SupervisorName]: We really appreciate your willingness to talk to us about your concerns. We are striving to create a comfortable and respectful environment for all of our residents, but I understand you haven’t felt welcome here. 
-[Right][$Char3First]: I’m afraid not. 
+[sad][Right][$Char3First]: I’m afraid not. 
 [$SocialWorker]: It must be uncomfortable for you to feel you have to hide your sexual orientation and your relationship with Richard from the staff and residents here.
 [Right][$Char3First]: It took me long enough to open up about this when I was young. Richard and I have always been a proud ‘out’ couple, but when I moved in here it felt like I was going back in time.
 [Right][$Char3First]: But I’ve decided I’m not going back in the closet again, not at this stage of my life.
@@ -28,10 +28,10 @@ Richard: I think you need to educate yourself and the staff first!
 [$SupervisorName]: So we need to change our Admission Form? 
 Richard: You need to change a lot more than that!  All the written material assumes everyone is straight. 
 [Right][$Char3First]: And I could only chose between “male” and “female.” What if the resident is transgender?  You could let people simply write down their gender, and ask about their preferred pronoun.   
-Richard: There isn’t a Pride flag or an inclusive poster displayed anywhere here.
+[sad]Richard: There isn’t a Pride flag or an inclusive poster displayed anywhere here.
 [Right][$Char3First]: For anyone who is gay, lesbian, bi or trans here, you just feel invisible.
 [$DirName]: That must be very difficult and uncomfortable. That needs to change. 
-[Right][$Char3First]: Thank you for saying so. 
+[happy][Right][$Char3First]: Thank you for saying so. 
 [$DirName]: Are there any changes we can do make for you personally?  Here, in your room?
 [Right][$Char3First]: I'd like to post photos of my adventures with Richard in my Memory Box. We've travelled to over 60 countries together! 
 [$SocialWorker]: We can change the photos whenever you’re ready! 
@@ -44,6 +44,6 @@ Richard: There are a lot of changes that can happen to make to make this a place
 [DirName]: This Bill of Rights ensures that long-term care homes are truly homes for the people who live in them and that residents know their rights. I'll leave a copy here for you - I think you’ll find it useful.
 [Right][$Char3First]: Thanks very much.  I didn’t know there was a Bill of Rights for Long-Term Care.  
 [$DirName]: Good. Thanks so much for meeting with us, [$Char3First] and Richard. 
-Richard: And thank all of you for listening!
+[happy]Richard: And thank all of you for listening!
 [$SupervisorName]: We’ll be in touch soon.
 //**** PROGRAMMER NOTE -- [$playerName], [$DirName] social worker, and [$SupervisorName] leave the room and go to the office]

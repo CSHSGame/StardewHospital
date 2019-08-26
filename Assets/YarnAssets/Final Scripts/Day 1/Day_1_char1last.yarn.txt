@@ -4,7 +4,7 @@ colorID: 0
 position: -233,613
 ---
 [$playerName]: Hi, sorry to interrupt. I’m looking for [$Char1Last]?
-[$Char1Last]: That’s me! 
+[happy][$Char1Last]: That’s me! 
 [$playerName]: Hello! My name is [$playerName]. [$NurseManager] wanted me to come by and introduce myself. I’m the new placement student and today is my first day. 
 [$Char1Last]: It’s a pleasure to meet you! Please, call me [$Char1First].
 [$playerName]: [$NurseManager] was wondering if you could give me a little tour of Bloom Village. Do you think you’d be able to show me around today?
@@ -36,7 +36,7 @@ position: 253,265
 <<SetPath Stein One Warp>>
 <<SetPath Player One Warp>>
 [$walking][$playerName]: Have you been here for a long time?
-[$walking][$Char1Last]: Yes, I’ve been here longer than most of our residents, I’ve seen a lot of people come and go.
+[sad][$walking][$Char1Last]: Yes, I’ve been here longer than most of our residents, I’ve seen a lot of people come and go.
 [[That must be really hard for you.|Day_1_Char1_Q1]]
 [[I’m sorry to hear that. |Day_1_Char1_Q1]]
  
@@ -56,18 +56,18 @@ colorID: 0
 position: 728,602
 ---
 [$Char1Last]: But enough of this depressing talk, this is what I wanted to whow you - the beautiful garden we have here at Bloom Village!
-[$playerName]: Oh my goodness… It’s lovely…
-[$Char1Last]: The garden is a really special place for a lot of the residents here. 
+[happy][$playerName]: Oh my goodness… It’s lovely…
+[happy][$Char1Last]: The garden is a really special place for a lot of the residents here. 
 [$playerName]: I can see why. 
 [$Char1Last]: Oh, it’s [$Char2Last]! I’ll introduce you.
 <<SetPath Williams Zero>>
-[$Char2Last]: Hello there. 
+[happy][$Char2Last]: Hello there. 
 [$Char1Last]: [$Char2Last], I want to introduce you to our new placement student, [$playerName].
 [$playerName]: Hello, [$Char2Last], nice to meet you. 
 [$Char1Last]: [$Char2Last] used to be a chef! We’re still trying to convince him to cook us up a meal! Haha!
 [$Char2Last]: Haha! I used to be, I don’t cook much these days though.
 [$Char1Last]: I’m just giving [$playerName] a small tour of Bloom Village. See you later [$Char2Last]!
-[$Char1Last]: See you soon!
+[happy][$Char1Last]: See you soon!
 [[Day_1_Walk_To_Syd]]
 
 
@@ -80,11 +80,11 @@ position: 985,597
 ---
 <<SetPath Stein Two Warp>>
 <<SetPath Player Two Warp>>
-[$walking][$playerName]: [$Char2Last] seemed really nice!  
+[happy][$walking][$playerName]: [$Char2Last] seemed really nice!  
 //old line He seemed really nice! 
 [$walking][$Char1Last]: [$Char2Last] is a real sweetheart. He’s been struggling with dementia for the last few years.
 [$walking][$Char1Last]: Sometimes he’s really easy to get along with, like just now, but sometimes he can be more unpredictable. 
-[$walking][$playerName]: Oh, I had no idea…
+[sad][$walking][$playerName]: Oh, I had no idea…
 [[Day_1_Syds_Door_Final]]
 ===
 title: Day_1_Syds_Door_Final
@@ -108,7 +108,7 @@ position: 1524,585
 ---
 <<SetPath Stein Three Warp>>
 <<SetPath Player Three Warp>>
-[$walking][$Char1Last]: [$Char3First] seems like he’s been having a rough time recently. He hasn’t said anything, I just get the impression something’s bothering him...
+[sad][$walking][$Char1Last]: [$Char3First] seems like he’s been having a rough time recently. He hasn’t said anything, I just get the impression something’s bothering him...
 [[Day_1_Lobby]]
 ===
 title: Day_1_Lobby
@@ -119,11 +119,11 @@ position: 1790,586
 [$Char1Last]: Anyways, I’m sure you’ll get an opportunity to meet him tomorrow. It looks like our tour has come full circle! 
 //***PROGRAMMER NOTE***Nurse manager enters
 [$NurseManager]: How did it go?
-[$playerName]: Great! [$Char1Last] is a fantastic tour-guide!
+[happy][$playerName]: Great! [$Char1Last] is a fantastic tour-guide!
 [$Char1Last]: Haha! You’re flattering me. Anyways, it was such a pleasure to meet you [$playerName]. Take care!
 //***PROGRAMMER NOTE*** she leaves
 [$NurseManager]: I think that’s probably good for today [$playerName], tomorrow we can really get you started. See you then?
-[$playerName]: You bet! Thanks so much. 
+[happy][$playerName]: You bet! Thanks so much. 
 <<NextDay GameManager>>
 
 ===
