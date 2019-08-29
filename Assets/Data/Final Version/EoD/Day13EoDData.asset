@@ -17,7 +17,7 @@ MonoBehaviour:
   DP1Outcome1TrueOutcome2False: 1
   DP2Outcome1TrueOutcome2False: 1
   DP3Outcome1TrueOutcome2False: 1
-  DecisionPoint1Outcome1Title: Transitioning to LTC - Being Accomodating
+  DecisionPoint1Outcome1Title: Being Accomodating - Transitioning
   DecisionPoint1Outcome1Text: "When Mrs. Lee expressed worries about enrolling in
     cooking class, you were flippant and tried to trivialize her concerns. Please
     do more to try and accommodate our residents - it\u2019s an important step toward
@@ -26,7 +26,7 @@ MonoBehaviour:
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
-  DecisionPoint1Outcome2Title: Transitioning to LTC - Being Accomodating
+  DecisionPoint1Outcome2Title: Being Accomodating - Transitioning
   DecisionPoint1Outcome2Text: Thank you for going out of your way to accommodate Mrs.
     Lee when she expressed worries about enrolling in cooking class. Gestures like
     that are important for our residents, and help them feel safe and supported.
@@ -46,7 +46,7 @@ MonoBehaviour:
     care setting."
   BestPractices1Title: Transitioning to LTC
   BestPractices1Text: "Both the physical and psychological readiness for change must
-    be evaluated. This should be\r\ndone by a health care provider, who asks information
+    be evaluated. This should be\r done by a health care provider, who asks information
     on indicators that may include cognitive\r memory, cultural sensitivity, knowledge
     and environment awareness."
   BestPractices2Title: 
@@ -54,6 +54,6 @@ MonoBehaviour:
     admission (first contact) and\r reassessed regularly throughout their stay."
   BestPractices3Title: 
   BestPractices3Text: "Cultural competency needs to be adapted to enhance the accessibility
-    and effectiveness of\r\nhealth care services for people from racial/ethnic minorities.
-    Cultural sensitivity needs to be\r\nadapted to existing materials and programs
+    and effectiveness of\r health care services for people from racial/ethnic minorities.
+    Cultural sensitivity needs to be\r adapted to existing materials and programs
     for racial/ethnic minorities."

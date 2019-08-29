@@ -15,5 +15,5 @@ MonoBehaviour:
   Name: $Char3First
   Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
   AngrySprite: {fileID: 21300000, guid: 08ef8310e7a48964d929d8d8ae15bde5, type: 3}
-  SadSprite: {fileID: 21300000, guid: 8be965befb4a0d6419c90c93df2a413e, type: 3}
+  SadSprite: {fileID: 21300000, guid: 5d4d90c45b9049140a353918ccc73840, type: 3}
   HappySprite: {fileID: 21300000, guid: 182182cab3c04204eb9d0fb30c824ad0, type: 3}

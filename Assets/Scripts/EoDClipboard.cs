@@ -15,6 +15,8 @@ public class EoDClipboard : MonoBehaviour {
     public Text Title3;
     public Text Text3;
 
+    public int DayIndex;
+
     //Decision Points Outcomes
     private bool DP1Outcome1TrueOutcome2False;
     private bool DP2Outcome1TrueOutcome2False;
@@ -57,7 +59,7 @@ public class EoDClipboard : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        LoadEoDNotes(0);
+        LoadEoDNotes(DayIndex);
         DecisionPointButtonPress();
     }
 	

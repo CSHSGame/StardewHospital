@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Name: Day8EoDData
   m_EditorClassIdentifier: 
   DP1Evaluate: $Day_8_Stein
-  DP2Evaluate: 
+  DP2Evaluate: $RightChoice_FamilyInquiry
   DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 1
-  DP2Outcome1TrueOutcome2False: 1
+  DP2Outcome1TrueOutcome2False: 0
   DP3Outcome1TrueOutcome2False: 1
   DecisionPoint1Outcome1Title: Mrs Stein - End of Life Planning
   DecisionPoint1Outcome1Text: Today you helped Mrs. Stein make arrangements for her
     palliative care. Residents have the right to make decisions regarding their care
     in an end-of-life situation, and being respectful of this can really go a long
     way toward helping the resident feel empowered and dignified in a difficult situation.
-  DecisionPoint2Outcome1Title: 
+  DecisionPoint2Outcome1Title: True
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
@@ -31,7 +31,7 @@ MonoBehaviour:
     palliative care. Residents have the right to make decisions regarding their care
     in an end-of-life situation, and being respectful of this can really go a long
     way toward helping the resident feel empowered and dignified in a difficult situation.
-  DecisionPoint2Outcome2Title: 
+  DecisionPoint2Outcome2Title: False
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
