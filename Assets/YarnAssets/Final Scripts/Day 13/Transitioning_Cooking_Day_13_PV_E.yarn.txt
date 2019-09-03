@@ -1,0 +1,94 @@
+﻿
+title: Transitioning_Day_13
+tags: 
+colorID: 0
+position: 689,139
+---
+<<if visited("Transitioning_Day_13") is true>>
+[$playerName]: I don't need to talk with her right now.
+<<else>>
+<<SetPath Player Zero>>
+//NO <<SetPath Susannah Zero>>//***Programmers Note********* Susannah walks up to player in the hallway 
+[$Susannah]:  Hi [$playerName]!  my name's Susannah , I'm [$Char5Last]'s daughter - we met the other day. 
+[$playerName]: Of course! How's it going?
+[$Susannah]: I'm worried my mother isn't eating propperly - she never ate western food at home and I don't think she's used to it. 
+[[Well, if a resident doesn’t eat, we can’t force feed them. It’s up to her whether she wants to eat or not...|Day_13_Non_Accomodating]]<<$Transitioning_Accomodate = false>>
+[[Let me find out what can be done. Maybe the nutritionist can come up with a meal plan that would suit her better.|Day_13_Accomodating]]<<$Transitioning_Accomodate = true>>
+<<endif>>
+===
+title: Day_13_Accomodating
+tags: 
+colorID: 0
+position: 313,226
+---
+[$Susannah]: That would be great.
+[$playerName]: Let me walk you back to your mom's room, then I'll ask the Nurse Manager to come and discuss it with you. 
+[[Day_13_cont]]
+===
+title: Day_13_Non_Accomodating
+tags: 
+colorID: 0
+position: 1074,249
+---
+[$Susannah]: That doesn't sound right at all... I'd like to speak with your supervisor about this.
+[[Day_13_cont]]
+===
+title: Day_13_cont
+tags: 
+colorID: 0
+position: 691,458
+---
+<<SetPath Player One>>
+<<SetPath Susannah Zero>> //***Progerammers Note********Player and Susannah walk to Resident’s Room. Nurse Manager, Mrs. Lee, Susannah and the PLAYER 
+[$playerName]: Oh [$NurseManager], you're here! I was just going to go find you. Susannah wanted to ask you about making some adjustments to [$Char5Last]'s mealplan.
+[$NurseManager]: Of course! How can I help? 
+[$Susannah]: I’m concerned about my mother's health... Brian and I are worried she’s not eating her meals. 
+[$NurseManager]: Hmm, well it’s only been a few days since she moved in - sometimes a change like that can affect a person's appetite.
+[$Susannah]: Sure, but I think it also has to do with the type of food here. At home, she would have authentic Chinese meals - that’s what she’s eaten all her life.
+[$NurseManager]: Of course. Thanks for letting us know - I’ll have the dietician stop by with a meal plan survey to see what choices might best fit your mom. 
+[$Susannah]: Okay, thank you!
+[$NurseManager]:  However, I should say because we have residents from many different cultural backgrounds I’m afraid we can’t accommodate everyone’s preferences.  
+[$NurseManager]: We do try to offer some alternatives and some families bring in a resident’s favourite foods from home to supplement our menus. 
+[$Susannah]: I didn’t know we could do that. We can certainly bring her some home-cooked meals. 
+[$NurseManager]: There's one other thing - it's a new program here. The residents learn to cook different foods from their culture and they teach each other.  I think your mom would enjoy it.
+[$Susannah]: 還有一件事 - 這是一個新的計劃。居民學會從他們的文化中烹飪不同的食物，他們互相教導。我想你的媽媽會喜歡它。
+[happy][$Char5Last]: 我會做飯 [smile]
+[$playerName]: Yes! And you’ll be cooking with the other residents.  The class is every Wednesday afternoon. 
+[$Susannah]: You could make new friends to share your famous dishes from China. 
+[$Char5Last]: 他們不喜歡我。我不會說英語。 
+[$Susannah]: She doesn’t feel like she belongs here. Katherine is warm and friendly but mom feels she has no one to talk to.  
+[[Tell her I’ll go to the class with her with my translation device or we will have a volunteer translate for your mom during the class.|Day_13_Class_True]] <<$Transitioning_Class = true>> 
+[[It’s really important for you to try all our activities, Mrs. Lee. You can’t just stay in your room all the time.|Day_13_Class_False]] <<$Transitioning_Class = false>> 
+===
+title: Day_13_Class_True
+tags: 
+colorID: 0
+position: 268,607
+---
+[$Susannah]: 告訴她我會和她一起上課 - 用我的翻譯裝置 - 或者我們會有一個志願者在課堂上為你的媽媽講粵語。
+[$Char5Last]: Okay!
+[[Day_13_End]]
+===
+title: Day_13_Class_False
+tags: 
+colorID: 0
+position: 1134,613
+---
+[$Susannah]: 李女士，嘗試我們所有的活動對你來說非常重要。你不能一直呆在自己的房間裡。
+[$Char5Last]: 沒有。
+[$NurseManager]: Um, I think what [$playerName] means is that we can accomadate any communication gaps with the other residents. 
+[$NurseManager]: We can use the tablet to translate for her,or try to have a volunteer who speaks Cantonese to translate for your mom during the class.
+[[Day_13_End]]
+===
+title: Day_13_End
+tags: 
+colorID: 0
+position: 718,758
+---
+[$Susannah]: I think mom's going to love cooking class. 
+[$Char5Last]: 好，我會試試。
+[$playerName]: That’s great. I've got to run, see you all soon! [$Char5Last], I'll see you on Wednesday and we'll go to your class together. Bye!
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay13>>
+<<SetPath Player Two>>
+===

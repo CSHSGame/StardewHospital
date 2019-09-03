@@ -1,0 +1,50 @@
+title: Stein_Day_8
+tags: 
+colorID: 0
+position: 543,260
+---
+<<if visited("Stein_Day_8") is true>>
+[$playerName]: I don't need to talk with her right now.
+<<else>>
+
+//the player, Eve, [$Hana] , and [$Katherine] , Nurse Supervisor are in the chapel when the player arrives
+<<SetPath Player Two>>
+[$Char1Last]: Hi [$playerName].
+[$playerName]: Hey, I hope I'm not late. 
+[$Char1Last]: No [$playerName], you're right on time. 
+[$NurseManager]: Eve, we’re all here to talk about any changes you’d like to your care plan and any wishes you have in order to make you more comfortable.  Anything you need at all. 
+[$Char1Last]: Yes, [$Hana]  would like to ask you about companionship.
+[$Hana]: We would like to have 24 hour care and companionship for mom. Can you help to arrange that?
+[$NurseManager]: Absolutely! We will provide that information for you. Anything else Eve?
+[$Char1Last]: Well… I have been thinking about a few things.  I wonder if you could turn my bed to face the window, so I can feel the sun?  
+[$NurseManager]:  We can, of course, rearrange your room if that’s okay with you, [$Katherine] ? 
+[$Katherine]: Of course! Anything for my friend. 
+[$Char1Last]: You know how I love the ocean.  I know I can’t get there anymore  but it would remind me of happy times there to have a really large picture of the ocean on my wall  . . . 
+[$Hana]:  Mom, I’ll enlarge one of your great photos of the ocean. 
+[$Char1Last]: That would be wonderful.  And could you bring  all my family photo albums to look through?
+[$Char1Last]: I’m too tired to do much talking now but I’d love to listen to more music in my room.  
+[$playerName]: I know you love Frank Sinatra, [$Char1First]. Are there any other types of music you’d like?
+[$Char1Last]: Hmm... it would be nice to have some of my favourite hymns playing quietly. 
+[$NurseManager]: I can have the activation co-ordinator create a playlist for you, [$Char1First], and bring a CD player up to your room.  You can tell me all your favourite hymns and Sinatra songs.
+[$Char1Last]: Ha ha, You would probably need more than a list, more likely a book of songs. Of course, I’d rather have Frank Sinatra in person. He was quite a guy. 
+[happy][$playerName]: You always make me laugh, Eve.
+[happy][$Char1Last]: That’s a great compliment. Thank you!.
+[$playerName]: Is there anything else we can do, Eve?
+[$Char1Last]: Well, if anyone were to bring in some flowers, I love Gerbera Daisies. 
+[happy][$playerName]: I’ll get them!
+[$Hana]: Do you think it would be possible for me to stay overnight with my mom?
+[$NurseManager]: Of course, you can.  We can put an extra cot in the room. You can be here as much as you like.  
+[$Hana]: Thank you.
+[$Katherine] : Eve, what about one more Tea ‘n Talk? Maybe just the three of us? 
+[$Char1Last]: Oh, yes, [$Katherine] , let's do that. [$playerName], Will you help? 
+[$playerName]: I’ll help you have a lovely Tea ‘n Talk for you in your room. What else would you like?
+[$Char1Last]: I want you all to know that I’m sad to say good-bye . . . but I have had a wonderful life. 
+[$Char1Last]: And I don’t want a funeral when I’m gone.  I want there to plan a celebration of life.
+[$NurseManager]: Of course, I would love to help you with the planning. 
+[$Char1Last]: Thank you, everyone. [$Hana], I’m quite tired. Let’s you and I go back to my room now.
+[$Hana]: Sure mom.
+<<Spawn Stranger>>
+<<SetPath Stranger Zero>>
+<<SetObjective GameManager TalkToTheStrangerDay8>>
+<<endif>>
+===

@@ -1,0 +1,34 @@
+title: Family_Inquiry_Start
+tags: 
+colorID: 0
+position: 1229,40
+---
+<<if visited("Family_Inquiry_Start") is true>>
+[$playerName]: I don't need to talk with her right now.
+<<else>>
+//**Programmer Note*** Takes place in a hallway
+[$Stranger]: Hi there - do you have a moment?
+[happy][$playerName]: Hi! Of course, how may I help you?
+[$Stranger]: I was just with my mom, Bernadette Wilson. I haven’t visited her for a while, and I was wondering if there have been any changes in her care plan. Do you know of any new plans for her?
+[[Yes! I heard someone say they are planning to change her diet now because she has a risk of choking.|Family_Inquiring_End_Wrong]]   
+[[I’m sorry, but I’m not allowed to share any information, but if you visit the nursing station the nurse can let you know more about that.|Family_Inquiring_End_Right]]
+<<endif>>
+===
+title: Family_Inquiring_End_Wrong
+tags: 
+colorID: 0
+position: 1090,370
+---
+<<$RightChoice_FamilyInquiry = false>>
+[$Stranger]: Thank you!
+[happy][$playerName]: You're welcome! Take care.
+===
+title: Family_Inquiring_End_Right
+tags: 
+colorID: 0
+position: 1394,368
+---
+<<$RightChoice_FamilyInquiry = true>>
+[$Stranger]: Thank you!
+[happy][$playerName]: You're welcome! Take care.
+===

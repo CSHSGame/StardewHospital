@@ -1,0 +1,30 @@
+title: LGBTQ_FIRST_DAY
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("LGBTQ_FIRST_DAY") is true>>
+[$playerName]: I don't need to talk with him right now.
+<<else>>
+[$Char3Last]: Hello.
+[$playerName]: [$Char3Last], May I come in?
+[sad][$Char3Last]: Come in.
+[$playerName]: Hi there, Mr.Wojcik.  My name is [$playerName]. I wanted to introduce myself and help you get ready for the day, if I can.
+[$playerName]: Music therapy is this morning. I heard you were a musician.  Would you like to go?
+[sad][$Char3Last]: Hey, you can call me [$Char3First]. But I don’t think I feel like going out today.
+[$playerName]: You sure?
+[sad][$Char3First]: Yes, thank you.
+[[Ok, I'll see you later.|Pier]]<<$LGBTQ_DEC1_WRONG = true>> 
+[[I’m sorry to hear that, Syd.|Pier]]<<$LGBTQ_DEC1_SEMIWRONG = true>>
+[[Okay Syd, I understand, I will check in with you tomorrow. Have a great day!|Pier]]<<$LGBTQ_DEC1_RIGHT = true>>
+<<endif>>
+===
+title: Pier
+tags: 
+colorID: 0
+position: 526,494
+---
+[sad][$Char3First]: Have a good day.
+<<PrepForNextDay GameManager>>
+<<SetPath Player Three>>
+===
