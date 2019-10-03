@@ -203,10 +203,22 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
                 while (canPressSpace == false)                                                                              
                 {
                     bool t = true;
-
+                    
+                    
                     foreach(Waypoints w in wps)
                     {
-                        if(w.pathindex != -1)
+                        if (w.selfMover)
+                        {
+                            //w.loopSelfMove = false;
+                            //w.selfMover = false;
+                            w.pathindex = -1;
+                            foreach (IBodyPart bp in w.bodyParts)
+                            {
+                                bp.ReceiveInput(new Vector2(0.0f, 0.0f));
+                            }
+
+                        }
+                        if (w.pathindex != -1)
                         {
                             t = false;
                         }
@@ -327,13 +339,26 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
 
-      /*  // Show the game controls.
-        if (gameControlsContainer != null)
+        Waypoints[] wps = FindObjectsOfType<Waypoints>();
+        foreach (Waypoints w in wps)
         {
-            gameControlsContainer.gameObject.SetActive(true);
+            if (w.selfMover)
+            {
+                //w.loopSelfMove = false;
+                //w.selfMover = false;
+                w.pathindex = 0;
+            }
         }
-        */
-        yield break;
+
+                /*  // Show the game controls.
+                  if (gameControlsContainer != null)
+                  {
+                      gameControlsContainer.gameObject.SetActive(true);
+                  }
+                  */
+
+
+                yield break;
     }
     /// <summary>
     /// added from  https://github.com/thesecretlab/YarnSpinner/issues/25#issuecomment-227475923  

@@ -20,22 +20,26 @@ public class Waypoints : MonoBehaviour
     public int pathindex = -1;
     [SerializeField]
 
-    private int nodeindex = 0;
+    public int nodeindex = 0;
     public bool isPlayer;
     private Vector3 CamLocalPos;
 
     [SerializeField]
     bool warp = false;
     bool teleport = false;
+    public bool selfMover;
+    public bool loopSelfMove = true;
 
-    private IBodyPart[] bodyParts;
+    public IBodyPart[] bodyParts;
     public void Start()
     {
         pathindex = -1;
         nodeindex = 0;
         oldSpeed = speed;
-
-
+        if (selfMover)
+        {
+            SelfMove();
+        }
     }
     private void Setup()
     {
@@ -84,6 +88,68 @@ public class Waypoints : MonoBehaviour
                 completePath();
             }
         }
+        /*
+        if (selfMover)
+        {
+            this.transform.position = Vector3.MoveTowards(this.transform.position, this.transform.position + new Vector3(1, 0, 0), step);
+
+            Vector3 direction = (this.transform.position + new Vector3(1, 0, 0) - transform.position).normalized;
+
+            foreach (IBodyPart bp in bodyParts)
+            {
+                if (Mathf.Abs(direction.x) > Mathf.Abs(direction.z))
+                {
+                    bp.ReceiveInput(new Vector2(direction.x, 0));
+
+                }
+                else
+                {
+                    bp.ReceiveInput(new Vector2(0, direction.z));
+
+                }
+            }
+        }*/
+        if (selfMover)
+        {
+            if (pathindex != -1) //pathindex is set from yarn in most cases 
+            {
+                if (nodeindex < Paths[pathindex].location.Count)
+                {
+                    this.transform.position = Vector3.MoveTowards(this.transform.position, Paths[pathindex].location[nodeindex], step);
+
+                    Vector3 direction = (Paths[pathindex].location[nodeindex] - transform.position).normalized;
+
+                    foreach (IBodyPart bp in bodyParts)
+                    {
+                        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.z))
+                        {
+                            bp.ReceiveInput(new Vector2(direction.x, 0));
+
+                        }
+                        else
+                        {
+                            bp.ReceiveInput(new Vector2(0, direction.z));
+
+                        }
+                    }
+                    //If we've reached the destination, move to the next one
+                    if (this.transform.position == Paths[pathindex].location[nodeindex])
+                    {
+                        moveToNextNode();
+                    }
+                }
+                else  //pathing Complete
+                {
+                    completePath();
+                }
+            }
+        }
+    }
+
+    private void SelfMove()
+    {
+        Setup();
+        pathindex = 0;
     }
 
     private void moveToNextNode()
@@ -120,6 +186,7 @@ public class Waypoints : MonoBehaviour
 
     private void completePath()
     {
+        
         if (isPlayer)
         {
             GetComponent<CharacterController>().enabled = true;
@@ -145,6 +212,11 @@ public class Waypoints : MonoBehaviour
         warp = false;
 
         onPathDone.Invoke();
+        if (loopSelfMove)
+        {
+            pathindex = 0;
+            nodeindex = 0;
+        }
     }
 
     [YarnCommand("SetPath")]
@@ -231,10 +303,9 @@ public class Waypoints : MonoBehaviour
         {
             data.waypoints[i] = Paths[i];
         }
-
-
-
-
+        data.MoveSpeed = speed;
+        data.selfMovement = selfMover;
+        data.loopSelfMovement = loopSelfMove;
 
     }
     public void loadData()
@@ -244,5 +315,9 @@ public class Waypoints : MonoBehaviour
         {
             Paths.Add(data.waypoints[i]);
         }
+
+        selfMover = data.selfMovement;
+        speed = data.MoveSpeed;
+        loopSelfMove = data.loopSelfMovement;
     }
 }

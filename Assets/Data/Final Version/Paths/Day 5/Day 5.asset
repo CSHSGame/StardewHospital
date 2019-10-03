@@ -27,6 +27,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2885f13e2ab97d849aa529b5cc8a132d, type: 2}
   - {fileID: 11400000, guid: f5a4ecddd5a47f944865a43ce8a01739, type: 2}
   - {fileID: 11400000, guid: 914dc6a269b7e3d498a9bc1b3df09250, type: 2}
+  - {fileID: 11400000, guid: 19d775178620aad48b432785b31bebf8, type: 2}
+  - {fileID: 11400000, guid: 27cc2f839d79d074c9756607ca3cc3bd, type: 2}
   DayOfTheWeek: THU
   DayNumber: 04
   Month: JULY

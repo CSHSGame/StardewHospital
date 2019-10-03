@@ -87,6 +87,7 @@ namespace Yarn.Unity.Example
         //public FadeObjectInOut roomShade;
 
         public GameObject ConversUI;
+        public bool Conversable = true;
 
         //public string characterName = "";
 
@@ -138,16 +139,26 @@ namespace Yarn.Unity.Example
         
         public void ICanConverse(bool inRange)
         {
-           
-            if (inRange)
+            if (Conversable == true)
             {
-                if (FindObjectOfType<DialogueRunner>().isDialogueRunning == false)
+                if (inRange)
                 {
-                 //   Debug.Log("inRange");
-                    if (ConversUI != null)
+                    if (FindObjectOfType<DialogueRunner>().isDialogueRunning == false)
                     {
-                        ConversUI.gameObject.SetActive(true);
-                       // Debug.Log("ConverseUI");
+                        //   Debug.Log("inRange");
+                        if (ConversUI != null)
+                        {
+                            ConversUI.gameObject.SetActive(true);
+                            // Debug.Log("ConverseUI");
+                        }
+                    }
+                    else
+                    {
+                        if (ConversUI != null)
+                        {
+                            this.ConversUI.gameObject.SetActive(false);
+                            //  Debug.Log("NoConverseUI");
+                        }
                     }
                 }
                 else
@@ -155,14 +166,12 @@ namespace Yarn.Unity.Example
                     if (ConversUI != null)
                     {
                         this.ConversUI.gameObject.SetActive(false);
-                      //  Debug.Log("NoConverseUI");
                     }
                 }
             }
             else
             {
                 this.ConversUI.gameObject.SetActive(false);
-                //Debug.Log("NoConverseUI");
             }
         }
         public void BakeData()
@@ -175,6 +184,7 @@ namespace Yarn.Unity.Example
             data.GameObjectName = this.gameObject.name;
            
             data.sprite = this.GetComponentInChildren<SpriteRenderer> ().sprite;
+            data.ableToConvo = Conversable;
            // data.prefab = test;
 
         }
@@ -186,7 +196,7 @@ namespace Yarn.Unity.Example
             transform.localScale =  data.scale  ;
             talkToNode= data.talkToNode  ;
             scriptToLoad = data.scriptToLoad  ;
-
+            Conversable = data.ableToConvo;
             gameObject.name = data.GameObjectName;
            
             GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;

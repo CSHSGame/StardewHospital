@@ -24,6 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5f61bbcb0c4f6e408aa0381b1d9dfa8, type: 2}
   - {fileID: 11400000, guid: d0e4f52b52c9ee24eb5a281d1ce1bd5b, type: 2}
   - {fileID: 11400000, guid: 2cbc874afad6c464390be7654834dbaf, type: 2}
+  - {fileID: 11400000, guid: d6a4637bb94b8604294c079263051aae, type: 2}
   DayOfTheWeek: SAT
   DayNumber: 13
   Month: JULY

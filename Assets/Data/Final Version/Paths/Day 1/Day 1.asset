@@ -27,6 +27,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bf63c1ca5437fe1439bf572bbeec1185, type: 2}
   - {fileID: 11400000, guid: b1361f5b14207464bb5fe98751c5e7c0, type: 2}
   - {fileID: 11400000, guid: 3a7a70d29cee12b4394b92173836c3bf, type: 2}
+  - {fileID: 11400000, guid: 684ef2987870b2d4f92fdeb837140e6f, type: 2}
+  - {fileID: 11400000, guid: 923cf39d6af171b4c90b0530dbffedb9, type: 2}
+  - {fileID: 11400000, guid: 3b3639670393d0f4294b168bc22cae09, type: 2}
+  - {fileID: 11400000, guid: 67a190ff4d1538f459acba9011f4227a, type: 2}
+  - {fileID: 11400000, guid: 63129b3aa8f4e124d88aedf9f090a4c2, type: 2}
   DayOfTheWeek: MON
   DayNumber: 01
   Month: JULY

@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: Hana
+  ableToConvo: 1
   waypoints:
   - Name: ToSteinAndKatherine
     location:
@@ -28,3 +29,6 @@ MonoBehaviour:
     - {x: 48.026623, y: 0.25581813, z: 14.413181}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 0
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

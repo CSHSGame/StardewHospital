@@ -25,6 +25,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f368f077bc109b14e87b911f7d7c3d2a, type: 2}
   - {fileID: 11400000, guid: c67bfb70ad823504eb43590af387befc, type: 2}
   - {fileID: 11400000, guid: fd272dfb992d48142b36b18dddd4fdfe, type: 2}
+  - {fileID: 11400000, guid: 69e6f4f35a040d3458a435339f9259f6, type: 2}
+  - {fileID: 11400000, guid: 033be380db681754fb6377eb403f6328, type: 2}
   DayOfTheWeek: TUE
   DayNumber: 09
   Month: JULY

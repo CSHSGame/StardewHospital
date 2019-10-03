@@ -19,9 +19,13 @@ MonoBehaviour:
   talkToNode: Family_Inquiry_Start
   scriptToLoad: {fileID: 0}
   GameObjectName: Stranger
+  ableToConvo: 1
   waypoints:
   - Name: ' '
     location:
     - {x: -27, y: 0.25581813, z: 36.510735}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 0
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

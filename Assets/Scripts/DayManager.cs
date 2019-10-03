@@ -11,6 +11,7 @@ public class DayManager : MonoBehaviour
     NpcLoader npcLoader;
     ObjectiveLoader objectiveLoader;
     HUDController hUDController;
+    public EoDClipboard EoDClipboard;
     public DayDataHolder[] Days;
     public int currentDay = 0;
     ExampleVariableStorage variableStorage;
@@ -26,6 +27,7 @@ public class DayManager : MonoBehaviour
         hUDController = FindObjectOfType<HUDController>();
         npcLoader = GetComponent<NpcLoader>();
         objectiveLoader = GetComponent<ObjectiveLoader>();
+       
 
         npcLoader.Setup(Days[currentDay]);
         objectiveLoader.Setup(Days[currentDay].Objectives);
@@ -114,7 +116,8 @@ public class DayManager : MonoBehaviour
                 currentDay++;
                 cinematic.TurnOFF();
 
-                hUDController.GearClick();
+                EoDClipboard.gameObject.SetActive(true);
+                //hUDController.GearClick();
             }
         );
 
@@ -125,13 +128,15 @@ public class DayManager : MonoBehaviour
     public void IncrementDay()
     {
         currentDay++;
-        hUDController.GearClick();
+        EoDClipboard.gameObject.SetActive(true);
+        //hUDController.GearClick();
         //LoadDay();
     }
     [YarnCommand("Reset")]
     public void resetDay()
     {
-        hUDController.GearClick();
+        EoDClipboard.gameObject.SetActive(true);
+        //hUDController.GearClick();
 
         // SceneManager.LoadScene(0);
     }
@@ -209,7 +214,8 @@ public class DayManager : MonoBehaviour
     public void endGame()
     {
         //SceneManager.LoadScene(2);
-        hUDController.GearClick();
+        EoDClipboard.gameObject.SetActive(true);
+        //hUDController.GearClick();
     }
     // Update is called once per frame
     void Update () {

@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: Susannah
+  ableToConvo: 0
   waypoints:
   - Name: ' '
     location:
@@ -27,3 +28,6 @@ MonoBehaviour:
     - {x: 46, y: 0.25581813, z: 22}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

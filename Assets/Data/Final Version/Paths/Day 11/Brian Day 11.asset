@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: Brian
+  ableToConvo: 0
   waypoints:
   - Name: ' '
     location:
@@ -34,3 +35,6 @@ MonoBehaviour:
     - {x: 49.48, y: 0.25581813, z: 15.67}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

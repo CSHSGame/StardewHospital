@@ -26,6 +26,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6d847a57e747c4e489b8cc7dafe11bbb, type: 2}
   - {fileID: 11400000, guid: dcd4f8d1fc303664b9935e9a3ab6e0e7, type: 2}
   - {fileID: 11400000, guid: 6261d7e5fdeb5864eb70eb3420c8c3d9, type: 2}
+  - {fileID: 11400000, guid: 4c2febe479ca3764086af581e8787e0b, type: 2}
   DayOfTheWeek: THU
   DayNumber: 11
   Month: JULY

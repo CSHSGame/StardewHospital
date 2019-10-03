@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: Start_OctDemo_Day_1
   scriptToLoad: {fileID: 0}
   GameObjectName: MrWilliams
+  ableToConvo: 1
   waypoints:
   - Name: WilliamsYellAtHallway
     location:
@@ -54,3 +55,6 @@ MonoBehaviour:
     - {x: -11.665388, y: 0.1, z: 18.780218}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

@@ -25,6 +25,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c66847656f218f54e9d7632650006af4, type: 2}
   - {fileID: 11400000, guid: 068eed99b60d2434fa88b6f735e6ec59, type: 2}
   - {fileID: 11400000, guid: e3187faa5a2deeb4095c4a7609f696e3, type: 2}
+  - {fileID: 11400000, guid: 0665dec0d73077046a3406e3edafaae6, type: 2}
+  - {fileID: 11400000, guid: 9e59f8cc9f388c44a91281320a9d7b73, type: 2}
   DayOfTheWeek: SAT
   DayNumber: 06
   Month: July

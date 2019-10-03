@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: Ranjit_Day_9_Start
   scriptToLoad: {fileID: 0}
   GameObjectName: Ranjit
+  ableToConvo: 1
   waypoints:
   - Name: ' '
     location:
@@ -28,3 +29,6 @@ MonoBehaviour:
     - {x: 21.5, y: 0.25581813, z: 42}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 0
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

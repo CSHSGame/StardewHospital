@@ -19,6 +19,10 @@ MonoBehaviour:
   talkToNode: Transitioning_Day_12
   scriptToLoad: {fileID: 0}
   GameObjectName: Nurse
+  ableToConvo: 1
   waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

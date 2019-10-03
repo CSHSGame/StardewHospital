@@ -19,6 +19,10 @@ MonoBehaviour:
   talkToNode: LGBTQ_FIRST_DAY
   scriptToLoad: {fileID: 0}
   GameObjectName: Syd
+  ableToConvo: 1
   waypoints: []
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

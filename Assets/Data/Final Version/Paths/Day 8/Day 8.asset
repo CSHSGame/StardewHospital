@@ -26,6 +26,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7c9095c2f85b344cb52a3527eac3a85, type: 2}
   - {fileID: 11400000, guid: 76f0fffe47293da42aa0b62ee23bcce9, type: 2}
   - {fileID: 11400000, guid: 4e91d76c237002841a6c4ea945774ab6, type: 2}
+  - {fileID: 11400000, guid: 7df2a8346745f7b46939ed9f1a771353, type: 2}
+  - {fileID: 11400000, guid: 90389d34a5440b2419de45c1983620e5, type: 2}
   DayOfTheWeek: MON
   DayNumber: 08
   Month: JULY

@@ -23,6 +23,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6b2c6df0bc3eee044b38addb4700351c, type: 2}
   - {fileID: 11400000, guid: 568de71da76caf7489fc9cf3046f621e, type: 2}
   - {fileID: 11400000, guid: e2d92ed7cc167784ebbc5ff0849a5a7a, type: 2}
+  - {fileID: 11400000, guid: f1655363898806c4d8bb699c48da39bd, type: 2}
+  - {fileID: 11400000, guid: c43ff2b5e37df9849bfa924bdbb8d01a, type: 2}
   DayOfTheWeek: WED
   DayNumber: 10
   Month: JULY

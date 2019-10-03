@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: Katherine
+  ableToConvo: 1
   waypoints:
   - Name: SitNextToStein
     location:
@@ -26,3 +27,6 @@ MonoBehaviour:
     - {x: 47.44894, y: 0.25581813, z: 16.995686}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

@@ -14,6 +14,7 @@ public class HUDController : MonoBehaviour {
     public Text ObjectiveText;
 
     public GameObject ClipboardUI;
+    public GameObject InGameMenu;
     public GameObject EndofDayUI;
     public DayDataHolder dayData;
 
@@ -41,13 +42,13 @@ public class HUDController : MonoBehaviour {
 
     public void GearClick()
     {
-        if (EndofDayUI.activeInHierarchy == true)
+        if (InGameMenu.activeInHierarchy == true)
         {
-            EndofDayUI.SetActive(false);
+            InGameMenu.SetActive(false);
         }
-        else if (EndofDayUI.activeInHierarchy == false)
+        else if (InGameMenu.activeInHierarchy == false)
         {
-            EndofDayUI.SetActive(true);
+            InGameMenu.SetActive(true);
         }
     }
 

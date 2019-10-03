@@ -26,6 +26,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 992a2c04c313b2d4996e93b79c90ca93, type: 2}
   - {fileID: 11400000, guid: 1977eedf7bb87634793505d16f5872bf, type: 2}
   - {fileID: 11400000, guid: c5b83248d9fb32e469f982990d3bc3bb, type: 2}
+  - {fileID: 11400000, guid: c47908903685de542aaab002ce2ae056, type: 2}
   DayOfTheWeek: FRI
   DayNumber: 12
   Month: JULY

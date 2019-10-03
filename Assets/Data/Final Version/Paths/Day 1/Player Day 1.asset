@@ -19,6 +19,7 @@ MonoBehaviour:
   talkToNode: Day_1_Living_Area_Final
   scriptToLoad: {fileID: 0}
   GameObjectName: Player
+  ableToConvo: 0
   waypoints:
   - Name: To Nurse
     location:
@@ -87,3 +88,6 @@ MonoBehaviour:
     - {x: 5.2, y: 0.13, z: 6.8}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2
