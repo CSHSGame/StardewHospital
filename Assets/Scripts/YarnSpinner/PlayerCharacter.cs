@@ -102,7 +102,17 @@ namespace Yarn.Unity.Example {
                 // Kick off the dialogue at this node.
                 target.OnConversationStart();
                 FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
-            //    print("test");
+
+                var tracker = FindObjectOfType<WorldToScreenTrack>();
+                if(tracker != null && tracker.target!=null)
+                {
+                    if (target.gameObject == tracker.target.gameObject)
+                    {
+                        tracker.target = null;
+                    }
+                }
+               
+                //    print("test");
             }
         }
 
@@ -110,10 +120,21 @@ namespace Yarn.Unity.Example {
         {
             var allParticipants = new List<NPC>(FindObjectsOfType<NPC>());
 
-            foreach(NPC npc in allParticipants)
+            //var target = allParticipants.Find(delegate (NPC p) {
+            //    return p.ConversUI == false && // has a ConverseUI node?
+            //    (p.transform.position - this.transform.position).magnitude <= interactionRadius; // is in range?
+            //});
+
+            //if (target != null && target.enabled == true && target.talkToNode != "null" && target.ConversUI != null)
+            //{
+            //    // Display Spacebar UI
+            //    target.ICanConverse(true);
+            //}
+
+            foreach (NPC npc in allParticipants)
             {
                 npc.ICanConverse(false);
-                if ((npc.transform.position - this.transform.position).magnitude <= interactionRadius)
+                if ((npc.transform.position - this.transform.position).magnitude <= interactionRadius && npc.ConversUI != null)
                 {
                     npc.ICanConverse(true);
                 }

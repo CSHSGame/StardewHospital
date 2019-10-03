@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1833967247515360}
+  m_IsPrefabAsset: 1
+--- !u!1 &1833967247515360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4112555987941050}
+  - component: {fileID: 114591425478093942}
+  - component: {fileID: 114931465943230050}
+  - component: {fileID: 114667124367584662}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4112555987941050
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833967247515360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.37, y: -3.92, z: -0.58298093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114591425478093942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833967247515360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceText:
+  - {fileID: 4900000, guid: 221c166959f57224b851a210a3edc087, type: 3}
+  - {fileID: 4900000, guid: 9b0802db8d3e3a542b35935cf3cc5918, type: 3}
+  - {fileID: 4900000, guid: 090dd516361936845b322540fb6c9a69, type: 3}
+  - {fileID: 4900000, guid: 7d513de9adc8cb148aa0edde2f56790b, type: 3}
+  - {fileID: 4900000, guid: c751be7a4ffe6944bb597f7cacaf9c03, type: 3}
+  - {fileID: 4900000, guid: e102c09f428a1d743b552966f156f693, type: 3}
+  - {fileID: 4900000, guid: 0f531af43182d7149a43b2e90294d2a0, type: 3}
+  - {fileID: 4900000, guid: c821955effe7e42428c81f8b3b2ae813, type: 3}
+  - {fileID: 4900000, guid: 7bf70dc17a26a0f4e80a544a6054ed6f, type: 3}
+  - {fileID: 4900000, guid: d67ace3e071488f46986dffac02f5b01, type: 3}
+  - {fileID: 4900000, guid: c1499a3865f1a1140a29c70be02ba9a4, type: 3}
+  - {fileID: 4900000, guid: 39862e17c89f2df4eb27f2da586d927a, type: 3}
+  - {fileID: 4900000, guid: 082a96b2427acbb4e9e74de425114dc0, type: 3}
+  - {fileID: 4900000, guid: 162c6004135f2174e9b3d0b8db5367fe, type: 3}
+  - {fileID: 4900000, guid: e6d0dd990de237141b2e901b6e5f9d8b, type: 3}
+  - {fileID: 4900000, guid: 1292027a1e6b13a43b006c8233f8555e, type: 3}
+  - {fileID: 4900000, guid: 9669826cc6bfebd4cb28c4e693bae864, type: 3}
+  - {fileID: 4900000, guid: a2d8a5d3e47943c4980881253ad3f09c, type: 3}
+  - {fileID: 4900000, guid: b0639d90e83fd0e4784f5759eb2817a6, type: 3}
+  - {fileID: 4900000, guid: cdd084a4be1ef384580b00417b398e52, type: 3}
+  - {fileID: 4900000, guid: a0806f61f733625449cc418c0ff278fc, type: 3}
+  - {fileID: 4900000, guid: 9245b15f72792be4baa16c0c21e9a8da, type: 3}
+  - {fileID: 4900000, guid: ce48096da2e61f742a74d75a0f8e69eb, type: 3}
+  stringGroups: []
+  shouldOverrideLanguage: 0
+  overrideLanguage: 10
+  variableStorage: {fileID: 114931465943230050}
+  dialogueUI: {fileID: 114667124367584662}
+  startNode: 
+  startAutomatically: 0
+  automaticCommands: 1
+--- !u!114 &114667124367584662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833967247515360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c46be6b6143314eada0bce3cf9d460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faces:
+  - {fileID: 11400000, guid: 90b4d3d83c1763b4a9ffc6aff25149e6, type: 2}
+  - {fileID: 11400000, guid: 43d7d1b19ce19874bb0d4ebd9f48eb22, type: 2}
+  - {fileID: 11400000, guid: 89789f68e6d6f914b825064ad842c5fa, type: 2}
+  - {fileID: 11400000, guid: a794ae0ff11e8bb448dd85fe8731638d, type: 2}
+  - {fileID: 11400000, guid: a5b2c0a4c4da41d4189009a6b2187fed, type: 2}
+  - {fileID: 11400000, guid: 39ba239d42e20554daff303c9d4715a3, type: 2}
+  - {fileID: 11400000, guid: cda0b6e8ed8b1474389fa956f800c6e6, type: 2}
+  - {fileID: 11400000, guid: 8fc42e1b8d7d8ce4cb9f829f9a0983d7, type: 2}
+  - {fileID: 11400000, guid: d2cd116f41a069547a827a223a913ed7, type: 2}
+  - {fileID: 11400000, guid: ca292b04cbb2760498ab5e3b8f53d96b, type: 2}
+  - {fileID: 11400000, guid: 89d9b18b7f7d9e545ab6bb624f77809d, type: 2}
+  dialogueContainer: {fileID: 0}
+  leftFace: {fileID: 0}
+  rightFace: {fileID: 0}
+  PlaceHolderFace: {fileID: 21300000, guid: 791cb02cc65b13d4e8dbc28ce02f344d, type: 3}
+  Scroll: {fileID: 0}
+  lineTextContainer: {fileID: 0}
+  lineTextPrefab: {fileID: 224583209616367836, guid: 464903897789d944a8dd0b42e8520f11,
+    type: 2}
+  bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
+  actionBubble: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  continuePrompt: {fileID: 0}
+  optionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  variableStorage: {fileID: 114931465943230050}
+--- !u!114 &114931465943230050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833967247515360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultVariables:
+  - name: playerName
+    value: Sam
+    type: 1
+  - name: PlayerName
+    value: ChangeToLowercaseP
+    type: 1
+  - name: NurseManager
+    value: Anda
+    type: 1
+  - name: Char1Last
+    value: Mrs Stein
+    type: 1
+  - name: Char1First
+    value: Eve
+    type: 1
+  - name: Char2Last
+    value: Mr Williams
+    type: 1
+  - name: Char2First
+    value: Arthur
+    type: 1
+  - name: Char3First
+    value: Syd
+    type: 1
+  - name: Char3Last
+    value: Mr Wojick
+    type: 1
+  - name: Marissa
+    value: Marrisa
+    type: 1
+  - name: Char2LastDoor
+    value: Mr Williams Door
+    type: 1
+  - name: Char3FirstDoor
+    value: Syd Door
+    type: 1
+  - name: Richard
+    value: Richard
+    type: 1
+  - name: Katherine
+    value: Katherine
+    type: 1
+  - name: Ranjit
+    value: Ranjit
+    type: 1
+  - name: HostpitalName
+    value: Bloom
+    type: 1
+  - name: Hana
+    value: Hana
+    type: 1
+  - name: Stranger
+    value: Mrs. Wilson
+    type: 1
+  debugTextView: {fileID: 0}

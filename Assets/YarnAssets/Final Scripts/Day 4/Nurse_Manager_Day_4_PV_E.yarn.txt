@@ -1,0 +1,20 @@
+title: Nurse_Manager_Day_4
+tags: 
+colorID: 0
+position: 1225,964
+---
+<<if visited("Nurse_Manager_Day_4") is true>>
+[$playerName]: I don't need to talk with her right now.
+<<else>>
+[$NurseManager]: Good Morning [$playerName]...
+[$playerName]: Hey [$NurseManager]. Is something wrong?
+[$NurseManager]: Actually yes... [$Char1Last] was taken to the hospital last night. She was having difficulty breathing.  
+[$playerName]: Oh no... I knew she wasn't feeling well yesterday but I didn't think...
+[$playerName]: I don't know what I thought.
+[$NurseManager]: Anyways, sorry to tell you this first thing, but I thought you'd want to know.
+[$playerName]: Of course.
+[$NurseManager]: When you have a moment, please check in on [$Char3First]. He seems like he's having a rough time.
+[$playerName]: I noticed that as well. I'll pay him a visit. 
+<<SetObjective GameManager ToSydDay4>>
+<<endif>>
+===

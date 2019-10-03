@@ -12,17 +12,24 @@ public class NpcDayData : ScriptableObject
     [Space]
     public Vector3 scale;
     public Sprite sprite;
+    public RuntimeAnimatorController AnimatorController;
+
     // Use this for initialization
     public string talkToNode = "";
     public TextAsset scriptToLoad;
   
     public string GameObjectName;
+    public bool ableToConvo = true;
+
     [Header("waypoints stuff")]
     public pointsVector3[] waypoints;
 
     [Space]
     public DialogueTrigger DialogueTriggerPrefab;
     public bool visibleAtStart = true;
+    public bool selfMovement = false;
+    public bool loopSelfMovement = false;
+    public float MoveSpeed = 2.0f;
 }
 [System.Serializable]
 public struct pointsVector3

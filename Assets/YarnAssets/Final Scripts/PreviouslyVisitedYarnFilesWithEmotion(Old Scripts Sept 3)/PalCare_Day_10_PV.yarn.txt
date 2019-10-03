@@ -1,0 +1,25 @@
+title: PalCare_Day_10
+tags: 
+colorID: 6
+position: 1064,145
+---
+<<if visited("PalCare_Day_10")>>
+I don't need to talk with her right now.
+<<else>>
+<<SetPath Player Zero>>
+[sad][$NurseManager]: Hi, [$playerName].
+[$playerName]: Good morning, [$NurseManager].
+[sad][$NurseManager]: I need to speak with you. Please come with me, let’s find some place quiet.
+<<SetPath Nurse Zero>>
+<<SetPath Player One>>
+[sad][$NurseManager]:  I just wanted to let you know that last night Eve passed away peacefully in her sleep. Her daughter and Katherine were by her side.
+[sad][$playerName]: Oh...
+[sad][$NurseManager]: Are you okay?
+[sad][$playerName]: I wasn’t expecting that... so soon...
+[sad][$NurseManager]: If you would like to stay here for a couple minutes to collect your thoughts, that’s fine.
+[sad][$playerName]: Thanks. Yeah, I’ll stay here for a bit...
+<<SetPath Nurse One>>
+<<SetPath Player Two>>
+<<SetObjective GameManager WaitInMultifaithRoomDay10>>
+<<endif>>
+===

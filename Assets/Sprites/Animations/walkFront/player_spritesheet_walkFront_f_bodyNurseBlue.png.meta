@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: a2cdcc1cbc8fe774eb9146667c71cdba
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_spritesheet_walkFront_f_bodyNurseBlue_0
+    21300002: player_spritesheet_walkFront_f_bodyNurseBlue_1
+    21300004: player_spritesheet_walkFront_f_bodyNurseBlue_2
+    21300006: player_spritesheet_walkFront_f_bodyNurseBlue_3
+    21300008: player_spritesheet_walkFront_f_bodyNurseBlue_4
+    21300010: player_spritesheet_walkFront_f_bodyNurseBlue_5
+    21300012: player_spritesheet_walkFront_f_bodyNurseBlue_6
+    21300014: player_spritesheet_walkFront_f_bodyNurseBlue_7
+    21300016: player_spritesheet_walkFront_f_bodyNurseBlue_8
+    21300018: player_spritesheet_walkFront_f_bodyNurseBlue_9
+    21300020: player_spritesheet_walkFront_f_bodyNurseBlue_10
+    21300022: player_spritesheet_walkFront_f_bodyNurseBlue_11
+    21300024: player_spritesheet_walkFront_f_bodyNurseBlue_12
+    21300026: player_spritesheet_walkFront_f_bodyNurseBlue_13
+    21300028: player_spritesheet_walkFront_f_bodyNurseBlue_14
+    21300030: player_spritesheet_walkFront_f_bodyNurseBlue_15
+    21300032: player_spritesheet_walkFront_f_bodyNurseBlue_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb8f69892a9907419f0ee82f3707fb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bfc9118cb605b42b9dc5c809de4a5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60bdac409680de4a95e9a2bb3460dea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d664b6432486845b0c446f0fc8897e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_4
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f1fcf3fb35fd241bc049b26b292273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01212dc8128f45c4590bd19dc8822202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_6
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c8ae7f71eec3048b65eb17fc268153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_7
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188de2beeea302243b062dd62994852e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b350e51292f4eae40b3dec6288da1b69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e0079611176f34aa5a81f7539aea80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_10
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca71dcde475fe94392b595b137c8224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_11
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35d28d960d9bdf47b6cdfb8ebeb2d06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_12
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7065418c87d99b540b15336dd859d803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_13
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c24c5f3fb9b54149acf1df8cc4eeff2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_14
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256007a7979cc294fb60d4040bd9b8d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_15
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e2c2350fd5f1d42b12d4299424aee7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spritesheet_walkFront_f_bodyNurseBlue_16
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 63.294117
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea9f7490cd44ae4e9772908fe2b030a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3486fbef548de81488d8539a158dd457
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

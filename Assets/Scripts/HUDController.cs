@@ -11,13 +11,22 @@ public class HUDController : MonoBehaviour {
     public Text MonthText;
     public Text TimeText;
     public Text AMorPMText;
+    public Text ObjectiveText;
 
     public GameObject ClipboardUI;
+    public GameObject InGameMenu;
     public GameObject EndofDayUI;
     public DayDataHolder dayData;
 
+    public EoDClipboard EODClipboard;
     public DayManager dayManager;
 
+    public void Setup(DayDataHolder day, int dayNum)
+    {
+        EODClipboard.LoadEoDNotes(dayNum);
+        EODClipboard.DecisionPointButtonPress();
+        Setup(day);
+    }
 	// Use this for initialization
 	public void Setup (DayDataHolder day)
     {
@@ -33,13 +42,13 @@ public class HUDController : MonoBehaviour {
 
     public void GearClick()
     {
-        if (EndofDayUI.activeInHierarchy == true)
+        if (InGameMenu.activeInHierarchy == true)
         {
-            EndofDayUI.SetActive(false);
+            InGameMenu.SetActive(false);
         }
-        else if (EndofDayUI.activeInHierarchy == false)
+        else if (InGameMenu.activeInHierarchy == false)
         {
-            EndofDayUI.SetActive(true);
+            InGameMenu.SetActive(true);
         }
     }
 
@@ -72,29 +81,51 @@ public class HUDController : MonoBehaviour {
 
     }
 
+    public void OpenEoDClipboard()
+    {
+        if (EndofDayUI.activeInHierarchy == true)
+        {
+            EndofDayUI.SetActive(false);
+        }
+        else if (EndofDayUI.activeInHierarchy == false)
+        {
+            EndofDayUI.SetActive(true);
+        }
+    }
+
+    public void CloseEoDClipboard()
+    {
+
+    }
+
+
 
     public void LoadDay1()
     {
         dayManager.currentDay = 0;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(0);
     }
 
     public void LoadDay2()
     {
         dayManager.currentDay = 1;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(1);
     }
 
     public void LoadDay3()
     {
         dayManager.currentDay = 2;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(2);
     }
 
     public void LoadDay4()
     {
         dayManager.currentDay = 3;
         dayManager.LoadDay();
+        EODClipboard.LoadEoDNotes(3);
     }
 
 }

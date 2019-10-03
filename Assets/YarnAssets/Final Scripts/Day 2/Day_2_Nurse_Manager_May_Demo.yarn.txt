@@ -1,0 +1,14 @@
+title: Day_2_Get_Quest_Final_May_Demo
+tags: 
+colorID: 0
+position: -476,622
+---
+[$playerName]: Hello! 
+[$NurseManager]: Hello [$playerName]! Ready for your second day?
+[$NurseManager]: To begin, please check in with [$Char2Last]. I believe you met him yesterday as well.
+[$playerName]: Yes, I did. 
+[$NurseManager]: Lastly, please check in with [$Char3Last], I don’t believe you’ve met yet. 
+[$playerName]: Okay, I'll do that. 
+[$NurseManager]: Thanks! Good luck.
+<<SetObjective GameManager ToSydDay2>>
+===

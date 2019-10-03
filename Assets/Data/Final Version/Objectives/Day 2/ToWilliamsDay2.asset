@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: ToWilliamsDay2
   m_EditorClassIdentifier: 
   name: ToWilliamsDay2
-  target: 0
+  target: {fileID: 11400000, guid: 3803532faeb7ea541a807b8fdb51e523, type: 2}
   wayfindingIndex: 25
-  displayText: 
+  displayText: Go talk to Mr.Williams in his room.

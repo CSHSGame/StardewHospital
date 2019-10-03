@@ -1,0 +1,22 @@
+﻿title: Linking_Scene_End_Of_Life
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Linking_Scene_End_Of_Life") is true>>
+[$playerName]: I don't need to talk with them right now.
+<<else>>
+[$Ranjit]: Hey [$playerName].
+[$playerName]: Hi [$Ranjit], do you have a moment to talk?
+[$Ranjit]: Sure [$playerName]. What’s up?
+[$playerName]: [$Char1Last] passed away recently, and I’m having a really hard time processing it. I got to know her pretty well over the last couple weeks. 
+[$playerName]: When I found out she died I didn’t feel like I could function properly. Even though I knew she was dying it really caught me off guard. 
+[$Ranjit]: I’m so sorry to hear that. That is going to be a really difficult reality to face working in long-term care. What were some of your favorite memories of [$Char1Last]?
+[$playerName]:  The other day I helped her set up the tea and talk session...
+[$playerName]: I loved how excited she was to form bonds with other members of the community her. She was very generous in that way and it was really touching.  
+[$Ranjit]: That’s great you were able to connect and share that with her. I bet your help and your friendship really meant a lot to her. 
+[$Ranjit]: Take your time to process this. Remember that you brought something special into this person’s life, and it seems like you learned a lot. 
+[$playerName]: Thanks [$Ranjit], I feel a lot better being able to talk about it. It’s just really hard right now. Thanks for being there. 
+<<SetObjective GameManager TalkToSusannahDay13>>
+<<endif>>
+===

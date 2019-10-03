@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
+  m_Name: StrangerFace
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 99bc777387159a6468cc52fb2b330c56, type: 3}
+  Name: $Stranger
+  Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
+  AngrySprite: {fileID: 0}
+  SadSprite: {fileID: 0}
+  HappySprite: {fileID: 0}

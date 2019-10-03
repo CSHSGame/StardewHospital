@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: ToSteinDay1
   m_EditorClassIdentifier: 
   name: ToSteinDay1
-  target: 0
+  target: {fileID: 11400000, guid: aaf729c1d924e62468b064d0b0bd78a3, type: 2}
   wayfindingIndex: 41
-  displayText: 
+  displayText: Go talk to Evelyn Stien in the Living Area.

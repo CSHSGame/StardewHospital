@@ -1,0 +1,18 @@
+title: Day_7_Nurse_Intro
+tags: 
+colorID: 0
+position: 543,260
+---
+<<if visited("Day_7_Nurse_Intro") is true>>
+[$playerName]: I don't need to talk with her right now.
+<<else>>
+[$NurseManager]: Good morning.
+[sad][$playerName]: Good morning.
+[$NurseManager]: Hey [$PlayerName], how are you feeling today? I know that conversation with [$Char1First] yesterday was very difficult for you. 
+[$playerName]: It was, thanks you for asking. I'm alright though. 
+[$NurseManager]: I'm sorry to say she's not feeling well at all today, I don't think you'll be able to vist.
+[$NurseManager]: But one of the other students, Ranjit, was looking for you. 
+[$playerName]: Okay, I'll touch base with him, thanks. 
+<<SetObjective GameManager TalkToRanjitDay7>>
+<<endif>>
+===

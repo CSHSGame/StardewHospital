@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fc3ce8776a0634a8cdca2b1d2a7014, type: 3}
   m_Name: NurseManagerFace
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300002, guid: 244636d3a8b2d9f45a7e798fb8637f04, type: 3}
+  sprite: {fileID: 21300000, guid: e1328ac29ddd1904b8664ccf01675f4a, type: 3}
   Name: $NurseManager
   Bubble: {fileID: 21300000, guid: 83fd5b63a14995744bd9c58d3121d093, type: 3}
-  AngrySprite: {fileID: 0}
+  AngrySprite: {fileID: 21300000, guid: 8a4db360ed092c142a3353a32ff03e8f, type: 3}
   SadSprite: {fileID: 0}
-  HappySprite: {fileID: 0}
+  HappySprite: {fileID: 21300000, guid: 71c5241784453fe4db03f97d99eca6f6, type: 3}

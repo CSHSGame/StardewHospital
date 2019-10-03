@@ -6,11 +6,15 @@ public class CharacterLoad : MonoBehaviour
 {
     public CharacterData Assets;
     public FaceName Assets2;
-
+    public bool loadOn = true;
     // Use this for initialization
-    void Start ()
+    void Awake ()
     {
-        Load();
+        if (loadOn)
+        {
+            Load();
+
+        }
     }
 
     [ContextMenu("Load")]
@@ -26,6 +30,8 @@ public class CharacterLoad : MonoBehaviour
             }
             Transform head =  Instantiate(Assets.heads[data.headIndex], this.transform);
             Instantiate(Assets.Bodies[data.bodyIndex], this.transform);
+
+            //Debug.Break();
             ExampleVariableStorage variableStorage = GameObject.FindObjectOfType<ExampleVariableStorage>();
             if (variableStorage != null)
             {

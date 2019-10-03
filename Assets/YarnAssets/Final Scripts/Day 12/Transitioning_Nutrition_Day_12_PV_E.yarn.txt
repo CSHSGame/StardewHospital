@@ -1,0 +1,62 @@
+title: Transitioning_Day_12
+tags: 
+colorID: 0
+position: 441,136
+---
+//***PROGRAMMER NOTE** Player enters bedroom and Mrs Lee, Brian, and Susannah are already there.
+<<if visited("Transitioning_Day_12")>>
+[$player]: I can probably let he be for now.
+<<else>>
+<<SetPath Player Zero>>
+[$NurseManager]: Hello everyone. It’s good to see you. I know this transition can be difficult for all of you - and for Mrs Lee most of all. But with the tablet we can communicate with her in Cantonese. Our hope is that this will help your mom communicate her needs and to be more comfortable.                              
+[$Susannah]: I hope so! I’m so worried about her.  
+[$NurseManager]: Ah! [$Char5Last], here comes your roommate, Katherine. 
+<<Spawn Katherine>>
+<<SetPath Katherine Zero>> //***PROGRAMMER NOTE** (Katherine, Mrs. Lee’s room-mate, enters the room)  
+[$NurseManager]: I think you’ll get along very well with her. Katherine, this is [$Char5Last], her daughter, Susannah and her son-in-law, Brian.
+[$Katherine]:  Hello [$Char5Last], nice to meet you.  Hello, Susannah - I’m happy to meet you. 
+[$Susannah]: It’s good to meet you, too. But I’m afraid my mother is feeling upset about this move.
+[$Katherine]:   That’s understandable.  Most people feel anxious about moving to a new home - I was certainly very nervous when I moved in here. 
+[$Katherine]: I’ll do my best to help her feel safe and comfortable here.  
+<<SetPath Susannah Zero>>
+<<SetPath Player One>>//***PROGRAMMER NOTE** Susannah walks over to the window - after a moment player follows
+[$playerName]: How are you doing?
+[$Susannah]: I feel horrible. What kind of daughter am I?  My mom and dad moved here from their home in China to take care of me and my siblings. 
+[$Susannah]: They left everything behind.  He couldn’t come with us today because he is too emotional about it.  It’s my fault. 
+[[I understand. I could never do this to my parents. I mean this is a nice place – but I agree it’s better if she was still at home.|Day_12_Unsympathetic]] <<$Transitioning_Sympathetic = false>>
+[[You don’t have to feel like that. My friend’s mom went into long-term care and first they were worried but they all got over it.|Day_12_Unsympathetic]] <<$Transitioning_Sympathetic = false>>
+[[I can see this has been really hard for you...|Day_12_Sympathetic]] <<$Transitioning_Sympathetic = true>>
+<<endif>>
+===
+title: Day_12_Sympathetic
+tags: 
+colorID: 0
+position: -281,533
+---
+[$Susannah]: Thank you for listening, [$playerName]. I appreciate it. 
+[[Day_12_Cont]]
+===
+title: Day_12_Unsympathetic
+tags: 
+colorID: 0
+position: 1215,558
+---
+[$Susannah]:That's not very comforting, to be perfectly honest.
+[$playerName]: I'm sorry, you're right. I shouldn't have said that.
+[[Day_12_Cont]]
+===
+title: Day_12_Cont
+tags: 
+colorID: 0
+position: 377,816
+---
+[$playerName]: I think many families feel the way you do now - transitioning a loved one into long term care is a really difficult process.
+[$playerName]: But we can take good care of your mom with our many services here. We have volunteers that can speak Cantonese with her. We have activities from her culture that she will enjoy. 
+[$playerName]: You’ve mentioned how your mom always took great care of you and your kids.  I believe that’s what you’re doing for her now, and I think she feels that ways too.
+[$Susannah]: Thank you. 
+[$playerName]: I've got to go, take care for now. 
+[$Susannah]: Bye!
+<<PrepForNextDay GameManager>>
+<<SetObjective GameManager ReviewEoDNotesDay12>>
+<<SetPath Player Two>>
+===

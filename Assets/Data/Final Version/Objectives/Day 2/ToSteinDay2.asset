@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Name: ToSteinDay2
   m_EditorClassIdentifier: 
   name: ToSteinDay2
-  target: 0
+  target: {fileID: 11400000, guid: 285579c2262391f439cdae2219fdfb36, type: 2}
   wayfindingIndex: 41
-  displayText: 
+  displayText: 'Go talk to Evelyn Stein in the Living Area.
+
+'

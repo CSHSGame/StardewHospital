@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae5897e28d6c83409873badca2eca26, type: 3}
+  m_Name: Day 13
+  m_EditorClassIdentifier: 
+  DecisionPoints: []
+  otherVariables: []
+  CurrentDay: 0
+  Objectives:
+  - {fileID: 11400000, guid: 44d76e9fc4cc94b4a93e9b283cff6dc2, type: 2}
+  - {fileID: 11400000, guid: f5611bda0708cca43987b9a4ecfdaaa7, type: 2}
+  - {fileID: 11400000, guid: 09c5c525e1cc59242a83bc2b121d90d2, type: 2}
+  PlayerData: {fileID: 11400000, guid: f81b57471d6df934aa3f73e2f16e3ce0, type: 2}
+  npcs:
+  - {fileID: 11400000, guid: 80faa8f55b31c5b4c8fb02eace830448, type: 2}
+  - {fileID: 11400000, guid: c5f61bbcb0c4f6e408aa0381b1d9dfa8, type: 2}
+  - {fileID: 11400000, guid: d0e4f52b52c9ee24eb5a281d1ce1bd5b, type: 2}
+  - {fileID: 11400000, guid: 2cbc874afad6c464390be7654834dbaf, type: 2}
+  - {fileID: 11400000, guid: d6a4637bb94b8604294c079263051aae, type: 2}
+  DayOfTheWeek: SAT
+  DayNumber: 13
+  Month: JULY
+  TimeOfDay: 8:00
+  AMOrPM: 0

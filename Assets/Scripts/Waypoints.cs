@@ -20,13 +20,204 @@ public class Waypoints : MonoBehaviour
     public int pathindex = -1;
     [SerializeField]
 
-    private int nodeindex = 0;
+    public int nodeindex = 0;
     public bool isPlayer;
     private Vector3 CamLocalPos;
 
     [SerializeField]
     bool warp = false;
     bool teleport = false;
+    public bool selfMover;
+    public bool loopSelfMove = true;
+
+    public IBodyPart[] bodyParts;
+    public void Start()
+    {
+        pathindex = -1;
+        nodeindex = 0;
+        oldSpeed = speed;
+        if (selfMover)
+        {
+            SelfMove();
+        }
+    }
+    private void Setup()
+    {
+        if(bodyParts == null)
+        {
+            bodyParts = GetComponentsInChildren<IBodyPart>();
+
+        }
+
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+        // The step size is equal to speed times frame time.
+        step = speed * Time.deltaTime;
+        if (pathindex != -1) //pathindex is set from yarn in most cases 
+        {
+            if (nodeindex < Paths[pathindex].location.Count)
+            {
+                //Move our position a step closer to the target.
+                this.transform.position = Vector3.MoveTowards(this.transform.position, Paths[pathindex].location[nodeindex], step);
+                Vector3 direction = ( Paths[pathindex].location[nodeindex] - transform.position).normalized;
+
+                foreach (IBodyPart bp in bodyParts)
+                {
+                    if(Mathf.Abs( direction.x )> Mathf.Abs(direction.z))
+                    {
+                        bp.ReceiveInput(new Vector2(direction.x, 0));
+
+                    }
+                    else
+                    {
+                        bp.ReceiveInput(new Vector2(0, direction.z));
+
+                    }
+                }
+                //If we've reached the destination, move to the next one
+                if (this.transform.position == Paths[pathindex].location[nodeindex])
+                {
+                    moveToNextNode();
+                }
+            }
+            else  //pathing Complete
+            {
+                completePath();
+            }
+        }
+        /*
+        if (selfMover)
+        {
+            this.transform.position = Vector3.MoveTowards(this.transform.position, this.transform.position + new Vector3(1, 0, 0), step);
+
+            Vector3 direction = (this.transform.position + new Vector3(1, 0, 0) - transform.position).normalized;
+
+            foreach (IBodyPart bp in bodyParts)
+            {
+                if (Mathf.Abs(direction.x) > Mathf.Abs(direction.z))
+                {
+                    bp.ReceiveInput(new Vector2(direction.x, 0));
+
+                }
+                else
+                {
+                    bp.ReceiveInput(new Vector2(0, direction.z));
+
+                }
+            }
+        }*/
+        if (selfMover)
+        {
+            if (pathindex != -1) //pathindex is set from yarn in most cases 
+            {
+                if (nodeindex < Paths[pathindex].location.Count)
+                {
+                    this.transform.position = Vector3.MoveTowards(this.transform.position, Paths[pathindex].location[nodeindex], step);
+
+                    Vector3 direction = (Paths[pathindex].location[nodeindex] - transform.position).normalized;
+
+                    foreach (IBodyPart bp in bodyParts)
+                    {
+                        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.z))
+                        {
+                            bp.ReceiveInput(new Vector2(direction.x, 0));
+
+                        }
+                        else
+                        {
+                            bp.ReceiveInput(new Vector2(0, direction.z));
+
+                        }
+                    }
+                    //If we've reached the destination, move to the next one
+                    if (this.transform.position == Paths[pathindex].location[nodeindex])
+                    {
+                        moveToNextNode();
+                    }
+                }
+                else  //pathing Complete
+                {
+                    completePath();
+                }
+            }
+        }
+    }
+
+    private void SelfMove()
+    {
+        Setup();
+        pathindex = 0;
+    }
+
+    private void moveToNextNode()
+    {
+        nodeindex++;
+
+        if (warp)
+        {
+            if (nodeindex >= 2 && nodeindex < Paths[pathindex].location.Count - 1) //second to last
+            {
+
+                speed = 10;
+                if (isPlayer)
+                {
+                    Camera.main.cullingMask = 0;
+                }
+
+            }
+            if (nodeindex == Paths[pathindex].location.Count - 1)
+            {
+                speed = oldSpeed;
+                if (isPlayer)
+                {
+                    GameObject cam = Camera.main.gameObject;
+
+                    cam.transform.position = Paths[pathindex].location[Paths[pathindex].location.Count - 1];
+                    cam.transform.position += Vector3.up * 3;
+                    Camera.main.cullingMask = -1;
+                }
+
+            }
+        }
+    }
+
+    private void completePath()
+    {
+        
+        if (isPlayer)
+        {
+            GetComponent<CharacterController>().enabled = true;
+            GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = true;
+            foreach (Collider c in GetComponentsInChildren<Collider>())
+            {
+                c.enabled = true;
+            }
+
+            if (warp)
+            {
+                GameObject cam = Camera.main.gameObject;
+
+                cam.transform.SetParent(this.gameObject.transform);
+                cam.transform.localPosition = CamLocalPos;
+            }
+
+        }
+        Debug.Log("Break");
+        pathindex = -1;
+        nodeindex = 0;
+
+        warp = false;
+
+        onPathDone.Invoke();
+        if (loopSelfMove)
+        {
+            pathindex = 0;
+            nodeindex = 0;
+        }
+    }
 
     [YarnCommand("SetPath")]
     public void StartPathing(string Pathnum, string WarpType)
@@ -58,12 +249,12 @@ public class Waypoints : MonoBehaviour
         if(returnValue < Paths.Count)
         {
             pathindex = returnValue;
-
+            //turns off collision
             foreach (Collider c in GetComponentsInChildren<Collider>())
             {
                 c.enabled = false;
             }
-            if (isPlayer)
+            if (isPlayer)// if player turn off controls 
             {
                 GetComponent<CharacterController>().enabled = false;
                 GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = false;
@@ -75,37 +266,9 @@ public class Waypoints : MonoBehaviour
             Debug.Break();
             Debug.LogError("Path # " + returnValue.ToString() + " not set in for " + gameObject.name +" Tell Julian or Pier");
         }
-    
+        Setup();
     }
-
-    
-    //public void OnDrawGizmosSelected()
-    //{
-    //    if(pathindex!= -1)
-    //    {
-            
-    //        for (int i = 0; i< holder[pathindex].points.Length;i++ )
-    //        {
-    //            if (i == 0)
-    //            {
-    //                Gizmos.DrawLine(transform.position, holder[pathindex].points[i].transform.position);
-    //            }
-    //            else
-    //            {
-    //                Gizmos.DrawLine(holder[pathindex].points[i-1].transform.position, holder[pathindex].points[i].transform.position);
-    //            }
-                
-    //        }
-    //    }
-        
-    //}
-    // Use this for initialization
-    void Start ()
-    {
-        pathindex = -1;
-        nodeindex = 0;
-        oldSpeed = speed;
-    }
+  
 
     int ConvertStringToInt(string number)
     {
@@ -122,6 +285,8 @@ public class Waypoints : MonoBehaviour
             case "Eight": return 8;
             case "Nine": return 9;
             case "Ten": return 10;
+            case "Eleven": return 11;
+            case "Twelve": return 12;
 
             default:
                 Debug.Break();
@@ -129,82 +294,7 @@ public class Waypoints : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        // The step size is equal to speed times frame time.
-        step = speed * Time.deltaTime;
-        if (pathindex != -1)
-        {
-            if (nodeindex < Paths[pathindex].location.Count)
-            {
-                //Move our position a step closer to the target.
-                this.transform.position = Vector3.MoveTowards(this.transform.position, Paths[pathindex].location[nodeindex], step);
-
-                //If we've reached the destination, move to the next one
-                if (this.transform.position == Paths[pathindex].location[nodeindex])
-                {
-                    nodeindex++;
-
-                    if (warp)
-                    {
-                        if(nodeindex >= 2 && nodeindex < Paths[pathindex].location.Count - 1) //second to last
-                        {
-                           
-                            speed = 10;
-                            if (isPlayer)
-                            {
-                                Camera.main.cullingMask = 0;
-                            }
-
-                        }
-                        if (nodeindex == Paths[pathindex].location.Count - 1)
-                        {
-                            speed = oldSpeed;
-                            if (isPlayer)
-                            {
-                                GameObject cam = Camera.main.gameObject;
-
-                                cam.transform.position = Paths[pathindex].location[Paths[pathindex].location.Count - 1];
-                                cam.transform.position += Vector3.up * 3;
-                                Camera.main.cullingMask = -1;
-                            }
-
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if(isPlayer)
-                {
-                    GetComponent<CharacterController>().enabled = true;
-                    GetComponent<Yarn.Unity.Example.PlayerCharacter>().enabled = true;
-                    foreach (Collider c in GetComponentsInChildren<Collider>())
-                    {
-                        c.enabled = true;
-                    }
-
-                    if (warp)
-                    {
-                        GameObject cam = Camera.main.gameObject;
-
-                        cam.transform.SetParent(this.gameObject.transform);
-                        cam.transform.localPosition = CamLocalPos;
-                    }
-                   
-                }
-                Debug.Log("Break");
-                pathindex = -1;
-                nodeindex = 0;
-
-                warp = false;
-
-                onPathDone.Invoke();
-            }
-        }
-    }
+    
     public void BakeData()
     {
         data.waypoints = new pointsVector3[Paths.Count];
@@ -213,10 +303,9 @@ public class Waypoints : MonoBehaviour
         {
             data.waypoints[i] = Paths[i];
         }
-
-
-
-
+        data.MoveSpeed = speed;
+        data.selfMovement = selfMover;
+        data.loopSelfMovement = loopSelfMove;
 
     }
     public void loadData()
@@ -226,5 +315,9 @@ public class Waypoints : MonoBehaviour
         {
             Paths.Add(data.waypoints[i]);
         }
+
+        selfMover = data.selfMovement;
+        speed = data.MoveSpeed;
+        loopSelfMove = data.loopSelfMovement;
     }
 }

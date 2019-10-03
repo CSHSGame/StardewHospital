@@ -15,29 +15,40 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0, w: 0}
   scale: {x: 0, y: 0, z: 0}
   sprite: {fileID: 0}
+  AnimatorController: {fileID: 0}
   talkToNode: 
   scriptToLoad: {fileID: 0}
   GameObjectName: 
+  ableToConvo: 0
   waypoints:
   - Name: abit into the room
     location:
-    - {x: 38.648506, y: 0.13, z: 6.4398623}
-    - {x: 38.651463, y: 0.13, z: 2.887072}
+    - {x: 38.5, y: 0.13, z: 6.4398623}
+    - {x: 38.5, y: 0.13, z: 2.887072}
   - Name: into room
     location:
-    - {x: 38.65146, y: 0.13, z: 2.887072}
-    - {x: 36.77347, y: 0.13, z: -0.29698825}
+    - {x: 38.5, y: 0.13, z: 2.887072}
+    - {x: 36.5, y: 0.13, z: -0.29698825}
   - Name: to surpervisor
     location:
-    - {x: 36.77347, y: 0.13, z: -0.2969882}
-    - {x: 38.455463, y: 0.13, z: 2.7051988}
-    - {x: 38.470974, y: 0.13, z: 6.4550314}
-    - {x: 37.93276, y: 0.13, z: 13.766011}
+    - {x: 36.5, y: 0.13, z: -0.2969882}
+    - {x: 38.5, y: 0.13, z: 2.7051988}
+    - {x: 38.5, y: 0.13, z: 6.4550314}
+    - {x: 38.5, y: 0.13, z: 15}
   - Name: to office
     location:
-    - {x: 37.93276, y: 0.13, z: 13.76601}
-    - {x: 37.908897, y: 0.13, z: 19.560678}
-    - {x: 37.89853, y: 0.13, z: 45.68449}
-    - {x: 28.558626, y: 0.13, z: 45.674816}
+    - {x: 38.5, y: 0.13, z: 15}
+    - {x: 38.5, y: 0.13, z: 45.5}
+    - {x: 30, y: 0.13, z: 45.5}
+  - Name: ' '
+    location:
+    - {x: 30, y: 0.13, z: 45.5}
+    - {x: 37, y: 0.13, z: 45.5}
+    - {x: 37, y: 0.13, z: 10}
+    - {x: 5.2, y: 0.13, z: 10}
+    - {x: 5.2, y: 0.13, z: 6.8}
   DialogueTriggerPrefab: {fileID: 0}
   visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

@@ -4,12 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Table
-  - FS_Grass
-  - FS_Pavement
-  - FS_Tile
-  - FS_Wood
-  - FS_Carpet
+  - wall
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class NpcLoader : MonoBehaviour
     // Use this for initialization
     public void Setup (DayDataHolder day)
     {
+        Debug.Log("setup");
         dayDataHolder = day;
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -36,7 +37,7 @@ public class NpcLoader : MonoBehaviour
     public void LoadNpc()
     {
 
-        
+        Debug.Log("LoadNPC");
         for (int i = 0; i < dayDataHolder.npcs.Length; i++)
         {
             Yarn.Unity.Example.NPC npc = Instantiate(prefab).GetComponent<Yarn.Unity.Example.NPC>();
@@ -63,6 +64,7 @@ public class NpcLoader : MonoBehaviour
         player.data = dayDataHolder.PlayerData;
         player.loadData();
         player.transform.position = new Vector3(-0.98f, 0.13f, 3.03f);
+        player.onPathDone.RemoveAllListeners();
     }
     // Update is called once per frame
     void Update () {

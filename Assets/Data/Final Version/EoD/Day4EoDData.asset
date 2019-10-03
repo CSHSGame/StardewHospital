@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
+  m_Name: Day4EoDData
+  m_EditorClassIdentifier: 
+  DP1Evaluate: $SYD_DAY_4_APPROPRIATE
+  DP2Evaluate: 
+  DP3Evaluate: 
+  DP1Outcome1TrueOutcome2False: 1
+  DP2Outcome1TrueOutcome2False: 0
+  DP3Outcome1TrueOutcome2False: 0
+  DecisionPoint1Outcome1Title: Syd Comes Out
+  DecisionPoint1Outcome1Text: "If someone comes out to you as LGBTQ+ it\u2019s important
+    to actively listen and show them you can be an ally. "
+  DecisionPoint2Outcome1Title: 
+  DecisionPoint2Outcome1Text: 
+  DecisionPoint3Outcome1Title: 
+  DecisionPoint3Outcome1Text: 
+  DecisionPoint1Outcome2Title: Syd Comes Out
+  DecisionPoint1Outcome2Text: "Today, you assumed Syd was heterosexual. If someone
+    comes out to you as LGBTQ+, it\u2019s important to actively listen and show them
+    that you can learn to be an ally. \r\n"
+  DecisionPoint2Outcome2Title: 
+  DecisionPoint2Outcome2Text: 
+  DecisionPoint3Outcome2Title: 
+  DecisionPoint3Outcome2Text: 
+  LearningObjectives1Title: 'LGBTQ+ Residents in LTC  '
+  LearningObjectives1Text: To recognize the impact of heterosexism and homophobia
+    on the health and wellness of LGBTQ+ residents and learn appropriate responses
+  LearningObjectives2Title: 
+  LearningObjectives2Text: To understand the principle of creating a positive space
+    in long-term care
+  LearningObjectives3Title: 
+  LearningObjectives3Text: "To learn the importance and use of gender-neutral language
+    and to become familiar with the relevance and importance of Resident\u2019s Bill
+    of Rights in Long-Term Care. "
+  BestPractices1Title: 'LGBTQ+ Residents in LTC  '
+  BestPractices1Text: Educate ourselves about the harmful impact of heterosexism,
+    homophobia and transphobia on the health and well-being of LGBTQ+ residents and
+    keep up-to-date with current best practices.
+  BestPractices2Title: 
+  BestPractices2Text: 'Become an ally to residents by knowing the issues, listening
+    deeply with empathy and an attitude of openness and respect, rejecting stereotypes
+    and judgements, and learning how to be an advocate. '
+  BestPractices3Title: 
+  BestPractices3Text: Help create a safe and welcoming, positive space with photo/art/educational
+    displays, LGBTQ+ - friendly activities and special events which celebrate diversity.

@@ -87,6 +87,7 @@ namespace Yarn.Unity.Example
         //public FadeObjectInOut roomShade;
 
         public GameObject ConversUI;
+        public bool Conversable = true;
 
         //public string characterName = "";
 
@@ -115,6 +116,11 @@ namespace Yarn.Unity.Example
             {
                 FindObjectOfType<Yarn.Unity.DialogueRunner>().AddScript(scriptToLoad);
             }
+
+            if (scriptToLoad != null)
+            {
+                //ConversUI = GameObject.Find("sprite/SpaceBar");    
+            }
             movement = GetComponent<Waypoints>();
         }
 
@@ -133,16 +139,39 @@ namespace Yarn.Unity.Example
         
         public void ICanConverse(bool inRange)
         {
-           
-            if (inRange)
+            if (Conversable == true)
             {
-                if( ConversUI !=null)
-                    ConversUI.SetActive(true);
+                if (inRange)
+                {
+                    if (FindObjectOfType<DialogueRunner>().isDialogueRunning == false)
+                    {
+                        //   Debug.Log("inRange");
+                        if (ConversUI != null)
+                        {
+                            ConversUI.gameObject.SetActive(true);
+                            // Debug.Log("ConverseUI");
+                        }
+                    }
+                    else
+                    {
+                        if (ConversUI != null)
+                        {
+                            this.ConversUI.gameObject.SetActive(false);
+                            //  Debug.Log("NoConverseUI");
+                        }
+                    }
+                }
+                else
+                {
+                    if (ConversUI != null)
+                    {
+                        this.ConversUI.gameObject.SetActive(false);
+                    }
+                }
             }
             else
             {
-                if (ConversUI != null)
-                    ConversUI.SetActive(false);
+                this.ConversUI.gameObject.SetActive(false);
             }
         }
         public void BakeData()
@@ -155,6 +184,7 @@ namespace Yarn.Unity.Example
             data.GameObjectName = this.gameObject.name;
            
             data.sprite = this.GetComponentInChildren<SpriteRenderer> ().sprite;
+            data.ableToConvo = Conversable;
            // data.prefab = test;
 
         }
@@ -166,15 +196,25 @@ namespace Yarn.Unity.Example
             transform.localScale =  data.scale  ;
             talkToNode= data.talkToNode  ;
             scriptToLoad = data.scriptToLoad  ;
-
+            Conversable = data.ableToConvo;
             gameObject.name = data.GameObjectName;
            
             GetComponentInChildren<SpriteRenderer>().sprite = data.sprite;
             GetComponentInChildren<SpriteRenderer>().gameObject.AddComponent<BoxCollider>();
-            if(data.visibleAtStart == false)
+            NpcAnimController npcAnim = GetComponentInChildren<NpcAnimController>();
+         //   Waypoints wp = GetComponent<Waypoints>();
+            //wp.Setup();
+            if (data.AnimatorController != null && npcAnim)
+            {
+                //Debug.Log("fdfffffffff");
+                npcAnim.test = data.AnimatorController;
+                npcAnim.Setup();
+            }
+            if (data.visibleAtStart == false)
             {
                 turnInvisibleDelegate();
             }
+         
         }
     }
    

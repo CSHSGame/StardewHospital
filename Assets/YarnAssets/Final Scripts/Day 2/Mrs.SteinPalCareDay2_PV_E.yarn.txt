@@ -1,0 +1,44 @@
+title: PalCareDay2Intro
+tags: 
+colorID: 0
+position: 16,98
+---
+<<if visited("PalCareDay2Intro") is true>>
+[$playerName]: I don't need to talk with her right now.
+<<else>>
+[$Char1Last]: Hello.
+[$playerName]: Hi there [$Char1Last], looks like you’re having fun in here!
+[happy][$Char1Last]: Hi! What’s your name again, dear?
+[[Oh [$Char1Last], don’t you remember? I’m [$playerName]. We met yesterday.|PalCareDay2_OhRight]]
+[[I'm [$playerName]. I was here meeting all the residents, and we met as well!|PalCareDay2_OhRight]]
+<<endif>>
+===
+title: PalCareDay2_OhRight
+tags: 
+colorID: 0
+position: 12,344
+---
+[happy][$Char1Last]: Oh, right! Hi.
+[$playerName]: Nice to see you!
+[$Char1Last]:  Yes, it is. I’m just preparing for my Tea ‘n Talk later.  I always get called on to lead the program because I can get everyone talking!
+[$playerName]:  That’s great,  [$Char1First]! I've heard how the residents look forward to the program.
+[$Char1Last]: Of course, dear. Can you come and pick me up afterwards? 
+[$playerName]: Sure, see you later!
+<<Fade FADE>>
+[[PalCareDay2TeaTalk]]
+===
+title: PalCareDay2TeaTalk
+tags: 
+colorID: 0
+position: 13,597
+---
+<<DeFade FADE>>
+[$playerName]: How did it go?
+[$Char1Last]: Pretty well, thanks! *cough cough*
+[$playerName]: I can see why the residents enjoy this program, [$Char1Last]. You have a great way of making people feel comfortable.
+[$Char1Last]: I’ve learned as I get older that all that matters in life is love and relationships.
+[$playerName]: That’s a lovely thought. I’m learning a lot from you, [$Char1Last]. I’ll see you tomorrow bright and early.
+[$Char1Last]: Good. Thanks for helping out. See you tomorrow.
+[$playerName]: Bye.
+<<SetObjective GameManager ToWilliamsDay2>>
+===

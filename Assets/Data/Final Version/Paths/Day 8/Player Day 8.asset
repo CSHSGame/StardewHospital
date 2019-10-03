@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: Player Day 8
+  m_EditorClassIdentifier: 
+  position: {x: -1.8391023, y: 0.25581813, z: 3.494152}
+  rotation: {x: -0, y: -0, z: -0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  sprite: {fileID: 21300006, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  AnimatorController: {fileID: 0}
+  talkToNode: 
+  scriptToLoad: {fileID: 0}
+  GameObjectName: Player
+  ableToConvo: 0
+  waypoints:
+  - Name: ' '
+    location:
+    - {x: 0.4304057, y: 0.13, z: 6.893543}
+  - Name: ' '
+    location:
+    - {x: 0.4304057, y: 0.13, z: 6.893543}
+    - {x: 0.4270944, y: 0.13, z: 7.8125157}
+    - {x: -29.397047, y: 0.13, z: 7.8310466}
+    - {x: -29.491327, y: 0.13, z: 39.26715}
+    - {x: -21.263529, y: 0.13, z: 39.26715}
+    - {x: -19.460453, y: 0.13, z: 38.47923}
+  - Name: ' '
+    location:
+    - {x: -19.46045, y: 0.13, z: 38.47923}
+  - Name: ' '
+    location:
+    - {x: -29, y: 0.13, z: 36.51073}
+  - Name: ' '
+    location:
+    - {x: -29, y: 0.13, z: 36.51073}
+    - {x: -29, y: 0.13, z: 9}
+    - {x: 5.2, y: 0.13, z: 9}
+    - {x: 5.2, y: 0.13, z: 6.8}
+  DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2

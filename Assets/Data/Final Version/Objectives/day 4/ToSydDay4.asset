@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: ToSydDay4
   m_EditorClassIdentifier: 
   name: ToSydDay4
-  target: 0
+  target: {fileID: 11400000, guid: f92d622b15502444d843f5c14b8bed17, type: 2}
   wayfindingIndex: 7
-  displayText: 
+  displayText: Syd has been feeling down recently. Go talk to him in his room.

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547f6af3012de2d4babaa342c8f02d75, type: 3}
+  m_Name: Player Day 7
+  m_EditorClassIdentifier: 
+  position: {x: -1.8391023, y: 0.25581813, z: 3.494152}
+  rotation: {x: -0, y: -0, z: -0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  sprite: {fileID: 21300006, guid: 764e819b9c0f01142a769ad8f83271eb, type: 3}
+  AnimatorController: {fileID: 0}
+  talkToNode: Day_1_Living_Area_Final
+  scriptToLoad: {fileID: 0}
+  GameObjectName: Player
+  ableToConvo: 0
+  waypoints:
+  - Name: ' '
+    location:
+    - {x: 1, y: 0.13, z: 10}
+  - Name: ' '
+    location:
+    - {x: 1, y: 0.13, z: 10}
+    - {x: 5.2, y: 0.13, z: 10}
+    - {x: 5.2, y: 0.13, z: 6.8}
+  DialogueTriggerPrefab: {fileID: 0}
+  visibleAtStart: 1
+  selfMovement: 0
+  loopSelfMovement: 0
+  MoveSpeed: 2
