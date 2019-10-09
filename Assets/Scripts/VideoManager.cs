@@ -4,6 +4,8 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using FMODUnity;
+
 public class VideoManager : MonoBehaviour
 {
 
@@ -25,12 +27,13 @@ public class VideoManager : MonoBehaviour
         if(vidPlayer.isPlaying)
         {
             VidPlaying = true;
+            //this.gameObject.GetComponent<StudioEventEmitter>()
         }
         else
         {
             VidPlaying = false;
         }
-    }
+    } 
 
     [YarnCommand("turnOnn")]
     public void SetGameObjectOn()

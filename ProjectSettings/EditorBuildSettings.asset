@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FinalScenes/Final Scene All Days(Sept 3).unity
+    path: Assets/Scenes/FinalScenes/Final Scene Start Screen.unity
+    guid: f26350d66722b444481004104f17e077
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/Final Scene All Days(Oct 8).unity
     guid: c5158d2f60a14ce43b867106127fc41c
   m_configObjects: {}
