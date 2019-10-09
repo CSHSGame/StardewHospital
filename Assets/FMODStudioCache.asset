@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114116534061295216}
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   EditorEvents:
   - {fileID: 114376089031421478}
   - {fileID: 114982419413042482}
@@ -27,9 +27,13 @@ MonoBehaviour:
   - {fileID: 114925098261990598}
   - {fileID: 114273839110821794}
   - {fileID: 114028417451481708}
-  MasterBankRef: {fileID: 114888897158820752}
+  - {fileID: 114925678956602230}
+  - {fileID: 114097260966938494}
+  - {fileID: 114664008227608888}
+  - {fileID: 114775503834214396}
+  MasterBankRef: {fileID: 114740500363631830}
   StringsBankRef: {fileID: 114116534061295216}
-  stringsBankWriteTime: 637060787640000000
+  stringsBankWriteTime: 637062287100000000
   cacheVersion: 2
 --- !u!114 &114006681032154484
 MonoBehaviour:
@@ -90,7 +94,7 @@ MonoBehaviour:
   Path: snapshot:/Footsteps
   guid: d6276620e125524ea029ccd3b3c8d710
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -128,6 +132,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114086038850523266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Grass
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114086386247970392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +192,28 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114097260966938494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/UnMuteMusic
+  guid: 6ee6978e49916545979e63b5cfe3d39e
+  Banks:
+  - {fileID: 114740500363631830}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114109471859956882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,12 +258,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: Fmod\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637060787640000000
+  Path: Fmod/Build/Desktop/Master Bank.strings.bank
+  lastModified: 637062287100000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1226
+    Value: 1460
   Exists: 1
 --- !u!114 &114122001623142890
 MonoBehaviour:
@@ -358,7 +399,7 @@ MonoBehaviour:
   Path: event:/UI/ClipboardUp
   guid: 86903a7d02301043aa70155e0d508974
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -381,6 +422,36 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114263569131595838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tile
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114264561195800924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pavement
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114270469511063216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +481,7 @@ MonoBehaviour:
   Path: event:/RoomAmbience
   guid: ba9006f928271f4391f0be7524c4d078
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -432,7 +503,7 @@ MonoBehaviour:
   Path: event:/UI/PageTurn
   guid: 1597bf17f79e4b4dabfc651b2901c421
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -559,7 +630,7 @@ MonoBehaviour:
   Path: event:/Music
   guid: a7ec3b22a20e824984be7b4cedbb778b
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -747,6 +818,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114552209184589232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: RoomAmb
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114568589967731368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +997,7 @@ MonoBehaviour:
   Path: event:/Ac Close
   guid: a9c5f09e51a696408379ff4b3d0db8f5
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -949,6 +1035,28 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 1.0032276
+--- !u!114 &114664008227608888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UnmuteMusic
+  guid: 851b08bde722e249a44109394abdccf4
+  Banks:
+  - {fileID: 114740500363631830}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &114684645649181284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1117,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114704822361415506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Wood
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114711229283158102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1191,7 @@ MonoBehaviour:
   Path: event:/UI/ClipboardDown
   guid: a7f90e867d20774c9d4d33f56aba90b7
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1106,6 +1229,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114740500363631830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/pawng/StardewHospital/Fmod/Build/Desktop/Master Bank.bank
+  lastModified: 637062287100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 11373536
+  Exists: 1
 --- !u!114 &114740506714306542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,7 +1291,7 @@ MonoBehaviour:
   Path: event:/HallwayAmb
   guid: 276e4334417c5a4980322025656de027
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1247,12 +1388,12 @@ MonoBehaviour:
   Path: event:/Ambiences
   guid: de324cbeee162640bbd02c343822cf85
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114711229283158102}
+  - {fileID: 114552209184589232}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1271,6 +1412,28 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114775503834214396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/MuteMusic
+  guid: a3038f381a49044aa2e291a7f805810d
+  Banks:
+  - {fileID: 114740500363631830}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114777878156673890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,7 +1713,7 @@ MonoBehaviour:
   Path: event:/WashroomFanClose
   guid: 55b73269fa09cb41a7d9eac15313f0ce
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1558,6 +1721,28 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 6
   Length: 23647
+--- !u!114 &114925678956602230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/MuteMusic
+  guid: 217b4a362b900e48b7518779438d9159
+  Banks:
+  - {fileID: 114740500363631830}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &114934217968324738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,7 +1809,7 @@ MonoBehaviour:
   Path: event:/GardenAmbience
   guid: 127f9448aadddd4ba8fc8857241874b9
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1679,15 +1864,15 @@ MonoBehaviour:
   Path: event:/Footsteps
   guid: ca96224230b81340a3332938403b8f7f
   Banks:
-  - {fileID: 114888897158820752}
+  - {fileID: 114740500363631830}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114608199950143944}
-  - {fileID: 114783871143952656}
-  - {fileID: 114781748978354246}
-  - {fileID: 114832876040860074}
+  - {fileID: 114264561195800924}
+  - {fileID: 114086038850523266}
+  - {fileID: 114704822361415506}
+  - {fileID: 114263569131595838}
   MinDistance: 0
   MaxDistance: 0
   Length: 250
