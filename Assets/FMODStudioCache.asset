@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114116534061295216}
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   EditorEvents:
   - {fileID: 114376089031421478}
   - {fileID: 114982419413042482}
@@ -27,9 +27,9 @@ MonoBehaviour:
   - {fileID: 114925098261990598}
   - {fileID: 114273839110821794}
   - {fileID: 114028417451481708}
-  MasterBankRef: {fileID: 114109471859956882}
+  MasterBankRef: {fileID: 114888897158820752}
   StringsBankRef: {fileID: 114116534061295216}
-  stringsBankWriteTime: 637009757490000000
+  stringsBankWriteTime: 637060787640000000
   cacheVersion: 2
 --- !u!114 &114006681032154484
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
   Path: snapshot:/Footsteps
   guid: d6276620e125524ea029ccd3b3c8d710
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -217,8 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: Fmod/Build/Desktop/Master Bank.strings.bank
-  lastModified: 637009757490000000
+  Path: Fmod\Build\Desktop\Master Bank.strings.bank
+  lastModified: 637060787640000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -358,7 +358,7 @@ MonoBehaviour:
   Path: event:/UI/ClipboardUp
   guid: 86903a7d02301043aa70155e0d508974
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -410,7 +410,7 @@ MonoBehaviour:
   Path: event:/RoomAmbience
   guid: ba9006f928271f4391f0be7524c4d078
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   Path: event:/UI/PageTurn
   guid: 1597bf17f79e4b4dabfc651b2901c421
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -559,7 +559,7 @@ MonoBehaviour:
   Path: event:/Music
   guid: a7ec3b22a20e824984be7b4cedbb778b
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -867,6 +867,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114608199950143944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pavement
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114625688316819102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,7 +911,7 @@ MonoBehaviour:
   Path: event:/Ac Close
   guid: a9c5f09e51a696408379ff4b3d0db8f5
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -994,6 +1009,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114711229283158102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: RoomAmb
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114712889124343364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,7 +1068,7 @@ MonoBehaviour:
   Path: event:/UI/ClipboardDown
   guid: a7f90e867d20774c9d4d33f56aba90b7
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1120,7 +1150,7 @@ MonoBehaviour:
   Path: event:/HallwayAmb
   guid: 276e4334417c5a4980322025656de027
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1217,12 +1247,12 @@ MonoBehaviour:
   Path: event:/Ambiences
   guid: de324cbeee162640bbd02c343822cf85
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114890957110766544}
+  - {fileID: 114711229283158102}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1256,6 +1286,36 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114781748978354246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Wood
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114783871143952656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Grass
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114784309406211614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,6 +1383,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23647
+--- !u!114 &114832876040860074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tile
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114846232539245880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,6 +1458,24 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114888897158820752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Julian\Documents\StardewHospital\Fmod\Build\Desktop\Master Bank.bank
+  lastModified: 637060787660000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 11370112
+  Exists: 1
 --- !u!114 &114890957110766544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1550,7 @@ MonoBehaviour:
   Path: event:/WashroomFanClose
   guid: 55b73269fa09cb41a7d9eac15313f0ce
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1531,7 +1624,7 @@ MonoBehaviour:
   Path: event:/GardenAmbience
   guid: 127f9448aadddd4ba8fc8857241874b9
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1586,15 +1679,15 @@ MonoBehaviour:
   Path: event:/Footsteps
   guid: ca96224230b81340a3332938403b8f7f
   Banks:
-  - {fileID: 114109471859956882}
+  - {fileID: 114888897158820752}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114759088107116008}
-  - {fileID: 114965117935410790}
-  - {fileID: 114122001623142890}
-  - {fileID: 114734637635336218}
+  - {fileID: 114608199950143944}
+  - {fileID: 114783871143952656}
+  - {fileID: 114781748978354246}
+  - {fileID: 114832876040860074}
   MinDistance: 0
   MaxDistance: 0
   Length: 250

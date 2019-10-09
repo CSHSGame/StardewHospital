@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class InGameMenu : MonoBehaviour {
 
     public Button DaySelectionButton;
-    public Button AudioOptionsButton;
+    public Button ControlsButton;
     public Button CreditsButton;
     public Button BackToMainMenuButton;
     public Button QuitGameButton;
 
     public GameObject DaySelectionMenu;
-    public GameObject AudioSelectionMenu;
+    public GameObject ControlsMenu;
     public GameObject CreditsMenu;
     public GameObject ButtonMenu;
 
@@ -53,15 +53,15 @@ public class InGameMenu : MonoBehaviour {
         EODClipboard.LoadEoDNotes(dayIndex);
     }
 
-    public void GoToAudioOptions()
+    public void GoToControls()
     {
-        if (AudioSelectionMenu.activeInHierarchy == true)
+        if (ControlsMenu.activeInHierarchy == true)
         {
-            AudioSelectionMenu.SetActive(false);
+            ControlsMenu.SetActive(false);
         }
-        else if (AudioSelectionMenu.activeInHierarchy == false)
+        else if (ControlsMenu.activeInHierarchy == false)
         {
-            AudioSelectionMenu.SetActive(true);
+            ControlsMenu.SetActive(true);
         }
     }
 

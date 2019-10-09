@@ -1,17 +1,13 @@
 [LOG] System::create                           : Header version = 1.10.08. Current version = 1.10.08.
-[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=11008 (96768), maxchannels=256, flags=0x00020000
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
-[LOG] OutputCoreAudio::enumerate               : Enumerating...
-[LOG] OutputCoreAudio::enumerate               : Found output driver: "MacBook Pro Speakers".
-[LOG] OutputCoreAudio::enumerate               : Found output driver: "Soundflower (2ch)".
-[LOG] OutputCoreAudio::enumerate               : Found output driver: "Soundflower (64ch)".
-[LOG] OutputCoreAudio::enumerate               : Done.
-[LOG] OutputCoreAudio::init                    : Output running 2 channels at 48000Hz sample rate.
-[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x1b81fd008 isAsync 0 updatePeriod 0.02
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 000000004FBB71C8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,113 +16,6 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] SystemI::createSound                     : filename = Fmod/Build/Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0x1a6b83898 : node = 0x1a6b83a50
-[LOG] SystemI::createSound                     : add node to async list : head = 0x198175df8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x1a6b83898
-[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Build/Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1306592
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 37280
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x1a6b83b68
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='BedroomAmbience render 001', format=2, channels=2, frequency=48000, lengthbytes=292192, lengthpcm=1135064, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.032858.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x1a6b83898
-[LOG] SoundI::getSubSound                      : sound 0x1a6b83898.  Subsound index 0 / 1
-[LOG] SoundI::release                          : BedroomAmbience render 001 (0x1a6b83898)
-[LOG] SoundI::release                          :     BedroomAmbience render 001 (0x16f6640d8)
-[LOG] SoundI::release                          :     BedroomAmbience render 001 (0x16f664268)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x10f909698)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x16f282e48)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x16f281388)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x19815f708)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x1a6551558)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x1a65516e8)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x10f90df68)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x16f275c88)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x16f24b108)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x18df99568)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x1a6550c58)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x1a6550de8)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x19812c9a8)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x10f8e40c8)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x16f27d448)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x198160748)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x199cc43a8)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x199cc4538)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x18dfb1268)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x10f894a98)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x10f898768)
-[LOG] SoundI::release                          : WashroomFan render 001 Mono (0x198160338)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x1a6568458)
-[LOG] SoundI::release                          :     WashroomFan render 001 Mono (0x1a65685e8)
-[LOG] SoundI::release                          :  (0x199cc2af8)
-[LOG] SoundI::release                          :     Fly_Grass_Footstep-004 render 001 (0x199cc2c68)
-[LOG] SoundI::release                          :  (0x199cc2398)
-[LOG] SoundI::release                          :     Fly_Grass_Footstep-005 render 001 (0x199cc2508)
-[LOG] SoundI::release                          :  (0x199cc09f8)
-[LOG] SoundI::release                          :     Fly_Grass_Footstep-006 render 001 (0x199cc0b68)
-[LOG] SoundI::release                          :  (0x1a654f128)
-[LOG] SoundI::release                          :     Fly_Grass_Footstep-007 render 001 (0x1a654f298)
-[LOG] SoundI::release                          :  (0x10fac7c28)
-[LOG] SoundI::release                          :     Fly_Grass_Footstep-008 render 001 (0x10fac7d98)
-[LOG] SoundI::release                          :  (0x199cc1358)
-[LOG] SoundI::release                          :     FS_Tile-001 (0x199cc14c8)
-[LOG] SoundI::release                          :  (0x199cbf718)
-[LOG] SoundI::release                          :     FS_Tile-002 (0x199cbf888)
-[LOG] SoundI::release                          :  (0x199cc1a58)
-[LOG] SoundI::release                          :     FS_Tile-003 (0x199cc1bc8)
-[LOG] SoundI::release                          :  (0x10fac65b8)
-[LOG] SoundI::release                          :     FS_Tile-004 (0x10fac54b8)
-[LOG] SoundI::release                          :  (0x10facb0b8)
-[LOG] SoundI::release                          :     FS_Tile-005 (0x10facb228)
-[LOG] SoundI::release                          :  (0x199cc0ea8)
-[LOG] SoundI::release                          :     FS_Wood-001 (0x199cc1018)
-[LOG] SoundI::release                          :  (0x10fad1558)
-[LOG] SoundI::release                          :     FS_Wood-002 (0x10fac9e18)
-[LOG] SoundI::release                          :  (0x1a654fa88)
-[LOG] SoundI::release                          :     FS_Wood-003 (0x1a654fbf8)
-[LOG] SoundI::release                          :  (0x10fac7778)
-[LOG] SoundI::release                          :     FS_Wood-004 (0x10fac78e8)
-[LOG] SoundI::release                          :  (0x10fac73e8)
-[LOG] SoundI::release                          :     FS_Wood-005 (0x10fac6d08)
-[LOG] SoundI::release                          :  (0x10fac80d8)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-001 (0x10fac8248)
-[LOG] SoundI::release                          :  (0x199cbfbc8)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-002 (0x199cbfd38)
-[LOG] SoundI::release                          :  (0x1a654ff38)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-003 (0x1a65500a8)
-[LOG] SoundI::release                          :  (0x10facb568)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-004 (0x10facb6d8)
-[LOG] SoundI::release                          :  (0x10fac7278)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-005 (0x10fac69c8)
-[LOG] SoundI::release                          :  (0x10fac6108)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-006 (0x10fac6278)
-[LOG] SoundI::release                          :  (0x1a654f5d8)
-[LOG] SoundI::release                          :     Fly_Pavement_Step-007 (0x1a654f748)
-[LOG] SoundI::release                          :  (0x1a65503e8)
-[LOG] SoundI::release                          :     WorkAmbience (0x1a6550558)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
@@ -138,6 +27,4 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
