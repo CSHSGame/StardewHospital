@@ -27,9 +27,13 @@ MonoBehaviour:
   - {fileID: 114925098261990598}
   - {fileID: 114273839110821794}
   - {fileID: 114028417451481708}
+  - {fileID: 114528237749454444}
+  - {fileID: 114189689622007834}
+  - {fileID: 114552124594861260}
+  - {fileID: 114749633588507530}
   MasterBankRef: {fileID: 114699615141914824}
   StringsBankRef: {fileID: 114116534061295216}
-  stringsBankWriteTime: 637060787640000000
+  stringsBankWriteTime: 637062295280000000
   cacheVersion: 2
 --- !u!114 &114006681032154484
 MonoBehaviour:
@@ -285,11 +289,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Fmod\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637060787640000000
+  lastModified: 637062295280000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1226
+    Value: 1460
   Exists: 1
 --- !u!114 &114122001623142890
 MonoBehaviour:
@@ -351,6 +355,43 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114185927601021260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Pavement
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114189689622007834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/UnMuteMusic
+  guid: 6ee6978e49916545979e63b5cfe3d39e
+  Banks:
+  - {fileID: 114699615141914824}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114200078110217592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +407,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114211957471241764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Tile
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114214757679422586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +668,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114353977142002706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Wood
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114354002033960344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -829,6 +900,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114528237749454444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/MuteMusic
+  guid: 217b4a362b900e48b7518779438d9159
+  Banks:
+  - {fileID: 114699615141914824}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &114529696239124976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,6 +952,28 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114552124594861260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/UnmuteMusic
+  guid: 851b08bde722e249a44109394abdccf4
+  Banks:
+  - {fileID: 114699615141914824}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &114552209184589232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1124,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114615208216395922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: RoomAmb
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114625688316819102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,11 +1300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\Julian\Documents\StardewHospital\Fmod\Build\Desktop\Master Bank.bank
-  lastModified: 637060787660000000
+  lastModified: 637062295260000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 11370112
+    Value: 11373536
   Exists: 1
 --- !u!114 &114704822361415506
 MonoBehaviour:
@@ -1358,6 +1488,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3742
+--- !u!114 &114749633588507530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/MuteMusic
+  guid: a3038f381a49044aa2e291a7f805810d
+  Banks:
+  - {fileID: 114699615141914824}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114753387590951678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,7 +1604,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114768277409689638}
+  - {fileID: 114615208216395922}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1568,6 +1720,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114788211371772736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Grass
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114800143861926772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1943,10 +2110,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114105495341024604}
-  - {fileID: 114038812630434388}
-  - {fileID: 114986242208851974}
-  - {fileID: 114238511601534700}
+  - {fileID: 114185927601021260}
+  - {fileID: 114788211371772736}
+  - {fileID: 114353977142002706}
+  - {fileID: 114211957471241764}
   MinDistance: 0
   MaxDistance: 0
   Length: 250

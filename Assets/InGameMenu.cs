@@ -9,12 +9,13 @@ public class InGameMenu : MonoBehaviour {
     public Button DaySelectionButton;
     public Button ControlsButton;
     public Button CreditsButton;
-    public Button BackToMainMenuButton;
+    public Button GlossaryButton;
     public Button QuitGameButton;
 
     public GameObject DaySelectionMenu;
     public GameObject ControlsMenu;
     public GameObject CreditsMenu;
+    public GameObject GlossaryMenu;
     public GameObject ButtonMenu;
 
     public EoDClipboard EODClipboard;
@@ -77,10 +78,23 @@ public class InGameMenu : MonoBehaviour {
         }
     }
 
+    public void GoToGlossaryMenu()
+    {
+        if (GlossaryMenu.activeInHierarchy == true)
+        {
+            GlossaryMenu.SetActive(false);
+        }
+        else if (GlossaryMenu.activeInHierarchy == false)
+        {
+            GlossaryMenu.SetActive(true);
+        }
+    }
+
     public void GoToMainMenu()
     {
         SceneManager.LoadScene(0);
     }
+
 
     public void QuitGame()
     {
