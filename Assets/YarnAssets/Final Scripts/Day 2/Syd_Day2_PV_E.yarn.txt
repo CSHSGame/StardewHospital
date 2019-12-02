@@ -9,7 +9,7 @@ position: 540,260
 [$Char3Last]: Hello.
 [$playerName]: [$Char3Last], May I come in?
 [sad][$Char3Last]: Come in.
-[$playerName]: Hi there, Mr.Wojcik.  My name is [$playerName]. I wanted to introduce myself and help you get ready for the day, if I can.
+[$playerName]: Hi there, Mr.Wojcik.  My name is [$playerName]. I wanted to introduce myself and help you get ready for the day.
 [$playerName]: Music therapy is this morning. I heard you were a musician.  Would you like to go?
 [sad][$Char3Last]: Hey, you can call me [$Char3First]. But I don’t think I feel like going out today.
 [$playerName]: You sure?

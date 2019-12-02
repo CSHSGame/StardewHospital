@@ -20,7 +20,7 @@ position: 540,260
 [$playerName]: I would love to do that! I have one question. 
 [$NurseManager]: Yes! 
 [$playerName]: Can the resident choose their own seat? 
-[$NurseManager]: No, we have a seating plan for our residents which is organized based on resident’s needs, preferences and other circumstances.  
+[$NurseManager]: No, we have a seating plan for our residents which is organized based on resident’s needs, preferences and other circumstances. Don't hesitate to ask a resident where they sit or a staff member for the seating plan.
 [$playerName]: Great. 
 [$NurseManager]: Alright, let’s go the multifaith room. Again, feel free to ask questions and I’ll try my best to answer. 
 [$playerName]: Yes. 
@@ -37,7 +37,7 @@ position: 540,260
 <<SetPath Player Three>><<SetPath Nurse Three>>
 [$NurseManager]: We are here! Oh, I think Eve is setting up for the "Tea N’ Talk" program.  
 [$playerName]: What’s that? 
-[$NurseManager]: Why don’t we ask Eve herself. Goes to see Eve. Hi there Eve! 
+[$NurseManager]: Why don’t we ask Eve herself. Hi there Eve! 
 [$Char1Last]: Hi [$NurseManager]. Who do we have here? 
 [$playerName]: Hi Eve, I’m [$playerName]. I was just going to ask what activity are you planning. 
 [$Char1Last]: It’s called “Tea N’ Talk”. The Recreation Staff invite and assist residents to join the program and we discuss “hot” topics in the news or in life.  
@@ -51,10 +51,10 @@ position: 540,260
 [$NurseManager]: This is what a private room looks like. Each room has a bed with a call bell, side table, chair, cabinet and a bathroom. 
 [$NurseManager]: Each resident is encouraged to customize their own room to make them feel comfortable and welcomed in their private space. 
 [$playerName]: Great! It's really important that the residents can make their room welcoming and comfortable.  
-[$NurseManager]: Let's visit Mr. Wojick’s room.  
+[$NurseManager]: I agree. How about we visit Mr.Wojick's room?
 //Goes to Mr. Wojick’s room. 
 <<SetPath Player Five>><<SetPath Nurse Five>>
-[$NurseManager]: Knocks on the door. Hi Syd! It’s [$NurseManager]. Can I introduce you to a new student? 
+[$NurseManager]: Hi Syd! It’s [$NurseManager]. Can I introduce you to a new student? 
 [$Char3Last]:  No! I don’t want to talk to anyone right now. Sorry….can you please leave? 
 [$NurseManager]: Alright [$Char3Last]. We understand, maybe another time.  
 [$Char3Last]: Yeah.. Sure 
@@ -66,7 +66,7 @@ position: 540,260
 <<SetPath Player Six>><<SetPath Nurse Six>>
 [$NurseManager]: Oh, [$playerName], this is [$Richard], a good friend of Syd's. Good morning [$Richard], visiting Syd today? 
 [$Richard]: Good morning to you [$NurseManager]! Yes, I'm here for a visit.  
-[$NurseManager]: That’s great! By the way this is [$playerName], they're doing their field placement with us to learn more about Long Term Care.   
+[$NurseManager]: That’s great! By the way this is [$playerName], they're doing field placement with us to learn more about Long Term Care.   
 [$Richard]: Great! I’ll be seeing you then [$playerName].
 [$NurseManager]: Alright, see you later. 
 //They Go to the garden, richard goes to syds room.
@@ -84,7 +84,7 @@ position: 540,260
 [$playerName]: Nice to meet you too. 
 //They go back to the nursing station 
 <<SetPath Player Eight>><<SetPath Nurse Eight>>
-[$NurseManager]: So that was our tour. Check out this terminal next to meet at the end of each of your days here. If you have any questions, I am here to help you as best as I can, and again, welcome to Bloom Village! 
+[$NurseManager]: Check out this terminal next to meet at the end of each of your days here. If you have any questions, I am here to help you as best as I can, and again, welcome to Bloom Village! 
 [$playerName]: Thank you [$NurseManager]. I’m glad I had this tour, it really helped. I’m really excited to be here! 
 <<PrepForNextDay GameManager>>
 <<SetObjective GameManager ReviewEoDNotesDay1>>

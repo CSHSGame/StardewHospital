@@ -18,17 +18,18 @@ MonoBehaviour:
   DP2Outcome1TrueOutcome2False: 1
   DP3Outcome1TrueOutcome2False: 1
   DecisionPoint1Outcome1Title: Ranjit - Self Care
-  DecisionPoint1Outcome1Text: 'Today you were a good friend to Ranjit, listening to
-    his concerns and offering good advice regarding self-care. LTC is a demanding
-    field, and good self-care is critical in avoiding burnout. '
+  DecisionPoint1Outcome1Text: 'Today you were a good friend to Ranjit, actively listening
+    to his concerns and offering good advice regarding self-care. Working in long
+    term care can be demanding field, and good self-care is critical in avoiding burnout. '
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: Ranjit - Self Care
-  DecisionPoint1Outcome2Text: 'Today you were a good friend to Ranjit, listening to
-    his concerns and offering good advice regarding self-care. LTC is a demanding
-    field, and good self-care is critical in avoiding burnout. '
+  DecisionPoint1Outcome2Text: "Today you were a good friend to Ranjit, actively listening
+    to his concerns and offering good advice regarding self-care. Working in long
+    term care can be demanding field, and good self-care is critical in avoiding burnout.
+    \n"
   DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 

@@ -10,11 +10,16 @@ public class CharacterController : MonoBehaviour {
     public float speed;
     private Vector3 direction;
     private Rigidbody rb;
+    public VideoManager vidManager;
+
     public BodyPart bodyPartBody;
     public BodyPart bodyPartHead;
     public BodyPart bodyPartHair;
 
-    public VideoManager vidManager;
+    public GameObject[] hairParts;
+    public GameObject[] headParts;
+    public GameObject[] bodyParts;
+
     //public SpriteRenderer sprite;
 
     // Use this for initialization

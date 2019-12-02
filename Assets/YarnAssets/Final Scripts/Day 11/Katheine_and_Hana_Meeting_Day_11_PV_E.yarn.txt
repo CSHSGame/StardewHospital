@@ -15,7 +15,7 @@ position: 1225,249
 [$Hana]: My mom told me the greatest lesson she ever learned was how in the end all that matters are love and relationships. I’m trying to take it one day at a time and focus my energy on my kids.
 [$playerName]: I remember Eve telling me the same thing after our first Tea ‘N Talk session!
 [$NurseManager]:   Eve was very wise.  How are you doing, [$Katherine]?
-[$Katherine]: (crying)  It’s so hard to lose her ... And now I’ll have a new roommate already - tomorrow!  But no one can take her place… 
+[$Katherine]: (crying)  It’s so hard to lose her ... And I already have a new roommate. But no one can take her place… 
 [[It’s going to be okay. Don’t cry -- you’re stronger than you know!|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
 [[[$Katherine], it’s okay to feel sad, it’s okay to cry. You don’t have to try to be ‘strong.’	Eve was your dear friend.|Katherine_and_Hana_Meeting_2]]<<Katherine_and_Hana_Meeting == false>>
 <<endif>>
@@ -32,7 +32,6 @@ position: 1221,534
 [$Katherine]: It’s so difficult when someone you care about dies. 
 [$playerName]: I can't sleep.  I keep replaying our last conversation in my head….
 //[Both the Player and [$Katherine] are crying now]
-[$NurseManager]: (shakes head gently at [$playerName] to indicate overly emotional behaviour is not appropriate.)
 //(Scroll: We have to maintain a professional relationship with our residents and others at all times. It’s  not appropriate to project overly emotional reactions onto them.)
 [$NurseManager]:  [$Katherine], I’d really like to hear more about how you’re feeling?
 [$Katherine]: ....(She remains silent as they cry and [$Hana] consoles [$Katherine])
@@ -53,7 +52,7 @@ position: 1221,534
 [$Hana]: Thank you.
 [$Katherine]:  [$Hana], I’ll see you tomorrow for the celebration of Eve’s life.  
 [$NurseManager]:  Yes, I’ll see you tomorrow at 2 o’clock. 
-[$Katherine]: It's just what Eve wanted. . .  
+[$Katherine]: It's just what Eve would have wanted.
 [$playerName]: See you then.
 <<PrepForNextDay GameManager>>
 <<SetObjective GameManager ReviewEoDNotesDay11>>

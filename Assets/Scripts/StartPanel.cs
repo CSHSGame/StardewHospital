@@ -60,8 +60,8 @@ public class StartPanel : MonoBehaviour {
             if(isStart)
             {
                 //shadow Pier code 
-                CharacterSelectionContinue cs = FindObjectOfType<CharacterSelectionContinue>();
-                cs.Save();
+                //CharacterSelectionContinue cs = FindObjectOfType<CharacterSelectionContinue>();
+               // cs.Save();
                 // end 
                 StartCoroutine(StartSpashTimer());
                
@@ -153,9 +153,10 @@ public class StartPanel : MonoBehaviour {
     public IEnumerator StartSpashTimer()
     {
         StartSplash.SetActive(true);
-        yield return new WaitForSeconds(10.0f);
-        //Debug.Log("Load Game Scene");
+        yield return new WaitForSeconds(1.0f);
+        Debug.Log("Load Game Scene");
         SceneManager.LoadScene(1);
+        // Debug.Log(SceneManager.GetActiveScene);
     }
 
     public IEnumerator EndSplashTimer()

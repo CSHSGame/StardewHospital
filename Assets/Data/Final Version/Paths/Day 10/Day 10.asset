@@ -18,13 +18,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4331b047fa64063499838dacf677ede6, type: 2}
   - {fileID: 11400000, guid: 6450454030dbfc9469640b3067a916a7, type: 2}
   - {fileID: 11400000, guid: 80389349e8b939445842c312ef51c65d, type: 2}
+  - {fileID: 11400000, guid: 72753784a3d5ebf44a2679254e130a1f, type: 2}
   PlayerData: {fileID: 11400000, guid: aded8dde5a6f5d542bc403bc19e8550f, type: 2}
   npcs:
   - {fileID: 11400000, guid: 6b2c6df0bc3eee044b38addb4700351c, type: 2}
   - {fileID: 11400000, guid: 568de71da76caf7489fc9cf3046f621e, type: 2}
   - {fileID: 11400000, guid: e2d92ed7cc167784ebbc5ff0849a5a7a, type: 2}
   - {fileID: 11400000, guid: f1655363898806c4d8bb699c48da39bd, type: 2}
-  - {fileID: 11400000, guid: c43ff2b5e37df9849bfa924bdbb8d01a, type: 2}
+  - {fileID: 11400000, guid: a8106c9e2e092e041aaa4bcd9ba30af1, type: 2}
   DayOfTheWeek: WED
   DayNumber: 10
   Month: JULY

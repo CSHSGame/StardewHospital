@@ -34,20 +34,20 @@ position: 556,2409
 [$Char3First]: For anyone who is gay, lesbian, bi or trans here, you just feel invisible.
 [$DirName]: That must be very difficult and uncomfortable. That needs to change. 
 [happy][$Char3First]: Thank you for saying so. 
-[$DirName]: Are there any changes we can do make for you personally?  Here, in your room?
+[$DirName]: Are there any changes we can do for you personally?  Here, in your room?
 [$Char3First]: I'd like to post photos of my adventures with [$Richard] in my Memory Box. We've travelled to over 60 countries together! 
 [$SocialWorker]: We can change the photos whenever you’re ready! 
 [$Richard]: It’ll be hard to choose. We have nineteen albums! [laughs]
 [$Char3First]: [$Richard] is the avid photographer of our family.
 [$playerName]: I can’t wait to see your pictures. 
 [$SocialWorker]: Great! What else?
-[$Richard]: There are a lot of changes that can happen to make to make this a place where the LGBTQ+ community feels welcome and safe.  It’s called creating a “Positive Space.” 
+[$Richard]: There are a lot of changes that can happen to make this a place where the LGBTQ+ community feels welcome and safe.  It’s called creating a “Positive Space.” 
 [$DirName]: I see we have a lot to learn. There aren’t regulations in place in Ontario at this time to ensure appropriate accommodation for LGBTQ+ residents, [$Char3First], but there is a Bill of Rights for Residents in Long-Term Care.
-[$DirName]: This Bill of Rights ensures that long-term care homes are truly homes for the people who live in them and that residents know their rights. I'll leave a copy here for you - I think you’ll find it useful.
+[$DirName]: This Bill of Rights ensures that long-term care homes are truly homes for the people who live in them and that residents know their rights. You would have received a copy on admission; but I'll leave another one here for you - I think you’ll find it useful.
 [$Char3First]: Thanks very much.  I didn’t know there was a Bill of Rights for Long-Term Care.  
 [$DirName]: Good. Thanks so much for meeting with us, [$Char3First] and [$Richard]. 
 [$Richard]: And thank all of you for listening!
-[$NurseManager]: We’ll be in touch soon. [$playerName], you should go review your notes.
+[$NurseManager]: We’ll be in touch soon. [$playerName].
 [$playerName]: Ok [$NurseManager]. Bye [$Char3First] and [$Richard].
 <<PrepForNextDay GameManager>>
 <<SetObjective GameManager ReviewEoDNotesDay5>>

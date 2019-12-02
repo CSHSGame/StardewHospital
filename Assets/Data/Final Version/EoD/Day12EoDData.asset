@@ -19,9 +19,10 @@ MonoBehaviour:
   DP3Outcome1TrueOutcome2False: 1
   DecisionPoint1Outcome1Title: Transitioning to LTC - Empathy
   DecisionPoint1Outcome1Text: "When Susannah confided in you that she had mixed feelings
-    about enrolling her mother in long term care, your response displayed a lack of
-    empathy. Transitioning to long term care is a difficult process for the entire
-    family \u2013 please try to be more respectful in sensitive situations. "
+    about placing                                                                                                                                                                                                                                                                                                                                                              her
+    mother in long term care, your response displayed a lack of empathy. Transitioning
+    to long term care is a difficult process for the entire family \u2013 please try
+    to be more respectful in sensitive situations. "
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 

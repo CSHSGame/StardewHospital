@@ -18,10 +18,10 @@ MonoBehaviour:
   DP2Outcome1TrueOutcome2False: 1
   DP3Outcome1TrueOutcome2False: 1
   DecisionPoint1Outcome1Title: Being Accomodating - Transitioning
-  DecisionPoint1Outcome1Text: "When Mrs. Lee expressed worries about enrolling in
-    cooking class, you were flippant and tried to trivialize her concerns. Please
-    do more to try and accommodate our residents - it\u2019s an important step toward
-    helping them feel safe and supported. "
+  DecisionPoint1Outcome1Text: "When Mrs. Lee expressed worries about participating
+    in the cooking program, you were dismissive and trivialize her concerns. Please
+    try to accommodate residents - it\u2019s an important step towards creating a
+    safe, supportive and inclusive environment."
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 

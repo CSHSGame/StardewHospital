@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: characterOptions
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   Bodies:
-  - {fileID: 4392572738520858, guid: 75b35e75b4d6b1a47923c5711703ce1f, type: 2}
+  - {fileID: 4522360855173452, guid: f29a515cc22d0e642b58a127600132e5, type: 2}
   - {fileID: 4121807557777986, guid: 502225555156de746aaf904878e0fa51, type: 2}
   heads:
   - {fileID: 4160141788445960, guid: 1357e45a81605ef4eaa41d6a1eb95f05, type: 2}
@@ -22,3 +22,4 @@ MonoBehaviour:
   - {fileID: 4659625873823734, guid: b5477b1efafd7e04785234ffb89ad719, type: 2}
   - {fileID: 4308812842589560, guid: d756575a1e101c743aaf735862ce4c20, type: 2}
   - {fileID: 4283828000346952, guid: d254f176fc6f5d849ae6a0181f54dde2, type: 2}
+  characterName: 

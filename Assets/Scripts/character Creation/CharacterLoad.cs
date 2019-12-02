@@ -7,14 +7,24 @@ public class CharacterLoad : MonoBehaviour
     public CharacterData Assets;
     public FaceName Assets2;
     public bool loadOn = true;
+    public ExampleVariableStorage variableStorage;
+    
+
     // Use this for initialization
     void Awake ()
     {
+        variableStorage = GameObject.FindObjectOfType<ExampleVariableStorage>();
+
         if (loadOn)
         {
-            Load();
+          // Load();
 
         }
+    }
+
+    private void Start()
+    {
+       
     }
 
     [ContextMenu("Load")]
@@ -32,16 +42,17 @@ public class CharacterLoad : MonoBehaviour
             Instantiate(Assets.Bodies[data.bodyIndex], this.transform);
 
             //Debug.Break();
-            ExampleVariableStorage variableStorage = GameObject.FindObjectOfType<ExampleVariableStorage>();
+            Debug.Log(variableStorage.name);
             if (variableStorage != null)
             {
                 //Debug.Log("player name "+ data.CharacterName);
                 Debug.Log("player name " + variableStorage.GetValue("$playerName").AsString);
 
                 variableStorage.SetValue("$playerName", new Yarn.Value(data.CharacterName));
+                
                 Debug.Log("player name " + variableStorage.GetValue("$playerName").AsString);
 
-                // variableStorage.defaultVariables.SetValue(data.CharacterName, 0);
+                variableStorage.defaultVariables.SetValue(data.CharacterName, 0);
             }
             if(Assets2!= null)
             {

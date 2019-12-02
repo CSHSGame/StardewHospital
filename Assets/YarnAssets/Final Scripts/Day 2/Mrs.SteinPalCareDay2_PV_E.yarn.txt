@@ -20,7 +20,9 @@ position: 12,344
 ---
 [happy][$Char1Last]: Oh, right! Hi.
 [$playerName]: Nice to see you!
-[$Char1Last]:  Yes, it is. I’m just preparing for my Tea ‘n Talk later.  I always get called on to lead the program because I can get everyone talking!
+[happy][$Char1Last]: You too, glad we didn't scare you off, just kidding, or am I?
+[$playerName]: Haha.
+[$Char1Last]: I’m just preparing for my Tea ‘n Talk later.  I always get called on to lead the program because I can get everyone talking!
 [$playerName]:  That’s great,  [$Char1First]! I've heard how the residents look forward to the program.
 [$Char1Last]: Of course, dear. Can you come and pick me up afterwards? 
 [$playerName]: Sure, see you later!

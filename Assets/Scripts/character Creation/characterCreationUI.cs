@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class characterCreationUI : MonoBehaviour
 {
-    public GameObject[] heads;
+    public GameObject[] bodyParts;
    // public Image head;
-    public int currentHead;
+    public int currentBodyPartIndex;
 
    
 	// Use this for initialization
@@ -17,36 +17,36 @@ public class characterCreationUI : MonoBehaviour
 	}
     public void setPart(int index)
     {
-        heads[currentHead].SetActive(false);
-        if(index >0 && index < heads.Length)
+        bodyParts[currentBodyPartIndex].SetActive(false);
+        if(index >0 && index < bodyParts.Length)
         {
-            currentHead = index;
+            currentBodyPartIndex = index;
         }
-        heads[currentHead].SetActive(true);
+        bodyParts[currentBodyPartIndex].SetActive(true);
 
     }
     public void changeHeadLeft()
     {
-        heads[currentHead].SetActive(false);
+        bodyParts[currentBodyPartIndex].SetActive(false);
 
-        currentHead--;
-        if(currentHead < 0)
+        currentBodyPartIndex--;
+        if(currentBodyPartIndex < 0)
         {
-            currentHead = heads.Length -1;
+            currentBodyPartIndex = bodyParts.Length -1;
         }
-      heads[currentHead].SetActive(true);
+        bodyParts[currentBodyPartIndex].SetActive(true);
     }
     public void changeHeadRight()
     {
-        heads[currentHead].SetActive(false);
+        bodyParts[currentBodyPartIndex].SetActive(false);
 
-        currentHead++;
-        if (currentHead >= heads.Length)
+        currentBodyPartIndex++;
+        if (currentBodyPartIndex >= bodyParts.Length)
         {
-            currentHead = 0;
+            currentBodyPartIndex = 0;
         }
-       // Debug.Log(currentHead);
-        heads[currentHead].SetActive(true);
+        // Debug.Log(currentHead);
+        bodyParts[currentBodyPartIndex].SetActive(true);
 
     }
     // Update is called once per frame

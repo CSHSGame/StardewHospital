@@ -15,6 +15,7 @@ public class DayManager : MonoBehaviour
     public DayDataHolder[] Days;
     public int currentDay = 0;
     ExampleVariableStorage variableStorage;
+    DialogueRunner dialogueRunner;
     public Text display;
 
     public NpcDayData PlayerToWalkOutData;
@@ -24,6 +25,7 @@ public class DayManager : MonoBehaviour
     {
         Time.timeScale = debugTimeScale;
         variableStorage = FindObjectOfType<ExampleVariableStorage>();
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
         hUDController = FindObjectOfType<HUDController>();
         npcLoader = GetComponent<NpcLoader>();
         objectiveLoader = GetComponent<ObjectiveLoader>();
@@ -37,7 +39,9 @@ public class DayManager : MonoBehaviour
     //should only be called from the clipboard closing
     public void LoadDay()
     {
+        dialogueRunner.dialogue.visitedNodeCount.Clear(); //Resets the previously visited nodes for all characters when a day is loaded. 
         Debug.Log(currentDay);
+        DayCompleted(currentDay);
         if(PlayerToWalkOutData != null)
         {
             CinematicMode cinematic = FindObjectOfType<CinematicMode>(); ;
@@ -78,6 +82,11 @@ public class DayManager : MonoBehaviour
        
     }
 
+    public void DayCompleted(int dayCompletedIndex)
+    {
+        Debug.Log("Day "+dayCompletedIndex+" Completed");
+    }
+
     public IEnumerator showDayText()
     {
         FadeMode fader =  FindObjectOfType<FadeMode>();
@@ -107,6 +116,7 @@ public class DayManager : MonoBehaviour
     [YarnCommand("PrepForNextDay")]
     public void SetupForLastPathofDay()
     {
+        Debug.Log("PrepForNextDay");
         CinematicMode cinematic = FindObjectOfType<CinematicMode>(); ;
         cinematic.TurnON();
         Waypoints player = GameObject.FindObjectOfType<PlayerCharacter>().GetComponent<Waypoints>();
@@ -124,9 +134,18 @@ public class DayManager : MonoBehaviour
 
         //LoadDay();
     }
+
+    [YarnCommand("EndDay14")]
+    public void EndDay14()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     [YarnCommand("NextDay")]
     public void IncrementDay()
     {
+
+        Debug.Log("NextDay");
         currentDay++;
         EoDClipboard.gameObject.SetActive(true);
         //hUDController.GearClick();

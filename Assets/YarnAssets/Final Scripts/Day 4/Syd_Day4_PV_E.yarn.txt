@@ -96,7 +96,7 @@ tags:
 colorID: 0
 position: 901,1567
 ---
-[$NurseManager]: We don’t talk about our residents in public spaces like this. We need to protect their privacy and confidentiality. Let’s go to my office.
+[$NurseManager]: We don’t talk about our residents in public spaces like this. We need to protect their privacy and confidentiality. Let’s go to the boardroom.
 [[LGBTQ_SECOND_DAY_OFFICE]]
 ===
 title: LGBTQ_SECOND_DAY_HALLWAY_RIGHT
@@ -104,7 +104,7 @@ tags:
 colorID: 0
 position: 158,1574
 ---
-[$NurseManager]: Sure, why don’t we talk about it privately then? Let's Go to my office.
+[$NurseManager]: Sure, why don’t we talk about it privately then? Let's go to the boardroom.
 [[LGBTQ_SECOND_DAY_OFFICE]]
 ===
 title: LGBTQ_SECOND_DAY_OFFICE
@@ -115,7 +115,7 @@ position: 548,1811
 <<SetPath Player Three>>
 <<SetPath Nurse2 One>>
 [$playerName]: So, [$Char3First] hasn’t been coming to any activities since he moved in.
-[$playerName]: We got to talking and he was telling me how sad and isolated he feels. Syd's gay, but he hasn't told and of the other staff or residents because he doesn't feel like he'll be accepted here.
+[$playerName]: We got to talking and he was telling me how sad and isolated he feels. Syd's gay, but he hasn't told any of the other staff or residents because he doesn't feel like he'll be accepted here.
 [$playerName]: He told me that his friend Richard who comes to visit him most days is actually his life partner. They lived together for 40 years. 
 [$playerName]: He doesn't think they can be open about their relationship - he feels like only heterosexual people are welcome here. 
 [$NurseManager]: I’m so sorry to hear that.  It sounds like you made a good connection with [$Char3First].

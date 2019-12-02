@@ -18,7 +18,16 @@ colorID: 0
 position: 135,282
 ---
 [$Ranjit]: Whoa hold on! We shouldn't be discussing something like that here - we need to go somewhere private. Let's go to the garden.
-[[Sexuality_Private]]
+[[What's the big deal! Lets talk here.|Sexuality_Talk_Here]]
+[[Good idea. Let's go!|Sexuality_Private]]
+===
+title: Sexuality_Talk_Here
+tags: 
+colorID: 0
+position: 135,283
+---
+[$Ranjit]: This is not the place to talk about this, let's go somewhere private.
+[[Good idea. Let's go!|Sexuality_Private]]
 ===
 title: Sexuality_Private
 tags: 
@@ -47,10 +56,10 @@ position: 672,723
 <<SetPath Joe One>>
 [$Joe]: [$Char4First]! Give ol' Joe a hug.
 [$Char4First]: No, Joe.  I’m not a big hugger. How about a handshake? 
-[$Ranjit]: See, it looks like [$Char4First] knows how to set her own boundaries.
-[$playerName]: Yeah, that’s great!  I guess it's reassuring to see her say ‘No’ to something that makes her feel uncomfortable.  Thanks for the support [$Ranjit]!
-[$playerName]: Umm, hi Marie! I didn't have a chance to ask you this morning if you’re coming to [$Activity] tomorrow.
-[$Char4First]: Sure! I thought I’d have to hunt you down to get my name on the list! Thanks, darling, I’ll see you there.
+[$Ranjit]: See, it looks like [$Char4First] knows how to set her own boundaries. 
+[$playerName]: Yeah, that’s great!  I guess it's reassuring to see her say ‘No’ to something that makes her feel uncomfortable. Thanks for the support [$Ranjit]!
+[$playerName]: Umm, hi Marie! I didn't have a chance to ask you this morning if you’re coming to Laughter Yoga tomorrow.
+[$Char4First]: Sure! Thanks, darling, I’ll see you there.
 [$playerName]: Bye.
 <<PrepForNextDay GameManager>>
 <<SetObjective GameManager ReviewEoDNotesDay9>>

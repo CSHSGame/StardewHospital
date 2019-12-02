@@ -18,32 +18,34 @@ MonoBehaviour:
   DP2Outcome1TrueOutcome2False: 0
   DP3Outcome1TrueOutcome2False: 1
   DecisionPoint1Outcome1Title: Mrs Stein - End of Life Planning
-  DecisionPoint1Outcome1Text: Today you helped Mrs. Stein make arrangements for her
-    palliative care. Residents have the right to make decisions regarding their care
-    in an end-of-life situation, and being respectful of this can really go a long
-    way toward helping the resident feel empowered and dignified in a difficult situation.
-  DecisionPoint2Outcome1Title: True
+  DecisionPoint1Outcome1Text: Mrs.Stein expressed her wishes and you helped to make
+    arrangements for Palliative Care. Residents have the right to make decisions regarding
+    end of life care. Being respectful can really go a long way towards helping the
+    residents feel empowered and dignified.
+  DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: Mrs Stein - End of Life Planning
-  DecisionPoint1Outcome2Text: Today you helped Mrs. Stein make arrangements for her
-    palliative care. Residents have the right to make decisions regarding their care
-    in an end-of-life situation, and being respectful of this can really go a long
-    way toward helping the resident feel empowered and dignified in a difficult situation.
-  DecisionPoint2Outcome2Title: False
+  DecisionPoint1Outcome2Text: Mrs.Stein expressed her wishes and you helped to make
+    arrangements for Palliative Care. Residents have the right to make decisions regarding
+    end of life care. Being respectful can really go a long way towards helping the
+    residents feel empowered and dignified.
+  DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
   LearningObjectives1Title: Palliative Care
   LearningObjectives1Text: "To observe the residents\u2019 right to autonomy in end-of-life
-    decision-making."
+    decision-making. To practice empathy with residents through person-centred communication"
   LearningObjectives2Title: 
-  LearningObjectives2Text: To practice empathy with residents through person-centred
-    communication
-  LearningObjectives3Title: 
-  LearningObjectives3Text: 'To understand the necessity of developing healthy coping
+  LearningObjectives2Text: 'To understand the necessity of developing healthy coping
     mechanisms during the end-of-life stage in long-term care  '
+  LearningObjectives3Title: Privacy in LTC
+  LearningObjectives3Text: The residents information must be kept private and protected
+    as legally required under the Personal Health Information Protection Act. (PHIPA)
+    If you are unaware who to share information with check with the Nursing Manager
+    or your supervisor first.
   BestPractices1Title: Palliative Care
   BestPractices1Text: Use effective communication techniques to become comfortable
     in conversations with the resident, family members, partners, friends, and interprofessional

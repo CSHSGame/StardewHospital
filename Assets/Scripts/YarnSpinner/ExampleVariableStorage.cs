@@ -57,6 +57,8 @@ public class ExampleVariableStorage : VariableStorageBehaviour
     /// A UI.Text that can show the current list of all variables. Optional.
     public UnityEngine.UI.Text debugTextView;
 
+    public CharacterSaveData characterSaveData;
+
     /// Reset to our default values when the game starts
     void Awake ()
     {
@@ -65,7 +67,7 @@ public class ExampleVariableStorage : VariableStorageBehaviour
 
 	void Start()
 	{
-
+        
        
 		/*foreach (var variable in defaultVariables) {
 			Debug.Log (variable.name);

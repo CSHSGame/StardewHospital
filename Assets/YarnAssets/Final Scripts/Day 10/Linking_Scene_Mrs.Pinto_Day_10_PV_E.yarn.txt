@@ -1,0 +1,25 @@
+title: Linking_Scene_Mrs.Pinto_Day_10
+tags: 
+colorID: 6
+position: 1084,145
+---
+<<if visited("Linking_Scene_Mrs.Pinto_Day_10")>>
+I don't need to talk with her right now.
+<<else>>
+[$Pinto]: Dor! Dor! Dor!
+[$playerName]: Hi there, [$Pinto] - I'm sorry I don't really understand what you're trying to say.
+[$Pinto]: Dor!
+[action] [$playerName] points at themselves.
+[$playerName]: Me. No. Portuguese. One minute. One minute.
+<<Spawn Christiano>>
+<<SetPath Christiano Zero>>
+[$playerName]: Oh look. There's Christiano, he knows some Portuguese.
+[$Christiano]: Hello, [$Pinto] and [$playerName].
+[$playerName]: Hi Christiano, I was just with [$Pinto] and she's saying "dor". I don't really understand what she's saying - she's holding her knees.
+[$Christiano]: It means pain in Portuguese. She must be having pain in her knees. I'll take her to her room and get her nurse. I'll also print out some common Portuguese words with pictures and we can keep it in her room - it might help bridge the commuinication gap between her and the staff.
+[$playerName]: Great! Thanks [$Chirstiano].
+<<SetPath Christiano One>>
+<<SetPath Mrs.Pinto Zero>>
+<<SetObjective GameManager TalkToMarieDay10>>
+<<endif>>
+===

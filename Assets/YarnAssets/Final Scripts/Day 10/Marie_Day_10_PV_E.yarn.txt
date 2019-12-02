@@ -57,7 +57,7 @@ position: 596,626
 [$Char4First]: You see what I’m getting at?
 [$playerName]: Okay. I see I have a lot to learn.  Thanks for talking about this with me.  I really appreciate it.
 [$Char4First]: Any big plans tonight?
-[$playerName]: We might go do a movie or just hang out.
+[$playerName]: We might go to a movie or just hang out.
 [happy][$Char4First]: Well, don’t do anything I wouldn’t do!   
 [$playerName]: Very funny...
 //<<TalkedMarieDay3 = True>>

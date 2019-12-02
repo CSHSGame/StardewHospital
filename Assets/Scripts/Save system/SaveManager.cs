@@ -17,7 +17,8 @@ public abstract class SaveData
     public abstract void Load();
 
 }
-public class SaveManager : MonoBehaviour {
+public class SaveManager : MonoBehaviour
+{
     static List<ISaveAble> m_ObjectsToSave;
     public const string defaultSaveName = "saveFile";
     // Use this for initialization
@@ -32,7 +33,6 @@ public class SaveManager : MonoBehaviour {
     {
        string fileName = "/" + saveName + ".dat";
        xmlUtils.Save(data, fileName);
-        
     }
     public static bool GetIfFileExist(string saveName = defaultSaveName)
     {
@@ -40,8 +40,8 @@ public class SaveManager : MonoBehaviour {
         return File.Exists(Application.persistentDataPath + fileName);
     }
     //pass in apopriate savetata
-    // only loads new data 
-    // caller is responsible for deleting old values 
+    //only loads new data 
+    //caller is responsible for deleting old values 
     public static object Load( string saveName = defaultSaveName)
     {
         object data = xmlUtils.Load("/" + saveName +".dat");

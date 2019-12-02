@@ -61,7 +61,7 @@ colorID: 0
 position: 780,2308
 ---
 <<SetPath MrWilliams Zero>>
-[angry][$Char2Last]: Help! Help!
+[angry][$Char2Last]: No! Help! Help! I’m being held hostage! Help!
 <<SetPath Player Zero>>
 [$playerName]: [$Char2Last]! [$Char2Last], come back here!
 <<Spawn Nurse>>
@@ -113,7 +113,7 @@ position: 775,2553
 [$NurseManager]: This will help you to understand why our residents may respond to their new life here with frustration and how we can find ways to help them feel more comfortable living here.
 [$NurseManager]: The most important thing as you’re getting to know each resident is to always remain calm, and don’t react. 
 [$NurseManager]: Apologize and distract them with conversation, give  yourself space to cool down and reflect on what was behind the responsive behaviour.
-[action]*The Nurse Manager gives the PS a booklet.*
+[action]*The Nurse Manager gives the [$playerName] a booklet.*
 [$NurseManager]: Here, I want you to read this. I think it will be very helpful.
 [$playerName]: Okay, I will. Thank you!
 <<SetDialog Nurse null>>

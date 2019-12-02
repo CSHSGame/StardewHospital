@@ -21,27 +21,27 @@ MonoBehaviour:
   DecisionPoint1Outcome1Text: 'Welcome to Bloom Virtual Village! At the end of each
     day this clipboard will provide you with feedback on the decisions you made, and
     to help you learn from your experience. '
-  DecisionPoint2Outcome1Title: Decision Point 2
+  DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
-  DecisionPoint3Outcome1Title: Decision Point 3
+  DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: Welcome
   DecisionPoint1Outcome2Text: 'Welcome to Bloom Virtual Village! At the end of each
     day this clipboard will provide you with feedback on the decisions you made, and
     to help you learn from your experience. '
-  DecisionPoint2Outcome2Title: Decision Point 2
+  DecisionPoint2Outcome2Title: 
   DecisionPoint2Outcome2Text: 
-  DecisionPoint3Outcome2Title: Decision Point 3
+  DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
-  LearningObjectives1Title: Learning Objectives 1
+  LearningObjectives1Title: 
   LearningObjectives1Text: 
-  LearningObjectives2Title: Learning Objectives 2
+  LearningObjectives2Title: 
   LearningObjectives2Text: 
-  LearningObjectives3Title: Learning Objectives 3
+  LearningObjectives3Title: 
   LearningObjectives3Text: 
-  BestPractices1Title: Best Practices 1
+  BestPractices1Title: 
   BestPractices1Text: 
-  BestPractices2Title: Best Practices 2
+  BestPractices2Title: 
   BestPractices2Text: 
-  BestPractices3Title: Best Practices 3
+  BestPractices3Title: 
   BestPractices3Text: 

@@ -14,4 +14,4 @@ MonoBehaviour:
   name: GoToMeetingDay11
   target: {fileID: 11400000, guid: 2cff3ecff429a19418fc39e2a0133316, type: 2}
   wayfindingIndex: 0
-  displayText: Talk to Hana in the confrence room.
+  displayText: Talk to Hana in the board room.

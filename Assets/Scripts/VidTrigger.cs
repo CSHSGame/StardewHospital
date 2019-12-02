@@ -11,7 +11,9 @@ public class VidTrigger : MonoBehaviour {
 
     public CharacterVid charVid;
 
+    public DayManager dayManager;
 
+    public int dayCheckIndex;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,8 +22,11 @@ public class VidTrigger : MonoBehaviour {
             Debug.Log("Enter");
             if (other.gameObject.tag == "Player")
             {
-                Debug.Log("Player");
-                vidManager.PlayVid((int)charVid);
+                if (dayCheckIndex == dayManager.currentDay)
+                {
+                    Debug.Log("Correct Day");
+                    vidManager.PlayVid((int)charVid);
+                }
             }
             DoOnce = true;
         }

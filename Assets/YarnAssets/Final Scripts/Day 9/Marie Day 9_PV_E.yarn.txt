@@ -6,9 +6,8 @@ position: 529,182
 <<if visited("Sexuality_At_Maries_Door") is true>>
 [$playerName]: I shouldn't bother her right now.
 <<else>>
-<<SetPath Controller One>> 
-[$playerName]:[Action] Hmm, the door is a little ajar.
-[[Enter|Sexuality_Enter]]<<$Feb_Demo_Knocked = false>>
+<<SetPath Controller One>>  
+[$playerName]:[action] Hmm, the door is a little ajar.[[Enter|Sexuality_Enter]]<<$Feb_Demo_Knocked = false>>
 [[Knock|Sexuality_Knock]]<<$Feb_Demo_Knocked = true>>
 <<endif>>
 ===
@@ -21,8 +20,8 @@ position: 352,440
 [$playerName]: I shouldn't bother her right now.
 <<else>>
 [$Char4FirstDoor]: Knock Knock
-[$playerName]: There's a faint rustling sound coming from inside.
-[$playerName]: [$Char4First]? It's [$playerName], I'm signing people up for [$ActivityName]... I'm coming in...
+[action]There's a faint rustling sound coming from inside.
+[$playerName]: [$Char4First]? It's [$playerName], I'm here to see if you're interested in attending Laughter yoga?
 <<Hide MarieDoor>>
 <<SetPath Player Zero>> //Starts outside of room and walks in
 [$playerName]: Hi,  [$Char4First]... 
@@ -125,14 +124,13 @@ position: 524,951
 [$playerName]: I’m not sure but I think they were having sex!  
 [$NurseManager]: Well, they’re adults, you know. Just because they live in long-term care doesn’t mean they have to give up their rights. This is their home. 
 [$playerName]: But they're as old as my grandparents!
-[$NurseManager]: Our responsibility is to make sure that residents are safe but they also have a right to privacy, even though it’s not always possible to find privacy here!
+[$NurseManager]: Our responsibility is to make sure that residents are safe but they also have a right to privacy, even though it can be difficult to find privacy here!
 [$playerName]: ...
 [$NurseManager]: You seem upset, but I think it's rather beautiful when our residents can find some closeness and intimacy here . . .  
 [$playerName]: I guess. But I feel really uncomfortable. It's like I walked in on my grandmother making out with an old guy.
-[$NurseManager]: [$playerName], we need our students to understand that older adults are human - they're sexual beings just like anyone else.   We need to cut across all the hurtful stereotypes about growing old. I want you to have this - it's an article that I want you to read.  I think you’ll find it helpful.  
-[action]*[$NurseManager] Hands player document *
+[$NurseManager]: [$playerName], we need our students to understand that older adults are human - they're sexual beings just like anyone else. We need to cut across all the hurtful stereotypes about growing old. I'm going to send you an article that I want you to read.  I think you’ll find it helpful.  
 [$playerName]: Okay... I do have a quick question before you go.  How do we know what Marie is doing is consensual?
-[$NurseManager]: That’s a great question. The staff know from our ongoing assessments which residents are fully capable of making such personal decisions. Marie is quite able to make decisions for herself.
+[$NurseManager]: That’s a great question. The staff know from our ongoing assessments which residents are fully capable of making such personal decisions. Marie is quite able to make decisions for herself. The article will highlight the importance of capacity and consent for residents in long term care.
 [$playerName]: Thanks, [$NurseManager]. I’ll read this tonight. 
 <<SetPath Nurse One>> //Supervisor walks next door to Mrs Lee's room.
 <<SetObjective GameManager TalkToRanjitDay9>>

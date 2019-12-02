@@ -9,13 +9,17 @@ position: 539,260
 <<SetPath Player Zero>>
 [$NurseManager]: Hi there [$playerName]. Today’s your last day! How time flies. 
 [$playerName]: It certainly does. I’m sad to go but I’ll make sure to stay in touch. 
+[$NurseManager]: That would be great! Oh, and thanks for the coffee and donuts you got for the staff this morning. It was a lovey gesture.
+[$playerName]: Anything to show my appreciation!
 [$NurseManager]: Let’s go to the activity room -- a few of the residents want to see you before you leave. 
 <<SetPath Player One>>
 <<SetPath Nurse Zero>> 
 [$NurseManager]: Hello everyone, thank you for coming today to the farewell party for [$playerName]! 
-[$Katherine]: **Clapping**
+[action] **Everyone Clapping**
 [$Katherine]: Thank you so much for everything, [$playerName].
 [$Char3Last]: Take care!
 [$NurseManager]: Thank you [$playerName]! We appreciate your time with us, and we wish you well.
+[$NurseManager]: Thank you so much for joining us at Bloom Virtual Village! We hope you have learned a lot that you can take with you into a successful career in the world of long term care. Goodbye!
+<<EndDay14 GameManager>>
 <<endif>>
 ===

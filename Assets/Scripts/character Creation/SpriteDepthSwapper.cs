@@ -70,6 +70,23 @@ public class SpriteDepthSwapper : MonoBehaviour {
             }
         }
     }
+
+    public void LoadCharacter()
+    {
+        foreach (BodyPart b in GetComponentsInChildren<BodyPart>())
+        {
+            b.Front.gameObject.SetActive(true);
+            mySprites.Add(b.Front.GetComponentInChildren<SpriteRenderer>());
+
+            b.Side.gameObject.SetActive(true);
+            mySprites.Add(b.Side.GetComponentInChildren<SpriteRenderer>());
+
+            b.Back.gameObject.SetActive(true);
+            mySprites.Add(b.Back.GetComponentInChildren<SpriteRenderer>());
+
+            b.ApplyFacing();
+        }
+    }
 }
 public class Comp : IComparer<BoxCollider>
 {

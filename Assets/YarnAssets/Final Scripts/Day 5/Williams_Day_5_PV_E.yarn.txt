@@ -29,7 +29,7 @@ position: 863,1274
 [$playerName]: You can't leave!
 [$Char2Last]: You can't stop me!
 <<IsThought = True>>
-[action] Do not ignore [$Char2Last]'s issue. Instead, find the underlying meaning and offer redirection.
+[action] Do not ignore [$Char2Last]s' issue. Instead, find the underlying meaning and offer redirection.
 <<IsThought = False>>
 [[Ask_Williams_Day_3]]
 ===
@@ -116,7 +116,7 @@ position: 1214,2332
 [$Char2Last]: Haha! It was hard work!
 [$playerName]: It's no wonder the chef here requested your professional opinion of the new dish on our menu.
 [$Char2Last]: Really?
-[$playerName]: I'm on my way to the dining room. Would you like to lead me there?
+[$playerName]: I'm on my way to the dining room. Would you like to join me?
 [$Char2Last]: I'd be happy to.
 <<SetPath Player Two>>
 <<SetPath MrWilliams One>>
