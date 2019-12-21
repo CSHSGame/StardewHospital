@@ -17,11 +17,11 @@ tags:
 colorID: 0
 position: 998,1279
 ---
+<<set $Day3DP1 to false>>
 <<Hide MrWilliamsDoor>>
 <<SetPath Player Zero>>
 Skip:
 [angry][$Char2Last]: Who are you? Get out!
-
 [[Frighten_Williams_Day_2]]
 ===
 title: Knock_Williams_Day_2
@@ -29,8 +29,8 @@ tags:
 colorID: 0
 position: 1230,1278
 ---
+<<set $Day3DP1 to true>>
 [action]Knock Knock
-Skip:
 [$Char2Last]: Yes?
 Skip:
 <<Hide MrWilliamsDoor>>
@@ -46,6 +46,7 @@ tags:
 colorID: 0
 position: 1583,1409
 ---
+<<set $Day3DP1 to true>>
 [$playerName]: (Knock, knock!)
 Skip:
 [$Char2Last]: Yes?

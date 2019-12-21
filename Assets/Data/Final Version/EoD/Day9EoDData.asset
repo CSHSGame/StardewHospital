@@ -11,27 +11,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day9EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: '$Feb_Demo_Knocked '
-  DP2Evaluate: 
+  DP1Evaluate: $Day9DP1
+  DP2Evaluate: $Day9DP2
   DP3Evaluate: 
-  DP1Outcome1TrueOutcome2False: 1
-  DP2Outcome1TrueOutcome2False: 1
-  DP3Outcome1TrueOutcome2False: 1
+  DP1Outcome1TrueOutcome2False: 0
+  DP2Outcome1TrueOutcome2False: 0
+  DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: Sexuality in LTC
   DecisionPoint1Outcome1Text: You entered a resident's room without knocking, you
     violated her privacy and ended up in an awkward situation. We must respect and
     uphold the resident's right to privacy and dignity. Remember to always knock and
     wait for a response before you enter a resident's room.
-  DecisionPoint2Outcome1Title: 
-  DecisionPoint2Outcome1Text: 
+  DecisionPoint2Outcome1Title: Privacy in LTC
+  DecisionPoint2Outcome1Text: "When speaking with Ranjit today, you gossiped about
+    one of the residents while in a public area. That is unacceptable- if you need
+    to discuss a situation regarding one of the residents with a fellow staff member,
+    please find a private place where you can be sure that your conversation will
+    not be overheard.\r\n"
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: Sexuality in LTC
   DecisionPoint1Outcome2Text: "It\u2019s good that you remembered to knock before
     entering Mrs. Moore\u2019s room, but in future please remember for the resident
     to welcome you in their room before you enter. "
-  DecisionPoint2Outcome2Title: 
-  DecisionPoint2Outcome2Text: 
+  DecisionPoint2Outcome2Title: Privacy in LTC
+  DecisionPoint2Outcome2Text: "When discussing Mrs. Moores situation with Ranjit,
+    you choose to find a private place to have your conversation. It\u2019s great
+    that you are acting with the resident\u2019s privacy in mind."
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
   LearningObjectives1Title: Intimacy and Sexuality in LTC

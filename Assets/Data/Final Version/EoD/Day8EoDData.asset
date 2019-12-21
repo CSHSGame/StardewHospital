@@ -11,19 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day8EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $Day_8_Stein
-  DP2Evaluate: $RightChoice_FamilyInquiry
+  DP1Evaluate: $Day8DP1
+  DP2Evaluate: $Day8DP2
   DP3Evaluate: 
-  DP1Outcome1TrueOutcome2False: 1
+  DP1Outcome1TrueOutcome2False: 0
   DP2Outcome1TrueOutcome2False: 0
-  DP3Outcome1TrueOutcome2False: 1
+  DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: Mrs Stein - End of Life Planning
   DecisionPoint1Outcome1Text: Mrs.Stein expressed her wishes and you helped to make
     arrangements for Palliative Care. Residents have the right to make decisions regarding
     end of life care. Being respectful can really go a long way towards helping the
     residents feel empowered and dignified.
-  DecisionPoint2Outcome1Title: 
-  DecisionPoint2Outcome1Text: 
+  DecisionPoint2Outcome1Title: Privacy in LTC
+  DecisionPoint2Outcome1Text: The residents information must be kept private and protected
+    as legally required under the Personal Health Information Protection Act. (PHIPA)
+    If you are unaware who to share information with check with the Nursing Manager
+    or your supervisor first.
   DecisionPoint3Outcome1Title: 
   DecisionPoint3Outcome1Text: 
   DecisionPoint1Outcome2Title: Mrs Stein - End of Life Planning
@@ -31,8 +34,11 @@ MonoBehaviour:
     arrangements for Palliative Care. Residents have the right to make decisions regarding
     end of life care. Being respectful can really go a long way towards helping the
     residents feel empowered and dignified.
-  DecisionPoint2Outcome2Title: 
-  DecisionPoint2Outcome2Text: 
+  DecisionPoint2Outcome2Title: Privacy in LTC
+  DecisionPoint2Outcome2Text: The residents information must be kept private and protected
+    as legally required under the Personal Health Information Protection Act. (PHIPA)
+    If you are unaware who to share information with check with the Nursing Manager
+    or your supervisor first.
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
   LearningObjectives1Title: Palliative Care
@@ -49,12 +55,12 @@ MonoBehaviour:
   BestPractices1Title: Palliative Care
   BestPractices1Text: Use effective communication techniques to become comfortable
     in conversations with the resident, family members, partners, friends, and interprofessional
-    team about end-of-life, dying, and death
+    team about end-of-life, dying, and death.
   BestPractices2Title: 
   BestPractices2Text: "Respect and support the resident and their significant others\u2019
     decisions which reflect their beliefs, values, preferences, and unique needs during
     end-of-life."
   BestPractices3Title: 
-  BestPractices3Text: "Respect and support the resident and their significant others\u2019
-    decisions which reflect their beliefs, values, preferences, and unique needs during
-    end-of-life."
+  BestPractices3Text: Managing your emotional needs when providing end-of-life care
+    is a part of the process and, therefore, having a self-care plan in place is essential
+    for both your professional and personal well-being.

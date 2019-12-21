@@ -19,6 +19,7 @@ public class CharacterController : MonoBehaviour {
     public GameObject[] hairParts;
     public GameObject[] headParts;
     public GameObject[] bodyParts;
+    public GameObject[] playerPortraits;
 
     //public SpriteRenderer sprite;
 

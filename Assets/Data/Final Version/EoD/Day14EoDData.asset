@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day14EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $Day_14
+  DP1Evaluate: 
   DP2Evaluate: 
   DP3Evaluate: 
-  DP1Outcome1TrueOutcome2False: 1
-  DP2Outcome1TrueOutcome2False: 1
-  DP3Outcome1TrueOutcome2False: 1
+  DP1Outcome1TrueOutcome2False: 0
+  DP2Outcome1TrueOutcome2False: 0
+  DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: Thank You for Playing!
   DecisionPoint1Outcome1Text: "Thank you so much for joining us at Bloom Virtual Village!
     We hope you\u2019ve learned a lot that you can take with you into a successful

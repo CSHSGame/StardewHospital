@@ -9,7 +9,9 @@ using System.Collections.Generic;
 public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 {
     public FaceName[] faces;
+    public FaceName[] playerFaces;
     public GameObject dialogueContainer;
+    public SaveDataAcrossScenes saveDataAcrossScenes;
     //left character face                                                                                                                                                                                                                                                                             
     public Image leftFace;
     //right character face usualy the player
@@ -43,6 +45,10 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
     public ExampleVariableStorage variableStorage;
 
+    public EoDClipboard EndOfDayClipboard;
+
+    public bool[] yarnDecisions;
+
     CinematicMode cinematic;
 
     public enum BubbleType
@@ -68,6 +74,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     void Awake()
     {
         cinematic = FindObjectOfType<CinematicMode>();
+        saveDataAcrossScenes = FindObjectOfType<SaveDataAcrossScenes>();
         // Start by hiding the container, line and option buttons
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
@@ -155,7 +162,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
                     hlg.padding.right = 20;
                     hlg.padding.left = 0;
-                    rightFace.sprite = CurentFace;
+                    rightFace.sprite = playerFaces[saveDataAcrossScenes.portraitIndex].sprite;
                     hlg2.padding.left = 14;
                     hlg2.padding.right = 14;
 
@@ -167,7 +174,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
                     hlg.padding.right = 22;
                     hlg.padding.left = 0;
-                    rightFace.sprite = CurentFace;
+                    rightFace.sprite = playerFaces[saveDataAcrossScenes.portraitIndex].sprite;
                     hlg2.padding.left = 14;
                     img.sprite = bubble;
 
@@ -292,13 +299,14 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Called by buttons to make a selection.
     public void SetOption(int selectedOption)
     {
-
         // Call the delegate to tell the dialogue system that we've
         // selected an option.
         SetSelectedOption(selectedOption);
 
         // Now remove the delegate so that the loop in RunOptions will exit
         SetSelectedOption = null;
+
+       
     }
 
     /// Run an internal command.
@@ -318,7 +326,13 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
         //Move the camera down so the player is above the chat UI
         Camera.main.transform.localPosition = new Vector3(0.0f,-1.5f,-10.0f);
         //set the face to the players face
-        rightFace.sprite = faces[0].sprite;
+
+        //rightFace.sprite = faces[0].sprite;
+
+
+        rightFace.sprite = playerFaces[saveDataAcrossScenes.portraitIndex].sprite;
+        
+        
         // Enable the dialogue controls.
         if (dialogueContainer != null)
             dialogueContainer.SetActive(true);
@@ -332,6 +346,8 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
     /// Called when the dialogue system has finished running.
     public override IEnumerator DialogueComplete()
     {
+        WriteVariblesToEOD();
+        
         // Debug.Log ("Complete!");
         //Move the camera back to the center after dialog finished
         Camera.main.transform.localPosition = new Vector3(0.0f, 0.0f, -7.0f);
@@ -360,6 +376,66 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
 
                 yield break;
     }
+
+    public void WriteVariblesToEOD()
+    {
+
+        //Day 2
+        yarnDecisions[0] = variableStorage.GetValue("$Day2DP1").AsBool;
+        yarnDecisions[1] = variableStorage.GetValue("$Day2DP2").AsBool;
+        EndOfDayClipboard.EoDClipboardData[1].DP1Outcome1TrueOutcome2False = yarnDecisions[0];
+        EndOfDayClipboard.EoDClipboardData[1].DP2Outcome1TrueOutcome2False = yarnDecisions[1];
+
+        //Day3
+        yarnDecisions[2] = variableStorage.GetValue("$Day3DP1").AsBool;
+        EndOfDayClipboard.EoDClipboardData[2].DP1Outcome1TrueOutcome2False = yarnDecisions[2];
+        
+        //Day4
+        yarnDecisions[3] = variableStorage.GetValue("$Day4DP1").AsBool;
+        EndOfDayClipboard.EoDClipboardData[3].DP1Outcome1TrueOutcome2False = yarnDecisions[3];
+
+        //Day5
+        yarnDecisions[4] = variableStorage.GetValue("$Day5DP1").AsBool;
+        yarnDecisions[5] = variableStorage.GetValue("$Day5DP2").AsBool; //No decision
+        EndOfDayClipboard.EoDClipboardData[4].DP1Outcome1TrueOutcome2False = yarnDecisions[4];
+        EndOfDayClipboard.EoDClipboardData[4].DP2Outcome1TrueOutcome2False = yarnDecisions[5];//No decision
+
+        //Day6
+        yarnDecisions[6] = variableStorage.GetValue("$Day6DP1").AsBool;
+        EndOfDayClipboard.EoDClipboardData[5].DP1Outcome1TrueOutcome2False = yarnDecisions[6];
+
+        //Day7
+        yarnDecisions[7] = variableStorage.GetValue("$Day7DP1").AsBool;//No decision
+        EndOfDayClipboard.EoDClipboardData[6].DP1Outcome1TrueOutcome2False = yarnDecisions[7];//No decision
+
+        //Day8
+        yarnDecisions[8] = variableStorage.GetValue("$Day8DP1").AsBool;//No decision
+        yarnDecisions[9] = variableStorage.GetValue("$Day8DP2").AsBool;//No decision
+        EndOfDayClipboard.EoDClipboardData[7].DP1Outcome1TrueOutcome2False = yarnDecisions[8];//no decision
+        EndOfDayClipboard.EoDClipboardData[7].DP2Outcome1TrueOutcome2False = yarnDecisions[9];//no decision
+
+        //Day 9
+        yarnDecisions[10] = variableStorage.GetValue("$Day9DP1").AsBool;//No Decision
+        yarnDecisions[11] = variableStorage.GetValue("$Day9DP2").AsBool;
+        EndOfDayClipboard.EoDClipboardData[8].DP1Outcome1TrueOutcome2False = yarnDecisions[10];//No Decision
+        EndOfDayClipboard.EoDClipboardData[8].DP2Outcome1TrueOutcome2False = yarnDecisions[11];
+
+        //Day 10
+        yarnDecisions[12] = variableStorage.GetValue("$Day10DP1").AsBool;//No Decision
+        EndOfDayClipboard.EoDClipboardData[9].DP1Outcome1TrueOutcome2False = yarnDecisions[12];//No Decision
+
+        //Day 11
+        yarnDecisions[13] = variableStorage.GetValue("$Day11DP1").AsBool;
+        EndOfDayClipboard.EoDClipboardData[10].DP1Outcome1TrueOutcome2False = yarnDecisions[13];
+        //Day 12
+        yarnDecisions[14] = variableStorage.GetValue("$Day12DP1").AsBool;
+        EndOfDayClipboard.EoDClipboardData[11].DP1Outcome1TrueOutcome2False = yarnDecisions[14];
+        //Day 13
+        yarnDecisions[15] = variableStorage.GetValue("$Day13DP1").AsBool;
+        EndOfDayClipboard.EoDClipboardData[12].DP1Outcome1TrueOutcome2False = yarnDecisions[15];
+
+    }
+
     /// <summary>
     /// added from  https://github.com/thesecretlab/YarnSpinner/issues/25#issuecomment-227475923  
     /// credits to https://github.com/TheSabotender 
@@ -396,6 +472,7 @@ public class TextoDIalogueUI : Yarn.Unity.DialogueUIBehaviour
             }
             index += 1;
         }
+
 
         return output;
     }

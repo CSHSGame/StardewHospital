@@ -19,7 +19,7 @@ position: 135,282
 ---
 [$Ranjit]: Whoa hold on! We shouldn't be discussing something like that here - we need to go somewhere private. Let's go to the garden.
 [[What's the big deal! Lets talk here.|Sexuality_Talk_Here]]
-[[Good idea. Let's go!|Sexuality_Private]]
+[[Good idea. Let's go!|Sexuality_Private_Right]]
 ===
 title: Sexuality_Talk_Here
 tags: 
@@ -27,13 +27,26 @@ colorID: 0
 position: 135,283
 ---
 [$Ranjit]: This is not the place to talk about this, let's go somewhere private.
-[[Good idea. Let's go!|Sexuality_Private]]
+[[Good idea. Let's go!|Sexuality_Private_Wrong]]
 ===
-title: Sexuality_Private
+title: Sexuality_Private_Right
 tags: 
 colorID: 0
 position: 675,410
 ---
+<<set $Day9DP2 to false>>
+<<SetPath Player Three>>
+<<SetPath Ranjit Zero>>
+<<SetPath Marie Zero>>
+<<SetPath Joe Zero>>
+[[Sexuality_Private_Place]]
+===
+title: Sexuality_Private_Wrong
+tags: 
+colorID: 0
+position: 675,410
+---
+<<set $Day9DP2 to true>>
 <<SetPath Player Three>>
 <<SetPath Ranjit Zero>>
 <<SetPath Marie Zero>>

@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day10EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $SteinDeath
+  DP1Evaluate: $Day10DP1
   DP2Evaluate: 
   DP3Evaluate: 
-  DP1Outcome1TrueOutcome2False: 1
-  DP2Outcome1TrueOutcome2False: 1
-  DP3Outcome1TrueOutcome2False: 1
+  DP1Outcome1TrueOutcome2False: 0
+  DP2Outcome1TrueOutcome2False: 0
+  DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: Death of Residents in LTC
   DecisionPoint1Outcome1Text: Today you learned that Mrs Stein passed away. The death
     of a resident is a difficult reality of long term care; but there are supports
@@ -34,23 +34,23 @@ MonoBehaviour:
   DecisionPoint3Outcome2Title: 
   DecisionPoint3Outcome2Text: 
   LearningObjectives1Title: Intimacy and Sexuality in LTC
-  LearningObjectives1Text: "To maintain and provide privacy and confidentiality to
-    sensitive information as it relates\r to the lived experience of each resident."
+  LearningObjectives1Text: To observe the resident's right to meet privately with
+    their spouse or another person in a room. To accept and support the residents
+    autonomy to express their sexual needs.
   LearningObjectives2Title: 
-  LearningObjectives2Text: To practice empathy with residents through person-centred
-    communication
+  LearningObjectives2Text: To understand the importance of consent, capacity and ongoing
+    assessment and provide appropriate education and supports.
   LearningObjectives3Title: 
-  LearningObjectives3Text: "To understand and maintain respect and dignity and identify
-    the level of competency for the\r individual choices "
+  LearningObjectives3Text: To become familiar with the relevance and importance of
+    confidentiality and of sharing private information in a health care setting.
   BestPractices1Title: Intimacy and Sexuality in LTC
-  BestPractices1Text: "Each LTC worker must be aware of policies regarding to resident\u2019s
-    competency to\r consent to sexual intimacy and if family members should also be
-    included in those\r discussions."
+  BestPractices1Text: The responsibility of care home to ensure a safe and private
+    space is available and to make appropriate supports for intimate or sexual expression.
+    All staff must participate in ongoing education regarding different forms of sexual
+    behavior.
   BestPractices2Title: 
-  BestPractices2Text: "A holistic and person-centered approach from staff will continue
-    to allow for open\r dialogue for residents and staff to maintain a safe and respectful
-    environment."
+  BestPractices2Text: Staff must continually observe, monitor and assess sexual behavior
+    to determine if interventions are necessary and evaluate the resident's well-being
+    and risk.
   BestPractices3Title: 
-  BestPractices3Text: Sexuality and capacity assessment in long term care facilities
-    require staff policies that recognize and address the inclusion of sexual needs
-    and concerns of older adults.
+  BestPractices3Text: 

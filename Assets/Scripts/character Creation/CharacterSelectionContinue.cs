@@ -10,6 +10,7 @@ public class CharacterSelectionContinue : MonoBehaviour
     public characterCreationUI hairUI;
     public characterCreationUI headUI;
     public characterCreationUI bodyUI;
+    public characterCreationUI portraitUI;
     public string characterName = "John";
     public int nextScene = 0;
 

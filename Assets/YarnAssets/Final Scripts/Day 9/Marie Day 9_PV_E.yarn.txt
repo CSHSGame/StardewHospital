@@ -7,8 +7,8 @@ position: 529,182
 [$playerName]: I shouldn't bother her right now.
 <<else>>
 <<SetPath Controller One>>  
-[$playerName]:[action] Hmm, the door is a little ajar.[[Enter|Sexuality_Enter]]<<$Feb_Demo_Knocked = false>>
-[[Knock|Sexuality_Knock]]<<$Feb_Demo_Knocked = true>>
+[$playerName]:[action] Hmm, the door is a little ajar.[[Enter|Sexuality_Enter]]
+[[Knock|Sexuality_Knock]]
 <<endif>>
 ===
 title: Sexuality_Knock
@@ -19,6 +19,7 @@ position: 352,440
 <<if visited("Sexuality_Knock") is true>>
 [$playerName]: I shouldn't bother her right now.
 <<else>>
+<<set $Day9DP1 to true>>
 [$Char4FirstDoor]: Knock Knock
 [action]There's a faint rustling sound coming from inside.
 [$playerName]: [$Char4First]? It's [$playerName], I'm here to see if you're interested in attending Laughter yoga?
@@ -78,7 +79,7 @@ position: 525,1179
 //Set player next to student
 <<SetPath Ranjit Zero>>
 [$StudentName]: Hey [$playerName], how's it going?
-[[You’re not going to believe this!   I saw Marie making out with another resident.  She must be in her eighties!|Sexuality_NotPrivate]]<<$Sexuality_Private = false>>
+[[You’re not going to believe this!   I saw Marie making out with another resident.  She must be in her eighties!|Sexuality_NotPrivate]]<<set $Day6DP1 to true>>
 [[I have to tell you something - let’s go somewhere more private to discuss...|Sexuality_Private]]<<$Sexuality_Private = true>>
 ===
 title: Sexuality_Part_3

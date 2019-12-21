@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day1EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $Day1
+  DP1Evaluate: 
   DP2Evaluate: 
   DP3Evaluate: 
   DP1Outcome1TrueOutcome2False: 0

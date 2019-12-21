@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day3EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $NoKnock_Williams_Day_3
+  DP1Evaluate: $Day3DP1
   DP2Evaluate: 
   DP3Evaluate: 
-  DP1Outcome1TrueOutcome2False: 1
-  DP2Outcome1TrueOutcome2False: 1
+  DP1Outcome1TrueOutcome2False: 0
+  DP2Outcome1TrueOutcome2False: 0
   DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: Knocking on Mr. Williams' Door
   DecisionPoint1Outcome1Text: 'It''s great that you remembered to knock before entering
@@ -39,7 +39,8 @@ MonoBehaviour:
     responsive behaviours.
   LearningObjectives2Title: 
   LearningObjectives2Text: To understand and respect the lived experience of each
-    resident, both past and present.
+    resident, both past and present. To identify and practice techniques for managing
+    responsive behaviours
   LearningObjectives3Title: 
   LearningObjectives3Text: To become familiar with the relevance and importance of
     Resident's Bill of Rights in Long-Term Care.

@@ -15,6 +15,7 @@ public class SaveDataAcrossScenes : MonoBehaviour {
     public int hairIndex; // 0 is redhair, 1 is blond, 2 is hijab, 3 is curly, 4 is buzzed, 5 is turban
     public int headIndex; // 0 is female, 1 is male
     public int bodyIndex; // 0 is female, 1 is male
+    public int portraitIndex; 
 
     private void Awake()
     {
@@ -69,19 +70,22 @@ public class SaveDataAcrossScenes : MonoBehaviour {
                 hairIndex = characterSelectionContinue.hairUI.currentBodyPartIndex;
                 headIndex = characterSelectionContinue.headUI.currentBodyPartIndex;
                 bodyIndex = characterSelectionContinue.bodyUI.currentBodyPartIndex;
+                portraitIndex = characterSelectionContinue.portraitUI.currentBodyPartIndex;
 
                 Debug.Log(hairIndex);
                 Debug.Log(headIndex);
                 Debug.Log(bodyIndex);
+                Debug.Log("Portrait Index " +portraitIndex+ " Assigned Index "+characterSelectionContinue.portraitUI.currentBodyPartIndex);
 
                 charController.hairParts[hairIndex].SetActive(true);
                 charController.headParts[headIndex].SetActive(true);
                 charController.bodyParts[bodyIndex].SetActive(true);
+                //charController.playerPortraits[portraitIndex].SetActive(true);
 
                 charController.bodyPartHair = charController.hairParts[hairIndex].GetComponent<BodyPart>();
                 charController.bodyPartHead = charController.headParts[headIndex].GetComponent<BodyPart>();
                 charController.bodyPartBody = charController.bodyParts[bodyIndex].GetComponent<BodyPart>();
-
+                
                 //spriteDepthSwapper.LoadCharacter();
 
                 charLoad.variableStorage.SetValue("$playerName", new Yarn.Value(characterSelectionContinue.characterName)); 

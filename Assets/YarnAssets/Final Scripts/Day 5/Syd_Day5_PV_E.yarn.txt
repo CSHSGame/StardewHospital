@@ -42,7 +42,7 @@ position: 556,2409
 [$playerName]: I can’t wait to see your pictures. 
 [$SocialWorker]: Great! What else?
 [$Richard]: There are a lot of changes that can happen to make this a place where the LGBTQ+ community feels welcome and safe.  It’s called creating a “Positive Space.” 
-[$DirName]: I see we have a lot to learn. There aren’t regulations in place in Ontario at this time to ensure appropriate accommodation for LGBTQ+ residents, [$Char3First], but there is a Bill of Rights for Residents in Long-Term Care.
+[$DirName]: I see we have a lot to learn, in Ontario long-term care homes must follow a law called the long-term care homes act which includes a resident bill of rights.
 [$DirName]: This Bill of Rights ensures that long-term care homes are truly homes for the people who live in them and that residents know their rights. You would have received a copy on admission; but I'll leave another one here for you - I think you’ll find it useful.
 [$Char3First]: Thanks very much.  I didn’t know there was a Bill of Rights for Long-Term Care.  
 [$DirName]: Good. Thanks so much for meeting with us, [$Char3First] and [$Richard]. 

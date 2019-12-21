@@ -11,16 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a05ec5a113bb6a4ba940ae19163221d, type: 3}
   m_Name: Day4EoDData
   m_EditorClassIdentifier: 
-  DP1Evaluate: $SYD_DAY_4_APPROPRIATE
+  DP1Evaluate: $Day4DP1
   DP2Evaluate: 
   DP3Evaluate: 
-  DP1Outcome1TrueOutcome2False: 1
+  DP1Outcome1TrueOutcome2False: 0
   DP2Outcome1TrueOutcome2False: 0
   DP3Outcome1TrueOutcome2False: 0
   DecisionPoint1Outcome1Title: Syd Comes Out
-  DecisionPoint1Outcome1Text: "Today, you assumed Syd was heterosexual. If someone
-    comes out to you as LGBTQ+, if someone comes out to you as LGBTQ+ it\u2019s important
-    to actively listen and show them you can be an ally. "
+  DecisionPoint1Outcome1Text: "If someone comes out to you as LGBTQ+ it\u2019s important
+    to actively listen and show them you can be an ally."
   DecisionPoint2Outcome1Title: 
   DecisionPoint2Outcome1Text: 
   DecisionPoint3Outcome1Title: 

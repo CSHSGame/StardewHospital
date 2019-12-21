@@ -23,7 +23,7 @@ public class characterCreationUI : MonoBehaviour
             currentBodyPartIndex = index;
         }
         bodyParts[currentBodyPartIndex].SetActive(true);
-
+        Debug.Log("setpart");
     }
     public void changeHeadLeft()
     {

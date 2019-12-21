@@ -23,9 +23,9 @@ position: 441,136
 [$playerName]: How are you doing?
 [$Susannah]: I feel horrible. What kind of daughter am I?  My mom and dad moved here from their home in China to take care of me and my siblings. 
 [$Susannah]: They left everything behind. Dad couldn’t come with us today because he is too emotional about it.  It’s my fault. 
-[[I understand. I could never do this to my parents. I mean this is a nice place – but I agree it’s better if she was still at home.|Day_12_Unsympathetic]] <<$Transitioning_Sympathetic = false>>
-[[You don’t have to feel like that. My friend’s mom went into long-term care and first they were worried but they all got over it.|Day_12_Unsympathetic]] <<$Transitioning_Sympathetic = false>>
-[[I can see this has been really hard for you...|Day_12_Sympathetic]] <<$Transitioning_Sympathetic = true>>
+[[I understand. I could never do this to my parents. I mean this is a nice place – but I agree it’s better if she was still at home.|Day_12_Unsympathetic]] 
+[[You don’t have to feel like that. My friend’s mom went into long-term care and first they were worried but they all got over it.|Day_12_Unsympathetic]] 
+[[I can see this has been really hard for you...|Day_12_Sympathetic]] 
 <<endif>>
 ===
 title: Day_12_Sympathetic
@@ -33,6 +33,7 @@ tags:
 colorID: 0
 position: -281,533
 ---
+<<set $Day12DP1 to false>>
 [$Susannah]: Thank you for listening, [$playerName]. I appreciate it. 
 [[Day_12_Cont]]
 ===
@@ -41,6 +42,7 @@ tags:
 colorID: 0
 position: 1215,558
 ---
+<<set $Day12DP1 to true>>
 [$Susannah]:That's not very comforting, to be perfectly honest.
 [$playerName]: I'm sorry, you're right. I shouldn't have said that.
 [[Day_12_Cont]]

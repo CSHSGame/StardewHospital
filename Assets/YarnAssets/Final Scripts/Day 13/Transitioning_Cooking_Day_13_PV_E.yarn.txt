@@ -12,8 +12,8 @@ position: 689,139
 [$Susannah]:  Hi [$playerName]!  my name's Susannah , I'm [$Char5Last]'s daughter - we met the other day. 
 [$playerName]: Of course! How's it going?
 [$Susannah]: I'm worried my mother isn't eating properly - she never ate western food at home and I don't think she's used to it. 
-[[Well, if a resident doesn’t eat, we can’t force feed them. It’s up to her whether she wants to eat or not...|Day_13_Non_Accomodating]]<<$Transitioning_Accomodate = false>>
-[[Let me find out what can be done. Maybe the dietitian can come up with a meal plan that would suit her better.|Day_13_Accomodating]]<<$Transitioning_Accomodate = true>>
+[[Well, if a resident doesn’t eat, we can’t force feed them. It’s up to her whether she wants to eat or not...|Day_13_Non_Accomodating]]
+[[Let me find out what can be done. Maybe the dietitian can come up with a meal plan that would suit her better.|Day_13_Accomodating]]
 <<endif>>
 ===
 title: Day_13_Accomodating
@@ -21,6 +21,7 @@ tags:
 colorID: 0
 position: 313,226
 ---
+<<set $Day13DP1 to false>>
 [$Susannah]: That would be great.
 [$playerName]: Let me walk you back to your mom's room, then I'll ask the Nurse Manager to come and discuss it with you. 
 [[Day_13_cont]]
@@ -30,6 +31,7 @@ tags:
 colorID: 0
 position: 1074,249
 ---
+<<set $Day13DP1 to true>>
 [$Susannah]: That doesn't sound right at all... I'd like to speak with your supervisor about this.
 [[Day_13_cont]]
 ===

@@ -50,7 +50,7 @@ tags:
 colorID: 0
 position: 780,2085
 ---
-[angry][$Char2Last]: No! Help! Help! I’m being held hostage! Help!
+[angry][$Char2Last]: No! Help! Help! Help!
 [[[$Char2Last], I’m not touching you!|Help_Williams_Day_1]]
 [[No! Calm down!|Help_Williams_Day_1]]
 [[I just want you to eat something, I’m not trying to restrain you!|Help_Williams_Day_1]]
@@ -61,7 +61,7 @@ colorID: 0
 position: 780,2308
 ---
 <<SetPath MrWilliams Zero>>
-[angry][$Char2Last]: No! Help! Help! I’m being held hostage! Help!
+[angry][$Char2Last]: No! Help! Help! Help!
 <<SetPath Player Zero>>
 [$playerName]: [$Char2Last]! [$Char2Last], come back here!
 <<Spawn Nurse>>
